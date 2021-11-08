@@ -55,6 +55,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controladores\CitaController.cs" />
+    <Compile Include="Controladores\DiagnosticoController.cs" />
+    <Compile Include="Controladores\InformacionMedicaController.cs" />
+    <Compile Include="Controladores\PacienteController.cs" />
+    <Compile Include="Controladores\UsuarioController.cs" />
+    <Compile Include="Modelos\CitaModelo.cs" />
+    <Compile Include="Modelos\DiagnosticoModelo.cs" />
+    <Compile Include="Modelos\InformacionMedicaModelo.cs" />
+    <Compile Include="Modelos\PacienteModelo.cs" />
+    <Compile Include="Modelos\UsuarioModelo.cs" />
     <Compile Include="Vistas\CitasForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,9 +179,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controladores\" />
-    <Folder Include="Modelos\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
