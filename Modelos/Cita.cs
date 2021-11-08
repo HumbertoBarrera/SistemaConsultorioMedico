@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace SistemaConsultorioMedico.Modelos
 {
-    class UsuarioModelo
+    class Cita
     {
 
-        public int idUsuario { get; set; }
+        public int idPaciente { get; set; }
 
-        public String usuario { get; set; }
+        public DateTime fecha { get; set; }
 
-        public String password { get; set; }
+        public TimeSpan hora { get; set; }
 
     }
 }

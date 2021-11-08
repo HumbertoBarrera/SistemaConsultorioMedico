@@ -61,11 +61,11 @@
     <Compile Include="Controladores\InformacionMedicaController.cs" />
     <Compile Include="Controladores\PacienteController.cs" />
     <Compile Include="Controladores\UsuarioController.cs" />
-    <Compile Include="Modelos\CitaModelo.cs" />
-    <Compile Include="Modelos\DiagnosticoModelo.cs" />
-    <Compile Include="Modelos\InformacionMedicaModelo.cs" />
-    <Compile Include="Modelos\PacienteModelo.cs" />
-    <Compile Include="Modelos\UsuarioModelo.cs" />
+    <Compile Include="Modelos\Cita.cs" />
+    <Compile Include="Modelos\Diagnostico.cs" />
+    <Compile Include="Modelos\InformacionMedica.cs" />
+    <Compile Include="Modelos\Paciente.cs" />
+    <Compile Include="Modelos\Usuario.cs" />
     <Compile Include="Vistas\CitasForm.cs">
       <SubType>Form</SubType>
     </Compile>

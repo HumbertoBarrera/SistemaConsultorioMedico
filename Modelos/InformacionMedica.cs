@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SistemaConsultorioMedico.Modelos
 {
-    class InformacionMedicaModelo
+    class InformacionMedica
     {
 
         public int idPaciente { get; set; }

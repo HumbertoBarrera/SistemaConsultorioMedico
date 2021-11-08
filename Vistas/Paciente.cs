@@ -12,6 +12,9 @@ namespace SistemaConsultorioMedico
 {
     public partial class Paciente : Form
     {
+
+        DateTime curDate = DateTime.Today;
+
         public Paciente()
         {
             InitializeComponent();
@@ -194,6 +197,14 @@ namespace SistemaConsultorioMedico
         private void LugarNaciTxb_OnValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void guardarPac_Btn_Click(object sender, EventArgs e)
+        {
+            Modelos.Paciente paciente = new Modelos.Paciente(1232, ((curDate.Year) - Convert.ToInt32(Convert.ToDateTime(FechaNacTxb.Text).Year)), NombreTxb.Text, NombreTxb.Text,
+                                                            NombreTxb.Text, LugarNaciTxb.Text, Direcciontxb.Text, TelefonoTxb.Text, CorreoETxb.Text,
+                                                            OcupacionTxb.Text, TelefonoTxb.Text, LugarTrabajoTxb.Text, Convert.ToDateTime(FechaNacTxb.Text));
+            Controladores.PacienteController.altaPaciente(paciente);
         }
     }
 }
