@@ -201,7 +201,8 @@ namespace SistemaConsultorioMedico
 
         private void guardarPac_Btn_Click(object sender, EventArgs e)
         {
-            Modelos.Paciente paciente = new Modelos.Paciente(1232, ((curDate.Year) - Convert.ToInt32(Convert.ToDateTime(FechaNacTxb.Text).Year)), NombreTxb.Text, NombreTxb.Text,
+            var random = new Random().Next(10000000, 99999999);
+            Modelos.Paciente paciente = new Modelos.Paciente(random, ((curDate.Year) - Convert.ToInt32(Convert.ToDateTime(FechaNacTxb.Text).Year)), NombreTxb.Text, NombreTxb.Text,
                                                             NombreTxb.Text, LugarNaciTxb.Text, Direcciontxb.Text, TelefonoTxb.Text, CorreoETxb.Text,
                                                             OcupacionTxb.Text, TelefonoTxb.Text, LugarTrabajoTxb.Text, Convert.ToDateTime(FechaNacTxb.Text));
             Controladores.PacienteController.altaPaciente(paciente);
