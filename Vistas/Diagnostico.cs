@@ -52,5 +52,23 @@ namespace SistemaConsultorioMedico
                 Descripciontxb.ForeColor = Color.DarkSlateGray;
             }
         }
+
+        private void PacienteTxb_MouseEnter(object sender, EventArgs e)
+        {
+            if (PacienteTxb.Text == "PACIENTE")
+            {
+                PacienteTxb.Text = "";
+                PacienteTxb.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void PacienteTxb_MouseLeave(object sender, EventArgs e)
+        {
+            if (PacienteTxb.Text == "")
+            {
+                PacienteTxb.Text = "PACIENTE";
+                PacienteTxb.ForeColor = Color.DarkSlateGray;
+            }
+        }
     }
 }

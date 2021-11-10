@@ -37,6 +37,8 @@ namespace SistemaConsultorioMedico
             this.bunifuThinButton25 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.EliminarCitaBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.PacienteCbx = new Bunifu.Framework.UI.BunifuDropdown();
+            this.PacienteTxb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.SuspendLayout();
             // 
             // linea
@@ -73,7 +75,7 @@ namespace SistemaConsultorioMedico
             this.FechaTxb.LineIdleColor = System.Drawing.Color.Purple;
             this.FechaTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.FechaTxb.LineThickness = 3;
-            this.FechaTxb.Location = new System.Drawing.Point(47, 93);
+            this.FechaTxb.Location = new System.Drawing.Point(47, 121);
             this.FechaTxb.Margin = new System.Windows.Forms.Padding(4);
             this.FechaTxb.Name = "FechaTxb";
             this.FechaTxb.Size = new System.Drawing.Size(379, 33);
@@ -171,12 +173,51 @@ namespace SistemaConsultorioMedico
             this.EliminarCitaBtn.TabIndex = 36;
             this.EliminarCitaBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // PacienteCbx
+            // 
+            this.PacienteCbx.BackColor = System.Drawing.Color.Transparent;
+            this.PacienteCbx.BorderRadius = 3;
+            this.PacienteCbx.DisabledColor = System.Drawing.Color.Gray;
+            this.PacienteCbx.ForeColor = System.Drawing.Color.White;
+            this.PacienteCbx.Items = new string[0];
+            this.PacienteCbx.Location = new System.Drawing.Point(47, 91);
+            this.PacienteCbx.Name = "PacienteCbx";
+            this.PacienteCbx.NomalColor = System.Drawing.Color.Purple;
+            this.PacienteCbx.onHoverColor = System.Drawing.Color.Blue;
+            this.PacienteCbx.selectedIndex = -1;
+            this.PacienteCbx.Size = new System.Drawing.Size(217, 23);
+            this.PacienteCbx.TabIndex = 37;
+            // 
+            // PacienteTxb
+            // 
+            this.PacienteTxb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PacienteTxb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.PacienteTxb.ForeColor = System.Drawing.Color.Black;
+            this.PacienteTxb.HintForeColor = System.Drawing.Color.Empty;
+            this.PacienteTxb.HintText = "";
+            this.PacienteTxb.isPassword = false;
+            this.PacienteTxb.LineFocusedColor = System.Drawing.Color.Blue;
+            this.PacienteTxb.LineIdleColor = System.Drawing.Color.Purple;
+            this.PacienteTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.PacienteTxb.LineThickness = 3;
+            this.PacienteTxb.Location = new System.Drawing.Point(526, 91);
+            this.PacienteTxb.Margin = new System.Windows.Forms.Padding(4);
+            this.PacienteTxb.Name = "PacienteTxb";
+            this.PacienteTxb.Size = new System.Drawing.Size(379, 33);
+            this.PacienteTxb.TabIndex = 38;
+            this.PacienteTxb.Text = "PACIENTE";
+            this.PacienteTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.PacienteTxb.MouseEnter += new System.EventHandler(this.PacienteTxb_MouseEnter);
+            this.PacienteTxb.MouseLeave += new System.EventHandler(this.PacienteTxb_MouseLeave);
+            // 
             // Diagnostico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1015, 604);
+            this.Controls.Add(this.PacienteTxb);
+            this.Controls.Add(this.PacienteCbx);
             this.Controls.Add(this.EliminarCitaBtn);
             this.Controls.Add(this.bunifuThinButton24);
             this.Controls.Add(this.bunifuThinButton25);
@@ -202,5 +243,7 @@ namespace SistemaConsultorioMedico
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton25;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
         private Bunifu.Framework.UI.BunifuThinButton2 EliminarCitaBtn;
+        private Bunifu.Framework.UI.BunifuDropdown PacienteCbx;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox PacienteTxb;
     }
 }

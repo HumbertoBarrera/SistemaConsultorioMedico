@@ -32,13 +32,13 @@ namespace SistemaConsultorioMedico
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Preguntas));
             this.linea = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.TelefonoTxb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.Direcciontxb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.LugarNaciTxb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.DoctorAnteriorTxb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.RecomendacionTxb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox8 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.DesdeCuandoTxb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.Fumatxb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.ParejasSexualesTxb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.FamiliarInfertilrTxb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.QuienTxb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.QueTantoDiarioTbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.OtroTbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -72,145 +72,159 @@ namespace SistemaConsultorioMedico
             this.bunifuCustomLabel1.TabIndex = 36;
             this.bunifuCustomLabel1.Text = "INFORMACION MEDICA";
             // 
-            // TelefonoTxb
+            // DesdeCuandoTxb
             // 
-            this.TelefonoTxb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TelefonoTxb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.TelefonoTxb.ForeColor = System.Drawing.Color.Black;
-            this.TelefonoTxb.HintForeColor = System.Drawing.Color.Empty;
-            this.TelefonoTxb.HintText = "";
-            this.TelefonoTxb.isPassword = false;
-            this.TelefonoTxb.LineFocusedColor = System.Drawing.Color.Blue;
-            this.TelefonoTxb.LineIdleColor = System.Drawing.Color.Purple;
-            this.TelefonoTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.TelefonoTxb.LineThickness = 3;
-            this.TelefonoTxb.Location = new System.Drawing.Point(157, 331);
-            this.TelefonoTxb.Margin = new System.Windows.Forms.Padding(4);
-            this.TelefonoTxb.Name = "TelefonoTxb";
-            this.TelefonoTxb.Size = new System.Drawing.Size(282, 33);
-            this.TelefonoTxb.TabIndex = 42;
-            this.TelefonoTxb.Text = "¿DESDE CUANDO?";
-            this.TelefonoTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.DesdeCuandoTxb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.DesdeCuandoTxb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.DesdeCuandoTxb.ForeColor = System.Drawing.Color.Black;
+            this.DesdeCuandoTxb.HintForeColor = System.Drawing.Color.Empty;
+            this.DesdeCuandoTxb.HintText = "";
+            this.DesdeCuandoTxb.isPassword = false;
+            this.DesdeCuandoTxb.LineFocusedColor = System.Drawing.Color.Blue;
+            this.DesdeCuandoTxb.LineIdleColor = System.Drawing.Color.Purple;
+            this.DesdeCuandoTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.DesdeCuandoTxb.LineThickness = 3;
+            this.DesdeCuandoTxb.Location = new System.Drawing.Point(157, 331);
+            this.DesdeCuandoTxb.Margin = new System.Windows.Forms.Padding(4);
+            this.DesdeCuandoTxb.Name = "DesdeCuandoTxb";
+            this.DesdeCuandoTxb.Size = new System.Drawing.Size(282, 33);
+            this.DesdeCuandoTxb.TabIndex = 42;
+            this.DesdeCuandoTxb.Text = "¿DESDE CUANDO?";
+            this.DesdeCuandoTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.DesdeCuandoTxb.MouseEnter += new System.EventHandler(this.DesdeCuandoTxb_MouseEnter);
+            this.DesdeCuandoTxb.MouseLeave += new System.EventHandler(this.DesdeCuandoTxb_MouseLeave);
             // 
-            // Direcciontxb
+            // Fumatxb
             // 
-            this.Direcciontxb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Direcciontxb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.Direcciontxb.ForeColor = System.Drawing.Color.Black;
-            this.Direcciontxb.HintForeColor = System.Drawing.Color.Empty;
-            this.Direcciontxb.HintText = "";
-            this.Direcciontxb.isPassword = false;
-            this.Direcciontxb.LineFocusedColor = System.Drawing.Color.Blue;
-            this.Direcciontxb.LineIdleColor = System.Drawing.Color.Purple;
-            this.Direcciontxb.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.Direcciontxb.LineThickness = 3;
-            this.Direcciontxb.Location = new System.Drawing.Point(39, 331);
-            this.Direcciontxb.Margin = new System.Windows.Forms.Padding(4);
-            this.Direcciontxb.Name = "Direcciontxb";
-            this.Direcciontxb.Size = new System.Drawing.Size(89, 33);
-            this.Direcciontxb.TabIndex = 41;
-            this.Direcciontxb.Text = "¿FUMA?";
-            this.Direcciontxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Fumatxb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Fumatxb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.Fumatxb.ForeColor = System.Drawing.Color.Black;
+            this.Fumatxb.HintForeColor = System.Drawing.Color.Empty;
+            this.Fumatxb.HintText = "";
+            this.Fumatxb.isPassword = false;
+            this.Fumatxb.LineFocusedColor = System.Drawing.Color.Blue;
+            this.Fumatxb.LineIdleColor = System.Drawing.Color.Purple;
+            this.Fumatxb.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.Fumatxb.LineThickness = 3;
+            this.Fumatxb.Location = new System.Drawing.Point(39, 331);
+            this.Fumatxb.Margin = new System.Windows.Forms.Padding(4);
+            this.Fumatxb.Name = "Fumatxb";
+            this.Fumatxb.Size = new System.Drawing.Size(89, 33);
+            this.Fumatxb.TabIndex = 41;
+            this.Fumatxb.Text = "¿FUMA?";
+            this.Fumatxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Fumatxb.MouseEnter += new System.EventHandler(this.Fumatxb_MouseEnter);
+            this.Fumatxb.MouseLeave += new System.EventHandler(this.Fumatxb_MouseLeave);
             // 
-            // LugarNaciTxb
+            // ParejasSexualesTxb
             // 
-            this.LugarNaciTxb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.LugarNaciTxb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.LugarNaciTxb.ForeColor = System.Drawing.Color.Black;
-            this.LugarNaciTxb.HintForeColor = System.Drawing.Color.Empty;
-            this.LugarNaciTxb.HintText = "";
-            this.LugarNaciTxb.isPassword = false;
-            this.LugarNaciTxb.LineFocusedColor = System.Drawing.Color.Blue;
-            this.LugarNaciTxb.LineIdleColor = System.Drawing.Color.Purple;
-            this.LugarNaciTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.LugarNaciTxb.LineThickness = 3;
-            this.LugarNaciTxb.Location = new System.Drawing.Point(38, 290);
-            this.LugarNaciTxb.Margin = new System.Windows.Forms.Padding(4);
-            this.LugarNaciTxb.Name = "LugarNaciTxb";
-            this.LugarNaciTxb.Size = new System.Drawing.Size(379, 33);
-            this.LugarNaciTxb.TabIndex = 40;
-            this.LugarNaciTxb.Text = "¿CUANTAS PERSONAS SEXUALES A TENIDO?";
-            this.LugarNaciTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ParejasSexualesTxb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ParejasSexualesTxb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.ParejasSexualesTxb.ForeColor = System.Drawing.Color.Black;
+            this.ParejasSexualesTxb.HintForeColor = System.Drawing.Color.Empty;
+            this.ParejasSexualesTxb.HintText = "";
+            this.ParejasSexualesTxb.isPassword = false;
+            this.ParejasSexualesTxb.LineFocusedColor = System.Drawing.Color.Blue;
+            this.ParejasSexualesTxb.LineIdleColor = System.Drawing.Color.Purple;
+            this.ParejasSexualesTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.ParejasSexualesTxb.LineThickness = 3;
+            this.ParejasSexualesTxb.Location = new System.Drawing.Point(38, 290);
+            this.ParejasSexualesTxb.Margin = new System.Windows.Forms.Padding(4);
+            this.ParejasSexualesTxb.Name = "ParejasSexualesTxb";
+            this.ParejasSexualesTxb.Size = new System.Drawing.Size(379, 33);
+            this.ParejasSexualesTxb.TabIndex = 40;
+            this.ParejasSexualesTxb.Text = "¿CUANTAS PERSONAS SEXUALES A TENIDO?";
+            this.ParejasSexualesTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ParejasSexualesTxb.MouseEnter += new System.EventHandler(this.ParejasSexualesTxb_MouseEnter);
+            this.ParejasSexualesTxb.MouseLeave += new System.EventHandler(this.ParejasSexualesTxb_MouseLeave);
             // 
-            // DoctorAnteriorTxb
+            // FamiliarInfertilrTxb
             // 
-            this.DoctorAnteriorTxb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.DoctorAnteriorTxb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.DoctorAnteriorTxb.ForeColor = System.Drawing.Color.Black;
-            this.DoctorAnteriorTxb.HintForeColor = System.Drawing.Color.Empty;
-            this.DoctorAnteriorTxb.HintText = "";
-            this.DoctorAnteriorTxb.isPassword = false;
-            this.DoctorAnteriorTxb.LineFocusedColor = System.Drawing.Color.Blue;
-            this.DoctorAnteriorTxb.LineIdleColor = System.Drawing.Color.Purple;
-            this.DoctorAnteriorTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.DoctorAnteriorTxb.LineThickness = 3;
-            this.DoctorAnteriorTxb.Location = new System.Drawing.Point(39, 249);
-            this.DoctorAnteriorTxb.Margin = new System.Windows.Forms.Padding(4);
-            this.DoctorAnteriorTxb.Name = "DoctorAnteriorTxb";
-            this.DoctorAnteriorTxb.Size = new System.Drawing.Size(379, 33);
-            this.DoctorAnteriorTxb.TabIndex = 39;
-            this.DoctorAnteriorTxb.Text = "¿TIENE ALGUN FAMILIAR INFERTIL?";
-            this.DoctorAnteriorTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.FamiliarInfertilrTxb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.FamiliarInfertilrTxb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.FamiliarInfertilrTxb.ForeColor = System.Drawing.Color.Black;
+            this.FamiliarInfertilrTxb.HintForeColor = System.Drawing.Color.Empty;
+            this.FamiliarInfertilrTxb.HintText = "";
+            this.FamiliarInfertilrTxb.isPassword = false;
+            this.FamiliarInfertilrTxb.LineFocusedColor = System.Drawing.Color.Blue;
+            this.FamiliarInfertilrTxb.LineIdleColor = System.Drawing.Color.Purple;
+            this.FamiliarInfertilrTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.FamiliarInfertilrTxb.LineThickness = 3;
+            this.FamiliarInfertilrTxb.Location = new System.Drawing.Point(39, 249);
+            this.FamiliarInfertilrTxb.Margin = new System.Windows.Forms.Padding(4);
+            this.FamiliarInfertilrTxb.Name = "FamiliarInfertilrTxb";
+            this.FamiliarInfertilrTxb.Size = new System.Drawing.Size(379, 33);
+            this.FamiliarInfertilrTxb.TabIndex = 39;
+            this.FamiliarInfertilrTxb.Text = "¿TIENE ALGUN FAMILIAR INFERTIL?";
+            this.FamiliarInfertilrTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.FamiliarInfertilrTxb.MouseEnter += new System.EventHandler(this.FamiliarInfertilrTxb_MouseEnter);
+            this.FamiliarInfertilrTxb.MouseLeave += new System.EventHandler(this.FamiliarInfertilrTxb_MouseLeave);
             // 
-            // RecomendacionTxb
+            // QuienTxb
             // 
-            this.RecomendacionTxb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.RecomendacionTxb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.RecomendacionTxb.ForeColor = System.Drawing.Color.Black;
-            this.RecomendacionTxb.HintForeColor = System.Drawing.Color.Empty;
-            this.RecomendacionTxb.HintText = "";
-            this.RecomendacionTxb.isPassword = false;
-            this.RecomendacionTxb.LineFocusedColor = System.Drawing.Color.Blue;
-            this.RecomendacionTxb.LineIdleColor = System.Drawing.Color.Purple;
-            this.RecomendacionTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.RecomendacionTxb.LineThickness = 3;
-            this.RecomendacionTxb.Location = new System.Drawing.Point(39, 208);
-            this.RecomendacionTxb.Margin = new System.Windows.Forms.Padding(4);
-            this.RecomendacionTxb.Name = "RecomendacionTxb";
-            this.RecomendacionTxb.Size = new System.Drawing.Size(379, 33);
-            this.RecomendacionTxb.TabIndex = 38;
-            this.RecomendacionTxb.Text = " ¿QUIEN?";
-            this.RecomendacionTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.QuienTxb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.QuienTxb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.QuienTxb.ForeColor = System.Drawing.Color.Black;
+            this.QuienTxb.HintForeColor = System.Drawing.Color.Empty;
+            this.QuienTxb.HintText = "";
+            this.QuienTxb.isPassword = false;
+            this.QuienTxb.LineFocusedColor = System.Drawing.Color.Blue;
+            this.QuienTxb.LineIdleColor = System.Drawing.Color.Purple;
+            this.QuienTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.QuienTxb.LineThickness = 3;
+            this.QuienTxb.Location = new System.Drawing.Point(39, 208);
+            this.QuienTxb.Margin = new System.Windows.Forms.Padding(4);
+            this.QuienTxb.Name = "QuienTxb";
+            this.QuienTxb.Size = new System.Drawing.Size(379, 33);
+            this.QuienTxb.TabIndex = 38;
+            this.QuienTxb.Text = " ¿QUIEN?";
+            this.QuienTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.QuienTxb.MouseEnter += new System.EventHandler(this.QuienTxb_MouseEnter);
+            this.QuienTxb.MouseLeave += new System.EventHandler(this.QuienTxb_MouseLeave);
             // 
-            // bunifuMaterialTextbox1
+            // QueTantoDiarioTbx
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Purple;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(468, 331);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(365, 33);
-            this.bunifuMaterialTextbox1.TabIndex = 43;
-            this.bunifuMaterialTextbox1.Text = "¿QUE TANTO DIARIO?";
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.QueTantoDiarioTbx.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.QueTantoDiarioTbx.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.QueTantoDiarioTbx.ForeColor = System.Drawing.Color.Black;
+            this.QueTantoDiarioTbx.HintForeColor = System.Drawing.Color.Empty;
+            this.QueTantoDiarioTbx.HintText = "";
+            this.QueTantoDiarioTbx.isPassword = false;
+            this.QueTantoDiarioTbx.LineFocusedColor = System.Drawing.Color.Blue;
+            this.QueTantoDiarioTbx.LineIdleColor = System.Drawing.Color.Purple;
+            this.QueTantoDiarioTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.QueTantoDiarioTbx.LineThickness = 3;
+            this.QueTantoDiarioTbx.Location = new System.Drawing.Point(468, 331);
+            this.QueTantoDiarioTbx.Margin = new System.Windows.Forms.Padding(4);
+            this.QueTantoDiarioTbx.Name = "QueTantoDiarioTbx";
+            this.QueTantoDiarioTbx.Size = new System.Drawing.Size(365, 33);
+            this.QueTantoDiarioTbx.TabIndex = 43;
+            this.QueTantoDiarioTbx.Text = "¿QUE TANTO DIARIO?";
+            this.QueTantoDiarioTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.QueTantoDiarioTbx.MouseEnter += new System.EventHandler(this.QueTantoDiarioTbx_MouseEnter);
+            this.QueTantoDiarioTbx.MouseLeave += new System.EventHandler(this.QueTantoDiarioTbx_MouseLeave);
             // 
-            // bunifuMaterialTextbox8
+            // OtroTbx
             // 
-            this.bunifuMaterialTextbox8.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox8.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox8.ForeColor = System.Drawing.Color.Black;
-            this.bunifuMaterialTextbox8.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox8.HintText = "";
-            this.bunifuMaterialTextbox8.isPassword = false;
-            this.bunifuMaterialTextbox8.LineFocusedColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox8.LineIdleColor = System.Drawing.Color.Purple;
-            this.bunifuMaterialTextbox8.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox8.LineThickness = 3;
-            this.bunifuMaterialTextbox8.Location = new System.Drawing.Point(613, 152);
-            this.bunifuMaterialTextbox8.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox8.Name = "bunifuMaterialTextbox8";
-            this.bunifuMaterialTextbox8.Size = new System.Drawing.Size(220, 33);
-            this.bunifuMaterialTextbox8.TabIndex = 57;
-            this.bunifuMaterialTextbox8.Text = "OTRO";
-            this.bunifuMaterialTextbox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.OtroTbx.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.OtroTbx.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.OtroTbx.ForeColor = System.Drawing.Color.Black;
+            this.OtroTbx.HintForeColor = System.Drawing.Color.Empty;
+            this.OtroTbx.HintText = "";
+            this.OtroTbx.isPassword = false;
+            this.OtroTbx.LineFocusedColor = System.Drawing.Color.Blue;
+            this.OtroTbx.LineIdleColor = System.Drawing.Color.Purple;
+            this.OtroTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.OtroTbx.LineThickness = 3;
+            this.OtroTbx.Location = new System.Drawing.Point(613, 152);
+            this.OtroTbx.Margin = new System.Windows.Forms.Padding(4);
+            this.OtroTbx.Name = "OtroTbx";
+            this.OtroTbx.Size = new System.Drawing.Size(220, 33);
+            this.OtroTbx.TabIndex = 57;
+            this.OtroTbx.Text = "OTRO";
+            this.OtroTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.OtroTbx.MouseEnter += new System.EventHandler(this.OtroTbx_MouseEnter);
+            this.OtroTbx.MouseLeave += new System.EventHandler(this.OtroTbx_MouseLeave);
             // 
             // radioButton4
             // 
@@ -337,18 +351,18 @@ namespace SistemaConsultorioMedico
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.RegresarBtn);
             this.Controls.Add(this.GuardarBtn);
-            this.Controls.Add(this.bunifuMaterialTextbox8);
+            this.Controls.Add(this.OtroTbx);
             this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.bunifuCustomLabel2);
-            this.Controls.Add(this.bunifuMaterialTextbox1);
-            this.Controls.Add(this.TelefonoTxb);
-            this.Controls.Add(this.Direcciontxb);
-            this.Controls.Add(this.LugarNaciTxb);
-            this.Controls.Add(this.DoctorAnteriorTxb);
-            this.Controls.Add(this.RecomendacionTxb);
+            this.Controls.Add(this.QueTantoDiarioTbx);
+            this.Controls.Add(this.DesdeCuandoTxb);
+            this.Controls.Add(this.Fumatxb);
+            this.Controls.Add(this.ParejasSexualesTxb);
+            this.Controls.Add(this.FamiliarInfertilrTxb);
+            this.Controls.Add(this.QuienTxb);
             this.Controls.Add(this.linea);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -365,13 +379,13 @@ namespace SistemaConsultorioMedico
 
         private Bunifu.Framework.UI.BunifuSeparator linea;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox TelefonoTxb;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox Direcciontxb;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox LugarNaciTxb;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox DoctorAnteriorTxb;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox RecomendacionTxb;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox8;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox DesdeCuandoTxb;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox Fumatxb;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox ParejasSexualesTxb;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox FamiliarInfertilrTxb;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox QuienTxb;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox QueTantoDiarioTbx;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox OtroTbx;
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
