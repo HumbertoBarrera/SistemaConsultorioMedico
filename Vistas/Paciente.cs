@@ -236,21 +236,32 @@ namespace SistemaConsultorioMedico
         }
         private void guardarPac_Btn_Click(object sender, EventArgs e)
         {
-            var random = new Random().Next(10000000, 99999999);
-            Modelos.Paciente paciente = new Modelos.Paciente(random, ((curDate.Year) - Convert.ToInt32(Convert.ToDateTime(FechaNacTxb.Text).Year)), NombreTxb.Text, ApellidoPaternoTbx.Text,
-                                                            ApellidoMaternoTxb.Text, LugarNaciTxb.Text, Direcciontxb.Text, TelefonoTxb.Text, CorreoETxb.Text,
-                                                            OcupacionTxb.Text, TelefonoTxb.Text, LugarTrabajoTxb.Text, Convert.ToDateTime(FechaNacTxb.Text));
-            Controladores.PacienteController.altaPaciente(paciente);
-            NombreTxb.Text = "NOMBRES";
-            ApellidoPaternoTbx.Text = "APELLIDO PATERNO";
-            ApellidoMaternoTxb.Text = "APELLIDO MATERNO";
-            FechaNacTxb.Text = "FECHA NACIMIENTO";
-            LugarNaciTxb.Text = "LUGAR DE NACIMIENTO";
-            Direcciontxb.Text = "DIRECCION";
-            TelefonoTxb.Text = "TELEFONO";
-            CorreoETxb.Text = "CORREO ELECTRONICO";
-            OcupacionTxb.Text = "OCUPACION";
-            LugarTrabajoTxb.Text = "LUGAR DE TRABAJO";
+            if(NombreTxb.Text != "NOMBRES" & ApellidoMaternoTxb.Text != "APELLIDO PATERNO" & ApellidoMaternoTxb.Text != "APELLIDO MATERNO" & FechaNacTxb.Text != "FECHA NACIMIENTO" & LugarNaciTxb.Text != "LUGAR DE NACIMIENTO" &
+               Direcciontxb.Text != "DIRECCION" & TelefonoTxb.Text != "TELEFONO" & CorreoETxb.Text != "CORREO ELECTRONICO" & OcupacionTxb.Text != "OCUPACION" & LugarTrabajoTxb.Text != "OCUPACION" ||
+               NombreTxb.Text != "" & ApellidoMaternoTxb.Text != "" & ApellidoMaternoTxb.Text != "" & FechaNacTxb.Text != " " & LugarNaciTxb.Text != "" &
+               Direcciontxb.Text != "" & TelefonoTxb.Text != "" & CorreoETxb.Text != "" & OcupacionTxb.Text != "" & LugarTrabajoTxb.Text != "")
+            {
+                var random = new Random().Next(10000000, 99999999);
+                Modelos.Paciente paciente = new Modelos.Paciente(random, ((curDate.Year) - Convert.ToInt32(Convert.ToDateTime(FechaNacTxb.Text).Year)), NombreTxb.Text, ApellidoPaternoTbx.Text,
+                                                                ApellidoMaternoTxb.Text, LugarNaciTxb.Text, Direcciontxb.Text, TelefonoTxb.Text, CorreoETxb.Text,
+                                                                OcupacionTxb.Text, TelefonoTxb.Text, LugarTrabajoTxb.Text, Convert.ToDateTime(FechaNacTxb.Text));
+                Controladores.PacienteController.altaPaciente(paciente);
+                NombreTxb.Text = "NOMBRES";
+                ApellidoPaternoTbx.Text = "APELLIDO PATERNO";
+                ApellidoMaternoTxb.Text = "APELLIDO MATERNO";
+                FechaNacTxb.Text = "FECHA NACIMIENTO";
+                LugarNaciTxb.Text = "LUGAR DE NACIMIENTO";
+                Direcciontxb.Text = "DIRECCION";
+                TelefonoTxb.Text = "TELEFONO";
+                CorreoETxb.Text = "CORREO ELECTRONICO";
+                OcupacionTxb.Text = "OCUPACION";
+                LugarTrabajoTxb.Text = "LUGAR DE TRABAJO";
+            }
+            else
+            {
+                MessageBox.Show("No pueden haber campos vacíos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            
         }
 
         

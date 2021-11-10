@@ -55,9 +55,10 @@ namespace SistemaConsultorioMedico
             this.linea.BackColor = System.Drawing.Color.Transparent;
             this.linea.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(128)))));
             this.linea.LineThickness = 1;
-            this.linea.Location = new System.Drawing.Point(325, 65);
+            this.linea.Location = new System.Drawing.Point(433, 80);
+            this.linea.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.linea.Name = "linea";
-            this.linea.Size = new System.Drawing.Size(245, 10);
+            this.linea.Size = new System.Drawing.Size(327, 12);
             this.linea.TabIndex = 37;
             this.linea.Transparency = 255;
             this.linea.Vertical = false;
@@ -66,9 +67,10 @@ namespace SistemaConsultorioMedico
             // 
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(333, 39);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(444, 48);
+            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(225, 23);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(290, 30);
             this.bunifuCustomLabel1.TabIndex = 36;
             this.bunifuCustomLabel1.Text = "INFORMACION MEDICA";
             // 
@@ -84,11 +86,11 @@ namespace SistemaConsultorioMedico
             this.DesdeCuandoTxb.LineIdleColor = System.Drawing.Color.Purple;
             this.DesdeCuandoTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.DesdeCuandoTxb.LineThickness = 3;
-            this.DesdeCuandoTxb.Location = new System.Drawing.Point(157, 331);
-            this.DesdeCuandoTxb.Margin = new System.Windows.Forms.Padding(4);
+            this.DesdeCuandoTxb.Location = new System.Drawing.Point(209, 407);
+            this.DesdeCuandoTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.DesdeCuandoTxb.Name = "DesdeCuandoTxb";
-            this.DesdeCuandoTxb.Size = new System.Drawing.Size(282, 33);
-            this.DesdeCuandoTxb.TabIndex = 42;
+            this.DesdeCuandoTxb.Size = new System.Drawing.Size(376, 41);
+            this.DesdeCuandoTxb.TabIndex = 10;
             this.DesdeCuandoTxb.Text = "¿DESDE CUANDO?";
             this.DesdeCuandoTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.DesdeCuandoTxb.MouseEnter += new System.EventHandler(this.DesdeCuandoTxb_MouseEnter);
@@ -106,11 +108,11 @@ namespace SistemaConsultorioMedico
             this.Fumatxb.LineIdleColor = System.Drawing.Color.Purple;
             this.Fumatxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.Fumatxb.LineThickness = 3;
-            this.Fumatxb.Location = new System.Drawing.Point(39, 331);
-            this.Fumatxb.Margin = new System.Windows.Forms.Padding(4);
+            this.Fumatxb.Location = new System.Drawing.Point(52, 407);
+            this.Fumatxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Fumatxb.Name = "Fumatxb";
-            this.Fumatxb.Size = new System.Drawing.Size(89, 33);
-            this.Fumatxb.TabIndex = 41;
+            this.Fumatxb.Size = new System.Drawing.Size(119, 41);
+            this.Fumatxb.TabIndex = 9;
             this.Fumatxb.Text = "¿FUMA?";
             this.Fumatxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Fumatxb.MouseEnter += new System.EventHandler(this.Fumatxb_MouseEnter);
@@ -128,11 +130,11 @@ namespace SistemaConsultorioMedico
             this.ParejasSexualesTxb.LineIdleColor = System.Drawing.Color.Purple;
             this.ParejasSexualesTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.ParejasSexualesTxb.LineThickness = 3;
-            this.ParejasSexualesTxb.Location = new System.Drawing.Point(38, 290);
-            this.ParejasSexualesTxb.Margin = new System.Windows.Forms.Padding(4);
+            this.ParejasSexualesTxb.Location = new System.Drawing.Point(51, 357);
+            this.ParejasSexualesTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.ParejasSexualesTxb.Name = "ParejasSexualesTxb";
-            this.ParejasSexualesTxb.Size = new System.Drawing.Size(379, 33);
-            this.ParejasSexualesTxb.TabIndex = 40;
+            this.ParejasSexualesTxb.Size = new System.Drawing.Size(505, 41);
+            this.ParejasSexualesTxb.TabIndex = 8;
             this.ParejasSexualesTxb.Text = "¿CUANTAS PERSONAS SEXUALES A TENIDO?";
             this.ParejasSexualesTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.ParejasSexualesTxb.MouseEnter += new System.EventHandler(this.ParejasSexualesTxb_MouseEnter);
@@ -150,11 +152,11 @@ namespace SistemaConsultorioMedico
             this.FamiliarInfertilrTxb.LineIdleColor = System.Drawing.Color.Purple;
             this.FamiliarInfertilrTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.FamiliarInfertilrTxb.LineThickness = 3;
-            this.FamiliarInfertilrTxb.Location = new System.Drawing.Point(39, 249);
-            this.FamiliarInfertilrTxb.Margin = new System.Windows.Forms.Padding(4);
+            this.FamiliarInfertilrTxb.Location = new System.Drawing.Point(52, 306);
+            this.FamiliarInfertilrTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.FamiliarInfertilrTxb.Name = "FamiliarInfertilrTxb";
-            this.FamiliarInfertilrTxb.Size = new System.Drawing.Size(379, 33);
-            this.FamiliarInfertilrTxb.TabIndex = 39;
+            this.FamiliarInfertilrTxb.Size = new System.Drawing.Size(505, 41);
+            this.FamiliarInfertilrTxb.TabIndex = 7;
             this.FamiliarInfertilrTxb.Text = "¿TIENE ALGUN FAMILIAR INFERTIL?";
             this.FamiliarInfertilrTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.FamiliarInfertilrTxb.MouseEnter += new System.EventHandler(this.FamiliarInfertilrTxb_MouseEnter);
@@ -172,11 +174,11 @@ namespace SistemaConsultorioMedico
             this.QuienTxb.LineIdleColor = System.Drawing.Color.Purple;
             this.QuienTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.QuienTxb.LineThickness = 3;
-            this.QuienTxb.Location = new System.Drawing.Point(39, 208);
-            this.QuienTxb.Margin = new System.Windows.Forms.Padding(4);
+            this.QuienTxb.Location = new System.Drawing.Point(52, 256);
+            this.QuienTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.QuienTxb.Name = "QuienTxb";
-            this.QuienTxb.Size = new System.Drawing.Size(379, 33);
-            this.QuienTxb.TabIndex = 38;
+            this.QuienTxb.Size = new System.Drawing.Size(505, 41);
+            this.QuienTxb.TabIndex = 6;
             this.QuienTxb.Text = " ¿QUIEN?";
             this.QuienTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.QuienTxb.MouseEnter += new System.EventHandler(this.QuienTxb_MouseEnter);
@@ -194,11 +196,11 @@ namespace SistemaConsultorioMedico
             this.QueTantoDiarioTbx.LineIdleColor = System.Drawing.Color.Purple;
             this.QueTantoDiarioTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.QueTantoDiarioTbx.LineThickness = 3;
-            this.QueTantoDiarioTbx.Location = new System.Drawing.Point(468, 331);
-            this.QueTantoDiarioTbx.Margin = new System.Windows.Forms.Padding(4);
+            this.QueTantoDiarioTbx.Location = new System.Drawing.Point(624, 407);
+            this.QueTantoDiarioTbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.QueTantoDiarioTbx.Name = "QueTantoDiarioTbx";
-            this.QueTantoDiarioTbx.Size = new System.Drawing.Size(365, 33);
-            this.QueTantoDiarioTbx.TabIndex = 43;
+            this.QueTantoDiarioTbx.Size = new System.Drawing.Size(487, 41);
+            this.QueTantoDiarioTbx.TabIndex = 11;
             this.QueTantoDiarioTbx.Text = "¿QUE TANTO DIARIO?";
             this.QueTantoDiarioTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.QueTantoDiarioTbx.MouseEnter += new System.EventHandler(this.QueTantoDiarioTbx_MouseEnter);
@@ -216,11 +218,11 @@ namespace SistemaConsultorioMedico
             this.OtroTbx.LineIdleColor = System.Drawing.Color.Purple;
             this.OtroTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.OtroTbx.LineThickness = 3;
-            this.OtroTbx.Location = new System.Drawing.Point(613, 152);
-            this.OtroTbx.Margin = new System.Windows.Forms.Padding(4);
+            this.OtroTbx.Location = new System.Drawing.Point(817, 187);
+            this.OtroTbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.OtroTbx.Name = "OtroTbx";
-            this.OtroTbx.Size = new System.Drawing.Size(220, 33);
-            this.OtroTbx.TabIndex = 57;
+            this.OtroTbx.Size = new System.Drawing.Size(293, 41);
+            this.OtroTbx.TabIndex = 5;
             this.OtroTbx.Text = "OTRO";
             this.OtroTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.OtroTbx.MouseEnter += new System.EventHandler(this.OtroTbx_MouseEnter);
@@ -229,10 +231,11 @@ namespace SistemaConsultorioMedico
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(491, 161);
+            this.radioButton4.Location = new System.Drawing.Point(655, 198);
+            this.radioButton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(79, 17);
-            this.radioButton4.TabIndex = 56;
+            this.radioButton4.Size = new System.Drawing.Size(97, 21);
+            this.radioButton4.TabIndex = 4;
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "EPILEPSIA";
             this.radioButton4.UseVisualStyleBackColor = true;
@@ -240,10 +243,11 @@ namespace SistemaConsultorioMedico
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(301, 161);
+            this.radioButton3.Location = new System.Drawing.Point(401, 198);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(168, 17);
-            this.radioButton3.TabIndex = 55;
+            this.radioButton3.Size = new System.Drawing.Size(211, 21);
+            this.radioButton3.TabIndex = 3;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "CANCER SERVICOUTERINO";
             this.radioButton3.UseVisualStyleBackColor = true;
@@ -251,10 +255,11 @@ namespace SistemaConsultorioMedico
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(143, 161);
+            this.radioButton2.Location = new System.Drawing.Point(191, 198);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(127, 17);
-            this.radioButton2.TabIndex = 54;
+            this.radioButton2.Size = new System.Drawing.Size(160, 21);
+            this.radioButton2.TabIndex = 2;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "CANCER DE SENOS";
             this.radioButton2.UseVisualStyleBackColor = true;
@@ -262,10 +267,11 @@ namespace SistemaConsultorioMedico
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(45, 161);
+            this.radioButton1.Location = new System.Drawing.Point(60, 198);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(78, 17);
-            this.radioButton1.TabIndex = 53;
+            this.radioButton1.Size = new System.Drawing.Size(96, 21);
+            this.radioButton1.TabIndex = 1;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "DIABETES";
             this.radioButton1.UseVisualStyleBackColor = true;
@@ -274,9 +280,10 @@ namespace SistemaConsultorioMedico
             // 
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(42, 111);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(56, 137);
+            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(649, 18);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(798, 23);
             this.bunifuCustomLabel2.TabIndex = 52;
             this.bunifuCustomLabel2.Text = "INDIQUE SI ALGUIEN DE SU FAMILIA PADECE ALGUNA DE LAS ENFERMEDADES SIGUIENTES";
             // 
@@ -298,11 +305,11 @@ namespace SistemaConsultorioMedico
             this.GuardarBtn.IdleFillColor = System.Drawing.Color.White;
             this.GuardarBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.GuardarBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.GuardarBtn.Location = new System.Drawing.Point(449, 448);
-            this.GuardarBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.GuardarBtn.Location = new System.Drawing.Point(599, 551);
+            this.GuardarBtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.GuardarBtn.Name = "GuardarBtn";
-            this.GuardarBtn.Size = new System.Drawing.Size(157, 41);
-            this.GuardarBtn.TabIndex = 58;
+            this.GuardarBtn.Size = new System.Drawing.Size(209, 50);
+            this.GuardarBtn.TabIndex = 12;
             this.GuardarBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // RegresarBtn
@@ -323,20 +330,21 @@ namespace SistemaConsultorioMedico
             this.RegresarBtn.IdleFillColor = System.Drawing.Color.White;
             this.RegresarBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.RegresarBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.RegresarBtn.Location = new System.Drawing.Point(616, 448);
-            this.RegresarBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.RegresarBtn.Location = new System.Drawing.Point(821, 551);
+            this.RegresarBtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.RegresarBtn.Name = "RegresarBtn";
-            this.RegresarBtn.Size = new System.Drawing.Size(157, 41);
-            this.RegresarBtn.TabIndex = 59;
+            this.RegresarBtn.Size = new System.Drawing.Size(209, 50);
+            this.RegresarBtn.TabIndex = 13;
             this.RegresarBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(858, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(1144, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(20, 22);
+            this.pictureBox1.Size = new System.Drawing.Size(27, 27);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 60;
             this.pictureBox1.TabStop = false;
@@ -344,10 +352,10 @@ namespace SistemaConsultorioMedico
             // 
             // Preguntas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(880, 544);
+            this.ClientSize = new System.Drawing.Size(1173, 670);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.RegresarBtn);
             this.Controls.Add(this.GuardarBtn);
@@ -366,6 +374,7 @@ namespace SistemaConsultorioMedico
             this.Controls.Add(this.linea);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Preguntas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Preguntas";
