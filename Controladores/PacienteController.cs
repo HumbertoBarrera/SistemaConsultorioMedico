@@ -14,7 +14,7 @@ namespace SistemaConsultorioMedico.Controladores
 
         public static void altaPaciente(Modelos.Paciente p)
         {
-            String query = "INSERT INTO PACIENTE VALUES (@idPaciente, @nombresP, @apellidoPatP, @apellidoMatP, @fechaNac, @edadP, @lugarNac, @direccionP, @telefonoP, @emailP, @trabajoP, @telefonoTrabajoP, @lugarTrabajoP)";
+            String query = "INSERT INTO PACIENTE VALUES (@idPaciente, @nombresP, @apellidoPatP, @apellidoMatP, @fechaNac, @edadP, @lugarNac, @direccionP, @telefonoP, @emailP, @trabajoP, @lugarTrabajoP)";
             try
             {
                 using (SqlCommand comando = new SqlCommand(query, ConexionController.Conectar()))
@@ -30,7 +30,6 @@ namespace SistemaConsultorioMedico.Controladores
                     comando.Parameters.AddWithValue("@telefonoP", p.getTelefonoP());
                     comando.Parameters.AddWithValue("@emailP", p.getEmailP());
                     comando.Parameters.AddWithValue("@trabajoP", p.getTrabajoP());
-                    comando.Parameters.AddWithValue("@telefonoTrabajoP", p.getTelefonoTrabajoP());
                     comando.Parameters.AddWithValue("@lugarTrabajoP", p.getTelefonoTrabajoP());
                     int resultado = comando.ExecuteNonQuery();
                     if (resultado < 0)

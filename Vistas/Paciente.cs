@@ -25,7 +25,7 @@ namespace SistemaConsultorioMedico
             if(NombreTxb.Text == "NOMBRES")
             {
                 NombreTxb.Text = "";
-                NombreTxb.ForeColor = Color.DarkRed;
+                NombreTxb.ForeColor = Color.DarkSlateGray;
         
             }
         }
@@ -199,21 +199,12 @@ namespace SistemaConsultorioMedico
 
         }
 
-        private void guardarPac_Btn_Click(object sender, EventArgs e)
-        {
-            var random = new Random().Next(10000000, 99999999);
-            Modelos.Paciente paciente = new Modelos.Paciente(random, ((curDate.Year) - Convert.ToInt32(Convert.ToDateTime(FechaNacTxb.Text).Year)), NombreTxb.Text, NombreTxb.Text,
-                                                            NombreTxb.Text, LugarNaciTxb.Text, Direcciontxb.Text, TelefonoTxb.Text, CorreoETxb.Text,
-                                                            OcupacionTxb.Text, TelefonoTxb.Text, LugarTrabajoTxb.Text, Convert.ToDateTime(FechaNacTxb.Text));
-            Controladores.PacienteController.altaPaciente(paciente);
-        }
-
         private void ApellidoPaternoTbx_MouseEnter(object sender, EventArgs e)
         {
-            if (LugarTrabajoTxb.Text == "APELLIDO PATERNO")
+            if (ApellidoPaternoTbx.Text == "APELLIDO PATERNO")
             {
-                LugarTrabajoTxb.Text = "";
-                LugarTrabajoTxb.ForeColor = Color.DarkSlateGray;
+                ApellidoPaternoTbx.Text = "";
+                ApellidoPaternoTbx.ForeColor = Color.DarkSlateGray;
             }
         }
 
@@ -243,6 +234,26 @@ namespace SistemaConsultorioMedico
                 ApellidoMaternoTxb.ForeColor = Color.DarkSlateGray;
             }
         }
+        private void guardarPac_Btn_Click(object sender, EventArgs e)
+        {
+            var random = new Random().Next(10000000, 99999999);
+            Modelos.Paciente paciente = new Modelos.Paciente(random, ((curDate.Year) - Convert.ToInt32(Convert.ToDateTime(FechaNacTxb.Text).Year)), NombreTxb.Text, ApellidoPaternoTbx.Text,
+                                                            ApellidoMaternoTxb.Text, LugarNaciTxb.Text, Direcciontxb.Text, TelefonoTxb.Text, CorreoETxb.Text,
+                                                            OcupacionTxb.Text, TelefonoTxb.Text, LugarTrabajoTxb.Text, Convert.ToDateTime(FechaNacTxb.Text));
+            Controladores.PacienteController.altaPaciente(paciente);
+            NombreTxb.Text = "NOMBRES";
+            ApellidoPaternoTbx.Text = "APELLIDO PATERNO";
+            ApellidoMaternoTxb.Text = "APELLIDO MATERNO";
+            FechaNacTxb.Text = "FECHA NACIMIENTO";
+            LugarNaciTxb.Text = "LUGAR DE NACIMIENTO";
+            Direcciontxb.Text = "DIRECCION";
+            TelefonoTxb.Text = "TELEFONO";
+            CorreoETxb.Text = "CORREO ELECTRONICO";
+            OcupacionTxb.Text = "OCUPACION";
+            LugarTrabajoTxb.Text = "LUGAR DE TRABAJO";
+        }
+
+        
 
         private void BuscarTbx_OnTextChange(object sender, EventArgs e)
         {
