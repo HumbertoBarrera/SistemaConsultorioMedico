@@ -23,7 +23,7 @@ namespace SistemaConsultorioMedico
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

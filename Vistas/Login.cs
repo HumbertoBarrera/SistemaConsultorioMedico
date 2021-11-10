@@ -95,12 +95,15 @@ namespace SistemaConsultorioMedico
         {
             Form AbrirMenu = new Menuform();
             AbrirMenu.Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Form AbrirMenu2 = new MenuPrincipalSecretaria();
             AbrirMenu2.Show();
+            this.Hide();
+
         }
 
         private void linkLabel1_MouseClick(object sender, MouseEventArgs e)

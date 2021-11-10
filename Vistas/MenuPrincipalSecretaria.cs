@@ -66,7 +66,9 @@ namespace SistemaConsultorioMedico
 
         private void Maximizar_Click(object sender, EventArgs e)
         {
-            WindowState = FormWindowState.Minimized;
+            WindowState = FormWindowState.Maximized;
+            Maximizar.Visible = false;
+            Restaurar.Visible = true;
         }
 
         private void Salir_Click(object sender, EventArgs e)

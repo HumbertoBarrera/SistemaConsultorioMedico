@@ -20,9 +20,9 @@ namespace SistemaConsultorioMedico
             InitializeComponent();
         }
 
-        private void bunifuMaterialTextbox1_MouseEnter(object sender, EventArgs e)
+        private void NombreTxb_MouseEnter(object sender, EventArgs e)
         {
-            if(NombreTxb.Text == "NOMBRE")
+            if(NombreTxb.Text == "NOMBRES")
             {
                 NombreTxb.Text = "";
                 NombreTxb.ForeColor = Color.DarkRed;
@@ -30,11 +30,11 @@ namespace SistemaConsultorioMedico
             }
         }
 
-        private void bunifuMaterialTextbox1_MouseLeave(object sender, EventArgs e)
+        private void NombreTxb_MouseLeave(object sender, EventArgs e)
         {
             if (NombreTxb.Text == "")
             {
-                NombreTxb.Text = "NOMBRE";
+                NombreTxb.Text = "NOMBRES";
                 NombreTxb.ForeColor = Color.DarkSlateGray;
              
             }
@@ -206,6 +206,47 @@ namespace SistemaConsultorioMedico
                                                             NombreTxb.Text, LugarNaciTxb.Text, Direcciontxb.Text, TelefonoTxb.Text, CorreoETxb.Text,
                                                             OcupacionTxb.Text, TelefonoTxb.Text, LugarTrabajoTxb.Text, Convert.ToDateTime(FechaNacTxb.Text));
             Controladores.PacienteController.altaPaciente(paciente);
+        }
+
+        private void ApellidoPaternoTbx_MouseEnter(object sender, EventArgs e)
+        {
+            if (LugarTrabajoTxb.Text == "APELLIDO PATERNO")
+            {
+                LugarTrabajoTxb.Text = "";
+                LugarTrabajoTxb.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void ApellidoPaternoTbx_MouseLeave(object sender, EventArgs e)
+        {
+            if (ApellidoPaternoTbx.Text == "")
+            {
+                ApellidoPaternoTbx.Text = "APELLIDO PATERNO";
+                ApellidoPaternoTbx.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void ApellidoMaternoTxb_MouseEnter(object sender, EventArgs e)
+        {
+            if (ApellidoMaternoTxb.Text == "APELLIDO MATERNO")
+            {
+                ApellidoMaternoTxb.Text = "";
+                ApellidoMaternoTxb.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void ApellidoMaternoTxb_MouseLeave(object sender, EventArgs e)
+        {
+            if (ApellidoMaternoTxb.Text == "")
+            {
+                ApellidoMaternoTxb.Text = "APELLIDO MATERNO";
+                ApellidoMaternoTxb.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void BuscarTbx_OnTextChange(object sender, EventArgs e)
+        {
+
         }
     }
 }
