@@ -237,7 +237,7 @@ namespace SistemaConsultorioMedico
         private void guardarPac_Btn_Click(object sender, EventArgs e)
         {
             if(NombreTxb.Text != "NOMBRES" & ApellidoMaternoTxb.Text != "APELLIDO PATERNO" & ApellidoMaternoTxb.Text != "APELLIDO MATERNO" & FechaNacTxb.Text != "FECHA NACIMIENTO" & LugarNaciTxb.Text != "LUGAR DE NACIMIENTO" &
-               Direcciontxb.Text != "DIRECCION" & TelefonoTxb.Text != "TELEFONO" & CorreoETxb.Text != "CORREO ELECTRONICO" & OcupacionTxb.Text != "OCUPACION" & LugarTrabajoTxb.Text != "OCUPACION" ||
+               Direcciontxb.Text != "DIRECCION" & TelefonoTxb.Text != "TELEFONO" & CorreoETxb.Text != "CORREO ELECTRONICO" & OcupacionTxb.Text != "OCUPACION" & LugarTrabajoTxb.Text != "OCUPACION" &
                NombreTxb.Text != "" & ApellidoMaternoTxb.Text != "" & ApellidoMaternoTxb.Text != "" & FechaNacTxb.Text != " " & LugarNaciTxb.Text != "" &
                Direcciontxb.Text != "" & TelefonoTxb.Text != "" & CorreoETxb.Text != "" & OcupacionTxb.Text != "" & LugarTrabajoTxb.Text != "")
             {
