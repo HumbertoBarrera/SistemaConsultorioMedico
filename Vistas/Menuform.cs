@@ -17,6 +17,7 @@ namespace SistemaConsultorioMedico
             InitializeComponent();
         }
 
+        int idPaciente;
         private void Salir_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -108,7 +109,7 @@ namespace SistemaConsultorioMedico
 
         private void diagnosticoBtn_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo2(new Diagnostico());
+            AbrirFormHijo2(new Diagnostico(idPaciente));
         }
 
         private void contenidoPnl_Paint(object sender, PaintEventArgs e)

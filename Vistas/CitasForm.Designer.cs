@@ -74,6 +74,7 @@ namespace SistemaConsultorioMedico
             this.GuardarCitaBtn.Size = new System.Drawing.Size(209, 50);
             this.GuardarCitaBtn.TabIndex = 16;
             this.GuardarCitaBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.GuardarCitaBtn.Click += new System.EventHandler(this.GuardarCitaBtn_Click);
             // 
             // ModificarCitaBtn
             // 

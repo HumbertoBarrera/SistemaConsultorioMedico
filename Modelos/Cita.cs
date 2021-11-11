@@ -9,11 +9,41 @@ namespace SistemaConsultorioMedico.Modelos
     class Cita
     {
 
-        public int idPaciente { get; set; }
+        int idPaciente;
+        DateTime fecha;
+        TimeSpan hora;
 
-        public DateTime fecha { get; set; }
+        public void setIdPaciente(int idPaciente)
+        {
+            this.idPaciente = idPaciente;
+        }
 
-        public TimeSpan hora { get; set; }
+        public void setFecha(DateTime fecha)
+        {
+            this.fecha = fecha;
+        }
+
+        public void setHora(TimeSpan hora)
+        {
+            this.hora = hora;
+        }
+
+        public int getIdPaciente()
+        {
+            return idPaciente;
+        }
+
+        public DateTime getFecha()
+        {
+            return fecha;
+        }
+
+        public TimeSpan getHora()
+        {
+            return hora;
+        }
+
+
 
     }
 }
