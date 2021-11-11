@@ -12,9 +12,12 @@ namespace SistemaConsultorioMedico
 {
     public partial class Diagnostico : Form
     {
-        public Diagnostico()
+        int idPaciente;
+        public Diagnostico(int idPaciente)
         {
             InitializeComponent();
+            this.idPaciente = idPaciente;
+            PacienteTxb.Text = idPaciente.ToString();
         }
 
         private void FechaTxb_MouseEnter(object sender, EventArgs e)
@@ -69,6 +72,21 @@ namespace SistemaConsultorioMedico
                 PacienteTxb.Text = "PACIENTE";
                 PacienteTxb.ForeColor = Color.DarkSlateGray;
             }
+        }
+
+        private void guardarbtn_Click(object sender, EventArgs e)
+        {
+            DateTime fecha = Convert.ToDateTime(FechaTxb.Text);
+            Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
+
+            diagnostico.setIdPaciente(idPaciente);
+            diagnostico.setFecha(fecha);
+            diagnostico.setDescripcion(Descripciontxb.Text);
+
+            Controladores.DiagnosticoController.folio(diagnostico);
+            MessageBox.Show(diagnostico.getIdPaciente().ToString());
+
+            Controladores.DiagnosticoController.insertarDiagnostico(diagnostico);
         }
     }
 }

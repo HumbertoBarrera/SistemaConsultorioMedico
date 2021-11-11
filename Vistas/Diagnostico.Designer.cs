@@ -34,10 +34,9 @@ namespace SistemaConsultorioMedico
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.FechaTxb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.Descripciontxb = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuThinButton25 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.guardarbtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.EliminarCitaBtn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.PacienteCbx = new Bunifu.Framework.UI.BunifuDropdown();
             this.PacienteTxb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.SuspendLayout();
             // 
@@ -98,30 +97,31 @@ namespace SistemaConsultorioMedico
             this.Descripciontxb.MouseEnter += new System.EventHandler(this.Descripciontxb_MouseEnter);
             this.Descripciontxb.MouseLeave += new System.EventHandler(this.Descripciontxb_MouseLeave);
             // 
-            // bunifuThinButton25
+            // guardarbtn
             // 
-            this.bunifuThinButton25.ActiveBorderThickness = 1;
-            this.bunifuThinButton25.ActiveCornerRadius = 20;
-            this.bunifuThinButton25.ActiveFillColor = System.Drawing.SystemColors.ActiveCaption;
-            this.bunifuThinButton25.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton25.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton25.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.bunifuThinButton25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton25.BackgroundImage")));
-            this.bunifuThinButton25.ButtonText = "GUARDAR";
-            this.bunifuThinButton25.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton25.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton25.ForeColor = System.Drawing.Color.ForestGreen;
-            this.bunifuThinButton25.IdleBorderThickness = 1;
-            this.bunifuThinButton25.IdleCornerRadius = 20;
-            this.bunifuThinButton25.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton25.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.bunifuThinButton25.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.bunifuThinButton25.Location = new System.Drawing.Point(510, 532);
-            this.bunifuThinButton25.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton25.Name = "bunifuThinButton25";
-            this.bunifuThinButton25.Size = new System.Drawing.Size(157, 41);
-            this.bunifuThinButton25.TabIndex = 34;
-            this.bunifuThinButton25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.guardarbtn.ActiveBorderThickness = 1;
+            this.guardarbtn.ActiveCornerRadius = 20;
+            this.guardarbtn.ActiveFillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.guardarbtn.ActiveForecolor = System.Drawing.Color.White;
+            this.guardarbtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.guardarbtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.guardarbtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guardarbtn.BackgroundImage")));
+            this.guardarbtn.ButtonText = "GUARDAR";
+            this.guardarbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guardarbtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guardarbtn.ForeColor = System.Drawing.Color.ForestGreen;
+            this.guardarbtn.IdleBorderThickness = 1;
+            this.guardarbtn.IdleCornerRadius = 20;
+            this.guardarbtn.IdleFillColor = System.Drawing.Color.White;
+            this.guardarbtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.guardarbtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.guardarbtn.Location = new System.Drawing.Point(510, 532);
+            this.guardarbtn.Margin = new System.Windows.Forms.Padding(5);
+            this.guardarbtn.Name = "guardarbtn";
+            this.guardarbtn.Size = new System.Drawing.Size(157, 41);
+            this.guardarbtn.TabIndex = 34;
+            this.guardarbtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.guardarbtn.Click += new System.EventHandler(this.guardarbtn_Click);
             // 
             // bunifuThinButton24
             // 
@@ -173,21 +173,6 @@ namespace SistemaConsultorioMedico
             this.EliminarCitaBtn.TabIndex = 36;
             this.EliminarCitaBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // PacienteCbx
-            // 
-            this.PacienteCbx.BackColor = System.Drawing.Color.Transparent;
-            this.PacienteCbx.BorderRadius = 3;
-            this.PacienteCbx.DisabledColor = System.Drawing.Color.Gray;
-            this.PacienteCbx.ForeColor = System.Drawing.Color.White;
-            this.PacienteCbx.Items = new string[0];
-            this.PacienteCbx.Location = new System.Drawing.Point(47, 91);
-            this.PacienteCbx.Name = "PacienteCbx";
-            this.PacienteCbx.NomalColor = System.Drawing.Color.Purple;
-            this.PacienteCbx.onHoverColor = System.Drawing.Color.Blue;
-            this.PacienteCbx.selectedIndex = -1;
-            this.PacienteCbx.Size = new System.Drawing.Size(217, 23);
-            this.PacienteCbx.TabIndex = 37;
-            // 
             // PacienteTxb
             // 
             this.PacienteTxb.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -217,10 +202,9 @@ namespace SistemaConsultorioMedico
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1015, 604);
             this.Controls.Add(this.PacienteTxb);
-            this.Controls.Add(this.PacienteCbx);
             this.Controls.Add(this.EliminarCitaBtn);
             this.Controls.Add(this.bunifuThinButton24);
-            this.Controls.Add(this.bunifuThinButton25);
+            this.Controls.Add(this.guardarbtn);
             this.Controls.Add(this.Descripciontxb);
             this.Controls.Add(this.FechaTxb);
             this.Controls.Add(this.linea);
@@ -240,10 +224,9 @@ namespace SistemaConsultorioMedico
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox FechaTxb;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox Descripciontxb;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton25;
+        private Bunifu.Framework.UI.BunifuThinButton2 guardarbtn;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
         private Bunifu.Framework.UI.BunifuThinButton2 EliminarCitaBtn;
-        private Bunifu.Framework.UI.BunifuDropdown PacienteCbx;
         private Bunifu.Framework.UI.BunifuMaterialTextbox PacienteTxb;
     }
 }
