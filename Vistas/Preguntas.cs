@@ -105,19 +105,19 @@ namespace SistemaConsultorioMedico
 
         private void DesdeCuandoTxb_MouseEnter(object sender, EventArgs e)
         {
-            if (DesdeCuandoTxb.Text == "¿DESDE CUANDO?")
+            if (DesdeCuandoTxb1.Text == "¿DESDE CUANDO?")
             {
-                DesdeCuandoTxb.Text = "";
-                DesdeCuandoTxb.ForeColor = Color.DarkSlateGray;
+                DesdeCuandoTxb1.Text = "";
+                DesdeCuandoTxb1.ForeColor = Color.DarkSlateGray;
             }
         }
 
         private void DesdeCuandoTxb_MouseLeave(object sender, EventArgs e)
         {
-            if (DesdeCuandoTxb.Text == "")
+            if (DesdeCuandoTxb1.Text == "")
             {
-                DesdeCuandoTxb.Text = "¿DESDE CUANDO?";
-                DesdeCuandoTxb.ForeColor = Color.DarkSlateGray;
+                DesdeCuandoTxb1.Text = "¿DESDE CUANDO?";
+                DesdeCuandoTxb1.ForeColor = Color.DarkSlateGray;
             }
         }
 
@@ -145,6 +145,209 @@ namespace SistemaConsultorioMedico
             {
                 OtroTbx.Text = "OTRO";
                 OtroTbx.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TomaTxb_MouseEnter(object sender, EventArgs e)
+        {
+            if (TomaTxb.Text == "¿TOMA?")
+            {
+                TomaTxb.Text = "";
+                TomaTxb.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void TomaTxb_MouseLeave(object sender, EventArgs e)
+        {
+            if (TomaTxb.Text == "")
+            {
+                TomaTxb.Text = "¿TOMA?";
+                TomaTxb.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void DesdeCuandoTbx2_MouseEnter(object sender, EventArgs e)
+        {
+            if (DesdeCuandoTbx2.Text == "¿DESDE CUANDO?")
+            {
+                DesdeCuandoTbx2.Text = "";
+                DesdeCuandoTbx2.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void DesdeCuandoTbx2_MouseLeave(object sender, EventArgs e)
+        {
+            if (DesdeCuandoTbx2.Text == "")
+            {
+                DesdeCuandoTbx2.Text = "¿DESDE CUANDO?";
+                DesdeCuandoTbx2.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void QueTandoDiarioTxb2_MouseEnter(object sender, EventArgs e)
+        {
+            if (QueTandoDiarioTxb2.Text == "¿QUE TANTO DIARIO?")
+            {
+                QueTandoDiarioTxb2.Text = "";
+                QueTandoDiarioTxb2.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void QueTandoDiarioTxb2_MouseLeave(object sender, EventArgs e)
+        {
+            if (QueTandoDiarioTxb2.Text == "")
+            {
+                QueTandoDiarioTxb2.Text = "¿QUE TANTO DIARIO?";
+                QueTandoDiarioTxb2.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void EsAdictaADrogasTbx_MouseEnter(object sender, EventArgs e)
+        {
+            if (EsAdictaADrogasTbx.Text == "¿ES ADICTO A DROGAS?")
+            {
+                EsAdictaADrogasTbx.Text = "";
+                EsAdictaADrogasTbx.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void EsAdictaADrogasTbx_MouseLeave(object sender, EventArgs e)
+        {
+            if (EsAdictaADrogasTbx.Text == "")
+            {
+                EsAdictaADrogasTbx.Text = "¿ES ADICTO A DROGAS?";
+                EsAdictaADrogasTbx.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void CualesTbx_MouseEnter(object sender, EventArgs e)
+        {
+            if (CualesTbx.Text == "¿CUALES?")
+            {
+                CualesTbx.Text = "";
+                CualesTbx.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void CualesTbx_MouseLeave(object sender, EventArgs e)
+        {
+            if (CualesTbx.Text == "")
+            {
+                CualesTbx.Text = "¿CUALES?";
+                CualesTbx.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void DesdeCuandoTbx3_MouseEnter(object sender, EventArgs e)
+        {
+            if (DesdeCuandoTbx3.Text == "¿DESDE CUANDO?")
+            {
+                DesdeCuandoTbx3.Text = "";
+                DesdeCuandoTbx3.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void DesdeCuandoTbx3_MouseLeave(object sender, EventArgs e)
+        {
+            if (DesdeCuandoTbx3.Text == "")
+            {
+                DesdeCuandoTbx3.Text = "¿DESDE CUANDO?";
+                DesdeCuandoTbx3.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void QueTantoDiariamenteTbx_MouseEnter(object sender, EventArgs e)
+        {
+            if (QueTantoDiariamenteTbx.Text == "¿QUE TANTO DIARIO?")
+            {
+                QueTantoDiariamenteTbx.Text = "";
+                QueTantoDiariamenteTbx.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void QueTantoDiariamenteTbx_MouseLeave(object sender, EventArgs e)
+        {
+            if (QueTantoDiariamenteTbx.Text == "")
+            {
+                QueTantoDiariamenteTbx.Text = "¿QUE TANTO DIARIAMENTE?";
+                QueTantoDiariamenteTbx.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void MensualmenteTbx_MouseEnter(object sender, EventArgs e)
+        {
+            if (MensualmenteTbx.Text == "¿MENSUALMENTE?")
+            {
+                MensualmenteTbx.Text = "";
+                MensualmenteTbx.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void MensualmenteTbx_MouseLeave(object sender, EventArgs e)
+        {
+            if (MensualmenteTbx.Text == "")
+            {
+                MensualmenteTbx.Text = "¿MENSUALMENTE?";
+                MensualmenteTbx.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void PersonasDuermenEnCuartoTbx_MouseEnter(object sender, EventArgs e)
+        {
+            if (PersonasDuermenEnCuartoTbx.Text == "¿CUANTAS PERSONAS DUERMEN EN SU CUARTO??")
+            {
+                PersonasDuermenEnCuartoTbx.Text = "";
+                PersonasDuermenEnCuartoTbx.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void PersonasDuermenEnCuartoTbx_MouseLeave(object sender, EventArgs e)
+        {
+            if (PersonasDuermenEnCuartoTbx.Text == "")
+            {
+                PersonasDuermenEnCuartoTbx.Text = "¿CUANTAS PERSONAS DUERMEN EN SU CUARTO?";
+                PersonasDuermenEnCuartoTbx.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void ConsideraBuenaAlimentacionTbx_MouseEnter(object sender, EventArgs e)
+        {
+            if (ConsideraBuenaAlimentacionTbx.Text == "¿CONSIDERA QUE SE ALIMENTA BIEN?")
+            {
+                ConsideraBuenaAlimentacionTbx.Text = "";
+                ConsideraBuenaAlimentacionTbx.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void ConsideraBuenaAlimentacionTbx_MouseLeave(object sender, EventArgs e)
+        {
+            if (ConsideraBuenaAlimentacionTbx.Text == "")
+            {
+                ConsideraBuenaAlimentacionTbx.Text = "¿CONSIDERA QUE SE ALIMENTA BIEN?";
+                ConsideraBuenaAlimentacionTbx.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void ComentarioTbx_MouseEnter(object sender, EventArgs e)
+        {
+            if (ComentarioTbx.Text == "¿ALGUN COMENTARIO AL RESPECTO?")
+            {
+                ComentarioTbx.Text = "";
+                ComentarioTbx.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void ComentarioTbx_MouseLeave(object sender, EventArgs e)
+        {
+            if (ComentarioTbx.Text == "")
+            {
+                ComentarioTbx.Text = "¿ALGUN COMENTARIO AL RESPECTO?";
+                ComentarioTbx.ForeColor = Color.DarkSlateGray;
             }
         }
     }
