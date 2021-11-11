@@ -12,10 +12,7 @@ namespace SistemaConsultorioMedico.Modelos
         private DateTime fecha;
         private String descripcion, folioDiagnostico;
 
-        public Diagnostico()
-        {
-
-        }
+     
 
         public void setIdPaciente(int idPaciente)
         {

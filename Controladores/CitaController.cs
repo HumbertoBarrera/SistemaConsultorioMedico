@@ -12,10 +12,10 @@ namespace SistemaConsultorioMedico.Controladores
     class CitaController
     {
 
-        public static void insertarCita(int idPacienteV, DateTime fechaV, TimeSpan horaV)
+        public static void insertarCita(Modelos.Cita c)
         {
             SqlCommand comando;
-            comando = new SqlCommand("INSERT INTO CITA VALUES ('" + idPacienteV + "','" + fechaV + "','" + horaV + "')", Controladores.ConexionController.Conectar());
+            comando = new SqlCommand("INSERT INTO CITA VALUES ('" + c.getIdPaciente() + "','" + c.getFecha() + "','" + c.getHora() + "')", Controladores.ConexionController.Conectar());
             int r = comando.ExecuteNonQuery();
 
 

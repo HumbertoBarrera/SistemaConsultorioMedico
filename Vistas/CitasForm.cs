@@ -91,11 +91,17 @@ namespace SistemaConsultorioMedico
 
         private void GuardarCitaBtn_Click(object sender, EventArgs e)
         {
+            Modelos.Cita cita = new Modelos.Cita();
+
             int idPacienteV = int.Parse(PacienteCitaTxb.Text);
             DateTime fechaV = Convert.ToDateTime(FechaCitaTxb.Text);
             TimeSpan horaV = TimeSpan.Parse(HoraCitaTxb.Text);
 
-            Controladores.CitaController.insertarCita(idPacienteV, fechaV, horaV);
+            cita.setIdPaciente(idPacienteV);
+            cita.setFecha(fechaV);
+            cita.setHora(horaV);
+
+            Controladores.CitaController.insertarCita(cita);
         }
     }
 }
