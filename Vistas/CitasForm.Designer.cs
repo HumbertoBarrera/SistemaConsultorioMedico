@@ -68,10 +68,10 @@ namespace SistemaConsultorioMedico
             this.GuardarCitaBtn.IdleFillColor = System.Drawing.Color.White;
             this.GuardarCitaBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.GuardarCitaBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.GuardarCitaBtn.Location = new System.Drawing.Point(22, 474);
-            this.GuardarCitaBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.GuardarCitaBtn.Location = new System.Drawing.Point(29, 583);
+            this.GuardarCitaBtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.GuardarCitaBtn.Name = "GuardarCitaBtn";
-            this.GuardarCitaBtn.Size = new System.Drawing.Size(157, 41);
+            this.GuardarCitaBtn.Size = new System.Drawing.Size(209, 50);
             this.GuardarCitaBtn.TabIndex = 16;
             this.GuardarCitaBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -93,10 +93,10 @@ namespace SistemaConsultorioMedico
             this.ModificarCitaBtn.IdleFillColor = System.Drawing.Color.White;
             this.ModificarCitaBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ModificarCitaBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ModificarCitaBtn.Location = new System.Drawing.Point(204, 474);
-            this.ModificarCitaBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.ModificarCitaBtn.Location = new System.Drawing.Point(272, 583);
+            this.ModificarCitaBtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.ModificarCitaBtn.Name = "ModificarCitaBtn";
-            this.ModificarCitaBtn.Size = new System.Drawing.Size(157, 41);
+            this.ModificarCitaBtn.Size = new System.Drawing.Size(209, 50);
             this.ModificarCitaBtn.TabIndex = 15;
             this.ModificarCitaBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -118,10 +118,10 @@ namespace SistemaConsultorioMedico
             this.EliminarCitaBtn.IdleFillColor = System.Drawing.Color.White;
             this.EliminarCitaBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.EliminarCitaBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.EliminarCitaBtn.Location = new System.Drawing.Point(22, 525);
-            this.EliminarCitaBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.EliminarCitaBtn.Location = new System.Drawing.Point(29, 646);
+            this.EliminarCitaBtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.EliminarCitaBtn.Name = "EliminarCitaBtn";
-            this.EliminarCitaBtn.Size = new System.Drawing.Size(157, 41);
+            this.EliminarCitaBtn.Size = new System.Drawing.Size(209, 50);
             this.EliminarCitaBtn.TabIndex = 14;
             this.EliminarCitaBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -137,10 +137,10 @@ namespace SistemaConsultorioMedico
             this.FechaCitaTxb.LineIdleColor = System.Drawing.Color.Purple;
             this.FechaCitaTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.FechaCitaTxb.LineThickness = 3;
-            this.FechaCitaTxb.Location = new System.Drawing.Point(33, 154);
-            this.FechaCitaTxb.Margin = new System.Windows.Forms.Padding(4);
+            this.FechaCitaTxb.Location = new System.Drawing.Point(44, 190);
+            this.FechaCitaTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.FechaCitaTxb.Name = "FechaCitaTxb";
-            this.FechaCitaTxb.Size = new System.Drawing.Size(379, 33);
+            this.FechaCitaTxb.Size = new System.Drawing.Size(505, 41);
             this.FechaCitaTxb.TabIndex = 19;
             this.FechaCitaTxb.Text = "FECHA";
             this.FechaCitaTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -159,10 +159,10 @@ namespace SistemaConsultorioMedico
             this.PacienteCitaTxb.LineIdleColor = System.Drawing.Color.Purple;
             this.PacienteCitaTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.PacienteCitaTxb.LineThickness = 3;
-            this.PacienteCitaTxb.Location = new System.Drawing.Point(33, 113);
-            this.PacienteCitaTxb.Margin = new System.Windows.Forms.Padding(4);
+            this.PacienteCitaTxb.Location = new System.Drawing.Point(44, 139);
+            this.PacienteCitaTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.PacienteCitaTxb.Name = "PacienteCitaTxb";
-            this.PacienteCitaTxb.Size = new System.Drawing.Size(379, 33);
+            this.PacienteCitaTxb.Size = new System.Drawing.Size(505, 41);
             this.PacienteCitaTxb.TabIndex = 21;
             this.PacienteCitaTxb.Text = "PACIENTE";
             this.PacienteCitaTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -181,10 +181,10 @@ namespace SistemaConsultorioMedico
             this.HoraCitaTxb.LineIdleColor = System.Drawing.Color.Purple;
             this.HoraCitaTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.HoraCitaTxb.LineThickness = 3;
-            this.HoraCitaTxb.Location = new System.Drawing.Point(33, 195);
-            this.HoraCitaTxb.Margin = new System.Windows.Forms.Padding(4);
+            this.HoraCitaTxb.Location = new System.Drawing.Point(44, 240);
+            this.HoraCitaTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.HoraCitaTxb.Name = "HoraCitaTxb";
-            this.HoraCitaTxb.Size = new System.Drawing.Size(379, 33);
+            this.HoraCitaTxb.Size = new System.Drawing.Size(505, 41);
             this.HoraCitaTxb.TabIndex = 22;
             this.HoraCitaTxb.Text = "HORA";
             this.HoraCitaTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -211,10 +211,12 @@ namespace SistemaConsultorioMedico
             this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
             this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(33, 235);
+            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(44, 289);
+            this.bunifuCustomDataGrid1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
             this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(379, 178);
+            this.bunifuCustomDataGrid1.RowHeadersWidth = 51;
+            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(505, 219);
             this.bunifuCustomDataGrid1.TabIndex = 23;
             // 
             // bunifuCustomDataGrid2
@@ -237,10 +239,12 @@ namespace SistemaConsultorioMedico
             this.bunifuCustomDataGrid2.EnableHeadersVisualStyles = false;
             this.bunifuCustomDataGrid2.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomDataGrid2.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid2.Location = new System.Drawing.Point(441, 102);
+            this.bunifuCustomDataGrid2.Location = new System.Drawing.Point(588, 126);
+            this.bunifuCustomDataGrid2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuCustomDataGrid2.Name = "bunifuCustomDataGrid2";
             this.bunifuCustomDataGrid2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid2.Size = new System.Drawing.Size(541, 346);
+            this.bunifuCustomDataGrid2.RowHeadersWidth = 51;
+            this.bunifuCustomDataGrid2.Size = new System.Drawing.Size(721, 426);
             this.bunifuCustomDataGrid2.TabIndex = 25;
             // 
             // BuscarTbx
@@ -251,10 +255,10 @@ namespace SistemaConsultorioMedico
             this.BuscarTbx.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuscarTbx.ForeColor = System.Drawing.Color.Purple;
             this.BuscarTbx.Icon = ((System.Drawing.Image)(resources.GetObject("BuscarTbx.Icon")));
-            this.BuscarTbx.Location = new System.Drawing.Point(615, 68);
-            this.BuscarTbx.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BuscarTbx.Location = new System.Drawing.Point(820, 84);
+            this.BuscarTbx.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BuscarTbx.Name = "BuscarTbx";
-            this.BuscarTbx.Size = new System.Drawing.Size(367, 27);
+            this.BuscarTbx.Size = new System.Drawing.Size(489, 33);
             this.BuscarTbx.TabIndex = 26;
             this.BuscarTbx.text = "";
             this.BuscarTbx.MouseEnter += new System.EventHandler(this.BuscarTbx_MouseEnter);
@@ -278,10 +282,10 @@ namespace SistemaConsultorioMedico
             this.PacientesBtn.IdleFillColor = System.Drawing.Color.White;
             this.PacientesBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.PacientesBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.PacientesBtn.Location = new System.Drawing.Point(825, 474);
-            this.PacientesBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.PacientesBtn.Location = new System.Drawing.Point(1100, 583);
+            this.PacientesBtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.PacientesBtn.Name = "PacientesBtn";
-            this.PacientesBtn.Size = new System.Drawing.Size(157, 41);
+            this.PacientesBtn.Size = new System.Drawing.Size(209, 50);
             this.PacientesBtn.TabIndex = 27;
             this.PacientesBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -290,9 +294,10 @@ namespace SistemaConsultorioMedico
             this.linea.BackColor = System.Drawing.Color.Transparent;
             this.linea.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(128)))));
             this.linea.LineThickness = 1;
-            this.linea.Location = new System.Drawing.Point(335, 58);
+            this.linea.Location = new System.Drawing.Point(447, 71);
+            this.linea.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.linea.Name = "linea";
-            this.linea.Size = new System.Drawing.Size(170, 10);
+            this.linea.Size = new System.Drawing.Size(227, 12);
             this.linea.TabIndex = 29;
             this.linea.Transparency = 255;
             this.linea.Vertical = false;
@@ -301,18 +306,19 @@ namespace SistemaConsultorioMedico
             // 
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(383, 32);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(511, 39);
+            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(62, 23);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(79, 30);
             this.bunifuCustomLabel2.TabIndex = 28;
             this.bunifuCustomLabel2.Text = "CITAS";
             // 
             // CitasForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1029, 570);
+            this.ClientSize = new System.Drawing.Size(1372, 702);
             this.Controls.Add(this.linea);
             this.Controls.Add(this.bunifuCustomLabel2);
             this.Controls.Add(this.PacientesBtn);
@@ -326,7 +332,9 @@ namespace SistemaConsultorioMedico
             this.Controls.Add(this.ModificarCitaBtn);
             this.Controls.Add(this.EliminarCitaBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "CitasForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CitasForm";
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).EndInit();

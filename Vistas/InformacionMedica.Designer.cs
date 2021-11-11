@@ -64,7 +64,7 @@ namespace SistemaConsultorioMedico
             this.SometidaACirugiaTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.SometidaACirugiaTxb.LineThickness = 3;
             this.SometidaACirugiaTxb.Location = new System.Drawing.Point(31, 484);
-            this.SometidaACirugiaTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.SometidaACirugiaTxb.Margin = new System.Windows.Forms.Padding(5);
             this.SometidaACirugiaTxb.Name = "SometidaACirugiaTxb";
             this.SometidaACirugiaTxb.Size = new System.Drawing.Size(505, 41);
             this.SometidaACirugiaTxb.TabIndex = 12;
@@ -86,7 +86,7 @@ namespace SistemaConsultorioMedico
             this.AlergiaAlgunMedicamentoTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.AlergiaAlgunMedicamentoTxb.LineThickness = 3;
             this.AlergiaAlgunMedicamentoTxb.Location = new System.Drawing.Point(31, 433);
-            this.AlergiaAlgunMedicamentoTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.AlergiaAlgunMedicamentoTxb.Margin = new System.Windows.Forms.Padding(5);
             this.AlergiaAlgunMedicamentoTxb.Name = "AlergiaAlgunMedicamentoTxb";
             this.AlergiaAlgunMedicamentoTxb.Size = new System.Drawing.Size(505, 41);
             this.AlergiaAlgunMedicamentoTxb.TabIndex = 10;
@@ -108,7 +108,7 @@ namespace SistemaConsultorioMedico
             this.MedicamentoRegularidadTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.MedicamentoRegularidadTxb.LineThickness = 3;
             this.MedicamentoRegularidadTxb.Location = new System.Drawing.Point(32, 383);
-            this.MedicamentoRegularidadTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.MedicamentoRegularidadTxb.Margin = new System.Windows.Forms.Padding(5);
             this.MedicamentoRegularidadTxb.Name = "MedicamentoRegularidadTxb";
             this.MedicamentoRegularidadTxb.Size = new System.Drawing.Size(505, 41);
             this.MedicamentoRegularidadTxb.TabIndex = 8;
@@ -130,7 +130,7 @@ namespace SistemaConsultorioMedico
             this.AnimalesDomesticosTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.AnimalesDomesticosTxb.LineThickness = 3;
             this.AnimalesDomesticosTxb.Location = new System.Drawing.Point(32, 332);
-            this.AnimalesDomesticosTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.AnimalesDomesticosTxb.Margin = new System.Windows.Forms.Padding(5);
             this.AnimalesDomesticosTxb.Name = "AnimalesDomesticosTxb";
             this.AnimalesDomesticosTxb.Size = new System.Drawing.Size(647, 41);
             this.AnimalesDomesticosTxb.TabIndex = 6;
@@ -152,7 +152,7 @@ namespace SistemaConsultorioMedico
             this.AlergiaOEnfermedadCronitxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.AlergiaOEnfermedadCronitxb.LineThickness = 3;
             this.AlergiaOEnfermedadCronitxb.Location = new System.Drawing.Point(33, 282);
-            this.AlergiaOEnfermedadCronitxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.AlergiaOEnfermedadCronitxb.Margin = new System.Windows.Forms.Padding(5);
             this.AlergiaOEnfermedadCronitxb.Name = "AlergiaOEnfermedadCronitxb";
             this.AlergiaOEnfermedadCronitxb.Size = new System.Drawing.Size(583, 41);
             this.AlergiaOEnfermedadCronitxb.TabIndex = 4;
@@ -174,7 +174,7 @@ namespace SistemaConsultorioMedico
             this.MotivoPrimeraCitaTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.MotivoPrimeraCitaTbx.LineThickness = 3;
             this.MotivoPrimeraCitaTbx.Location = new System.Drawing.Point(32, 231);
-            this.MotivoPrimeraCitaTbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.MotivoPrimeraCitaTbx.Margin = new System.Windows.Forms.Padding(5);
             this.MotivoPrimeraCitaTbx.Name = "MotivoPrimeraCitaTbx";
             this.MotivoPrimeraCitaTbx.Size = new System.Drawing.Size(505, 41);
             this.MotivoPrimeraCitaTbx.TabIndex = 3;
@@ -196,7 +196,7 @@ namespace SistemaConsultorioMedico
             this.DoctorAnteriorTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.DoctorAnteriorTxb.LineThickness = 3;
             this.DoctorAnteriorTxb.Location = new System.Drawing.Point(33, 181);
-            this.DoctorAnteriorTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.DoctorAnteriorTxb.Margin = new System.Windows.Forms.Padding(5);
             this.DoctorAnteriorTxb.Name = "DoctorAnteriorTxb";
             this.DoctorAnteriorTxb.Size = new System.Drawing.Size(505, 41);
             this.DoctorAnteriorTxb.TabIndex = 2;
@@ -218,7 +218,7 @@ namespace SistemaConsultorioMedico
             this.RecomendacionTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.RecomendacionTxb.LineThickness = 3;
             this.RecomendacionTxb.Location = new System.Drawing.Point(33, 130);
-            this.RecomendacionTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.RecomendacionTxb.Margin = new System.Windows.Forms.Padding(5);
             this.RecomendacionTxb.Name = "RecomendacionTxb";
             this.RecomendacionTxb.Size = new System.Drawing.Size(505, 41);
             this.RecomendacionTxb.TabIndex = 1;
@@ -233,7 +233,7 @@ namespace SistemaConsultorioMedico
             this.linea.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(128)))));
             this.linea.LineThickness = 1;
             this.linea.Location = new System.Drawing.Point(388, 68);
-            this.linea.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.linea.Margin = new System.Windows.Forms.Padding(5);
             this.linea.Name = "linea";
             this.linea.Size = new System.Drawing.Size(327, 12);
             this.linea.TabIndex = 35;
@@ -264,7 +264,7 @@ namespace SistemaConsultorioMedico
             this.ComplicacionTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.ComplicacionTxb.LineThickness = 3;
             this.ComplicacionTxb.Location = new System.Drawing.Point(33, 542);
-            this.ComplicacionTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ComplicacionTxb.Margin = new System.Windows.Forms.Padding(5);
             this.ComplicacionTxb.Name = "ComplicacionTxb";
             this.ComplicacionTxb.Size = new System.Drawing.Size(505, 41);
             this.ComplicacionTxb.TabIndex = 14;
@@ -286,7 +286,7 @@ namespace SistemaConsultorioMedico
             this.CualtbxAlergia.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.CualtbxAlergia.LineThickness = 3;
             this.CualtbxAlergia.Location = new System.Drawing.Point(705, 282);
-            this.CualtbxAlergia.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.CualtbxAlergia.Margin = new System.Windows.Forms.Padding(5);
             this.CualtbxAlergia.Name = "CualtbxAlergia";
             this.CualtbxAlergia.Size = new System.Drawing.Size(505, 41);
             this.CualtbxAlergia.TabIndex = 5;
@@ -308,7 +308,7 @@ namespace SistemaConsultorioMedico
             this.CualTbxAnimales.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.CualTbxAnimales.LineThickness = 3;
             this.CualTbxAnimales.Location = new System.Drawing.Point(705, 332);
-            this.CualTbxAnimales.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.CualTbxAnimales.Margin = new System.Windows.Forms.Padding(5);
             this.CualTbxAnimales.Name = "CualTbxAnimales";
             this.CualTbxAnimales.Size = new System.Drawing.Size(505, 41);
             this.CualTbxAnimales.TabIndex = 7;
@@ -330,7 +330,7 @@ namespace SistemaConsultorioMedico
             this.CualTxbMedicamento.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.CualTxbMedicamento.LineThickness = 3;
             this.CualTxbMedicamento.Location = new System.Drawing.Point(705, 383);
-            this.CualTxbMedicamento.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.CualTxbMedicamento.Margin = new System.Windows.Forms.Padding(5);
             this.CualTxbMedicamento.Name = "CualTxbMedicamento";
             this.CualTxbMedicamento.Size = new System.Drawing.Size(505, 41);
             this.CualTxbMedicamento.TabIndex = 9;
@@ -352,7 +352,7 @@ namespace SistemaConsultorioMedico
             this.CualTxbAlergiaMedicamento.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.CualTxbAlergiaMedicamento.LineThickness = 3;
             this.CualTxbAlergiaMedicamento.Location = new System.Drawing.Point(705, 433);
-            this.CualTxbAlergiaMedicamento.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.CualTxbAlergiaMedicamento.Margin = new System.Windows.Forms.Padding(5);
             this.CualTxbAlergiaMedicamento.Name = "CualTxbAlergiaMedicamento";
             this.CualTxbAlergiaMedicamento.Size = new System.Drawing.Size(505, 41);
             this.CualTxbAlergiaMedicamento.TabIndex = 11;
@@ -374,7 +374,7 @@ namespace SistemaConsultorioMedico
             this.CuaTxbCirugia.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.CuaTxbCirugia.LineThickness = 3;
             this.CuaTxbCirugia.Location = new System.Drawing.Point(705, 484);
-            this.CuaTxbCirugia.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.CuaTxbCirugia.Margin = new System.Windows.Forms.Padding(5);
             this.CuaTxbCirugia.Name = "CuaTxbCirugia";
             this.CuaTxbCirugia.Size = new System.Drawing.Size(505, 41);
             this.CuaTxbCirugia.TabIndex = 13;
@@ -396,7 +396,7 @@ namespace SistemaConsultorioMedico
             this.CualTxbComplicacion.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.CualTxbComplicacion.LineThickness = 3;
             this.CualTxbComplicacion.Location = new System.Drawing.Point(705, 542);
-            this.CualTxbComplicacion.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.CualTxbComplicacion.Margin = new System.Windows.Forms.Padding(5);
             this.CualTxbComplicacion.Name = "CualTxbComplicacion";
             this.CualTxbComplicacion.Size = new System.Drawing.Size(505, 41);
             this.CualTxbComplicacion.TabIndex = 15;
@@ -482,8 +482,9 @@ namespace SistemaConsultorioMedico
             this.Controls.Add(this.DoctorAnteriorTxb);
             this.Controls.Add(this.RecomendacionTxb);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "InformacionMedica";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InformacionMedica";
             this.ResumeLayout(false);
             this.PerformLayout();

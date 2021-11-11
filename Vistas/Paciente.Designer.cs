@@ -31,8 +31,8 @@ namespace SistemaConsultorioMedico
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Paciente));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Guardarbtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.BuscarTbx = new Bunifu.Framework.UI.BunifuTextbox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -251,7 +251,7 @@ namespace SistemaConsultorioMedico
             this.NombreTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.NombreTxb.LineThickness = 3;
             this.NombreTxb.Location = new System.Drawing.Point(20, 112);
-            this.NombreTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.NombreTxb.Margin = new System.Windows.Forms.Padding(5);
             this.NombreTxb.Name = "NombreTxb";
             this.NombreTxb.Size = new System.Drawing.Size(505, 41);
             this.NombreTxb.TabIndex = 1;
@@ -274,7 +274,7 @@ namespace SistemaConsultorioMedico
             this.FechaNacTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.FechaNacTxb.LineThickness = 3;
             this.FechaNacTxb.Location = new System.Drawing.Point(17, 265);
-            this.FechaNacTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.FechaNacTxb.Margin = new System.Windows.Forms.Padding(5);
             this.FechaNacTxb.Name = "FechaNacTxb";
             this.FechaNacTxb.Size = new System.Drawing.Size(505, 41);
             this.FechaNacTxb.TabIndex = 4;
@@ -297,7 +297,7 @@ namespace SistemaConsultorioMedico
             this.LugarNaciTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.LugarNaciTxb.LineThickness = 3;
             this.LugarNaciTxb.Location = new System.Drawing.Point(16, 315);
-            this.LugarNaciTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.LugarNaciTxb.Margin = new System.Windows.Forms.Padding(5);
             this.LugarNaciTxb.Name = "LugarNaciTxb";
             this.LugarNaciTxb.Size = new System.Drawing.Size(505, 41);
             this.LugarNaciTxb.TabIndex = 5;
@@ -320,7 +320,7 @@ namespace SistemaConsultorioMedico
             this.Direcciontxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.Direcciontxb.LineThickness = 3;
             this.Direcciontxb.Location = new System.Drawing.Point(17, 366);
-            this.Direcciontxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Direcciontxb.Margin = new System.Windows.Forms.Padding(5);
             this.Direcciontxb.Name = "Direcciontxb";
             this.Direcciontxb.Size = new System.Drawing.Size(505, 41);
             this.Direcciontxb.TabIndex = 6;
@@ -342,7 +342,7 @@ namespace SistemaConsultorioMedico
             this.TelefonoTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.TelefonoTxb.LineThickness = 3;
             this.TelefonoTxb.Location = new System.Drawing.Point(16, 416);
-            this.TelefonoTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TelefonoTxb.Margin = new System.Windows.Forms.Padding(5);
             this.TelefonoTxb.Name = "TelefonoTxb";
             this.TelefonoTxb.Size = new System.Drawing.Size(505, 41);
             this.TelefonoTxb.TabIndex = 7;
@@ -364,7 +364,7 @@ namespace SistemaConsultorioMedico
             this.CorreoETxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.CorreoETxb.LineThickness = 3;
             this.CorreoETxb.Location = new System.Drawing.Point(16, 466);
-            this.CorreoETxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.CorreoETxb.Margin = new System.Windows.Forms.Padding(5);
             this.CorreoETxb.Name = "CorreoETxb";
             this.CorreoETxb.Size = new System.Drawing.Size(505, 41);
             this.CorreoETxb.TabIndex = 8;
@@ -386,7 +386,7 @@ namespace SistemaConsultorioMedico
             this.OcupacionTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.OcupacionTxb.LineThickness = 3;
             this.OcupacionTxb.Location = new System.Drawing.Point(15, 517);
-            this.OcupacionTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.OcupacionTxb.Margin = new System.Windows.Forms.Padding(5);
             this.OcupacionTxb.Name = "OcupacionTxb";
             this.OcupacionTxb.Size = new System.Drawing.Size(505, 41);
             this.OcupacionTxb.TabIndex = 9;
@@ -408,7 +408,7 @@ namespace SistemaConsultorioMedico
             this.LugarTrabajoTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.LugarTrabajoTxb.LineThickness = 3;
             this.LugarTrabajoTxb.Location = new System.Drawing.Point(15, 567);
-            this.LugarTrabajoTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.LugarTrabajoTxb.Margin = new System.Windows.Forms.Padding(5);
             this.LugarTrabajoTxb.Name = "LugarTrabajoTxb";
             this.LugarTrabajoTxb.Size = new System.Drawing.Size(505, 41);
             this.LugarTrabajoTxb.TabIndex = 10;
@@ -419,26 +419,26 @@ namespace SistemaConsultorioMedico
             // 
             // bunifuCustomDataGrid1
             // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bunifuCustomDataGrid1.DoubleBuffered = true;
             this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
             this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(563, 142);
-            this.bunifuCustomDataGrid1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuCustomDataGrid1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
             this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.bunifuCustomDataGrid1.RowHeadersWidth = 51;
@@ -451,7 +451,7 @@ namespace SistemaConsultorioMedico
             this.linea.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(128)))));
             this.linea.LineThickness = 1;
             this.linea.Location = new System.Drawing.Point(396, 65);
-            this.linea.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.linea.Margin = new System.Windows.Forms.Padding(5);
             this.linea.Name = "linea";
             this.linea.Size = new System.Drawing.Size(327, 12);
             this.linea.TabIndex = 27;
@@ -476,7 +476,7 @@ namespace SistemaConsultorioMedico
             this.ApellidoMaternoTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.ApellidoMaternoTxb.LineThickness = 3;
             this.ApellidoMaternoTxb.Location = new System.Drawing.Point(16, 214);
-            this.ApellidoMaternoTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ApellidoMaternoTxb.Margin = new System.Windows.Forms.Padding(5);
             this.ApellidoMaternoTxb.Name = "ApellidoMaternoTxb";
             this.ApellidoMaternoTxb.Size = new System.Drawing.Size(505, 41);
             this.ApellidoMaternoTxb.TabIndex = 3;
@@ -498,7 +498,7 @@ namespace SistemaConsultorioMedico
             this.ApellidoPaternoTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.ApellidoPaternoTbx.LineThickness = 3;
             this.ApellidoPaternoTbx.Location = new System.Drawing.Point(20, 162);
-            this.ApellidoPaternoTbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ApellidoPaternoTbx.Margin = new System.Windows.Forms.Padding(5);
             this.ApellidoPaternoTbx.Name = "ApellidoPaternoTbx";
             this.ApellidoPaternoTbx.Size = new System.Drawing.Size(505, 41);
             this.ApellidoPaternoTbx.TabIndex = 2;
@@ -547,8 +547,9 @@ namespace SistemaConsultorioMedico
             this.Controls.Add(this.BuscarTbx);
             this.Controls.Add(this.Guardarbtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Paciente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paciente";
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
             this.ResumeLayout(false);
