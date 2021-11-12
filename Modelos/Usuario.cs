@@ -9,11 +9,38 @@ namespace SistemaConsultorioMedico.Modelos
     class Usuario
     {
 
-        public int idUsuario { get; set; }
+        int idUsuario;
+        String usuario, password;
 
-        public String usuario { get; set; }
+        public void setIdUsuario(int idUsuario)
+        {
+            this.idUsuario = idUsuario;
+        }
 
-        public String password { get; set; }
+        public void setUsuario(String usuario)
+        {
+            this.usuario = usuario;
+        }
+
+        public void setPassword(String password)
+        {
+            this.password = password;
+        }
+
+        public int getIdUsuario()
+        {
+            return idUsuario;
+        }
+
+        public String getUsuario()
+        {
+            return usuario;
+        }
+
+        public String getPassword()
+        {
+            return password;
+        }
 
     }
 }

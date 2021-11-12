@@ -93,9 +93,18 @@ namespace SistemaConsultorioMedico
 
         private void loginbtn_Click(object sender, EventArgs e)
         {
-            Form AbrirMenu = new Menuform();
-            AbrirMenu.Show();
-            this.Hide();
+            if ((usuariotxt.Text!="USUARIO") && (contratxt.Text!="CONTRASEÑA"))
+            {
+                Modelos.Usuario usu = new Modelos.Usuario();
+                usu.setUsuario(usuariotxt.Text);
+                usu.setPassword(contratxt.Text);
+                Controladores.UsuarioController.Login(usu);
+               
+            }
+            else
+            {
+                MessageBox.Show("Los campos deben ser llenados");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
