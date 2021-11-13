@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace SistemaConsultorioMedico.Modelos
 {
-    class InformacionMedica
+    public class InformacionMedica
     {
         int idPaciente;
         String dato1, dato2, dato3, dato4, dato4Opc, dato5, dato5Opc, dato6, dato6Opc, dato7, dato7Opc, dato8, dato8Opc, dato9, dato9Opc,
-                dato10, dato10Opc, dato11, dato11Opc, dato12, dato12Opc, dato13, dato13Opc, dato13Opc2, dato14, dato14Opc, dato14Opc2,
+                dato10, dato10Opc, dato11, dato11Opc, dato12, dato13, dato13Opc, dato13Opc2, dato14, dato14Opc, dato14Opc2,
                 dato15, dato15Opc, dato15Opc2, dato15Opc3, dato15Opc4, dato16, dato17, dato18;
         DateTime fecha;
 
         public InformacionMedica(int idPaciente, String dato1, String dato2, String dato3, String dato4, String dato4Opc, String dato5, String dato5Opc,
                                 String dato6, String dato6Opc, String dato7, String dato7Opc, String dato8, String dato8Opc, String dato9, String dato9Opc,
-                                String dato10, String dato10Opc, String dato11, String dato11Opc, String dato12, String dato12Opc, String dato13, String dato13Opc,
+                                String dato10, String dato10Opc, String dato11, String dato11Opc, String dato12, String dato13, String dato13Opc,
                                 String dato13Opc2, String dato14, String dato14Opc, String dato14Opc2, String dato15, String dato15Opc, String dato15Opc2, String dato15Opc3,
                                 String dato15Opc4, String dato16, String dato17, String dato18, DateTime fecha)
         {
@@ -35,12 +35,12 @@ namespace SistemaConsultorioMedico.Modelos
             this.dato8 = dato8;
             this.dato8Opc = dato8Opc;
             this.dato9 = dato9;
+            this.dato9Opc = dato9Opc;
             this.dato10 = dato10;
             this.dato10Opc = dato10Opc;
             this.dato11 = dato11;
             this.dato11Opc = dato11Opc;
             this.dato12 = dato12;
-            this.dato12Opc = dato12Opc;
             this.dato13 = dato13;
             this.dato13Opc = dato13Opc;
             this.dato13Opc2 = dato13Opc2;
@@ -55,6 +55,59 @@ namespace SistemaConsultorioMedico.Modelos
             this.dato16 = dato16;
             this.dato17 = dato17;
             this.dato18 = dato18;
+            this.fecha = fecha;
+        }
+
+        public InformacionMedica(int idPaciente, String dato1, String dato2, String dato3, String dato4, String dato4Opc, String dato5, String dato5Opc,
+                                String dato6, String dato6Opc, String dato7, String dato7Opc, String dato8, String dato8Opc, String dato9, String dato9Opc)
+        {
+            this.idPaciente = idPaciente;
+            this.dato1 = dato1;
+            this.dato2 = dato2;
+            this.dato3 = dato3;
+            this.dato4 = dato4;
+            this.dato4Opc = dato4Opc;
+            this.dato5 = dato5;
+            this.dato5Opc = dato5Opc;
+            this.dato6 = dato6;
+            this.dato6Opc = dato6Opc;
+            this.dato7 = dato7;
+            this.dato7Opc = dato7Opc;
+            this.dato8 = dato8;
+            this.dato8Opc = dato8Opc;
+            this.dato9 = dato9;
+            this.dato9Opc = dato9Opc;
+        }
+
+        public InformacionMedica(String dato10, String dato10Opc, String dato11, String dato11Opc, String dato12, String dato13, String dato13Opc,
+                                String dato13Opc2, String dato14, String dato14Opc, String dato14Opc2, String dato15, String dato15Opc, String dato15Opc2, String dato15Opc3,
+                                String dato15Opc4, String dato16, String dato17, String dato18, DateTime fecha)
+        {
+            this.dato10 = dato10;
+            this.dato10Opc = dato10Opc;
+            this.dato11 = dato11;
+            this.dato11Opc = dato11Opc;
+            this.dato12 = dato12;
+            this.dato13 = dato13;
+            this.dato13Opc = dato13Opc;
+            this.dato13Opc2 = dato13Opc2;
+            this.dato14 = dato14;
+            this.dato14Opc = dato14Opc;
+            this.dato14Opc2 = dato14Opc2;
+            this.dato15 = dato15;
+            this.dato15Opc = dato13Opc;
+            this.dato15Opc2 = dato15Opc2;
+            this.dato15Opc3 = dato15Opc3;
+            this.dato15Opc4 = dato15Opc4;
+            this.dato16 = dato16;
+            this.dato17 = dato17;
+            this.dato18 = dato18;
+            this.fecha = fecha;
+        }
+
+        public void setIdPaciente(int idPaciente)
+        {
+            this.idPaciente = idPaciente;
         }
 
         public void setDato1(String dato)
@@ -157,11 +210,6 @@ namespace SistemaConsultorioMedico.Modelos
             this.dato12 = dato;
         }
 
-        public void setDato12Opc(String dato)
-        {
-            this.dato12Opc = dato;
-        }
-
         public void setDato13(String dato)
         {
             this.dato13 = dato;
@@ -235,6 +283,11 @@ namespace SistemaConsultorioMedico.Modelos
         public void setFecha(DateTime fecha)
         {
             this.fecha = fecha;
+        }
+
+        public int getIdPaciente()
+        {
+            return idPaciente;
         }
 
         public String getDato1()
@@ -335,11 +388,6 @@ namespace SistemaConsultorioMedico.Modelos
         public String getDato12()
         {
             return dato12;
-        }
-
-        public String getDato12Opc()
-        {
-            return dato12Opc;
         }
 
         public String getDato13()

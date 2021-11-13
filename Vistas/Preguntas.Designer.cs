@@ -62,6 +62,7 @@ namespace SistemaConsultorioMedico
             this.MesLbl = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.AñoLbl = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.QuienFamiliarTbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,10 +71,10 @@ namespace SistemaConsultorioMedico
             this.linea.BackColor = System.Drawing.Color.Transparent;
             this.linea.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(128)))));
             this.linea.LineThickness = 1;
-            this.linea.Location = new System.Drawing.Point(325, 65);
-            this.linea.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.linea.Location = new System.Drawing.Point(433, 80);
+            this.linea.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.linea.Name = "linea";
-            this.linea.Size = new System.Drawing.Size(245, 10);
+            this.linea.Size = new System.Drawing.Size(327, 12);
             this.linea.TabIndex = 37;
             this.linea.Transparency = 255;
             this.linea.Vertical = false;
@@ -82,9 +83,10 @@ namespace SistemaConsultorioMedico
             // 
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(333, 39);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(444, 48);
+            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(225, 23);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(290, 30);
             this.bunifuCustomLabel1.TabIndex = 36;
             this.bunifuCustomLabel1.Text = "INFORMACION MEDICA";
             // 
@@ -100,10 +102,10 @@ namespace SistemaConsultorioMedico
             this.DesdeCuandoTxb1.LineIdleColor = System.Drawing.Color.Purple;
             this.DesdeCuandoTxb1.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.DesdeCuandoTxb1.LineThickness = 3;
-            this.DesdeCuandoTxb1.Location = new System.Drawing.Point(541, 254);
-            this.DesdeCuandoTxb1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DesdeCuandoTxb1.Location = new System.Drawing.Point(721, 313);
+            this.DesdeCuandoTxb1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.DesdeCuandoTxb1.Name = "DesdeCuandoTxb1";
-            this.DesdeCuandoTxb1.Size = new System.Drawing.Size(282, 33);
+            this.DesdeCuandoTxb1.Size = new System.Drawing.Size(376, 41);
             this.DesdeCuandoTxb1.TabIndex = 10;
             this.DesdeCuandoTxb1.Text = "¿DESDE CUANDO?";
             this.DesdeCuandoTxb1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -122,10 +124,10 @@ namespace SistemaConsultorioMedico
             this.Fumatxb.LineIdleColor = System.Drawing.Color.Purple;
             this.Fumatxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.Fumatxb.LineThickness = 3;
-            this.Fumatxb.Location = new System.Drawing.Point(444, 254);
-            this.Fumatxb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Fumatxb.Location = new System.Drawing.Point(592, 313);
+            this.Fumatxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Fumatxb.Name = "Fumatxb";
-            this.Fumatxb.Size = new System.Drawing.Size(89, 33);
+            this.Fumatxb.Size = new System.Drawing.Size(119, 41);
             this.Fumatxb.TabIndex = 9;
             this.Fumatxb.Text = "¿FUMA?";
             this.Fumatxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -144,10 +146,10 @@ namespace SistemaConsultorioMedico
             this.ParejasSexualesTxb.LineIdleColor = System.Drawing.Color.Purple;
             this.ParejasSexualesTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.ParejasSexualesTxb.LineThickness = 3;
-            this.ParejasSexualesTxb.Location = new System.Drawing.Point(45, 254);
-            this.ParejasSexualesTxb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ParejasSexualesTxb.Location = new System.Drawing.Point(60, 313);
+            this.ParejasSexualesTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.ParejasSexualesTxb.Name = "ParejasSexualesTxb";
-            this.ParejasSexualesTxb.Size = new System.Drawing.Size(379, 33);
+            this.ParejasSexualesTxb.Size = new System.Drawing.Size(505, 41);
             this.ParejasSexualesTxb.TabIndex = 8;
             this.ParejasSexualesTxb.Text = "¿CUANTAS PERSONAS SEXUALES A TENIDO?";
             this.ParejasSexualesTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -166,10 +168,10 @@ namespace SistemaConsultorioMedico
             this.FamiliarInfertilrTxb.LineIdleColor = System.Drawing.Color.Purple;
             this.FamiliarInfertilrTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.FamiliarInfertilrTxb.LineThickness = 3;
-            this.FamiliarInfertilrTxb.Location = new System.Drawing.Point(454, 208);
-            this.FamiliarInfertilrTxb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FamiliarInfertilrTxb.Location = new System.Drawing.Point(605, 256);
+            this.FamiliarInfertilrTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.FamiliarInfertilrTxb.Name = "FamiliarInfertilrTxb";
-            this.FamiliarInfertilrTxb.Size = new System.Drawing.Size(379, 33);
+            this.FamiliarInfertilrTxb.Size = new System.Drawing.Size(505, 41);
             this.FamiliarInfertilrTxb.TabIndex = 7;
             this.FamiliarInfertilrTxb.Text = "¿TIENE ALGUN FAMILIAR INFERTIL?";
             this.FamiliarInfertilrTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -188,10 +190,10 @@ namespace SistemaConsultorioMedico
             this.QuienTxb.LineIdleColor = System.Drawing.Color.Purple;
             this.QuienTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.QuienTxb.LineThickness = 3;
-            this.QuienTxb.Location = new System.Drawing.Point(39, 208);
-            this.QuienTxb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.QuienTxb.Location = new System.Drawing.Point(52, 256);
+            this.QuienTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.QuienTxb.Name = "QuienTxb";
-            this.QuienTxb.Size = new System.Drawing.Size(379, 33);
+            this.QuienTxb.Size = new System.Drawing.Size(505, 41);
             this.QuienTxb.TabIndex = 6;
             this.QuienTxb.Text = " ¿QUIEN?";
             this.QuienTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -210,10 +212,10 @@ namespace SistemaConsultorioMedico
             this.QueTantoDiarioTbx.LineIdleColor = System.Drawing.Color.Purple;
             this.QueTantoDiarioTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.QueTantoDiarioTbx.LineThickness = 3;
-            this.QueTantoDiarioTbx.Location = new System.Drawing.Point(39, 304);
-            this.QueTantoDiarioTbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.QueTantoDiarioTbx.Location = new System.Drawing.Point(52, 374);
+            this.QueTantoDiarioTbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.QueTantoDiarioTbx.Name = "QueTantoDiarioTbx";
-            this.QueTantoDiarioTbx.Size = new System.Drawing.Size(365, 33);
+            this.QueTantoDiarioTbx.Size = new System.Drawing.Size(487, 41);
             this.QueTantoDiarioTbx.TabIndex = 11;
             this.QueTantoDiarioTbx.Text = "¿QUE TANTO DIARIO?";
             this.QueTantoDiarioTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -232,10 +234,10 @@ namespace SistemaConsultorioMedico
             this.OtroTbx.LineIdleColor = System.Drawing.Color.Purple;
             this.OtroTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.OtroTbx.LineThickness = 3;
-            this.OtroTbx.Location = new System.Drawing.Point(613, 152);
-            this.OtroTbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OtroTbx.Location = new System.Drawing.Point(817, 187);
+            this.OtroTbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.OtroTbx.Name = "OtroTbx";
-            this.OtroTbx.Size = new System.Drawing.Size(220, 33);
+            this.OtroTbx.Size = new System.Drawing.Size(293, 41);
             this.OtroTbx.TabIndex = 5;
             this.OtroTbx.Text = "OTRO";
             this.OtroTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -245,9 +247,10 @@ namespace SistemaConsultorioMedico
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(491, 161);
+            this.radioButton4.Location = new System.Drawing.Point(655, 198);
+            this.radioButton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(79, 17);
+            this.radioButton4.Size = new System.Drawing.Size(97, 21);
             this.radioButton4.TabIndex = 4;
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "EPILEPSIA";
@@ -256,9 +259,10 @@ namespace SistemaConsultorioMedico
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(301, 161);
+            this.radioButton3.Location = new System.Drawing.Point(401, 198);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(168, 17);
+            this.radioButton3.Size = new System.Drawing.Size(211, 21);
             this.radioButton3.TabIndex = 3;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "CANCER SERVICOUTERINO";
@@ -267,9 +271,10 @@ namespace SistemaConsultorioMedico
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(143, 161);
+            this.radioButton2.Location = new System.Drawing.Point(191, 198);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(127, 17);
+            this.radioButton2.Size = new System.Drawing.Size(160, 21);
             this.radioButton2.TabIndex = 2;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "CANCER DE SENOS";
@@ -278,9 +283,10 @@ namespace SistemaConsultorioMedico
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(45, 161);
+            this.radioButton1.Location = new System.Drawing.Point(60, 198);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(78, 17);
+            this.radioButton1.Size = new System.Drawing.Size(96, 21);
             this.radioButton1.TabIndex = 1;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "DIABETES";
@@ -290,9 +296,10 @@ namespace SistemaConsultorioMedico
             // 
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(42, 111);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(56, 137);
+            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(649, 18);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(798, 23);
             this.bunifuCustomLabel2.TabIndex = 52;
             this.bunifuCustomLabel2.Text = "INDIQUE SI ALGUIEN DE SU FAMILIA PADECE ALGUNA DE LAS ENFERMEDADES SIGUIENTES";
             // 
@@ -314,12 +321,13 @@ namespace SistemaConsultorioMedico
             this.GuardarBtn.IdleFillColor = System.Drawing.Color.White;
             this.GuardarBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.GuardarBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.GuardarBtn.Location = new System.Drawing.Point(528, 535);
-            this.GuardarBtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.GuardarBtn.Location = new System.Drawing.Point(704, 658);
+            this.GuardarBtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.GuardarBtn.Name = "GuardarBtn";
-            this.GuardarBtn.Size = new System.Drawing.Size(157, 41);
+            this.GuardarBtn.Size = new System.Drawing.Size(209, 50);
             this.GuardarBtn.TabIndex = 12;
             this.GuardarBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.GuardarBtn.Click += new System.EventHandler(this.GuardarBtn_Click);
             // 
             // RegresarBtn
             // 
@@ -339,10 +347,10 @@ namespace SistemaConsultorioMedico
             this.RegresarBtn.IdleFillColor = System.Drawing.Color.White;
             this.RegresarBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.RegresarBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.RegresarBtn.Location = new System.Drawing.Point(709, 535);
-            this.RegresarBtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.RegresarBtn.Location = new System.Drawing.Point(945, 658);
+            this.RegresarBtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.RegresarBtn.Name = "RegresarBtn";
-            this.RegresarBtn.Size = new System.Drawing.Size(157, 41);
+            this.RegresarBtn.Size = new System.Drawing.Size(209, 50);
             this.RegresarBtn.TabIndex = 13;
             this.RegresarBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -350,9 +358,10 @@ namespace SistemaConsultorioMedico
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(858, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(1144, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(20, 22);
+            this.pictureBox1.Size = new System.Drawing.Size(27, 27);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 60;
             this.pictureBox1.TabStop = false;
@@ -370,10 +379,10 @@ namespace SistemaConsultorioMedico
             this.TomaTxb.LineIdleColor = System.Drawing.Color.Purple;
             this.TomaTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.TomaTxb.LineThickness = 3;
-            this.TomaTxb.Location = new System.Drawing.Point(428, 304);
-            this.TomaTxb.Margin = new System.Windows.Forms.Padding(4);
+            this.TomaTxb.Location = new System.Drawing.Point(571, 374);
+            this.TomaTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.TomaTxb.Name = "TomaTxb";
-            this.TomaTxb.Size = new System.Drawing.Size(89, 33);
+            this.TomaTxb.Size = new System.Drawing.Size(119, 41);
             this.TomaTxb.TabIndex = 61;
             this.TomaTxb.Text = "¿TOMA?";
             this.TomaTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -392,10 +401,10 @@ namespace SistemaConsultorioMedico
             this.DesdeCuandoTbx2.LineIdleColor = System.Drawing.Color.Purple;
             this.DesdeCuandoTbx2.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.DesdeCuandoTbx2.LineThickness = 3;
-            this.DesdeCuandoTbx2.Location = new System.Drawing.Point(531, 304);
-            this.DesdeCuandoTbx2.Margin = new System.Windows.Forms.Padding(4);
+            this.DesdeCuandoTbx2.Location = new System.Drawing.Point(708, 374);
+            this.DesdeCuandoTbx2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.DesdeCuandoTbx2.Name = "DesdeCuandoTbx2";
-            this.DesdeCuandoTbx2.Size = new System.Drawing.Size(282, 33);
+            this.DesdeCuandoTbx2.Size = new System.Drawing.Size(376, 41);
             this.DesdeCuandoTbx2.TabIndex = 62;
             this.DesdeCuandoTbx2.Text = "¿DESDE CUANDO?";
             this.DesdeCuandoTbx2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -414,10 +423,10 @@ namespace SistemaConsultorioMedico
             this.QueTandoDiarioTxb2.LineIdleColor = System.Drawing.Color.Purple;
             this.QueTandoDiarioTxb2.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.QueTandoDiarioTxb2.LineThickness = 3;
-            this.QueTandoDiarioTxb2.Location = new System.Drawing.Point(39, 345);
-            this.QueTandoDiarioTxb2.Margin = new System.Windows.Forms.Padding(4);
+            this.QueTandoDiarioTxb2.Location = new System.Drawing.Point(52, 425);
+            this.QueTandoDiarioTxb2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.QueTandoDiarioTxb2.Name = "QueTandoDiarioTxb2";
-            this.QueTandoDiarioTxb2.Size = new System.Drawing.Size(364, 33);
+            this.QueTandoDiarioTxb2.Size = new System.Drawing.Size(485, 41);
             this.QueTandoDiarioTxb2.TabIndex = 63;
             this.QueTandoDiarioTxb2.Text = "¿QUE TANTO DIARIO?";
             this.QueTandoDiarioTxb2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -436,10 +445,10 @@ namespace SistemaConsultorioMedico
             this.EsAdictaADrogasTbx.LineIdleColor = System.Drawing.Color.Purple;
             this.EsAdictaADrogasTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.EsAdictaADrogasTbx.LineThickness = 3;
-            this.EsAdictaADrogasTbx.Location = new System.Drawing.Point(423, 345);
-            this.EsAdictaADrogasTbx.Margin = new System.Windows.Forms.Padding(4);
+            this.EsAdictaADrogasTbx.Location = new System.Drawing.Point(564, 425);
+            this.EsAdictaADrogasTbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.EsAdictaADrogasTbx.Name = "EsAdictaADrogasTbx";
-            this.EsAdictaADrogasTbx.Size = new System.Drawing.Size(174, 33);
+            this.EsAdictaADrogasTbx.Size = new System.Drawing.Size(232, 41);
             this.EsAdictaADrogasTbx.TabIndex = 64;
             this.EsAdictaADrogasTbx.Text = "¿ES ADICTA A DROGAS?";
             this.EsAdictaADrogasTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -458,10 +467,10 @@ namespace SistemaConsultorioMedico
             this.CualesTbx.LineIdleColor = System.Drawing.Color.Purple;
             this.CualesTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.CualesTbx.LineThickness = 3;
-            this.CualesTbx.Location = new System.Drawing.Point(605, 345);
-            this.CualesTbx.Margin = new System.Windows.Forms.Padding(4);
+            this.CualesTbx.Location = new System.Drawing.Point(807, 425);
+            this.CualesTbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.CualesTbx.Name = "CualesTbx";
-            this.CualesTbx.Size = new System.Drawing.Size(365, 33);
+            this.CualesTbx.Size = new System.Drawing.Size(487, 41);
             this.CualesTbx.TabIndex = 65;
             this.CualesTbx.Text = "¿CUALES?";
             this.CualesTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -480,10 +489,10 @@ namespace SistemaConsultorioMedico
             this.DesdeCuandoTbx3.LineIdleColor = System.Drawing.Color.Purple;
             this.DesdeCuandoTbx3.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.DesdeCuandoTbx3.LineThickness = 3;
-            this.DesdeCuandoTbx3.Location = new System.Drawing.Point(38, 396);
-            this.DesdeCuandoTbx3.Margin = new System.Windows.Forms.Padding(4);
+            this.DesdeCuandoTbx3.Location = new System.Drawing.Point(51, 487);
+            this.DesdeCuandoTbx3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.DesdeCuandoTbx3.Name = "DesdeCuandoTbx3";
-            this.DesdeCuandoTbx3.Size = new System.Drawing.Size(365, 33);
+            this.DesdeCuandoTbx3.Size = new System.Drawing.Size(487, 41);
             this.DesdeCuandoTbx3.TabIndex = 66;
             this.DesdeCuandoTbx3.Text = "¿DESDE CUANDO?";
             this.DesdeCuandoTbx3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -502,10 +511,10 @@ namespace SistemaConsultorioMedico
             this.QueTantoDiariamenteTbx.LineIdleColor = System.Drawing.Color.Purple;
             this.QueTantoDiariamenteTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.QueTantoDiariamenteTbx.LineThickness = 3;
-            this.QueTantoDiariamenteTbx.Location = new System.Drawing.Point(411, 396);
-            this.QueTantoDiariamenteTbx.Margin = new System.Windows.Forms.Padding(4);
+            this.QueTantoDiariamenteTbx.Location = new System.Drawing.Point(548, 487);
+            this.QueTantoDiariamenteTbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.QueTantoDiariamenteTbx.Name = "QueTantoDiariamenteTbx";
-            this.QueTantoDiariamenteTbx.Size = new System.Drawing.Size(243, 33);
+            this.QueTantoDiariamenteTbx.Size = new System.Drawing.Size(324, 41);
             this.QueTantoDiariamenteTbx.TabIndex = 67;
             this.QueTantoDiariamenteTbx.Text = "¿QUE TANTO DIARIAMENTE?";
             this.QueTantoDiariamenteTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -524,10 +533,10 @@ namespace SistemaConsultorioMedico
             this.MensualmenteTbx.LineIdleColor = System.Drawing.Color.Purple;
             this.MensualmenteTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.MensualmenteTbx.LineThickness = 3;
-            this.MensualmenteTbx.Location = new System.Drawing.Point(662, 396);
-            this.MensualmenteTbx.Margin = new System.Windows.Forms.Padding(4);
+            this.MensualmenteTbx.Location = new System.Drawing.Point(883, 487);
+            this.MensualmenteTbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.MensualmenteTbx.Name = "MensualmenteTbx";
-            this.MensualmenteTbx.Size = new System.Drawing.Size(188, 33);
+            this.MensualmenteTbx.Size = new System.Drawing.Size(251, 41);
             this.MensualmenteTbx.TabIndex = 68;
             this.MensualmenteTbx.Text = "¿MENSUALMENTE?";
             this.MensualmenteTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -546,10 +555,10 @@ namespace SistemaConsultorioMedico
             this.PersonasDuermenEnCuartoTbx.LineIdleColor = System.Drawing.Color.Purple;
             this.PersonasDuermenEnCuartoTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.PersonasDuermenEnCuartoTbx.LineThickness = 3;
-            this.PersonasDuermenEnCuartoTbx.Location = new System.Drawing.Point(38, 447);
-            this.PersonasDuermenEnCuartoTbx.Margin = new System.Windows.Forms.Padding(4);
+            this.PersonasDuermenEnCuartoTbx.Location = new System.Drawing.Point(51, 550);
+            this.PersonasDuermenEnCuartoTbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.PersonasDuermenEnCuartoTbx.Name = "PersonasDuermenEnCuartoTbx";
-            this.PersonasDuermenEnCuartoTbx.Size = new System.Drawing.Size(331, 33);
+            this.PersonasDuermenEnCuartoTbx.Size = new System.Drawing.Size(441, 41);
             this.PersonasDuermenEnCuartoTbx.TabIndex = 69;
             this.PersonasDuermenEnCuartoTbx.Text = "¿CUANTAS PERSONAS DUERMEN EN SU CUARTO?";
             this.PersonasDuermenEnCuartoTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -568,10 +577,10 @@ namespace SistemaConsultorioMedico
             this.ConsideraBuenaAlimentacionTbx.LineIdleColor = System.Drawing.Color.Purple;
             this.ConsideraBuenaAlimentacionTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.ConsideraBuenaAlimentacionTbx.LineThickness = 3;
-            this.ConsideraBuenaAlimentacionTbx.Location = new System.Drawing.Point(392, 447);
-            this.ConsideraBuenaAlimentacionTbx.Margin = new System.Windows.Forms.Padding(4);
+            this.ConsideraBuenaAlimentacionTbx.Location = new System.Drawing.Point(523, 550);
+            this.ConsideraBuenaAlimentacionTbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.ConsideraBuenaAlimentacionTbx.Name = "ConsideraBuenaAlimentacionTbx";
-            this.ConsideraBuenaAlimentacionTbx.Size = new System.Drawing.Size(279, 33);
+            this.ConsideraBuenaAlimentacionTbx.Size = new System.Drawing.Size(372, 41);
             this.ConsideraBuenaAlimentacionTbx.TabIndex = 70;
             this.ConsideraBuenaAlimentacionTbx.Text = "¿CONSIDERA QUE SE ALIMENTA BIEN?";
             this.ConsideraBuenaAlimentacionTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -591,10 +600,10 @@ namespace SistemaConsultorioMedico
             this.ComentarioTbx.LineIdleColor = System.Drawing.Color.Purple;
             this.ComentarioTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.ComentarioTbx.LineThickness = 3;
-            this.ComentarioTbx.Location = new System.Drawing.Point(45, 488);
-            this.ComentarioTbx.Margin = new System.Windows.Forms.Padding(4);
+            this.ComentarioTbx.Location = new System.Drawing.Point(60, 601);
+            this.ComentarioTbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.ComentarioTbx.Name = "ComentarioTbx";
-            this.ComentarioTbx.Size = new System.Drawing.Size(279, 33);
+            this.ComentarioTbx.Size = new System.Drawing.Size(372, 41);
             this.ComentarioTbx.TabIndex = 71;
             this.ComentarioTbx.Text = "¿ALGUN COMENTARIO AL RESPECTO?";
             this.ComentarioTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -605,9 +614,10 @@ namespace SistemaConsultorioMedico
             // 
             this.bunifuCustomLabel3.AutoSize = true;
             this.bunifuCustomLabel3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(12, 558);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(16, 687);
+            this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(172, 18);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(216, 23);
             this.bunifuCustomLabel3.TabIndex = 72;
             this.bunifuCustomLabel3.Text = "GUAYMAS SONORA A ";
             // 
@@ -615,9 +625,10 @@ namespace SistemaConsultorioMedico
             // 
             this.MesLbl.AutoSize = true;
             this.MesLbl.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MesLbl.Location = new System.Drawing.Point(190, 558);
+            this.MesLbl.Location = new System.Drawing.Point(253, 687);
+            this.MesLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MesLbl.Name = "MesLbl";
-            this.MesLbl.Size = new System.Drawing.Size(95, 18);
+            this.MesLbl.Size = new System.Drawing.Size(117, 23);
             this.MesLbl.TabIndex = 73;
             this.MesLbl.Text = "NOVIEMBRE";
             // 
@@ -625,9 +636,10 @@ namespace SistemaConsultorioMedico
             // 
             this.bunifuCustomLabel4.AutoSize = true;
             this.bunifuCustomLabel4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(309, 558);
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(412, 687);
+            this.bunifuCustomLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(27, 18);
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(33, 23);
             this.bunifuCustomLabel4.TabIndex = 74;
             this.bunifuCustomLabel4.Text = "DE";
             // 
@@ -635,18 +647,40 @@ namespace SistemaConsultorioMedico
             // 
             this.AñoLbl.AutoSize = true;
             this.AñoLbl.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AñoLbl.Location = new System.Drawing.Point(363, 558);
+            this.AñoLbl.Location = new System.Drawing.Point(484, 687);
+            this.AñoLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.AñoLbl.Name = "AñoLbl";
-            this.AñoLbl.Size = new System.Drawing.Size(40, 18);
+            this.AñoLbl.Size = new System.Drawing.Size(54, 23);
             this.AñoLbl.TabIndex = 75;
             this.AñoLbl.Text = "2021";
             // 
+            // QuienFamiliarTbx
+            // 
+            this.QuienFamiliarTbx.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.QuienFamiliarTbx.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.QuienFamiliarTbx.ForeColor = System.Drawing.Color.Black;
+            this.QuienFamiliarTbx.HintForeColor = System.Drawing.Color.Empty;
+            this.QuienFamiliarTbx.HintText = "";
+            this.QuienFamiliarTbx.isPassword = false;
+            this.QuienFamiliarTbx.LineFocusedColor = System.Drawing.Color.Blue;
+            this.QuienFamiliarTbx.LineIdleColor = System.Drawing.Color.Purple;
+            this.QuienFamiliarTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.QuienFamiliarTbx.LineThickness = 3;
+            this.QuienFamiliarTbx.Location = new System.Drawing.Point(1133, 256);
+            this.QuienFamiliarTbx.Margin = new System.Windows.Forms.Padding(5);
+            this.QuienFamiliarTbx.Name = "QuienFamiliarTbx";
+            this.QuienFamiliarTbx.Size = new System.Drawing.Size(176, 41);
+            this.QuienFamiliarTbx.TabIndex = 76;
+            this.QuienFamiliarTbx.Text = " ¿QUIEN?";
+            this.QuienFamiliarTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // Preguntas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(880, 615);
+            this.ClientSize = new System.Drawing.Size(1333, 757);
+            this.Controls.Add(this.QuienFamiliarTbx);
             this.Controls.Add(this.AñoLbl);
             this.Controls.Add(this.bunifuCustomLabel4);
             this.Controls.Add(this.MesLbl);
@@ -680,6 +714,7 @@ namespace SistemaConsultorioMedico
             this.Controls.Add(this.linea);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Preguntas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Preguntas";
@@ -723,5 +758,6 @@ namespace SistemaConsultorioMedico
         private Bunifu.Framework.UI.BunifuCustomLabel MesLbl;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
         private Bunifu.Framework.UI.BunifuCustomLabel AñoLbl;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox QuienFamiliarTbx;
     }
 }

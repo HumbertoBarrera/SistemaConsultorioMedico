@@ -19,7 +19,11 @@ namespace SistemaConsultorioMedico
 
         private void MasBtn_Click(object sender, EventArgs e)
         {
-            Form AbrirPreguntas = new Preguntas();
+            Modelos.InformacionMedica im1 = new Modelos.InformacionMedica(23507605, RecomendacionTxb.Text, DoctorAnteriorTxb.Text, MotivoPrimeraCitaTbx.Text, AlergiaOEnfermedadCronitxb.Text,
+                                                                CualtbxAlergia.Text, AnimalesDomesticosTxb.Text, CualTbxAnimales.Text, MedicamentoRegularidadTxb.Text, CualTxbMedicamento.Text,
+                                                                AlergiaAlgunMedicamentoTxb.Text, CualTxbAlergiaMedicamento.Text, SometidaACirugiaTxb.Text, CuaTxbCirugia.Text,
+                                                                ComplicacionTxb.Text, CualTxbComplicacion.Text);
+            Form AbrirPreguntas = new Preguntas(im1);
             AbrirPreguntas.Show();
         }
 

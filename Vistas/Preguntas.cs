@@ -12,10 +12,18 @@ namespace SistemaConsultorioMedico
 {
     public partial class Preguntas : Form
     {
-        public Preguntas()
+        private Modelos.InformacionMedica im1;
+
+        public Preguntas(Modelos.InformacionMedica im1)
         {
+            this.im1 = im1;
             InitializeComponent();
         }
+
+        /*public Preguntas(Modelos.InformacionMedica im1)
+        {
+            this.im1 = im1;
+        }*/
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -350,5 +358,38 @@ namespace SistemaConsultorioMedico
                 ComentarioTbx.ForeColor = Color.DarkSlateGray;
             }
         }
+
+        private void GuardarBtn_Click(object sender, EventArgs e)
+        {
+            DateTime hoy = DateTime.Today;
+            Modelos.InformacionMedica im2 = new Modelos.InformacionMedica(obtenerEnfermedadFamiliar(), QuienTxb.Text, FamiliarInfertilrTxb.Text, QuienFamiliarTbx.Text,
+                                                                        ParejasSexualesTxb.Text, Fumatxb.Text, DesdeCuandoTxb1.Text, QueTantoDiarioTbx.Text, TomaTxb.Text,
+                                                                        DesdeCuandoTbx2.Text, QueTandoDiarioTxb2.Text, EsAdictaADrogasTbx.Text, CualesTbx.Text,
+                                                                        DesdeCuandoTbx3.Text, QueTantoDiariamenteTbx.Text, MensualmenteTbx.Text, PersonasDuermenEnCuartoTbx.Text,
+                                                                        ConsideraBuenaAlimentacionTbx.Text, ComentarioTbx.Text, hoy);
+            Controladores.InformacionMedicaController.altaInformacionMedica(im1, im2);
+        }
+
+        private String obtenerEnfermedadFamiliar()
+        {
+            if (radioButton1.Checked == true && radioButton2.Checked == false && radioButton3.Checked == false && radioButton4.Checked == false && (OtroTbx.Text == "OTRO" | OtroTbx.Text == ""))
+            {
+                return radioButton1.Text;
+            }
+            else if (radioButton1.Checked == false && radioButton2.Checked == true && radioButton3.Checked == false && radioButton4.Checked == false && (OtroTbx.Text == "OTRO" | OtroTbx.Text == ""))
+            {
+                return radioButton2.Text;
+            }
+            else if (radioButton1.Checked == false && radioButton2.Checked == false && radioButton3.Checked == true && radioButton4.Checked == false && (OtroTbx.Text == "OTRO" | OtroTbx.Text == ""))
+            {
+                return radioButton3.Text;
+            }
+            else if (radioButton1.Checked == false && radioButton2.Checked == false && radioButton3.Checked == false && radioButton4.Checked == true && (OtroTbx.Text == "OTRO" | OtroTbx.Text == ""))
+            {
+                return radioButton4.Text;
+            }
+            return OtroTbx.Text;
+        }
+
     }
 }
