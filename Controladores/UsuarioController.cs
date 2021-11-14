@@ -16,7 +16,7 @@ namespace SistemaConsultorioMedico.Controladores
         public static void Login(Modelos.Usuario U)
         {
             SqlCommand codigo;
-            codigo = new SqlCommand("SELECT * FROM USUARIO WHERE usuario like '%" + U.getUsuario() + "%' AND contraseña='" + U.getPassword()+ "'", Controladores.ConexionController.Conectar());
+            codigo = new SqlCommand("SELECT * FROM USUARIO WHERE usuario= '" + U.getUsuario() + "' AND contraseña='" + U.getPassword()+ "'", Controladores.ConexionController.Conectar());
             SqlDataReader leer = codigo.ExecuteReader();
            // int r = codigo.ExecuteNonQuery();
              if (leer.Read())
