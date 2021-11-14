@@ -69,23 +69,23 @@
     <Compile Include="Vistas\CitasForm.Designer.cs">
       <DependentUpon>CitasForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Diagnostico.cs">
+    <Compile Include="Vistas\DiagnosticoForms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\Diagnostico.Designer.cs">
-      <DependentUpon>Diagnostico.cs</DependentUpon>
+    <Compile Include="Vistas\DiagnosticoForms.Designer.cs">
+      <DependentUpon>DiagnosticoForms.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\InformacionMedica.cs">
+    <Compile Include="Vistas\InformacionMedicaForms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\InformacionMedica.Designer.cs">
-      <DependentUpon>InformacionMedica.cs</DependentUpon>
+    <Compile Include="Vistas\InformacionMedicaForms.Designer.cs">
+      <DependentUpon>InformacionMedicaForms.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Login.cs">
+    <Compile Include="Vistas\LoginForms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="Vistas\LoginForms.Designer.cs">
+      <DependentUpon>LoginForms.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\LogoForm.cs">
       <SubType>Form</SubType>
@@ -93,64 +93,64 @@
     <Compile Include="Vistas\LogoForm.Designer.cs">
       <DependentUpon>LogoForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Menuform.cs">
+    <Compile Include="Vistas\MenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\Menuform.Designer.cs">
-      <DependentUpon>Menuform.cs</DependentUpon>
+    <Compile Include="Vistas\MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\MenuPrincipalSecretaria.cs">
+    <Compile Include="Vistas\MenuPrincipalSecretariaForms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\MenuPrincipalSecretaria.Designer.cs">
-      <DependentUpon>MenuPrincipalSecretaria.cs</DependentUpon>
+    <Compile Include="Vistas\MenuPrincipalSecretariaForms.Designer.cs">
+      <DependentUpon>MenuPrincipalSecretariaForms.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Paciente.cs">
+    <Compile Include="Vistas\PacienteForms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\Paciente.Designer.cs">
-      <DependentUpon>Paciente.cs</DependentUpon>
+    <Compile Include="Vistas\PacienteForms.Designer.cs">
+      <DependentUpon>PacienteForms.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Preguntas.cs">
+    <Compile Include="Vistas\PreguntasForms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\Preguntas.Designer.cs">
-      <DependentUpon>Preguntas.cs</DependentUpon>
+    <Compile Include="Vistas\PreguntasForms.Designer.cs">
+      <DependentUpon>PreguntasForms.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vistas\RecuperarContra.cs">
+    <Compile Include="Vistas\RecuperarContraForms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\RecuperarContra.Designer.cs">
-      <DependentUpon>RecuperarContra.cs</DependentUpon>
+    <Compile Include="Vistas\RecuperarContraForms.Designer.cs">
+      <DependentUpon>RecuperarContraForms.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Vistas\CitasForm.resx">
       <DependentUpon>CitasForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Diagnostico.resx">
-      <DependentUpon>Diagnostico.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\DiagnosticoForms.resx">
+      <DependentUpon>DiagnosticoForms.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\InformacionMedica.resx">
-      <DependentUpon>InformacionMedica.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\InformacionMedicaForms.resx">
+      <DependentUpon>InformacionMedicaForms.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\LoginForms.resx">
+      <DependentUpon>LoginForms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\LogoForm.resx">
       <DependentUpon>LogoForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Menuform.resx">
-      <DependentUpon>Menuform.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\MenuPrincipalSecretaria.resx">
-      <DependentUpon>MenuPrincipalSecretaria.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\MenuPrincipalSecretariaForms.resx">
+      <DependentUpon>MenuPrincipalSecretariaForms.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Paciente.resx">
-      <DependentUpon>Paciente.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\PacienteForms.resx">
+      <DependentUpon>PacienteForms.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Preguntas.resx">
-      <DependentUpon>Preguntas.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\PreguntasForms.resx">
+      <DependentUpon>PreguntasForms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -161,8 +161,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Vistas\RecuperarContra.resx">
-      <DependentUpon>RecuperarContra.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\RecuperarContraForms.resx">
+      <DependentUpon>RecuperarContraForms.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
