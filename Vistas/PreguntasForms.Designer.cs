@@ -41,7 +41,7 @@ namespace SistemaConsultorioMedico
             this.dato10Tbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.dato10Rbtn4 = new System.Windows.Forms.RadioButton();
             this.dato10Rbtn3 = new System.Windows.Forms.RadioButton();
-            this.dato01Rbtn2 = new System.Windows.Forms.RadioButton();
+            this.dato10Rbtn2 = new System.Windows.Forms.RadioButton();
             this.dato10Rbtn1 = new System.Windows.Forms.RadioButton();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.GuardarBtn = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -196,7 +196,7 @@ namespace SistemaConsultorioMedico
             this.dato10OpcTbx.Name = "dato10OpcTbx";
             this.dato10OpcTbx.Size = new System.Drawing.Size(505, 41);
             this.dato10OpcTbx.TabIndex = 6;
-            this.dato10OpcTbx.Text = " ¿QUIEN?";
+            this.dato10OpcTbx.Text = "¿QUIEN?";
             this.dato10OpcTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.dato10OpcTbx.MouseEnter += new System.EventHandler(this.QuienTxb_MouseEnter);
             this.dato10OpcTbx.MouseLeave += new System.EventHandler(this.QuienTxb_MouseLeave);
@@ -269,17 +269,17 @@ namespace SistemaConsultorioMedico
             this.dato10Rbtn3.Text = "CANCER SERVICOUTERINO";
             this.dato10Rbtn3.UseVisualStyleBackColor = true;
             // 
-            // dato01Rbtn2
+            // dato10Rbtn2
             // 
-            this.dato01Rbtn2.AutoSize = true;
-            this.dato01Rbtn2.Location = new System.Drawing.Point(191, 198);
-            this.dato01Rbtn2.Margin = new System.Windows.Forms.Padding(4);
-            this.dato01Rbtn2.Name = "dato01Rbtn2";
-            this.dato01Rbtn2.Size = new System.Drawing.Size(160, 21);
-            this.dato01Rbtn2.TabIndex = 2;
-            this.dato01Rbtn2.TabStop = true;
-            this.dato01Rbtn2.Text = "CANCER DE SENOS";
-            this.dato01Rbtn2.UseVisualStyleBackColor = true;
+            this.dato10Rbtn2.AutoSize = true;
+            this.dato10Rbtn2.Location = new System.Drawing.Point(191, 198);
+            this.dato10Rbtn2.Margin = new System.Windows.Forms.Padding(4);
+            this.dato10Rbtn2.Name = "dato10Rbtn2";
+            this.dato10Rbtn2.Size = new System.Drawing.Size(160, 21);
+            this.dato10Rbtn2.TabIndex = 2;
+            this.dato10Rbtn2.TabStop = true;
+            this.dato10Rbtn2.Text = "CANCER DE SENOS";
+            this.dato10Rbtn2.UseVisualStyleBackColor = true;
             // 
             // dato10Rbtn1
             // 
@@ -718,7 +718,7 @@ namespace SistemaConsultorioMedico
             this.Controls.Add(this.dato10Tbx);
             this.Controls.Add(this.dato10Rbtn4);
             this.Controls.Add(this.dato10Rbtn3);
-            this.Controls.Add(this.dato01Rbtn2);
+            this.Controls.Add(this.dato10Rbtn2);
             this.Controls.Add(this.dato10Rbtn1);
             this.Controls.Add(this.bunifuCustomLabel2);
             this.Controls.Add(this.dato13Opc2Tbx);
@@ -753,7 +753,7 @@ namespace SistemaConsultorioMedico
         private Bunifu.Framework.UI.BunifuMaterialTextbox dato10Tbx;
         private System.Windows.Forms.RadioButton dato10Rbtn4;
         private System.Windows.Forms.RadioButton dato10Rbtn3;
-        private System.Windows.Forms.RadioButton dato01Rbtn2;
+        private System.Windows.Forms.RadioButton dato10Rbtn2;
         private System.Windows.Forms.RadioButton dato10Rbtn1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuThinButton2 GuardarBtn;
