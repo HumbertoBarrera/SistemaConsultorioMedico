@@ -78,14 +78,24 @@ namespace SistemaConsultorioMedico
 
         private void guardarbtn_Click(object sender, EventArgs e)
         {
-            DateTime fecha = Convert.ToDateTime(FechaTxb.Text);
-            Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
-            diagnostico.setIdPaciente(idPaciente);
-            diagnostico.setFecha(fecha);
-            diagnostico.setDescripcion(Descripciontxb.Text);
 
-            Controladores.DiagnosticoController.folio(diagnostico);
-            Controladores.DiagnosticoController.insertarDiagnostico(diagnostico);
+
+            if ((FechaTxb.Text != "FECHA") && (Descripciontxb.Text != "DESCRIPCION"))
+            {
+                DateTime fecha = Convert.ToDateTime(FechaTxb.Text);
+                Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
+                diagnostico.setIdPaciente(idPaciente);
+                diagnostico.setFecha(fecha);
+                diagnostico.setDescripcion(Descripciontxb.Text);
+
+                Controladores.DiagnosticoController.folio(diagnostico);
+                Controladores.DiagnosticoController.insertarDiagnostico(diagnostico);
+
+            }
+            else
+            {
+                MessageBox.Show("Los campos deben ser llenados");
+            }
         }
     }
 }

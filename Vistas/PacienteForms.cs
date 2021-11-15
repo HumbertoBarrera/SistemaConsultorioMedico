@@ -273,11 +273,19 @@ namespace SistemaConsultorioMedico
 
         private void DiagnosticoBtn_Click(object sender, EventArgs e)
         {
-            int idPaciente = int.Parse(BuscarTbx.text);
-            Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
-            Form VDiag = new Diagnostico(idPaciente);
-            this.Hide();
-            VDiag.Show();
+            if (BuscarTbx.Text != "")
+            {
+                int idPaciente = int.Parse(BuscarTbx.text);
+                Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
+                Form VDiag = new Diagnostico(idPaciente);
+                this.Hide();
+                VDiag.Show();
+
+            }
+            else
+            {
+                MessageBox.Show("Ingrese el ID del Paciente");
+            }
             
         }
     }

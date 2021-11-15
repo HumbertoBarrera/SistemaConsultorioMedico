@@ -66,6 +66,7 @@ namespace SistemaConsultorioMedico
             // FechaTxb
             // 
             this.FechaTxb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.FechaTxb.Enabled = false;
             this.FechaTxb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.FechaTxb.ForeColor = System.Drawing.Color.Black;
             this.FechaTxb.HintForeColor = System.Drawing.Color.Empty;
@@ -187,7 +188,7 @@ namespace SistemaConsultorioMedico
             this.PacienteTxb.LineIdleColor = System.Drawing.Color.Purple;
             this.PacienteTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.PacienteTxb.LineThickness = 3;
-            this.PacienteTxb.Location = new System.Drawing.Point(526, 91);
+            this.PacienteTxb.Location = new System.Drawing.Point(525, 121);
             this.PacienteTxb.Margin = new System.Windows.Forms.Padding(4);
             this.PacienteTxb.Name = "PacienteTxb";
             this.PacienteTxb.Size = new System.Drawing.Size(379, 33);
