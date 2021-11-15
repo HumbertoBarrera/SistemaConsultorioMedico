@@ -46,7 +46,7 @@ namespace SistemaConsultorioMedico
             this.dato6OpcTbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.dato7OpcTbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.dato8OpcTbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.dato9Opc = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.dato9OpcTbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.GuardarBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.MasBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.SuspendLayout();
@@ -222,7 +222,7 @@ namespace SistemaConsultorioMedico
             this.dato1Txb.Name = "dato1Txb";
             this.dato1Txb.Size = new System.Drawing.Size(505, 41);
             this.dato1Txb.TabIndex = 1;
-            this.dato1Txb.Text = " ¿QUIEN LA RECOMENDO?";
+            this.dato1Txb.Text = "¿QUIEN LA RECOMENDO?";
             this.dato1Txb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.dato1Txb.MouseEnter += new System.EventHandler(this.RecomendacionTxb_MouseEnter);
             this.dato1Txb.MouseLeave += new System.EventHandler(this.RecomendacionTxb_MouseLeave);
@@ -290,7 +290,7 @@ namespace SistemaConsultorioMedico
             this.dato4OpcTbx.Name = "dato4OpcTbx";
             this.dato4OpcTbx.Size = new System.Drawing.Size(505, 41);
             this.dato4OpcTbx.TabIndex = 5;
-            this.dato4OpcTbx.Text = " ¿CUAL?";
+            this.dato4OpcTbx.Text = "¿CUAL?";
             this.dato4OpcTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.dato4OpcTbx.MouseEnter += new System.EventHandler(this.CualtbxAlergia_MouseEnter);
             this.dato4OpcTbx.MouseLeave += new System.EventHandler(this.CualtbxAlergia_MouseLeave);
@@ -312,7 +312,7 @@ namespace SistemaConsultorioMedico
             this.dato5OpcTbx.Name = "dato5OpcTbx";
             this.dato5OpcTbx.Size = new System.Drawing.Size(505, 41);
             this.dato5OpcTbx.TabIndex = 7;
-            this.dato5OpcTbx.Text = " ¿CUAL?";
+            this.dato5OpcTbx.Text = "¿CUAL?";
             this.dato5OpcTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.dato5OpcTbx.MouseEnter += new System.EventHandler(this.CualTbxAnimales_MouseEnter);
             this.dato5OpcTbx.MouseLeave += new System.EventHandler(this.CualTbxAnimales_MouseLeave);
@@ -334,7 +334,7 @@ namespace SistemaConsultorioMedico
             this.dato6OpcTbx.Name = "dato6OpcTbx";
             this.dato6OpcTbx.Size = new System.Drawing.Size(505, 41);
             this.dato6OpcTbx.TabIndex = 9;
-            this.dato6OpcTbx.Text = " ¿CUAL?";
+            this.dato6OpcTbx.Text = "¿CUAL?";
             this.dato6OpcTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.dato6OpcTbx.MouseEnter += new System.EventHandler(this.CualTxbMedicamento_MouseEnter);
             this.dato6OpcTbx.MouseLeave += new System.EventHandler(this.CualTxbMedicamento_MouseLeave);
@@ -356,7 +356,7 @@ namespace SistemaConsultorioMedico
             this.dato7OpcTbx.Name = "dato7OpcTbx";
             this.dato7OpcTbx.Size = new System.Drawing.Size(505, 41);
             this.dato7OpcTbx.TabIndex = 11;
-            this.dato7OpcTbx.Text = " ¿CUAL?";
+            this.dato7OpcTbx.Text = "¿CUAL?";
             this.dato7OpcTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.dato7OpcTbx.MouseEnter += new System.EventHandler(this.CualTxbAlergiaMedicamento_MouseEnter);
             this.dato7OpcTbx.MouseLeave += new System.EventHandler(this.CualTxbAlergiaMedicamento_MouseLeave);
@@ -378,32 +378,32 @@ namespace SistemaConsultorioMedico
             this.dato8OpcTbx.Name = "dato8OpcTbx";
             this.dato8OpcTbx.Size = new System.Drawing.Size(505, 41);
             this.dato8OpcTbx.TabIndex = 13;
-            this.dato8OpcTbx.Text = " ¿CUAL?";
+            this.dato8OpcTbx.Text = "¿CUAL?";
             this.dato8OpcTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.dato8OpcTbx.MouseEnter += new System.EventHandler(this.CuaTxbCirugia_MouseEnter);
             this.dato8OpcTbx.MouseLeave += new System.EventHandler(this.CuaTxbCirugia_MouseLeave);
             // 
-            // dato9Opc
+            // dato9OpcTbx
             // 
-            this.dato9Opc.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.dato9Opc.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.dato9Opc.ForeColor = System.Drawing.Color.Black;
-            this.dato9Opc.HintForeColor = System.Drawing.Color.Empty;
-            this.dato9Opc.HintText = "";
-            this.dato9Opc.isPassword = false;
-            this.dato9Opc.LineFocusedColor = System.Drawing.Color.Blue;
-            this.dato9Opc.LineIdleColor = System.Drawing.Color.Purple;
-            this.dato9Opc.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.dato9Opc.LineThickness = 3;
-            this.dato9Opc.Location = new System.Drawing.Point(705, 542);
-            this.dato9Opc.Margin = new System.Windows.Forms.Padding(5);
-            this.dato9Opc.Name = "dato9Opc";
-            this.dato9Opc.Size = new System.Drawing.Size(505, 41);
-            this.dato9Opc.TabIndex = 15;
-            this.dato9Opc.Text = " ¿CUAL?";
-            this.dato9Opc.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.dato9Opc.MouseEnter += new System.EventHandler(this.CualTxbComplicacion_MouseEnter);
-            this.dato9Opc.MouseLeave += new System.EventHandler(this.CualTxbComplicacion_MouseLeave);
+            this.dato9OpcTbx.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.dato9OpcTbx.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.dato9OpcTbx.ForeColor = System.Drawing.Color.Black;
+            this.dato9OpcTbx.HintForeColor = System.Drawing.Color.Empty;
+            this.dato9OpcTbx.HintText = "";
+            this.dato9OpcTbx.isPassword = false;
+            this.dato9OpcTbx.LineFocusedColor = System.Drawing.Color.Blue;
+            this.dato9OpcTbx.LineIdleColor = System.Drawing.Color.Purple;
+            this.dato9OpcTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.dato9OpcTbx.LineThickness = 3;
+            this.dato9OpcTbx.Location = new System.Drawing.Point(705, 542);
+            this.dato9OpcTbx.Margin = new System.Windows.Forms.Padding(5);
+            this.dato9OpcTbx.Name = "dato9OpcTbx";
+            this.dato9OpcTbx.Size = new System.Drawing.Size(505, 41);
+            this.dato9OpcTbx.TabIndex = 15;
+            this.dato9OpcTbx.Text = "¿CUAL?";
+            this.dato9OpcTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.dato9OpcTbx.MouseEnter += new System.EventHandler(this.CualTxbComplicacion_MouseEnter);
+            this.dato9OpcTbx.MouseLeave += new System.EventHandler(this.CualTxbComplicacion_MouseLeave);
             // 
             // GuardarBtn
             // 
@@ -464,7 +464,7 @@ namespace SistemaConsultorioMedico
             this.ClientSize = new System.Drawing.Size(1149, 715);
             this.Controls.Add(this.MasBtn);
             this.Controls.Add(this.GuardarBtn);
-            this.Controls.Add(this.dato9Opc);
+            this.Controls.Add(this.dato9OpcTbx);
             this.Controls.Add(this.dato8OpcTbx);
             this.Controls.Add(this.dato7OpcTbx);
             this.Controls.Add(this.dato6OpcTbx);
@@ -509,7 +509,7 @@ namespace SistemaConsultorioMedico
         private Bunifu.Framework.UI.BunifuMaterialTextbox dato6OpcTbx;
         private Bunifu.Framework.UI.BunifuMaterialTextbox dato7OpcTbx;
         private Bunifu.Framework.UI.BunifuMaterialTextbox dato8OpcTbx;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox dato9Opc;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox dato9OpcTbx;
         private Bunifu.Framework.UI.BunifuThinButton2 GuardarBtn;
         private Bunifu.Framework.UI.BunifuThinButton2 MasBtn;
     }

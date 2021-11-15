@@ -19,23 +19,35 @@ namespace SistemaConsultorioMedico
 
         private void MasBtn_Click(object sender, EventArgs e)
         {
-            Modelos.InformacionMedica im1 = new Modelos.InformacionMedica(23507605, dato1Txb.Text, dato2Tbx.Text, dato3Tbx.Text, dato4Tbx.Text,
-                                                                dato4OpcTbx.Text, dato5Tbx.Text, dato5OpcTbx.Text, dato6Tbx.Text, dato6OpcTbx.Text,
-                                                                dato7Tbx.Text, dato7OpcTbx.Text, dato8Tbx.Text, dato8OpcTbx.Text,
-                                                                dato9Tbx.Text, dato9Opc.Text);
-            Form AbrirPreguntas = new Preguntas(im1);
-            AbrirPreguntas.Show();
+            if (validarCampos())
+            {
+                Modelos.InformacionMedica im1 = new Modelos.InformacionMedica(23507605, dato1Txb.Text, dato2Tbx.Text, dato3Tbx.Text, dato4Tbx.Text,
+                                                                        dato4OpcTbx.Text, dato5Tbx.Text, dato5OpcTbx.Text, dato6Tbx.Text, dato6OpcTbx.Text,
+                                                                        dato7Tbx.Text, dato7OpcTbx.Text, dato8Tbx.Text, dato8OpcTbx.Text,
+                                                                        dato9Tbx.Text, dato9OpcTbx.Text);
+                Form AbrirPreguntas = new Preguntas(im1);
+                AbrirPreguntas.Show();
+            }
+            else
+            {
+                MessageBox.Show("No pueden haber campos vacíos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void RecomendacionTxb_MouseEnter(object sender, EventArgs e)
         {
-
+            if(dato1Txb.Text == "¿QUIEN LA RECOMENDO?")
+            {
+                dato1Txb.Text = "";
+                dato1Txb.ForeColor = Color.DarkSlateGray;
+            }
         }
+
         private void RecomendacionTxb_MouseLeave(object sender, EventArgs e)
         {
             if (dato1Txb.Text == "")
             {
-                dato1Txb.Text = " ¿QUIEN LA RECOMENDO?";
+                dato1Txb.Text = "¿QUIEN LA RECOMENDO?";
                 dato1Txb.ForeColor = Color.DarkSlateGray;
             }
         }
@@ -97,7 +109,7 @@ namespace SistemaConsultorioMedico
 
         private void CualtbxAlergia_MouseEnter(object sender, EventArgs e)
         {
-            if (dato4OpcTbx.Text == " ¿CUAL?")
+            if (dato4OpcTbx.Text == "¿CUAL?")
             {
                 dato4OpcTbx.Text = "";
                 dato4OpcTbx.ForeColor = Color.DarkSlateGray;
@@ -108,14 +120,14 @@ namespace SistemaConsultorioMedico
         {
             if (dato4OpcTbx.Text == "")
             {
-                dato4OpcTbx.Text = " ¿CUAL?";
+                dato4OpcTbx.Text = "¿CUAL?";
                 dato4OpcTbx.ForeColor = Color.DarkSlateGray;
             }
         }
 
         private void CualTbxAnimales_MouseEnter(object sender, EventArgs e)
         {
-            if (dato5OpcTbx.Text == " ¿CUAL?")
+            if (dato5OpcTbx.Text == "¿CUAL?")
             {
                 dato5OpcTbx.Text = "";
                 dato5OpcTbx.ForeColor = Color.DarkSlateGray;
@@ -127,14 +139,14 @@ namespace SistemaConsultorioMedico
         {
             if (dato5OpcTbx.Text == "")
             {
-                dato5OpcTbx.Text = " ¿CUAL?";
+                dato5OpcTbx.Text = "¿CUAL?";
                 dato5OpcTbx.ForeColor = Color.DarkSlateGray;
             }
         }
 
         private void CualTxbMedicamento_MouseEnter(object sender, EventArgs e)
         {
-            if (dato6OpcTbx.Text == " ¿CUAL?")
+            if (dato6OpcTbx.Text == "¿CUAL?")
             {
                 dato6OpcTbx.Text = "";
                 dato6OpcTbx.ForeColor = Color.DarkSlateGray;
@@ -145,14 +157,14 @@ namespace SistemaConsultorioMedico
         {
             if (dato6OpcTbx.Text == "")
             {
-                dato6OpcTbx.Text = " ¿CUAL?";
+                dato6OpcTbx.Text = "¿CUAL?";
                 dato6OpcTbx.ForeColor = Color.DarkSlateGray;
             }
         }
 
         private void CualTxbAlergiaMedicamento_MouseEnter(object sender, EventArgs e)
         {
-            if (dato7OpcTbx.Text == " ¿CUAL?")
+            if (dato7OpcTbx.Text == "¿CUAL?")
             {
                 dato7OpcTbx.Text = "";
                 dato7OpcTbx.ForeColor = Color.DarkSlateGray;
@@ -163,14 +175,14 @@ namespace SistemaConsultorioMedico
         {
             if (dato7OpcTbx.Text == "")
             {
-                dato7OpcTbx.Text = " ¿CUAL?";
+                dato7OpcTbx.Text = "¿CUAL?";
                 dato7OpcTbx.ForeColor = Color.DarkSlateGray;
             }
         }
 
         private void CuaTxbCirugia_MouseEnter(object sender, EventArgs e)
         {
-            if (dato8OpcTbx.Text == " ¿CUAL?")
+            if (dato8OpcTbx.Text == "¿CUAL?")
             {
                 dato8OpcTbx.Text = "";
                 dato8OpcTbx.ForeColor = Color.DarkSlateGray;
@@ -181,26 +193,26 @@ namespace SistemaConsultorioMedico
         {
             if (dato8OpcTbx.Text == "")
             {
-                dato8OpcTbx.Text = " ¿CUAL?";
+                dato8OpcTbx.Text = "¿CUAL?";
                 dato8OpcTbx.ForeColor = Color.DarkSlateGray;
             }
         }
 
         private void CualTxbComplicacion_MouseEnter(object sender, EventArgs e)
         {
-            if (dato9Opc.Text == " ¿CUAL?")
+            if (dato9OpcTbx.Text == "¿CUAL?")
             {
-                dato9Opc.Text = "";
-                dato9Opc.ForeColor = Color.DarkSlateGray;
+                dato9OpcTbx.Text = "";
+                dato9OpcTbx.ForeColor = Color.DarkSlateGray;
             }
         }
 
         private void CualTxbComplicacion_MouseLeave(object sender, EventArgs e)
         {
-            if (dato9Opc.Text == "")
+            if (dato9OpcTbx.Text == "")
             {
-                dato9Opc.Text = " ¿CUAL?";
-                dato9Opc.ForeColor = Color.DarkSlateGray;
+                dato9OpcTbx.Text = "¿CUAL?";
+                dato9OpcTbx.ForeColor = Color.DarkSlateGray;
             }
         }
 
@@ -296,5 +308,40 @@ namespace SistemaConsultorioMedico
                 dato9Tbx.ForeColor = Color.DarkSlateGray;
             }
         }
+
+        private bool validarCampos()
+        {
+            if (dato1Txb.Text != "¿QUIEN LA RECOMENDO?" && dato2Tbx.Text != "¿QUE GINECOLOGO CONSULTABA ANTERIORMENTE?" && dato3Tbx.Text != "MOTIVO DE ESTA PRIMERA CONSULTA" && dato4Tbx.Text != "¿PADECE USTED DE ALGUNA ALERGIA O ENFERMEDAD CRONICA?" && dato4OpcTbx.Text != "¿CUAL?" &&
+                dato5Tbx.Text != "¿TIENE ANIMALES DOMESTICOS COMO PERROS, GATOS, PAJAROS, ETC..?" && dato5OpcTbx.Text != "¿CUAL?" && dato6Tbx.Text != "¿TOMA ALGUN MEDICAMENTO CON REGULARIDAD?" && dato6OpcTbx.Text != "¿CUAL?" && dato7Tbx.Text != "¿ES ALERGICA A ALGUN MEDICAMENTO?" &&
+                dato7OpcTbx.Text != "¿CUAL?" && dato8Tbx.Text != "¿HA SIDO SOMETIDA A ALGUNA CIRUGIA?" && dato8OpcTbx.Text != "¿CUAL?" && dato9Tbx.Text != "¿HUBO ALGUNA COMPLICACION?" && dato9OpcTbx.Text != "¿CUAL?" && dato1Txb.Text != "" && dato2Tbx.Text != "" && dato3Tbx.Text != "" && 
+                dato4Tbx.Text != "" && dato4OpcTbx.Text != "" && dato5Tbx.Text != "" && dato5OpcTbx.Text != "" && dato6Tbx.Text != "" && dato6OpcTbx.Text != "" && dato7Tbx.Text != "" && dato7OpcTbx.Text != "" && dato8Tbx.Text != "" && dato8OpcTbx.Text != "" && dato9Tbx.Text != "" && dato9OpcTbx.Text != "")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public void reestablecerCampos()
+        {
+            dato1Txb.Text = "¿QUIEN LA RECOMENDO?";
+            dato2Tbx.Text = "¿QUE GINECOLOGO CONSULTABA ANTERIORMENTE?";
+            dato3Tbx.Text = "MOTIVO DE ESTA PRIMERA CONSULTA";
+            dato4Tbx.Text = "¿PADECE USTED DE ALGUNA ALERGIA O ENFERMEDAD CRONICA?";
+            dato4OpcTbx.Text = "¿CUAL?";
+            dato5Tbx.Text = "¿TIENE ANIMALES DOMESTICOS COMO PERROS, GATOS, PAJAROS, ETC..?";
+            dato5OpcTbx.Text = "¿CUAL?";
+            dato6Tbx.Text = "¿TOMA ALGUN MEDICAMENTO CON REGULARIDAD?";
+            dato6OpcTbx.Text = "¿CUAL?";
+            dato7Tbx.Text = "¿ES ALERGICA A ALGUN MEDICAMENTO?";
+            dato7OpcTbx.Text = "¿CUAL?";
+            dato8Tbx.Text = "¿HA SIDO SOMETIDA A ALGUNA CIRUGIA?";
+            dato8OpcTbx.Text = "¿CUAL?";
+            dato9Tbx.Text = "¿HUBO ALGUNA COMPLICACION?";
+            dato9OpcTbx.Text = "¿CUAL?";
+        }
+
     }
 }
