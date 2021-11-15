@@ -274,11 +274,11 @@ namespace SistemaConsultorioMedico
         private void DiagnosticoBtn_Click(object sender, EventArgs e)
         {
             int idPaciente = int.Parse(BuscarTbx.text);
-
             Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
-            MessageBox.Show(idPaciente.ToString());
             Form VDiag = new Diagnostico(idPaciente);
+            this.Hide();
             VDiag.Show();
+            
         }
     }
 }

@@ -18,6 +18,8 @@ namespace SistemaConsultorioMedico
             InitializeComponent();
             this.idPaciente = idPaciente;
             PacienteTxb.Text = idPaciente.ToString();
+            FechaTxb.Text = DateTime.Now.ToString("dd/MM/yyyy");
+
         }
 
         private void FechaTxb_MouseEnter(object sender, EventArgs e)
@@ -78,14 +80,11 @@ namespace SistemaConsultorioMedico
         {
             DateTime fecha = Convert.ToDateTime(FechaTxb.Text);
             Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
-
             diagnostico.setIdPaciente(idPaciente);
             diagnostico.setFecha(fecha);
             diagnostico.setDescripcion(Descripciontxb.Text);
 
             Controladores.DiagnosticoController.folio(diagnostico);
-            MessageBox.Show(diagnostico.getIdPaciente().ToString());
-
             Controladores.DiagnosticoController.insertarDiagnostico(diagnostico);
         }
     }

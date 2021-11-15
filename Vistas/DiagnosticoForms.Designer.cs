@@ -46,7 +46,7 @@ namespace SistemaConsultorioMedico
             this.linea.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(128)))));
             this.linea.LineThickness = 1;
             this.linea.Location = new System.Drawing.Point(315, 47);
-            this.linea.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.linea.Margin = new System.Windows.Forms.Padding(4);
             this.linea.Name = "linea";
             this.linea.Size = new System.Drawing.Size(245, 10);
             this.linea.TabIndex = 29;
@@ -76,7 +76,7 @@ namespace SistemaConsultorioMedico
             this.FechaTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.FechaTxb.LineThickness = 3;
             this.FechaTxb.Location = new System.Drawing.Point(47, 121);
-            this.FechaTxb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FechaTxb.Margin = new System.Windows.Forms.Padding(4);
             this.FechaTxb.Name = "FechaTxb";
             this.FechaTxb.Size = new System.Drawing.Size(379, 33);
             this.FechaTxb.TabIndex = 30;
@@ -117,11 +117,12 @@ namespace SistemaConsultorioMedico
             this.guardarbtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.guardarbtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.guardarbtn.Location = new System.Drawing.Point(511, 532);
-            this.guardarbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guardarbtn.Margin = new System.Windows.Forms.Padding(4);
             this.guardarbtn.Name = "guardarbtn";
             this.guardarbtn.Size = new System.Drawing.Size(157, 41);
             this.guardarbtn.TabIndex = 34;
             this.guardarbtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.guardarbtn.Click += new System.EventHandler(this.guardarbtn_Click);
             // 
             // bunifuThinButton24
             // 
@@ -142,7 +143,7 @@ namespace SistemaConsultorioMedico
             this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.bunifuThinButton24.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.bunifuThinButton24.Location = new System.Drawing.Point(677, 532);
-            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton24.Name = "bunifuThinButton24";
             this.bunifuThinButton24.Size = new System.Drawing.Size(157, 41);
             this.bunifuThinButton24.TabIndex = 35;
@@ -167,7 +168,7 @@ namespace SistemaConsultorioMedico
             this.EliminarCitaBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.EliminarCitaBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.EliminarCitaBtn.Location = new System.Drawing.Point(844, 532);
-            this.EliminarCitaBtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.EliminarCitaBtn.Margin = new System.Windows.Forms.Padding(5);
             this.EliminarCitaBtn.Name = "EliminarCitaBtn";
             this.EliminarCitaBtn.Size = new System.Drawing.Size(157, 41);
             this.EliminarCitaBtn.TabIndex = 36;
@@ -176,6 +177,7 @@ namespace SistemaConsultorioMedico
             // PacienteTxb
             // 
             this.PacienteTxb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PacienteTxb.Enabled = false;
             this.PacienteTxb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.PacienteTxb.ForeColor = System.Drawing.Color.Black;
             this.PacienteTxb.HintForeColor = System.Drawing.Color.Empty;
@@ -186,7 +188,7 @@ namespace SistemaConsultorioMedico
             this.PacienteTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.PacienteTxb.LineThickness = 3;
             this.PacienteTxb.Location = new System.Drawing.Point(526, 91);
-            this.PacienteTxb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PacienteTxb.Margin = new System.Windows.Forms.Padding(4);
             this.PacienteTxb.Name = "PacienteTxb";
             this.PacienteTxb.Size = new System.Drawing.Size(379, 33);
             this.PacienteTxb.TabIndex = 38;

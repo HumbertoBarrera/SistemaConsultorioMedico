@@ -22,7 +22,9 @@ namespace SistemaConsultorioMedico.Controladores
              if (leer.Read())
             {
                 Form MenuForm = new Menuform();
-                MenuForm.Show();
+                MenuForm.ShowDialog();
+
+
             }
             else
             {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using System.Data.SqlClient;
 using SistemaConsultorioMedico.Modelos;
 
@@ -18,6 +19,17 @@ namespace SistemaConsultorioMedico.Controladores
             SqlCommand comando;
             comando = new SqlCommand("INSERT INTO DIAGNOSTICO VALUES ('" + d.getIdPaciente() + "','" + d.getFolioDiagnostico() + "','" + d.getFecha() + "','" + d.getDescripcion() + "')", Controladores.ConexionController.Conectar());
             int r = comando.ExecuteNonQuery();
+
+            if (r == 1)
+            {
+                MessageBox.Show("Diagnostico Agregado con exito");
+
+            }
+            else
+            {
+                MessageBox.Show("Diasgnostico no agregad0");
+
+            }
         }
 
         public static void folio(Modelos.Diagnostico d)
