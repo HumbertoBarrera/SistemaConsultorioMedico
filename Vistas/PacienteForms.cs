@@ -266,7 +266,6 @@ namespace SistemaConsultorioMedico
                 Form VDiag = new Diagnostico(idPaciente);
                 this.Hide();
                 VDiag.Show();
-
             }
             else
             {
@@ -278,7 +277,7 @@ namespace SistemaConsultorioMedico
         private bool validarCampos()
         {
             if(NombreTxb.Text != "NOMBRES" & ApellidoMaternoTxb.Text != "APELLIDO PATERNO" & ApellidoMaternoTxb.Text != "APELLIDO MATERNO" & FechaNacTxb.Text != "FECHA NACIMIENTO" & LugarNaciTxb.Text != "LUGAR DE NACIMIENTO" &
-               Direcciontxb.Text != "DIRECCION" & TelefonoTxb.Text != "TELEFONO" & CorreoETxb.Text != "CORREO ELECTRONICO" & OcupacionTxb.Text != "OCUPACION" & LugarTrabajoTxb.Text != "OCUPACION" &
+               Direcciontxb.Text != "DIRECCION" & TelefonoTxb.Text != "TELEFONO" & CorreoETxb.Text != "CORREO ELECTRONICO" & OcupacionTxb.Text != "OCUPACION" & LugarTrabajoTxb.Text != "LUGAR DE TRABAJO" &
                NombreTxb.Text != "" & ApellidoMaternoTxb.Text != "" & ApellidoMaternoTxb.Text != "" & FechaNacTxb.Text != " " & LugarNaciTxb.Text != "" &
                Direcciontxb.Text != "" & TelefonoTxb.Text != "" & CorreoETxb.Text != "" & OcupacionTxb.Text != "" & LugarTrabajoTxb.Text != "")
             {
@@ -302,6 +301,21 @@ namespace SistemaConsultorioMedico
             CorreoETxb.Text = "CORREO ELECTRONICO";
             OcupacionTxb.Text = "OCUPACION";
             LugarTrabajoTxb.Text = "LUGAR DE TRABAJO";
+        }
+
+        private void InforMedicaBtn_Click(object sender, EventArgs e)
+        {
+            if (BuscarTbx.Text != "")
+            {
+                int idPaciente = int.Parse(BuscarTbx.text);
+                Form VInfoMedica = new InformacionMedica(idPaciente);
+                this.Hide();
+                VInfoMedica.Show();
+            }
+            else
+            {
+                MessageBox.Show("Ingrese el ID del Paciente");
+            }
         }
     }
 }

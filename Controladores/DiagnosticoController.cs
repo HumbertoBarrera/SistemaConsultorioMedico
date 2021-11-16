@@ -15,10 +15,37 @@ namespace SistemaConsultorioMedico.Controladores
 
         public static void insertarDiagnostico(Modelos.Diagnostico d)
         {
+            String query = "INSERT INTO DIAGNOSTICO VALUES (@idPaciente, @folioDiagnostico, @fecha, @descripcion)";
+            try
+            {
+                using(SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
+                {
+                    comando.Parameters.AddWithValue("@idPaciente", d.getIdPaciente());
+                    comando.Parameters.AddWithValue("@folioDiagnostico", d.getFolioDiagnostico());
+                    comando.Parameters.AddWithValue("@fecha", d.getFecha());
+                    comando.Parameters.AddWithValue("@descripcion", d.getDescripcion());
+                    int resultado = comando.ExecuteNonQuery();
+                    if (resultado < 0)
+                    {
+                        MessageBox.Show("Error al insertar en la base de datos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Diagnóstico agregado correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch (SqlException e)
+            {
 
-            SqlCommand comando;
-            comando = new SqlCommand("INSERT INTO DIAGNOSTICO VALUES ('" + d.getIdPaciente() + "','" + d.getFolioDiagnostico() + "','" + d.getFecha() + "','" + d.getDescripcion() + "')", Controladores.ConexionController.Conectar());
-            int r = comando.ExecuteNonQuery();
+            }
+            finally
+            {
+                Controladores.ConexionController.Desconectar();
+            }
+            //SqlCommand comando;
+            //comando = new SqlCommand("INSERT INTO DIAGNOSTICO VALUES ('" + d.getIdPaciente() + "','" + d.getFolioDiagnostico() + "','" + d.getFecha() + "','" + d.getDescripcion() + "')", Controladores.ConexionController.Conectar());
+            /*int r = comando.ExecuteNonQuery();
 
             if (r == 1)
             {
@@ -27,9 +54,8 @@ namespace SistemaConsultorioMedico.Controladores
             }
             else
             {
-                MessageBox.Show("Diasgnostico no agregad0");
-
-            }
+                MessageBox.Show("Diagnostico no agregado");
+            }*/
         }
 
         public static void folio(Modelos.Diagnostico d)

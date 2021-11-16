@@ -32,21 +32,17 @@ namespace SistemaConsultorioMedico
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CitasForm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.GuardarCitaBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.ModificarCitaBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.EliminarCitaBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.FechaCitaTxb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.PacienteCitaTxb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.HoraCitaTxb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.BuscarTbx = new Bunifu.Framework.UI.BunifuTextbox();
             this.PacientesBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.linea = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -139,7 +135,7 @@ namespace SistemaConsultorioMedico
             this.FechaCitaTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.FechaCitaTxb.LineThickness = 3;
             this.FechaCitaTxb.Location = new System.Drawing.Point(44, 190);
-            this.FechaCitaTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.FechaCitaTxb.Margin = new System.Windows.Forms.Padding(5);
             this.FechaCitaTxb.Name = "FechaCitaTxb";
             this.FechaCitaTxb.Size = new System.Drawing.Size(505, 41);
             this.FechaCitaTxb.TabIndex = 19;
@@ -161,7 +157,7 @@ namespace SistemaConsultorioMedico
             this.PacienteCitaTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.PacienteCitaTxb.LineThickness = 3;
             this.PacienteCitaTxb.Location = new System.Drawing.Point(44, 139);
-            this.PacienteCitaTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.PacienteCitaTxb.Margin = new System.Windows.Forms.Padding(5);
             this.PacienteCitaTxb.Name = "PacienteCitaTxb";
             this.PacienteCitaTxb.Size = new System.Drawing.Size(505, 41);
             this.PacienteCitaTxb.TabIndex = 21;
@@ -183,7 +179,7 @@ namespace SistemaConsultorioMedico
             this.HoraCitaTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.HoraCitaTxb.LineThickness = 3;
             this.HoraCitaTxb.Location = new System.Drawing.Point(44, 240);
-            this.HoraCitaTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.HoraCitaTxb.Margin = new System.Windows.Forms.Padding(5);
             this.HoraCitaTxb.Name = "HoraCitaTxb";
             this.HoraCitaTxb.Size = new System.Drawing.Size(505, 41);
             this.HoraCitaTxb.TabIndex = 22;
@@ -192,13 +188,13 @@ namespace SistemaConsultorioMedico
             this.HoraCitaTxb.MouseEnter += new System.EventHandler(this.HoraCitaTxb_MouseEnter);
             this.HoraCitaTxb.MouseLeave += new System.EventHandler(this.HoraCitaTxb_MouseLeave);
             // 
-            // bunifuCustomDataGrid1
+            // bunifuCustomDataGrid2
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.bunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.bunifuCustomDataGrid2.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.bunifuCustomDataGrid2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuCustomDataGrid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -206,42 +202,14 @@ namespace SistemaConsultorioMedico
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid1.DoubleBuffered = true;
-            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(44, 289);
-            this.bunifuCustomDataGrid1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
-            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid1.RowHeadersWidth = 51;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(505, 219);
-            this.bunifuCustomDataGrid1.TabIndex = 23;
-            // 
-            // bunifuCustomDataGrid2
-            // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.bunifuCustomDataGrid2.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.bunifuCustomDataGrid2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.bunifuCustomDataGrid2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.bunifuCustomDataGrid2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bunifuCustomDataGrid2.DoubleBuffered = true;
             this.bunifuCustomDataGrid2.EnableHeadersVisualStyles = false;
             this.bunifuCustomDataGrid2.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomDataGrid2.HeaderForeColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomDataGrid2.Location = new System.Drawing.Point(588, 126);
-            this.bunifuCustomDataGrid2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuCustomDataGrid2.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuCustomDataGrid2.Name = "bunifuCustomDataGrid2";
             this.bunifuCustomDataGrid2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.bunifuCustomDataGrid2.RowHeadersWidth = 51;
@@ -296,7 +264,7 @@ namespace SistemaConsultorioMedico
             this.linea.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(128)))));
             this.linea.LineThickness = 1;
             this.linea.Location = new System.Drawing.Point(447, 71);
-            this.linea.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.linea.Margin = new System.Windows.Forms.Padding(5);
             this.linea.Name = "linea";
             this.linea.Size = new System.Drawing.Size(227, 12);
             this.linea.TabIndex = 29;
@@ -325,7 +293,6 @@ namespace SistemaConsultorioMedico
             this.Controls.Add(this.PacientesBtn);
             this.Controls.Add(this.BuscarTbx);
             this.Controls.Add(this.bunifuCustomDataGrid2);
-            this.Controls.Add(this.bunifuCustomDataGrid1);
             this.Controls.Add(this.HoraCitaTxb);
             this.Controls.Add(this.PacienteCitaTxb);
             this.Controls.Add(this.FechaCitaTxb);
@@ -333,11 +300,10 @@ namespace SistemaConsultorioMedico
             this.Controls.Add(this.ModificarCitaBtn);
             this.Controls.Add(this.EliminarCitaBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CitasForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CitasForm";
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -352,7 +318,6 @@ namespace SistemaConsultorioMedico
         private Bunifu.Framework.UI.BunifuMaterialTextbox FechaCitaTxb;
         private Bunifu.Framework.UI.BunifuMaterialTextbox PacienteCitaTxb;
         private Bunifu.Framework.UI.BunifuMaterialTextbox HoraCitaTxb;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid2;
         private Bunifu.Framework.UI.BunifuTextbox BuscarTbx;
         private Bunifu.Framework.UI.BunifuThinButton2 PacientesBtn;

@@ -99,7 +99,7 @@ namespace SistemaConsultorioMedico
                 usu.setUsuario(usuariotxt.Text);
                 usu.setPassword(contratxt.Text);
                 Controladores.UsuarioController.Login(usu);
-               
+                //this.Hide();
             }
             else
             {

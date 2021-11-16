@@ -61,11 +61,11 @@ namespace SistemaConsultorioMedico.Controladores
                     int resultado = comando.ExecuteNonQuery();
                     if (resultado < 0)
                     {
-                        MessageBox.Show("Error al insertar en la bd", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Error al insertar en la base de datos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     else
                     {
-                        MessageBox.Show("Paciente agregado correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Información Médica agregada correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
             }

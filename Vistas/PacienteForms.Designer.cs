@@ -187,6 +187,7 @@ namespace SistemaConsultorioMedico
             this.InforMedicaBtn.Size = new System.Drawing.Size(287, 50);
             this.InforMedicaBtn.TabIndex = 15;
             this.InforMedicaBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.InforMedicaBtn.Click += new System.EventHandler(this.InforMedicaBtn_Click);
             // 
             // bunifuThinButton24
             // 
@@ -439,7 +440,7 @@ namespace SistemaConsultorioMedico
             this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(563, 169);
-            this.bunifuCustomDataGrid1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuCustomDataGrid1.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
             this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.bunifuCustomDataGrid1.RowHeadersWidth = 51;
@@ -548,7 +549,7 @@ namespace SistemaConsultorioMedico
             this.Controls.Add(this.BuscarTbx);
             this.Controls.Add(this.Guardarbtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Paciente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paciente";

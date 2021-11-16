@@ -124,7 +124,7 @@ namespace SistemaConsultorioMedico
 
         private void InformacionMedicasBtn_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new InformacionMedica());
+            AbrirFormHijo(new InformacionMedica(idPaciente));
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -149,7 +149,7 @@ namespace SistemaConsultorioMedico
 
         private void InformacionMedicaBtn_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new InformacionMedica());
+            AbrirFormHijo(new InformacionMedica(idPaciente));
         }
     }
 }

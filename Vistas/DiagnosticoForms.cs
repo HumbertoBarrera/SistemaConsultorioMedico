@@ -13,13 +13,14 @@ namespace SistemaConsultorioMedico
     public partial class Diagnostico : Form
     {
         int idPaciente;
+        DateTime fecha;
         public Diagnostico(int idPaciente)
         {
             InitializeComponent();
             this.idPaciente = idPaciente;
             PacienteTxb.Text = idPaciente.ToString();
-            FechaTxb.Text = DateTime.Now.ToString("dd/MM/yyyy");
-
+            fecha = DateTime.Now;
+            FechaTxb.Text = fecha.ToString("MM/dd/yyyy");
         }
 
         private void FechaTxb_MouseEnter(object sender, EventArgs e)
@@ -82,7 +83,7 @@ namespace SistemaConsultorioMedico
 
             if ((FechaTxb.Text != "FECHA") && (Descripciontxb.Text != "DESCRIPCION"))
             {
-                DateTime fecha = Convert.ToDateTime(FechaTxb.Text);
+                //DateTime fecha = Convert.ToDateTime(FechaTxb.Text);
                 Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
                 diagnostico.setIdPaciente(idPaciente);
                 diagnostico.setFecha(fecha);

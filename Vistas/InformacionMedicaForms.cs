@@ -12,8 +12,11 @@ namespace SistemaConsultorioMedico
 {
     public partial class InformacionMedica : Form
     {
-        public InformacionMedica()
+        int idPaciente;
+
+        public InformacionMedica(int idPaciente)
         {
+            this.idPaciente = idPaciente;
             InitializeComponent();
         }
 
@@ -21,7 +24,7 @@ namespace SistemaConsultorioMedico
         {
             if (validarCampos())
             {
-                Modelos.InformacionMedica im1 = new Modelos.InformacionMedica(23507605, dato1Txb.Text, dato2Tbx.Text, dato3Tbx.Text, dato4Tbx.Text,
+                Modelos.InformacionMedica im1 = new Modelos.InformacionMedica(idPaciente, dato1Txb.Text, dato2Tbx.Text, dato3Tbx.Text, dato4Tbx.Text,
                                                                         dato4OpcTbx.Text, dato5Tbx.Text, dato5OpcTbx.Text, dato6Tbx.Text, dato6OpcTbx.Text,
                                                                         dato7Tbx.Text, dato7OpcTbx.Text, dato8Tbx.Text, dato8OpcTbx.Text,
                                                                         dato9Tbx.Text, dato9OpcTbx.Text);
