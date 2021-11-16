@@ -91,17 +91,28 @@ namespace SistemaConsultorioMedico
 
         private void GuardarCitaBtn_Click(object sender, EventArgs e)
         {
-            Modelos.Cita cita = new Modelos.Cita();
 
-            int idPacienteV = int.Parse(PacienteCitaTxb.Text);
-            DateTime fechaV = Convert.ToDateTime(FechaCitaTxb.Text);
-            TimeSpan horaV = TimeSpan.Parse(HoraCitaTxb.Text);
+            if((PacienteCitaTxb.Text != "PACIENTE") &&(FechaCitaTxb.Text != "FECHA") &&(HoraCitaTxb.Text != "HORA"))
+            {
+                Modelos.Cita cita = new Modelos.Cita();
 
-            cita.setIdPaciente(idPacienteV);
-            cita.setFecha(fechaV);
-            cita.setHora(horaV);
+                int idPacienteV = int.Parse(PacienteCitaTxb.Text);
+                DateTime fechaV = Convert.ToDateTime(FechaCitaTxb.Text);
+                TimeSpan horaV = TimeSpan.Parse(HoraCitaTxb.Text);
 
-            Controladores.CitaController.insertarCita(cita);
+                cita.setIdPaciente(idPacienteV);
+                cita.setFecha(fechaV);
+                cita.setHora(horaV);
+
+                Controladores.CitaController.insertarCita(cita);
+
+            }
+            else
+            {
+                MessageBox.Show("Los campos deben ser llenados");
+
+            }
+
         }
     }
 }
