@@ -106,12 +106,31 @@ namespace SistemaConsultorioMedico
 
                 Controladores.CitaController.insertarCita(cita);
 
+                bunifuCustomDataGrid2.DataSource = null;
+                Controladores.CitaController da = new Controladores.CitaController();
+                var dt = da.CargarGridCitas();
+
+                bunifuCustomDataGrid2.DataSource = dt;
+
             }
             else
             {
                 MessageBox.Show("Los campos deben ser llenados");
 
             }
+
+        }
+
+        private void CitasForm_Load(object sender, EventArgs e)
+        {
+            Controladores.CitaController da = new Controladores.CitaController();
+            var dt = da.CargarGridCitas();
+
+            bunifuCustomDataGrid2.DataSource = dt;
+        }
+
+        private void EliminarCitaBtn_Click(object sender, EventArgs e)
+        {
 
         }
     }

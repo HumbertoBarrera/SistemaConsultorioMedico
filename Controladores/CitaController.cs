@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using SistemaConsultorioMedico;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+using System.Data;
 
 namespace SistemaConsultorioMedico.Controladores
 {
@@ -42,22 +42,23 @@ namespace SistemaConsultorioMedico.Controladores
             {
                 Controladores.ConexionController.Desconectar();
             }
-            //SqlCommand comando;
-            //comando = new SqlCommand("INSERT INTO CITA VALUES ('" + c.getIdPaciente() + "','" + c.getFecha() + "','" + c.getHora() + "')", Controladores.ConexionController.Conectar());
-            //int r = comando.ExecuteNonQuery();
-            // SqlDataReader leer = comando.ExecuteReader();
-
-            //if (r==1)
-            //{
-            //    MessageBox.Show("Cita Agregada con exito");
-
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Cita no agregada");
-
-            //}
-
         }
+        public DataTable CargarGridCitas()
+        {
+            String query = "SELECT* FROM CITA ";
+
+                using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
+                {
+                    SqlDataAdapter data = new SqlDataAdapter(comando);
+                    DataTable tabla = new DataTable();
+                    data.Fill(tabla);
+                    return tabla;
+                }
+
+            
+        
+        }
+
     }
+    
 }
