@@ -8,10 +8,15 @@ namespace SistemaConsultorioMedico.Modelos
 {
     class Cita
     {
-
+        string folioCita;
         int idPaciente;
         DateTime fecha;
         TimeSpan hora;
+
+        public void setFolioCita(string folioCita)
+        {
+            this.folioCita= folioCita;
+        }
 
         public void setIdPaciente(int idPaciente)
         {
@@ -26,6 +31,11 @@ namespace SistemaConsultorioMedico.Modelos
         public void setHora(TimeSpan hora)
         {
             this.hora = hora;
+        }
+
+        public string getFolioCita()
+        {
+            return folioCita;
         }
 
         public int getIdPaciente()

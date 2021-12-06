@@ -43,19 +43,6 @@ namespace SistemaConsultorioMedico.Controladores
             {
                 Controladores.ConexionController.Desconectar();
             }
-            //SqlCommand comando;
-            //comando = new SqlCommand("INSERT INTO DIAGNOSTICO VALUES ('" + d.getIdPaciente() + "','" + d.getFolioDiagnostico() + "','" + d.getFecha() + "','" + d.getDescripcion() + "')", Controladores.ConexionController.Conectar());
-            /*int r = comando.ExecuteNonQuery();
-
-            if (r == 1)
-            {
-                MessageBox.Show("Diagnostico Agregado con exito");
-
-            }
-            else
-            {
-                MessageBox.Show("Diagnostico no agregado");
-            }*/
         }
 
         public static void folio(Modelos.Diagnostico d)

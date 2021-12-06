@@ -106,6 +106,8 @@ namespace SistemaConsultorioMedico
                 cita.setFecha(fechaV);
                 cita.setHora(horaV);
 
+                Controladores.CitaController.folio(cita);
+                MessageBox.Show(cita.getFolioCita());
                 Controladores.CitaController.insertarCita(cita);
 
                 bunifuCustomDataGrid2.DataSource = null;
@@ -117,6 +119,8 @@ namespace SistemaConsultorioMedico
                 PacienteCitaTxb.Text = " ";
                 FechaCitaTxb.Text = " ";
                 HoraCitaTxb.Text = " ";
+                folioCitaLb.Text = "";
+
             }
             else
             {
@@ -138,6 +142,7 @@ namespace SistemaConsultorioMedico
         {
             Modelos.Cita cita = new Modelos.Cita();
 
+            String folioCita = folioCitaLb.Text;
             int idPacienteV = int.Parse(PacienteCitaTxb.Text);
             DateTime fechaV = Convert.ToDateTime(FechaCitaTxb.Text);
             TimeSpan horaV = TimeSpan.Parse(HoraCitaTxb.Text);
@@ -145,6 +150,8 @@ namespace SistemaConsultorioMedico
             cita.setIdPaciente(idPacienteV);
             cita.setFecha(fechaV);
             cita.setHora(horaV);
+            cita.setFolioCita(folioCita);
+
             Controladores.CitaController.EliminarCita(cita);
             Controladores.CitaController da = new Controladores.CitaController();
             var dt = da.CargarGridCitas();
@@ -154,6 +161,8 @@ namespace SistemaConsultorioMedico
             PacienteCitaTxb.Text = " ";
             FechaCitaTxb.Text = " ";
             HoraCitaTxb.Text = " ";
+            folioCitaLb.Text = "";
+
 
 
         }
@@ -161,14 +170,40 @@ namespace SistemaConsultorioMedico
         private void ModificarCitaBtn_Click(object sender, EventArgs e)
         {
 
+            Modelos.Cita cita = new Modelos.Cita();
+
+            String folioCita = folioCitaLb.Text;
+            int idPacienteV = int.Parse(PacienteCitaTxb.Text);
+            DateTime fechaV = Convert.ToDateTime(FechaCitaTxb.Text);
+            TimeSpan horaV = TimeSpan.Parse(HoraCitaTxb.Text);
+
+            cita.setIdPaciente(idPacienteV);
+            cita.setFecha(fechaV);
+            cita.setHora(horaV);
+            cita.setFolioCita(folioCita);
+
+            Controladores.CitaController.ModificarCita(cita);
+            Controladores.CitaController da = new Controladores.CitaController();
+            var dt = da.CargarGridCitas();
+
+            bunifuCustomDataGrid2.DataSource = dt;
+
+            PacienteCitaTxb.Text = " ";
+            FechaCitaTxb.Text = " ";
+            HoraCitaTxb.Text = " ";
+            folioCitaLb.Text = "";
         }
 
         private void bunifuCustomDataGrid2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+
             indice = bunifuCustomDataGrid2.CurrentRow.Index;
             PacienteCitaTxb.Text = bunifuCustomDataGrid2[0, indice].Value.ToString();
             FechaCitaTxb.Text = bunifuCustomDataGrid2[1, indice].Value.ToString();
             HoraCitaTxb.Text = bunifuCustomDataGrid2[2, indice].Value.ToString();
+            folioCitaLb.Text=bunifuCustomDataGrid2[3, indice].Value.ToString();
+
+            PacienteCitaTxb.Enabled = false;
 
         }
     }

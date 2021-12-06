@@ -15,7 +15,7 @@ namespace SistemaConsultorioMedico.Controladores
 
         public static void insertarCita(Modelos.Cita c)
         {
-            String query = "INSERT INTO CITA VALUES (@idPaciente, @fecha, @hora)";
+            String query = "INSERT INTO CITA VALUES (@idPaciente, @fecha, @hora, @folioCita)";
             try
             {
                 using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
@@ -23,6 +23,9 @@ namespace SistemaConsultorioMedico.Controladores
                     comando.Parameters.Add("@idPaciente", c.getIdPaciente());
                     comando.Parameters.Add("@fecha", c.getFecha());
                     comando.Parameters.Add("@hora", c.getHora());
+                    comando.Parameters.Add("@folioCita", c.getFolioCita());
+
+
                     int resultado = comando.ExecuteNonQuery();
                     if (resultado < 0)
                     {
@@ -45,7 +48,7 @@ namespace SistemaConsultorioMedico.Controladores
         }
         public DataTable CargarGridCitas()
         {
-            String query = "select idPaciente,LEFT(fecha,10),hora from cita";
+            String query = "SELECT idPaciente,LEFT(fecha,10),hora,folioCita FROM CITA";
 
                 using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
                 {
@@ -58,7 +61,7 @@ namespace SistemaConsultorioMedico.Controladores
 
         public static void EliminarCita(Modelos.Cita c)
         {
-            String query = "DELETE FROM CITA WHERE idPaciente='"+c.getIdPaciente()+"' AND fecha='" + c.getFecha().ToString("yyyy/MM/dd") + "' AND hora='" + c.getHora()+"'";
+            String query = "DELETE FROM CITA WHERE idPaciente='"+c.getIdPaciente()+"' AND fecha='" + c.getFecha().ToString("yyyy/MM/dd") + "' AND hora='" + c.getHora()+ "' AND folioCita='" + c.getFolioCita() + "'";
             try
             {
                 using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
@@ -83,6 +86,53 @@ namespace SistemaConsultorioMedico.Controladores
             {
                 Controladores.ConexionController.Desconectar();
             }
+        }
+        public static void ModificarCita(Modelos.Cita c) {
+
+            String query = "UPDATE CITA SET fecha='" + c.getFecha().ToString("yyyy/MM/dd") + "' , hora='" + c.getHora() + "' WHERE folioCita='" + c.getFolioCita() + "'";
+            try
+            {
+                using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
+                {
+
+                    int resultado = comando.ExecuteNonQuery();
+                    if (resultado < 0)
+                    {
+                        MessageBox.Show("Error al Modificar Cita", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cita Modificada correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch
+            {
+
+            }
+            finally
+            {
+                Controladores.ConexionController.Desconectar();
+            }
+
+        }
+        public static void folio(Modelos.Cita c)
+        {
+
+            Random rdn = new Random();
+            string caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+            int longitud = caracteres.Length;
+            char letra;
+            int longitudContrasenia = 8;
+            string folioCitaAleatoria = string.Empty;
+            for (int i = 0; i < longitudContrasenia; i++)
+            {
+                letra = caracteres[rdn.Next(longitud)];
+                folioCitaAleatoria += letra.ToString();
+            }
+
+            c.setFolioCita(folioCitaAleatoria);
+
         }
 
     }
