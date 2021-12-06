@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace SistemaConsultorioMedico
 {
@@ -93,7 +94,7 @@ namespace SistemaConsultorioMedico
         private void GuardarCitaBtn_Click(object sender, EventArgs e)
         {
 
-            if((PacienteCitaTxb.Text != "PACIENTE") &&(FechaCitaTxb.Text != "FECHA") &&(HoraCitaTxb.Text != "HORA"))
+            if ((PacienteCitaTxb.Text != "PACIENTE") && (FechaCitaTxb.Text != "FECHA") && (HoraCitaTxb.Text != "HORA"))
             {
                 Modelos.Cita cita = new Modelos.Cita();
 

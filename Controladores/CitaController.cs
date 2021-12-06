@@ -58,7 +58,7 @@ namespace SistemaConsultorioMedico.Controladores
 
         public static void EliminarCita(Modelos.Cita c)
         {
-            String query = "DELETE FROM CITA WHERE idPaciente='"+c.getIdPaciente()+"' AND fecha='" + c.getFecha() + "' AND hora='" + c.getHora()+"'";
+            String query = "DELETE FROM CITA WHERE idPaciente='"+c.getIdPaciente()+"' AND fecha='" + c.getFecha().ToString("yyyy/MM/dd") + "' AND hora='" + c.getHora()+"'";
             try
             {
                 using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
