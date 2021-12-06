@@ -113,6 +113,9 @@ namespace SistemaConsultorioMedico
 
                 bunifuCustomDataGrid2.DataSource = dt;
 
+                PacienteCitaTxb.Text = " ";
+                FechaCitaTxb.Text = " ";
+                HoraCitaTxb.Text = " ";
             }
             else
             {
@@ -146,6 +149,10 @@ namespace SistemaConsultorioMedico
             var dt = da.CargarGridCitas();
 
             bunifuCustomDataGrid2.DataSource = dt;
+
+            PacienteCitaTxb.Text = " ";
+            FechaCitaTxb.Text = " ";
+            HoraCitaTxb.Text = " ";
 
 
         }
