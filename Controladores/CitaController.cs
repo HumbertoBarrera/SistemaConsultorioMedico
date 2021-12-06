@@ -45,7 +45,7 @@ namespace SistemaConsultorioMedico.Controladores
         }
         public DataTable CargarGridCitas()
         {
-            String query = "SELECT* FROM CITA ";
+            String query = "select idPaciente,LEFT(fecha,10),hora from cita";
 
                 using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
                 {
@@ -54,9 +54,35 @@ namespace SistemaConsultorioMedico.Controladores
                     data.Fill(tabla);
                     return tabla;
                 }
+        }
 
-            
-        
+        public static void EliminarCita(Modelos.Cita c)
+        {
+            String query = "DELETE FROM CITA WHERE idPaciente='"+c.getIdPaciente()+"' AND fecha='" + c.getFecha() + "' AND hora='" + c.getHora()+"'";
+            try
+            {
+                using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
+                {
+                 
+                    int resultado = comando.ExecuteNonQuery();
+                    if (resultado < 0)
+                    {
+                        MessageBox.Show("Error al Eliminar Cita", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cita Eliminada correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch
+            {
+
+            }
+            finally
+            {
+                Controladores.ConexionController.Desconectar();
+            }
         }
 
     }

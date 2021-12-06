@@ -16,6 +16,7 @@ namespace SistemaConsultorioMedico
         {
             InitializeComponent();
         }
+        int indice;
 
         private void PacienteCitaTxb_MouseEnter(object sender, EventArgs e)
         {
@@ -131,6 +132,35 @@ namespace SistemaConsultorioMedico
 
         private void EliminarCitaBtn_Click(object sender, EventArgs e)
         {
+            Modelos.Cita cita = new Modelos.Cita();
+
+            int idPacienteV = int.Parse(PacienteCitaTxb.Text);
+            DateTime fechaV = Convert.ToDateTime(FechaCitaTxb.Text);
+            TimeSpan horaV = TimeSpan.Parse(HoraCitaTxb.Text);
+
+            cita.setIdPaciente(idPacienteV);
+            cita.setFecha(fechaV);
+            cita.setHora(horaV);
+            Controladores.CitaController.EliminarCita(cita);
+            Controladores.CitaController da = new Controladores.CitaController();
+            var dt = da.CargarGridCitas();
+
+            bunifuCustomDataGrid2.DataSource = dt;
+
+
+        }
+
+        private void ModificarCitaBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomDataGrid2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            indice = bunifuCustomDataGrid2.CurrentRow.Index;
+            PacienteCitaTxb.Text = bunifuCustomDataGrid2[0, indice].Value.ToString();
+            FechaCitaTxb.Text = bunifuCustomDataGrid2[1, indice].Value.ToString();
+            HoraCitaTxb.Text = bunifuCustomDataGrid2[2, indice].Value.ToString();
 
         }
     }
