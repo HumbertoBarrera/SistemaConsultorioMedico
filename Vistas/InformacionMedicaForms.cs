@@ -346,5 +346,10 @@ namespace SistemaConsultorioMedico
             dato9OpcTbx.Text = "¿CUAL?";
         }
 
+        public void llenarInformacion(int idPaciente)
+        {
+
+        }
+
     }
 }
