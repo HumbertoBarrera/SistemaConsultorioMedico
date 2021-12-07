@@ -569,5 +569,23 @@ namespace SistemaConsultorioMedico
             }
         }
 
+        private void ModificarBtn_Click(object sender, EventArgs e)
+        {
+            if (validarCampos())
+            {
+                DateTime hoy = DateTime.Today;
+                Modelos.InformacionMedica im2 = new Modelos.InformacionMedica(obtenerEnfermedadFamiliar(), dato10OpcTbx.Text, dato11Tbx.Text, dato11OpcTbx.Text,
+                                                                            dato12Tbx.Text, dato13Tbx.Text, dato13OpcTbx.Text, dato13Opc2Tbx.Text, dato14Tbx.Text,
+                                                                            dato14OpcTbx.Text, dato14Opc2Tbx.Text, dato15Tbx.Text, dato15OpcTbx.Text,
+                                                                            dato15Opc2Tbx.Text, dato15Opc3Tbx.Text, dato15Opc4Tbx.Text, dato16Tbx.Text,
+                                                                            dato17Tbx.Text, dato18Tbx.Text, hoy);
+                Controladores.InformacionMedicaController.modificarInformacionMedica(im1, im2);
+                reestablecerCampos();
+            }
+            else
+            {
+                MessageBox.Show("No pueden haber campos vacíos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }

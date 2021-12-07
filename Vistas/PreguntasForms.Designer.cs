@@ -692,6 +692,7 @@ namespace SistemaConsultorioMedico
             this.ModificarBtn.Size = new System.Drawing.Size(209, 50);
             this.ModificarBtn.TabIndex = 25;
             this.ModificarBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ModificarBtn.Click += new System.EventHandler(this.ModificarBtn_Click);
             // 
             // Preguntas
             // 
