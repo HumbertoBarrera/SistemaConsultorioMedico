@@ -30,8 +30,8 @@ namespace SistemaConsultorioMedico
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CitasForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.GuardarCitaBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.ModificarCitaBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.EliminarCitaBtn = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -40,7 +40,6 @@ namespace SistemaConsultorioMedico
             this.HoraCitaTxb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.BuscarTbx = new Bunifu.Framework.UI.BunifuTextbox();
-            this.PacientesBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.linea = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.folioCitaLb = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -65,7 +64,7 @@ namespace SistemaConsultorioMedico
             this.GuardarCitaBtn.IdleFillColor = System.Drawing.Color.White;
             this.GuardarCitaBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.GuardarCitaBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.GuardarCitaBtn.Location = new System.Drawing.Point(22, 474);
+            this.GuardarCitaBtn.Location = new System.Drawing.Point(20, 495);
             this.GuardarCitaBtn.Margin = new System.Windows.Forms.Padding(5);
             this.GuardarCitaBtn.Name = "GuardarCitaBtn";
             this.GuardarCitaBtn.Size = new System.Drawing.Size(157, 41);
@@ -91,7 +90,7 @@ namespace SistemaConsultorioMedico
             this.ModificarCitaBtn.IdleFillColor = System.Drawing.Color.White;
             this.ModificarCitaBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ModificarCitaBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ModificarCitaBtn.Location = new System.Drawing.Point(204, 474);
+            this.ModificarCitaBtn.Location = new System.Drawing.Point(202, 495);
             this.ModificarCitaBtn.Margin = new System.Windows.Forms.Padding(5);
             this.ModificarCitaBtn.Name = "ModificarCitaBtn";
             this.ModificarCitaBtn.Size = new System.Drawing.Size(157, 41);
@@ -117,7 +116,7 @@ namespace SistemaConsultorioMedico
             this.EliminarCitaBtn.IdleFillColor = System.Drawing.Color.White;
             this.EliminarCitaBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.EliminarCitaBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.EliminarCitaBtn.Location = new System.Drawing.Point(22, 525);
+            this.EliminarCitaBtn.Location = new System.Drawing.Point(385, 495);
             this.EliminarCitaBtn.Margin = new System.Windows.Forms.Padding(5);
             this.EliminarCitaBtn.Name = "EliminarCitaBtn";
             this.EliminarCitaBtn.Size = new System.Drawing.Size(157, 41);
@@ -194,20 +193,20 @@ namespace SistemaConsultorioMedico
             // bunifuCustomDataGrid2
             // 
             this.bunifuCustomDataGrid2.AllowUserToResizeColumns = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.bunifuCustomDataGrid2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.bunifuCustomDataGrid2.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.bunifuCustomDataGrid2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.bunifuCustomDataGrid2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bunifuCustomDataGrid2.DoubleBuffered = true;
             this.bunifuCustomDataGrid2.EnableHeadersVisualStyles = false;
@@ -237,32 +236,6 @@ namespace SistemaConsultorioMedico
             this.BuscarTbx.text = "";
             this.BuscarTbx.MouseEnter += new System.EventHandler(this.BuscarTbx_MouseEnter);
             this.BuscarTbx.MouseLeave += new System.EventHandler(this.BuscarTbx_MouseLeave);
-            // 
-            // PacientesBtn
-            // 
-            this.PacientesBtn.ActiveBorderThickness = 1;
-            this.PacientesBtn.ActiveCornerRadius = 20;
-            this.PacientesBtn.ActiveFillColor = System.Drawing.Color.White;
-            this.PacientesBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.PacientesBtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.PacientesBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.PacientesBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PacientesBtn.BackgroundImage")));
-            this.PacientesBtn.ButtonText = "PACIENTES";
-            this.PacientesBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PacientesBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PacientesBtn.ForeColor = System.Drawing.Color.ForestGreen;
-            this.PacientesBtn.IdleBorderThickness = 1;
-            this.PacientesBtn.IdleCornerRadius = 20;
-            this.PacientesBtn.IdleFillColor = System.Drawing.Color.White;
-            this.PacientesBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.PacientesBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.PacientesBtn.Location = new System.Drawing.Point(825, 474);
-            this.PacientesBtn.Margin = new System.Windows.Forms.Padding(5);
-            this.PacientesBtn.Name = "PacientesBtn";
-            this.PacientesBtn.Size = new System.Drawing.Size(157, 41);
-            this.PacientesBtn.TabIndex = 27;
-            this.PacientesBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.PacientesBtn.Click += new System.EventHandler(this.PacientesBtn_Click);
             // 
             // linea
             // 
@@ -306,7 +279,6 @@ namespace SistemaConsultorioMedico
             this.Controls.Add(this.folioCitaLb);
             this.Controls.Add(this.linea);
             this.Controls.Add(this.bunifuCustomLabel2);
-            this.Controls.Add(this.PacientesBtn);
             this.Controls.Add(this.BuscarTbx);
             this.Controls.Add(this.bunifuCustomDataGrid2);
             this.Controls.Add(this.HoraCitaTxb);
@@ -318,7 +290,7 @@ namespace SistemaConsultorioMedico
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CitasForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CitasForm";
+            this.Text = "  ";
             this.Load += new System.EventHandler(this.CitasForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).EndInit();
             this.ResumeLayout(false);
@@ -336,7 +308,6 @@ namespace SistemaConsultorioMedico
         private Bunifu.Framework.UI.BunifuMaterialTextbox HoraCitaTxb;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid2;
         private Bunifu.Framework.UI.BunifuTextbox BuscarTbx;
-        private Bunifu.Framework.UI.BunifuThinButton2 PacientesBtn;
         private Bunifu.Framework.UI.BunifuSeparator linea;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuCustomLabel folioCitaLb;

@@ -131,7 +131,17 @@ namespace SistemaConsultorioMedico.Controladores
                 folioCitaAleatoria += letra.ToString();
             }
 
-            c.setFolioCita(folioCitaAleatoria);
+            if (validaExisFolio(folioCitaAleatoria) == false)
+            {
+                c.setFolioCita(folioCitaAleatoria);
+            }
+            else
+            {
+                if (validaExisFolio(folioCitaAleatoria) == true)
+                {
+                    folio(c);
+                }
+            }
 
         }
         //----------------------------------Validaciones----------------------------------------------
@@ -151,6 +161,24 @@ namespace SistemaConsultorioMedico.Controladores
                         return false;
                     }
                 }
+
+        }
+        public static bool validaExisFolio(String folio)
+        {
+            String query = "SELECT * FROM CITA WHERE folioCita='" + folio + "'";
+
+            using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
+            {
+                SqlDataReader leer = comando.ExecuteReader();
+                if (leer.Read())
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
 
         }
 
