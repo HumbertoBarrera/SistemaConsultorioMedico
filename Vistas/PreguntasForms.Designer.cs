@@ -58,12 +58,10 @@ namespace SistemaConsultorioMedico
             this.dato16Tbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.dato17Tbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.dato18Tbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.FechaPt1Lbl = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.MesLbl = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.DeLbl = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.AñoLbl = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.FechaLbl = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.dato11OpcTbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.DiaLbl = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.EliminarBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.ModificarBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -322,7 +320,7 @@ namespace SistemaConsultorioMedico
             this.GuardarBtn.IdleFillColor = System.Drawing.Color.White;
             this.GuardarBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.GuardarBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.GuardarBtn.Location = new System.Drawing.Point(704, 658);
+            this.GuardarBtn.Location = new System.Drawing.Point(646, 627);
             this.GuardarBtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.GuardarBtn.Name = "GuardarBtn";
             this.GuardarBtn.Size = new System.Drawing.Size(209, 50);
@@ -348,11 +346,11 @@ namespace SistemaConsultorioMedico
             this.RegresarBtn.IdleFillColor = System.Drawing.Color.White;
             this.RegresarBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.RegresarBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.RegresarBtn.Location = new System.Drawing.Point(945, 658);
+            this.RegresarBtn.Location = new System.Drawing.Point(1092, 689);
             this.RegresarBtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.RegresarBtn.Name = "RegresarBtn";
             this.RegresarBtn.Size = new System.Drawing.Size(209, 50);
-            this.RegresarBtn.TabIndex = 25;
+            this.RegresarBtn.TabIndex = 27;
             this.RegresarBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.RegresarBtn.Click += new System.EventHandler(this.RegresarBtn_Click);
             // 
@@ -612,49 +610,16 @@ namespace SistemaConsultorioMedico
             this.dato18Tbx.MouseEnter += new System.EventHandler(this.ComentarioTbx_MouseEnter);
             this.dato18Tbx.MouseLeave += new System.EventHandler(this.ComentarioTbx_MouseLeave);
             // 
-            // FechaPt1Lbl
+            // FechaLbl
             // 
-            this.FechaPt1Lbl.AutoSize = true;
-            this.FechaPt1Lbl.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FechaPt1Lbl.Location = new System.Drawing.Point(16, 687);
-            this.FechaPt1Lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.FechaPt1Lbl.Name = "FechaPt1Lbl";
-            this.FechaPt1Lbl.Size = new System.Drawing.Size(221, 23);
-            this.FechaPt1Lbl.TabIndex = 72;
-            this.FechaPt1Lbl.Text = "GUAYMAS, SONORA A ";
-            // 
-            // MesLbl
-            // 
-            this.MesLbl.AutoSize = true;
-            this.MesLbl.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MesLbl.Location = new System.Drawing.Point(326, 687);
-            this.MesLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.MesLbl.Name = "MesLbl";
-            this.MesLbl.Size = new System.Drawing.Size(113, 23);
-            this.MesLbl.TabIndex = 73;
-            this.MesLbl.Text = "SEPTIEMBRE";
-            // 
-            // DeLbl
-            // 
-            this.DeLbl.AutoSize = true;
-            this.DeLbl.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeLbl.Location = new System.Drawing.Point(285, 687);
-            this.DeLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.DeLbl.Name = "DeLbl";
-            this.DeLbl.Size = new System.Drawing.Size(33, 23);
-            this.DeLbl.TabIndex = 74;
-            this.DeLbl.Text = "DE";
-            // 
-            // AñoLbl
-            // 
-            this.AñoLbl.AutoSize = true;
-            this.AñoLbl.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AñoLbl.Location = new System.Drawing.Point(458, 687);
-            this.AñoLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.AñoLbl.Name = "AñoLbl";
-            this.AñoLbl.Size = new System.Drawing.Size(54, 23);
-            this.AñoLbl.TabIndex = 75;
-            this.AñoLbl.Text = "9999";
+            this.FechaLbl.AutoSize = true;
+            this.FechaLbl.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FechaLbl.Location = new System.Drawing.Point(56, 685);
+            this.FechaLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.FechaLbl.Name = "FechaLbl";
+            this.FechaLbl.Size = new System.Drawing.Size(221, 23);
+            this.FechaLbl.TabIndex = 72;
+            this.FechaLbl.Text = "GUAYMAS, SONORA A ";
             // 
             // dato11OpcTbx
             // 
@@ -678,16 +643,55 @@ namespace SistemaConsultorioMedico
             this.dato11OpcTbx.MouseEnter += new System.EventHandler(this.QuienFamiliarTbx_MouseEnter);
             this.dato11OpcTbx.MouseLeave += new System.EventHandler(this.QuienFamiliarTbx_MouseLeave);
             // 
-            // DiaLbl
+            // EliminarBtn
             // 
-            this.DiaLbl.AutoSize = true;
-            this.DiaLbl.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DiaLbl.Location = new System.Drawing.Point(245, 687);
-            this.DiaLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.DiaLbl.Name = "DiaLbl";
-            this.DiaLbl.Size = new System.Drawing.Size(32, 23);
-            this.DiaLbl.TabIndex = 76;
-            this.DiaLbl.Text = "00";
+            this.EliminarBtn.ActiveBorderThickness = 1;
+            this.EliminarBtn.ActiveCornerRadius = 20;
+            this.EliminarBtn.ActiveFillColor = System.Drawing.Color.White;
+            this.EliminarBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.EliminarBtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.EliminarBtn.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.EliminarBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EliminarBtn.BackgroundImage")));
+            this.EliminarBtn.ButtonText = "ELIMINAR";
+            this.EliminarBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.EliminarBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EliminarBtn.ForeColor = System.Drawing.Color.ForestGreen;
+            this.EliminarBtn.IdleBorderThickness = 1;
+            this.EliminarBtn.IdleCornerRadius = 20;
+            this.EliminarBtn.IdleFillColor = System.Drawing.Color.White;
+            this.EliminarBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.EliminarBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.EliminarBtn.Location = new System.Drawing.Point(1092, 627);
+            this.EliminarBtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.EliminarBtn.Name = "EliminarBtn";
+            this.EliminarBtn.Size = new System.Drawing.Size(209, 50);
+            this.EliminarBtn.TabIndex = 26;
+            this.EliminarBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ModificarBtn
+            // 
+            this.ModificarBtn.ActiveBorderThickness = 1;
+            this.ModificarBtn.ActiveCornerRadius = 20;
+            this.ModificarBtn.ActiveFillColor = System.Drawing.Color.White;
+            this.ModificarBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.ModificarBtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ModificarBtn.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ModificarBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ModificarBtn.BackgroundImage")));
+            this.ModificarBtn.ButtonText = "MODIFICAR";
+            this.ModificarBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ModificarBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ModificarBtn.ForeColor = System.Drawing.Color.ForestGreen;
+            this.ModificarBtn.IdleBorderThickness = 1;
+            this.ModificarBtn.IdleCornerRadius = 20;
+            this.ModificarBtn.IdleFillColor = System.Drawing.Color.White;
+            this.ModificarBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.ModificarBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.ModificarBtn.Location = new System.Drawing.Point(869, 627);
+            this.ModificarBtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.ModificarBtn.Name = "ModificarBtn";
+            this.ModificarBtn.Size = new System.Drawing.Size(209, 50);
+            this.ModificarBtn.TabIndex = 25;
+            this.ModificarBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Preguntas
             // 
@@ -695,12 +699,10 @@ namespace SistemaConsultorioMedico
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1333, 757);
-            this.Controls.Add(this.DiaLbl);
+            this.Controls.Add(this.ModificarBtn);
+            this.Controls.Add(this.EliminarBtn);
             this.Controls.Add(this.dato11OpcTbx);
-            this.Controls.Add(this.AñoLbl);
-            this.Controls.Add(this.DeLbl);
-            this.Controls.Add(this.MesLbl);
-            this.Controls.Add(this.FechaPt1Lbl);
+            this.Controls.Add(this.FechaLbl);
             this.Controls.Add(this.dato18Tbx);
             this.Controls.Add(this.dato17Tbx);
             this.Controls.Add(this.dato16Tbx);
@@ -770,11 +772,9 @@ namespace SistemaConsultorioMedico
         private Bunifu.Framework.UI.BunifuMaterialTextbox dato16Tbx;
         private Bunifu.Framework.UI.BunifuMaterialTextbox dato17Tbx;
         private Bunifu.Framework.UI.BunifuMaterialTextbox dato18Tbx;
-        private Bunifu.Framework.UI.BunifuCustomLabel FechaPt1Lbl;
-        private Bunifu.Framework.UI.BunifuCustomLabel MesLbl;
-        private Bunifu.Framework.UI.BunifuCustomLabel DeLbl;
-        private Bunifu.Framework.UI.BunifuCustomLabel AñoLbl;
+        private Bunifu.Framework.UI.BunifuCustomLabel FechaLbl;
         private Bunifu.Framework.UI.BunifuMaterialTextbox dato11OpcTbx;
-        private Bunifu.Framework.UI.BunifuCustomLabel DiaLbl;
+        private Bunifu.Framework.UI.BunifuThinButton2 EliminarBtn;
+        private Bunifu.Framework.UI.BunifuThinButton2 ModificarBtn;
     }
 }

@@ -8,18 +8,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SistemaConsultorioMedico;
+using System.Data.SqlClient;
 
 namespace SistemaConsultorioMedico
 {
     public partial class Preguntas : Form
     {
         private Modelos.InformacionMedica im1;
+        int idPaciente;
 
-        public Preguntas(Modelos.InformacionMedica im1)
+        public Preguntas(Modelos.InformacionMedica im1, int idPaciente)
         {
             this.im1 = im1;
+            this.idPaciente = idPaciente;
             InitializeComponent();
             obtenerFecha();
+            llenarInformacion(idPaciente);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -408,23 +412,27 @@ namespace SistemaConsultorioMedico
         private void obtenerFecha()
         {
             var fecha = DateTime.Today;
-            DiaLbl.Text = Convert.ToString(fecha.Day);
-            AñoLbl.Text = Convert.ToString(fecha.Year);
+            FechaLbl.Text = FechaLbl.Text + fecha.Day.ToString() + " DE " + obtenerMes(fecha) + " DEL " + fecha.Year.ToString();
+        }
+
+        public String obtenerMes(DateTime fecha)
+        {
+            String mes;
             switch (fecha.Month)
             {
-                case 1: MesLbl.Text = "ENERO"; break;
-                case 2: MesLbl.Text = "FEBRERO"; break;
-                case 3: MesLbl.Text = "MARZO"; break;
-                case 4: MesLbl.Text = "ABRIL"; break;
-                case 5: MesLbl.Text = "MAYO"; break;
-                case 6: MesLbl.Text = "JUNIO"; break;
-                case 7: MesLbl.Text = "JULIO"; break;
-                case 8: MesLbl.Text = "AGOSTO"; break;
-                case 9: MesLbl.Text = "SEPTIEMBRE"; break;
-                case 10: MesLbl.Text = "OCTUBRE"; break;
-                case 11: MesLbl.Text = "NOVIEMBRE"; break;
-                case 12: MesLbl.Text = "DICIEMBRE"; break;
-                default: break;
+                case 1: mes = "ENERO"; return mes;
+                case 2: mes = "FEBRERO"; return mes;
+                case 3: mes = "MARZO"; return mes;
+                case 4: mes = "ABRIL"; return mes;
+                case 5: mes = "MAYO"; return mes;
+                case 6: mes = "JUNIO"; return mes;
+                case 7: mes = "JULIO"; return mes;
+                case 8: mes = "AGOSTO"; return mes;
+                case 9: mes = "SEPTIEMBRE"; return mes;
+                case 10: mes = "OCTUBRE"; return mes;
+                case 11: mes = "NOVIEMBRE"; return mes;
+                case 12: mes = "DICIEMBRE"; return mes;
+                default: return "error";
             }
         }
 
@@ -516,6 +524,49 @@ namespace SistemaConsultorioMedico
             dato16Tbx.Text = "¿CUANTAS PERSONAS DUERMEN EN SU CUARTO?";
             dato17Tbx.Text = "¿CONSIDERA QUE SE ALIMENTA BIEN?";
             dato18Tbx.Text = "¿ALGUN COMENTARIO AL RESPECTO?";
+        }
+
+        public void llenarInformacion(int idPaciente)
+        {
+            String query = "SELECT * FROM INFORMACIONMEDICA WHERE idPaciente = @idPaciente";
+            try
+            {
+                using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
+                {
+                    comando.Parameters.AddWithValue("@idPaciente", idPaciente);
+                    using (SqlDataReader leer = comando.ExecuteReader())
+                    {
+                        while (leer.Read())
+                        {
+                            dato11Tbx.Text = leer["dato11"].ToString();
+                            dato11OpcTbx.Text = leer["dato11Opc"].ToString();
+                            dato12Tbx.Text = leer["dato12"].ToString();
+                            dato13Tbx.Text = leer["dato13"].ToString();
+                            dato13OpcTbx.Text = leer["dato13Opc"].ToString();
+                            dato13Opc2Tbx.Text = leer["dato13Opc2"].ToString();
+                            dato14Tbx.Text = leer["dato14"].ToString();
+                            dato14OpcTbx.Text = leer["dato14Opc"].ToString();
+                            dato14Opc2Tbx.Text = leer["dato14Opc2"].ToString();
+                            dato15Tbx.Text = leer["dato15"].ToString();
+                            dato15OpcTbx.Text = leer["dato15Opc"].ToString();
+                            dato15Opc2Tbx.Text = leer["dato15Opc2"].ToString();
+                            dato15Opc3Tbx.Text = leer["dato15Opc3"].ToString();
+                            dato15Opc4Tbx.Text = leer["dato15Opc4"].ToString();
+                            dato16Tbx.Text = leer["dato16"].ToString();
+                            dato17Tbx.Text = leer["dato17"].ToString();
+                            dato18Tbx.Text = leer["dato18"].ToString();
+                        }
+                    }
+                }
+            }
+            catch (SqlException e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            finally
+            {
+                Controladores.ConexionController.Desconectar();
+            }
         }
 
     }

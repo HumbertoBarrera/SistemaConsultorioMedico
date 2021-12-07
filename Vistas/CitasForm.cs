@@ -107,7 +107,7 @@ namespace SistemaConsultorioMedico
                 cita.setHora(horaV);
 
                 Controladores.CitaController.folio(cita);
-                MessageBox.Show(cita.getFolioCita());
+                //MessageBox.Show(cita.getFolioCita());
                 Controladores.CitaController.insertarCita(cita);
 
                 bunifuCustomDataGrid2.DataSource = null;

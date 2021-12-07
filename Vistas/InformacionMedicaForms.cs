@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace SistemaConsultorioMedico
 {
@@ -18,6 +19,7 @@ namespace SistemaConsultorioMedico
         {
             this.idPaciente = idPaciente;
             InitializeComponent();
+            llenarInformacion(idPaciente);
         }
 
         private void MasBtn_Click(object sender, EventArgs e)
@@ -28,7 +30,7 @@ namespace SistemaConsultorioMedico
                                                                         dato4OpcTbx.Text, dato5Tbx.Text, dato5OpcTbx.Text, dato6Tbx.Text, dato6OpcTbx.Text,
                                                                         dato7Tbx.Text, dato7OpcTbx.Text, dato8Tbx.Text, dato8OpcTbx.Text,
                                                                         dato9Tbx.Text, dato9OpcTbx.Text);
-                Form AbrirPreguntas = new Preguntas(im1);
+                Form AbrirPreguntas = new Preguntas(im1, idPaciente);
                 AbrirPreguntas.Show();
             }
             else
@@ -348,7 +350,43 @@ namespace SistemaConsultorioMedico
 
         public void llenarInformacion(int idPaciente)
         {
-
+            String query = "SELECT * FROM INFORMACIONMEDICA WHERE idPaciente = @idPaciente";
+            try
+            {
+                using(SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
+                {
+                    comando.Parameters.AddWithValue("@idPaciente", idPaciente);
+                    using(SqlDataReader leer = comando.ExecuteReader())
+                    {
+                        while (leer.Read())
+                        {
+                            dato1Txb.Text = leer["dato1"].ToString();
+                            dato2Tbx.Text = leer["dato2"].ToString();
+                            dato3Tbx.Text = leer["dato3"].ToString();
+                            dato4Tbx.Text = leer["dato4"].ToString();
+                            dato4OpcTbx.Text = leer["dato4Opc"].ToString();
+                            dato5Tbx.Text = leer["dato5"].ToString();
+                            dato5OpcTbx.Text = leer["dato5Opc"].ToString();
+                            dato6Tbx.Text = leer["dato6"].ToString();
+                            dato6OpcTbx.Text = leer["dato6Opc"].ToString();
+                            dato7Tbx.Text = leer["dato7"].ToString();
+                            dato7OpcTbx.Text = leer["dato7Opc"].ToString();
+                            dato8Tbx.Text = leer["dato8"].ToString();
+                            dato8OpcTbx.Text = leer["dato8Opc"].ToString();
+                            dato9Tbx.Text = leer["dato9"].ToString();
+                            dato9OpcTbx.Text = leer["dato9Opc"].ToString();
+                        }
+                    }
+                }
+            }
+            catch(SqlException e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            finally
+            {
+                Controladores.ConexionController.Desconectar();
+            }
         }
 
     }
