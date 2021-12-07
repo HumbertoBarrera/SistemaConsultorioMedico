@@ -317,5 +317,10 @@ namespace SistemaConsultorioMedico
                 MessageBox.Show("Ingrese el ID del Paciente");
             }
         }
+
+        private void CitasBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

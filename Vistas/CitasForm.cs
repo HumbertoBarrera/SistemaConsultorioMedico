@@ -106,20 +106,33 @@ namespace SistemaConsultorioMedico
                 cita.setFecha(fechaV);
                 cita.setHora(horaV);
 
-                Controladores.CitaController.folio(cita);
-                //MessageBox.Show(cita.getFolioCita());
-                Controladores.CitaController.insertarCita(cita);
+               
+                if (Controladores.CitaController.validaExisCita(cita) == false)
+                {
+                    Controladores.CitaController.folio(cita);
+                    Controladores.CitaController.insertarCita(cita);
 
-                bunifuCustomDataGrid2.DataSource = null;
-                Controladores.CitaController da = new Controladores.CitaController();
-                var dt = da.CargarGridCitas();
+                    bunifuCustomDataGrid2.DataSource = null;
+                    Controladores.CitaController da = new Controladores.CitaController();
+                    var dt = da.CargarGridCitas();
 
-                bunifuCustomDataGrid2.DataSource = dt;
+                    bunifuCustomDataGrid2.DataSource = dt;
+
+                }
+                else
+                {
+                    if(Controladores.CitaController.validaExisCita(cita) == true)
+                    {
+                        MessageBox.Show("Error Fecha y hora Ocupada", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    }
+                }
 
                 PacienteCitaTxb.Text = " ";
                 FechaCitaTxb.Text = " ";
                 HoraCitaTxb.Text = " ";
                 folioCitaLb.Text = "";
+                PacienteCitaTxb.Enabled = true;
 
             }
             else
@@ -162,6 +175,7 @@ namespace SistemaConsultorioMedico
             FechaCitaTxb.Text = " ";
             HoraCitaTxb.Text = " ";
             folioCitaLb.Text = "";
+            PacienteCitaTxb.Enabled = true;
 
 
 
@@ -192,6 +206,8 @@ namespace SistemaConsultorioMedico
             FechaCitaTxb.Text = " ";
             HoraCitaTxb.Text = " ";
             folioCitaLb.Text = "";
+            PacienteCitaTxb.Enabled = true;
+
         }
 
         private void bunifuCustomDataGrid2_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -206,5 +222,11 @@ namespace SistemaConsultorioMedico
             PacienteCitaTxb.Enabled = false;
 
         }
+
+        private void PacientesBtn_Click(object sender, EventArgs e)
+        {
+        }
+
+
     }
 }

@@ -30,9 +30,9 @@ namespace SistemaConsultorioMedico
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
             BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menuform));
-            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
             this.contenidoPnl = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.contenedorMenuPnl = new System.Windows.Forms.Panel();
@@ -78,7 +78,7 @@ namespace SistemaConsultorioMedico
             this.contenidoPnl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contenidoPnl.Location = new System.Drawing.Point(0, 0);
             this.contenidoPnl.Name = "contenidoPnl";
-            this.contenidoPnl.Size = new System.Drawing.Size(1386, 788);
+            this.contenidoPnl.Size = new System.Drawing.Size(1378, 780);
             this.contenidoPnl.TabIndex = 0;
             this.contenidoPnl.Paint += new System.Windows.Forms.PaintEventHandler(this.contenidoPnl_Paint);
             // 
@@ -92,7 +92,7 @@ namespace SistemaConsultorioMedico
             this.AnimacionSidebar.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
             this.panel1.Location = new System.Drawing.Point(318, 90);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1020, 691);
+            this.panel1.Size = new System.Drawing.Size(1012, 683);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -105,7 +105,7 @@ namespace SistemaConsultorioMedico
             this.contenedorMenuPnl.Dock = System.Windows.Forms.DockStyle.Left;
             this.contenedorMenuPnl.Location = new System.Drawing.Point(0, 66);
             this.contenedorMenuPnl.Name = "contenedorMenuPnl";
-            this.contenedorMenuPnl.Size = new System.Drawing.Size(300, 722);
+            this.contenedorMenuPnl.Size = new System.Drawing.Size(300, 714);
             this.contenedorMenuPnl.TabIndex = 1;
             this.contenedorMenuPnl.Paint += new System.Windows.Forms.PaintEventHandler(this.contenedorMenuPnl_Paint);
             // 
@@ -131,7 +131,7 @@ namespace SistemaConsultorioMedico
             this.Sidebar.Location = new System.Drawing.Point(12, 24);
             this.Sidebar.Name = "Sidebar";
             this.Sidebar.Quality = 10;
-            this.Sidebar.Size = new System.Drawing.Size(270, 686);
+            this.Sidebar.Size = new System.Drawing.Size(270, 678);
             this.Sidebar.TabIndex = 0;
             // 
             // InformacionMedicaBtn
@@ -340,7 +340,7 @@ namespace SistemaConsultorioMedico
             this.menuTopPnl.Dock = System.Windows.Forms.DockStyle.Top;
             this.menuTopPnl.Location = new System.Drawing.Point(0, 0);
             this.menuTopPnl.Name = "menuTopPnl";
-            this.menuTopPnl.Size = new System.Drawing.Size(1386, 66);
+            this.menuTopPnl.Size = new System.Drawing.Size(1378, 66);
             this.menuTopPnl.TabIndex = 1;
             this.menuTopPnl.Paint += new System.Windows.Forms.PaintEventHandler(this.menuTopPnl_Paint);
             // 
@@ -350,7 +350,7 @@ namespace SistemaConsultorioMedico
             this.AnimacionSidebar.SetDecoration(this.Restaurar, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarAtras.SetDecoration(this.Restaurar, BunifuAnimatorNS.DecorationType.None);
             this.Restaurar.Image = ((System.Drawing.Image)(resources.GetObject("Restaurar.Image")));
-            this.Restaurar.Location = new System.Drawing.Point(1308, 21);
+            this.Restaurar.Location = new System.Drawing.Point(1300, 21);
             this.Restaurar.Name = "Restaurar";
             this.Restaurar.Size = new System.Drawing.Size(30, 30);
             this.Restaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -365,7 +365,7 @@ namespace SistemaConsultorioMedico
             this.AnimacionSidebar.SetDecoration(this.Minimizar, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarAtras.SetDecoration(this.Minimizar, BunifuAnimatorNS.DecorationType.None);
             this.Minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Minimizar.Image")));
-            this.Minimizar.Location = new System.Drawing.Point(1272, 21);
+            this.Minimizar.Location = new System.Drawing.Point(1264, 21);
             this.Minimizar.Name = "Minimizar";
             this.Minimizar.Size = new System.Drawing.Size(30, 30);
             this.Minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -379,7 +379,7 @@ namespace SistemaConsultorioMedico
             this.AnimacionSidebar.SetDecoration(this.Maximizar, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarAtras.SetDecoration(this.Maximizar, BunifuAnimatorNS.DecorationType.None);
             this.Maximizar.Image = ((System.Drawing.Image)(resources.GetObject("Maximizar.Image")));
-            this.Maximizar.Location = new System.Drawing.Point(1308, 21);
+            this.Maximizar.Location = new System.Drawing.Point(1300, 21);
             this.Maximizar.Name = "Maximizar";
             this.Maximizar.Size = new System.Drawing.Size(30, 30);
             this.Maximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -393,7 +393,7 @@ namespace SistemaConsultorioMedico
             this.AnimacionSidebar.SetDecoration(this.Salir, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarAtras.SetDecoration(this.Salir, BunifuAnimatorNS.DecorationType.None);
             this.Salir.Image = ((System.Drawing.Image)(resources.GetObject("Salir.Image")));
-            this.Salir.Location = new System.Drawing.Point(1344, 21);
+            this.Salir.Location = new System.Drawing.Point(1336, 21);
             this.Salir.Name = "Salir";
             this.Salir.Size = new System.Drawing.Size(30, 30);
             this.Salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -437,27 +437,6 @@ namespace SistemaConsultorioMedico
             // 
             this.AnimacionSidebar.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.AnimacionSidebar.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.AnimacionSidebar.DefaultAnimation = animation3;
-            // 
-            // AnimacionSidebarAtras
-            // 
-            this.AnimacionSidebarAtras.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
-            this.AnimacionSidebarAtras.Cursor = null;
             animation4.AnimateOnlyDifferences = true;
             animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
             animation4.LeafCoeff = 0F;
@@ -473,7 +452,28 @@ namespace SistemaConsultorioMedico
             animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
             animation4.TimeCoeff = 0F;
             animation4.TransparencyCoeff = 0F;
-            this.AnimacionSidebarAtras.DefaultAnimation = animation4;
+            this.AnimacionSidebar.DefaultAnimation = animation4;
+            // 
+            // AnimacionSidebarAtras
+            // 
+            this.AnimacionSidebarAtras.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
+            this.AnimacionSidebarAtras.Cursor = null;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.AnimacionSidebarAtras.DefaultAnimation = animation3;
             // 
             // bunifuElipse1
             // 
@@ -496,7 +496,7 @@ namespace SistemaConsultorioMedico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1386, 788);
+            this.ClientSize = new System.Drawing.Size(1378, 780);
             this.Controls.Add(this.contenedorMenuPnl);
             this.Controls.Add(this.menuTopPnl);
             this.Controls.Add(this.contenidoPnl);
@@ -542,11 +542,11 @@ namespace SistemaConsultorioMedico
         private System.Windows.Forms.PictureBox pictureBox3;
         private Bunifu.Framework.UI.BunifuElipse curvaTablero;
         private BunifuAnimatorNS.BunifuTransition AnimacionSidebar;
-        private System.Windows.Forms.Panel panel1;
         private BunifuAnimatorNS.BunifuTransition AnimacionSidebarAtras;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuDragControl Mover;
         private Bunifu.Framework.UI.BunifuFlatButton InformacionMedicaBtn;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
+        public System.Windows.Forms.Panel panel1;
     }
 }
