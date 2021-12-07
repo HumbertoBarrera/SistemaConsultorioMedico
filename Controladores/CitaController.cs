@@ -182,6 +182,25 @@ namespace SistemaConsultorioMedico.Controladores
 
         }
 
+        public static bool validaExisPaciente(Modelos.Cita c)
+        {
+            String query = "SELECT * FROM Paciente WHERE idPaciente='" + c.getIdPaciente() + "'";
+
+            using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
+            {
+                SqlDataReader leer = comando.ExecuteReader();
+                if (leer.Read())
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+        }
+
 
     }
 

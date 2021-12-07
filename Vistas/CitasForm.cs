@@ -107,23 +107,37 @@ namespace SistemaConsultorioMedico
                 cita.setHora(horaV);
 
                
-                if (Controladores.CitaController.validaExisCita(cita) == false)
+
+                if (Controladores.CitaController.validaExisPaciente(cita) == true)
                 {
-                    Controladores.CitaController.folio(cita);
-                    Controladores.CitaController.insertarCita(cita);
 
-                    bunifuCustomDataGrid2.DataSource = null;
-                    Controladores.CitaController da = new Controladores.CitaController();
-                    var dt = da.CargarGridCitas();
+                    if (Controladores.CitaController.validaExisCita(cita) == false)
+                    {
+                        Controladores.CitaController.folio(cita);
+                        Controladores.CitaController.insertarCita(cita);
 
-                    bunifuCustomDataGrid2.DataSource = dt;
+                        bunifuCustomDataGrid2.DataSource = null;
+                        Controladores.CitaController da = new Controladores.CitaController();
+                        var dt = da.CargarGridCitas();
+
+                        bunifuCustomDataGrid2.DataSource = dt;
+
+                    }
+                    else
+                    {
+                        if (Controladores.CitaController.validaExisCita(cita) == true)
+                        {
+                            MessageBox.Show("Error Fecha y hora Ocupada", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                        }
+                    }
 
                 }
                 else
                 {
-                    if(Controladores.CitaController.validaExisCita(cita) == true)
+                    if (Controladores.CitaController.validaExisPaciente(cita) == false)
                     {
-                        MessageBox.Show("Error Fecha y hora Ocupada", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Error Paciente no Registrado", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                     }
                 }
