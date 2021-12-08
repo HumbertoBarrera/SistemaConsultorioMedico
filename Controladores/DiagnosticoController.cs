@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using SistemaConsultorioMedico.Modelos;
+using System.Data.SqlClient;
+using System.Data;
 
 
 namespace SistemaConsultorioMedico.Controladores
@@ -59,6 +61,54 @@ namespace SistemaConsultorioMedico.Controladores
             }
 
 
+        }
+
+        public static void diagnostico(Modelos.Diagnostico d)
+        {
+
+            String query = "SELECT * FROM DIAGNOSTICO WHERE idPaciente=@idPaciente";
+
+            try
+            {
+                using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
+                {
+                    comando.Parameters.AddWithValue("@idPaciente", d.getIdPaciente());
+
+                    SqlDataReader resultado = comando.ExecuteReader();
+
+                    if (resultado.Read())
+                    {
+                    }
+                    else
+                    {
+                       
+                    }
+                }
+            }
+            catch (SqlException e)
+            {
+
+            }
+            finally
+            {
+                Controladores.ConexionController.Desconectar();
+            }
+
+
+        }
+
+        public DataTable CargarGridDiagnostico(Modelos.Diagnostico d)
+        {
+            String query = "SELECT folioDiagostico,fecha,descripcion FROM DIAGNOSTICO WHERE idPaciente=@idPaciente";
+
+            using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
+            {
+                comando.Parameters.AddWithValue("@idPaciente", d.getIdPaciente());
+                SqlDataAdapter data = new SqlDataAdapter(comando);
+                DataTable tabla = new DataTable();
+                data.Fill(tabla);
+                return tabla;
+            }
         }
     }
 }

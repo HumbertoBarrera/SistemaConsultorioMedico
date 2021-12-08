@@ -98,5 +98,28 @@ namespace SistemaConsultorioMedico
                 MessageBox.Show("Los campos deben ser llenados");
             }
         }
+
+        private void Diagnostico_Load(object sender, EventArgs e)
+        {
+            Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
+            diagnostico.setIdPaciente(idPaciente);
+            Controladores.DiagnosticoController da = new Controladores.DiagnosticoController();
+            var dt = da.CargarGridDiagnostico(diagnostico);
+
+            bunifuCustomDataGrid1.DataSource = dt;
+        }
+
+        private void BuscarCitaBtn_Click(object sender, EventArgs e)
+        {
+            int idPacienteV = int.Parse(BuscarTbx.text);
+            PacienteTxb.Text = BuscarTbx.text;
+
+            Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
+            diagnostico.setIdPaciente(idPacienteV);
+            Controladores.DiagnosticoController da = new Controladores.DiagnosticoController();
+            var dt = da.CargarGridDiagnostico(diagnostico);
+
+            bunifuCustomDataGrid1.DataSource = dt;
+        }
     }
 }
