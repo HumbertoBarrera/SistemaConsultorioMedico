@@ -14,6 +14,8 @@ namespace SistemaConsultorioMedico
     {
         int idPaciente;
         DateTime fecha;
+        int indice;
+
         public Diagnostico(int idPaciente)
         {
             InitializeComponent();
@@ -79,18 +81,29 @@ namespace SistemaConsultorioMedico
 
         private void guardarbtn_Click(object sender, EventArgs e)
         {
-
+         
 
             if ((FechaTxb.Text != "FECHA") && (Descripciontxb.Text != "DESCRIPCION"))
             {
-                //DateTime fecha = Convert.ToDateTime(FechaTxb.Text);
                 Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
                 diagnostico.setIdPaciente(idPaciente);
                 diagnostico.setFecha(fecha);
                 diagnostico.setDescripcion(Descripciontxb.Text);
 
-                Controladores.DiagnosticoController.folio(diagnostico);
-                Controladores.DiagnosticoController.insertarDiagnostico(diagnostico);
+                if (Controladores.DiagnosticoController.validaExisPaciente(diagnostico) == true)
+                {
+                    Controladores.DiagnosticoController.folio(diagnostico);
+                    Controladores.DiagnosticoController.insertarDiagnostico(diagnostico);
+                }
+                else
+                {
+                    if (Controladores.DiagnosticoController.validaExisPaciente(diagnostico) == false)
+                    {
+                        MessageBox.Show("Error paciente no Registrado", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    }
+                }
+              
 
             }
             else
@@ -107,19 +120,53 @@ namespace SistemaConsultorioMedico
             var dt = da.CargarGridDiagnostico(diagnostico);
 
             bunifuCustomDataGrid1.DataSource = dt;
+            DataGridViewColumn Column = bunifuCustomDataGrid1.Columns[2];
+            Column.Visible = false;
         }
 
         private void BuscarCitaBtn_Click(object sender, EventArgs e)
         {
             int idPacienteV = int.Parse(BuscarTbx.text);
             PacienteTxb.Text = BuscarTbx.text;
+            bunifuCustomDataGrid1.DataSource = null;
+            Descripciontxb.Text = "";
 
             Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
             diagnostico.setIdPaciente(idPacienteV);
-            Controladores.DiagnosticoController da = new Controladores.DiagnosticoController();
-            var dt = da.CargarGridDiagnostico(diagnostico);
 
-            bunifuCustomDataGrid1.DataSource = dt;
+            if (Controladores.DiagnosticoController.validaExisPaciente(diagnostico) == true)
+            {
+                Controladores.DiagnosticoController da = new Controladores.DiagnosticoController();
+                var dt = da.CargarGridDiagnostico(diagnostico);
+
+                bunifuCustomDataGrid1.DataSource = dt;
+                DataGridViewColumn Column = bunifuCustomDataGrid1.Columns[2];
+                Column.Visible = false;
+            }
+            else
+            {
+                if (Controladores.DiagnosticoController.validaExisPaciente(diagnostico) == false)
+                {
+                    MessageBox.Show("Error paciente no Registrado", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    PacienteTxb.Text = " ";
+
+                }
+            }
+        }
+
+        private void Agregarbtn_Click(object sender, EventArgs e)
+        {
+            fecha = DateTime.Now;
+            FechaTxb.Text = fecha.ToString("MM/dd/yyyy");
+            Descripciontxb.Text = "";
+        }
+
+        private void bunifuCustomDataGrid1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            indice = bunifuCustomDataGrid1.CurrentRow.Index;
+            FechaTxb.Text = bunifuCustomDataGrid1[1, indice].Value.ToString();
+            Descripciontxb.Text = bunifuCustomDataGrid1[2, indice].Value.ToString();
+
         }
     }
 }

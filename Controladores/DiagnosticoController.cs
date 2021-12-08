@@ -99,7 +99,7 @@ namespace SistemaConsultorioMedico.Controladores
 
         public DataTable CargarGridDiagnostico(Modelos.Diagnostico d)
         {
-            String query = "SELECT folioDiagostico,fecha,descripcion FROM DIAGNOSTICO WHERE idPaciente=@idPaciente";
+            String query = "SELECT folioDiagostico,LEFT(fecha,10),descripcion FROM DIAGNOSTICO WHERE idPaciente=@idPaciente";
 
             using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
             {
@@ -109,6 +109,26 @@ namespace SistemaConsultorioMedico.Controladores
                 data.Fill(tabla);
                 return tabla;
             }
+        }
+
+        //---------------------------------------Validaciones----------------------------------
+        public static bool validaExisPaciente(Modelos.Diagnostico d)
+        {
+            String query = "SELECT * FROM Paciente WHERE idPaciente='" + d.getIdPaciente() + "'";
+
+            using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
+            {
+                SqlDataReader leer = comando.ExecuteReader();
+                if (leer.Read())
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
         }
     }
 }

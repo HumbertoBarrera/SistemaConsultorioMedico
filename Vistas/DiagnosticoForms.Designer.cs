@@ -84,7 +84,7 @@ namespace SistemaConsultorioMedico
             this.FechaTxb.Location = new System.Drawing.Point(47, 121);
             this.FechaTxb.Margin = new System.Windows.Forms.Padding(4);
             this.FechaTxb.Name = "FechaTxb";
-            this.FechaTxb.Size = new System.Drawing.Size(241, 33);
+            this.FechaTxb.Size = new System.Drawing.Size(252, 33);
             this.FechaTxb.TabIndex = 30;
             this.FechaTxb.Text = "FECHA";
             this.FechaTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -154,6 +154,7 @@ namespace SistemaConsultorioMedico
             this.Agregarbtn.Size = new System.Drawing.Size(157, 41);
             this.Agregarbtn.TabIndex = 35;
             this.Agregarbtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Agregarbtn.Click += new System.EventHandler(this.Agregarbtn_Click);
             // 
             // BuscarCitaBtn
             // 
@@ -173,7 +174,7 @@ namespace SistemaConsultorioMedico
             this.BuscarCitaBtn.IdleFillColor = System.Drawing.Color.White;
             this.BuscarCitaBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BuscarCitaBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.BuscarCitaBtn.Location = new System.Drawing.Point(939, 113);
+            this.BuscarCitaBtn.Location = new System.Drawing.Point(915, 113);
             this.BuscarCitaBtn.Margin = new System.Windows.Forms.Padding(5);
             this.BuscarCitaBtn.Name = "BuscarCitaBtn";
             this.BuscarCitaBtn.Size = new System.Drawing.Size(77, 41);
@@ -208,6 +209,7 @@ namespace SistemaConsultorioMedico
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.bunifuCustomDataGrid1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -224,11 +226,12 @@ namespace SistemaConsultorioMedico
             this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
             this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(731, 170);
+            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(707, 170);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
             this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(247, 236);
             this.bunifuCustomDataGrid1.TabIndex = 39;
+            this.bunifuCustomDataGrid1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid1_CellClick);
             // 
             // BuscarTbx
             // 
@@ -238,7 +241,7 @@ namespace SistemaConsultorioMedico
             this.BuscarTbx.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuscarTbx.ForeColor = System.Drawing.Color.Purple;
             this.BuscarTbx.Icon = ((System.Drawing.Image)(resources.GetObject("BuscarTbx.Icon")));
-            this.BuscarTbx.Location = new System.Drawing.Point(731, 121);
+            this.BuscarTbx.Location = new System.Drawing.Point(707, 121);
             this.BuscarTbx.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BuscarTbx.Name = "BuscarTbx";
             this.BuscarTbx.Size = new System.Drawing.Size(200, 27);
