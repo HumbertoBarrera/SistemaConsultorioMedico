@@ -81,8 +81,6 @@ namespace SistemaConsultorioMedico
 
         private void guardarbtn_Click(object sender, EventArgs e)
         {
-         
-
             if ((FechaTxb.Text != "FECHA") && (Descripciontxb.Text != "DESCRIPCION"))
             {
                 Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();

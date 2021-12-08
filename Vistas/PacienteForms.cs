@@ -275,6 +275,14 @@ namespace SistemaConsultorioMedico
                 this.Hide();
                 VDiag.Show();
             }
+            else if(IdPacienteLbl.Visible == true)
+            {
+                int idPaciente = int.Parse(IdPacienteLbl.Text);
+                Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
+                Form VDiag = new Diagnostico(idPaciente);
+                this.Hide();
+                VDiag.Show();
+            }
             else
             {
                 MessageBox.Show("Ingrese el ID del Paciente");
