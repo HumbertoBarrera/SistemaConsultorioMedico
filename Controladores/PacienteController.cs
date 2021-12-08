@@ -69,7 +69,7 @@ namespace SistemaConsultorioMedico.Controladores
 
         public static void ActualizarPaciente(Modelos.Paciente p)
         {
-            String query = "UPDATE PACIENTE SET nombresP='" + p.getNombresP() + "', apellidoPatP='" + p.getApellitosPatP() + "', apellidoMatP='" + p.getApellidosMatP() + "', fechaNac='" + p.getFechaNac() + "', edadP='" + p.getEdad() + "', lugarNac='" + p.getLugarNac() + "', direccionP='" + p.getDireccionP() + "', telefonoP='" + p.getTelefonoP() + "', emailP='" + p.getEmailP() + "',trabajoP='" + p.getTrabajoP() + "', lugarTrabaoP='" + p.getLugarTrabajoP() + "' WHERE idPaciente='" + p.getIdPaciente() + "'";
+            String query = "UPDATE PACIENTE SET nombresP='" + p.getNombresP() + "', apellidoPatP='" + p.getApellitosPatP() + "', apellidoMatP='" + p.getApellidosMatP() + "', fechaNac='" + p.getFechaNac().ToString("yyyy/MM/dd") + "', edadP='" + p.getEdad() + "', lugarNac='" + p.getLugarNac() + "', direccionP='" + p.getDireccionP() + "', telefonoP='" + p.getTelefonoP() + "', emailP='" + p.getEmailP() + "',trabajoP='" + p.getTrabajoP() + "', lugarTrabaoP='" + p.getLugarTrabajoP() + "' WHERE idPaciente='" + p.getIdPaciente() + "'";
             try
             {
                 using (SqlCommand comando = new SqlCommand(query, ConexionController.Conectar()))

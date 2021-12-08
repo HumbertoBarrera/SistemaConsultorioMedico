@@ -321,6 +321,13 @@ namespace SistemaConsultorioMedico
                 this.Hide();
                 VInfoMedica.Show();
             }
+            else if(IdPacienteLbl.Visible == true)
+            {
+                int idPaciente = int.Parse(IdPacienteLbl.Text);
+                Form VInfoMedica = new InformacionMedica(idPaciente);
+                this.Hide();
+                VInfoMedica.Show();
+            }
             else
             {
                 MessageBox.Show("Ingrese el ID del Paciente");
@@ -334,7 +341,7 @@ namespace SistemaConsultorioMedico
             NombreTxb.Text = bunifuCustomDataGrid1[1, indice].Value.ToString();
             ApellidoPaternoTbx.Text = bunifuCustomDataGrid1[2, indice].Value.ToString();
             ApellidoMaternoTxb.Text = bunifuCustomDataGrid1[3, indice].Value.ToString();
-            FechaNacTxb.Text = bunifuCustomDataGrid1[4, indice].Value.ToString();
+            FechaNacTxb.Text = bunifuCustomDataGrid1[4, indice].Value.ToString().Remove(10);
             LugarNaciTxb.Text = bunifuCustomDataGrid1[6, indice].Value.ToString();
             Direcciontxb.Text = bunifuCustomDataGrid1[7, indice].Value.ToString();
             TelefonoTxb.Text = bunifuCustomDataGrid1[8, indice].Value.ToString();

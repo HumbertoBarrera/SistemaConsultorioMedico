@@ -147,7 +147,7 @@ namespace SistemaConsultorioMedico.Controladores
         //----------------------------------Validaciones----------------------------------------------
         public static bool validaExisCita(Modelos.Cita c)
         {
-            String query = "SELECT * FROM CITA WHERE fecha='" + c.getFecha() + "' AND hora='" + c.getHora() + "'";
+            String query = "SELECT * FROM CITA WHERE fecha='" + c.getFecha().ToString("yyyy/MM/dd") + "' AND hora='" + c.getHora() + "'";
       
                 using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
                 {
