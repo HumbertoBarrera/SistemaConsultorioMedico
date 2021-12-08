@@ -250,10 +250,11 @@ namespace SistemaConsultorioMedico
             this.dato10Rbtn4.Margin = new System.Windows.Forms.Padding(4);
             this.dato10Rbtn4.Name = "dato10Rbtn4";
             this.dato10Rbtn4.Size = new System.Drawing.Size(97, 21);
-            this.dato10Rbtn4.TabIndex = 4;
+            this.dato10Rbtn4.TabIndex = 74;
             this.dato10Rbtn4.TabStop = true;
             this.dato10Rbtn4.Text = "EPILEPSIA";
             this.dato10Rbtn4.UseVisualStyleBackColor = true;
+            this.dato10Rbtn4.CheckedChanged += new System.EventHandler(this.RadioBtnChecked);
             // 
             // dato10Rbtn3
             // 
@@ -262,10 +263,11 @@ namespace SistemaConsultorioMedico
             this.dato10Rbtn3.Margin = new System.Windows.Forms.Padding(4);
             this.dato10Rbtn3.Name = "dato10Rbtn3";
             this.dato10Rbtn3.Size = new System.Drawing.Size(211, 21);
-            this.dato10Rbtn3.TabIndex = 3;
+            this.dato10Rbtn3.TabIndex = 73;
             this.dato10Rbtn3.TabStop = true;
             this.dato10Rbtn3.Text = "CANCER SERVICOUTERINO";
             this.dato10Rbtn3.UseVisualStyleBackColor = true;
+            this.dato10Rbtn3.CheckedChanged += new System.EventHandler(this.RadioBtnChecked);
             // 
             // dato10Rbtn2
             // 
@@ -274,10 +276,11 @@ namespace SistemaConsultorioMedico
             this.dato10Rbtn2.Margin = new System.Windows.Forms.Padding(4);
             this.dato10Rbtn2.Name = "dato10Rbtn2";
             this.dato10Rbtn2.Size = new System.Drawing.Size(160, 21);
-            this.dato10Rbtn2.TabIndex = 2;
+            this.dato10Rbtn2.TabIndex = 71;
             this.dato10Rbtn2.TabStop = true;
             this.dato10Rbtn2.Text = "CANCER DE SENOS";
             this.dato10Rbtn2.UseVisualStyleBackColor = true;
+            this.dato10Rbtn2.CheckedChanged += new System.EventHandler(this.RadioBtnChecked);
             // 
             // dato10Rbtn1
             // 
@@ -286,10 +289,11 @@ namespace SistemaConsultorioMedico
             this.dato10Rbtn1.Margin = new System.Windows.Forms.Padding(4);
             this.dato10Rbtn1.Name = "dato10Rbtn1";
             this.dato10Rbtn1.Size = new System.Drawing.Size(96, 21);
-            this.dato10Rbtn1.TabIndex = 1;
+            this.dato10Rbtn1.TabIndex = 70;
             this.dato10Rbtn1.TabStop = true;
             this.dato10Rbtn1.Text = "DIABETES";
             this.dato10Rbtn1.UseVisualStyleBackColor = true;
+            this.dato10Rbtn1.CheckedChanged += new System.EventHandler(this.RadioBtnChecked);
             // 
             // bunifuCustomLabel2
             // 
@@ -350,7 +354,7 @@ namespace SistemaConsultorioMedico
             this.RegresarBtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.RegresarBtn.Name = "RegresarBtn";
             this.RegresarBtn.Size = new System.Drawing.Size(209, 50);
-            this.RegresarBtn.TabIndex = 27;
+            this.RegresarBtn.TabIndex = 1;
             this.RegresarBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.RegresarBtn.Click += new System.EventHandler(this.RegresarBtn_Click);
             // 

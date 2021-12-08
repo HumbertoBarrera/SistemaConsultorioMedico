@@ -376,6 +376,7 @@ namespace SistemaConsultorioMedico
                                                                             dato17Tbx.Text, dato18Tbx.Text, hoy);
                 Controladores.InformacionMedicaController.altaInformacionMedica(im1, im2);
                 reestablecerCampos();
+                this.Close();
             }
             else
             {
@@ -401,7 +402,10 @@ namespace SistemaConsultorioMedico
             {
                 return dato10Rbtn4.Text;
             }
-            return dato10Tbx.Text;
+            else
+            {
+                return dato10Tbx.Text;
+            }
         }
 
         private void RegresarBtn_Click(object sender, EventArgs e)
@@ -499,6 +503,50 @@ namespace SistemaConsultorioMedico
             }
         }
 
+        private void llenarDato10(String dato10)
+        {
+            if (dato10.Contains("DIABETES"))
+            {
+                dato10Rbtn1.Checked = true;
+                dato10Rbtn2.Checked = false;
+                dato10Rbtn3.Checked = false;
+                dato10Rbtn4.Checked = false;
+                dato10Tbx.Text = "OTRO";
+            }
+            else if (dato10.Contains("CANCER DE SENOS"))
+            {
+                dato10Rbtn1.Checked = false;
+                dato10Rbtn2.Checked = true;
+                dato10Rbtn3.Checked = false;
+                dato10Rbtn4.Checked = false;
+                dato10Tbx.Text = "OTRO";
+            }
+            else if (dato10.Contains("CANCER SERVICOUTERINO"))
+            {
+                dato10Rbtn1.Checked = false;
+                dato10Rbtn2.Checked = false;
+                dato10Rbtn3.Checked = true;
+                dato10Rbtn4.Checked = false;
+                dato10Tbx.Text = "OTRO";
+            }
+            else if (dato10.Contains("EPILEPSIA"))
+            {
+                dato10Rbtn1.Checked = false;
+                dato10Rbtn2.Checked = false;
+                dato10Rbtn3.Checked = false;
+                dato10Rbtn4.Checked = true;
+                dato10Tbx.Text = "OTRO";
+            }
+            else
+            {
+                dato10Rbtn1.Checked = false;
+                dato10Rbtn2.Checked = false;
+                dato10Rbtn3.Checked = false;
+                dato10Rbtn4.Checked = false;
+                dato10Tbx.Text = dato10;
+            }
+        }
+
         private void reestablecerCampos()
         {
             dato10Rbtn1.Checked = false;
@@ -538,6 +586,8 @@ namespace SistemaConsultorioMedico
                     {
                         while (leer.Read())
                         {
+                            llenarDato10(leer["dato10"].ToString().Trim());
+                            dato10OpcTbx.Text = leer["dato10Opc"].ToString();
                             dato11Tbx.Text = leer["dato11"].ToString();
                             dato11OpcTbx.Text = leer["dato11Opc"].ToString();
                             dato12Tbx.Text = leer["dato12"].ToString();
@@ -581,11 +631,17 @@ namespace SistemaConsultorioMedico
                                                                             dato17Tbx.Text, dato18Tbx.Text, hoy);
                 Controladores.InformacionMedicaController.modificarInformacionMedica(im1, im2);
                 reestablecerCampos();
+                this.Close();
             }
             else
             {
                 MessageBox.Show("No pueden haber campos vacíos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void RadioBtnChecked(object sender, EventArgs e)
+        {
+            dato10Tbx.Text = "OTRO";
         }
     }
 }
