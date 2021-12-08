@@ -70,10 +70,10 @@ namespace SistemaConsultorioMedico
             this.linea.BackColor = System.Drawing.Color.Transparent;
             this.linea.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(128)))));
             this.linea.LineThickness = 1;
-            this.linea.Location = new System.Drawing.Point(433, 80);
-            this.linea.Margin = new System.Windows.Forms.Padding(5);
+            this.linea.Location = new System.Drawing.Point(325, 65);
+            this.linea.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.linea.Name = "linea";
-            this.linea.Size = new System.Drawing.Size(327, 12);
+            this.linea.Size = new System.Drawing.Size(245, 10);
             this.linea.TabIndex = 37;
             this.linea.Transparency = 255;
             this.linea.Vertical = false;
@@ -82,10 +82,9 @@ namespace SistemaConsultorioMedico
             // 
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(444, 48);
-            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(333, 39);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(290, 30);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(225, 23);
             this.bunifuCustomLabel1.TabIndex = 36;
             this.bunifuCustomLabel1.Text = "INFORMACION MEDICA";
             // 
@@ -101,10 +100,10 @@ namespace SistemaConsultorioMedico
             this.dato13OpcTbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato13OpcTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato13OpcTbx.LineThickness = 3;
-            this.dato13OpcTbx.Location = new System.Drawing.Point(721, 313);
-            this.dato13OpcTbx.Margin = new System.Windows.Forms.Padding(5);
+            this.dato13OpcTbx.Location = new System.Drawing.Point(541, 254);
+            this.dato13OpcTbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dato13OpcTbx.Name = "dato13OpcTbx";
-            this.dato13OpcTbx.Size = new System.Drawing.Size(376, 41);
+            this.dato13OpcTbx.Size = new System.Drawing.Size(282, 33);
             this.dato13OpcTbx.TabIndex = 11;
             this.dato13OpcTbx.Text = "¿DESDE CUANDO?";
             this.dato13OpcTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -123,10 +122,10 @@ namespace SistemaConsultorioMedico
             this.dato13Tbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato13Tbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato13Tbx.LineThickness = 3;
-            this.dato13Tbx.Location = new System.Drawing.Point(592, 313);
-            this.dato13Tbx.Margin = new System.Windows.Forms.Padding(5);
+            this.dato13Tbx.Location = new System.Drawing.Point(444, 254);
+            this.dato13Tbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dato13Tbx.Name = "dato13Tbx";
-            this.dato13Tbx.Size = new System.Drawing.Size(119, 41);
+            this.dato13Tbx.Size = new System.Drawing.Size(89, 33);
             this.dato13Tbx.TabIndex = 10;
             this.dato13Tbx.Text = "¿FUMA?";
             this.dato13Tbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -145,10 +144,10 @@ namespace SistemaConsultorioMedico
             this.dato12Tbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato12Tbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato12Tbx.LineThickness = 3;
-            this.dato12Tbx.Location = new System.Drawing.Point(60, 313);
-            this.dato12Tbx.Margin = new System.Windows.Forms.Padding(5);
+            this.dato12Tbx.Location = new System.Drawing.Point(45, 254);
+            this.dato12Tbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dato12Tbx.Name = "dato12Tbx";
-            this.dato12Tbx.Size = new System.Drawing.Size(505, 41);
+            this.dato12Tbx.Size = new System.Drawing.Size(379, 33);
             this.dato12Tbx.TabIndex = 9;
             this.dato12Tbx.Text = "¿CUANTAS PERSONAS SEXUALES A TENIDO?";
             this.dato12Tbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -167,10 +166,10 @@ namespace SistemaConsultorioMedico
             this.dato11Tbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato11Tbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato11Tbx.LineThickness = 3;
-            this.dato11Tbx.Location = new System.Drawing.Point(605, 256);
-            this.dato11Tbx.Margin = new System.Windows.Forms.Padding(5);
+            this.dato11Tbx.Location = new System.Drawing.Point(454, 208);
+            this.dato11Tbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dato11Tbx.Name = "dato11Tbx";
-            this.dato11Tbx.Size = new System.Drawing.Size(505, 41);
+            this.dato11Tbx.Size = new System.Drawing.Size(379, 33);
             this.dato11Tbx.TabIndex = 7;
             this.dato11Tbx.Text = "¿TIENE ALGUN FAMILIAR INFERTIL?";
             this.dato11Tbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -189,10 +188,10 @@ namespace SistemaConsultorioMedico
             this.dato10OpcTbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato10OpcTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato10OpcTbx.LineThickness = 3;
-            this.dato10OpcTbx.Location = new System.Drawing.Point(52, 256);
-            this.dato10OpcTbx.Margin = new System.Windows.Forms.Padding(5);
+            this.dato10OpcTbx.Location = new System.Drawing.Point(39, 208);
+            this.dato10OpcTbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dato10OpcTbx.Name = "dato10OpcTbx";
-            this.dato10OpcTbx.Size = new System.Drawing.Size(505, 41);
+            this.dato10OpcTbx.Size = new System.Drawing.Size(379, 33);
             this.dato10OpcTbx.TabIndex = 6;
             this.dato10OpcTbx.Text = "¿QUIEN?";
             this.dato10OpcTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -211,10 +210,10 @@ namespace SistemaConsultorioMedico
             this.dato13Opc2Tbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato13Opc2Tbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato13Opc2Tbx.LineThickness = 3;
-            this.dato13Opc2Tbx.Location = new System.Drawing.Point(52, 374);
-            this.dato13Opc2Tbx.Margin = new System.Windows.Forms.Padding(5);
+            this.dato13Opc2Tbx.Location = new System.Drawing.Point(39, 304);
+            this.dato13Opc2Tbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dato13Opc2Tbx.Name = "dato13Opc2Tbx";
-            this.dato13Opc2Tbx.Size = new System.Drawing.Size(487, 41);
+            this.dato13Opc2Tbx.Size = new System.Drawing.Size(365, 33);
             this.dato13Opc2Tbx.TabIndex = 12;
             this.dato13Opc2Tbx.Text = "¿QUE TANTO DIARIO?";
             this.dato13Opc2Tbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -233,10 +232,10 @@ namespace SistemaConsultorioMedico
             this.dato10Tbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato10Tbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato10Tbx.LineThickness = 3;
-            this.dato10Tbx.Location = new System.Drawing.Point(817, 187);
-            this.dato10Tbx.Margin = new System.Windows.Forms.Padding(5);
+            this.dato10Tbx.Location = new System.Drawing.Point(613, 152);
+            this.dato10Tbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dato10Tbx.Name = "dato10Tbx";
-            this.dato10Tbx.Size = new System.Drawing.Size(293, 41);
+            this.dato10Tbx.Size = new System.Drawing.Size(220, 33);
             this.dato10Tbx.TabIndex = 5;
             this.dato10Tbx.Text = "OTRO";
             this.dato10Tbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -246,10 +245,9 @@ namespace SistemaConsultorioMedico
             // dato10Rbtn4
             // 
             this.dato10Rbtn4.AutoSize = true;
-            this.dato10Rbtn4.Location = new System.Drawing.Point(655, 198);
-            this.dato10Rbtn4.Margin = new System.Windows.Forms.Padding(4);
+            this.dato10Rbtn4.Location = new System.Drawing.Point(491, 161);
             this.dato10Rbtn4.Name = "dato10Rbtn4";
-            this.dato10Rbtn4.Size = new System.Drawing.Size(97, 21);
+            this.dato10Rbtn4.Size = new System.Drawing.Size(79, 17);
             this.dato10Rbtn4.TabIndex = 74;
             this.dato10Rbtn4.TabStop = true;
             this.dato10Rbtn4.Text = "EPILEPSIA";
@@ -259,10 +257,9 @@ namespace SistemaConsultorioMedico
             // dato10Rbtn3
             // 
             this.dato10Rbtn3.AutoSize = true;
-            this.dato10Rbtn3.Location = new System.Drawing.Point(401, 198);
-            this.dato10Rbtn3.Margin = new System.Windows.Forms.Padding(4);
+            this.dato10Rbtn3.Location = new System.Drawing.Point(301, 161);
             this.dato10Rbtn3.Name = "dato10Rbtn3";
-            this.dato10Rbtn3.Size = new System.Drawing.Size(211, 21);
+            this.dato10Rbtn3.Size = new System.Drawing.Size(168, 17);
             this.dato10Rbtn3.TabIndex = 73;
             this.dato10Rbtn3.TabStop = true;
             this.dato10Rbtn3.Text = "CANCER SERVICOUTERINO";
@@ -272,10 +269,9 @@ namespace SistemaConsultorioMedico
             // dato10Rbtn2
             // 
             this.dato10Rbtn2.AutoSize = true;
-            this.dato10Rbtn2.Location = new System.Drawing.Point(191, 198);
-            this.dato10Rbtn2.Margin = new System.Windows.Forms.Padding(4);
+            this.dato10Rbtn2.Location = new System.Drawing.Point(143, 161);
             this.dato10Rbtn2.Name = "dato10Rbtn2";
-            this.dato10Rbtn2.Size = new System.Drawing.Size(160, 21);
+            this.dato10Rbtn2.Size = new System.Drawing.Size(127, 17);
             this.dato10Rbtn2.TabIndex = 71;
             this.dato10Rbtn2.TabStop = true;
             this.dato10Rbtn2.Text = "CANCER DE SENOS";
@@ -285,10 +281,9 @@ namespace SistemaConsultorioMedico
             // dato10Rbtn1
             // 
             this.dato10Rbtn1.AutoSize = true;
-            this.dato10Rbtn1.Location = new System.Drawing.Point(60, 198);
-            this.dato10Rbtn1.Margin = new System.Windows.Forms.Padding(4);
+            this.dato10Rbtn1.Location = new System.Drawing.Point(45, 161);
             this.dato10Rbtn1.Name = "dato10Rbtn1";
-            this.dato10Rbtn1.Size = new System.Drawing.Size(96, 21);
+            this.dato10Rbtn1.Size = new System.Drawing.Size(78, 17);
             this.dato10Rbtn1.TabIndex = 70;
             this.dato10Rbtn1.TabStop = true;
             this.dato10Rbtn1.Text = "DIABETES";
@@ -299,10 +294,9 @@ namespace SistemaConsultorioMedico
             // 
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(56, 137);
-            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(42, 111);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(798, 23);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(649, 18);
             this.bunifuCustomLabel2.TabIndex = 52;
             this.bunifuCustomLabel2.Text = "INDIQUE SI ALGUIEN DE SU FAMILIA PADECE ALGUNA DE LAS ENFERMEDADES SIGUIENTES";
             // 
@@ -324,10 +318,10 @@ namespace SistemaConsultorioMedico
             this.GuardarBtn.IdleFillColor = System.Drawing.Color.White;
             this.GuardarBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.GuardarBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.GuardarBtn.Location = new System.Drawing.Point(646, 627);
-            this.GuardarBtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.GuardarBtn.Location = new System.Drawing.Point(484, 509);
+            this.GuardarBtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.GuardarBtn.Name = "GuardarBtn";
-            this.GuardarBtn.Size = new System.Drawing.Size(209, 50);
+            this.GuardarBtn.Size = new System.Drawing.Size(157, 41);
             this.GuardarBtn.TabIndex = 24;
             this.GuardarBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.GuardarBtn.Click += new System.EventHandler(this.GuardarBtn_Click);
@@ -350,10 +344,10 @@ namespace SistemaConsultorioMedico
             this.RegresarBtn.IdleFillColor = System.Drawing.Color.White;
             this.RegresarBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.RegresarBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.RegresarBtn.Location = new System.Drawing.Point(1092, 689);
-            this.RegresarBtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.RegresarBtn.Location = new System.Drawing.Point(819, 560);
+            this.RegresarBtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.RegresarBtn.Name = "RegresarBtn";
-            this.RegresarBtn.Size = new System.Drawing.Size(209, 50);
+            this.RegresarBtn.Size = new System.Drawing.Size(157, 41);
             this.RegresarBtn.TabIndex = 1;
             this.RegresarBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.RegresarBtn.Click += new System.EventHandler(this.RegresarBtn_Click);
@@ -362,10 +356,9 @@ namespace SistemaConsultorioMedico
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1293, 13);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(970, 11);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(27, 27);
+            this.pictureBox1.Size = new System.Drawing.Size(20, 22);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 60;
             this.pictureBox1.TabStop = false;
@@ -383,10 +376,10 @@ namespace SistemaConsultorioMedico
             this.dato14Tbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato14Tbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato14Tbx.LineThickness = 3;
-            this.dato14Tbx.Location = new System.Drawing.Point(571, 374);
-            this.dato14Tbx.Margin = new System.Windows.Forms.Padding(5);
+            this.dato14Tbx.Location = new System.Drawing.Point(428, 304);
+            this.dato14Tbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dato14Tbx.Name = "dato14Tbx";
-            this.dato14Tbx.Size = new System.Drawing.Size(119, 41);
+            this.dato14Tbx.Size = new System.Drawing.Size(89, 33);
             this.dato14Tbx.TabIndex = 13;
             this.dato14Tbx.Text = "¿TOMA?";
             this.dato14Tbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -405,10 +398,10 @@ namespace SistemaConsultorioMedico
             this.dato14OpcTbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato14OpcTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato14OpcTbx.LineThickness = 3;
-            this.dato14OpcTbx.Location = new System.Drawing.Point(708, 374);
-            this.dato14OpcTbx.Margin = new System.Windows.Forms.Padding(5);
+            this.dato14OpcTbx.Location = new System.Drawing.Point(531, 304);
+            this.dato14OpcTbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dato14OpcTbx.Name = "dato14OpcTbx";
-            this.dato14OpcTbx.Size = new System.Drawing.Size(376, 41);
+            this.dato14OpcTbx.Size = new System.Drawing.Size(282, 33);
             this.dato14OpcTbx.TabIndex = 14;
             this.dato14OpcTbx.Text = "¿DESDE CUANDO?";
             this.dato14OpcTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -427,10 +420,10 @@ namespace SistemaConsultorioMedico
             this.dato14Opc2Tbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato14Opc2Tbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato14Opc2Tbx.LineThickness = 3;
-            this.dato14Opc2Tbx.Location = new System.Drawing.Point(52, 425);
-            this.dato14Opc2Tbx.Margin = new System.Windows.Forms.Padding(5);
+            this.dato14Opc2Tbx.Location = new System.Drawing.Point(39, 345);
+            this.dato14Opc2Tbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dato14Opc2Tbx.Name = "dato14Opc2Tbx";
-            this.dato14Opc2Tbx.Size = new System.Drawing.Size(485, 41);
+            this.dato14Opc2Tbx.Size = new System.Drawing.Size(364, 33);
             this.dato14Opc2Tbx.TabIndex = 15;
             this.dato14Opc2Tbx.Text = "¿QUE TANTO DIARIO?";
             this.dato14Opc2Tbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -449,10 +442,10 @@ namespace SistemaConsultorioMedico
             this.dato15Tbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato15Tbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato15Tbx.LineThickness = 3;
-            this.dato15Tbx.Location = new System.Drawing.Point(564, 425);
-            this.dato15Tbx.Margin = new System.Windows.Forms.Padding(5);
+            this.dato15Tbx.Location = new System.Drawing.Point(423, 345);
+            this.dato15Tbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dato15Tbx.Name = "dato15Tbx";
-            this.dato15Tbx.Size = new System.Drawing.Size(232, 41);
+            this.dato15Tbx.Size = new System.Drawing.Size(174, 33);
             this.dato15Tbx.TabIndex = 16;
             this.dato15Tbx.Text = "¿ES ADICTA A DROGAS?";
             this.dato15Tbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -471,10 +464,10 @@ namespace SistemaConsultorioMedico
             this.dato15OpcTbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato15OpcTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato15OpcTbx.LineThickness = 3;
-            this.dato15OpcTbx.Location = new System.Drawing.Point(807, 425);
-            this.dato15OpcTbx.Margin = new System.Windows.Forms.Padding(5);
+            this.dato15OpcTbx.Location = new System.Drawing.Point(605, 345);
+            this.dato15OpcTbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dato15OpcTbx.Name = "dato15OpcTbx";
-            this.dato15OpcTbx.Size = new System.Drawing.Size(487, 41);
+            this.dato15OpcTbx.Size = new System.Drawing.Size(365, 33);
             this.dato15OpcTbx.TabIndex = 17;
             this.dato15OpcTbx.Text = "¿CUALES?";
             this.dato15OpcTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -493,10 +486,10 @@ namespace SistemaConsultorioMedico
             this.dato15Opc2Tbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato15Opc2Tbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato15Opc2Tbx.LineThickness = 3;
-            this.dato15Opc2Tbx.Location = new System.Drawing.Point(51, 487);
-            this.dato15Opc2Tbx.Margin = new System.Windows.Forms.Padding(5);
+            this.dato15Opc2Tbx.Location = new System.Drawing.Point(38, 396);
+            this.dato15Opc2Tbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dato15Opc2Tbx.Name = "dato15Opc2Tbx";
-            this.dato15Opc2Tbx.Size = new System.Drawing.Size(487, 41);
+            this.dato15Opc2Tbx.Size = new System.Drawing.Size(365, 33);
             this.dato15Opc2Tbx.TabIndex = 18;
             this.dato15Opc2Tbx.Text = "¿DESDE CUANDO?";
             this.dato15Opc2Tbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -515,10 +508,10 @@ namespace SistemaConsultorioMedico
             this.dato15Opc3Tbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato15Opc3Tbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato15Opc3Tbx.LineThickness = 3;
-            this.dato15Opc3Tbx.Location = new System.Drawing.Point(548, 487);
-            this.dato15Opc3Tbx.Margin = new System.Windows.Forms.Padding(5);
+            this.dato15Opc3Tbx.Location = new System.Drawing.Point(411, 396);
+            this.dato15Opc3Tbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dato15Opc3Tbx.Name = "dato15Opc3Tbx";
-            this.dato15Opc3Tbx.Size = new System.Drawing.Size(324, 41);
+            this.dato15Opc3Tbx.Size = new System.Drawing.Size(243, 33);
             this.dato15Opc3Tbx.TabIndex = 19;
             this.dato15Opc3Tbx.Text = "¿QUE TANTO DIARIAMENTE?";
             this.dato15Opc3Tbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -537,10 +530,10 @@ namespace SistemaConsultorioMedico
             this.dato15Opc4Tbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato15Opc4Tbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato15Opc4Tbx.LineThickness = 3;
-            this.dato15Opc4Tbx.Location = new System.Drawing.Point(883, 487);
-            this.dato15Opc4Tbx.Margin = new System.Windows.Forms.Padding(5);
+            this.dato15Opc4Tbx.Location = new System.Drawing.Point(662, 396);
+            this.dato15Opc4Tbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dato15Opc4Tbx.Name = "dato15Opc4Tbx";
-            this.dato15Opc4Tbx.Size = new System.Drawing.Size(251, 41);
+            this.dato15Opc4Tbx.Size = new System.Drawing.Size(188, 33);
             this.dato15Opc4Tbx.TabIndex = 20;
             this.dato15Opc4Tbx.Text = "¿MENSUALMENTE?";
             this.dato15Opc4Tbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -559,10 +552,10 @@ namespace SistemaConsultorioMedico
             this.dato16Tbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato16Tbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato16Tbx.LineThickness = 3;
-            this.dato16Tbx.Location = new System.Drawing.Point(51, 550);
-            this.dato16Tbx.Margin = new System.Windows.Forms.Padding(5);
+            this.dato16Tbx.Location = new System.Drawing.Point(38, 447);
+            this.dato16Tbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dato16Tbx.Name = "dato16Tbx";
-            this.dato16Tbx.Size = new System.Drawing.Size(441, 41);
+            this.dato16Tbx.Size = new System.Drawing.Size(331, 33);
             this.dato16Tbx.TabIndex = 21;
             this.dato16Tbx.Text = "¿CUANTAS PERSONAS DUERMEN EN SU CUARTO?";
             this.dato16Tbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -581,10 +574,10 @@ namespace SistemaConsultorioMedico
             this.dato17Tbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato17Tbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato17Tbx.LineThickness = 3;
-            this.dato17Tbx.Location = new System.Drawing.Point(523, 550);
-            this.dato17Tbx.Margin = new System.Windows.Forms.Padding(5);
+            this.dato17Tbx.Location = new System.Drawing.Point(392, 447);
+            this.dato17Tbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dato17Tbx.Name = "dato17Tbx";
-            this.dato17Tbx.Size = new System.Drawing.Size(372, 41);
+            this.dato17Tbx.Size = new System.Drawing.Size(279, 33);
             this.dato17Tbx.TabIndex = 22;
             this.dato17Tbx.Text = "¿CONSIDERA QUE SE ALIMENTA BIEN?";
             this.dato17Tbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -604,10 +597,10 @@ namespace SistemaConsultorioMedico
             this.dato18Tbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato18Tbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato18Tbx.LineThickness = 3;
-            this.dato18Tbx.Location = new System.Drawing.Point(60, 601);
-            this.dato18Tbx.Margin = new System.Windows.Forms.Padding(5);
+            this.dato18Tbx.Location = new System.Drawing.Point(45, 488);
+            this.dato18Tbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dato18Tbx.Name = "dato18Tbx";
-            this.dato18Tbx.Size = new System.Drawing.Size(372, 41);
+            this.dato18Tbx.Size = new System.Drawing.Size(279, 33);
             this.dato18Tbx.TabIndex = 23;
             this.dato18Tbx.Text = "¿ALGUN COMENTARIO AL RESPECTO?";
             this.dato18Tbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -618,10 +611,9 @@ namespace SistemaConsultorioMedico
             // 
             this.FechaLbl.AutoSize = true;
             this.FechaLbl.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FechaLbl.Location = new System.Drawing.Point(56, 685);
-            this.FechaLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.FechaLbl.Location = new System.Drawing.Point(42, 557);
             this.FechaLbl.Name = "FechaLbl";
-            this.FechaLbl.Size = new System.Drawing.Size(221, 23);
+            this.FechaLbl.Size = new System.Drawing.Size(176, 18);
             this.FechaLbl.TabIndex = 72;
             this.FechaLbl.Text = "GUAYMAS, SONORA A ";
             // 
@@ -637,10 +629,10 @@ namespace SistemaConsultorioMedico
             this.dato11OpcTbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato11OpcTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato11OpcTbx.LineThickness = 3;
-            this.dato11OpcTbx.Location = new System.Drawing.Point(1133, 256);
-            this.dato11OpcTbx.Margin = new System.Windows.Forms.Padding(5);
+            this.dato11OpcTbx.Location = new System.Drawing.Point(850, 208);
+            this.dato11OpcTbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dato11OpcTbx.Name = "dato11OpcTbx";
-            this.dato11OpcTbx.Size = new System.Drawing.Size(176, 41);
+            this.dato11OpcTbx.Size = new System.Drawing.Size(132, 33);
             this.dato11OpcTbx.TabIndex = 8;
             this.dato11OpcTbx.Text = "¿QUIEN?";
             this.dato11OpcTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -665,12 +657,13 @@ namespace SistemaConsultorioMedico
             this.EliminarBtn.IdleFillColor = System.Drawing.Color.White;
             this.EliminarBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.EliminarBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.EliminarBtn.Location = new System.Drawing.Point(1092, 627);
-            this.EliminarBtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.EliminarBtn.Location = new System.Drawing.Point(819, 509);
+            this.EliminarBtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.EliminarBtn.Name = "EliminarBtn";
-            this.EliminarBtn.Size = new System.Drawing.Size(209, 50);
+            this.EliminarBtn.Size = new System.Drawing.Size(157, 41);
             this.EliminarBtn.TabIndex = 26;
             this.EliminarBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EliminarBtn.Click += new System.EventHandler(this.EliminarBtn_Click);
             // 
             // ModificarBtn
             // 
@@ -690,20 +683,20 @@ namespace SistemaConsultorioMedico
             this.ModificarBtn.IdleFillColor = System.Drawing.Color.White;
             this.ModificarBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ModificarBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ModificarBtn.Location = new System.Drawing.Point(869, 627);
-            this.ModificarBtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.ModificarBtn.Location = new System.Drawing.Point(652, 509);
+            this.ModificarBtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.ModificarBtn.Name = "ModificarBtn";
-            this.ModificarBtn.Size = new System.Drawing.Size(209, 50);
+            this.ModificarBtn.Size = new System.Drawing.Size(157, 41);
             this.ModificarBtn.TabIndex = 25;
             this.ModificarBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ModificarBtn.Click += new System.EventHandler(this.ModificarBtn_Click);
             // 
             // Preguntas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1333, 757);
+            this.ClientSize = new System.Drawing.Size(1000, 615);
             this.Controls.Add(this.ModificarBtn);
             this.Controls.Add(this.EliminarBtn);
             this.Controls.Add(this.dato11OpcTbx);
@@ -737,7 +730,6 @@ namespace SistemaConsultorioMedico
             this.Controls.Add(this.linea);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Preguntas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Preguntas";

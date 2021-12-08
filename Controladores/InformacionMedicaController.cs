@@ -147,5 +147,36 @@ namespace SistemaConsultorioMedico.Controladores
             }
         }
 
+        public static void EliminarInformacionMedica(Modelos.InformacionMedica im1, Modelos.InformacionMedica im2)
+        {
+            try
+            {
+                String query = "DELETE FROM INFORMACIONMEDICA WHERE idPaciente='" + im1.getIdPaciente() + "'";
+                using (SqlCommand comando = new SqlCommand(query, ConexionController.Conectar()))
+                {
+
+                    int resultado = comando.ExecuteNonQuery();
+                    if (resultado < 0)
+                    {
+                        MessageBox.Show("Error al eliminar informacion medica", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Informacion medica eliminada", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+
+                
+            }
+            catch (SqlException e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            finally
+            {
+                ConexionController.Desconectar();
+            }
+        }
     }
+    
 }
