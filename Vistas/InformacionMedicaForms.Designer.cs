@@ -48,6 +48,8 @@ namespace SistemaConsultorioMedico
             this.dato8OpcTbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.dato9OpcTbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.MasBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.buscarBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.buscarTbx = new Bunifu.Framework.UI.BunifuTextbox();
             this.SuspendLayout();
             // 
             // dato8Tbx
@@ -430,12 +432,55 @@ namespace SistemaConsultorioMedico
             this.MasBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.MasBtn.Click += new System.EventHandler(this.MasBtn_Click);
             // 
+            // buscarBtn
+            // 
+            this.buscarBtn.ActiveBorderThickness = 1;
+            this.buscarBtn.ActiveCornerRadius = 20;
+            this.buscarBtn.ActiveFillColor = System.Drawing.Color.White;
+            this.buscarBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.buscarBtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buscarBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buscarBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buscarBtn.BackgroundImage")));
+            this.buscarBtn.ButtonText = "BUSCAR";
+            this.buscarBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buscarBtn.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buscarBtn.ForeColor = System.Drawing.Color.ForestGreen;
+            this.buscarBtn.IdleBorderThickness = 1;
+            this.buscarBtn.IdleCornerRadius = 20;
+            this.buscarBtn.IdleFillColor = System.Drawing.Color.White;
+            this.buscarBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.buscarBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.buscarBtn.Location = new System.Drawing.Point(822, 99);
+            this.buscarBtn.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.buscarBtn.Name = "buscarBtn";
+            this.buscarBtn.Size = new System.Drawing.Size(123, 33);
+            this.buscarBtn.TabIndex = 37;
+            this.buscarBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buscarBtn.Click += new System.EventHandler(this.buscarBtn_Click);
+            // 
+            // buscarTbx
+            // 
+            this.buscarTbx.BackColor = System.Drawing.Color.White;
+            this.buscarTbx.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buscarTbx.BackgroundImage")));
+            this.buscarTbx.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buscarTbx.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buscarTbx.ForeColor = System.Drawing.Color.Purple;
+            this.buscarTbx.Icon = ((System.Drawing.Image)(resources.GetObject("buscarTbx.Icon")));
+            this.buscarTbx.Location = new System.Drawing.Point(955, 99);
+            this.buscarTbx.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buscarTbx.Name = "buscarTbx";
+            this.buscarTbx.Size = new System.Drawing.Size(255, 33);
+            this.buscarTbx.TabIndex = 38;
+            this.buscarTbx.text = "";
+            // 
             // InformacionMedica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1149, 715);
+            this.ClientSize = new System.Drawing.Size(1290, 715);
+            this.Controls.Add(this.buscarTbx);
+            this.Controls.Add(this.buscarBtn);
             this.Controls.Add(this.MasBtn);
             this.Controls.Add(this.dato9OpcTbx);
             this.Controls.Add(this.dato8OpcTbx);
@@ -484,5 +529,7 @@ namespace SistemaConsultorioMedico
         private Bunifu.Framework.UI.BunifuMaterialTextbox dato8OpcTbx;
         private Bunifu.Framework.UI.BunifuMaterialTextbox dato9OpcTbx;
         private Bunifu.Framework.UI.BunifuThinButton2 MasBtn;
+        private Bunifu.Framework.UI.BunifuThinButton2 buscarBtn;
+        private Bunifu.Framework.UI.BunifuTextbox buscarTbx;
     }
 }

@@ -33,13 +33,13 @@ namespace SistemaConsultorioMedico
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Paciente));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.Guardarbtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.EliPacienteBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.BuscarTbx = new Bunifu.Framework.UI.BunifuTextbox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.DiagnosticoBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.CitasBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.InforMedicaBtn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.ModifPacienteBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.guardarPac_Btn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.NombreTxb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.FechaNacTxb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -58,30 +58,31 @@ namespace SistemaConsultorioMedico
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.SuspendLayout();
             // 
-            // Guardarbtn
+            // EliPacienteBtn
             // 
-            this.Guardarbtn.ActiveBorderThickness = 1;
-            this.Guardarbtn.ActiveCornerRadius = 20;
-            this.Guardarbtn.ActiveFillColor = System.Drawing.Color.White;
-            this.Guardarbtn.ActiveForecolor = System.Drawing.Color.White;
-            this.Guardarbtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.Guardarbtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Guardarbtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Guardarbtn.BackgroundImage")));
-            this.Guardarbtn.ButtonText = "ELIMINAR";
-            this.Guardarbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Guardarbtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Guardarbtn.ForeColor = System.Drawing.Color.ForestGreen;
-            this.Guardarbtn.IdleBorderThickness = 1;
-            this.Guardarbtn.IdleCornerRadius = 20;
-            this.Guardarbtn.IdleFillColor = System.Drawing.Color.White;
-            this.Guardarbtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.Guardarbtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.Guardarbtn.Location = new System.Drawing.Point(20, 590);
-            this.Guardarbtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.Guardarbtn.Name = "Guardarbtn";
-            this.Guardarbtn.Size = new System.Drawing.Size(157, 41);
-            this.Guardarbtn.TabIndex = 13;
-            this.Guardarbtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EliPacienteBtn.ActiveBorderThickness = 1;
+            this.EliPacienteBtn.ActiveCornerRadius = 20;
+            this.EliPacienteBtn.ActiveFillColor = System.Drawing.Color.White;
+            this.EliPacienteBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.EliPacienteBtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.EliPacienteBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.EliPacienteBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EliPacienteBtn.BackgroundImage")));
+            this.EliPacienteBtn.ButtonText = "ELIMINAR";
+            this.EliPacienteBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.EliPacienteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EliPacienteBtn.ForeColor = System.Drawing.Color.ForestGreen;
+            this.EliPacienteBtn.IdleBorderThickness = 1;
+            this.EliPacienteBtn.IdleCornerRadius = 20;
+            this.EliPacienteBtn.IdleFillColor = System.Drawing.Color.White;
+            this.EliPacienteBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.EliPacienteBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.EliPacienteBtn.Location = new System.Drawing.Point(20, 590);
+            this.EliPacienteBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.EliPacienteBtn.Name = "EliPacienteBtn";
+            this.EliPacienteBtn.Size = new System.Drawing.Size(157, 41);
+            this.EliPacienteBtn.TabIndex = 13;
+            this.EliPacienteBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EliPacienteBtn.Click += new System.EventHandler(this.EliPacienteBtn_Click);
             // 
             // BuscarTbx
             // 
@@ -104,10 +105,10 @@ namespace SistemaConsultorioMedico
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(448, 22);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(107, 23);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(125, 24);
             this.bunifuCustomLabel1.TabIndex = 8;
             this.bunifuCustomLabel1.Text = "PACIENTES";
             // 
@@ -122,7 +123,7 @@ namespace SistemaConsultorioMedico
             this.DiagnosticoBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DiagnosticoBtn.BackgroundImage")));
             this.DiagnosticoBtn.ButtonText = "DIAGNOSTICO";
             this.DiagnosticoBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DiagnosticoBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DiagnosticoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DiagnosticoBtn.ForeColor = System.Drawing.Color.ForestGreen;
             this.DiagnosticoBtn.IdleBorderThickness = 1;
             this.DiagnosticoBtn.IdleCornerRadius = 20;
@@ -130,7 +131,7 @@ namespace SistemaConsultorioMedico
             this.DiagnosticoBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.DiagnosticoBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.DiagnosticoBtn.Location = new System.Drawing.Point(829, 543);
-            this.DiagnosticoBtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.DiagnosticoBtn.Margin = new System.Windows.Forms.Padding(5);
             this.DiagnosticoBtn.Name = "DiagnosticoBtn";
             this.DiagnosticoBtn.Size = new System.Drawing.Size(157, 41);
             this.DiagnosticoBtn.TabIndex = 17;
@@ -148,7 +149,7 @@ namespace SistemaConsultorioMedico
             this.CitasBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CitasBtn.BackgroundImage")));
             this.CitasBtn.ButtonText = "CITAS";
             this.CitasBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CitasBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CitasBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CitasBtn.ForeColor = System.Drawing.Color.ForestGreen;
             this.CitasBtn.IdleBorderThickness = 1;
             this.CitasBtn.IdleCornerRadius = 20;
@@ -156,12 +157,11 @@ namespace SistemaConsultorioMedico
             this.CitasBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.CitasBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.CitasBtn.Location = new System.Drawing.Point(647, 543);
-            this.CitasBtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.CitasBtn.Margin = new System.Windows.Forms.Padding(5);
             this.CitasBtn.Name = "CitasBtn";
             this.CitasBtn.Size = new System.Drawing.Size(157, 41);
             this.CitasBtn.TabIndex = 16;
             this.CitasBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CitasBtn.Click += new System.EventHandler(this.CitasBtn_Click);
             // 
             // InforMedicaBtn
             // 
@@ -174,7 +174,7 @@ namespace SistemaConsultorioMedico
             this.InforMedicaBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("InforMedicaBtn.BackgroundImage")));
             this.InforMedicaBtn.ButtonText = "INFORMACION MEDICA";
             this.InforMedicaBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.InforMedicaBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InforMedicaBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InforMedicaBtn.ForeColor = System.Drawing.Color.ForestGreen;
             this.InforMedicaBtn.IdleBorderThickness = 1;
             this.InforMedicaBtn.IdleCornerRadius = 20;
@@ -182,37 +182,38 @@ namespace SistemaConsultorioMedico
             this.InforMedicaBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.InforMedicaBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.InforMedicaBtn.Location = new System.Drawing.Point(422, 543);
-            this.InforMedicaBtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.InforMedicaBtn.Margin = new System.Windows.Forms.Padding(5);
             this.InforMedicaBtn.Name = "InforMedicaBtn";
             this.InforMedicaBtn.Size = new System.Drawing.Size(215, 41);
             this.InforMedicaBtn.TabIndex = 15;
             this.InforMedicaBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.InforMedicaBtn.Click += new System.EventHandler(this.InforMedicaBtn_Click);
             // 
-            // bunifuThinButton24
+            // ModifPacienteBtn
             // 
-            this.bunifuThinButton24.ActiveBorderThickness = 1;
-            this.bunifuThinButton24.ActiveCornerRadius = 20;
-            this.bunifuThinButton24.ActiveFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton24.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton24.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton24.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
-            this.bunifuThinButton24.ButtonText = "MODIFICAR";
-            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton24.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton24.ForeColor = System.Drawing.Color.ForestGreen;
-            this.bunifuThinButton24.IdleBorderThickness = 1;
-            this.bunifuThinButton24.IdleCornerRadius = 20;
-            this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.bunifuThinButton24.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.bunifuThinButton24.Location = new System.Drawing.Point(206, 543);
-            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.bunifuThinButton24.Name = "bunifuThinButton24";
-            this.bunifuThinButton24.Size = new System.Drawing.Size(157, 41);
-            this.bunifuThinButton24.TabIndex = 12;
-            this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ModifPacienteBtn.ActiveBorderThickness = 1;
+            this.ModifPacienteBtn.ActiveCornerRadius = 20;
+            this.ModifPacienteBtn.ActiveFillColor = System.Drawing.Color.White;
+            this.ModifPacienteBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.ModifPacienteBtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ModifPacienteBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ModifPacienteBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ModifPacienteBtn.BackgroundImage")));
+            this.ModifPacienteBtn.ButtonText = "MODIFICAR";
+            this.ModifPacienteBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ModifPacienteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ModifPacienteBtn.ForeColor = System.Drawing.Color.ForestGreen;
+            this.ModifPacienteBtn.IdleBorderThickness = 1;
+            this.ModifPacienteBtn.IdleCornerRadius = 20;
+            this.ModifPacienteBtn.IdleFillColor = System.Drawing.Color.White;
+            this.ModifPacienteBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.ModifPacienteBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.ModifPacienteBtn.Location = new System.Drawing.Point(206, 543);
+            this.ModifPacienteBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.ModifPacienteBtn.Name = "ModifPacienteBtn";
+            this.ModifPacienteBtn.Size = new System.Drawing.Size(157, 41);
+            this.ModifPacienteBtn.TabIndex = 12;
+            this.ModifPacienteBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ModifPacienteBtn.Click += new System.EventHandler(this.ModifPacienteBtn_Click);
             // 
             // guardarPac_Btn
             // 
@@ -225,7 +226,7 @@ namespace SistemaConsultorioMedico
             this.guardarPac_Btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guardarPac_Btn.BackgroundImage")));
             this.guardarPac_Btn.ButtonText = "GUARDAR";
             this.guardarPac_Btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guardarPac_Btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guardarPac_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guardarPac_Btn.ForeColor = System.Drawing.Color.ForestGreen;
             this.guardarPac_Btn.IdleBorderThickness = 1;
             this.guardarPac_Btn.IdleCornerRadius = 20;
@@ -233,7 +234,7 @@ namespace SistemaConsultorioMedico
             this.guardarPac_Btn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.guardarPac_Btn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.guardarPac_Btn.Location = new System.Drawing.Point(20, 543);
-            this.guardarPac_Btn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.guardarPac_Btn.Margin = new System.Windows.Forms.Padding(5);
             this.guardarPac_Btn.Name = "guardarPac_Btn";
             this.guardarPac_Btn.Size = new System.Drawing.Size(157, 41);
             this.guardarPac_Btn.TabIndex = 11;
@@ -243,7 +244,7 @@ namespace SistemaConsultorioMedico
             // NombreTxb
             // 
             this.NombreTxb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.NombreTxb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.NombreTxb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.NombreTxb.ForeColor = System.Drawing.Color.Black;
             this.NombreTxb.HintForeColor = System.Drawing.Color.Empty;
             this.NombreTxb.HintText = "";
@@ -253,7 +254,7 @@ namespace SistemaConsultorioMedico
             this.NombreTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.NombreTxb.LineThickness = 3;
             this.NombreTxb.Location = new System.Drawing.Point(20, 112);
-            this.NombreTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.NombreTxb.Margin = new System.Windows.Forms.Padding(5);
             this.NombreTxb.Name = "NombreTxb";
             this.NombreTxb.Size = new System.Drawing.Size(379, 33);
             this.NombreTxb.TabIndex = 1;
@@ -266,7 +267,7 @@ namespace SistemaConsultorioMedico
             // FechaNacTxb
             // 
             this.FechaNacTxb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.FechaNacTxb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.FechaNacTxb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.FechaNacTxb.ForeColor = System.Drawing.Color.Black;
             this.FechaNacTxb.HintForeColor = System.Drawing.Color.Empty;
             this.FechaNacTxb.HintText = "";
@@ -276,7 +277,7 @@ namespace SistemaConsultorioMedico
             this.FechaNacTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.FechaNacTxb.LineThickness = 3;
             this.FechaNacTxb.Location = new System.Drawing.Point(18, 241);
-            this.FechaNacTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.FechaNacTxb.Margin = new System.Windows.Forms.Padding(5);
             this.FechaNacTxb.Name = "FechaNacTxb";
             this.FechaNacTxb.Size = new System.Drawing.Size(379, 33);
             this.FechaNacTxb.TabIndex = 4;
@@ -289,7 +290,7 @@ namespace SistemaConsultorioMedico
             // LugarNaciTxb
             // 
             this.LugarNaciTxb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.LugarNaciTxb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.LugarNaciTxb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.LugarNaciTxb.ForeColor = System.Drawing.Color.Black;
             this.LugarNaciTxb.HintForeColor = System.Drawing.Color.Empty;
             this.LugarNaciTxb.HintText = "";
@@ -299,7 +300,7 @@ namespace SistemaConsultorioMedico
             this.LugarNaciTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.LugarNaciTxb.LineThickness = 3;
             this.LugarNaciTxb.Location = new System.Drawing.Point(16, 284);
-            this.LugarNaciTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.LugarNaciTxb.Margin = new System.Windows.Forms.Padding(5);
             this.LugarNaciTxb.Name = "LugarNaciTxb";
             this.LugarNaciTxb.Size = new System.Drawing.Size(379, 33);
             this.LugarNaciTxb.TabIndex = 5;
@@ -312,7 +313,7 @@ namespace SistemaConsultorioMedico
             // Direcciontxb
             // 
             this.Direcciontxb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Direcciontxb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.Direcciontxb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.Direcciontxb.ForeColor = System.Drawing.Color.Black;
             this.Direcciontxb.HintForeColor = System.Drawing.Color.Empty;
             this.Direcciontxb.HintText = "";
@@ -322,7 +323,7 @@ namespace SistemaConsultorioMedico
             this.Direcciontxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.Direcciontxb.LineThickness = 3;
             this.Direcciontxb.Location = new System.Drawing.Point(16, 327);
-            this.Direcciontxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Direcciontxb.Margin = new System.Windows.Forms.Padding(5);
             this.Direcciontxb.Name = "Direcciontxb";
             this.Direcciontxb.Size = new System.Drawing.Size(379, 33);
             this.Direcciontxb.TabIndex = 6;
@@ -334,7 +335,7 @@ namespace SistemaConsultorioMedico
             // TelefonoTxb
             // 
             this.TelefonoTxb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TelefonoTxb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.TelefonoTxb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.TelefonoTxb.ForeColor = System.Drawing.Color.Black;
             this.TelefonoTxb.HintForeColor = System.Drawing.Color.Empty;
             this.TelefonoTxb.HintText = "";
@@ -344,7 +345,7 @@ namespace SistemaConsultorioMedico
             this.TelefonoTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.TelefonoTxb.LineThickness = 3;
             this.TelefonoTxb.Location = new System.Drawing.Point(15, 370);
-            this.TelefonoTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TelefonoTxb.Margin = new System.Windows.Forms.Padding(5);
             this.TelefonoTxb.Name = "TelefonoTxb";
             this.TelefonoTxb.Size = new System.Drawing.Size(379, 33);
             this.TelefonoTxb.TabIndex = 7;
@@ -356,7 +357,7 @@ namespace SistemaConsultorioMedico
             // CorreoETxb
             // 
             this.CorreoETxb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CorreoETxb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.CorreoETxb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.CorreoETxb.ForeColor = System.Drawing.Color.Black;
             this.CorreoETxb.HintForeColor = System.Drawing.Color.Empty;
             this.CorreoETxb.HintText = "";
@@ -366,7 +367,7 @@ namespace SistemaConsultorioMedico
             this.CorreoETxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.CorreoETxb.LineThickness = 3;
             this.CorreoETxb.Location = new System.Drawing.Point(12, 414);
-            this.CorreoETxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.CorreoETxb.Margin = new System.Windows.Forms.Padding(5);
             this.CorreoETxb.Name = "CorreoETxb";
             this.CorreoETxb.Size = new System.Drawing.Size(379, 33);
             this.CorreoETxb.TabIndex = 8;
@@ -378,7 +379,7 @@ namespace SistemaConsultorioMedico
             // OcupacionTxb
             // 
             this.OcupacionTxb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.OcupacionTxb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.OcupacionTxb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.OcupacionTxb.ForeColor = System.Drawing.Color.Black;
             this.OcupacionTxb.HintForeColor = System.Drawing.Color.Empty;
             this.OcupacionTxb.HintText = "";
@@ -388,7 +389,7 @@ namespace SistemaConsultorioMedico
             this.OcupacionTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.OcupacionTxb.LineThickness = 3;
             this.OcupacionTxb.Location = new System.Drawing.Point(12, 457);
-            this.OcupacionTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.OcupacionTxb.Margin = new System.Windows.Forms.Padding(5);
             this.OcupacionTxb.Name = "OcupacionTxb";
             this.OcupacionTxb.Size = new System.Drawing.Size(379, 33);
             this.OcupacionTxb.TabIndex = 9;
@@ -400,7 +401,7 @@ namespace SistemaConsultorioMedico
             // LugarTrabajoTxb
             // 
             this.LugarTrabajoTxb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.LugarTrabajoTxb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.LugarTrabajoTxb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.LugarTrabajoTxb.ForeColor = System.Drawing.Color.Black;
             this.LugarTrabajoTxb.HintForeColor = System.Drawing.Color.Empty;
             this.LugarTrabajoTxb.HintText = "";
@@ -410,7 +411,7 @@ namespace SistemaConsultorioMedico
             this.LugarTrabajoTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.LugarTrabajoTxb.LineThickness = 3;
             this.LugarTrabajoTxb.Location = new System.Drawing.Point(12, 500);
-            this.LugarTrabajoTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.LugarTrabajoTxb.Margin = new System.Windows.Forms.Padding(5);
             this.LugarTrabajoTxb.Name = "LugarTrabajoTxb";
             this.LugarTrabajoTxb.Size = new System.Drawing.Size(379, 33);
             this.LugarTrabajoTxb.TabIndex = 10;
@@ -427,9 +428,9 @@ namespace SistemaConsultorioMedico
             this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Purple;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
@@ -437,15 +438,16 @@ namespace SistemaConsultorioMedico
             this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bunifuCustomDataGrid1.DoubleBuffered = true;
             this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.Purple;
+            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.Purple;
             this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(422, 137);
-            this.bunifuCustomDataGrid1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuCustomDataGrid1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
             this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.bunifuCustomDataGrid1.RowHeadersWidth = 51;
             this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(587, 396);
             this.bunifuCustomDataGrid1.TabIndex = 26;
+            this.bunifuCustomDataGrid1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid1_CellContentClick);
             // 
             // linea
             // 
@@ -453,7 +455,7 @@ namespace SistemaConsultorioMedico
             this.linea.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(128)))));
             this.linea.LineThickness = 1;
             this.linea.Location = new System.Drawing.Point(381, 51);
-            this.linea.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.linea.Margin = new System.Windows.Forms.Padding(5);
             this.linea.Name = "linea";
             this.linea.Size = new System.Drawing.Size(245, 10);
             this.linea.TabIndex = 27;
@@ -468,7 +470,7 @@ namespace SistemaConsultorioMedico
             // ApellidoMaternoTxb
             // 
             this.ApellidoMaternoTxb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ApellidoMaternoTxb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.ApellidoMaternoTxb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.ApellidoMaternoTxb.ForeColor = System.Drawing.Color.Black;
             this.ApellidoMaternoTxb.HintForeColor = System.Drawing.Color.Empty;
             this.ApellidoMaternoTxb.HintText = "";
@@ -478,7 +480,7 @@ namespace SistemaConsultorioMedico
             this.ApellidoMaternoTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.ApellidoMaternoTxb.LineThickness = 3;
             this.ApellidoMaternoTxb.Location = new System.Drawing.Point(20, 198);
-            this.ApellidoMaternoTxb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ApellidoMaternoTxb.Margin = new System.Windows.Forms.Padding(5);
             this.ApellidoMaternoTxb.Name = "ApellidoMaternoTxb";
             this.ApellidoMaternoTxb.Size = new System.Drawing.Size(379, 33);
             this.ApellidoMaternoTxb.TabIndex = 3;
@@ -490,7 +492,7 @@ namespace SistemaConsultorioMedico
             // ApellidoPaternoTbx
             // 
             this.ApellidoPaternoTbx.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ApellidoPaternoTbx.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.ApellidoPaternoTbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.ApellidoPaternoTbx.ForeColor = System.Drawing.Color.Black;
             this.ApellidoPaternoTbx.HintForeColor = System.Drawing.Color.Empty;
             this.ApellidoPaternoTbx.HintText = "";
@@ -500,7 +502,7 @@ namespace SistemaConsultorioMedico
             this.ApellidoPaternoTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.ApellidoPaternoTbx.LineThickness = 3;
             this.ApellidoPaternoTbx.Location = new System.Drawing.Point(18, 155);
-            this.ApellidoPaternoTbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ApellidoPaternoTbx.Margin = new System.Windows.Forms.Padding(5);
             this.ApellidoPaternoTbx.Name = "ApellidoPaternoTbx";
             this.ApellidoPaternoTbx.Size = new System.Drawing.Size(379, 33);
             this.ApellidoPaternoTbx.TabIndex = 2;
@@ -512,10 +514,10 @@ namespace SistemaConsultorioMedico
             // IdPacienteLbl
             // 
             this.IdPacienteLbl.AutoSize = true;
-            this.IdPacienteLbl.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IdPacienteLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IdPacienteLbl.Location = new System.Drawing.Point(15, 71);
             this.IdPacienteLbl.Name = "IdPacienteLbl";
-            this.IdPacienteLbl.Size = new System.Drawing.Size(96, 18);
+            this.IdPacienteLbl.Size = new System.Drawing.Size(110, 18);
             this.IdPacienteLbl.TabIndex = 30;
             this.IdPacienteLbl.Text = "ID PACIENTE";
             this.IdPacienteLbl.Visible = false;
@@ -525,7 +527,7 @@ namespace SistemaConsultorioMedico
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1021, 634);
+            this.ClientSize = new System.Drawing.Size(1021, 640);
             this.Controls.Add(this.IdPacienteLbl);
             this.Controls.Add(this.ApellidoPaternoTbx);
             this.Controls.Add(this.ApellidoMaternoTxb);
@@ -540,18 +542,19 @@ namespace SistemaConsultorioMedico
             this.Controls.Add(this.FechaNacTxb);
             this.Controls.Add(this.NombreTxb);
             this.Controls.Add(this.guardarPac_Btn);
-            this.Controls.Add(this.bunifuThinButton24);
+            this.Controls.Add(this.ModifPacienteBtn);
             this.Controls.Add(this.InforMedicaBtn);
             this.Controls.Add(this.CitasBtn);
             this.Controls.Add(this.DiagnosticoBtn);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.BuscarTbx);
-            this.Controls.Add(this.Guardarbtn);
+            this.Controls.Add(this.EliPacienteBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Paciente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paciente";
+            this.Load += new System.EventHandler(this.PacientesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -559,13 +562,13 @@ namespace SistemaConsultorioMedico
         }
 
         #endregion
-        private Bunifu.Framework.UI.BunifuThinButton2 Guardarbtn;
+        private Bunifu.Framework.UI.BunifuThinButton2 EliPacienteBtn;
         private Bunifu.Framework.UI.BunifuTextbox BuscarTbx;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuThinButton2 DiagnosticoBtn;
         private Bunifu.Framework.UI.BunifuThinButton2 CitasBtn;
         private Bunifu.Framework.UI.BunifuThinButton2 InforMedicaBtn;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
+        private Bunifu.Framework.UI.BunifuThinButton2 ModifPacienteBtn;
         private Bunifu.Framework.UI.BunifuThinButton2 guardarPac_Btn;
         private Bunifu.Framework.UI.BunifuMaterialTextbox NombreTxb;
         private Bunifu.Framework.UI.BunifuMaterialTextbox FechaNacTxb;
