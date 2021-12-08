@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using SistemaConsultorioMedico.Modelos;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Data;
+
 
 namespace SistemaConsultorioMedico.Controladores
 {
@@ -42,7 +44,123 @@ namespace SistemaConsultorioMedico.Controladores
                     }
                 }
             }
-            catch(SqlException e)
+            catch (SqlException e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            finally
+            {
+                ConexionController.Desconectar();
+            }
+        }
+
+        public DataTable CargarGridPacientes()
+        {
+            String query = "SELECT idPaciente, nombresP, apellidoPatP, apellidoMatP, fechaNac, edadP, lugarNac, direccionP, telefonoP, emailP,trabajoP, lugarTrabaoP FROM PACIENTE";
+
+            using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
+            {
+                SqlDataAdapter data = new SqlDataAdapter(comando);
+                DataTable tabla = new DataTable();
+                data.Fill(tabla);
+                return tabla;
+            }
+        }
+
+        public static void ActualizarPaciente(Modelos.Paciente p)
+        {
+            String query = "UPDATE PACIENTE SET nombresP='" + p.getNombresP() + "', apellidoPatP='" + p.getApellitosPatP() + "', apellidoMatP='" + p.getApellidosMatP() + "', fechaNac='" + p.getFechaNac() + "', edadP='" + p.getEdad() + "', lugarNac='" + p.getLugarNac() + "', direccionP='" + p.getDireccionP() + "', telefonoP='" + p.getTelefonoP() + "', emailP='" + p.getEmailP() + "',trabajoP='" + p.getTrabajoP() + "', lugarTrabaoP='" + p.getLugarTrabajoP() + "' WHERE idPaciente='" + p.getIdPaciente() + "'";
+            try
+            {
+                using (SqlCommand comando = new SqlCommand(query, ConexionController.Conectar()))
+                {
+
+                    int resultado = comando.ExecuteNonQuery();
+                    if (resultado < 0)
+                    {
+                        MessageBox.Show("Error al actualizar paciente", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Paciente actualizado correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch (SqlException e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            finally
+            {
+                ConexionController.Desconectar();
+            }
+        }
+
+        public static void EliminarPaciente(Modelos.Paciente p)
+        {
+            try
+            {
+                String query = "DELETE FROM CITA WHERE idPaciente='" + p.getIdPaciente() + "'";
+                using (SqlCommand comando = new SqlCommand(query, ConexionController.Conectar()))
+                {
+
+                    int resultado = comando.ExecuteNonQuery();
+                    if (resultado < 0)
+                    {
+                        MessageBox.Show("Error al eliminar citas", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Citas eliminadas", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+
+                query = "DELETE FROM DIAGNOSTICO WHERE idPaciente='" + p.getIdPaciente() + "'";
+                using (SqlCommand comando = new SqlCommand(query, ConexionController.Conectar()))
+                {
+
+                    int resultado = comando.ExecuteNonQuery();
+                    if (resultado < 0)
+                    {
+                        MessageBox.Show("Error al eliminar diagnosticos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Diagnosticos eliminados", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+
+                query = "DELETE FROM INFORMACIONMEDICA WHERE idPaciente='" + p.getIdPaciente() + "'";
+                using (SqlCommand comando = new SqlCommand(query, ConexionController.Conectar()))
+                {
+
+                    int resultado = comando.ExecuteNonQuery();
+                    if (resultado < 0)
+                    {
+                        MessageBox.Show("Error al eliminar info medica", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Info medica eliminada", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+
+                query = "DELETE FROM PACIENTE WHERE idPaciente='" + p.getIdPaciente() + "'";
+                using (SqlCommand comando = new SqlCommand(query, ConexionController.Conectar()))
+                {
+
+                    int resultado = comando.ExecuteNonQuery();
+                    if (resultado < 0)
+                    {
+                        MessageBox.Show("Error al eliminar paciente", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Paciente eliminada", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch (SqlException e)
             {
                 MessageBox.Show(e.Message);
             }
