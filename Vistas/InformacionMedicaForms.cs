@@ -389,5 +389,17 @@ namespace SistemaConsultorioMedico
             }
         }
 
+        private void buscarBtn_Click(object sender, EventArgs e)
+        {
+            if(String.IsNullOrEmpty(buscarTbx.text))
+            {
+                MessageBox.Show("El campo de búsqueda no debe estar vacío", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                idPaciente = Convert.ToInt32(buscarTbx.text);
+                llenarInformacion(idPaciente);
+            }
+        }
     }
 }
