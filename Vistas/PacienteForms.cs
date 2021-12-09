@@ -268,12 +268,20 @@ namespace SistemaConsultorioMedico
         private void DiagnosticoBtn_Click(object sender, EventArgs e)
         {
             if (BuscarTbx.Text != "")
+
             {
                 int idPaciente = int.Parse(BuscarTbx.text);
-                Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
-                Form VDiag = new Diagnostico(idPaciente);
-                this.Hide();
-                VDiag.Show();
+                if (Controladores.PacienteController.validaExisPaciente(idPaciente))
+                {
+                    Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
+                    Form VDiag = new Diagnostico(idPaciente);
+                    this.Hide();
+                    VDiag.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Este paciente no existe", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             else if(IdPacienteLbl.Visible == true)
             {
@@ -325,9 +333,16 @@ namespace SistemaConsultorioMedico
             if (BuscarTbx.Text != "")
             {
                 int idPaciente = int.Parse(BuscarTbx.text);
-                Form VInfoMedica = new InformacionMedica(idPaciente);
-                this.Hide();
-                VInfoMedica.Show();
+                if (Controladores.PacienteController.validaExisPaciente(idPaciente))
+                {
+                    Form VInfoMedica = new InformacionMedica(idPaciente);
+                    this.Hide();
+                    VInfoMedica.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Este paciente no existe", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             else if(IdPacienteLbl.Visible == true)
             {

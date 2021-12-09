@@ -170,5 +170,24 @@ namespace SistemaConsultorioMedico.Controladores
             }
         }
 
+        public static bool validaExisPaciente(int idPaciente)
+        {
+            String query = "SELECT * FROM Paciente WHERE idPaciente='" + idPaciente.ToString() + "'";
+
+            using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
+            {
+                SqlDataReader leer = comando.ExecuteReader();
+                if (leer.Read())
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+        }
+
     }
 }
