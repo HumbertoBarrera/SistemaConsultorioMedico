@@ -56,7 +56,7 @@ namespace SistemaConsultorioMedico.Controladores
 
         public DataTable CargarGridPacientes()
         {
-            String query = "SELECT idPaciente, nombresP, apellidoPatP, apellidoMatP, fechaNac, edadP, lugarNac, direccionP, telefonoP, emailP,trabajoP, lugarTrabaoP FROM PACIENTE";
+            String query = "SELECT idPaciente, nombresP, apellidoPatP, apellidoMatP, fechaNac, edadP, lugarNac, direccionP, telefonoP, emailP,trabajoP, lugarTrabajoP FROM PACIENTE";
 
             using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
             {
