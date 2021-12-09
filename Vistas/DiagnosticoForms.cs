@@ -23,7 +23,10 @@ namespace SistemaConsultorioMedico
             PacienteTxb.Text = idPaciente.ToString();
             fecha = DateTime.Now;
             FechaTxb.Text = fecha.ToString("MM/dd/yyyy");
+            guardarbtn.Visible = true;
+
         }
+        int pacienteExt;
 
         private void FechaTxb_MouseEnter(object sender, EventArgs e)
         {
@@ -81,10 +84,12 @@ namespace SistemaConsultorioMedico
 
         private void guardarbtn_Click(object sender, EventArgs e)
         {
+
             if ((FechaTxb.Text != "FECHA") && (Descripciontxb.Text != "DESCRIPCION"))
             {
                 Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
-                diagnostico.setIdPaciente(idPaciente);
+                pacienteExt = int.Parse(PacienteTxb.Text); 
+                diagnostico.setIdPaciente(pacienteExt);
                 diagnostico.setFecha(fecha);
                 diagnostico.setDescripcion(Descripciontxb.Text);
 
@@ -92,6 +97,12 @@ namespace SistemaConsultorioMedico
                 {
                     Controladores.DiagnosticoController.folio(diagnostico);
                     Controladores.DiagnosticoController.insertarDiagnostico(diagnostico);
+                    Controladores.DiagnosticoController da = new Controladores.DiagnosticoController();
+                    var dt = da.CargarGridDiagnostico(diagnostico);
+
+                    bunifuCustomDataGrid1.DataSource = dt;
+                    DataGridViewColumn Column = bunifuCustomDataGrid1.Columns[2];
+                    Column.Visible = false;
                 }
                 else
                 {
@@ -157,6 +168,9 @@ namespace SistemaConsultorioMedico
             fecha = DateTime.Now;
             FechaTxb.Text = fecha.ToString("MM/dd/yyyy");
             Descripciontxb.Text = "";
+            Descripciontxb.Enabled = true;
+            guardarbtn.Visible = true;
+
         }
 
         private void bunifuCustomDataGrid1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -164,6 +178,8 @@ namespace SistemaConsultorioMedico
             indice = bunifuCustomDataGrid1.CurrentRow.Index;
             FechaTxb.Text = bunifuCustomDataGrid1[1, indice].Value.ToString();
             Descripciontxb.Text = bunifuCustomDataGrid1[2, indice].Value.ToString();
+            Descripciontxb.Enabled = false;
+            guardarbtn.Visible = false;
 
         }
     }
