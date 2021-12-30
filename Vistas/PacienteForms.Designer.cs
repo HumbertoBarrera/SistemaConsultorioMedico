@@ -29,7 +29,6 @@ namespace SistemaConsultorioMedico
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Paciente));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -51,7 +50,6 @@ namespace SistemaConsultorioMedico
             this.LugarTrabajoTxb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.linea = new Bunifu.Framework.UI.BunifuSeparator();
-            this.ElipsePacientes = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.ApellidoMaternoTxb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.ApellidoPaternoTbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.IdPacienteLbl = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -82,6 +80,7 @@ namespace SistemaConsultorioMedico
             this.EliPacienteBtn.Size = new System.Drawing.Size(209, 50);
             this.EliPacienteBtn.TabIndex = 13;
             this.EliPacienteBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EliPacienteBtn.Visible = false;
             this.EliPacienteBtn.Click += new System.EventHandler(this.EliPacienteBtn_Click);
             // 
             // BuscarTbx
@@ -98,7 +97,6 @@ namespace SistemaConsultorioMedico
             this.BuscarTbx.Size = new System.Drawing.Size(489, 33);
             this.BuscarTbx.TabIndex = 14;
             this.BuscarTbx.text = "";
-            this.BuscarTbx.OnTextChange += new System.EventHandler(this.BuscarTbx_OnTextChange);
             this.BuscarTbx.MouseEnter += new System.EventHandler(this.BuscarTbx_MouseEnter);
             this.BuscarTbx.MouseLeave += new System.EventHandler(this.BuscarTbx_MouseLeave);
             // 
@@ -214,6 +212,7 @@ namespace SistemaConsultorioMedico
             this.ModifPacienteBtn.Size = new System.Drawing.Size(209, 50);
             this.ModifPacienteBtn.TabIndex = 12;
             this.ModifPacienteBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ModifPacienteBtn.Visible = false;
             this.ModifPacienteBtn.Click += new System.EventHandler(this.ModifPacienteBtn_Click);
             // 
             // guardarPac_Btn
@@ -240,6 +239,7 @@ namespace SistemaConsultorioMedico
             this.guardarPac_Btn.Size = new System.Drawing.Size(209, 50);
             this.guardarPac_Btn.TabIndex = 11;
             this.guardarPac_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.guardarPac_Btn.Visible = false;
             this.guardarPac_Btn.Click += new System.EventHandler(this.guardarPac_Btn_Click);
             // 
             // NombreTxb
@@ -261,7 +261,7 @@ namespace SistemaConsultorioMedico
             this.NombreTxb.TabIndex = 1;
             this.NombreTxb.Text = "NOMBRES";
             this.NombreTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.NombreTxb.OnValueChanged += new System.EventHandler(this.NombreTxb_OnValueChanged);
+            this.NombreTxb.OnValueChanged += new System.EventHandler(this.bloqueoBtnGuardar);
             this.NombreTxb.MouseEnter += new System.EventHandler(this.NombreTxb_MouseEnter);
             this.NombreTxb.MouseLeave += new System.EventHandler(this.NombreTxb_MouseLeave);
             // 
@@ -284,7 +284,7 @@ namespace SistemaConsultorioMedico
             this.FechaNacTxb.TabIndex = 4;
             this.FechaNacTxb.Text = "FECHA NACIMIENTO";
             this.FechaNacTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.FechaNacTxb.OnValueChanged += new System.EventHandler(this.FechaNacTxb_OnValueChanged);
+            this.FechaNacTxb.OnValueChanged += new System.EventHandler(this.bloqueoBtnGuardar);
             this.FechaNacTxb.MouseEnter += new System.EventHandler(this.FechaNacTxb_MouseEnter);
             this.FechaNacTxb.MouseLeave += new System.EventHandler(this.FechaNacTxb_MouseLeave);
             // 
@@ -307,7 +307,7 @@ namespace SistemaConsultorioMedico
             this.LugarNaciTxb.TabIndex = 5;
             this.LugarNaciTxb.Text = "LUGAR DE NACIMIENTO";
             this.LugarNaciTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.LugarNaciTxb.OnValueChanged += new System.EventHandler(this.LugarNaciTxb_OnValueChanged);
+            this.LugarNaciTxb.OnValueChanged += new System.EventHandler(this.bloqueoBtnGuardar);
             this.LugarNaciTxb.MouseEnter += new System.EventHandler(this.LugarNaciTxb_MouseEnter);
             this.LugarNaciTxb.MouseLeave += new System.EventHandler(this.LugarNaciTxb_MouseLeave);
             // 
@@ -330,6 +330,7 @@ namespace SistemaConsultorioMedico
             this.Direcciontxb.TabIndex = 6;
             this.Direcciontxb.Text = "DIRECCION";
             this.Direcciontxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Direcciontxb.OnValueChanged += new System.EventHandler(this.bloqueoBtnGuardar);
             this.Direcciontxb.MouseEnter += new System.EventHandler(this.Direcciontxb_MouseEnter);
             this.Direcciontxb.MouseLeave += new System.EventHandler(this.Direcciontxb_MouseLeave);
             // 
@@ -352,6 +353,7 @@ namespace SistemaConsultorioMedico
             this.TelefonoTxb.TabIndex = 7;
             this.TelefonoTxb.Text = "TELEFONO";
             this.TelefonoTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TelefonoTxb.OnValueChanged += new System.EventHandler(this.bloqueoBtnGuardar);
             this.TelefonoTxb.MouseEnter += new System.EventHandler(this.TelefonoTxb_MouseEnter);
             this.TelefonoTxb.MouseLeave += new System.EventHandler(this.TelefonoTxb_MouseLeave);
             // 
@@ -374,6 +376,7 @@ namespace SistemaConsultorioMedico
             this.CorreoETxb.TabIndex = 8;
             this.CorreoETxb.Text = "CORREO ELECTRONICO";
             this.CorreoETxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.CorreoETxb.OnValueChanged += new System.EventHandler(this.bloqueoBtnGuardar);
             this.CorreoETxb.MouseEnter += new System.EventHandler(this.CorreoETxb_MouseEnter);
             this.CorreoETxb.MouseLeave += new System.EventHandler(this.CorreoETxb_MouseLeave);
             // 
@@ -396,6 +399,7 @@ namespace SistemaConsultorioMedico
             this.OcupacionTxb.TabIndex = 9;
             this.OcupacionTxb.Text = "OCUPACION";
             this.OcupacionTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.OcupacionTxb.OnValueChanged += new System.EventHandler(this.bloqueoBtnGuardar);
             this.OcupacionTxb.MouseEnter += new System.EventHandler(this.OcupacionTxb_MouseEnter);
             this.OcupacionTxb.MouseLeave += new System.EventHandler(this.OcupacionTxb_MouseLeave);
             // 
@@ -418,11 +422,16 @@ namespace SistemaConsultorioMedico
             this.LugarTrabajoTxb.TabIndex = 10;
             this.LugarTrabajoTxb.Text = "LUGAR DE TRABAJO";
             this.LugarTrabajoTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.LugarTrabajoTxb.OnValueChanged += new System.EventHandler(this.bloqueoBtnGuardar);
             this.LugarTrabajoTxb.MouseEnter += new System.EventHandler(this.LugarTrabajoTxb_MouseEnter);
             this.LugarTrabajoTxb.MouseLeave += new System.EventHandler(this.LugarTrabajoTxb_MouseLeave);
             // 
             // bunifuCustomDataGrid1
             // 
+            this.bunifuCustomDataGrid1.AllowUserToAddRows = false;
+            this.bunifuCustomDataGrid1.AllowUserToDeleteRows = false;
+            this.bunifuCustomDataGrid1.AllowUserToResizeColumns = false;
+            this.bunifuCustomDataGrid1.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
@@ -442,13 +451,14 @@ namespace SistemaConsultorioMedico
             this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.Purple;
             this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.Purple;
             this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(563, 169);
-            this.bunifuCustomDataGrid1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuCustomDataGrid1.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
+            this.bunifuCustomDataGrid1.ReadOnly = true;
             this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.bunifuCustomDataGrid1.RowHeadersWidth = 51;
             this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(783, 487);
             this.bunifuCustomDataGrid1.TabIndex = 26;
-            this.bunifuCustomDataGrid1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid1_CellContentClick);
+            this.bunifuCustomDataGrid1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.llenarInfoPacientes_DataGrid);
             // 
             // linea
             // 
@@ -462,11 +472,6 @@ namespace SistemaConsultorioMedico
             this.linea.TabIndex = 27;
             this.linea.Transparency = 255;
             this.linea.Vertical = false;
-            // 
-            // ElipsePacientes
-            // 
-            this.ElipsePacientes.ElipseRadius = 7;
-            this.ElipsePacientes.TargetControl = this;
             // 
             // ApellidoMaternoTxb
             // 
@@ -487,6 +492,7 @@ namespace SistemaConsultorioMedico
             this.ApellidoMaternoTxb.TabIndex = 3;
             this.ApellidoMaternoTxb.Text = "APELLIDO MATERNO";
             this.ApellidoMaternoTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ApellidoMaternoTxb.OnValueChanged += new System.EventHandler(this.bloqueoBtnGuardar);
             this.ApellidoMaternoTxb.MouseEnter += new System.EventHandler(this.ApellidoMaternoTxb_MouseEnter);
             this.ApellidoMaternoTxb.MouseLeave += new System.EventHandler(this.ApellidoMaternoTxb_MouseLeave);
             // 
@@ -509,6 +515,7 @@ namespace SistemaConsultorioMedico
             this.ApellidoPaternoTbx.TabIndex = 2;
             this.ApellidoPaternoTbx.Text = "APELLIDO PATERNO";
             this.ApellidoPaternoTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ApellidoPaternoTbx.OnValueChanged += new System.EventHandler(this.bloqueoBtnGuardar);
             this.ApellidoPaternoTbx.MouseEnter += new System.EventHandler(this.ApellidoPaternoTbx_MouseEnter);
             this.ApellidoPaternoTbx.MouseLeave += new System.EventHandler(this.ApellidoPaternoTbx_MouseLeave);
             // 
@@ -552,7 +559,7 @@ namespace SistemaConsultorioMedico
             this.Controls.Add(this.BuscarTbx);
             this.Controls.Add(this.EliPacienteBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Paciente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paciente";
@@ -582,7 +589,6 @@ namespace SistemaConsultorioMedico
         private Bunifu.Framework.UI.BunifuMaterialTextbox LugarTrabajoTxb;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
         private Bunifu.Framework.UI.BunifuSeparator linea;
-        private Bunifu.Framework.UI.BunifuElipse ElipsePacientes;
         private Bunifu.Framework.UI.BunifuMaterialTextbox ApellidoPaternoTbx;
         private Bunifu.Framework.UI.BunifuMaterialTextbox ApellidoMaternoTxb;
         private Bunifu.Framework.UI.BunifuCustomLabel IdPacienteLbl;

@@ -58,11 +58,6 @@ namespace SistemaConsultorioMedico
             }
         }
 
-        private void NombreTxb_OnValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void FechaNacTxb_MouseEnter(object sender, EventArgs e)
         {
             if (FechaNacTxb.Text == "FECHA NACIMIENTO")
@@ -79,11 +74,6 @@ namespace SistemaConsultorioMedico
                 FechaNacTxb.Text = "FECHA NACIMIENTO";
                 FechaNacTxb.ForeColor = Color.DarkSlateGray;
             }
-        }
-
-        private void FechaNacTxb_OnValueChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void LugarNaciTxb_MouseEnter(object sender, EventArgs e)
@@ -194,11 +184,6 @@ namespace SistemaConsultorioMedico
             }
         }
 
-        private void LugarNaciTxb_OnValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void ApellidoPaternoTbx_MouseEnter(object sender, EventArgs e)
         {
             if (ApellidoPaternoTbx.Text == "APELLIDO PATERNO")
@@ -258,11 +243,6 @@ namespace SistemaConsultorioMedico
             var dt = da.CargarGridPacientes();
 
             bunifuCustomDataGrid1.DataSource = dt;
-        }
-
-        private void BuscarTbx_OnTextChange(object sender, EventArgs e)
-        {
-
         }
 
         private void DiagnosticoBtn_Click(object sender, EventArgs e)
@@ -326,6 +306,8 @@ namespace SistemaConsultorioMedico
             OcupacionTxb.Text = "OCUPACION";
             LugarTrabajoTxb.Text = "LUGAR DE TRABAJO";
             IdPacienteLbl.Visible = false;
+            ModifPacienteBtn.Visible = false;
+            EliPacienteBtn.Visible = false;
         }
 
         private void InforMedicaBtn_Click(object sender, EventArgs e)
@@ -357,25 +339,6 @@ namespace SistemaConsultorioMedico
             }
         }
 
-        private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            indice = bunifuCustomDataGrid1.CurrentRow.Index;
-            IdPacienteLbl.Text = bunifuCustomDataGrid1[0, indice].Value.ToString();
-            NombreTxb.Text = bunifuCustomDataGrid1[1, indice].Value.ToString();
-            ApellidoPaternoTbx.Text = bunifuCustomDataGrid1[2, indice].Value.ToString();
-            ApellidoMaternoTxb.Text = bunifuCustomDataGrid1[3, indice].Value.ToString();
-            FechaNacTxb.Text = bunifuCustomDataGrid1[4, indice].Value.ToString().Remove(10);
-            LugarNaciTxb.Text = bunifuCustomDataGrid1[6, indice].Value.ToString();
-            Direcciontxb.Text = bunifuCustomDataGrid1[7, indice].Value.ToString();
-            TelefonoTxb.Text = bunifuCustomDataGrid1[8, indice].Value.ToString();
-            CorreoETxb.Text = bunifuCustomDataGrid1[9, indice].Value.ToString();
-            OcupacionTxb.Text = bunifuCustomDataGrid1[10, indice].Value.ToString();
-            LugarTrabajoTxb.Text = bunifuCustomDataGrid1[11, indice].Value.ToString();
-
-            IdPacienteLbl.Visible = true;
-
-        }
-
         private void ModifPacienteBtn_Click(object sender, EventArgs e)
         {
             Modelos.Paciente paciente = new Modelos.Paciente(Convert.ToInt32(IdPacienteLbl.Text), ((curDate.Year) - Convert.ToInt32(Convert.ToDateTime(FechaNacTxb.Text).Year)), NombreTxb.Text, ApellidoPaternoTbx.Text,
@@ -403,6 +366,39 @@ namespace SistemaConsultorioMedico
             var dt = da.CargarGridPacientes();
 
             bunifuCustomDataGrid1.DataSource = dt;
+        }
+
+        private void llenarInfoPacientes_DataGrid(object sender, DataGridViewCellEventArgs e)
+        {
+            indice = bunifuCustomDataGrid1.CurrentRow.Index;
+            IdPacienteLbl.Text = bunifuCustomDataGrid1[0, indice].Value.ToString();
+            NombreTxb.Text = bunifuCustomDataGrid1[1, indice].Value.ToString();
+            ApellidoPaternoTbx.Text = bunifuCustomDataGrid1[2, indice].Value.ToString();
+            ApellidoMaternoTxb.Text = bunifuCustomDataGrid1[3, indice].Value.ToString();
+            FechaNacTxb.Text = bunifuCustomDataGrid1[4, indice].Value.ToString().Remove(10);
+            LugarNaciTxb.Text = bunifuCustomDataGrid1[6, indice].Value.ToString();
+            Direcciontxb.Text = bunifuCustomDataGrid1[7, indice].Value.ToString();
+            TelefonoTxb.Text = bunifuCustomDataGrid1[8, indice].Value.ToString();
+            CorreoETxb.Text = bunifuCustomDataGrid1[9, indice].Value.ToString();
+            OcupacionTxb.Text = bunifuCustomDataGrid1[10, indice].Value.ToString();
+            LugarTrabajoTxb.Text = bunifuCustomDataGrid1[11, indice].Value.ToString();
+
+            IdPacienteLbl.Visible = true;
+            ModifPacienteBtn.Visible = true;
+            EliPacienteBtn.Visible = true;
+
+        }
+
+        private void bloqueoBtnGuardar(object sender, EventArgs e)
+        {
+            if (!validarCampos())
+            {
+                guardarPac_Btn.Visible = false;
+            }
+            else
+            {
+                guardarPac_Btn.Visible = true;
+            }
         }
     }
 }
