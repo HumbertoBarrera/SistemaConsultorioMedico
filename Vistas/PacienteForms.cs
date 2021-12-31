@@ -14,12 +14,14 @@ namespace SistemaConsultorioMedico
     {
 
         DateTime curDate = DateTime.Today;
+        //bool modificarFlag = false;
+        int indice;
 
         public Paciente()
         {
             InitializeComponent();
         }
-        int indice;
+        
         private void NombreTxb_MouseEnter(object sender, EventArgs e)
         {
             if(NombreTxb.Text == "NOMBRES")
@@ -384,20 +386,23 @@ namespace SistemaConsultorioMedico
             LugarTrabajoTxb.Text = bunifuCustomDataGrid1[11, indice].Value.ToString();
 
             IdPacienteLbl.Visible = true;
-            ModifPacienteBtn.Visible = true;
-            EliPacienteBtn.Visible = true;
-
+            ModifPacienteBtn.Enabled = true;
+            EliPacienteBtn.Enabled = true;
+            ModifPacienteBtn.Padding = new Padding(0);
+            EliPacienteBtn.Padding = new Padding(0);
+            guardarPac_Btn.Padding = new Padding(0);
+            //modificarFlag = false;
         }
 
         private void bloqueoBtnGuardar(object sender, EventArgs e)
         {
             if (!validarCampos())
             {
-                guardarPac_Btn.Visible = false;
+                guardarPac_Btn.Enabled = false;
             }
             else
             {
-                guardarPac_Btn.Visible = true;
+                guardarPac_Btn.Enabled = true;
             }
         }
     }

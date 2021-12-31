@@ -60,13 +60,14 @@ namespace SistemaConsultorioMedico
             // 
             this.EliPacienteBtn.ActiveBorderThickness = 1;
             this.EliPacienteBtn.ActiveCornerRadius = 20;
-            this.EliPacienteBtn.ActiveFillColor = System.Drawing.Color.White;
+            this.EliPacienteBtn.ActiveFillColor = System.Drawing.Color.Plum;
             this.EliPacienteBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.EliPacienteBtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.EliPacienteBtn.ActiveLineColor = System.Drawing.Color.Plum;
             this.EliPacienteBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.EliPacienteBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EliPacienteBtn.BackgroundImage")));
             this.EliPacienteBtn.ButtonText = "ELIMINAR";
             this.EliPacienteBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.EliPacienteBtn.Enabled = false;
             this.EliPacienteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EliPacienteBtn.ForeColor = System.Drawing.Color.ForestGreen;
             this.EliPacienteBtn.IdleBorderThickness = 1;
@@ -77,10 +78,10 @@ namespace SistemaConsultorioMedico
             this.EliPacienteBtn.Location = new System.Drawing.Point(27, 726);
             this.EliPacienteBtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.EliPacienteBtn.Name = "EliPacienteBtn";
+            this.EliPacienteBtn.Padding = new System.Windows.Forms.Padding(48, 12, 0, 12);
             this.EliPacienteBtn.Size = new System.Drawing.Size(209, 50);
             this.EliPacienteBtn.TabIndex = 13;
             this.EliPacienteBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.EliPacienteBtn.Visible = false;
             this.EliPacienteBtn.Click += new System.EventHandler(this.EliPacienteBtn_Click);
             // 
             // BuscarTbx
@@ -115,9 +116,9 @@ namespace SistemaConsultorioMedico
             // 
             this.DiagnosticoBtn.ActiveBorderThickness = 1;
             this.DiagnosticoBtn.ActiveCornerRadius = 20;
-            this.DiagnosticoBtn.ActiveFillColor = System.Drawing.Color.White;
+            this.DiagnosticoBtn.ActiveFillColor = System.Drawing.Color.Plum;
             this.DiagnosticoBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.DiagnosticoBtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.DiagnosticoBtn.ActiveLineColor = System.Drawing.Color.Plum;
             this.DiagnosticoBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.DiagnosticoBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DiagnosticoBtn.BackgroundImage")));
             this.DiagnosticoBtn.ButtonText = "DIAGNOSTICO";
@@ -141,9 +142,9 @@ namespace SistemaConsultorioMedico
             // 
             this.CitasBtn.ActiveBorderThickness = 1;
             this.CitasBtn.ActiveCornerRadius = 20;
-            this.CitasBtn.ActiveFillColor = System.Drawing.Color.White;
+            this.CitasBtn.ActiveFillColor = System.Drawing.Color.Plum;
             this.CitasBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.CitasBtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.CitasBtn.ActiveLineColor = System.Drawing.Color.Plum;
             this.CitasBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.CitasBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CitasBtn.BackgroundImage")));
             this.CitasBtn.ButtonText = "CITAS";
@@ -166,9 +167,9 @@ namespace SistemaConsultorioMedico
             // 
             this.InforMedicaBtn.ActiveBorderThickness = 1;
             this.InforMedicaBtn.ActiveCornerRadius = 20;
-            this.InforMedicaBtn.ActiveFillColor = System.Drawing.Color.White;
+            this.InforMedicaBtn.ActiveFillColor = System.Drawing.Color.Plum;
             this.InforMedicaBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.InforMedicaBtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.InforMedicaBtn.ActiveLineColor = System.Drawing.Color.Plum;
             this.InforMedicaBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.InforMedicaBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("InforMedicaBtn.BackgroundImage")));
             this.InforMedicaBtn.ButtonText = "INFORMACION MEDICA";
@@ -192,13 +193,14 @@ namespace SistemaConsultorioMedico
             // 
             this.ModifPacienteBtn.ActiveBorderThickness = 1;
             this.ModifPacienteBtn.ActiveCornerRadius = 20;
-            this.ModifPacienteBtn.ActiveFillColor = System.Drawing.Color.White;
+            this.ModifPacienteBtn.ActiveFillColor = System.Drawing.Color.Plum;
             this.ModifPacienteBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.ModifPacienteBtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ModifPacienteBtn.ActiveLineColor = System.Drawing.Color.Plum;
             this.ModifPacienteBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ModifPacienteBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ModifPacienteBtn.BackgroundImage")));
             this.ModifPacienteBtn.ButtonText = "MODIFICAR";
             this.ModifPacienteBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ModifPacienteBtn.Enabled = false;
             this.ModifPacienteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ModifPacienteBtn.ForeColor = System.Drawing.Color.ForestGreen;
             this.ModifPacienteBtn.IdleBorderThickness = 1;
@@ -209,23 +211,24 @@ namespace SistemaConsultorioMedico
             this.ModifPacienteBtn.Location = new System.Drawing.Point(275, 668);
             this.ModifPacienteBtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.ModifPacienteBtn.Name = "ModifPacienteBtn";
+            this.ModifPacienteBtn.Padding = new System.Windows.Forms.Padding(40, 12, 0, 12);
             this.ModifPacienteBtn.Size = new System.Drawing.Size(209, 50);
             this.ModifPacienteBtn.TabIndex = 12;
             this.ModifPacienteBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ModifPacienteBtn.Visible = false;
             this.ModifPacienteBtn.Click += new System.EventHandler(this.ModifPacienteBtn_Click);
             // 
             // guardarPac_Btn
             // 
             this.guardarPac_Btn.ActiveBorderThickness = 1;
             this.guardarPac_Btn.ActiveCornerRadius = 20;
-            this.guardarPac_Btn.ActiveFillColor = System.Drawing.Color.White;
+            this.guardarPac_Btn.ActiveFillColor = System.Drawing.Color.Plum;
             this.guardarPac_Btn.ActiveForecolor = System.Drawing.Color.White;
-            this.guardarPac_Btn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.guardarPac_Btn.ActiveLineColor = System.Drawing.Color.Plum;
             this.guardarPac_Btn.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.guardarPac_Btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guardarPac_Btn.BackgroundImage")));
             this.guardarPac_Btn.ButtonText = "GUARDAR";
             this.guardarPac_Btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guardarPac_Btn.Enabled = false;
             this.guardarPac_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guardarPac_Btn.ForeColor = System.Drawing.Color.ForestGreen;
             this.guardarPac_Btn.IdleBorderThickness = 1;
@@ -236,10 +239,10 @@ namespace SistemaConsultorioMedico
             this.guardarPac_Btn.Location = new System.Drawing.Point(27, 668);
             this.guardarPac_Btn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.guardarPac_Btn.Name = "guardarPac_Btn";
+            this.guardarPac_Btn.Padding = new System.Windows.Forms.Padding(45, 12, 0, 12);
             this.guardarPac_Btn.Size = new System.Drawing.Size(209, 50);
             this.guardarPac_Btn.TabIndex = 11;
             this.guardarPac_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.guardarPac_Btn.Visible = false;
             this.guardarPac_Btn.Click += new System.EventHandler(this.guardarPac_Btn_Click);
             // 
             // NombreTxb
