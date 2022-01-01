@@ -208,57 +208,15 @@ namespace SistemaConsultorioMedico
 
         private void bloqueoBtnGuardar(object sender, EventArgs e)
         {
-            if (!isValidEmail(CorreoETbx.Text))
-            {
-                CorreoETbx.LineFocusedColor = Color.Crimson;
-                correoErrorLbl.Visible = true;
-            }
-            else
-            {
-                CorreoETbx.LineFocusedColor = Color.Blue;
-                correoErrorLbl.Visible = false;
-            }
-            if (!validarCampos())
-            {
-                guardarPac_Btn.IdleFillColor = Color.Gray;
-                guardarPac_Btn.Enabled = false;
-            }
-            else
+            if (validarCampos())
             {
                 guardarPac_Btn.IdleFillColor = Color.White;
                 guardarPac_Btn.Enabled = true;
             }
-        }
-
-        private void bloqueoBotones(object sender, EventArgs e)
-        {
-            if(guardarPac_Btn.Enabled == true)
-            {
-                guardarPac_Btn.Padding = new Padding(0);
-            }
             else
             {
-                guardarPac_Btn.Padding = new Padding(34, 10, 0, 0);
-            }
-            if(ModifPacienteBtn.Enabled == true)
-            {
-                ModifPacienteBtn.IdleFillColor = Color.White;
-                ModifPacienteBtn.Padding = new Padding(0);
-            }
-            else
-            {
-                ModifPacienteBtn.IdleFillColor = Color.Gray;
-                ModifPacienteBtn.Padding = new Padding(20, 10, 0, 0);
-            }
-            if(EliPacienteBtn.Enabled == true)
-            {
-                EliPacienteBtn.IdleFillColor = Color.White;
-                EliPacienteBtn.Padding = new Padding(0);
-            }
-            else
-            {
-                EliPacienteBtn.IdleFillColor = Color.Gray;
-                EliPacienteBtn.Padding = new Padding(33, 10, 0, 0);
+                guardarPac_Btn.IdleFillColor = Color.Gray;
+                guardarPac_Btn.Enabled = false;
             }
         }
 
@@ -272,12 +230,81 @@ namespace SistemaConsultorioMedico
             }
             try
             {
+                
                 var addr = new System.Net.Mail.MailAddress(email);
                 return addr.Address == trimmedEmail;
             }
             catch
             {
+                CorreoETbx.LineFocusedColor = Color.Crimson;
+                correoErrorLbl.Visible = true;
                 return false;
+            }
+        }
+
+        private void verificarEmail(object sender, EventArgs e)
+        {
+            if (isValidEmail(CorreoETbx.Text))
+            {
+                CorreoETbx.LineFocusedColor = Color.Blue;
+                correoErrorLbl.Visible = false;
+                if (validarCampos())
+                {
+                    guardarPac_Btn.IdleFillColor = Color.White;
+                    guardarPac_Btn.Enabled = true;
+                }
+                else
+                {
+                    guardarPac_Btn.IdleFillColor = Color.Gray;
+                    guardarPac_Btn.Enabled = false;
+                }
+            }
+            else
+            {
+                CorreoETbx.LineFocusedColor = Color.Crimson;
+                correoErrorLbl.Visible = true;
+                guardarPac_Btn.IdleFillColor = Color.Gray;
+                guardarPac_Btn.Enabled = false;
+            }
+        }
+
+        private void bloqueoBotonGuardar(object sender, EventArgs e)
+        {
+            if (guardarPac_Btn.Enabled == true)
+            {
+                guardarPac_Btn.Padding = new Padding(0);
+            }
+            else
+            {
+                guardarPac_Btn.Padding = new Padding(34, 10, 0, 0);
+            }
+        }
+
+        private void bloqueoBotonMod(object sender, EventArgs e)
+        {
+            if(ModifPacienteBtn.Enabled == true)
+            {
+                ModifPacienteBtn.IdleFillColor = Color.White;
+                ModifPacienteBtn.Padding = new Padding(0);
+            }
+            else
+            {
+                ModifPacienteBtn.IdleFillColor = Color.Gray;
+                ModifPacienteBtn.Padding = new Padding(20, 10, 0, 0);
+            }
+        }
+
+        private void bloqueoBotonEli(object sender, EventArgs e)
+        {
+            if(EliPacienteBtn.Enabled == true)
+            {
+                EliPacienteBtn.IdleFillColor = Color.White;
+                EliPacienteBtn.Padding = new Padding(0);
+            }
+            else
+            {
+                EliPacienteBtn.IdleFillColor = Color.Gray;
+                EliPacienteBtn.Padding = new Padding(33, 10, 0, 10);
             }
         }
     }

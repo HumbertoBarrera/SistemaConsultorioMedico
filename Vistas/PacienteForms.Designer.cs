@@ -84,7 +84,7 @@ namespace SistemaConsultorioMedico
             this.EliPacienteBtn.TabIndex = 13;
             this.EliPacienteBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.EliPacienteBtn.Click += new System.EventHandler(this.EliPacienteBtn_Click);
-            this.EliPacienteBtn.EnabledChanged += new System.EventHandler(this.bloqueoBotones);
+            this.EliPacienteBtn.EnabledChanged += new System.EventHandler(this.bloqueoBotonEli);
             // 
             // BuscarTbx
             // 
@@ -218,7 +218,7 @@ namespace SistemaConsultorioMedico
             this.ModifPacienteBtn.TabIndex = 12;
             this.ModifPacienteBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ModifPacienteBtn.Click += new System.EventHandler(this.ModifPacienteBtn_Click);
-            this.ModifPacienteBtn.EnabledChanged += new System.EventHandler(this.bloqueoBotones);
+            this.ModifPacienteBtn.EnabledChanged += new System.EventHandler(this.bloqueoBotonMod);
             // 
             // guardarPac_Btn
             // 
@@ -247,14 +247,14 @@ namespace SistemaConsultorioMedico
             this.guardarPac_Btn.TabIndex = 11;
             this.guardarPac_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.guardarPac_Btn.Click += new System.EventHandler(this.guardarPac_Btn_Click);
-            this.guardarPac_Btn.EnabledChanged += new System.EventHandler(this.bloqueoBotones);
+            this.guardarPac_Btn.EnabledChanged += new System.EventHandler(this.bloqueoBotonGuardar);
             // 
             // NombreTxb
             // 
             this.NombreTxb.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.NombreTxb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.NombreTxb.ForeColor = System.Drawing.Color.Black;
-            this.NombreTxb.HintForeColor = System.Drawing.Color.Black;
+            this.NombreTxb.HintForeColor = System.Drawing.Color.DimGray;
             this.NombreTxb.HintText = "NOMBRES";
             this.NombreTxb.isPassword = false;
             this.NombreTxb.LineFocusedColor = System.Drawing.Color.Blue;
@@ -274,7 +274,7 @@ namespace SistemaConsultorioMedico
             this.LugarNaciTbx.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.LugarNaciTbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.LugarNaciTbx.ForeColor = System.Drawing.Color.Black;
-            this.LugarNaciTbx.HintForeColor = System.Drawing.Color.Black;
+            this.LugarNaciTbx.HintForeColor = System.Drawing.Color.DimGray;
             this.LugarNaciTbx.HintText = "LUGAR DE NACIMIENTO";
             this.LugarNaciTbx.isPassword = false;
             this.LugarNaciTbx.LineFocusedColor = System.Drawing.Color.Blue;
@@ -294,7 +294,7 @@ namespace SistemaConsultorioMedico
             this.DireccionTbx.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.DireccionTbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.DireccionTbx.ForeColor = System.Drawing.Color.Black;
-            this.DireccionTbx.HintForeColor = System.Drawing.Color.Black;
+            this.DireccionTbx.HintForeColor = System.Drawing.Color.DimGray;
             this.DireccionTbx.HintText = "DIRECCION";
             this.DireccionTbx.isPassword = false;
             this.DireccionTbx.LineFocusedColor = System.Drawing.Color.Blue;
@@ -314,7 +314,7 @@ namespace SistemaConsultorioMedico
             this.TelefonoTbx.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TelefonoTbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.TelefonoTbx.ForeColor = System.Drawing.Color.Black;
-            this.TelefonoTbx.HintForeColor = System.Drawing.Color.Black;
+            this.TelefonoTbx.HintForeColor = System.Drawing.Color.DimGray;
             this.TelefonoTbx.HintText = "TELEFONO";
             this.TelefonoTbx.isPassword = false;
             this.TelefonoTbx.LineFocusedColor = System.Drawing.Color.Blue;
@@ -334,7 +334,7 @@ namespace SistemaConsultorioMedico
             this.CorreoETbx.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.CorreoETbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.CorreoETbx.ForeColor = System.Drawing.Color.Black;
-            this.CorreoETbx.HintForeColor = System.Drawing.Color.Black;
+            this.CorreoETbx.HintForeColor = System.Drawing.Color.DimGray;
             this.CorreoETbx.HintText = "CORREO ELECTRONICO";
             this.CorreoETbx.isPassword = false;
             this.CorreoETbx.LineFocusedColor = System.Drawing.Color.Blue;
@@ -347,14 +347,14 @@ namespace SistemaConsultorioMedico
             this.CorreoETbx.Size = new System.Drawing.Size(505, 41);
             this.CorreoETbx.TabIndex = 8;
             this.CorreoETbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.CorreoETbx.OnValueChanged += new System.EventHandler(this.bloqueoBtnGuardar);
+            this.CorreoETbx.OnValueChanged += new System.EventHandler(this.verificarEmail);
             // 
             // OcupacionTbx
             // 
             this.OcupacionTbx.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.OcupacionTbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.OcupacionTbx.ForeColor = System.Drawing.Color.Black;
-            this.OcupacionTbx.HintForeColor = System.Drawing.Color.Black;
+            this.OcupacionTbx.HintForeColor = System.Drawing.Color.DimGray;
             this.OcupacionTbx.HintText = "OCUPACION";
             this.OcupacionTbx.isPassword = false;
             this.OcupacionTbx.LineFocusedColor = System.Drawing.Color.Blue;
@@ -374,7 +374,7 @@ namespace SistemaConsultorioMedico
             this.LugarTrabajoTbx.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.LugarTrabajoTbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.LugarTrabajoTbx.ForeColor = System.Drawing.Color.Black;
-            this.LugarTrabajoTbx.HintForeColor = System.Drawing.Color.Black;
+            this.LugarTrabajoTbx.HintForeColor = System.Drawing.Color.DimGray;
             this.LugarTrabajoTbx.HintText = "LUGAR DE TRABAJO";
             this.LugarTrabajoTbx.isPassword = false;
             this.LugarTrabajoTbx.LineFocusedColor = System.Drawing.Color.Blue;
@@ -441,7 +441,7 @@ namespace SistemaConsultorioMedico
             this.ApellidoMaternoTbx.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.ApellidoMaternoTbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.ApellidoMaternoTbx.ForeColor = System.Drawing.Color.Black;
-            this.ApellidoMaternoTbx.HintForeColor = System.Drawing.Color.Black;
+            this.ApellidoMaternoTbx.HintForeColor = System.Drawing.Color.DimGray;
             this.ApellidoMaternoTbx.HintText = "APELLIDO MATERNO";
             this.ApellidoMaternoTbx.isPassword = false;
             this.ApellidoMaternoTbx.LineFocusedColor = System.Drawing.Color.Blue;
@@ -461,7 +461,7 @@ namespace SistemaConsultorioMedico
             this.ApellidoPaternoTbx.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.ApellidoPaternoTbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.ApellidoPaternoTbx.ForeColor = System.Drawing.Color.Black;
-            this.ApellidoPaternoTbx.HintForeColor = System.Drawing.Color.Black;
+            this.ApellidoPaternoTbx.HintForeColor = System.Drawing.Color.DimGray;
             this.ApellidoPaternoTbx.HintText = "APELLIDO PATERNO";
             this.ApellidoPaternoTbx.isPassword = false;
             this.ApellidoPaternoTbx.LineFocusedColor = System.Drawing.Color.Blue;
@@ -500,7 +500,7 @@ namespace SistemaConsultorioMedico
             this.fechaNacDatePicker.Name = "fechaNacDatePicker";
             this.fechaNacDatePicker.Size = new System.Drawing.Size(512, 44);
             this.fechaNacDatePicker.TabIndex = 31;
-            this.fechaNacDatePicker.Value = new System.DateTime(2021, 12, 30, 21, 57, 5, 517);
+            this.fechaNacDatePicker.Value = new System.DateTime(2022, 1, 1, 0, 0, 0, 0);
             // 
             // correoErrorLbl
             // 
