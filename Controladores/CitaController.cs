@@ -12,6 +12,7 @@ namespace SistemaConsultorioMedico.Controladores
 {
     class CitaController
     {
+        DateTime fecha;
 
         public static void insertarCita(Modelos.Cita c)
         {
@@ -48,7 +49,9 @@ namespace SistemaConsultorioMedico.Controladores
         }
         public DataTable CargarGridCitas()
         {
-            String query = "SELECT idPaciente,LEFT(fecha,10),hora,folioCita FROM CITA";
+            
+            fecha = DateTime.Now;
+            String query = "SELECT c.idPaciente,CONCAT(p.nombresP, ' ',p.apellidoPatP, ' ',p.apellidoMatP) AS nombre,LEFT(c.fecha,10),c.hora,c.folioCita FROM CITA C INNER JOIN PACIENTE p ON C.idPaciente = p.idPaciente WHERE c.fecha >='" +fecha.ToString("yyyy/MM/dd") + "' ORDER BY c.fecha ASC";
 
                 using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
                 {
