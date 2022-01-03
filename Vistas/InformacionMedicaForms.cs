@@ -75,6 +75,7 @@ namespace SistemaConsultorioMedico
 
         public void llenarInformacion(int idPaciente)
         {
+            var f = false;
             String query = "SELECT * FROM INFORMACIONMEDICA WHERE idPaciente = @idPaciente";
             try
             {
@@ -100,7 +101,9 @@ namespace SistemaConsultorioMedico
                             dato8OpcTbx.Text = leer["dato8Opc"].ToString();
                             dato9ComboBox.selectedIndex = getIndex(leer["dato9"].ToString());
                             dato9OpcTbx.Text = leer["dato9Opc"].ToString();
+                            f = true;
                         }
+                        if (!f) flagME = true;
                     }
                 }
             }
@@ -302,9 +305,13 @@ namespace SistemaConsultorioMedico
                     dato8OpcTbx.LineIdleColor = Color.Purple;
                     dato8OpcTbx.LineMouseHoverColor = Color.Purple;
                     dato8OpcTbx.Text = "";
+                    dato9ComboBox.Enabled = true;
+                    dato9ComboBox.selectedIndex = 0;
                     break;
                 case 1:
                     dato8OpcTbx.Enabled = true;
+                    dato9ComboBox.Enabled = true;
+                    dato9ComboBox.selectedIndex = 0;
                     break;
                 case 2:
                     dato8OpcTbx.Enabled = true;
