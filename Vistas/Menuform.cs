@@ -12,12 +12,14 @@ namespace SistemaConsultorioMedico
 {
     public partial class Menuform : Form
     {
+        int idPaciente;
+        bool flagME = true;
+
         public Menuform()
         {
             InitializeComponent();
         }
 
-        int idPaciente;
         private void Salir_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -124,7 +126,7 @@ namespace SistemaConsultorioMedico
 
         private void InformacionMedicasBtn_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new InformacionMedica(idPaciente));
+            AbrirFormHijo(new InformacionMedica(idPaciente, flagME));
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -149,7 +151,7 @@ namespace SistemaConsultorioMedico
 
         private void InformacionMedicaBtn_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new InformacionMedica(idPaciente));
+            AbrirFormHijo(new InformacionMedica(idPaciente, flagME));
         }
     }
 }

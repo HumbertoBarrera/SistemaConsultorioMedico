@@ -14,10 +14,12 @@ namespace SistemaConsultorioMedico
     public partial class InformacionMedica : Form
     {
         int idPaciente;
+        bool flagME;
 
-        public InformacionMedica(int idPaciente)
+        public InformacionMedica(int idPaciente, bool flagME)
         {
             this.idPaciente = idPaciente;
+            this.flagME = flagME;
             InitializeComponent();
             llenarInformacion(idPaciente);
         }
@@ -30,7 +32,7 @@ namespace SistemaConsultorioMedico
                                                                         dato4OpcTbx.Text, dato5ComboBox.selectedValue, dato5OpcTbx.Text, dato6ComboBox.selectedValue, dato6OpcTbx.Text,
                                                                         dato7ComboBox.selectedValue, dato7OpcTbx.Text, dato8ComboBox.selectedValue, dato8OpcTbx.Text,
                                                                         dato9ComboBox.selectedValue, dato9OpcTbx.Text);
-                Form AbrirPreguntas = new Preguntas(im1, idPaciente);
+                Form AbrirPreguntas = new Preguntas(im1, idPaciente, flagME);
                 AbrirPreguntas.Show();
             }
             else
@@ -54,26 +56,27 @@ namespace SistemaConsultorioMedico
 
         public void reestablecerCampos()
         {
-            /*dato1Txb.Text = "¿QUIEN LA RECOMENDO?";
-            dato2Tbx.Text = "¿QUE GINECOLOGO CONSULTABA ANTERIORMENTE?";
-            dato3Tbx.Text = "MOTIVO DE ESTA PRIMERA CONSULTA";
-            dato4Tbx.Text = "¿PADECE USTED DE ALGUNA ALERGIA O ENFERMEDAD CRONICA?";
-            dato4OpcTbx.Text = "¿CUAL?";
-            dato5Tbx.Text = "¿TIENE ANIMALES DOMESTICOS COMO PERROS, GATOS, PAJAROS, ETC..?";
-            dato5OpcTbx.Text = "¿CUAL?";
-            dato6Tbx.Text = "¿TOMA ALGUN MEDICAMENTO CON REGULARIDAD?";
-            dato6OpcTbx.Text = "¿CUAL?";
-            dato7Tbx.Text = "¿ES ALERGICA A ALGUN MEDICAMENTO?";
-            dato7OpcTbx.Text = "¿CUAL?";
-            dato8Tbx.Text = "¿HA SIDO SOMETIDA A ALGUNA CIRUGIA?";
-            dato8OpcTbx.Text = "¿CUAL?";
-            dato9Tbx.Text = "¿HUBO ALGUNA COMPLICACION?";
-            dato9OpcTbx.Text = "¿CUAL?";*/
+            dato1Txb.Text = "";
+            dato2Tbx.Text = "";
+            dato3Tbx.Text = "";
+            dato4ComboBox.selectedIndex = 0;
+            dato4OpcTbx.Text = "";
+            dato5ComboBox.selectedIndex = 0;
+            dato5OpcTbx.Text = "";
+            dato6ComboBox.selectedIndex = 0;
+            dato6OpcTbx.Text = "";
+            dato7ComboBox.selectedIndex = 0;
+            dato7OpcTbx.Text = "";
+            dato8ComboBox.selectedIndex = 0;
+            dato8OpcTbx.Text = "";
+            dato9ComboBox.selectedIndex = 0;
+            dato9OpcTbx.Text = "";
         }
 
         public void llenarInformacion(int idPaciente)
         {
-            /*String query = "SELECT * FROM INFORMACIONMEDICA WHERE idPaciente = @idPaciente";
+            var f = false;
+            String query = "SELECT * FROM INFORMACIONMEDICA WHERE idPaciente = @idPaciente";
             try
             {
                 using(SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
@@ -86,19 +89,21 @@ namespace SistemaConsultorioMedico
                             dato1Txb.Text = leer["dato1"].ToString();
                             dato2Tbx.Text = leer["dato2"].ToString();
                             dato3Tbx.Text = leer["dato3"].ToString();
-                            dato4Tbx.Text = leer["dato4"].ToString();
+                            dato4ComboBox.selectedIndex = getIndex(leer["dato4"].ToString());
                             dato4OpcTbx.Text = leer["dato4Opc"].ToString();
-                            dato5Tbx.Text = leer["dato5"].ToString();
+                            dato5ComboBox.selectedIndex = getIndex(leer["dato5"].ToString());
                             dato5OpcTbx.Text = leer["dato5Opc"].ToString();
-                            dato6Tbx.Text = leer["dato6"].ToString();
+                            dato6ComboBox.selectedIndex = getIndex(leer["dato6"].ToString());
                             dato6OpcTbx.Text = leer["dato6Opc"].ToString();
-                            dato7Tbx.Text = leer["dato7"].ToString();
+                            dato7ComboBox.selectedIndex = getIndex(leer["dato7"].ToString());
                             dato7OpcTbx.Text = leer["dato7Opc"].ToString();
-                            dato8Tbx.Text = leer["dato8"].ToString();
+                            dato8ComboBox.selectedIndex = getIndex(leer["dato8"].ToString());
                             dato8OpcTbx.Text = leer["dato8Opc"].ToString();
-                            dato9Tbx.Text = leer["dato9"].ToString();
+                            dato9ComboBox.selectedIndex = getIndex(leer["dato9"].ToString());
                             dato9OpcTbx.Text = leer["dato9Opc"].ToString();
+                            f = true;
                         }
+                        if (!f) flagME = true;
                     }
                 }
             }
@@ -109,7 +114,19 @@ namespace SistemaConsultorioMedico
             finally
             {
                 Controladores.ConexionController.Desconectar();
-            }*/
+            }
+        }
+
+        public int getIndex(String text)
+        {
+            if(String.Equals(text, "sí", StringComparison.OrdinalIgnoreCase))
+            {
+                return 1;
+            }
+            else
+            {
+                return 2;
+            }
         }
 
         private void buscarBtn_Click(object sender, EventArgs e)
@@ -136,10 +153,10 @@ namespace SistemaConsultorioMedico
             switch (opc)
             {
                 case 0:
-                    dato4OpcTbx.Enabled = false;
+                    if (dato4OpcTbx.Enabled == true) dato4OpcTbx.Enabled = false;
                     dato4OpcTbx.LineIdleColor = Color.Purple;
                     dato4OpcTbx.LineMouseHoverColor = Color.Purple;
-                    dato4OpcTbx.Text = "¿CUAL?";
+                    dato4OpcTbx.Text = "";
                     break;
                 case 1:
                     dato4OpcTbx.Enabled = true;
@@ -158,7 +175,6 @@ namespace SistemaConsultorioMedico
                 dato4OpcTbx.LineIdleColor = Color.Purple;
                 dato4OpcTbx.LineMouseHoverColor = Color.Blue;
                 dato4OpcTbx.Text = "";
-                dato4OpcTbx.HintText = "¿CUAL?";
             }
             else
             {
@@ -174,10 +190,10 @@ namespace SistemaConsultorioMedico
             switch (opc)
             {
                 case 0:
-                    dato5OpcTbx.Enabled = false;
+                    if (dato5OpcTbx.Enabled == true) dato4OpcTbx.Enabled = false;
                     dato5OpcTbx.LineIdleColor = Color.Purple;
                     dato5OpcTbx.LineMouseHoverColor = Color.Purple;
-                    dato5OpcTbx.Text = "¿CUAL?";
+                    dato5OpcTbx.Text = "";
                     break;
                 case 1:
                     dato5OpcTbx.Enabled = true;
@@ -196,7 +212,6 @@ namespace SistemaConsultorioMedico
                 dato5OpcTbx.LineIdleColor = Color.Purple;
                 dato5OpcTbx.LineMouseHoverColor = Color.Blue;
                 dato5OpcTbx.Text = "";
-                dato5OpcTbx.HintText = "¿CUAL?";
             }
             else
             {
@@ -212,10 +227,10 @@ namespace SistemaConsultorioMedico
             switch (opc)
             {
                 case 0:
-                    dato6OpcTbx.Enabled = false;
+                    if (dato6OpcTbx.Enabled == true) dato4OpcTbx.Enabled = false;
                     dato6OpcTbx.LineIdleColor = Color.Purple;
                     dato6OpcTbx.LineMouseHoverColor = Color.Purple;
-                    dato6OpcTbx.Text = "¿CUAL?";
+                    dato6OpcTbx.Text = "";
                     break;
                 case 1:
                     dato6OpcTbx.Enabled = true;
@@ -234,7 +249,6 @@ namespace SistemaConsultorioMedico
                 dato6OpcTbx.LineIdleColor = Color.Purple;
                 dato6OpcTbx.LineMouseHoverColor = Color.Blue;
                 dato6OpcTbx.Text = "";
-                dato6OpcTbx.HintText = "¿CUAL?";
             }
             else
             {
@@ -250,10 +264,10 @@ namespace SistemaConsultorioMedico
             switch (opc)
             {
                 case 0:
-                    dato7OpcTbx.Enabled = false;
+                    if (dato7OpcTbx.Enabled == true) dato4OpcTbx.Enabled = false;
                     dato7OpcTbx.LineIdleColor = Color.Purple;
                     dato7OpcTbx.LineMouseHoverColor = Color.Purple;
-                    dato7OpcTbx.Text = "¿CUAL?";
+                    dato7OpcTbx.Text = "";
                     break;
                 case 1:
                     dato7OpcTbx.Enabled = true;
@@ -272,7 +286,6 @@ namespace SistemaConsultorioMedico
                 dato7OpcTbx.LineIdleColor = Color.Purple;
                 dato7OpcTbx.LineMouseHoverColor = Color.Blue;
                 dato7OpcTbx.Text = "";
-                dato7OpcTbx.HintText = "¿CUAL?";
             }
             else
             {
@@ -288,18 +301,23 @@ namespace SistemaConsultorioMedico
             switch (opc)
             {
                 case 0:
-                    dato8OpcTbx.Enabled = false;
+                    if (dato8OpcTbx.Enabled == true) dato4OpcTbx.Enabled = false;
                     dato8OpcTbx.LineIdleColor = Color.Purple;
                     dato8OpcTbx.LineMouseHoverColor = Color.Purple;
-                    dato8OpcTbx.Text = "¿CUAL?";
+                    dato8OpcTbx.Text = "";
+                    dato9ComboBox.Enabled = true;
+                    dato9ComboBox.selectedIndex = 0;
                     break;
                 case 1:
                     dato8OpcTbx.Enabled = true;
+                    dato9ComboBox.Enabled = true;
+                    dato9ComboBox.selectedIndex = 0;
                     break;
                 case 2:
                     dato8OpcTbx.Enabled = true;
                     dato8OpcTbx.Enabled = false;
                     dato9ComboBox.selectedIndex = 2;
+                    dato9ComboBox.Enabled = false;
                     break;
             }
         }
@@ -311,7 +329,6 @@ namespace SistemaConsultorioMedico
                 dato8OpcTbx.LineIdleColor = Color.Purple;
                 dato8OpcTbx.LineMouseHoverColor = Color.Blue;
                 dato8OpcTbx.Text = "";
-                dato8OpcTbx.HintText = "¿CUAL?";
             }
             else
             {
@@ -327,10 +344,10 @@ namespace SistemaConsultorioMedico
             switch (opc)
             {
                 case 0:
-                    dato9OpcTbx.Enabled = false;
+                    if (dato9OpcTbx.Enabled == true) dato4OpcTbx.Enabled = false;
                     dato9OpcTbx.LineIdleColor = Color.Purple;
                     dato9OpcTbx.LineMouseHoverColor = Color.Purple;
-                    dato9OpcTbx.Text = "¿CUAL?";
+                    dato9OpcTbx.Text = "";
                     break;
                 case 1:
                     dato9OpcTbx.Enabled = true;
@@ -349,7 +366,6 @@ namespace SistemaConsultorioMedico
                 dato9OpcTbx.LineIdleColor = Color.Purple;
                 dato9OpcTbx.LineMouseHoverColor = Color.Blue;
                 dato9OpcTbx.Text = "";
-                dato9OpcTbx.HintText = "¿CUAL?";
             }
             else
             {
