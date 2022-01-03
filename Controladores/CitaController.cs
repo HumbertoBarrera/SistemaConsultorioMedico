@@ -205,6 +205,26 @@ namespace SistemaConsultorioMedico.Controladores
         }
 
 
+        public static bool validaExisFechaHora(Modelos.Cita c)
+        {
+            String query = "SELECT * FROM CITA WHERE fecha='" + c.getFecha() + "' AND hora='" + c.getHora() + "'";
+
+            using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
+            {
+                SqlDataReader leer = comando.ExecuteReader();
+                if (leer.Read())
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+        }
+
+
     }
 
 }

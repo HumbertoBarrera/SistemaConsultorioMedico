@@ -44,7 +44,8 @@ namespace SistemaConsultorioMedico
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.folioCitaLb = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.AgregarCBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -248,6 +249,7 @@ namespace SistemaConsultorioMedico
             // 
             this.bunifuDatepicker1.BackColor = System.Drawing.Color.Purple;
             this.bunifuDatepicker1.BorderRadius = 0;
+            this.bunifuDatepicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
             this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.bunifuDatepicker1.FormatCustom = null;
@@ -258,25 +260,45 @@ namespace SistemaConsultorioMedico
             this.bunifuDatepicker1.Value = new System.DateTime(2021, 12, 29, 0, 0, 0, 0);
             this.bunifuDatepicker1.onValueChanged += new System.EventHandler(this.bunifuDatepicker1_onValueChanged_1);
             // 
-            // dateTimePicker1
+            // comboBox1
             // 
-            this.dateTimePicker1.BackColor = global::SistemaConsultorioMedico.Properties.Settings.Default.hola;
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.CalendarForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.Purple;
-            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.Color.Purple;
-            this.dateTimePicker1.CalendarTrailingForeColor = System.Drawing.Color.Purple;
-            this.dateTimePicker1.CustomFormat = "HH:MM";
-            this.dateTimePicker1.DataBindings.Add(new System.Windows.Forms.Binding("BackColor", global::SistemaConsultorioMedico.Properties.Settings.Default, "hola", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Millimeter, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dateTimePicker1.Location = new System.Drawing.Point(33, 268);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.ShowUpDown = true;
-            this.dateTimePicker1.Size = new System.Drawing.Size(379, 33);
-            this.dateTimePicker1.TabIndex = 35;
-            this.dateTimePicker1.Value = new System.DateTime(2021, 12, 30, 7, 59, 0, 0);
+            this.comboBox1.BackColor = System.Drawing.Color.Purple;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.ForeColor = System.Drawing.SystemColors.Window;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(33, 283);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(379, 24);
+            this.comboBox1.TabIndex = 37;
+            // 
+            // AgregarCBtn
+            // 
+            this.AgregarCBtn.ActiveBorderThickness = 1;
+            this.AgregarCBtn.ActiveCornerRadius = 20;
+            this.AgregarCBtn.ActiveFillColor = System.Drawing.Color.White;
+            this.AgregarCBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.AgregarCBtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.AgregarCBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.AgregarCBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AgregarCBtn.BackgroundImage")));
+            this.AgregarCBtn.ButtonText = "NUEVA CITA";
+            this.AgregarCBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AgregarCBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AgregarCBtn.ForeColor = System.Drawing.Color.ForestGreen;
+            this.AgregarCBtn.IdleBorderThickness = 1;
+            this.AgregarCBtn.IdleCornerRadius = 20;
+            this.AgregarCBtn.IdleFillColor = System.Drawing.Color.White;
+            this.AgregarCBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.AgregarCBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.AgregarCBtn.Location = new System.Drawing.Point(20, 495);
+            this.AgregarCBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.AgregarCBtn.Name = "AgregarCBtn";
+            this.AgregarCBtn.Size = new System.Drawing.Size(157, 41);
+            this.AgregarCBtn.TabIndex = 38;
+            this.AgregarCBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.AgregarCBtn.Visible = false;
+            this.AgregarCBtn.Click += new System.EventHandler(this.AgregarCBtn_Click);
             // 
             // CitasForm
             // 
@@ -284,7 +306,8 @@ namespace SistemaConsultorioMedico
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1029, 570);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.AgregarCBtn);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.bunifuDatepicker1);
             this.Controls.Add(this.folioCitaLb);
             this.Controls.Add(this.linea);
@@ -318,6 +341,7 @@ namespace SistemaConsultorioMedico
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuCustomLabel folioCitaLb;
         private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private Bunifu.Framework.UI.BunifuThinButton2 AgregarCBtn;
     }
 }
