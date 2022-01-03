@@ -392,7 +392,7 @@ namespace SistemaConsultorioMedico
             this.dato5ComboBox.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dato5ComboBox.selectedIndex = 0;
             this.dato5ComboBox.Size = new System.Drawing.Size(648, 43);
-            this.dato5ComboBox.TabIndex = 40;
+            this.dato5ComboBox.TabIndex = 6;
             this.dato5ComboBox.onItemSelected += new System.EventHandler(this.dato5ItemOpc);
             // 
             // dato6ComboBox
@@ -413,7 +413,7 @@ namespace SistemaConsultorioMedico
             this.dato6ComboBox.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dato6ComboBox.selectedIndex = 0;
             this.dato6ComboBox.Size = new System.Drawing.Size(648, 43);
-            this.dato6ComboBox.TabIndex = 41;
+            this.dato6ComboBox.TabIndex = 8;
             this.dato6ComboBox.onItemSelected += new System.EventHandler(this.dato6ItemOpc);
             // 
             // dato7ComboBox
@@ -434,7 +434,7 @@ namespace SistemaConsultorioMedico
             this.dato7ComboBox.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dato7ComboBox.selectedIndex = 0;
             this.dato7ComboBox.Size = new System.Drawing.Size(648, 43);
-            this.dato7ComboBox.TabIndex = 42;
+            this.dato7ComboBox.TabIndex = 10;
             this.dato7ComboBox.onItemSelected += new System.EventHandler(this.dato7ItemOpc);
             // 
             // dato8ComboBox
@@ -455,7 +455,7 @@ namespace SistemaConsultorioMedico
             this.dato8ComboBox.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dato8ComboBox.selectedIndex = 0;
             this.dato8ComboBox.Size = new System.Drawing.Size(648, 43);
-            this.dato8ComboBox.TabIndex = 43;
+            this.dato8ComboBox.TabIndex = 12;
             this.dato8ComboBox.onItemSelected += new System.EventHandler(this.dato8ItemOpc);
             // 
             // dato9ComboBox
@@ -476,7 +476,7 @@ namespace SistemaConsultorioMedico
             this.dato9ComboBox.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dato9ComboBox.selectedIndex = 0;
             this.dato9ComboBox.Size = new System.Drawing.Size(648, 43);
-            this.dato9ComboBox.TabIndex = 44;
+            this.dato9ComboBox.TabIndex = 14;
             this.dato9ComboBox.onItemSelected += new System.EventHandler(this.dato9ItemOpc);
             // 
             // InformacionMedica

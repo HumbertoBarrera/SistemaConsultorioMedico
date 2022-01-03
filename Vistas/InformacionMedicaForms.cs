@@ -136,10 +136,10 @@ namespace SistemaConsultorioMedico
             switch (opc)
             {
                 case 0:
-                    dato4OpcTbx.Enabled = false;
+                    if (dato4OpcTbx.Enabled == true) dato4OpcTbx.Enabled = false;
                     dato4OpcTbx.LineIdleColor = Color.Purple;
                     dato4OpcTbx.LineMouseHoverColor = Color.Purple;
-                    dato4OpcTbx.Text = "¿CUAL?";
+                    dato4OpcTbx.Text = "";
                     break;
                 case 1:
                     dato4OpcTbx.Enabled = true;
@@ -158,7 +158,6 @@ namespace SistemaConsultorioMedico
                 dato4OpcTbx.LineIdleColor = Color.Purple;
                 dato4OpcTbx.LineMouseHoverColor = Color.Blue;
                 dato4OpcTbx.Text = "";
-                dato4OpcTbx.HintText = "¿CUAL?";
             }
             else
             {
@@ -174,10 +173,10 @@ namespace SistemaConsultorioMedico
             switch (opc)
             {
                 case 0:
-                    dato5OpcTbx.Enabled = false;
+                    if (dato5OpcTbx.Enabled == true) dato4OpcTbx.Enabled = false;
                     dato5OpcTbx.LineIdleColor = Color.Purple;
                     dato5OpcTbx.LineMouseHoverColor = Color.Purple;
-                    dato5OpcTbx.Text = "¿CUAL?";
+                    dato5OpcTbx.Text = "";
                     break;
                 case 1:
                     dato5OpcTbx.Enabled = true;
@@ -196,7 +195,6 @@ namespace SistemaConsultorioMedico
                 dato5OpcTbx.LineIdleColor = Color.Purple;
                 dato5OpcTbx.LineMouseHoverColor = Color.Blue;
                 dato5OpcTbx.Text = "";
-                dato5OpcTbx.HintText = "¿CUAL?";
             }
             else
             {
@@ -212,10 +210,10 @@ namespace SistemaConsultorioMedico
             switch (opc)
             {
                 case 0:
-                    dato6OpcTbx.Enabled = false;
+                    if (dato6OpcTbx.Enabled == true) dato4OpcTbx.Enabled = false;
                     dato6OpcTbx.LineIdleColor = Color.Purple;
                     dato6OpcTbx.LineMouseHoverColor = Color.Purple;
-                    dato6OpcTbx.Text = "¿CUAL?";
+                    dato6OpcTbx.Text = "";
                     break;
                 case 1:
                     dato6OpcTbx.Enabled = true;
@@ -234,7 +232,6 @@ namespace SistemaConsultorioMedico
                 dato6OpcTbx.LineIdleColor = Color.Purple;
                 dato6OpcTbx.LineMouseHoverColor = Color.Blue;
                 dato6OpcTbx.Text = "";
-                dato6OpcTbx.HintText = "¿CUAL?";
             }
             else
             {
@@ -250,10 +247,10 @@ namespace SistemaConsultorioMedico
             switch (opc)
             {
                 case 0:
-                    dato7OpcTbx.Enabled = false;
+                    if (dato7OpcTbx.Enabled == true) dato4OpcTbx.Enabled = false;
                     dato7OpcTbx.LineIdleColor = Color.Purple;
                     dato7OpcTbx.LineMouseHoverColor = Color.Purple;
-                    dato7OpcTbx.Text = "¿CUAL?";
+                    dato7OpcTbx.Text = "";
                     break;
                 case 1:
                     dato7OpcTbx.Enabled = true;
@@ -272,7 +269,6 @@ namespace SistemaConsultorioMedico
                 dato7OpcTbx.LineIdleColor = Color.Purple;
                 dato7OpcTbx.LineMouseHoverColor = Color.Blue;
                 dato7OpcTbx.Text = "";
-                dato7OpcTbx.HintText = "¿CUAL?";
             }
             else
             {
@@ -288,10 +284,10 @@ namespace SistemaConsultorioMedico
             switch (opc)
             {
                 case 0:
-                    dato8OpcTbx.Enabled = false;
+                    if (dato8OpcTbx.Enabled == true) dato4OpcTbx.Enabled = false;
                     dato8OpcTbx.LineIdleColor = Color.Purple;
                     dato8OpcTbx.LineMouseHoverColor = Color.Purple;
-                    dato8OpcTbx.Text = "¿CUAL?";
+                    dato8OpcTbx.Text = "";
                     break;
                 case 1:
                     dato8OpcTbx.Enabled = true;
@@ -300,6 +296,7 @@ namespace SistemaConsultorioMedico
                     dato8OpcTbx.Enabled = true;
                     dato8OpcTbx.Enabled = false;
                     dato9ComboBox.selectedIndex = 2;
+                    dato9ComboBox.Enabled = false;
                     break;
             }
         }
@@ -311,7 +308,6 @@ namespace SistemaConsultorioMedico
                 dato8OpcTbx.LineIdleColor = Color.Purple;
                 dato8OpcTbx.LineMouseHoverColor = Color.Blue;
                 dato8OpcTbx.Text = "";
-                dato8OpcTbx.HintText = "¿CUAL?";
             }
             else
             {
@@ -327,10 +323,10 @@ namespace SistemaConsultorioMedico
             switch (opc)
             {
                 case 0:
-                    dato9OpcTbx.Enabled = false;
+                    if (dato9OpcTbx.Enabled == true) dato4OpcTbx.Enabled = false;
                     dato9OpcTbx.LineIdleColor = Color.Purple;
                     dato9OpcTbx.LineMouseHoverColor = Color.Purple;
-                    dato9OpcTbx.Text = "¿CUAL?";
+                    dato9OpcTbx.Text = "";
                     break;
                 case 1:
                     dato9OpcTbx.Enabled = true;
@@ -349,7 +345,6 @@ namespace SistemaConsultorioMedico
                 dato9OpcTbx.LineIdleColor = Color.Purple;
                 dato9OpcTbx.LineMouseHoverColor = Color.Blue;
                 dato9OpcTbx.Text = "";
-                dato9OpcTbx.HintText = "¿CUAL?";
             }
             else
             {
