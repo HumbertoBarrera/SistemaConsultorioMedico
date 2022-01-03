@@ -14,10 +14,12 @@ namespace SistemaConsultorioMedico
     public partial class InformacionMedica : Form
     {
         int idPaciente;
+        bool flagME;
 
-        public InformacionMedica(int idPaciente)
+        public InformacionMedica(int idPaciente, bool flagME)
         {
             this.idPaciente = idPaciente;
+            this.flagME = flagME;
             InitializeComponent();
             llenarInformacion(idPaciente);
         }
@@ -30,7 +32,7 @@ namespace SistemaConsultorioMedico
                                                                         dato4OpcTbx.Text, dato5ComboBox.selectedValue, dato5OpcTbx.Text, dato6ComboBox.selectedValue, dato6OpcTbx.Text,
                                                                         dato7ComboBox.selectedValue, dato7OpcTbx.Text, dato8ComboBox.selectedValue, dato8OpcTbx.Text,
                                                                         dato9ComboBox.selectedValue, dato9OpcTbx.Text);
-                Form AbrirPreguntas = new Preguntas(im1, idPaciente);
+                Form AbrirPreguntas = new Preguntas(im1, idPaciente, flagME);
                 AbrirPreguntas.Show();
             }
             else

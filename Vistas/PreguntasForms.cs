@@ -16,11 +16,13 @@ namespace SistemaConsultorioMedico
     {
         private Modelos.InformacionMedica im1;
         int idPaciente;
+        bool flagME;
 
-        public Preguntas(Modelos.InformacionMedica im1, int idPaciente)
+        public Preguntas(Modelos.InformacionMedica im1, int idPaciente, bool flagME)
         {
             this.im1 = im1;
             this.idPaciente = idPaciente;
+            this.flagME = flagME;
             InitializeComponent();
             obtenerFecha();
             llenarInformacion(idPaciente);
@@ -109,16 +111,6 @@ namespace SistemaConsultorioMedico
                 case 12: mes = "DICIEMBRE"; return mes;
                 default: return "error";
             }
-        }
-
-        private void QuienFamiliarTbx_MouseEnter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void QuienFamiliarTbx_MouseLeave(object sender, EventArgs e)
-        {
-
         }
 
         private bool validarCampos()
@@ -218,7 +210,6 @@ namespace SistemaConsultorioMedico
                 dato10Rbtn4.Checked = false;
                 dato10OpcTbx.Text = "";
                 dato10Rbtn5.Checked = true;
-                //dato10OpcTbx.Enabled = false;
             }
             else
             {
@@ -305,7 +296,7 @@ namespace SistemaConsultorioMedico
 
         public int getIndex(String text)
         {
-            if (String.Equals(text, "si", StringComparison.OrdinalIgnoreCase))
+            if (String.Equals(text, "sí", StringComparison.OrdinalIgnoreCase))
             {
                 return 1;
             }
@@ -317,14 +308,14 @@ namespace SistemaConsultorioMedico
 
         private void ModificarBtn_Click(object sender, EventArgs e)
         {
-            /*if (validarCampos())
+            if (validarCampos())
             {
                 DateTime hoy = DateTime.Today;
-                Modelos.InformacionMedica im2 = new Modelos.InformacionMedica(obtenerEnfermedadFamiliar(), dato10OpcTbx.Text, dato11Tbx.Text, dato11OpcTbx.Text,
-                                                                            dato12Tbx.Text, dato13Tbx.Text, dato13OpcTbx.Text, dato13Opc2Tbx.Text, dato14Tbx.Text,
-                                                                            dato14OpcTbx.Text, dato14Opc2Tbx.Text, dato15Tbx.Text, dato15OpcTbx.Text,
+                Modelos.InformacionMedica im2 = new Modelos.InformacionMedica(obtenerEnfermedadFamiliar(), dato10OpcTbx.Text, dato11ComboBox.selectedValue, dato11OpcTbx.Text,
+                                                                            dato12Tbx.Text, dato13ComboBox.selectedValue, dato13OpcTbx.Text, dato13Opc2Tbx.Text, dato14ComboBox.selectedValue,
+                                                                            dato14OpcTbx.Text, dato14Opc2Tbx.Text, dato15ComboBox.selectedValue, dato15OpcTbx.Text,
                                                                             dato15Opc2Tbx.Text, dato15Opc3Tbx.Text, dato15Opc4Tbx.Text, dato16Tbx.Text,
-                                                                            dato17Tbx.Text, dato18Tbx.Text, hoy);
+                                                                            dato17ComboBox.selectedValue, dato18Tbx.Text, hoy);
                 Controladores.InformacionMedicaController.modificarInformacionMedica(im1, im2);
                 reestablecerCampos();
                 this.Close();
@@ -332,20 +323,20 @@ namespace SistemaConsultorioMedico
             else
             {
                 MessageBox.Show("No pueden haber campos vacíos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }*/
+            }
         }
 
         private void EliminarBtn_Click(object sender, EventArgs e)
         {
-            /*DateTime hoy = DateTime.Today;
-            Modelos.InformacionMedica im2 = new Modelos.InformacionMedica(obtenerEnfermedadFamiliar(), dato10OpcTbx.Text, dato11Tbx.Text, dato11OpcTbx.Text,
-                                                                             dato12Tbx.Text, dato13Tbx.Text, dato13OpcTbx.Text, dato13Opc2Tbx.Text, dato14Tbx.Text,
-                                                                             dato14OpcTbx.Text, dato14Opc2Tbx.Text, dato15Tbx.Text, dato15OpcTbx.Text,
-                                                                             dato15Opc2Tbx.Text, dato15Opc3Tbx.Text, dato15Opc4Tbx.Text, dato16Tbx.Text,
-                                                                             dato17Tbx.Text, dato18Tbx.Text, hoy);
+            DateTime hoy = DateTime.Today;
+            Modelos.InformacionMedica im2 = new Modelos.InformacionMedica(obtenerEnfermedadFamiliar(), dato10OpcTbx.Text, dato11ComboBox.selectedValue, dato11OpcTbx.Text,
+                                                                            dato12Tbx.Text, dato13ComboBox.selectedValue, dato13OpcTbx.Text, dato13Opc2Tbx.Text, dato14ComboBox.selectedValue,
+                                                                            dato14OpcTbx.Text, dato14Opc2Tbx.Text, dato15ComboBox.selectedValue, dato15OpcTbx.Text,
+                                                                            dato15Opc2Tbx.Text, dato15Opc3Tbx.Text, dato15Opc4Tbx.Text, dato16Tbx.Text,
+                                                                            dato17ComboBox.selectedValue, dato18Tbx.Text, hoy);
             Controladores.InformacionMedicaController.EliminarInformacionMedica(im1, im2);
             reestablecerCampos();
-            this.Close();*/
+            this.Close();
         }
 
         private void dato10Rbtn1_CheckedChanged(object sender, EventArgs e)
@@ -663,13 +654,23 @@ namespace SistemaConsultorioMedico
 
         private void bloqueoBtnGuardar(object sender, EventArgs e)
         {
-            if (validarCampos())
+            if (validarCampos() && flagME)
             {
                 GuardarBtn.Enabled = true;
             }
             else
             {
                 GuardarBtn.Enabled = false;
+                if (validarCampos())
+                {
+                    ModificarBtn.Enabled = true;
+                    EliminarBtn.Enabled = true;
+                }
+                else
+                {
+                    ModificarBtn.Enabled = false;
+                    EliminarBtn.Enabled = false;
+                }
             }
         }
 
@@ -695,13 +696,23 @@ namespace SistemaConsultorioMedico
                 dato12Tbx.LineMouseHoverColor = Color.Blue;
                 dato12Tbx.LineFocusedColor = Color.Blue;
                 errorDigit.Visible = false;
-                if (validarCampos())
+                if (validarCampos() && flagME)
                 {
                     GuardarBtn.Enabled = true;
                 }
                 else
                 {
                     GuardarBtn.Enabled = false;
+                    if (validarCampos())
+                    {
+                        ModificarBtn.Enabled = true;
+                        EliminarBtn.Enabled = true;
+                    }
+                    else
+                    {
+                        ModificarBtn.Enabled = false;
+                        EliminarBtn.Enabled = false;
+                    }
                 }
             }
             else
@@ -738,6 +749,34 @@ namespace SistemaConsultorioMedico
                 dato16Tbx.LineFocusedColor = Color.Crimson;
                 errorDigit2.Visible = true;
                 GuardarBtn.Enabled = false;
+            }
+        }
+
+        private void ModificarBtn_EnabledChanged(object sender, EventArgs e)
+        {
+            if(ModificarBtn.Enabled == true)
+            {
+                ModificarBtn.IdleFillColor = Color.White;
+                ModificarBtn.Padding = new Padding(0);
+            }
+            else
+            {
+                ModificarBtn.IdleFillColor = Color.Gray;
+                ModificarBtn.Padding = new Padding(30, 10, 0, 0);
+            }
+        }
+
+        private void EliminarBtn_EnabledChanged(object sender, EventArgs e)
+        {
+            if(EliminarBtn.Enabled == true)
+            {
+                EliminarBtn.IdleFillColor = Color.White;
+                EliminarBtn.Padding = new Padding(0);
+            }
+            else
+            {
+                EliminarBtn.IdleFillColor = Color.Gray;
+                EliminarBtn.Padding = new Padding(37, 10, 0, 10);
             }
         }
     }

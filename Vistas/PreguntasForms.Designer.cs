@@ -561,6 +561,7 @@ namespace SistemaConsultorioMedico
             this.EliminarBtn.TabIndex = 27;
             this.EliminarBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.EliminarBtn.Click += new System.EventHandler(this.EliminarBtn_Click);
+            this.EliminarBtn.EnabledChanged += new System.EventHandler(this.EliminarBtn_EnabledChanged);
             // 
             // ModificarBtn
             // 
@@ -589,6 +590,7 @@ namespace SistemaConsultorioMedico
             this.ModificarBtn.TabIndex = 26;
             this.ModificarBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ModificarBtn.Click += new System.EventHandler(this.ModificarBtn_Click);
+            this.ModificarBtn.EnabledChanged += new System.EventHandler(this.ModificarBtn_EnabledChanged);
             // 
             // dato10Rbtn5
             // 

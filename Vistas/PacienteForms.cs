@@ -14,7 +14,7 @@ namespace SistemaConsultorioMedico
     {
 
         DateTime curDate = DateTime.Today;
-        //bool modificarFlag = false;
+        bool flagME = true;
         int indice;
 
         public Paciente()
@@ -56,7 +56,6 @@ namespace SistemaConsultorioMedico
             {
                 MessageBox.Show("No pueden haber campos vacíos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            //MessageBox.Show(fechaNacDatePicker.Value.ToString("dd/MM/yyyy"), "Prueba", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void PacientesForm_Load(object sender, EventArgs e)
@@ -125,6 +124,7 @@ namespace SistemaConsultorioMedico
             DireccionTbx.Text = "";
             TelefonoTbx.Text = "";
             CorreoETbx.Text = "";
+            correoErrorLbl.Visible = false;
             OcupacionTbx.Text = "";
             LugarTrabajoTbx.Text = "";
         }
@@ -136,7 +136,7 @@ namespace SistemaConsultorioMedico
                 int idPaciente = int.Parse(BuscarTbx.text);
                 if (Controladores.PacienteController.validaExisPaciente(idPaciente))
                 {
-                    Form VInfoMedica = new InformacionMedica(idPaciente);
+                    Form VInfoMedica = new InformacionMedica(idPaciente, flagME);
                     this.Hide();
                     VInfoMedica.Show();
                 }
@@ -148,7 +148,7 @@ namespace SistemaConsultorioMedico
             else if(IdPacienteLbl.Visible == true)
             {
                 int idPaciente = int.Parse(IdPacienteLbl.Text.Substring(13));
-                Form VInfoMedica = new InformacionMedica(idPaciente);
+                Form VInfoMedica = new InformacionMedica(idPaciente, flagME);
                 this.Hide();
                 VInfoMedica.Show();
             }
@@ -169,16 +169,6 @@ namespace SistemaConsultorioMedico
             reestablecerCampos();
         }
 
-        private void EliPacienteBtn_Click(object sender, EventArgs e)
-        {
-            Modelos.Paciente paciente = new Modelos.Paciente(Convert.ToInt32(IdPacienteLbl.Text.Substring(13)), ((curDate.Year) - Convert.ToInt32(fechaNacDatePicker.Value.Year)), NombreTxb.Text, ApellidoPaternoTbx.Text,
-                                                                ApellidoMaternoTbx.Text, LugarNaciTbx.Text, DireccionTbx.Text, TelefonoTbx.Text, CorreoETbx.Text,
-                                                                OcupacionTbx.Text, TelefonoTbx.Text, LugarTrabajoTbx.Text, fechaNacDatePicker.Value);
-            Controladores.PacienteController.EliminarPaciente(paciente);
-            ActualizarTabla();
-            reestablecerCampos();
-        }
-
         private void ActualizarTabla()
         {
             Controladores.PacienteController da = new Controladores.PacienteController();
@@ -189,6 +179,7 @@ namespace SistemaConsultorioMedico
 
         private void llenarInfoPacientes_DataGrid(object sender, DataGridViewCellEventArgs e)
         {
+            flagME = false;
             indice = bunifuCustomDataGrid1.CurrentRow.Index;
             IdPacienteLbl.Text = "ID PACIENTE: "+bunifuCustomDataGrid1[0, indice].Value.ToString();
             NombreTxb.Text = bunifuCustomDataGrid1[1, indice].Value.ToString();
@@ -208,7 +199,7 @@ namespace SistemaConsultorioMedico
 
         private void bloqueoBtnGuardar(object sender, EventArgs e)
         {
-            if (validarCampos())
+            if (validarCampos() && flagME)
             {
                 guardarPac_Btn.IdleFillColor = Color.White;
                 guardarPac_Btn.Enabled = true;
@@ -230,7 +221,6 @@ namespace SistemaConsultorioMedico
             }
             try
             {
-                
                 var addr = new System.Net.Mail.MailAddress(email);
                 return addr.Address == trimmedEmail;
             }
@@ -248,7 +238,7 @@ namespace SistemaConsultorioMedico
             {
                 CorreoETbx.LineFocusedColor = Color.Blue;
                 correoErrorLbl.Visible = false;
-                if (validarCampos())
+                if (validarCampos() && flagME)
                 {
                     guardarPac_Btn.IdleFillColor = Color.White;
                     guardarPac_Btn.Enabled = true;
@@ -306,6 +296,11 @@ namespace SistemaConsultorioMedico
                 EliPacienteBtn.IdleFillColor = Color.Gray;
                 EliPacienteBtn.Padding = new Padding(33, 10, 0, 10);
             }
+        }
+
+        private void EliPacienteBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
