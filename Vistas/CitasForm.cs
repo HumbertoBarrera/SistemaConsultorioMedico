@@ -16,6 +16,10 @@ namespace SistemaConsultorioMedico
         public CitasForm()
         {
             InitializeComponent();
+            bunifuDatepicker1.Value = DateTime.Now.Date;
+            dateTimePicker1.Text = String.Format("{0:G}", DateTime.Now);
+
+
         }
         int indice;
 
@@ -37,42 +41,7 @@ namespace SistemaConsultorioMedico
             }
         }
 
-        private void FechaCitaTxb_MouseEnter(object sender, EventArgs e)
-        {
-            if (FechaCitaTxb.Text == "FECHA")
-            {
-                FechaCitaTxb.Text = "";
-                FechaCitaTxb.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void FechaCitaTxb_MouseLeave(object sender, EventArgs e)
-        {
-            if (FechaCitaTxb.Text == "")
-            {
-                FechaCitaTxb.Text = "FECHA";
-                FechaCitaTxb.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void HoraCitaTxb_MouseEnter(object sender, EventArgs e)
-        {
-            if (HoraCitaTxb.Text == "HORA")
-            {
-                HoraCitaTxb.Text = "";
-                HoraCitaTxb.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void HoraCitaTxb_MouseLeave(object sender, EventArgs e)
-        {
-            if (HoraCitaTxb.Text == "")
-            {
-                HoraCitaTxb.Text = "HORA";
-                HoraCitaTxb.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
+     
         private void BuscarTbx_MouseEnter(object sender, EventArgs e)
         {
             if (BuscarTbx.Text == "BUSCAR")
@@ -94,13 +63,14 @@ namespace SistemaConsultorioMedico
         private void GuardarCitaBtn_Click(object sender, EventArgs e)
         {
 
-            if ((PacienteCitaTxb.Text != "PACIENTE") && (FechaCitaTxb.Text != "FECHA") && (HoraCitaTxb.Text != "HORA"))
+
+            if (PacienteCitaTxb.Text != "PACIENTE")
             {
                 Modelos.Cita cita = new Modelos.Cita();
 
                 int idPacienteV = int.Parse(PacienteCitaTxb.Text);
-                DateTime fechaV = Convert.ToDateTime(FechaCitaTxb.Text);
-                TimeSpan horaV = TimeSpan.Parse(HoraCitaTxb.Text);
+                DateTime fechaV = bunifuDatepicker1.Value;
+                TimeSpan horaV = TimeSpan.Parse(dateTimePicker1.Text);
 
                 cita.setIdPaciente(idPacienteV);
                 cita.setFecha(fechaV);
@@ -121,6 +91,8 @@ namespace SistemaConsultorioMedico
                         var dt = da.CargarGridCitas();
 
                         bunifuCustomDataGrid2.DataSource = dt;
+                        bunifuCustomDataGrid2.Columns[0].Visible = false;
+                        bunifuCustomDataGrid2.Columns[4].Visible = false;
 
                     }
                     else
@@ -143,8 +115,8 @@ namespace SistemaConsultorioMedico
                 }
 
                 PacienteCitaTxb.Text = " ";
-                FechaCitaTxb.Text = " ";
-                HoraCitaTxb.Text = " ";
+                bunifuDatepicker1.Value = DateTime.Now.Date;
+                dateTimePicker1.Text = String.Format("{0:G}", DateTime.Now);
                 folioCitaLb.Text = "";
                 PacienteCitaTxb.Enabled = true;
 
@@ -161,8 +133,10 @@ namespace SistemaConsultorioMedico
         {
             Controladores.CitaController da = new Controladores.CitaController();
             var dt = da.CargarGridCitas();
-
             bunifuCustomDataGrid2.DataSource = dt;
+            bunifuCustomDataGrid2.Columns[0].Visible = false;
+            bunifuCustomDataGrid2.Columns[4].Visible = false;
+
         }
 
         private void EliminarCitaBtn_Click(object sender, EventArgs e)
@@ -171,8 +145,8 @@ namespace SistemaConsultorioMedico
 
             String folioCita = folioCitaLb.Text;
             int idPacienteV = int.Parse(PacienteCitaTxb.Text);
-            DateTime fechaV = Convert.ToDateTime(FechaCitaTxb.Text);
-            TimeSpan horaV = TimeSpan.Parse(HoraCitaTxb.Text);
+            DateTime fechaV = bunifuDatepicker1.Value;
+            TimeSpan horaV = TimeSpan.Parse(dateTimePicker1.Text);
 
             cita.setIdPaciente(idPacienteV);
             cita.setFecha(fechaV);
@@ -186,8 +160,8 @@ namespace SistemaConsultorioMedico
             bunifuCustomDataGrid2.DataSource = dt;
 
             PacienteCitaTxb.Text = " ";
-            FechaCitaTxb.Text = " ";
-            HoraCitaTxb.Text = " ";
+            bunifuDatepicker1.Value = DateTime.Now.Date;
+            dateTimePicker1.Text = String.Format("{0:G}", DateTime.Now);
             folioCitaLb.Text = "";
             PacienteCitaTxb.Enabled = true;
 
@@ -202,8 +176,8 @@ namespace SistemaConsultorioMedico
 
             String folioCita = folioCitaLb.Text;
             int idPacienteV = int.Parse(PacienteCitaTxb.Text);
-            DateTime fechaV = Convert.ToDateTime(FechaCitaTxb.Text);
-            TimeSpan horaV = TimeSpan.Parse(HoraCitaTxb.Text);
+            DateTime fechaV = bunifuDatepicker1.Value;
+            TimeSpan horaV = TimeSpan.Parse(dateTimePicker1.Text);
 
             cita.setIdPaciente(idPacienteV);
             cita.setFecha(fechaV);
@@ -217,8 +191,8 @@ namespace SistemaConsultorioMedico
             bunifuCustomDataGrid2.DataSource = dt;
 
             PacienteCitaTxb.Text = " ";
-            FechaCitaTxb.Text = " ";
-            HoraCitaTxb.Text = " ";
+            bunifuDatepicker1.Value = DateTime.Now.Date;
+            dateTimePicker1.Text = String.Format("{0:G}", DateTime.Now);
             folioCitaLb.Text = "";
             PacienteCitaTxb.Enabled = true;
 
@@ -229,9 +203,9 @@ namespace SistemaConsultorioMedico
 
             indice = bunifuCustomDataGrid2.CurrentRow.Index;
             PacienteCitaTxb.Text = bunifuCustomDataGrid2[0, indice].Value.ToString();
-            FechaCitaTxb.Text = bunifuCustomDataGrid2[1, indice].Value.ToString();
-            HoraCitaTxb.Text = bunifuCustomDataGrid2[2, indice].Value.ToString();
-            folioCitaLb.Text=bunifuCustomDataGrid2[3, indice].Value.ToString();
+            bunifuDatepicker1.Value = Convert.ToDateTime(bunifuCustomDataGrid2[2, indice].Value);
+            dateTimePicker1.Text = bunifuCustomDataGrid2[3, indice].Value.ToString();
+            folioCitaLb.Text=bunifuCustomDataGrid2[4, indice].Value.ToString();
 
             PacienteCitaTxb.Enabled = false;
 
@@ -241,6 +215,24 @@ namespace SistemaConsultorioMedico
         {
         }
 
+        private void bunifuCustomDataGrid2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
+
+        private void bunifuDatepicker1_onValueChanged(object sender, EventArgs e)
+        {
+          
+        }
+   
+
+        private void bunifuDatepicker1_onValueChanged_1(object sender, EventArgs e)
+        {
+            if (bunifuDatepicker1.Value < DateTime.Now.Date)
+            {
+                MessageBox.Show("fecha no valida");
+                bunifuDatepicker1.Value = DateTime.Now.Date;
+            }
+        }
     }
 }
