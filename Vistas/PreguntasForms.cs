@@ -483,10 +483,10 @@ namespace SistemaConsultorioMedico
             {
                 case 0:
                     if (dato13OpcTbx.Enabled == true) dato13OpcTbx.Enabled = false;
+                    if (dato13Opc2Tbx.Enabled == true) dato13Opc2Tbx.Enabled = false;
                     dato13OpcTbx.Text = "";
                     dato13OpcTbx.LineIdleColor = Color.Purple;
                     dato13OpcTbx.LineMouseHoverColor = Color.Purple;
-                    if (dato13Opc2Tbx.Enabled == true) dato13Opc2Tbx.Enabled = false;
                     dato13Opc2Tbx.Text = "";
                     dato13Opc2Tbx.LineIdleColor = Color.Purple;
                     dato13Opc2Tbx.LineMouseHoverColor = Color.Purple;
@@ -533,10 +533,10 @@ namespace SistemaConsultorioMedico
             {
                 case 0:
                     if (dato14OpcTbx.Enabled == true) dato14OpcTbx.Enabled = false;
+                    if (dato14Opc2Tbx.Enabled == true) dato14Opc2Tbx.Enabled = false;
                     dato14OpcTbx.Text = "";
                     dato14OpcTbx.LineIdleColor = Color.Purple;
                     dato14OpcTbx.LineMouseHoverColor = Color.Purple;
-                    if (dato14Opc2Tbx.Enabled == true) dato14Opc2Tbx.Enabled = false;
                     dato14Opc2Tbx.Text = "";
                     dato14Opc2Tbx.LineIdleColor = Color.Purple;
                     dato14Opc2Tbx.LineMouseHoverColor = Color.Purple;
@@ -583,18 +583,18 @@ namespace SistemaConsultorioMedico
             {
                 case 0:
                     if (dato15OpcTbx.Enabled == true) dato15OpcTbx.Enabled = false;
+                    if (dato15Opc2Tbx.Enabled == true) dato15Opc2Tbx.Enabled = false;
+                    if (dato15Opc3Tbx.Enabled == true) dato15Opc3Tbx.Enabled = false;
+                    if (dato15Opc4Tbx.Enabled == true) dato15Opc4Tbx.Enabled = false;
                     dato15OpcTbx.Text = "";
                     dato15OpcTbx.LineIdleColor = Color.Purple;
                     dato15OpcTbx.LineMouseHoverColor = Color.Purple;
-                    if (dato15Opc2Tbx.Enabled == true) dato15Opc2Tbx.Enabled = false;
                     dato15Opc2Tbx.Text = "";
                     dato15Opc2Tbx.LineIdleColor = Color.Purple;
                     dato15Opc2Tbx.LineMouseHoverColor = Color.Purple;
-                    if (dato15Opc3Tbx.Enabled == true) dato15Opc3Tbx.Enabled = false;
                     dato15Opc3Tbx.Text = "";
                     dato15Opc3Tbx.LineIdleColor = Color.Purple;
                     dato15Opc3Tbx.LineMouseHoverColor = Color.Purple;
-                    if (dato15Opc4Tbx.Enabled == true) dato15Opc4Tbx.Enabled = false;
                     dato15Opc4Tbx.Text = "";
                     dato15Opc4Tbx.LineIdleColor = Color.Purple;
                     dato15Opc4Tbx.LineMouseHoverColor = Color.Purple;
@@ -661,15 +661,14 @@ namespace SistemaConsultorioMedico
             else
             {
                 GuardarBtn.Enabled = false;
+                EliminarBtn.Enabled = true;
                 if (validarCampos())
                 {
                     ModificarBtn.Enabled = true;
-                    EliminarBtn.Enabled = true;
                 }
                 else
                 {
                     ModificarBtn.Enabled = false;
-                    EliminarBtn.Enabled = false;
                 }
             }
         }
@@ -706,12 +705,10 @@ namespace SistemaConsultorioMedico
                     if (validarCampos())
                     {
                         ModificarBtn.Enabled = true;
-                        EliminarBtn.Enabled = true;
                     }
                     else
                     {
                         ModificarBtn.Enabled = false;
-                        EliminarBtn.Enabled = false;
                     }
                 }
             }
@@ -722,6 +719,7 @@ namespace SistemaConsultorioMedico
                 dato12Tbx.LineFocusedColor = Color.Crimson;
                 errorDigit.Visible = true;
                 GuardarBtn.Enabled = false;
+                ModificarBtn.Enabled = false;
             }
         }
 
@@ -733,13 +731,21 @@ namespace SistemaConsultorioMedico
                 dato16Tbx.LineMouseHoverColor = Color.Blue;
                 dato16Tbx.LineFocusedColor = Color.Blue;
                 errorDigit.Visible = false;
-                if (validarCampos())
+                if (validarCampos() && flagME)
                 {
                     GuardarBtn.Enabled = true;
                 }
                 else
                 {
                     GuardarBtn.Enabled = false;
+                    if (validarCampos())
+                    {
+                        ModificarBtn.Enabled = true;
+                    }
+                    else
+                    {
+                        ModificarBtn.Enabled = false;
+                    }
                 }
             }
             else
@@ -749,6 +755,7 @@ namespace SistemaConsultorioMedico
                 dato16Tbx.LineFocusedColor = Color.Crimson;
                 errorDigit2.Visible = true;
                 GuardarBtn.Enabled = false;
+                ModificarBtn.Enabled = false;
             }
         }
 
