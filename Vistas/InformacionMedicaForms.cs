@@ -26,10 +26,10 @@ namespace SistemaConsultorioMedico
         {
             if (validarCampos())
             {
-                Modelos.InformacionMedica im1 = new Modelos.InformacionMedica(idPaciente, dato1Txb.Text, dato2Tbx.Text, dato3Tbx.Text, dato4Tbx.Text,
-                                                                        dato4OpcTbx.Text, dato5Tbx.Text, dato5OpcTbx.Text, dato6Tbx.Text, dato6OpcTbx.Text,
-                                                                        dato7Tbx.Text, dato7OpcTbx.Text, dato8Tbx.Text, dato8OpcTbx.Text,
-                                                                        dato9Tbx.Text, dato9OpcTbx.Text);
+                Modelos.InformacionMedica im1 = new Modelos.InformacionMedica(idPaciente, dato1Txb.Text, dato2Tbx.Text, dato3Tbx.Text, dato4ComboBox.selectedValue,
+                                                                        dato4OpcTbx.Text, dato5ComboBox.selectedValue, dato5OpcTbx.Text, dato6ComboBox.selectedValue, dato6OpcTbx.Text,
+                                                                        dato7ComboBox.selectedValue, dato7OpcTbx.Text, dato8ComboBox.selectedValue, dato8OpcTbx.Text,
+                                                                        dato9ComboBox.selectedValue, dato9OpcTbx.Text);
                 Form AbrirPreguntas = new Preguntas(im1, idPaciente);
                 AbrirPreguntas.Show();
             }
@@ -39,287 +39,10 @@ namespace SistemaConsultorioMedico
             }
         }
 
-        private void RecomendacionTxb_MouseEnter(object sender, EventArgs e)
-        {
-            if(dato1Txb.Text == "¿QUIEN LA RECOMENDO?")
-            {
-                dato1Txb.Text = "";
-                dato1Txb.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void RecomendacionTxb_MouseLeave(object sender, EventArgs e)
-        {
-            if (dato1Txb.Text == "")
-            {
-                dato1Txb.Text = "¿QUIEN LA RECOMENDO?";
-                dato1Txb.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void DoctorAnteriorTxb_MouseEnter(object sender, EventArgs e)
-        {
-            if (dato2Tbx.Text == "¿QUE GINECOLOGO CONSULTABA ANTERIORMENTE?")
-            {
-                dato2Tbx.Text = "";
-                dato2Tbx.ForeColor = Color.DarkSlateGray;
-            }
-            
-        }
-
-        private void DoctorAnteriorTxb_MouseLeave(object sender, EventArgs e)
-        {
-            if (dato2Tbx.Text == "")
-            {
-                dato2Tbx.Text = "¿QUE GINECOLOGO CONSULTABA ANTERIORMENTE?";
-                dato2Tbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void MotivoPrimeraCitaTbx_MouseEnter(object sender, EventArgs e)
-        {
-            if (dato3Tbx.Text == "MOTIVO DE ESTA PRIMERA CONSULTA")
-            {
-                dato3Tbx.Text = "";
-                dato3Tbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void MotivoPrimeraCitaTbx_MouseLeave(object sender, EventArgs e)
-        {
-            if (dato3Tbx.Text == "")
-            {
-                dato3Tbx.Text = "MOTIVO DE ESTA PRIMERA CONSULTA";
-                dato3Tbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void AlergiaOEnfermedadCronitxb_MouseEnter(object sender, EventArgs e)
-        {
-            if (dato4Tbx.Text == "¿PADECE USTED DE ALGUNA ALERGIA O ENFERMEDAD CRONICA?")
-            {
-                dato4Tbx.Text = "";
-                dato4Tbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void AlergiaOEnfermedadCronitxb_MouseLeave(object sender, EventArgs e)
-        {
-            if (dato4Tbx.Text == "")
-            {
-                dato4Tbx.Text = "¿PADECE USTED DE ALGUNA ALERGIA O ENFERMEDAD CRONICA?";
-                dato4Tbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void CualtbxAlergia_MouseEnter(object sender, EventArgs e)
-        {
-            if (dato4OpcTbx.Text == "¿CUAL?")
-            {
-                dato4OpcTbx.Text = "";
-                dato4OpcTbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void CualtbxAlergia_MouseLeave(object sender, EventArgs e)
-        {
-            if (dato4OpcTbx.Text == "")
-            {
-                dato4OpcTbx.Text = "¿CUAL?";
-                dato4OpcTbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void CualTbxAnimales_MouseEnter(object sender, EventArgs e)
-        {
-            if (dato5OpcTbx.Text == "¿CUAL?")
-            {
-                dato5OpcTbx.Text = "";
-                dato5OpcTbx.ForeColor = Color.DarkSlateGray;
-            }
-
-        }
-
-        private void CualTbxAnimales_MouseLeave(object sender, EventArgs e)
-        {
-            if (dato5OpcTbx.Text == "")
-            {
-                dato5OpcTbx.Text = "¿CUAL?";
-                dato5OpcTbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void CualTxbMedicamento_MouseEnter(object sender, EventArgs e)
-        {
-            if (dato6OpcTbx.Text == "¿CUAL?")
-            {
-                dato6OpcTbx.Text = "";
-                dato6OpcTbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void CualTxbMedicamento_MouseLeave(object sender, EventArgs e)
-        {
-            if (dato6OpcTbx.Text == "")
-            {
-                dato6OpcTbx.Text = "¿CUAL?";
-                dato6OpcTbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void CualTxbAlergiaMedicamento_MouseEnter(object sender, EventArgs e)
-        {
-            if (dato7OpcTbx.Text == "¿CUAL?")
-            {
-                dato7OpcTbx.Text = "";
-                dato7OpcTbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void CualTxbAlergiaMedicamento_MouseLeave(object sender, EventArgs e)
-        {
-            if (dato7OpcTbx.Text == "")
-            {
-                dato7OpcTbx.Text = "¿CUAL?";
-                dato7OpcTbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void CuaTxbCirugia_MouseEnter(object sender, EventArgs e)
-        {
-            if (dato8OpcTbx.Text == "¿CUAL?")
-            {
-                dato8OpcTbx.Text = "";
-                dato8OpcTbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void CuaTxbCirugia_MouseLeave(object sender, EventArgs e)
-        {
-            if (dato8OpcTbx.Text == "")
-            {
-                dato8OpcTbx.Text = "¿CUAL?";
-                dato8OpcTbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void CualTxbComplicacion_MouseEnter(object sender, EventArgs e)
-        {
-            if (dato9OpcTbx.Text == "¿CUAL?")
-            {
-                dato9OpcTbx.Text = "";
-                dato9OpcTbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void CualTxbComplicacion_MouseLeave(object sender, EventArgs e)
-        {
-            if (dato9OpcTbx.Text == "")
-            {
-                dato9OpcTbx.Text = "¿CUAL?";
-                dato9OpcTbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void AnimalesDomesticosTxb_MouseEnter(object sender, EventArgs e)
-        {
-            if (dato5Tbx.Text == "¿TIENE ANIMALES DOMESTICOS COMO PERROS, GATOS, PAJAROS, ETC..?")
-            {
-                dato5Tbx.Text = "";
-                dato5Tbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void AnimalesDomesticosTxb_MouseLeave(object sender, EventArgs e)
-        {
-            if (dato5Tbx.Text == "")
-            {
-                dato5Tbx.Text = "¿TIENE ANIMALES DOMESTICOS COMO PERROS, GATOS, PAJAROS, ETC..?";
-                dato5Tbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void MedicamentoRegularidadTxb_MouseEnter(object sender, EventArgs e)
-        {
-            if (dato6Tbx.Text == "¿TOMA ALGUN MEDICAMENTO CON REGULARIDAD?")
-            {
-                dato6Tbx.Text = "";
-                dato6Tbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void MedicamentoRegularidadTxb_MouseLeave(object sender, EventArgs e)
-        {
-            if (dato6Tbx.Text == "")
-            {
-                dato6Tbx.Text = "¿TOMA ALGUN MEDICAMENTO CON REGULARIDAD?";
-                dato6Tbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void AlergiaAlgunMedicamentoTxb_MouseEnter(object sender, EventArgs e)
-        {
-            if (dato7Tbx.Text == "¿ES ALERGICA A ALGUN MEDICAMENTO?")
-            {
-                dato7Tbx.Text = "";
-                dato7Tbx.ForeColor = Color.DarkSlateGray;
-            }
-           
-        }
-
-        private void AlergiaAlgunMedicamentoTxb_MouseLeave(object sender, EventArgs e)
-        {
-            if (dato7Tbx.Text == "")
-            {
-                dato7Tbx.Text = "¿ES ALERGICA A ALGUN MEDICAMENTO?";
-                dato7Tbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void SometidaACirugiaTxb_MouseEnter(object sender, EventArgs e)
-        {
-
-            if (dato8Tbx.Text == "¿HA SIDO SOMETIDA A ALGUNA CIRUGIA?")
-            {
-                dato8Tbx.Text = "";
-                dato8Tbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void SometidaACirugiaTxb_MouseLeave(object sender, EventArgs e)
-        {
-            if (dato8Tbx.Text == "")
-            {
-                dato8Tbx.Text = "¿HA SIDO SOMETIDA A ALGUNA CIRUGIA?";
-                dato8Tbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void ComplicacionTxb_MouseEnter(object sender, EventArgs e)
-        {
-
-            if (dato9Tbx.Text == "¿HUBO ALGUNA COMPLICACION?")
-            {
-                dato9Tbx.Text = "";
-                dato9Tbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void ComplicacionTxb_MouseLeave(object sender, EventArgs e)
-        {
-            if (dato9Tbx.Text == "")
-            {
-                dato9Tbx.Text = "¿HUBO ALGUNA COMPLICACION?";
-                dato9Tbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
         private bool validarCampos()
         {
-            if (dato1Txb.Text != "¿QUIEN LA RECOMENDO?" && dato2Tbx.Text != "¿QUE GINECOLOGO CONSULTABA ANTERIORMENTE?" && dato3Tbx.Text != "MOTIVO DE ESTA PRIMERA CONSULTA" && dato4Tbx.Text != "¿PADECE USTED DE ALGUNA ALERGIA O ENFERMEDAD CRONICA?" && dato4OpcTbx.Text != "¿CUAL?" &&
-                dato5Tbx.Text != "¿TIENE ANIMALES DOMESTICOS COMO PERROS, GATOS, PAJAROS, ETC..?" && dato5OpcTbx.Text != "¿CUAL?" && dato6Tbx.Text != "¿TOMA ALGUN MEDICAMENTO CON REGULARIDAD?" && dato6OpcTbx.Text != "¿CUAL?" && dato7Tbx.Text != "¿ES ALERGICA A ALGUN MEDICAMENTO?" &&
-                dato7OpcTbx.Text != "¿CUAL?" && dato8Tbx.Text != "¿HA SIDO SOMETIDA A ALGUNA CIRUGIA?" && dato8OpcTbx.Text != "¿CUAL?" && dato9Tbx.Text != "¿HUBO ALGUNA COMPLICACION?" && dato9OpcTbx.Text != "¿CUAL?" && dato1Txb.Text != "" && dato2Tbx.Text != "" && dato3Tbx.Text != "" && 
-                dato4Tbx.Text != "" && dato4OpcTbx.Text != "" && dato5Tbx.Text != "" && dato5OpcTbx.Text != "" && dato6Tbx.Text != "" && dato6OpcTbx.Text != "" && dato7Tbx.Text != "" && dato7OpcTbx.Text != "" && dato8Tbx.Text != "" && dato8OpcTbx.Text != "" && dato9Tbx.Text != "" && dato9OpcTbx.Text != "")
+            if (dato1Txb.Text != "" && dato2Tbx.Text != "" && dato3Tbx.Text != "" && dato4OpcTbx.Text != "" && dato5OpcTbx.Text != "" && dato6OpcTbx.Text != "" &&
+                dato7OpcTbx.Text != "" && dato8OpcTbx.Text != "" && dato9OpcTbx.Text != "")
             {
                 return true;
             }
@@ -331,7 +54,7 @@ namespace SistemaConsultorioMedico
 
         public void reestablecerCampos()
         {
-            dato1Txb.Text = "¿QUIEN LA RECOMENDO?";
+            /*dato1Txb.Text = "¿QUIEN LA RECOMENDO?";
             dato2Tbx.Text = "¿QUE GINECOLOGO CONSULTABA ANTERIORMENTE?";
             dato3Tbx.Text = "MOTIVO DE ESTA PRIMERA CONSULTA";
             dato4Tbx.Text = "¿PADECE USTED DE ALGUNA ALERGIA O ENFERMEDAD CRONICA?";
@@ -345,12 +68,12 @@ namespace SistemaConsultorioMedico
             dato8Tbx.Text = "¿HA SIDO SOMETIDA A ALGUNA CIRUGIA?";
             dato8OpcTbx.Text = "¿CUAL?";
             dato9Tbx.Text = "¿HUBO ALGUNA COMPLICACION?";
-            dato9OpcTbx.Text = "¿CUAL?";
+            dato9OpcTbx.Text = "¿CUAL?";*/
         }
 
         public void llenarInformacion(int idPaciente)
         {
-            String query = "SELECT * FROM INFORMACIONMEDICA WHERE idPaciente = @idPaciente";
+            /*String query = "SELECT * FROM INFORMACIONMEDICA WHERE idPaciente = @idPaciente";
             try
             {
                 using(SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
@@ -386,7 +109,7 @@ namespace SistemaConsultorioMedico
             finally
             {
                 Controladores.ConexionController.Desconectar();
-            }
+            }*/
         }
 
         private void buscarBtn_Click(object sender, EventArgs e)
@@ -405,6 +128,261 @@ namespace SistemaConsultorioMedico
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dato4ItemOpc(object sender, EventArgs e)
+        {
+            var opc = dato4ComboBox.selectedIndex;
+            switch (opc)
+            {
+                case 0:
+                    dato4OpcTbx.Enabled = false;
+                    dato4OpcTbx.LineIdleColor = Color.Purple;
+                    dato4OpcTbx.LineMouseHoverColor = Color.Purple;
+                    dato4OpcTbx.Text = "¿CUAL?";
+                    break;
+                case 1:
+                    dato4OpcTbx.Enabled = true;
+                    break;
+                case 2:
+                    dato4OpcTbx.Enabled = true;
+                    dato4OpcTbx.Enabled = false;
+                    break;
+            }
+        }
+
+        private void dato4OpcTbx_EnabledChanged(object sender, EventArgs e)
+        {
+            if(dato4OpcTbx.Enabled == true)
+            {
+                dato4OpcTbx.LineIdleColor = Color.Purple;
+                dato4OpcTbx.LineMouseHoverColor = Color.Blue;
+                dato4OpcTbx.Text = "";
+                dato4OpcTbx.HintText = "¿CUAL?";
+            }
+            else
+            {
+                dato4OpcTbx.LineIdleColor = Color.Gray;
+                dato4OpcTbx.LineMouseHoverColor = Color.Gray;
+                dato4OpcTbx.Text = "ㅤㅤ";
+            }
+        }
+
+        private void dato5ItemOpc(object sender, EventArgs e)
+        {
+            var opc = dato5ComboBox.selectedIndex;
+            switch (opc)
+            {
+                case 0:
+                    dato5OpcTbx.Enabled = false;
+                    dato5OpcTbx.LineIdleColor = Color.Purple;
+                    dato5OpcTbx.LineMouseHoverColor = Color.Purple;
+                    dato5OpcTbx.Text = "¿CUAL?";
+                    break;
+                case 1:
+                    dato5OpcTbx.Enabled = true;
+                    break;
+                case 2:
+                    dato5OpcTbx.Enabled = true;
+                    dato5OpcTbx.Enabled = false;
+                    break;
+            }
+        }
+
+        private void dato5OpcTbx_EnabledChanged(object sender, EventArgs e)
+        {
+            if (dato5OpcTbx.Enabled == true)
+            {
+                dato5OpcTbx.LineIdleColor = Color.Purple;
+                dato5OpcTbx.LineMouseHoverColor = Color.Blue;
+                dato5OpcTbx.Text = "";
+                dato5OpcTbx.HintText = "¿CUAL?";
+            }
+            else
+            {
+                dato5OpcTbx.LineIdleColor = Color.Gray;
+                dato5OpcTbx.LineMouseHoverColor = Color.Gray;
+                dato5OpcTbx.Text = "ㅤㅤ";
+            }
+        }
+
+        private void dato6ItemOpc(object sender, EventArgs e)
+        {
+            var opc = dato6ComboBox.selectedIndex;
+            switch (opc)
+            {
+                case 0:
+                    dato6OpcTbx.Enabled = false;
+                    dato6OpcTbx.LineIdleColor = Color.Purple;
+                    dato6OpcTbx.LineMouseHoverColor = Color.Purple;
+                    dato6OpcTbx.Text = "¿CUAL?";
+                    break;
+                case 1:
+                    dato6OpcTbx.Enabled = true;
+                    break;
+                case 2:
+                    dato6OpcTbx.Enabled = true;
+                    dato6OpcTbx.Enabled = false;
+                    break;
+            }
+        }
+
+        private void dato6OpcTbx_EnabledChanged(object sender, EventArgs e)
+        {
+            if (dato6OpcTbx.Enabled == true)
+            {
+                dato6OpcTbx.LineIdleColor = Color.Purple;
+                dato6OpcTbx.LineMouseHoverColor = Color.Blue;
+                dato6OpcTbx.Text = "";
+                dato6OpcTbx.HintText = "¿CUAL?";
+            }
+            else
+            {
+                dato6OpcTbx.LineIdleColor = Color.Gray;
+                dato6OpcTbx.LineMouseHoverColor = Color.Gray;
+                dato6OpcTbx.Text = "ㅤㅤ";
+            }
+        }
+
+        private void dato7ItemOpc(object sender, EventArgs e)
+        {
+            var opc = dato7ComboBox.selectedIndex;
+            switch (opc)
+            {
+                case 0:
+                    dato7OpcTbx.Enabled = false;
+                    dato7OpcTbx.LineIdleColor = Color.Purple;
+                    dato7OpcTbx.LineMouseHoverColor = Color.Purple;
+                    dato7OpcTbx.Text = "¿CUAL?";
+                    break;
+                case 1:
+                    dato7OpcTbx.Enabled = true;
+                    break;
+                case 2:
+                    dato7OpcTbx.Enabled = true;
+                    dato7OpcTbx.Enabled = false;
+                    break;
+            }
+        }
+
+        private void dato7OpcTbx_EnabledChanged(object sender, EventArgs e)
+        {
+            if (dato7OpcTbx.Enabled == true)
+            {
+                dato7OpcTbx.LineIdleColor = Color.Purple;
+                dato7OpcTbx.LineMouseHoverColor = Color.Blue;
+                dato7OpcTbx.Text = "";
+                dato7OpcTbx.HintText = "¿CUAL?";
+            }
+            else
+            {
+                dato7OpcTbx.LineIdleColor = Color.Gray;
+                dato7OpcTbx.LineMouseHoverColor = Color.Gray;
+                dato7OpcTbx.Text = "ㅤㅤ";
+            }
+        }
+
+        private void dato8ItemOpc(object sender, EventArgs e)
+        {
+            var opc = dato8ComboBox.selectedIndex;
+            switch (opc)
+            {
+                case 0:
+                    dato8OpcTbx.Enabled = false;
+                    dato8OpcTbx.LineIdleColor = Color.Purple;
+                    dato8OpcTbx.LineMouseHoverColor = Color.Purple;
+                    dato8OpcTbx.Text = "¿CUAL?";
+                    break;
+                case 1:
+                    dato8OpcTbx.Enabled = true;
+                    break;
+                case 2:
+                    dato8OpcTbx.Enabled = true;
+                    dato8OpcTbx.Enabled = false;
+                    dato9ComboBox.selectedIndex = 2;
+                    break;
+            }
+        }
+
+        private void dato8OpcTbx_EnabledChanged(object sender, EventArgs e)
+        {
+            if (dato8OpcTbx.Enabled == true)
+            {
+                dato8OpcTbx.LineIdleColor = Color.Purple;
+                dato8OpcTbx.LineMouseHoverColor = Color.Blue;
+                dato8OpcTbx.Text = "";
+                dato8OpcTbx.HintText = "¿CUAL?";
+            }
+            else
+            {
+                dato8OpcTbx.LineIdleColor = Color.Gray;
+                dato8OpcTbx.LineMouseHoverColor = Color.Gray;
+                dato8OpcTbx.Text = "ㅤㅤ";
+            }
+        }
+
+        private void dato9ItemOpc(object sender, EventArgs e)
+        {
+            var opc = dato9ComboBox.selectedIndex;
+            switch (opc)
+            {
+                case 0:
+                    dato9OpcTbx.Enabled = false;
+                    dato9OpcTbx.LineIdleColor = Color.Purple;
+                    dato9OpcTbx.LineMouseHoverColor = Color.Purple;
+                    dato9OpcTbx.Text = "¿CUAL?";
+                    break;
+                case 1:
+                    dato9OpcTbx.Enabled = true;
+                    break;
+                case 2:
+                    dato9OpcTbx.Enabled = true;
+                    dato9OpcTbx.Enabled = false;
+                    break;
+            }
+        }
+
+        private void dato9OpcTbx_EnabledChanged(object sender, EventArgs e)
+        {
+            if (dato9OpcTbx.Enabled == true)
+            {
+                dato9OpcTbx.LineIdleColor = Color.Purple;
+                dato9OpcTbx.LineMouseHoverColor = Color.Blue;
+                dato9OpcTbx.Text = "";
+                dato9OpcTbx.HintText = "¿CUAL?";
+            }
+            else
+            {
+                dato9OpcTbx.LineIdleColor = Color.Gray;
+                dato9OpcTbx.LineMouseHoverColor = Color.Gray;
+                dato9OpcTbx.Text = "ㅤㅤ";
+            }
+        }
+
+        private void bloqueoBtnMas(object sender, EventArgs e)
+        {
+            if (validarCampos())
+            {
+                MasBtn.Enabled = true;
+            }
+            else
+            {
+                MasBtn.Enabled = false;
+            }
+        }
+
+        private void MasBtn_EnabledChanged(object sender, EventArgs e)
+        {
+            if (MasBtn.Enabled == true)
+            {
+                MasBtn.Padding = new Padding(0);
+                MasBtn.IdleFillColor = Color.White;
+            }
+            else
+            {
+                MasBtn.Padding = new Padding(58, 10, 0, 10);
+                MasBtn.IdleFillColor = Color.Gray;
+            }
         }
     }
 }
