@@ -147,7 +147,7 @@ namespace SistemaConsultorioMedico
             }
             else if(IdPacienteLbl.Visible == true)
             {
-                int idPaciente = int.Parse(IdPacienteLbl.Text);
+                int idPaciente = int.Parse(IdPacienteLbl.Text.Substring(13));
                 Form VInfoMedica = new InformacionMedica(idPaciente);
                 this.Hide();
                 VInfoMedica.Show();

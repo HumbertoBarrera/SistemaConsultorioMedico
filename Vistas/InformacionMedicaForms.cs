@@ -54,26 +54,26 @@ namespace SistemaConsultorioMedico
 
         public void reestablecerCampos()
         {
-            /*dato1Txb.Text = "¿QUIEN LA RECOMENDO?";
-            dato2Tbx.Text = "¿QUE GINECOLOGO CONSULTABA ANTERIORMENTE?";
-            dato3Tbx.Text = "MOTIVO DE ESTA PRIMERA CONSULTA";
-            dato4Tbx.Text = "¿PADECE USTED DE ALGUNA ALERGIA O ENFERMEDAD CRONICA?";
-            dato4OpcTbx.Text = "¿CUAL?";
-            dato5Tbx.Text = "¿TIENE ANIMALES DOMESTICOS COMO PERROS, GATOS, PAJAROS, ETC..?";
-            dato5OpcTbx.Text = "¿CUAL?";
-            dato6Tbx.Text = "¿TOMA ALGUN MEDICAMENTO CON REGULARIDAD?";
-            dato6OpcTbx.Text = "¿CUAL?";
-            dato7Tbx.Text = "¿ES ALERGICA A ALGUN MEDICAMENTO?";
-            dato7OpcTbx.Text = "¿CUAL?";
-            dato8Tbx.Text = "¿HA SIDO SOMETIDA A ALGUNA CIRUGIA?";
-            dato8OpcTbx.Text = "¿CUAL?";
-            dato9Tbx.Text = "¿HUBO ALGUNA COMPLICACION?";
-            dato9OpcTbx.Text = "¿CUAL?";*/
+            dato1Txb.Text = "";
+            dato2Tbx.Text = "";
+            dato3Tbx.Text = "";
+            dato4ComboBox.selectedIndex = 0;
+            dato4OpcTbx.Text = "";
+            dato5ComboBox.selectedIndex = 0;
+            dato5OpcTbx.Text = "";
+            dato6ComboBox.selectedIndex = 0;
+            dato6OpcTbx.Text = "";
+            dato7ComboBox.selectedIndex = 0;
+            dato7OpcTbx.Text = "";
+            dato8ComboBox.selectedIndex = 0;
+            dato8OpcTbx.Text = "";
+            dato9ComboBox.selectedIndex = 0;
+            dato9OpcTbx.Text = "";
         }
 
         public void llenarInformacion(int idPaciente)
         {
-            /*String query = "SELECT * FROM INFORMACIONMEDICA WHERE idPaciente = @idPaciente";
+            String query = "SELECT * FROM INFORMACIONMEDICA WHERE idPaciente = @idPaciente";
             try
             {
                 using(SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
@@ -86,17 +86,17 @@ namespace SistemaConsultorioMedico
                             dato1Txb.Text = leer["dato1"].ToString();
                             dato2Tbx.Text = leer["dato2"].ToString();
                             dato3Tbx.Text = leer["dato3"].ToString();
-                            dato4Tbx.Text = leer["dato4"].ToString();
+                            dato4ComboBox.selectedIndex = getIndex(leer["dato4"].ToString());
                             dato4OpcTbx.Text = leer["dato4Opc"].ToString();
-                            dato5Tbx.Text = leer["dato5"].ToString();
+                            dato5ComboBox.selectedIndex = getIndex(leer["dato5"].ToString());
                             dato5OpcTbx.Text = leer["dato5Opc"].ToString();
-                            dato6Tbx.Text = leer["dato6"].ToString();
+                            dato6ComboBox.selectedIndex = getIndex(leer["dato6"].ToString());
                             dato6OpcTbx.Text = leer["dato6Opc"].ToString();
-                            dato7Tbx.Text = leer["dato7"].ToString();
+                            dato7ComboBox.selectedIndex = getIndex(leer["dato7"].ToString());
                             dato7OpcTbx.Text = leer["dato7Opc"].ToString();
-                            dato8Tbx.Text = leer["dato8"].ToString();
+                            dato8ComboBox.selectedIndex = getIndex(leer["dato8"].ToString());
                             dato8OpcTbx.Text = leer["dato8Opc"].ToString();
-                            dato9Tbx.Text = leer["dato9"].ToString();
+                            dato9ComboBox.selectedIndex = getIndex(leer["dato9"].ToString());
                             dato9OpcTbx.Text = leer["dato9Opc"].ToString();
                         }
                     }
@@ -109,7 +109,19 @@ namespace SistemaConsultorioMedico
             finally
             {
                 Controladores.ConexionController.Desconectar();
-            }*/
+            }
+        }
+
+        public int getIndex(String text)
+        {
+            if(String.Equals(text, "sí", StringComparison.OrdinalIgnoreCase))
+            {
+                return 1;
+            }
+            else
+            {
+                return 2;
+            }
         }
 
         private void buscarBtn_Click(object sender, EventArgs e)

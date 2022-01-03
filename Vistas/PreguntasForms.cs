@@ -33,14 +33,14 @@ namespace SistemaConsultorioMedico
 
         private void GuardarBtn_Click(object sender, EventArgs e)
         {
-            /*if (validarCampos())
+            if (validarCampos())
             {
                 DateTime hoy = DateTime.Today;
-                Modelos.InformacionMedica im2 = new Modelos.InformacionMedica(obtenerEnfermedadFamiliar(), dato10OpcTbx.Text, dato11Tbx.Text, dato11OpcTbx.Text,
-                                                                            dato12Tbx.Text, dato13Tbx.Text, dato13OpcTbx.Text, dato13Opc2Tbx.Text, dato14Tbx.Text,
-                                                                            dato14OpcTbx.Text, dato14Opc2Tbx.Text, dato15Tbx.Text, dato15OpcTbx.Text,
+                Modelos.InformacionMedica im2 = new Modelos.InformacionMedica(obtenerEnfermedadFamiliar(), dato10OpcTbx.Text, dato11ComboBox.selectedValue, dato11OpcTbx.Text,
+                                                                            dato12Tbx.Text, dato13ComboBox.selectedValue, dato13OpcTbx.Text, dato13Opc2Tbx.Text, dato14ComboBox.selectedValue,
+                                                                            dato14OpcTbx.Text, dato14Opc2Tbx.Text, dato15ComboBox.selectedValue, dato15OpcTbx.Text,
                                                                             dato15Opc2Tbx.Text, dato15Opc3Tbx.Text, dato15Opc4Tbx.Text, dato16Tbx.Text,
-                                                                            dato17Tbx.Text, dato18Tbx.Text, hoy);
+                                                                            dato17ComboBox.selectedValue, dato18Tbx.Text, hoy);
                 Controladores.InformacionMedicaController.altaInformacionMedica(im1, im2);
                 reestablecerCampos();
                 this.Close();
@@ -48,7 +48,7 @@ namespace SistemaConsultorioMedico
             else
             {
                 MessageBox.Show("No pueden haber campos vacíos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }*/
+            }
         }
 
         private String obtenerEnfermedadFamiliar()
@@ -61,13 +61,17 @@ namespace SistemaConsultorioMedico
             {
                 return dato10Rbtn2.Text;
             }
-            else if (dato10Rbtn1.Checked == false && dato10Rbtn2.Checked == false && dato10Rbtn3.Checked == true && dato10Rbtn4.Checked == false && (dato10Tbx.Text == "OTRO" | dato10Tbx.Text == ""))
+            else if (dato10Rbtn1.Checked == false && dato10Rbtn2.Checked == false && dato10Rbtn3.Checked == true && dato10Rbtn4.Checked == false && dato10Tbx.Text == "" && dato10Rbtn5.Checked == false)
             {
                 return dato10Rbtn3.Text;
             }
-            else if (dato10Rbtn1.Checked == false && dato10Rbtn2.Checked == false && dato10Rbtn3.Checked == false && dato10Rbtn4.Checked == true && (dato10Tbx.Text == "OTRO" | dato10Tbx.Text == ""))
+            else if (dato10Rbtn1.Checked == false && dato10Rbtn2.Checked == false && dato10Rbtn3.Checked == false && dato10Rbtn4.Checked == true && dato10Tbx.Text == "" && dato10Rbtn5.Checked == false)
             {
                 return dato10Rbtn4.Text;
+            }
+            else if (dato10Rbtn1.Checked == false && dato10Rbtn2.Checked == false && dato10Rbtn3.Checked == false && dato10Rbtn4.Checked == false && dato10Tbx.Text == "" && dato10Rbtn5.Checked == true)
+            {
+                return dato10Rbtn5.Text;
             }
             else
             {
@@ -177,7 +181,7 @@ namespace SistemaConsultorioMedico
                 dato10Rbtn3.Checked = false;
                 dato10Rbtn4.Checked = false;
                 dato10Rbtn5.Checked = false;
-                dato10Tbx.HintText = "OTRO";
+                dato10Tbx.Text = "";
             }
             else if (dato10.Contains("CANCER DE SENOS"))
             {
@@ -186,7 +190,7 @@ namespace SistemaConsultorioMedico
                 dato10Rbtn3.Checked = false;
                 dato10Rbtn4.Checked = false;
                 dato10Rbtn5.Checked = false;
-                dato10Tbx.HintText = "OTRO";
+                dato10Tbx.Text = "";
             }
             else if (dato10.Contains("CANCER SERVICOUTERINO"))
             {
@@ -195,7 +199,7 @@ namespace SistemaConsultorioMedico
                 dato10Rbtn3.Checked = true;
                 dato10Rbtn4.Checked = false;
                 dato10Rbtn5.Checked = false;
-                dato10Tbx.HintText = "OTRO";
+                dato10Tbx.Text = "";
             }
             else if (dato10.Contains("EPILEPSIA"))
             {
@@ -204,7 +208,17 @@ namespace SistemaConsultorioMedico
                 dato10Rbtn3.Checked = false;
                 dato10Rbtn4.Checked = true;
                 dato10Rbtn5.Checked = false;
-                dato10Tbx.HintText = "OTRO";
+                dato10Tbx.Text = "";
+            }
+            else if (dato10.Contains("OMITIR"))
+            {
+                dato10Rbtn1.Checked = false;
+                dato10Rbtn2.Checked = false;
+                dato10Rbtn3.Checked = false;
+                dato10Rbtn4.Checked = false;
+                dato10OpcTbx.Text = "";
+                dato10Rbtn5.Checked = true;
+                //dato10OpcTbx.Enabled = false;
             }
             else
             {
@@ -218,34 +232,35 @@ namespace SistemaConsultorioMedico
 
         private void reestablecerCampos()
         {
-            /*dato10Rbtn1.Checked = false;
+            dato10Rbtn1.Checked = false;
             dato10Rbtn2.Checked = false;
             dato10Rbtn3.Checked = false;
             dato10Rbtn4.Checked = false;
-            dato10Tbx.Text = "OTRO";
-            dato10OpcTbx.Text = "¿QUIEN?";
-            dato11Tbx.Text = "¿TIENE ALGUN FAMILIAR INFERTIL?";
-            dato11OpcTbx.Text = "¿QUIEN?";
-            dato12Tbx.Text = "¿CUANTAS PERSONAS SEXUALES A TENIDO?";
-            dato13Tbx.Text = "¿FUMA?";
-            dato13OpcTbx.Text = "¿DESDE CUANDO?";
-            dato13Opc2Tbx.Text = "¿QUE TANTO DIARIO?";
-            dato14Tbx.Text = "¿TOMA?";
-            dato14OpcTbx.Text = "¿DESDE CUANDO?";
-            dato14Opc2Tbx.Text = "¿QUE TANTO DIARIO?";
-            dato15Tbx.Text = "¿ES ADICTA A DROGAS?";
-            dato15OpcTbx.Text = "¿CUALES?";
-            dato15Opc2Tbx.Text = "¿DESDE CUANDO?";
-            dato15Opc3Tbx.Text = "¿QUE TANTO DIARIAMENTE?";
-            dato15Opc4Tbx.Text = "¿MENSUALMENTE?";
-            dato16Tbx.Text = "¿CUANTAS PERSONAS DUERMEN EN SU CUARTO?";
-            dato17Tbx.Text = "¿CONSIDERA QUE SE ALIMENTA BIEN?";
-            dato18Tbx.Text = "¿ALGUN COMENTARIO AL RESPECTO?";*/
+            dato10Tbx.Text = "";
+            dato10Rbtn5.Checked = false;
+            dato10OpcTbx.Text = "";
+            dato11ComboBox.selectedIndex = 0;
+            dato11OpcTbx.Text = "";
+            dato12Tbx.Text = "";
+            dato13ComboBox.selectedIndex = 0;
+            dato13OpcTbx.Text = "";
+            dato13Opc2Tbx.Text = "";
+            dato14ComboBox.selectedIndex = 0;
+            dato14OpcTbx.Text = "";
+            dato14Opc2Tbx.Text = "";
+            dato15ComboBox.selectedIndex = 0;
+            dato15OpcTbx.Text = "";
+            dato15Opc2Tbx.Text = "";
+            dato15Opc3Tbx.Text = "";
+            dato15Opc4Tbx.Text = "";
+            dato16Tbx.Text = "";
+            dato17ComboBox.selectedIndex = 0;
+            dato18Tbx.Text = "";
         }
 
         public void llenarInformacion(int idPaciente)
         {
-            /*String query = "SELECT * FROM INFORMACIONMEDICA WHERE idPaciente = @idPaciente";
+            String query = "SELECT * FROM INFORMACIONMEDICA WHERE idPaciente = @idPaciente";
             try
             {
                 using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
@@ -257,22 +272,22 @@ namespace SistemaConsultorioMedico
                         {
                             llenarDato10(leer["dato10"].ToString().Trim());
                             dato10OpcTbx.Text = leer["dato10Opc"].ToString();
-                            dato11Tbx.Text = leer["dato11"].ToString();
+                            dato11ComboBox.selectedIndex = getIndex(leer["dato11"].ToString());
                             dato11OpcTbx.Text = leer["dato11Opc"].ToString();
                             dato12Tbx.Text = leer["dato12"].ToString();
-                            dato13Tbx.Text = leer["dato13"].ToString();
+                            dato13ComboBox.selectedIndex = getIndex(leer["dato13"].ToString());
                             dato13OpcTbx.Text = leer["dato13Opc"].ToString();
                             dato13Opc2Tbx.Text = leer["dato13Opc2"].ToString();
-                            dato14Tbx.Text = leer["dato14"].ToString();
+                            dato14ComboBox.selectedIndex = getIndex(leer["dato14"].ToString());
                             dato14OpcTbx.Text = leer["dato14Opc"].ToString();
                             dato14Opc2Tbx.Text = leer["dato14Opc2"].ToString();
-                            dato15Tbx.Text = leer["dato15"].ToString();
+                            dato15ComboBox.selectedIndex = getIndex(leer["dato15"].ToString());
                             dato15OpcTbx.Text = leer["dato15Opc"].ToString();
                             dato15Opc2Tbx.Text = leer["dato15Opc2"].ToString();
                             dato15Opc3Tbx.Text = leer["dato15Opc3"].ToString();
                             dato15Opc4Tbx.Text = leer["dato15Opc4"].ToString();
                             dato16Tbx.Text = leer["dato16"].ToString();
-                            dato17Tbx.Text = leer["dato17"].ToString();
+                            dato17ComboBox.selectedIndex = getIndex(leer["dato17"].ToString());
                             dato18Tbx.Text = leer["dato18"].ToString();
                         }
                     }
@@ -285,7 +300,19 @@ namespace SistemaConsultorioMedico
             finally
             {
                 Controladores.ConexionController.Desconectar();
-            }*/
+            }
+        }
+
+        public int getIndex(String text)
+        {
+            if (String.Equals(text, "si", StringComparison.OrdinalIgnoreCase))
+            {
+                return 1;
+            }
+            else
+            {
+                return 2;
+            }
         }
 
         private void ModificarBtn_Click(object sender, EventArgs e)
