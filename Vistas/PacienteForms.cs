@@ -132,7 +132,7 @@ namespace SistemaConsultorioMedico
 
         private void InforMedicaBtn_Click(object sender, EventArgs e)
         {
-            if (BuscarTbx.Text != "")
+            if (BuscarTbx.text != "")
             {
                 int idPaciente = int.Parse(BuscarTbx.text);
                 if (Controladores.PacienteController.validaExisPaciente(idPaciente))
