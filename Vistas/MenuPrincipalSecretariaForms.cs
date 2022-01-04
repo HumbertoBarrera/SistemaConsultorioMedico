@@ -12,6 +12,9 @@ namespace SistemaConsultorioMedico
 {
     public partial class MenuPrincipalSecretaria : Form
     {
+        int idPaciente;
+        bool flagME = true;
+
         public MenuPrincipalSecretaria()
         {
             InitializeComponent();
@@ -89,6 +92,11 @@ namespace SistemaConsultorioMedico
         private void label1_Click(object sender, EventArgs e)
         {
             AbrirFormHijo(new LogoForm());
+        }
+
+        private void InformacionMedicaBtn_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new InformacionMedica(idPaciente, flagME));
         }
     }
 }

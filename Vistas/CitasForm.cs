@@ -68,7 +68,7 @@ namespace SistemaConsultorioMedico
         {
 
 
-            if (PacienteCitaTxb.Text != "PACIENTE")
+            if ((PacienteCitaTxb.Text != "PACIENTE")&&(comboBox1.Text !="----- Seleccione la hora----"))
             {
                 Modelos.Cita cita = new Modelos.Cita();
 
@@ -119,6 +119,7 @@ namespace SistemaConsultorioMedico
                 }
 
                 PacienteCitaTxb.Text = " ";
+                bunifuDatepicker1.Value = DateTime.Parse("24/07/2022");
                 bunifuDatepicker1.Value = DateTime.Now.Date;
                 comboBox1.Items.Insert(0, "----- Seleccione la hora----");
                 comboBox1.SelectedIndex = 0;
@@ -165,6 +166,7 @@ namespace SistemaConsultorioMedico
             bunifuCustomDataGrid2.DataSource = dt;
 
             PacienteCitaTxb.Text = " ";
+            bunifuDatepicker1.Value = DateTime.Parse("24/07/2022");
             bunifuDatepicker1.Value = DateTime.Now.Date;
             comboBox1.Items.Insert(0, "----- Seleccione la hora----");
             comboBox1.SelectedIndex = 0;
@@ -199,6 +201,7 @@ namespace SistemaConsultorioMedico
             bunifuCustomDataGrid2.DataSource = dt;
 
             PacienteCitaTxb.Text = " ";
+            bunifuDatepicker1.Value = DateTime.Parse("24/07/2022");
             bunifuDatepicker1.Value = DateTime.Now.Date;
             comboBox1.Items.Insert(0, "----- Seleccione la hora----");
             comboBox1.SelectedIndex = 0;
@@ -352,6 +355,7 @@ namespace SistemaConsultorioMedico
             AgregarCBtn.Visible = false;
             GuardarCitaBtn.Visible = true;
             PacienteCitaTxb.Text = " ";
+            bunifuDatepicker1.Value = DateTime.Parse("24/07/2022");
             bunifuDatepicker1.Value = DateTime.Now.Date;
             comboBox1.Items.Insert(0, "----- Seleccione la hora----");
             comboBox1.SelectedIndex = 0;

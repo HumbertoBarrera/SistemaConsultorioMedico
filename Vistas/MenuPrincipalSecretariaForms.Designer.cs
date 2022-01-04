@@ -30,9 +30,9 @@ namespace SistemaConsultorioMedico
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipalSecretaria));
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             this.MenuDesplegableBtn = new System.Windows.Forms.PictureBox();
             this.citaBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Pacientebtn = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -53,6 +53,7 @@ namespace SistemaConsultorioMedico
             this.Mover = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.curvaTablero = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.InformacionMedicaBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.MenuDesplegableBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.contenedorMenuPnl.SuspendLayout();
@@ -101,7 +102,7 @@ namespace SistemaConsultorioMedico
             this.citaBtn.IconVisible = true;
             this.citaBtn.IconZoom = 50D;
             this.citaBtn.IsTab = false;
-            this.citaBtn.Location = new System.Drawing.Point(0, 180);
+            this.citaBtn.Location = new System.Drawing.Point(4, 180);
             this.citaBtn.Name = "citaBtn";
             this.citaBtn.Normalcolor = System.Drawing.Color.Transparent;
             this.citaBtn.OnHovercolor = System.Drawing.Color.Transparent;
@@ -138,7 +139,7 @@ namespace SistemaConsultorioMedico
             this.Pacientebtn.IconVisible = true;
             this.Pacientebtn.IconZoom = 50D;
             this.Pacientebtn.IsTab = false;
-            this.Pacientebtn.Location = new System.Drawing.Point(0, 110);
+            this.Pacientebtn.Location = new System.Drawing.Point(3, 110);
             this.Pacientebtn.Name = "Pacientebtn";
             this.Pacientebtn.Normalcolor = System.Drawing.Color.Transparent;
             this.Pacientebtn.OnHovercolor = System.Drawing.Color.Transparent;
@@ -225,6 +226,7 @@ namespace SistemaConsultorioMedico
             | System.Windows.Forms.AnchorStyles.Left)));
             this.Sidebar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Sidebar.BackgroundImage")));
             this.Sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Sidebar.Controls.Add(this.InformacionMedicaBtn);
             this.Sidebar.Controls.Add(this.citaBtn);
             this.Sidebar.Controls.Add(this.Pacientebtn);
             this.Sidebar.Controls.Add(this.linea);
@@ -345,22 +347,22 @@ namespace SistemaConsultorioMedico
             // 
             this.AnimacionSidebarAtras.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.AnimacionSidebarAtras.Cursor = null;
-            animation4.AnimateOnlyDifferences = true;
-            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-            animation4.LeafCoeff = 0F;
-            animation4.MaxTime = 1F;
-            animation4.MinTime = 0F;
-            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-            animation4.MosaicSize = 0;
-            animation4.Padding = new System.Windows.Forms.Padding(0);
-            animation4.RotateCoeff = 0F;
-            animation4.RotateLimit = 0F;
-            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-            animation4.TimeCoeff = 0F;
-            animation4.TransparencyCoeff = 0F;
-            this.AnimacionSidebarAtras.DefaultAnimation = animation4;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.AnimacionSidebarAtras.DefaultAnimation = animation1;
             // 
             // Mover
             // 
@@ -373,27 +375,64 @@ namespace SistemaConsultorioMedico
             // 
             this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.bunifuTransition1.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation3;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation2;
             // 
             // curvaTablero
             // 
             this.curvaTablero.ElipseRadius = 7;
             this.curvaTablero.TargetControl = this.Sidebar;
+            // 
+            // InformacionMedicaBtn
+            // 
+            this.InformacionMedicaBtn.Activecolor = System.Drawing.Color.Transparent;
+            this.InformacionMedicaBtn.BackColor = System.Drawing.Color.Transparent;
+            this.InformacionMedicaBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.InformacionMedicaBtn.BorderRadius = 0;
+            this.InformacionMedicaBtn.ButtonText = "        INFORMACION MEDICA";
+            this.InformacionMedicaBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimacionSidebarAtras.SetDecoration(this.InformacionMedicaBtn, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.InformacionMedicaBtn, BunifuAnimatorNS.DecorationType.None);
+            this.InformacionMedicaBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.InformacionMedicaBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.InformacionMedicaBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("InformacionMedicaBtn.Iconimage")));
+            this.InformacionMedicaBtn.Iconimage_right = null;
+            this.InformacionMedicaBtn.Iconimage_right_Selected = null;
+            this.InformacionMedicaBtn.Iconimage_Selected = null;
+            this.InformacionMedicaBtn.IconMarginLeft = 0;
+            this.InformacionMedicaBtn.IconMarginRight = 0;
+            this.InformacionMedicaBtn.IconRightVisible = true;
+            this.InformacionMedicaBtn.IconRightZoom = 0D;
+            this.InformacionMedicaBtn.IconVisible = true;
+            this.InformacionMedicaBtn.IconZoom = 50D;
+            this.InformacionMedicaBtn.IsTab = false;
+            this.InformacionMedicaBtn.Location = new System.Drawing.Point(4, 246);
+            this.InformacionMedicaBtn.Name = "InformacionMedicaBtn";
+            this.InformacionMedicaBtn.Normalcolor = System.Drawing.Color.Transparent;
+            this.InformacionMedicaBtn.OnHovercolor = System.Drawing.Color.Transparent;
+            this.InformacionMedicaBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.InformacionMedicaBtn.selected = false;
+            this.InformacionMedicaBtn.Size = new System.Drawing.Size(252, 51);
+            this.InformacionMedicaBtn.TabIndex = 17;
+            this.InformacionMedicaBtn.Text = "        INFORMACION MEDICA";
+            this.InformacionMedicaBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.InformacionMedicaBtn.Textcolor = System.Drawing.Color.LightGray;
+            this.InformacionMedicaBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.InformacionMedicaBtn.Click += new System.EventHandler(this.InformacionMedicaBtn_Click);
             // 
             // MenuPrincipalSecretaria
             // 
@@ -446,5 +485,6 @@ namespace SistemaConsultorioMedico
         private BunifuAnimatorNS.BunifuTransition bunifuTransition1;
         private Bunifu.Framework.UI.BunifuElipse curvaTablero;
         public System.Windows.Forms.Panel panel1;
+        private Bunifu.Framework.UI.BunifuFlatButton InformacionMedicaBtn;
     }
 }
