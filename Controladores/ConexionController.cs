@@ -12,14 +12,14 @@ namespace SistemaConsultorioMedico.Controladores
 
         public static SqlConnection Conectar()
         {
-            SqlConnection cn = new SqlConnection("SERVER=MARIALLANES; DATABASE=CONSULTORIO; Integrated Security=true");
+            SqlConnection cn = new SqlConnection("SERVER=LAPTOP-JQ6S98VF\\SQLEXPRESS; DATABASE=CONSULTORIO; Integrated Security=true");
             cn.Open();
             return cn;
         }
 
         public static SqlConnection Desconectar()
         {
-            SqlConnection cn = new SqlConnection("SERVER=MARIALLANES; DATABASE=CONSULTORIO; Integrated Security=true");
+            SqlConnection cn = new SqlConnection("SERVER=LAPTOP-JQ6S98VF\\SQLEXPRESS; DATABASE=CONSULTORIO; Integrated Security=true");
             cn.Close();
             return cn;
         }
