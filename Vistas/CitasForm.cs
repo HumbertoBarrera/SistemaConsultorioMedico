@@ -13,6 +13,8 @@ namespace SistemaConsultorioMedico
 {
     public partial class CitasForm : Form
     {
+        private Modelos.Cita cita;
+
         public CitasForm()
         {
             InitializeComponent();
@@ -47,7 +49,7 @@ namespace SistemaConsultorioMedico
 
             if (PacienteCitaTxb.Text != "PACIENTE")
             {
-                Modelos.Cita cita = new Modelos.Cita();
+                cita = new Modelos.Cita();
 
                 int idPacienteV = int.Parse(PacienteCitaTxb.Text);
                 DateTime fechaV = bunifuDatepicker1.Value;

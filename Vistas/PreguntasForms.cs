@@ -15,6 +15,7 @@ namespace SistemaConsultorioMedico
     public partial class Preguntas : Form
     {
         private Modelos.InformacionMedica im1;
+        private Modelos.InformacionMedica im2;
         int idPaciente;
         bool flagME;
 
@@ -38,7 +39,7 @@ namespace SistemaConsultorioMedico
             if (validarCampos())
             {
                 DateTime hoy = DateTime.Today;
-                Modelos.InformacionMedica im2 = new Modelos.InformacionMedica(obtenerEnfermedadFamiliar(), dato10OpcTbx.Text, dato11ComboBox.selectedValue, dato11OpcTbx.Text,
+                im2 = new Modelos.InformacionMedica(obtenerEnfermedadFamiliar(), dato10OpcTbx.Text, dato11ComboBox.selectedValue, dato11OpcTbx.Text,
                                                                             dato12Tbx.Text, dato13ComboBox.selectedValue, dato13OpcTbx.Text, dato13Opc2Tbx.Text, dato14ComboBox.selectedValue,
                                                                             dato14OpcTbx.Text, dato14Opc2Tbx.Text, dato15ComboBox.selectedValue, dato15OpcTbx.Text,
                                                                             dato15Opc2Tbx.Text, dato15Opc3Tbx.Text, dato15Opc4Tbx.Text, dato16Tbx.Text,

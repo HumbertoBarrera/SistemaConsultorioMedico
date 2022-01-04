@@ -15,6 +15,7 @@ namespace SistemaConsultorioMedico
         int idPaciente;
         DateTime fecha;
         int indice;
+        private Modelos.Diagnostico diagnostico;
 
         public Diagnostico(int idPaciente)
         {
@@ -87,7 +88,7 @@ namespace SistemaConsultorioMedico
 
             if ((FechaTxb.Text != "FECHA") && (Descripciontxb.Text != "DESCRIPCION"))
             {
-                Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
+                diagnostico = new Modelos.Diagnostico();
                 pacienteExt = int.Parse(PacienteTxb.Text); 
                 diagnostico.setIdPaciente(pacienteExt);
                 diagnostico.setFecha(fecha);

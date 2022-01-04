@@ -303,9 +303,9 @@ namespace SistemaConsultorioMedico
             // 
             this.buscarBtn.ActiveBorderThickness = 1;
             this.buscarBtn.ActiveCornerRadius = 20;
-            this.buscarBtn.ActiveFillColor = System.Drawing.Color.White;
+            this.buscarBtn.ActiveFillColor = System.Drawing.Color.Plum;
             this.buscarBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.buscarBtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buscarBtn.ActiveLineColor = System.Drawing.Color.Plum;
             this.buscarBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buscarBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buscarBtn.BackgroundImage")));
             this.buscarBtn.ButtonText = "BUSCAR";
