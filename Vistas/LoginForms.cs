@@ -69,11 +69,6 @@ namespace SistemaConsultorioMedico
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void Login_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
@@ -84,11 +79,6 @@ namespace SistemaConsultorioMedico
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void usuariotxt_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void loginbtn_Click(object sender, EventArgs e)
@@ -112,11 +102,6 @@ namespace SistemaConsultorioMedico
             Form AbrirMenu2 = new MenuPrincipalSecretaria();
             AbrirMenu2.Show();
             this.Hide();
-
-        }
-
-        private void linkLabel1_MouseClick(object sender, MouseEventArgs e)
-        {
 
         }
 

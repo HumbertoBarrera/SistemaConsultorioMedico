@@ -18,13 +18,23 @@ namespace SistemaConsultorioMedico.Controladores
             SqlCommand codigo;
             codigo = new SqlCommand("SELECT * FROM USUARIO WHERE usuario= '" + U.getUsuario() + "' AND contraseña='" + U.getPassword()+ "'", Controladores.ConexionController.Conectar());
             SqlDataReader leer = codigo.ExecuteReader();
-           // int r = codigo.ExecuteNonQuery();
-             if (leer.Read())
+            if (leer.Read())
             {
-                Form MenuForm = new Menuform();
-                MenuForm.ShowDialog();
-
-
+                codigo = new SqlCommand("SELECT rol FROM USUARIO WHERE usuario = '" + U.getUsuario() + "'", Controladores.ConexionController.Conectar());
+                leer = codigo.ExecuteReader();
+                while (leer.Read())
+                {
+                    if(leer["rol"].ToString() == "D")
+                    {
+                        Form MenuForm = new Menuform();
+                        MenuForm.Show();
+                    }
+                    else
+                    {
+                        Form Menu = new MenuPrincipalSecretaria();
+                        Menu.Show();
+                    }
+                }
             }
             else
             {
