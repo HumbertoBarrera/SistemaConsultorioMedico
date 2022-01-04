@@ -25,24 +25,6 @@ namespace SistemaConsultorioMedico
         }
         int indice;
 
-        private void BuscarTbx_MouseEnter(object sender, EventArgs e)
-        {
-            if (BuscarTbx.Text == "BUSCAR")
-            {
-                BuscarTbx.Text = "";
-                BuscarTbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void BuscarTbx_MouseLeave(object sender, EventArgs e)
-        {
-            if (BuscarTbx.Text == "")
-            {
-                BuscarTbx.Text = "BUSCAR";
-                BuscarTbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
         private void GuardarCitaBtn_Click(object sender, EventArgs e)
         {
 
