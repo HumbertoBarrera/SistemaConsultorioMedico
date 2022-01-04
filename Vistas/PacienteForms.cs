@@ -16,6 +16,7 @@ namespace SistemaConsultorioMedico
         DateTime curDate = DateTime.Today;
         bool flagME = true;
         int indice;
+        private Modelos.Paciente paciente;
 
         public Paciente()
         {
@@ -45,7 +46,7 @@ namespace SistemaConsultorioMedico
             if(validarCampos())
             {
                 var random = new Random().Next(10000000, 99999999);
-                Modelos.Paciente paciente = new Modelos.Paciente(random, ((curDate.Year) - Convert.ToInt32(fechaNacDatePicker.Value.Year)), NombreTxb.Text, ApellidoPaternoTbx.Text,
+                paciente = new Modelos.Paciente(random, ((curDate.Year) - Convert.ToInt32(fechaNacDatePicker.Value.Year)), NombreTxb.Text, ApellidoPaternoTbx.Text,
                                                                 ApellidoMaternoTbx.Text, LugarNaciTbx.Text, DireccionTbx.Text, TelefonoTbx.Text, CorreoETbx.Text,
                                                                 OcupacionTbx.Text, TelefonoTbx.Text, LugarTrabajoTbx.Text, fechaNacDatePicker.Value);
                 Controladores.PacienteController.altaPaciente(paciente);

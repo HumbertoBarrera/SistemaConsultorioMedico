@@ -15,6 +15,7 @@ namespace SistemaConsultorioMedico
     {
         int idPaciente;
         bool flagME;
+        private Modelos.InformacionMedica im1;
 
         public InformacionMedica(int idPaciente, bool flagME)
         {
@@ -28,7 +29,7 @@ namespace SistemaConsultorioMedico
         {
             if (validarCampos())
             {
-                Modelos.InformacionMedica im1 = new Modelos.InformacionMedica(idPaciente, dato1Txb.Text, dato2Tbx.Text, dato3Tbx.Text, dato4ComboBox.selectedValue,
+                im1 = new Modelos.InformacionMedica(idPaciente, dato1Txb.Text, dato2Tbx.Text, dato3Tbx.Text, dato4ComboBox.selectedValue,
                                                                         dato4OpcTbx.Text, dato5ComboBox.selectedValue, dato5OpcTbx.Text, dato6ComboBox.selectedValue, dato6OpcTbx.Text,
                                                                         dato7ComboBox.selectedValue, dato7OpcTbx.Text, dato8ComboBox.selectedValue, dato8OpcTbx.Text,
                                                                         dato9ComboBox.selectedValue, dato9OpcTbx.Text);
@@ -137,6 +138,7 @@ namespace SistemaConsultorioMedico
             }
             else
             {
+                flagME = false;
                 idPaciente = Convert.ToInt32(buscarTbx.text);
                 llenarInformacion(idPaciente);
             }

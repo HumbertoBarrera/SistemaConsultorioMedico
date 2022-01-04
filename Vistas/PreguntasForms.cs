@@ -15,6 +15,7 @@ namespace SistemaConsultorioMedico
     public partial class Preguntas : Form
     {
         private Modelos.InformacionMedica im1;
+        private Modelos.InformacionMedica im2;
         int idPaciente;
         bool flagME;
 
@@ -38,7 +39,7 @@ namespace SistemaConsultorioMedico
             if (validarCampos())
             {
                 DateTime hoy = DateTime.Today;
-                Modelos.InformacionMedica im2 = new Modelos.InformacionMedica(obtenerEnfermedadFamiliar(), dato10OpcTbx.Text, dato11ComboBox.selectedValue, dato11OpcTbx.Text,
+                im2 = new Modelos.InformacionMedica(obtenerEnfermedadFamiliar(), dato10OpcTbx.Text, dato11ComboBox.selectedValue, dato11OpcTbx.Text,
                                                                             dato12Tbx.Text, dato13ComboBox.selectedValue, dato13OpcTbx.Text, dato13Opc2Tbx.Text, dato14ComboBox.selectedValue,
                                                                             dato14OpcTbx.Text, dato14Opc2Tbx.Text, dato15ComboBox.selectedValue, dato15OpcTbx.Text,
                                                                             dato15Opc2Tbx.Text, dato15Opc3Tbx.Text, dato15Opc4Tbx.Text, dato16Tbx.Text,
@@ -89,28 +90,7 @@ namespace SistemaConsultorioMedico
         private void obtenerFecha()
         {
             var fecha = DateTime.Today;
-            FechaLbl.Text = FechaLbl.Text + fecha.Day.ToString() + " DE " + obtenerMes(fecha) + " DEL " + fecha.Year.ToString();
-        }
-
-        public String obtenerMes(DateTime fecha)
-        {
-            String mes;
-            switch (fecha.Month)
-            {
-                case 1: mes = "ENERO"; return mes;
-                case 2: mes = "FEBRERO"; return mes;
-                case 3: mes = "MARZO"; return mes;
-                case 4: mes = "ABRIL"; return mes;
-                case 5: mes = "MAYO"; return mes;
-                case 6: mes = "JUNIO"; return mes;
-                case 7: mes = "JULIO"; return mes;
-                case 8: mes = "AGOSTO"; return mes;
-                case 9: mes = "SEPTIEMBRE"; return mes;
-                case 10: mes = "OCTUBRE"; return mes;
-                case 11: mes = "NOVIEMBRE"; return mes;
-                case 12: mes = "DICIEMBRE"; return mes;
-                default: return "error";
-            }
+            FechaLbl.Text = FechaLbl.Text + fecha.Day.ToString() + " DE " + fecha.ToString("MMMMM").ToUpper() + " DEL " + fecha.Year.ToString();
         }
 
         private bool validarCampos()
