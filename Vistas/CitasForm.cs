@@ -25,24 +25,6 @@ namespace SistemaConsultorioMedico
         }
         int indice;
 
-        private void BuscarTbx_MouseEnter(object sender, EventArgs e)
-        {
-            if (BuscarTbx.Text == "BUSCAR")
-            {
-                BuscarTbx.Text = "";
-                BuscarTbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void BuscarTbx_MouseLeave(object sender, EventArgs e)
-        {
-            if (BuscarTbx.Text == "")
-            {
-                BuscarTbx.Text = "BUSCAR";
-                BuscarTbx.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
         private void GuardarCitaBtn_Click(object sender, EventArgs e)
         {
 
@@ -194,7 +176,7 @@ namespace SistemaConsultorioMedico
             indice = bunifuCustomDataGrid2.CurrentRow.Index;
             PacienteCitaTxb.Text = bunifuCustomDataGrid2[0, indice].Value.ToString();
             bunifuDatepicker1.Value = Convert.ToDateTime(bunifuCustomDataGrid2[2, indice].Value);
-            comboBox1.Items.Insert(0,bunifuCustomDataGrid2[3, indice].Value.ToString());
+            comboBox1.Items.Insert(0,bunifuCustomDataGrid2[3, indice].Value.ToString().Substring(0, 5));
             comboBox1.SelectedIndex = 0;
             folioCitaLb.Text=bunifuCustomDataGrid2[4, indice].Value.ToString();
 
