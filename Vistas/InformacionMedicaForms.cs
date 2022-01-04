@@ -137,6 +137,7 @@ namespace SistemaConsultorioMedico
             }
             else
             {
+                flagME = false;
                 idPaciente = Convert.ToInt32(buscarTbx.text);
                 llenarInformacion(idPaciente);
             }

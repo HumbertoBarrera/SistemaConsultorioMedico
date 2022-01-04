@@ -17,35 +17,12 @@ namespace SistemaConsultorioMedico
         {
             InitializeComponent();
             bunifuDatepicker1.Value = DateTime.Now.Date;
-
-
             comboBox1.Items.Insert(0, "----- Seleccione la hora----");
             comboBox1.SelectedIndex = 0;
-          
-
 
         }
         int indice;
 
-        private void PacienteCitaTxb_MouseEnter(object sender, EventArgs e)
-        {
-            if (PacienteCitaTxb.Text == "PACIENTE")
-            {
-                PacienteCitaTxb.Text = "";
-                PacienteCitaTxb.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void PacienteCitaTxb_MouseLeave(object sender, EventArgs e)
-        {
-            if (PacienteCitaTxb.Text == "")
-            {
-                PacienteCitaTxb.Text = "PACIENTE";
-                PacienteCitaTxb.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-     
         private void BuscarTbx_MouseEnter(object sender, EventArgs e)
         {
             if (BuscarTbx.Text == "BUSCAR")
@@ -172,9 +149,6 @@ namespace SistemaConsultorioMedico
             PacienteCitaTxb.Enabled = true;
             AgregarCBtn.Visible = false;
             GuardarCitaBtn.Visible = true;
-
-
-
         }
 
         private void ModificarCitaBtn_Click(object sender, EventArgs e)
@@ -348,7 +322,6 @@ namespace SistemaConsultorioMedico
 
         private void AgregarCBtn_Click(object sender, EventArgs e)
         {
-            
             AgregarCBtn.Visible = false;
             GuardarCitaBtn.Visible = true;
             PacienteCitaTxb.Text = " ";
