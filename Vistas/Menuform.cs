@@ -114,39 +114,9 @@ namespace SistemaConsultorioMedico
             AbrirFormHijo2(new Diagnostico(idPaciente));
         }
 
-        private void contenidoPnl_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void linea_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void InformacionMedicasBtn_Click(object sender, EventArgs e)
         {
             AbrirFormHijo(new InformacionMedica(idPaciente, flagME));
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void contenedorMenuPnl_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void menuTopPnl_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void InformacionMedicaBtn_Click(object sender, EventArgs e)

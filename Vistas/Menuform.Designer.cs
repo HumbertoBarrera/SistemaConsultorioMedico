@@ -30,9 +30,9 @@ namespace SistemaConsultorioMedico
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menuform));
+            BunifuAnimatorNS.Animation animation14 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation13 = new BunifuAnimatorNS.Animation();
             this.contenidoPnl = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.contenedorMenuPnl = new System.Windows.Forms.Panel();
@@ -82,7 +82,6 @@ namespace SistemaConsultorioMedico
             this.contenidoPnl.Name = "contenidoPnl";
             this.contenidoPnl.Size = new System.Drawing.Size(1837, 960);
             this.contenidoPnl.TabIndex = 0;
-            this.contenidoPnl.Paint += new System.Windows.Forms.PaintEventHandler(this.contenidoPnl_Paint);
             // 
             // panel1
             // 
@@ -97,7 +96,6 @@ namespace SistemaConsultorioMedico
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1416, 863);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // contenedorMenuPnl
             // 
@@ -111,7 +109,6 @@ namespace SistemaConsultorioMedico
             this.contenedorMenuPnl.Name = "contenedorMenuPnl";
             this.contenedorMenuPnl.Size = new System.Drawing.Size(400, 879);
             this.contenedorMenuPnl.TabIndex = 1;
-            this.contenedorMenuPnl.Paint += new System.Windows.Forms.PaintEventHandler(this.contenedorMenuPnl_Paint);
             // 
             // Sidebar
             // 
@@ -306,7 +303,6 @@ namespace SistemaConsultorioMedico
             this.linea.TabIndex = 0;
             this.linea.Transparency = 255;
             this.linea.Vertical = false;
-            this.linea.Load += new System.EventHandler(this.linea_Load);
             // 
             // label1
             // 
@@ -356,7 +352,6 @@ namespace SistemaConsultorioMedico
             this.menuTopPnl.Name = "menuTopPnl";
             this.menuTopPnl.Size = new System.Drawing.Size(1837, 81);
             this.menuTopPnl.TabIndex = 1;
-            this.menuTopPnl.Paint += new System.Windows.Forms.PaintEventHandler(this.menuTopPnl_Paint);
             // 
             // Restaurar
             // 
@@ -432,7 +427,6 @@ namespace SistemaConsultorioMedico
             this.label2.Size = new System.Drawing.Size(129, 26);
             this.label2.TabIndex = 2;
             this.label2.Text = "OPCIONES";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // MenuDesplegableBtn
             // 
@@ -457,43 +451,43 @@ namespace SistemaConsultorioMedico
             // 
             this.AnimacionSidebar.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.AnimacionSidebar.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.AnimacionSidebar.DefaultAnimation = animation2;
+            animation14.AnimateOnlyDifferences = true;
+            animation14.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation14.BlindCoeff")));
+            animation14.LeafCoeff = 0F;
+            animation14.MaxTime = 1F;
+            animation14.MinTime = 0F;
+            animation14.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation14.MosaicCoeff")));
+            animation14.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation14.MosaicShift")));
+            animation14.MosaicSize = 0;
+            animation14.Padding = new System.Windows.Forms.Padding(0);
+            animation14.RotateCoeff = 0F;
+            animation14.RotateLimit = 0F;
+            animation14.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation14.ScaleCoeff")));
+            animation14.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation14.SlideCoeff")));
+            animation14.TimeCoeff = 0F;
+            animation14.TransparencyCoeff = 0F;
+            this.AnimacionSidebar.DefaultAnimation = animation14;
             // 
             // AnimacionSidebarAtras
             // 
             this.AnimacionSidebarAtras.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.AnimacionSidebarAtras.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.AnimacionSidebarAtras.DefaultAnimation = animation1;
+            animation13.AnimateOnlyDifferences = true;
+            animation13.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.BlindCoeff")));
+            animation13.LeafCoeff = 0F;
+            animation13.MaxTime = 1F;
+            animation13.MinTime = 0F;
+            animation13.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.MosaicCoeff")));
+            animation13.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation13.MosaicShift")));
+            animation13.MosaicSize = 0;
+            animation13.Padding = new System.Windows.Forms.Padding(0);
+            animation13.RotateCoeff = 0F;
+            animation13.RotateLimit = 0F;
+            animation13.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.ScaleCoeff")));
+            animation13.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.SlideCoeff")));
+            animation13.TimeCoeff = 0F;
+            animation13.TransparencyCoeff = 0F;
+            this.AnimacionSidebarAtras.DefaultAnimation = animation13;
             // 
             // bunifuElipse1
             // 
