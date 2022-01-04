@@ -77,7 +77,6 @@ namespace SistemaConsultorioMedico
         private void Salir_Click(object sender, EventArgs e)
         {
             Application.Exit();
-
         }
 
         private void Minimizar_Click(object sender, EventArgs e)
@@ -100,5 +99,11 @@ namespace SistemaConsultorioMedico
             AbrirFormHijo(new InformacionMedica(idPaciente, flagME));
         }
 
+        private void logoutBtn_Click(object sender, EventArgs e)
+        {
+            Form forma = new Login();
+            forma.Show();
+            this.Hide();
+        }
     }
 }
