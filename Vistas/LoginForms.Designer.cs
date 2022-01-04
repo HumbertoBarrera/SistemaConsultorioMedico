@@ -80,7 +80,7 @@ namespace SistemaConsultorioMedico
             this.usuariotxt.Margin = new System.Windows.Forms.Padding(4);
             this.usuariotxt.Name = "usuariotxt";
             this.usuariotxt.Size = new System.Drawing.Size(511, 22);
-            this.usuariotxt.TabIndex = 1;
+            this.usuariotxt.TabIndex = 2;
             this.usuariotxt.Text = "USUARIO";
             this.usuariotxt.Enter += new System.EventHandler(this.usuariotxt_Enter);
             this.usuariotxt.Leave += new System.EventHandler(this.usuariotxt_Leave);
@@ -95,7 +95,7 @@ namespace SistemaConsultorioMedico
             this.contratxt.Margin = new System.Windows.Forms.Padding(4);
             this.contratxt.Name = "contratxt";
             this.contratxt.Size = new System.Drawing.Size(511, 22);
-            this.contratxt.TabIndex = 2;
+            this.contratxt.TabIndex = 3;
             this.contratxt.Text = "CONTRASEÑA";
             this.contratxt.Enter += new System.EventHandler(this.contratxt_Enter);
             this.contratxt.Leave += new System.EventHandler(this.contratxt_Leave);

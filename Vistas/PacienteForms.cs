@@ -132,7 +132,7 @@ namespace SistemaConsultorioMedico
 
         private void InforMedicaBtn_Click(object sender, EventArgs e)
         {
-            if (BuscarTbx.Text != "")
+            if (BuscarTbx.text != "")
             {
                 int idPaciente = int.Parse(BuscarTbx.text);
                 if (Controladores.PacienteController.validaExisPaciente(idPaciente))
@@ -209,6 +209,14 @@ namespace SistemaConsultorioMedico
             {
                 guardarPac_Btn.IdleFillColor = Color.Gray;
                 guardarPac_Btn.Enabled = false;
+                if (validarCampos())
+                {
+                    ModifPacienteBtn.Enabled = true;
+                }
+                else
+                {
+                    ModifPacienteBtn.Enabled = false;
+                }
             }
         }
 
@@ -281,7 +289,7 @@ namespace SistemaConsultorioMedico
             else
             {
                 ModifPacienteBtn.IdleFillColor = Color.Gray;
-                ModifPacienteBtn.Padding = new Padding(20, 10, 0, 0);
+                ModifPacienteBtn.Padding = new Padding(30, 10, 0, 0);
             }
         }
 
