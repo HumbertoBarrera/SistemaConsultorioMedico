@@ -29,7 +29,7 @@ namespace SistemaConsultorioMedico
         {
 
 
-            if ((PacienteCitaTxb.Text != "PACIENTE")&&(comboBox1.Text !="----- Seleccione la hora----"))
+            if ((PacienteCitaTxb.Text != "PACIENTE")&&(comboBox1.Text !="----- Seleccione la hora----") && (comboBox1.SelectedIndex != -1))
             {
                 cita = new Modelos.Cita();
 
@@ -108,66 +108,82 @@ namespace SistemaConsultorioMedico
 
         private void EliminarCitaBtn_Click(object sender, EventArgs e)
         {
-            Modelos.Cita cita = new Modelos.Cita();
+            if ((comboBox1.Text != "----- Seleccione la hora----") && (comboBox1.SelectedIndex != -1))
+            {
+                Modelos.Cita cita = new Modelos.Cita();
 
-            String folioCita = folioCitaLb.Text;
-            int idPacienteV = int.Parse(PacienteCitaTxb.Text);
-            DateTime fechaV = bunifuDatepicker1.Value;
-            TimeSpan horaV = TimeSpan.Parse(comboBox1.Text);
+                String folioCita = folioCitaLb.Text;
+                int idPacienteV = int.Parse(PacienteCitaTxb.Text);
+                DateTime fechaV = bunifuDatepicker1.Value;
+                TimeSpan horaV = TimeSpan.Parse(comboBox1.Text);
 
-            cita.setIdPaciente(idPacienteV);
-            cita.setFecha(fechaV);
-            cita.setHora(horaV);
-            cita.setFolioCita(folioCita);
+                cita.setIdPaciente(idPacienteV);
+                cita.setFecha(fechaV);
+                cita.setHora(horaV);
+                cita.setFolioCita(folioCita);
 
-            Controladores.CitaController.EliminarCita(cita);
-            Controladores.CitaController da = new Controladores.CitaController();
-            var dt = da.CargarGridCitas();
+                Controladores.CitaController.EliminarCita(cita);
+                Controladores.CitaController da = new Controladores.CitaController();
+                var dt = da.CargarGridCitas();
 
-            bunifuCustomDataGrid2.DataSource = dt;
+                bunifuCustomDataGrid2.DataSource = dt;
 
-            PacienteCitaTxb.Text = " ";
-            bunifuDatepicker1.Value = DateTime.Parse("24/07/2022");
-            bunifuDatepicker1.Value = DateTime.Now.Date;
-            comboBox1.Items.Insert(0, "----- Seleccione la hora----");
-            comboBox1.SelectedIndex = 0;
-            folioCitaLb.Text = "";
-            PacienteCitaTxb.Enabled = true;
-            AgregarCBtn.Visible = false;
-            GuardarCitaBtn.Visible = true;
+                PacienteCitaTxb.Text = " ";
+                bunifuDatepicker1.Value = DateTime.Parse("24/07/2022");
+                bunifuDatepicker1.Value = DateTime.Now.Date;
+                comboBox1.Items.Insert(0, "----- Seleccione la hora----");
+                comboBox1.SelectedIndex = 0;
+                folioCitaLb.Text = "";
+                PacienteCitaTxb.Enabled = true;
+                AgregarCBtn.Visible = false;
+                GuardarCitaBtn.Visible = true;
+            }
+            else
+            {
+                MessageBox.Show("Los campos deben ser llenados");
+
+            }
+           
         }
 
         private void ModificarCitaBtn_Click(object sender, EventArgs e)
         {
+            if ((comboBox1.Text != "----- Seleccione la hora----") && (comboBox1.SelectedIndex != -1))
+            {
 
-            Modelos.Cita cita = new Modelos.Cita();
+                Modelos.Cita cita = new Modelos.Cita();
 
-            String folioCita = folioCitaLb.Text;
-            int idPacienteV = int.Parse(PacienteCitaTxb.Text);
-            DateTime fechaV = bunifuDatepicker1.Value;
-            TimeSpan horaV = TimeSpan.Parse(comboBox1.Text);
+                String folioCita = folioCitaLb.Text;
+                int idPacienteV = int.Parse(PacienteCitaTxb.Text);
+                DateTime fechaV = bunifuDatepicker1.Value;
+                TimeSpan horaV = TimeSpan.Parse(comboBox1.Text);
 
-            cita.setIdPaciente(idPacienteV);
-            cita.setFecha(fechaV);
-            cita.setHora(horaV);
-            cita.setFolioCita(folioCita);
+                cita.setIdPaciente(idPacienteV);
+                cita.setFecha(fechaV);
+                cita.setHora(horaV);
+                cita.setFolioCita(folioCita);
 
-            Controladores.CitaController.ModificarCita(cita);
-            Controladores.CitaController da = new Controladores.CitaController();
-            var dt = da.CargarGridCitas();
+                Controladores.CitaController.ModificarCita(cita);
+                Controladores.CitaController da = new Controladores.CitaController();
+                var dt = da.CargarGridCitas();
 
-            bunifuCustomDataGrid2.DataSource = dt;
+                bunifuCustomDataGrid2.DataSource = dt;
 
-            PacienteCitaTxb.Text = " ";
-            bunifuDatepicker1.Value = DateTime.Parse("24/07/2022");
-            bunifuDatepicker1.Value = DateTime.Now.Date;
-            comboBox1.Items.Insert(0, "----- Seleccione la hora----");
-            comboBox1.SelectedIndex = 0;
-            folioCitaLb.Text = "";
-            PacienteCitaTxb.Enabled = true;
-            AgregarCBtn.Visible = false;
-            GuardarCitaBtn.Visible = true;
+                PacienteCitaTxb.Text = " ";
+                bunifuDatepicker1.Value = DateTime.Parse("24/07/2022");
+                bunifuDatepicker1.Value = DateTime.Now.Date;
+                comboBox1.Items.Insert(0, "----- Seleccione la hora----");
+                comboBox1.SelectedIndex = 0;
+                folioCitaLb.Text = "";
+                PacienteCitaTxb.Enabled = true;
+                AgregarCBtn.Visible = false;
+                GuardarCitaBtn.Visible = true;
+            }
+            else
+            {
+                MessageBox.Show("Los campos deben ser llenados");
 
+            }
         }
 
         private void bunifuCustomDataGrid2_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -189,7 +205,6 @@ namespace SistemaConsultorioMedico
         private void bunifuDatepicker1_onValueChanged_1(object sender, EventArgs e)
         {
             comboBox1.Items.Clear();
-
             if (bunifuDatepicker1.Value < DateTime.Now.Date)
             {
                 MessageBox.Show("fecha no valida");
