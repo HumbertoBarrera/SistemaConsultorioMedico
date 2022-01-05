@@ -312,7 +312,13 @@ namespace SistemaConsultorioMedico
 
         private void EliPacienteBtn_Click(object sender, EventArgs e)
         {
+            Modelos.Paciente paciente = new Modelos.Paciente(Convert.ToInt32(IdPacienteLbl.Text.Substring(13)), ((curDate.Year) - Convert.ToInt32(fechaNacDatePicker.Value.Year)), NombreTxb.Text, ApellidoPaternoTbx.Text,
+                                                                ApellidoMaternoTbx.Text, LugarNaciTbx.Text, DireccionTbx.Text, TelefonoTbx.Text, CorreoETbx.Text,
+                                                                OcupacionTbx.Text, TelefonoTbx.Text, LugarTrabajoTbx.Text, fechaNacDatePicker.Value);
+            Controladores.PacienteController.EliminarPaciente(paciente);
+            ActualizarTabla();
 
+            reestablecerCampos();
         }
     }
 }
