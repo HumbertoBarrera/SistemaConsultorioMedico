@@ -47,23 +47,17 @@ namespace SistemaConsultorioMedico
 
         private void guardarPac_Btn_Click(object sender, EventArgs e)
         {
-            errorDigit.Visible = false;
             if (validarCampos())
             {
-                if (TelefonoTbx.Text.Length == 10)
-                {
-                    var random = new Random().Next(10000000, 99999999);
-                    paciente = new Modelos.Paciente(random, ((curDate.Year) - Convert.ToInt32(fechaNacDatePicker.Value.Year)), NombreTxb.Text, ApellidoPaternoTbx.Text,
+               
+                var random = new Random().Next(10000000, 99999999);
+                paciente = new Modelos.Paciente(random, ((curDate.Year) - Convert.ToInt32(fechaNacDatePicker.Value.Year)), NombreTxb.Text, ApellidoPaternoTbx.Text,
                                                                     ApellidoMaternoTbx.Text, LugarNaciTbx.Text, DireccionTbx.Text, TelefonoTbx.Text, CorreoETbx.Text,
                                                                     OcupacionTbx.Text, TelefonoTbx.Text, LugarTrabajoTbx.Text, fechaNacDatePicker.Value);
-                    Controladores.PacienteController.altaPaciente(paciente);
-                    ActualizarTabla();
-                    reestablecerCampos();
-                }
-                else
-                {
-                    errorDigit.Visible = true;
-                }
+                Controladores.PacienteController.altaPaciente(paciente);
+                ActualizarTabla();
+                reestablecerCampos();
+               
 
             }
             else
@@ -230,6 +224,14 @@ namespace SistemaConsultorioMedico
                 {
                     ModifPacienteBtn.Enabled = false;
                 }
+            }
+            if (TelefonoTbx.Text.Length != 10)
+            {
+                errorDigit.Visible = true;
+            }
+            else
+            {
+                errorDigit.Visible = false;
             }
         }
 

@@ -145,6 +145,7 @@ namespace SistemaConsultorioMedico
             this.PacienteCitaTxb.Size = new System.Drawing.Size(379, 33);
             this.PacienteCitaTxb.TabIndex = 1;
             this.PacienteCitaTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.PacienteCitaTxb.OnValueChanged += new System.EventHandler(this.PacienteCitaTxb_OnValueChanged);
             this.PacienteCitaTxb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PacienteCitaTxb_KeyPress);
             // 
             // bunifuCustomDataGrid2

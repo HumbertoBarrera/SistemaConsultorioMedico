@@ -90,7 +90,8 @@ namespace SistemaConsultorioMedico
                 }
                 else
                 {
-                    errorDigit.Visible = true;
+                    MessageBox.Show("El ID debe contener minimo 8 numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
                 }
             }
             else
@@ -352,6 +353,18 @@ namespace SistemaConsultorioMedico
             {
                 MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
+            }
+        }
+
+        private void PacienteCitaTxb_OnValueChanged(object sender, EventArgs e)
+        {
+            if (PacienteCitaTxb.Text.Length != 8)
+            {
+                errorDigit.Visible = true;
+            }
+            else
+            {
+                errorDigit.Visible = false;
             }
         }
     }
