@@ -27,6 +27,10 @@ namespace SistemaConsultorioMedico
             InitializeComponent();
             obtenerFecha();
             llenarInformacion(idPaciente);
+            Controladores.PropiedadController.BunifuMaterial(dato12Tbx, 3);
+            Controladores.PropiedadController.BunifuMaterial(dato16Tbx, 2);
+
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

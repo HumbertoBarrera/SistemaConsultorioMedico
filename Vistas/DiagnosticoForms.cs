@@ -26,6 +26,7 @@ namespace SistemaConsultorioMedico
             FechaTxb.Text = fecha.ToString("MM/dd/yyyy");
             guardarbtn.Visible = true;
 
+
         }
         int pacienteExt;
 

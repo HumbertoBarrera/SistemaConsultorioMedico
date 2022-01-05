@@ -22,6 +22,9 @@ namespace SistemaConsultorioMedico
             comboBox1.Items.Insert(0, "----- Seleccione la hora----");
             comboBox1.SelectedIndex = 0;
 
+           
+            Controladores.PropiedadController.BunifuMaterial(PacienteCitaTxb, 8);
+
         }
         int indice;
 
@@ -106,6 +109,7 @@ namespace SistemaConsultorioMedico
 
         }
 
+    
         private void EliminarCitaBtn_Click(object sender, EventArgs e)
         {
             if ((comboBox1.Text != "----- Seleccione la hora----") && (comboBox1.SelectedIndex != -1))
@@ -333,6 +337,19 @@ namespace SistemaConsultorioMedico
             comboBox1.SelectedIndex = 0;
             folioCitaLb.Text = "";
             PacienteCitaTxb.Enabled = true;
+        }
+
+        private void bunifuCustomDataGrid2_Validating(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void PacienteCitaTxb_OnValueChanged(object sender, EventArgs e)
+        {
+            if (PacienteCitaTxb.Text.Length > 8)
+            {
+                
+            }
         }
     }
 }

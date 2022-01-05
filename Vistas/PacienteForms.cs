@@ -21,6 +21,9 @@ namespace SistemaConsultorioMedico
         public Paciente()
         {
             InitializeComponent();
+
+            Controladores.PropiedadController.BunifuMaterial(TelefonoTbx, 10);
+
         }
 
         private void BuscarTbx_MouseEnter(object sender, EventArgs e)
