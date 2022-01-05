@@ -23,6 +23,7 @@ namespace SistemaConsultorioMedico
             InitializeComponent();
 
             Controladores.PropiedadController.BunifuMaterial(TelefonoTbx, 10);
+            errorDigit.Visible = false;
 
         }
 
@@ -46,15 +47,24 @@ namespace SistemaConsultorioMedico
 
         private void guardarPac_Btn_Click(object sender, EventArgs e)
         {
-            if(validarCampos())
+            errorDigit.Visible = false;
+            if (validarCampos())
             {
-                var random = new Random().Next(10000000, 99999999);
-                paciente = new Modelos.Paciente(random, ((curDate.Year) - Convert.ToInt32(fechaNacDatePicker.Value.Year)), NombreTxb.Text, ApellidoPaternoTbx.Text,
-                                                                ApellidoMaternoTbx.Text, LugarNaciTbx.Text, DireccionTbx.Text, TelefonoTbx.Text, CorreoETbx.Text,
-                                                                OcupacionTbx.Text, TelefonoTbx.Text, LugarTrabajoTbx.Text, fechaNacDatePicker.Value);
-                Controladores.PacienteController.altaPaciente(paciente);
-                ActualizarTabla();
-                reestablecerCampos();
+                if (TelefonoTbx.Text.Length == 10)
+                {
+                    var random = new Random().Next(10000000, 99999999);
+                    paciente = new Modelos.Paciente(random, ((curDate.Year) - Convert.ToInt32(fechaNacDatePicker.Value.Year)), NombreTxb.Text, ApellidoPaternoTbx.Text,
+                                                                    ApellidoMaternoTbx.Text, LugarNaciTbx.Text, DireccionTbx.Text, TelefonoTbx.Text, CorreoETbx.Text,
+                                                                    OcupacionTbx.Text, TelefonoTbx.Text, LugarTrabajoTbx.Text, fechaNacDatePicker.Value);
+                    Controladores.PacienteController.altaPaciente(paciente);
+                    ActualizarTabla();
+                    reestablecerCampos();
+                }
+                else
+                {
+                    errorDigit.Visible = true;
+                }
+
             }
             else
             {
