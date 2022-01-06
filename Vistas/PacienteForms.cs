@@ -57,8 +57,6 @@ namespace SistemaConsultorioMedico
                 Controladores.PacienteController.altaPaciente(paciente);
                 ActualizarTabla();
                 reestablecerCampos();
-               
-
             }
             else
             {
@@ -94,7 +92,7 @@ namespace SistemaConsultorioMedico
             }
             else if(IdPacienteLbl.Visible == true)
             {
-                int idPaciente = int.Parse(IdPacienteLbl.Text);
+                int idPaciente = int.Parse(IdPacienteLbl.Text.Substring(13));
                 Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
                 Form VDiag = new Diagnostico(idPaciente);
                 this.Hide();
@@ -124,6 +122,7 @@ namespace SistemaConsultorioMedico
         {
             IdPacienteLbl.Visible = false;
             correoErrorLbl.Visible = false;
+            errorDigit.Visible = false;
             NombreTxb.Text = "";
             ApellidoPaternoTbx.Text = "";
             ApellidoMaternoTbx.Text = "";
@@ -132,9 +131,11 @@ namespace SistemaConsultorioMedico
             DireccionTbx.Text = "";
             TelefonoTbx.Text = "";
             CorreoETbx.Text = "";
-            correoErrorLbl.Visible = false;
             OcupacionTbx.Text = "";
             LugarTrabajoTbx.Text = "";
+            IdPacienteLbl.Visible = false;
+            correoErrorLbl.Visible = false;
+            errorDigit.Visible = false;
         }
 
         private void InforMedicaBtn_Click(object sender, EventArgs e)
@@ -173,7 +174,6 @@ namespace SistemaConsultorioMedico
                                                                 OcupacionTbx.Text, TelefonoTbx.Text, LugarTrabajoTbx.Text, fechaNacDatePicker.Value);
             Controladores.PacienteController.ActualizarPaciente(paciente);
             ActualizarTabla();
-
             reestablecerCampos();
         }
 
@@ -209,12 +209,10 @@ namespace SistemaConsultorioMedico
         {
             if (validarCampos() && flagME)
             {
-                guardarPac_Btn.IdleFillColor = Color.White;
                 guardarPac_Btn.Enabled = true;
             }
             else
             {
-                guardarPac_Btn.IdleFillColor = Color.Gray;
                 guardarPac_Btn.Enabled = false;
                 if (validarCampos())
                 {
@@ -224,14 +222,6 @@ namespace SistemaConsultorioMedico
                 {
                     ModifPacienteBtn.Enabled = false;
                 }
-            }
-            if (TelefonoTbx.Text.Length != 10)
-            {
-                errorDigit.Visible = true;
-            }
-            else
-            {
-                errorDigit.Visible = false;
             }
         }
 
@@ -286,10 +276,12 @@ namespace SistemaConsultorioMedico
         {
             if (guardarPac_Btn.Enabled == true)
             {
+                guardarPac_Btn.IdleFillColor = Color.White;
                 guardarPac_Btn.Padding = new Padding(0);
             }
             else
             {
+                guardarPac_Btn.IdleFillColor = Color.Gray;
                 guardarPac_Btn.Padding = new Padding(34, 10, 0, 0);
             }
         }
@@ -329,8 +321,62 @@ namespace SistemaConsultorioMedico
                                                                 OcupacionTbx.Text, TelefonoTbx.Text, LugarTrabajoTbx.Text, fechaNacDatePicker.Value);
             Controladores.PacienteController.EliminarPaciente(paciente);
             ActualizarTabla();
-
             reestablecerCampos();
+        }
+
+        private void validarNumeros(object sender, EventArgs e)
+        {
+            if (isNumeric(TelefonoTbx.Text))
+            {
+                if (TelefonoTbx.Text.Length != 10)
+                {
+                    TelefonoTbx.LineIdleColor = Color.Crimson;
+                    TelefonoTbx.LineMouseHoverColor = Color.Crimson;
+                    TelefonoTbx.LineFocusedColor = Color.Crimson;
+                    errorDigit.Text = "El teléfono debe contener mínimo 10 dígitos.";
+                    errorDigit.Visible = true;
+                    ModifPacienteBtn.Enabled = false;
+                    guardarPac_Btn.Enabled = false;
+                }
+                else
+                {
+                    TelefonoTbx.LineIdleColor = Color.Purple;
+                    TelefonoTbx.LineMouseHoverColor = Color.Blue;
+                    TelefonoTbx.LineFocusedColor = Color.Blue;
+                    errorDigit.Visible = false;
+                    if (validarCampos() && flagME)
+                    {
+                        guardarPac_Btn.Enabled = true;
+                    }
+                    else
+                    {
+                        guardarPac_Btn.Enabled = false;
+                        if (validarCampos())
+                        {
+                            ModifPacienteBtn.Enabled = true;
+                        }
+                        else
+                        {
+                            ModifPacienteBtn.Enabled = false;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                TelefonoTbx.LineIdleColor = Color.Crimson;
+                TelefonoTbx.LineMouseHoverColor = Color.Crimson;
+                TelefonoTbx.LineFocusedColor = Color.Crimson;
+                ModifPacienteBtn.Enabled = false;
+                guardarPac_Btn.Enabled = false;
+                errorDigit.Text = "Caracter inválido";
+                errorDigit.Visible = true;
+            }
+        }
+
+        public bool isNumeric(string value)
+        {
+            return value.All(char.IsNumber);
         }
     }
 }

@@ -16,14 +16,16 @@ namespace SistemaConsultorioMedico
     {
         private Modelos.InformacionMedica im1;
         private Modelos.InformacionMedica im2;
+        private InformacionMedica info;
         int idPaciente;
         bool flagME;
 
-        public Preguntas(Modelos.InformacionMedica im1, int idPaciente, bool flagME)
+        public Preguntas(Modelos.InformacionMedica im1, int idPaciente, bool flagME, InformacionMedica info)
         {
             this.im1 = im1;
             this.idPaciente = idPaciente;
             this.flagME = flagME;
+            this.info = info;
             InitializeComponent();
             obtenerFecha();
             llenarInformacion(idPaciente);
@@ -51,6 +53,7 @@ namespace SistemaConsultorioMedico
                 Controladores.InformacionMedicaController.altaInformacionMedica(im1, im2);
                 reestablecerCampos();
                 this.Close();
+                info.Close();
             }
             else
             {
@@ -303,6 +306,7 @@ namespace SistemaConsultorioMedico
                 Controladores.InformacionMedicaController.modificarInformacionMedica(im1, im2);
                 reestablecerCampos();
                 this.Close();
+                info.Close();
             }
             else
             {
@@ -321,6 +325,7 @@ namespace SistemaConsultorioMedico
             Controladores.InformacionMedicaController.EliminarInformacionMedica(im1, im2);
             reestablecerCampos();
             this.Close();
+            info.Close();
         }
 
         private void dato10Rbtn1_CheckedChanged(object sender, EventArgs e)

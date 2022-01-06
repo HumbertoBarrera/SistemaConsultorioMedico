@@ -88,8 +88,8 @@ namespace SistemaConsultorioMedico
                 Modelos.Usuario usu = new Modelos.Usuario();
                 usu.setUsuario(usuariotxt.Text);
                 usu.setPassword(contratxt.Text);
-                Controladores.UsuarioController.Login(usu);
-                this.Hide();
+                Controladores.UsuarioController.Login(usu, this);
+                //this.Hide();
             }
             else
             {

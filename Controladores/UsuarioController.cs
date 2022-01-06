@@ -7,13 +7,12 @@ using SistemaConsultorioMedico.Modelos;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-
 namespace SistemaConsultorioMedico.Controladores
 {
     class UsuarioController
     {
 
-        public static void Login(Modelos.Usuario U)
+        public static void Login(Modelos.Usuario U, Login login)
         {
             SqlCommand codigo;
             codigo = new SqlCommand("SELECT * FROM USUARIO WHERE usuario= '" + U.getUsuario() + "' AND contraseña='" + U.getPassword()+ "'", Controladores.ConexionController.Conectar());
@@ -28,18 +27,19 @@ namespace SistemaConsultorioMedico.Controladores
                     {
                         Form MenuForm = new Menuform();
                         MenuForm.Show();
+                        login.Hide();
                     }
                     else
                     {
                         Form Menu = new MenuPrincipalSecretaria();
                         Menu.Show();
+                        login.Hide();
                     }
                 }
             }
             else
             {
                 MessageBox.Show("Usuario y/o contraseña son incorrectos");
-
             }
 
         }
