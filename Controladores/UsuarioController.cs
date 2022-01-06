@@ -31,7 +31,7 @@ namespace SistemaConsultorioMedico.Controladores
                     }
                     else
                     {
-                        Form Menu = new MenuPrincipalSecretaria();
+                        Form Menu = new MenuPrincipalSecretaria(false);
                         Menu.Show();
                         login.Hide();
                     }
