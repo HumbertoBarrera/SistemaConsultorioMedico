@@ -66,7 +66,7 @@ namespace SistemaConsultorioMedico
 
         private void Pacientebtn_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new Paciente());
+            AbrirFormHijo(new Paciente(true));
         }
 
         private void AbrirFormHijo(object formhijo)

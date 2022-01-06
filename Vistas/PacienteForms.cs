@@ -14,17 +14,18 @@ namespace SistemaConsultorioMedico
     {
 
         DateTime curDate = DateTime.Today;
-        bool flagME = true;
+        bool flagME = true, flagS;
         int indice;
         private Modelos.Paciente paciente;
 
-        public Paciente()
+        public Paciente(bool flagS)
         {
             InitializeComponent();
 
             Controladores.PropiedadController.BunifuMaterial(TelefonoTbx, 10);
             errorDigit.Visible = false;
-
+            this.flagS = flagS;
+            if (!flagS) DiagnosticoBtn.Visible = false;
         }
 
         private void BuscarTbx_MouseEnter(object sender, EventArgs e)
@@ -120,9 +121,6 @@ namespace SistemaConsultorioMedico
 
         private void reestablecerCampos()
         {
-            IdPacienteLbl.Visible = false;
-            correoErrorLbl.Visible = false;
-            errorDigit.Visible = false;
             NombreTxb.Text = "";
             ApellidoPaternoTbx.Text = "";
             ApellidoMaternoTbx.Text = "";
@@ -136,6 +134,11 @@ namespace SistemaConsultorioMedico
             IdPacienteLbl.Visible = false;
             correoErrorLbl.Visible = false;
             errorDigit.Visible = false;
+            flagME = true;
+            guardarPac_Btn.Enabled = false;
+            ModifPacienteBtn.Enabled = false;
+            EliPacienteBtn.Enabled = false;
+            this.ActiveControl = bunifuCustomLabel1;
         }
 
         private void InforMedicaBtn_Click(object sender, EventArgs e)
@@ -248,27 +251,47 @@ namespace SistemaConsultorioMedico
 
         private void verificarEmail(object sender, EventArgs e)
         {
-            if (isValidEmail(CorreoETbx.Text))
+            if(CorreoETbx.Text.Length == 0)
             {
+                CorreoETbx.LineIdleColor = Color.Purple;
+                CorreoETbx.LineMouseHoverColor = Color.Blue;
                 CorreoETbx.LineFocusedColor = Color.Blue;
                 correoErrorLbl.Visible = false;
-                if (validarCampos() && flagME)
-                {
-                    guardarPac_Btn.IdleFillColor = Color.White;
-                    guardarPac_Btn.Enabled = true;
-                }
-                else
-                {
-                    guardarPac_Btn.IdleFillColor = Color.Gray;
-                    guardarPac_Btn.Enabled = false;
-                }
+                guardarPac_Btn.Enabled = false;
+                ModifPacienteBtn.Enabled = false;
             }
             else
             {
-                CorreoETbx.LineFocusedColor = Color.Crimson;
-                correoErrorLbl.Visible = true;
-                guardarPac_Btn.IdleFillColor = Color.Gray;
-                guardarPac_Btn.Enabled = false;
+                if (isValidEmail(CorreoETbx.Text))
+                {
+                    CorreoETbx.LineFocusedColor = Color.Blue;
+                    correoErrorLbl.Visible = false;
+                    if (validarCampos() && flagME)
+                    {
+                        guardarPac_Btn.IdleFillColor = Color.White;
+                        guardarPac_Btn.Enabled = true;
+                    }
+                    else
+                    {
+                        guardarPac_Btn.IdleFillColor = Color.Gray;
+                        guardarPac_Btn.Enabled = false;
+                        if (validarCampos())
+                        {
+                            ModifPacienteBtn.Enabled = true;
+                        }
+                        else
+                        {
+                            ModifPacienteBtn.Enabled = false;
+                        }
+                    }
+                }
+                else
+                {
+                    CorreoETbx.LineFocusedColor = Color.Crimson;
+                    correoErrorLbl.Visible = true;
+                    guardarPac_Btn.IdleFillColor = Color.Gray;
+                    guardarPac_Btn.Enabled = false;
+                } 
             }
         }
 
@@ -328,36 +351,48 @@ namespace SistemaConsultorioMedico
         {
             if (isNumeric(TelefonoTbx.Text))
             {
-                if (TelefonoTbx.Text.Length != 10)
+                if (TelefonoTbx.Text.Length == 0)
                 {
-                    TelefonoTbx.LineIdleColor = Color.Crimson;
-                    TelefonoTbx.LineMouseHoverColor = Color.Crimson;
-                    TelefonoTbx.LineFocusedColor = Color.Crimson;
-                    errorDigit.Text = "El teléfono debe contener mínimo 10 dígitos.";
-                    errorDigit.Visible = true;
-                    ModifPacienteBtn.Enabled = false;
-                    guardarPac_Btn.Enabled = false;
-                }
-                else
-                {
+                    errorDigit.Visible = false;
                     TelefonoTbx.LineIdleColor = Color.Purple;
                     TelefonoTbx.LineMouseHoverColor = Color.Blue;
                     TelefonoTbx.LineFocusedColor = Color.Blue;
-                    errorDigit.Visible = false;
-                    if (validarCampos() && flagME)
+                    guardarPac_Btn.Enabled = false;
+                    ModifPacienteBtn.Enabled = false;
+                }
+                else
+                {
+                    if (TelefonoTbx.Text.Length != 10)
                     {
-                        guardarPac_Btn.Enabled = true;
+                        TelefonoTbx.LineIdleColor = Color.Crimson;
+                        TelefonoTbx.LineMouseHoverColor = Color.Crimson;
+                        TelefonoTbx.LineFocusedColor = Color.Crimson;
+                        errorDigit.Text = "El teléfono debe contener mínimo 10 dígitos.";
+                        errorDigit.Visible = true;
+                        ModifPacienteBtn.Enabled = false;
+                        guardarPac_Btn.Enabled = false;
                     }
                     else
                     {
-                        guardarPac_Btn.Enabled = false;
-                        if (validarCampos())
+                        TelefonoTbx.LineIdleColor = Color.Purple;
+                        TelefonoTbx.LineMouseHoverColor = Color.Blue;
+                        TelefonoTbx.LineFocusedColor = Color.Blue;
+                        errorDigit.Visible = false;
+                        if (validarCampos() && flagME)
                         {
-                            ModifPacienteBtn.Enabled = true;
+                            guardarPac_Btn.Enabled = true;
                         }
                         else
                         {
-                            ModifPacienteBtn.Enabled = false;
+                            guardarPac_Btn.Enabled = false;
+                            if (validarCampos())
+                            {
+                                ModifPacienteBtn.Enabled = true;
+                            }
+                            else
+                            {
+                                ModifPacienteBtn.Enabled = false;
+                            }
                         }
                     }
                 }

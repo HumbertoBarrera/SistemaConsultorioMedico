@@ -86,7 +86,6 @@ namespace SistemaConsultorioMedico
 
         private void guardarbtn_Click(object sender, EventArgs e)
         {
-
             if ((FechaTxb.Text != "FECHA") && (Descripciontxb.Text != "DESCRIPCION"))
             {
                 diagnostico = new Modelos.Diagnostico();
@@ -94,7 +93,6 @@ namespace SistemaConsultorioMedico
                 diagnostico.setIdPaciente(pacienteExt);
                 diagnostico.setFecha(fecha);
                 diagnostico.setDescripcion(Descripciontxb.Text);
-
                 if (Controladores.DiagnosticoController.validaExisPaciente(diagnostico) == true)
                 {
                     Controladores.DiagnosticoController.folio(diagnostico);
@@ -114,8 +112,6 @@ namespace SistemaConsultorioMedico
 
                     }
                 }
-              
-
             }
             else
             {
@@ -172,7 +168,6 @@ namespace SistemaConsultorioMedico
             Descripciontxb.Text = "";
             Descripciontxb.Enabled = true;
             guardarbtn.Visible = true;
-
         }
 
         private void bunifuCustomDataGrid1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -182,7 +177,6 @@ namespace SistemaConsultorioMedico
             Descripciontxb.Text = bunifuCustomDataGrid1[2, indice].Value.ToString();
             Descripciontxb.Enabled = false;
             guardarbtn.Visible = false;
-
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

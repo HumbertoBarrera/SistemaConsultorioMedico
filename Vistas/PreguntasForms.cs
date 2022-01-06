@@ -31,8 +31,6 @@ namespace SistemaConsultorioMedico
             llenarInformacion(idPaciente);
             Controladores.PropiedadController.BunifuMaterial(dato12Tbx, 3);
             Controladores.PropiedadController.BunifuMaterial(dato16Tbx, 2);
-
-
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -646,6 +644,7 @@ namespace SistemaConsultorioMedico
             if (validarCampos() && flagME)
             {
                 GuardarBtn.Enabled = true;
+                EliminarBtn.Enabled = false;
             }
             else
             {
@@ -687,6 +686,7 @@ namespace SistemaConsultorioMedico
                 if (validarCampos() && flagME)
                 {
                     GuardarBtn.Enabled = true;
+                    EliminarBtn.Enabled = false;
                 }
                 else
                 {
@@ -723,6 +723,7 @@ namespace SistemaConsultorioMedico
                 if (validarCampos() && flagME)
                 {
                     GuardarBtn.Enabled = true;
+                    EliminarBtn.Enabled = false;
                 }
                 else
                 {
