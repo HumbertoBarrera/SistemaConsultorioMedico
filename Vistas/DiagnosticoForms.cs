@@ -86,6 +86,7 @@ namespace SistemaConsultorioMedico
 
         private void guardarbtn_Click(object sender, EventArgs e)
         {
+            guardarbtn.Visible = false;
 
             if ((FechaTxb.Text != "FECHA") && (Descripciontxb.Text != "DESCRIPCION"))
             {
@@ -105,6 +106,7 @@ namespace SistemaConsultorioMedico
                     bunifuCustomDataGrid1.DataSource = dt;
                     DataGridViewColumn Column = bunifuCustomDataGrid1.Columns[2];
                     Column.Visible = false;
+
                 }
                 else
                 {
