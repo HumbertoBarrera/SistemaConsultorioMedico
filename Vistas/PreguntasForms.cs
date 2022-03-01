@@ -33,7 +33,7 @@ namespace SistemaConsultorioMedico
         {
             this.Close();
         }
-        //Se guardan los datos de los campos en la base de datos y se validan campos vacios
+        //Se guardan los datos de los campos en la base de datos y se validan campos  vacios
         private void GuardarBtn_Click(object sender, EventArgs e)
         {
             if (validarCampos())
