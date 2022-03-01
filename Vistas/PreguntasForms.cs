@@ -27,7 +27,7 @@ namespace SistemaConsultorioMedico
             this.flagME = flagME;
             this.info = info;
             InitializeComponent();
-            ObtenerFecha();
+            obtenerFecha();
             LlenarInformacion(idPaciente);
             Controladores.PropiedadController.BunifuMaterial(dato12Tbx, 3);
             Controladores.PropiedadController.BunifuMaterial(dato16Tbx, 2);
@@ -276,7 +276,7 @@ namespace SistemaConsultorioMedico
                     {
                         while (leer.Read())
                         {
-                            LlenarDato10(leer["dato10"].ToString().Trim());
+                            llenarDato10(leer["dato10"].ToString().Trim());
                             dato10OpcTbx.Text = leer["dato10Opc"].ToString();
                             dato11ComboBox.selectedIndex = getIndex(leer["dato11"].ToString());
                             dato11OpcTbx.Text = leer["dato11Opc"].ToString();
