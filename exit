@@ -1,0 +1,632 @@
+[33mcommit 39ea14c90d7911b149cc37cf963272902d66fc9b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Merge: 1d29582 e7216ae
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Wed Jan 5 19:08:35 2022 -0700
+
+    CAMBIOS
+
+[33mcommit 1d295826273a563f9a7f071ef2e2ede1e4d36a03[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Wed Jan 5 19:07:22 2022 -0700
+
+    CAMBIOS DIAGNOSTICO
+
+[33mcommit e7216aef6e3aee249057b5a6107ea44a77e7d98c[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Wed Jan 5 19:01:44 2022 -0700
+
+    Correcciones
+
+[33mcommit 5583ddd91b54bff5772c8ecce83751d55bf4099a[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Wed Jan 5 18:04:39 2022 -0700
+
+    Correcciones
+
+[33mcommit 19bf1bee34700c382e62639d340410b0b0613fce[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Wed Jan 5 16:28:27 2022 -0700
+
+    Validaciones Minimo
+
+[33mcommit e0ce257e104625b1c9a4c2cd8e171435cf50f7df[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Wed Jan 5 16:07:49 2022 -0700
+
+    Modificaciones Caracter maximo
+
+[33mcommit 29f4ee44a3a1f1750c66af62d3a12ed1ed2a6569[m
+Merge: fc3f13a 51e951d
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Tue Jan 4 21:04:26 2022 -0700
+
+    cambios
+
+[33mcommit fc3f13a263f31487118fa13cb60dcce4bc8d7ada[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Tue Jan 4 21:02:41 2022 -0700
+
+    Longitud Maxima
+
+[33mcommit 51e951d537a2d2ef0b5a03ecfaad9d43d08094ad[m
+Author: Oscar Lopez <57050336+keyle0015@users.noreply.github.com>
+Date:   Tue Jan 4 18:45:22 2022 -0700
+
+    le agregue el eliminar otra vez
+
+[33mcommit eaa466f5e4589668e1d54f94e492d2fbb88caeb4[m
+Merge: 9e194b2 a0b74af
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Tue Jan 4 15:35:09 2022 -0700
+
+    Merge branch 'master' of https://github.com/HumbertoBarrera/SistemaConsultorioMedico
+
+[33mcommit a0b74afc77b4dfbf4e2b0460f6ea4e218f4564f9[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Tue Jan 4 12:07:23 2022 -0700
+
+    Correcciones
+
+[33mcommit c03055ac835c6aa5831dce00d6f06b8b59498ad4[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Tue Jan 4 10:59:20 2022 -0700
+
+    Correcciones
+
+[33mcommit a6fb78d134eb88d1a7c1dd9c2825ca0c68dc24b3[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Tue Jan 4 01:16:30 2022 -0700
+
+    Eliminación de código inactivo
+
+[33mcommit 9e194b2dfe458da01064b1b3e04c1e0bfb61916e[m
+Merge: 96db896 d2ebed2
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Tue Jan 4 01:12:35 2022 -0700
+
+    modificaciones menu
+
+[33mcommit 96db8967a4f0891b1d3342d0a27144a65fc88a92[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Tue Jan 4 01:11:21 2022 -0700
+
+    cambios menu
+
+[33mcommit d2ebed207d1d0074a411b26bcd33ba395f5993b5[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Tue Jan 4 01:07:59 2022 -0700
+
+    Botón de cerrar sesión
+
+[33mcommit 15b3f584effd2d006da72800d04bd98b8bee9dc5[m
+Merge: 2ca05ee 8e84ff5
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Tue Jan 4 00:48:16 2022 -0700
+
+    Merge branch 'master' of https://github.com/HumbertoBarrera/SistemaConsultorioMedico
+
+[33mcommit 2ca05ee1904248d5ceea68a63a29cd1f5664650c[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Tue Jan 4 00:48:05 2022 -0700
+
+    citas modificaciones finales
+
+[33mcommit 8e84ff5f66469b32151e03954d4b5cc4149a72c4[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Tue Jan 4 00:29:26 2022 -0700
+
+    Login de secretaria activo
+
+[33mcommit 29389d31a14813dcbe5b743b788f208a9c524397[m
+Merge: 798127e bbbbdb0
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Tue Jan 4 00:09:09 2022 -0700
+
+    cambios citas
+
+[33mcommit 798127ec2cfa699cee20736f481af9c0d7161e49[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Tue Jan 4 00:04:33 2022 -0700
+
+    cambios citas
+
+[33mcommit bbbbdb084ada058716a2c8e35a1219b07321aad5[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Tue Jan 4 00:01:59 2022 -0700
+
+    Correcicón hora
+
+[33mcommit dfe3ac32059f196e7b324ebbfa05b1b428240948[m
+Merge: 0bde577 203777b
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Mon Jan 3 23:47:20 2022 -0700
+
+    cambios menu secretaria
+
+[33mcommit 0bde5779d9756da973578e176ad310c537e8dc66[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Mon Jan 3 23:43:31 2022 -0700
+
+    Cambios menu secretaria
+
+[33mcommit 203777b2be7da51d0cc7c1f0976d8b5a524fc0a3[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Mon Jan 3 23:26:16 2022 -0700
+
+    Patrón Singleton
+
+[33mcommit 7d9b9bd1ee78bb8815c5bf1a48b696e9022bda4f[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Mon Jan 3 22:45:40 2022 -0700
+
+    Correcciones con formato de fecha
+
+[33mcommit 70b9721cf21615bc5650f7730d0ce29281cf4cb3[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Mon Jan 3 22:27:59 2022 -0700
+
+    Correcciones
+
+[33mcommit cea1a1d91d3d68c85349d96ecac76581edfac3cd[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Mon Jan 3 21:35:26 2022 -0700
+
+    Correción de formato de fecha
+
+[33mcommit 53fb0c9948759f01549d44c3b3ce925c3825c438[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Mon Jan 3 13:15:38 2022 -0700
+
+    Correcciones
+
+[33mcommit 677ae2169772a97407838a89b548fb6810d04287[m
+Merge: 299bc4a 4a1d326
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Mon Jan 3 01:10:46 2022 -0700
+
+    Merge branch 'master' of https://github.com/HumbertoBarrera/SistemaConsultorioMedico
+
+[33mcommit 299bc4a11f6c2069cc59bd62b08e68b4bed819a7[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Mon Jan 3 01:10:34 2022 -0700
+
+    Actualizacion Citas
+
+[33mcommit 4a1d326849fa38d5ebff3486948a4a09c1434815[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Sun Jan 2 23:43:48 2022 -0700
+
+    Correcciones.
+    Botones guardar, modificar y eliminar, validados para la información médica
+
+[33mcommit 8b46704115bb4983202679788733c3fb4a2dc3f1[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Sun Jan 2 23:09:54 2022 -0700
+
+    Correcciones.
+    Botones de Modificar y Eliminar en Paciente e Información Médica validados
+
+[33mcommit f3261bc72eb559f4f9fc9111aee35966fc96bff0[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Sun Jan 2 22:28:28 2022 -0700
+
+    Recuperación de datos en Información Médica
+
+[33mcommit 4fa87933f8688d2304b7ecff6bf51d0d05a91b9a[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Sun Jan 2 21:52:31 2022 -0700
+
+    Correcciones.
+    Cambio de diseño en información médica y validación de datos.
+
+[33mcommit 753e45b7e71aaeeeefef7e49b90db3856dd0d328[m
+Merge: d8d9430 935fc75
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Sun Jan 2 18:00:29 2022 -0700
+
+    Merge branch 'master' of https://github.com/HumbertoBarrera/SistemaConsultorioMedico
+
+[33mcommit d8d94303416faadd03c41e881dd3b4a7277708ca[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Sun Jan 2 17:39:33 2022 -0700
+
+    Correcciones.
+    Vetntana de información médica mejorada. Selección de SÍ o NO en preguntas cerradas y bloqueo de respuestas opcionales cuando se responde NO. Validación del botón, se desbloquea automáticamente cuando todo está correcto.
+
+[33mcommit 935fc7574bf19d73a0449eacef6e57a664970266[m
+Merge: e1e7950 48b4d33
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Sat Jan 1 19:10:29 2022 -0700
+
+    Merge branch 'master' of https://github.com/HumbertoBarrera/SistemaConsultorioMedico
+
+[33mcommit e1e7950593d1c24a6e8816cb70bcd38c49611fa4[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Sat Jan 1 19:10:12 2022 -0700
+
+    modificaciones cita
+
+[33mcommit 48b4d330654f3eb163ea8db2270dfbfb8e87c0c0[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Sat Jan 1 15:07:00 2022 -0700
+
+    Correcciones.
+    Corrección al bloqueo del botón guardar.
+
+[33mcommit db942b750e92ba0139391606d6989576381c0320[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Thu Dec 30 23:54:43 2021 -0700
+
+    Ajustes a los bloqueos.
+    Botones más visuales y validación de correo electrónico.
+
+[33mcommit 16529e0c4dc02f67536489d65bc934a350e39208[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Thu Dec 30 20:34:03 2021 -0700
+
+    Ajustes.
+    Botones en paciente bloqueados hasta que los campos estén completos.
+
+[33mcommit 11bf0ad86356f30c988e290015e72158882f967a[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Thu Dec 30 00:14:55 2021 -0700
+
+    Correcciones. Botones invisibles.
+    Guardar es invisible hasta que todos los campos están llenos. Modificar y eliminar son invisibles hasta que se selecciona una fila del datagrid. Aun pienso en hacer ajustes a estas validaciones,
+
+[33mcommit 40957cd52e442d06d2d749462c8c96be85b4e4e5[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Wed Dec 8 18:25:22 2021 -0700
+
+    Validaciones.
+    Botón de info médica y diagnóstico validado a que el paciente exista
+
+[33mcommit 6392322dedbdf332bc92961892fc36258a407aa9[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Wed Dec 8 18:01:25 2021 -0700
+
+    cambios paciente
+
+[33mcommit 7c78e53510dc17718360ccb1201b2262761b9b54[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Wed Dec 8 17:54:41 2021 -0700
+
+    Validaciones Diagnostico
+
+[33mcommit 7a60f694245ea86be4827f2a22067fc64ff4bc96[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Wed Dec 8 17:14:00 2021 -0700
+
+    Ajuste en vista de citas
+
+[33mcommit d470bcedcc80890d4ab390b6a0ef212bd824e15c[m
+Author: Evelyn Ruiz <haroevelynruizencinas09@gmail.com>
+Date:   Wed Dec 8 11:49:36 2021 -0700
+
+    Eliminar de informacion medica, agregue el botonsito de cerrar en la ventana de preguntas
+
+[33mcommit 3e70afd38051055104c020be11ac8fd0efe42cab[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Wed Dec 8 08:14:02 2021 -0700
+
+    Ajustes.
+    Ajustes en diagnóstico
+
+[33mcommit 04a35813a096238222d7e8c9253845c1a194219b[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Wed Dec 8 08:01:47 2021 -0700
+
+    Ajustes.
+    Ajustes en pacientes y citas
+
+[33mcommit 28d1b65ce8ad21420aaab01cfcc4946b86945329[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Tue Dec 7 23:29:58 2021 -0700
+
+    Validaciones Diagnostico
+
+[33mcommit 098fc877980c6f98fa6606e5580a9d5ba458b5e5[m
+Merge: 098aee0 a7d67ad
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Tue Dec 7 22:38:04 2021 -0700
+
+    Merge branch 'master' of https://github.com/HumbertoBarrera/SistemaConsultorioMedico
+
+[33mcommit 098aee061c8356f7806c55cde366e8b547a46635[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Tue Dec 7 22:37:55 2021 -0700
+
+    Cambios Diagnostico
+
+[33mcommit a7d67adf19a8c7ae5919a838308c93bf7fd78704[m
+Author: Oscar Lopez <57050336+keyle0015@users.noreply.github.com>
+Date:   Tue Dec 7 21:28:41 2021 -0700
+
+    Modificacion y eliminacion de citas agregada
+
+[33mcommit e98a7575a14adfd4891dae8aa46063fcd3acce30[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Tue Dec 7 21:19:17 2021 -0700
+
+    Información médica vista: botón buscar.
+     Y sí funciona
+
+[33mcommit afa98ac80c087077718b19e2fe9c406e6af3d5bd[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Tue Dec 7 19:35:41 2021 -0700
+
+    Información Médica: modificar.
+    Correcciones
+
+[33mcommit 418f8370cc85c80ccd6026a9f8d55af6971bf119[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Tue Dec 7 14:14:09 2021 -0700
+
+    Validacion existencia de paciente
+
+[33mcommit 6b2e29c747f8c5941505d38dffcb497323cb6763[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Tue Dec 7 13:54:33 2021 -0700
+
+    Validacion folio cita
+
+[33mcommit 38a310e5febedeeaae989967bf647ec058a62745[m
+Merge: 75de39e 21ce8c0
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Tue Dec 7 09:35:37 2021 -0700
+
+    Merge branch 'master' of https://github.com/HumbertoBarrera/SistemaConsultorioMedico
+
+[33mcommit 75de39e5e6cb2ad95d7bda8ef38c256e1b31e0d5[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Tue Dec 7 09:35:23 2021 -0700
+
+    validaciones cita
+
+[33mcommit 21ce8c00875437aa1f4f8c89291af90436127c1d[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Mon Dec 6 21:05:37 2021 -0700
+
+    Modificar información médica
+
+[33mcommit 9aefdd4a44979c8fda3fb8d63ab8ca92b3ec46e3[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Mon Dec 6 19:58:46 2021 -0700
+
+    Cambio en información médica.
+    Cargo de datos cuando se ingresa paciente. Botón de modificar y eliminar agregados.
+
+[33mcommit 3130170399bc6ab75139f2d685557a015816587e[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Mon Dec 6 14:51:29 2021 -0700
+
+    Boton eliminar y modificar cita habilitado
+
+[33mcommit 777d1ab96e7fd475eda79f260d1f0a60f3cbc3ef[m
+Merge: 9a0afe3 bb7a67c
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Mon Dec 6 12:25:08 2021 -0700
+
+    Merge branch 'master' of https://github.com/HumbertoBarrera/SistemaConsultorioMedico
+
+[33mcommit 9a0afe373c92c7f3774e418429515ab17431ca0c[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Mon Dec 6 12:24:59 2021 -0700
+
+    Botones actualizados
+
+[33mcommit bb7a67c8a915e9f4060b5bbe5350f95457c3afbd[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Mon Dec 6 12:20:06 2021 -0700
+
+    Correcciones
+    Eliminar cita
+
+[33mcommit e251db4af5fa1698c355e7042ce4215381fe2b7c[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Mon Dec 6 01:42:51 2021 -0700
+
+    Modificar citas habilitado
+
+[33mcommit 7d415a468ef80d7f302e831ed19703d15aa35e3a[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Sat Dec 4 23:04:42 2021 -0700
+
+    tabla citas habilitada
+
+[33mcommit 1f86bacc9e46f9556bd53d7580b46aa8c1a4d589[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Mon Nov 15 19:50:23 2021 -0700
+
+    Validaciones
+
+[33mcommit 6b797ce29b3a8862a9fa2931ab0d0eb3033095cb[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Mon Nov 15 18:01:15 2021 -0700
+
+    Validaciones de citas,diagnostico y login
+
+[33mcommit 60e960871b35a3f54031b171a9257f4b14ea0537[m
+Merge: cdd7683 f754314
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Sun Nov 14 22:42:06 2021 -0700
+
+    Merge branch 'master' of https://github.com/HumbertoBarrera/SistemaConsultorioMedico
+
+[33mcommit cdd768335388b5137ae3af9e9b0e2b6c41db4474[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Sun Nov 14 22:41:08 2021 -0700
+
+    Validaciones
+
+[33mcommit 760eb985a0fc394adbbb22327561c945ff46cdb2[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Sun Nov 14 22:19:46 2021 -0700
+
+    validaciones insert
+
+[33mcommit f754314820a22fc6148ea8592a9f26fc3f2bb425[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Sun Nov 14 17:58:22 2021 -0700
+
+    Validaciones de paciente e información médica
+
+[33mcommit 42ddd4a791a8fd085bc553735c57986e11ff1f43[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Sun Nov 14 16:06:54 2021 -0700
+
+    validaciones insert
+
+[33mcommit 263b6871b7e8779957a48ccdf6f9806122d3b6d6[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Sat Nov 13 20:09:38 2021 -0700
+
+    Actualización de GUI
+
+[33mcommit 8990ad68ff93b3a7ae0c0b8d856c53946f9f9cd7[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Fri Nov 12 22:02:28 2021 -0700
+
+    Alta de información médica
+
+[33mcommit a481258fa9fa070b8899a01209a69747af86a4cc[m
+Merge: a6fcfa3 80580ef
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Fri Nov 12 15:24:39 2021 -0700
+
+    Merge branch 'master' of https://github.com/HumbertoBarrera/SistemaConsultorioMedico
+
+[33mcommit a6fcfa379d5f5f74e18a4b56149d619da5a42a57[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Fri Nov 12 15:24:19 2021 -0700
+
+    login habilitado
+
+[33mcommit 80580ef9c82bca0ba19cdb364bda8403e2ca291d[m
+Author: Evelyn Ruiz <haroevelynruizencinas09@gmail.com>
+Date:   Thu Nov 11 00:03:53 2021 -0700
+
+    Actualizacion de preguntas en apratado informacion medica
+
+[33mcommit 829b2e7e527f043000b40d2d0ea5149bbfe2afc5[m
+Merge: aae3eab ec101a3
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Wed Nov 10 20:00:20 2021 -0700
+
+    Cita y diagnóstico
+
+[33mcommit aae3eabf5911a74d0b351476d43dee0a59971ffb[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Wed Nov 10 19:58:06 2021 -0700
+
+    Modelo de información médica
+
+[33mcommit ec101a302aa685f3a9f103f8835fcb7bdb00fcf4[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Wed Nov 10 18:21:54 2021 -0700
+
+    insercion cita
+
+[33mcommit 82edf312322803e19b3678679470050db17ef0c8[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Wed Nov 10 17:55:24 2021 -0700
+
+    inserciones diagnostico
+
+[33mcommit a8d2692cc131732e2bd484cfeaae1cd4b0fce3ed[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Tue Nov 9 21:15:37 2021 -0700
+
+    Ajustes a las validaciones
+
+[33mcommit 4937d3f935eea7f0b7297255a32ba9f114301266[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Tue Nov 9 20:35:19 2021 -0700
+
+    Validación campos vaciós en paciente y ajustes en el diseño
+
+[33mcommit 890e152317240c1b4be5afda4f655f656a35b120[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Tue Nov 9 19:00:36 2021 -0700
+
+    Modificación al alta de paciente y correcciones en diseño.
+
+[33mcommit c9002ae6cded3db183ec88197eb17a57e4cdbc5f[m
+Author: Evelyn Ruiz <haroevelynruizencinas09@gmail.com>
+Date:   Tue Nov 9 18:08:28 2021 -0700
+
+    Agregue eventos en textbox
+
+[33mcommit 1b04b193aaa19714efd662000234e488311ef8b0[m
+Author: Evelyn Ruiz <haroevelynruizencinas09@gmail.com>
+Date:   Tue Nov 9 17:45:16 2021 -0700
+
+    Configuracion de apertura de form
+
+[33mcommit 1f894c98fb821ff4f57f7d8852efc5c4eb725875[m
+Author: Evelyn Ruiz <haroevelynruizencinas09@gmail.com>
+Date:   Tue Nov 9 17:42:33 2021 -0700
+
+    Realice cambios en interfaz
+
+[33mcommit aca7bed0f874e6d2e989a2c829737ee3e6fb13d6[m
+Author: Evelyn Ruiz <haroevelynruizencinas09@gmail.com>
+Date:   Tue Nov 9 17:17:37 2021 -0700
+
+    Referencia
+
+[33mcommit 29ed26c8f06b97872dc0a5042888ead5a27ac22f[m
+Author: EvelynRuiz09 <86125559+EvelynRuiz09@users.noreply.github.com>
+Date:   Tue Nov 9 16:34:09 2021 -0700
+
+    Archivo.txt
+    
+    Este es un archivo
+
+[33mcommit 7c9aa68d634cf5d39a0d7f4a78cb671ab69c0434[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Tue Nov 9 11:08:43 2021 -0700
+
+    Generación de ID del paciente
+
+[33mcommit 58bdc7cb0a233ea4a2ce1e4e3372e92183d27255[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Mon Nov 8 11:01:32 2021 -0700
+
+    Insert paciente
+
+[33mcommit fba79d3c8b9ab48b29278433b81d5f1b6bf81c7f[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Sun Nov 7 19:22:29 2021 -0700
+
+    Conexiones
+
+[33mcommit 115261062b9135f86eae382adb0ab568e7c2e5f0[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Sun Nov 7 18:56:25 2021 -0700
+
+    Hola
+
+[33mcommit 7ab3c88ea982fc03d4a263dd31bcce32543173fb[m
+Author: Oscar <keyle0015@gmail.com>
+Date:   Sun Nov 7 17:31:00 2021 -0700
+
+    Se añadieron los controladores
+
+[33mcommit 1584a1c4c3e70224a2328e80e19bf14b83f9813c[m
+Author: Maria Jose Llanes <majollanes785@gmail.com>
+Date:   Sun Nov 7 16:54:11 2021 -0700
+
+    Agregando Modelos
+
+[33mcommit 4bc9ffe418694413dc45247b513397c93b83ec51[m[33m ([m[1;32mvistas[m[33m)[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Fri Nov 5 17:12:29 2021 -0700
+
+    Agregar archivos de proyecto.
+
+[33mcommit c25c3957687b09fd7e68f2231ece997d0c7f3518[m
+Author: Humberto Barrera <humbertobarcam@gmail.com>
+Date:   Fri Nov 5 17:12:26 2021 -0700
+
+    Agregar .gitignore y .gitattributes.

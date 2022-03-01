@@ -27,8 +27,8 @@ namespace SistemaConsultorioMedico
             this.flagME = flagME;
             this.info = info;
             InitializeComponent();
-            obtenerFecha();
-            llenarInformacion(idPaciente);
+            ObtenerFecha();
+            LlenarInformacion(idPaciente);
             Controladores.PropiedadController.BunifuMaterial(dato12Tbx, 3);
             Controladores.PropiedadController.BunifuMaterial(dato16Tbx, 2);
         }
@@ -38,18 +38,20 @@ namespace SistemaConsultorioMedico
             this.Close();
         }
 
+        // Acción de guardar la información médica
         private void GuardarBtn_Click(object sender, EventArgs e)
         {
-            if (validarCampos())
+            if (ValidarCampos())
             {
                 DateTime hoy = DateTime.Today;
-                im2 = new Modelos.InformacionMedica(obtenerEnfermedadFamiliar(), dato10OpcTbx.Text, dato11ComboBox.selectedValue, dato11OpcTbx.Text,
-                                                                            dato12Tbx.Text, dato13ComboBox.selectedValue, dato13OpcTbx.Text, dato13Opc2Tbx.Text, dato14ComboBox.selectedValue,
-                                                                            dato14OpcTbx.Text, dato14Opc2Tbx.Text, dato15ComboBox.selectedValue, dato15OpcTbx.Text,
-                                                                            dato15Opc2Tbx.Text, dato15Opc3Tbx.Text, dato15Opc4Tbx.Text, dato16Tbx.Text,
-                                                                            dato17ComboBox.selectedValue, dato18Tbx.Text, hoy);
-                Controladores.InformacionMedicaController.altaInformacionMedica(im1, im2);
-                reestablecerCampos();
+                im2 = new Modelos.InformacionMedica(ObtenerEnfermedadFamiliar(), dato10OpcTbx.Text, dato11ComboBox.selectedValue, dato11OpcTbx.Text,
+                                                                            dato12Tbx.Text, dato13ComboBox.selectedValue, dato13OpcTbx.Text, dato13Opc2Tbx.Text,
+                                                                            dato14ComboBox.selectedValue, dato14OpcTbx.Text, dato14Opc2Tbx.Text, 
+                                                                            dato15ComboBox.selectedValue, dato15OpcTbx.Text, dato15Opc2Tbx.Text, 
+                                                                            dato15Opc3Tbx.Text, dato15Opc4Tbx.Text, dato16Tbx.Text,dato17ComboBox.selectedValue, 
+                                                                            dato18Tbx.Text, hoy);
+                Controladores.InformacionMedicaController.AltaInformacionMedica(im1, im2);
+                ReestablecerCampos();
                 this.Close();
                 info.Close();
             }
@@ -59,25 +61,34 @@ namespace SistemaConsultorioMedico
             }
         }
 
-        private String obtenerEnfermedadFamiliar()
+        /* Método para obtener la enfermedad familiar.
+         * Dependiendo del radio button que esté activado
+         * se regresará el dato de dicho radio button activado
+         */
+        private String ObtenerEnfermedadFamiliar()
         {
-            if (dato10Rbtn1.Checked == true && dato10Rbtn2.Checked == false && dato10Rbtn3.Checked == false && dato10Rbtn4.Checked == false && dato10Tbx.Text == "" && dato10Rbtn5.Checked == false)
+            if (dato10Rbtn1.Checked == true && dato10Rbtn2.Checked == false && dato10Rbtn3.Checked == false && dato10Rbtn4.Checked == false && 
+                dato10Tbx.Text == "" && dato10Rbtn5.Checked == false)
             {
                 return dato10Rbtn1.Text;
             }
-            else if (dato10Rbtn1.Checked == false && dato10Rbtn2.Checked == true && dato10Rbtn3.Checked == false && dato10Rbtn4.Checked == false && dato10Tbx.Text == "" && dato10Rbtn5.Checked == false)
+            else if (dato10Rbtn1.Checked == false && dato10Rbtn2.Checked == true && dato10Rbtn3.Checked == false && dato10Rbtn4.Checked == false && 
+                dato10Tbx.Text == "" && dato10Rbtn5.Checked == false)
             {
                 return dato10Rbtn2.Text;
             }
-            else if (dato10Rbtn1.Checked == false && dato10Rbtn2.Checked == false && dato10Rbtn3.Checked == true && dato10Rbtn4.Checked == false && dato10Tbx.Text == "" && dato10Rbtn5.Checked == false)
+            else if (dato10Rbtn1.Checked == false && dato10Rbtn2.Checked == false && dato10Rbtn3.Checked == true && dato10Rbtn4.Checked == false && 
+                dato10Tbx.Text == "" && dato10Rbtn5.Checked == false)
             {
                 return dato10Rbtn3.Text;
             }
-            else if (dato10Rbtn1.Checked == false && dato10Rbtn2.Checked == false && dato10Rbtn3.Checked == false && dato10Rbtn4.Checked == true && dato10Tbx.Text == "" && dato10Rbtn5.Checked == false)
+            else if (dato10Rbtn1.Checked == false && dato10Rbtn2.Checked == false && dato10Rbtn3.Checked == false && dato10Rbtn4.Checked == true && 
+                dato10Tbx.Text == "" && dato10Rbtn5.Checked == false)
             {
                 return dato10Rbtn4.Text;
             }
-            else if (dato10Rbtn1.Checked == false && dato10Rbtn2.Checked == false && dato10Rbtn3.Checked == false && dato10Rbtn4.Checked == false && dato10Tbx.Text == "" && dato10Rbtn5.Checked == true)
+            else if (dato10Rbtn1.Checked == false && dato10Rbtn2.Checked == false && dato10Rbtn3.Checked == false && dato10Rbtn4.Checked == false && 
+                dato10Tbx.Text == "" && dato10Rbtn5.Checked == true)
             {
                 return dato10Rbtn5.Text;
             }
@@ -92,16 +103,22 @@ namespace SistemaConsultorioMedico
             this.Hide();
         }
 
-        private void obtenerFecha()
+        // Método para obtener la fecha del día
+        private void ObtenerFecha()
         {
             var fecha = DateTime.Today;
             FechaLbl.Text = FechaLbl.Text + fecha.Day.ToString() + " DE " + fecha.ToString("MMMMM").ToUpper() + " DEL " + fecha.Year.ToString();
         }
 
-        private bool validarCampos()
+        /* Método para validar que los campos
+         * de la ventana no estén vacíos
+         */
+        private bool ValidarCampos()
         {
-            if (validarDato10() && dato10OpcTbx.Text != "" && dato11ComboBox.selectedIndex > 0 && dato11OpcTbx.Text != "" && (dato12Tbx.Text != "" && isNumeric(dato12Tbx.Text)) && dato13ComboBox.selectedIndex > 0 && dato13OpcTbx.Text != "" && dato13Opc2Tbx.Text != "" &&
-                dato14ComboBox.selectedIndex > 0 && dato14OpcTbx.Text != "" && dato14Opc2Tbx.Text != "" && dato15ComboBox.selectedIndex > 0 && dato15OpcTbx.Text != "" && dato15Opc2Tbx.Text != "" && dato15Opc3Tbx.Text != "" && dato15Opc4Tbx.Text != "" && (dato16Tbx.Text != "" &&
+            if (ValidarDato10() && dato10OpcTbx.Text != "" && dato11ComboBox.selectedIndex > 0 && dato11OpcTbx.Text != "" && (dato12Tbx.Text != "" && 
+                isNumeric(dato12Tbx.Text)) && dato13ComboBox.selectedIndex > 0 && dato13OpcTbx.Text != "" && dato13Opc2Tbx.Text != "" &&
+                dato14ComboBox.selectedIndex > 0 && dato14OpcTbx.Text != "" && dato14Opc2Tbx.Text != "" && dato15ComboBox.selectedIndex > 0 && 
+                dato15OpcTbx.Text != "" && dato15Opc2Tbx.Text != "" && dato15Opc3Tbx.Text != "" && dato15Opc4Tbx.Text != "" && (dato16Tbx.Text != "" &&
                 isNumeric(dato16Tbx.Text)) && dato17ComboBox.selectedIndex > 0 && dato18Tbx.Text != "")
             {
                 return true;
@@ -112,29 +129,38 @@ namespace SistemaConsultorioMedico
             }
         }
 
-        private bool validarDato10()
+        /* Método para validar qué radio button está activado
+         * para el dato 10
+         */
+        private bool ValidarDato10()
         {
-            if (dato10Rbtn1.Checked == true && dato10Rbtn2.Checked == false && dato10Rbtn3.Checked == false && dato10Rbtn4.Checked == false && dato10Tbx.Text == "" && dato10Rbtn5.Checked == false)
+            if (dato10Rbtn1.Checked == true && dato10Rbtn2.Checked == false && dato10Rbtn3.Checked == false && dato10Rbtn4.Checked == false && 
+                dato10Tbx.Text == "" && dato10Rbtn5.Checked == false)
             {
                 return true;
             }
-            else if (dato10Rbtn1.Checked == false && dato10Rbtn2.Checked == true && dato10Rbtn3.Checked == false && dato10Rbtn4.Checked == false && dato10Tbx.Text == "" && dato10Rbtn5.Checked == false)
+            else if (dato10Rbtn1.Checked == false && dato10Rbtn2.Checked == true && dato10Rbtn3.Checked == false && dato10Rbtn4.Checked == false && 
+                dato10Tbx.Text == "" && dato10Rbtn5.Checked == false)
             {
                 return true;
             }
-            else if (dato10Rbtn1.Checked == false && dato10Rbtn2.Checked == false && dato10Rbtn3.Checked == true && dato10Rbtn4.Checked == false && dato10Tbx.Text == "" && dato10Rbtn5.Checked == false)
+            else if (dato10Rbtn1.Checked == false && dato10Rbtn2.Checked == false && dato10Rbtn3.Checked == true && dato10Rbtn4.Checked == false && 
+                dato10Tbx.Text == "" && dato10Rbtn5.Checked == false)
             {
                 return true;
             }
-            else if (dato10Rbtn1.Checked == false && dato10Rbtn2.Checked == false && dato10Rbtn3.Checked == false && dato10Rbtn4.Checked == true && dato10Tbx.Text == "" && dato10Rbtn5.Checked == false)
+            else if (dato10Rbtn1.Checked == false && dato10Rbtn2.Checked == false && dato10Rbtn3.Checked == false && dato10Rbtn4.Checked == true && 
+                dato10Tbx.Text == "" && dato10Rbtn5.Checked == false)
             {
                 return true;
             }
-            else if (dato10Rbtn1.Checked == false && dato10Rbtn2.Checked == false && dato10Rbtn3.Checked == false && dato10Rbtn4.Checked == false && dato10Tbx.Text != "" && dato10Rbtn5.Checked == false)
+            else if (dato10Rbtn1.Checked == false && dato10Rbtn2.Checked == false && dato10Rbtn3.Checked == false && dato10Rbtn4.Checked == false && 
+                dato10Tbx.Text != "" && dato10Rbtn5.Checked == false)
             {
                 return true;
             }
-            else if (dato10Rbtn1.Checked == false && dato10Rbtn2.Checked == false && dato10Rbtn3.Checked == false && dato10Rbtn4.Checked == false && dato10Tbx.Text == "" && dato10Rbtn5.Checked == true)
+            else if (dato10Rbtn1.Checked == false && dato10Rbtn2.Checked == false && dato10Rbtn3.Checked == false && dato10Rbtn4.Checked == false && 
+                dato10Tbx.Text == "" && dato10Rbtn5.Checked == true)
             {
                 return true;
             }
@@ -144,12 +170,14 @@ namespace SistemaConsultorioMedico
             }
         }
 
+        // Método para validar que el string de entrada es de tipo numérico
         public bool isNumeric(string value)
         {
             return value.All(char.IsNumber);
         }
 
-        private void llenarDato10(String dato10)
+        // Método para llenar el dato número 10
+        private void LlenarDato10(String dato10)
         {
             if (dato10.Contains("DIABETES"))
             {
@@ -206,7 +234,8 @@ namespace SistemaConsultorioMedico
             }
         }
 
-        private void reestablecerCampos()
+        // Método para vaciar todos los campos
+        private void ReestablecerCampos()
         {
             dato10Rbtn1.Checked = false;
             dato10Rbtn2.Checked = false;
@@ -234,7 +263,8 @@ namespace SistemaConsultorioMedico
             dato18Tbx.Text = "";
         }
 
-        public void llenarInformacion(int idPaciente)
+        // Método para llenar los campos con la información obtenida por medio del ID del paciente
+        public void LlenarInformacion(int idPaciente)
         {
             String query = "SELECT * FROM INFORMACIONMEDICA WHERE idPaciente = @idPaciente";
             try
@@ -246,7 +276,7 @@ namespace SistemaConsultorioMedico
                     {
                         while (leer.Read())
                         {
-                            llenarDato10(leer["dato10"].ToString().Trim());
+                            LlenarDato10(leer["dato10"].ToString().Trim());
                             dato10OpcTbx.Text = leer["dato10Opc"].ToString();
                             dato11ComboBox.selectedIndex = getIndex(leer["dato11"].ToString());
                             dato11OpcTbx.Text = leer["dato11Opc"].ToString();
@@ -291,18 +321,19 @@ namespace SistemaConsultorioMedico
             }
         }
 
+        // Método que activa el botón de modificar
         private void ModificarBtn_Click(object sender, EventArgs e)
         {
-            if (validarCampos())
+            if (ValidarCampos())
             {
                 DateTime hoy = DateTime.Today;
-                Modelos.InformacionMedica im2 = new Modelos.InformacionMedica(obtenerEnfermedadFamiliar(), dato10OpcTbx.Text, dato11ComboBox.selectedValue, dato11OpcTbx.Text,
+                Modelos.InformacionMedica im2 = new Modelos.InformacionMedica(ObtenerEnfermedadFamiliar(), dato10OpcTbx.Text, dato11ComboBox.selectedValue, dato11OpcTbx.Text,
                                                                             dato12Tbx.Text, dato13ComboBox.selectedValue, dato13OpcTbx.Text, dato13Opc2Tbx.Text, dato14ComboBox.selectedValue,
                                                                             dato14OpcTbx.Text, dato14Opc2Tbx.Text, dato15ComboBox.selectedValue, dato15OpcTbx.Text,
                                                                             dato15Opc2Tbx.Text, dato15Opc3Tbx.Text, dato15Opc4Tbx.Text, dato16Tbx.Text,
                                                                             dato17ComboBox.selectedValue, dato18Tbx.Text, hoy);
-                Controladores.InformacionMedicaController.modificarInformacionMedica(im1, im2);
-                reestablecerCampos();
+                Controladores.InformacionMedicaController.ModificarInformacionMedica(im1, im2);
+                ReestablecerCampos();
                 this.Close();
                 info.Close();
             }
@@ -312,16 +343,17 @@ namespace SistemaConsultorioMedico
             }
         }
 
+        // Método que activa el botón de eliminar
         private void EliminarBtn_Click(object sender, EventArgs e)
         {
             DateTime hoy = DateTime.Today;
-            Modelos.InformacionMedica im2 = new Modelos.InformacionMedica(obtenerEnfermedadFamiliar(), dato10OpcTbx.Text, dato11ComboBox.selectedValue, dato11OpcTbx.Text,
+            Modelos.InformacionMedica im2 = new Modelos.InformacionMedica(ObtenerEnfermedadFamiliar(), dato10OpcTbx.Text, dato11ComboBox.selectedValue, dato11OpcTbx.Text,
                                                                             dato12Tbx.Text, dato13ComboBox.selectedValue, dato13OpcTbx.Text, dato13Opc2Tbx.Text, dato14ComboBox.selectedValue,
                                                                             dato14OpcTbx.Text, dato14Opc2Tbx.Text, dato15ComboBox.selectedValue, dato15OpcTbx.Text,
                                                                             dato15Opc2Tbx.Text, dato15Opc3Tbx.Text, dato15Opc4Tbx.Text, dato16Tbx.Text,
                                                                             dato17ComboBox.selectedValue, dato18Tbx.Text, hoy);
             Controladores.InformacionMedicaController.EliminarInformacionMedica(im1, im2);
-            reestablecerCampos();
+            ReestablecerCampos();
             this.Close();
             info.Close();
         }
@@ -641,7 +673,7 @@ namespace SistemaConsultorioMedico
 
         private void bloqueoBtnGuardar(object sender, EventArgs e)
         {
-            if (validarCampos() && flagME)
+            if (ValidarCampos() && flagME)
             {
                 GuardarBtn.Enabled = true;
                 EliminarBtn.Enabled = false;
@@ -650,7 +682,7 @@ namespace SistemaConsultorioMedico
             {
                 GuardarBtn.Enabled = false;
                 EliminarBtn.Enabled = true;
-                if (validarCampos())
+                if (ValidarCampos())
                 {
                     ModificarBtn.Enabled = true;
                 }
@@ -683,7 +715,7 @@ namespace SistemaConsultorioMedico
                 dato12Tbx.LineMouseHoverColor = Color.Blue;
                 dato12Tbx.LineFocusedColor = Color.Blue;
                 errorDigit.Visible = false;
-                if (validarCampos() && flagME)
+                if (ValidarCampos() && flagME)
                 {
                     GuardarBtn.Enabled = true;
                     EliminarBtn.Enabled = false;
@@ -691,7 +723,7 @@ namespace SistemaConsultorioMedico
                 else
                 {
                     GuardarBtn.Enabled = false;
-                    if (validarCampos())
+                    if (ValidarCampos())
                     {
                         ModificarBtn.Enabled = true;
                     }
@@ -720,7 +752,7 @@ namespace SistemaConsultorioMedico
                 dato16Tbx.LineMouseHoverColor = Color.Blue;
                 dato16Tbx.LineFocusedColor = Color.Blue;
                 errorDigit.Visible = false;
-                if (validarCampos() && flagME)
+                if (ValidarCampos() && flagME)
                 {
                     GuardarBtn.Enabled = true;
                     EliminarBtn.Enabled = false;
@@ -728,7 +760,7 @@ namespace SistemaConsultorioMedico
                 else
                 {
                     GuardarBtn.Enabled = false;
-                    if (validarCampos())
+                    if (ValidarCampos())
                     {
                         ModificarBtn.Enabled = true;
                     }
