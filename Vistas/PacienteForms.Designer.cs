@@ -36,7 +36,6 @@ namespace SistemaConsultorioMedico
             this.BuscarTbx = new Bunifu.Framework.UI.BunifuTextbox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.DiagnosticoBtn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.CitasBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.InforMedicaBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.ModifPacienteBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.guardarPac_Btn = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -54,6 +53,7 @@ namespace SistemaConsultorioMedico
             this.IdPacienteLbl = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.fechaNacDatePicker = new Bunifu.Framework.UI.BunifuDatepicker();
             this.correoErrorLbl = new System.Windows.Forms.Label();
+            this.errorDigit = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -132,38 +132,13 @@ namespace SistemaConsultorioMedico
             this.DiagnosticoBtn.IdleFillColor = System.Drawing.Color.White;
             this.DiagnosticoBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.DiagnosticoBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.DiagnosticoBtn.Location = new System.Drawing.Point(1086, 668);
+            this.DiagnosticoBtn.Location = new System.Drawing.Point(864, 668);
             this.DiagnosticoBtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.DiagnosticoBtn.Name = "DiagnosticoBtn";
             this.DiagnosticoBtn.Size = new System.Drawing.Size(209, 50);
             this.DiagnosticoBtn.TabIndex = 17;
             this.DiagnosticoBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.DiagnosticoBtn.Click += new System.EventHandler(this.DiagnosticoBtn_Click);
-            // 
-            // CitasBtn
-            // 
-            this.CitasBtn.ActiveBorderThickness = 1;
-            this.CitasBtn.ActiveCornerRadius = 20;
-            this.CitasBtn.ActiveFillColor = System.Drawing.Color.Plum;
-            this.CitasBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.CitasBtn.ActiveLineColor = System.Drawing.Color.Plum;
-            this.CitasBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.CitasBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CitasBtn.BackgroundImage")));
-            this.CitasBtn.ButtonText = "CITAS";
-            this.CitasBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CitasBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CitasBtn.ForeColor = System.Drawing.Color.ForestGreen;
-            this.CitasBtn.IdleBorderThickness = 1;
-            this.CitasBtn.IdleCornerRadius = 20;
-            this.CitasBtn.IdleFillColor = System.Drawing.Color.White;
-            this.CitasBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.CitasBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.CitasBtn.Location = new System.Drawing.Point(863, 668);
-            this.CitasBtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.CitasBtn.Name = "CitasBtn";
-            this.CitasBtn.Size = new System.Drawing.Size(209, 50);
-            this.CitasBtn.TabIndex = 16;
-            this.CitasBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // InforMedicaBtn
             // 
@@ -327,7 +302,7 @@ namespace SistemaConsultorioMedico
             this.TelefonoTbx.Size = new System.Drawing.Size(505, 41);
             this.TelefonoTbx.TabIndex = 7;
             this.TelefonoTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TelefonoTbx.OnValueChanged += new System.EventHandler(this.bloqueoBtnGuardar);
+            this.TelefonoTbx.OnValueChanged += new System.EventHandler(this.validarNumeros);
             // 
             // CorreoETbx
             // 
@@ -495,8 +470,8 @@ namespace SistemaConsultorioMedico
             this.fechaNacDatePicker.ForeColor = System.Drawing.Color.White;
             this.fechaNacDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.fechaNacDatePicker.FormatCustom = null;
-            this.fechaNacDatePicker.Location = new System.Drawing.Point(17, 296);
-            this.fechaNacDatePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fechaNacDatePicker.Location = new System.Drawing.Point(17, 295);
+            this.fechaNacDatePicker.Margin = new System.Windows.Forms.Padding(5);
             this.fechaNacDatePicker.Name = "fechaNacDatePicker";
             this.fechaNacDatePicker.Size = new System.Drawing.Size(512, 44);
             this.fechaNacDatePicker.TabIndex = 4;
@@ -514,12 +489,26 @@ namespace SistemaConsultorioMedico
             this.correoErrorLbl.Text = "Dirección de correo electrónico inválida.";
             this.correoErrorLbl.Visible = false;
             // 
+            // errorDigit
+            // 
+            this.errorDigit.AutoSize = true;
+            this.errorDigit.BackColor = System.Drawing.Color.Transparent;
+            this.errorDigit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorDigit.ForeColor = System.Drawing.Color.Crimson;
+            this.errorDigit.Location = new System.Drawing.Point(17, 498);
+            this.errorDigit.Name = "errorDigit";
+            this.errorDigit.Size = new System.Drawing.Size(288, 17);
+            this.errorDigit.TabIndex = 77;
+            this.errorDigit.Text = "El teléfono debe contener mínimo 10 dígitos.";
+            this.errorDigit.Visible = false;
+            // 
             // Paciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1361, 788);
+            this.ClientSize = new System.Drawing.Size(1361, 780);
+            this.Controls.Add(this.errorDigit);
             this.Controls.Add(this.correoErrorLbl);
             this.Controls.Add(this.fechaNacDatePicker);
             this.Controls.Add(this.IdPacienteLbl);
@@ -537,7 +526,6 @@ namespace SistemaConsultorioMedico
             this.Controls.Add(this.guardarPac_Btn);
             this.Controls.Add(this.ModifPacienteBtn);
             this.Controls.Add(this.InforMedicaBtn);
-            this.Controls.Add(this.CitasBtn);
             this.Controls.Add(this.DiagnosticoBtn);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.BuscarTbx);
@@ -559,7 +547,6 @@ namespace SistemaConsultorioMedico
         private Bunifu.Framework.UI.BunifuTextbox BuscarTbx;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuThinButton2 DiagnosticoBtn;
-        private Bunifu.Framework.UI.BunifuThinButton2 CitasBtn;
         private Bunifu.Framework.UI.BunifuThinButton2 InforMedicaBtn;
         private Bunifu.Framework.UI.BunifuThinButton2 ModifPacienteBtn;
         private Bunifu.Framework.UI.BunifuThinButton2 guardarPac_Btn;
@@ -577,5 +564,6 @@ namespace SistemaConsultorioMedico
         private Bunifu.Framework.UI.BunifuCustomLabel IdPacienteLbl;
         private Bunifu.Framework.UI.BunifuDatepicker fechaNacDatePicker;
         private System.Windows.Forms.Label correoErrorLbl;
+        private System.Windows.Forms.Label errorDigit;
     }
 }

@@ -57,6 +57,7 @@
     <Compile Include="Controladores\DiagnosticoController.cs" />
     <Compile Include="Controladores\InformacionMedicaController.cs" />
     <Compile Include="Controladores\PacienteController.cs" />
+    <Compile Include="Controladores\PropiedadController.cs" />
     <Compile Include="Controladores\UsuarioController.cs" />
     <Compile Include="Modelos\Cita.cs" />
     <Compile Include="Modelos\Diagnostico.cs" />

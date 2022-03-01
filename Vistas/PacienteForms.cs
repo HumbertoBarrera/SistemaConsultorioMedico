@@ -14,13 +14,18 @@ namespace SistemaConsultorioMedico
     {
 
         DateTime curDate = DateTime.Today;
-        bool flagME = true;
+        bool flagME = true, flagS;
         int indice;
         private Modelos.Paciente paciente;
 
-        public Paciente()
+        public Paciente(bool flagS)
         {
             InitializeComponent();
+
+            Controladores.PropiedadController.BunifuMaterial(TelefonoTbx, 10);
+            errorDigit.Visible = false;
+            this.flagS = flagS;
+            if (!flagS) DiagnosticoBtn.Visible = false;
         }
 
         private void BuscarTbx_MouseEnter(object sender, EventArgs e)
@@ -43,13 +48,14 @@ namespace SistemaConsultorioMedico
 
         private void guardarPac_Btn_Click(object sender, EventArgs e)
         {
-            if(validarCampos())
+            if (validarCampos())
             {
+               
                 var random = new Random().Next(10000000, 99999999);
                 paciente = new Modelos.Paciente(random, ((curDate.Year) - Convert.ToInt32(fechaNacDatePicker.Value.Year)), NombreTxb.Text, ApellidoPaternoTbx.Text,
-                                                                ApellidoMaternoTbx.Text, LugarNaciTbx.Text, DireccionTbx.Text, TelefonoTbx.Text, CorreoETbx.Text,
-                                                                OcupacionTbx.Text, TelefonoTbx.Text, LugarTrabajoTbx.Text, fechaNacDatePicker.Value);
-                Controladores.PacienteController.altaPaciente(paciente);
+                                                                    ApellidoMaternoTbx.Text, LugarNaciTbx.Text, DireccionTbx.Text, TelefonoTbx.Text, CorreoETbx.Text,
+                                                                    OcupacionTbx.Text, TelefonoTbx.Text, LugarTrabajoTbx.Text, fechaNacDatePicker.Value);
+                Controladores.PacienteController.AltaPaciente(paciente);
                 ActualizarTabla();
                 reestablecerCampos();
             }
@@ -73,7 +79,7 @@ namespace SistemaConsultorioMedico
 
             {
                 int idPaciente = int.Parse(BuscarTbx.text);
-                if (Controladores.PacienteController.validaExisPaciente(idPaciente))
+                if (Controladores.PacienteController.ValidaSiExistePaciente(idPaciente))
                 {
                     Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
                     Form VDiag = new Diagnostico(idPaciente);
@@ -87,7 +93,7 @@ namespace SistemaConsultorioMedico
             }
             else if(IdPacienteLbl.Visible == true)
             {
-                int idPaciente = int.Parse(IdPacienteLbl.Text);
+                int idPaciente = int.Parse(IdPacienteLbl.Text.Substring(13));
                 Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
                 Form VDiag = new Diagnostico(idPaciente);
                 this.Hide();
@@ -115,8 +121,6 @@ namespace SistemaConsultorioMedico
 
         private void reestablecerCampos()
         {
-            IdPacienteLbl.Visible = false;
-            correoErrorLbl.Visible = false;
             NombreTxb.Text = "";
             ApellidoPaternoTbx.Text = "";
             ApellidoMaternoTbx.Text = "";
@@ -125,17 +129,24 @@ namespace SistemaConsultorioMedico
             DireccionTbx.Text = "";
             TelefonoTbx.Text = "";
             CorreoETbx.Text = "";
-            correoErrorLbl.Visible = false;
             OcupacionTbx.Text = "";
             LugarTrabajoTbx.Text = "";
+            IdPacienteLbl.Visible = false;
+            correoErrorLbl.Visible = false;
+            errorDigit.Visible = false;
+            flagME = true;
+            guardarPac_Btn.Enabled = false;
+            ModifPacienteBtn.Enabled = false;
+            EliPacienteBtn.Enabled = false;
+            this.ActiveControl = bunifuCustomLabel1;
         }
 
         private void InforMedicaBtn_Click(object sender, EventArgs e)
         {
-            if (BuscarTbx.Text != "")
+            if (BuscarTbx.text != "")
             {
                 int idPaciente = int.Parse(BuscarTbx.text);
-                if (Controladores.PacienteController.validaExisPaciente(idPaciente))
+                if (Controladores.PacienteController.ValidaSiExistePaciente(idPaciente))
                 {
                     Form VInfoMedica = new InformacionMedica(idPaciente, flagME);
                     this.Hide();
@@ -166,7 +177,6 @@ namespace SistemaConsultorioMedico
                                                                 OcupacionTbx.Text, TelefonoTbx.Text, LugarTrabajoTbx.Text, fechaNacDatePicker.Value);
             Controladores.PacienteController.ActualizarPaciente(paciente);
             ActualizarTabla();
-
             reestablecerCampos();
         }
 
@@ -202,13 +212,19 @@ namespace SistemaConsultorioMedico
         {
             if (validarCampos() && flagME)
             {
-                guardarPac_Btn.IdleFillColor = Color.White;
                 guardarPac_Btn.Enabled = true;
             }
             else
             {
-                guardarPac_Btn.IdleFillColor = Color.Gray;
                 guardarPac_Btn.Enabled = false;
+                if (validarCampos())
+                {
+                    ModifPacienteBtn.Enabled = true;
+                }
+                else
+                {
+                    ModifPacienteBtn.Enabled = false;
+                }
             }
         }
 
@@ -235,27 +251,47 @@ namespace SistemaConsultorioMedico
 
         private void verificarEmail(object sender, EventArgs e)
         {
-            if (isValidEmail(CorreoETbx.Text))
+            if(CorreoETbx.Text.Length == 0)
             {
+                CorreoETbx.LineIdleColor = Color.Purple;
+                CorreoETbx.LineMouseHoverColor = Color.Blue;
                 CorreoETbx.LineFocusedColor = Color.Blue;
                 correoErrorLbl.Visible = false;
-                if (validarCampos() && flagME)
-                {
-                    guardarPac_Btn.IdleFillColor = Color.White;
-                    guardarPac_Btn.Enabled = true;
-                }
-                else
-                {
-                    guardarPac_Btn.IdleFillColor = Color.Gray;
-                    guardarPac_Btn.Enabled = false;
-                }
+                guardarPac_Btn.Enabled = false;
+                ModifPacienteBtn.Enabled = false;
             }
             else
             {
-                CorreoETbx.LineFocusedColor = Color.Crimson;
-                correoErrorLbl.Visible = true;
-                guardarPac_Btn.IdleFillColor = Color.Gray;
-                guardarPac_Btn.Enabled = false;
+                if (isValidEmail(CorreoETbx.Text))
+                {
+                    CorreoETbx.LineFocusedColor = Color.Blue;
+                    correoErrorLbl.Visible = false;
+                    if (validarCampos() && flagME)
+                    {
+                        guardarPac_Btn.IdleFillColor = Color.White;
+                        guardarPac_Btn.Enabled = true;
+                    }
+                    else
+                    {
+                        guardarPac_Btn.IdleFillColor = Color.Gray;
+                        guardarPac_Btn.Enabled = false;
+                        if (validarCampos())
+                        {
+                            ModifPacienteBtn.Enabled = true;
+                        }
+                        else
+                        {
+                            ModifPacienteBtn.Enabled = false;
+                        }
+                    }
+                }
+                else
+                {
+                    CorreoETbx.LineFocusedColor = Color.Crimson;
+                    correoErrorLbl.Visible = true;
+                    guardarPac_Btn.IdleFillColor = Color.Gray;
+                    guardarPac_Btn.Enabled = false;
+                } 
             }
         }
 
@@ -263,10 +299,12 @@ namespace SistemaConsultorioMedico
         {
             if (guardarPac_Btn.Enabled == true)
             {
+                guardarPac_Btn.IdleFillColor = Color.White;
                 guardarPac_Btn.Padding = new Padding(0);
             }
             else
             {
+                guardarPac_Btn.IdleFillColor = Color.Gray;
                 guardarPac_Btn.Padding = new Padding(34, 10, 0, 0);
             }
         }
@@ -281,7 +319,7 @@ namespace SistemaConsultorioMedico
             else
             {
                 ModifPacienteBtn.IdleFillColor = Color.Gray;
-                ModifPacienteBtn.Padding = new Padding(20, 10, 0, 0);
+                ModifPacienteBtn.Padding = new Padding(30, 10, 0, 0);
             }
         }
 
@@ -301,7 +339,79 @@ namespace SistemaConsultorioMedico
 
         private void EliPacienteBtn_Click(object sender, EventArgs e)
         {
+            Modelos.Paciente paciente = new Modelos.Paciente(Convert.ToInt32(IdPacienteLbl.Text.Substring(13)), ((curDate.Year) - Convert.ToInt32(fechaNacDatePicker.Value.Year)), NombreTxb.Text, ApellidoPaternoTbx.Text,
+                                                                ApellidoMaternoTbx.Text, LugarNaciTbx.Text, DireccionTbx.Text, TelefonoTbx.Text, CorreoETbx.Text,
+                                                                OcupacionTbx.Text, TelefonoTbx.Text, LugarTrabajoTbx.Text, fechaNacDatePicker.Value);
+            Controladores.PacienteController.EliminarPaciente(paciente);
+            ActualizarTabla();
+            reestablecerCampos();
+        }
 
+        private void validarNumeros(object sender, EventArgs e)
+        {
+            if (isNumeric(TelefonoTbx.Text))
+            {
+                if (TelefonoTbx.Text.Length == 0)
+                {
+                    errorDigit.Visible = false;
+                    TelefonoTbx.LineIdleColor = Color.Purple;
+                    TelefonoTbx.LineMouseHoverColor = Color.Blue;
+                    TelefonoTbx.LineFocusedColor = Color.Blue;
+                    guardarPac_Btn.Enabled = false;
+                    ModifPacienteBtn.Enabled = false;
+                }
+                else
+                {
+                    if (TelefonoTbx.Text.Length != 10)
+                    {
+                        TelefonoTbx.LineIdleColor = Color.Crimson;
+                        TelefonoTbx.LineMouseHoverColor = Color.Crimson;
+                        TelefonoTbx.LineFocusedColor = Color.Crimson;
+                        errorDigit.Text = "El teléfono debe contener mínimo 10 dígitos.";
+                        errorDigit.Visible = true;
+                        ModifPacienteBtn.Enabled = false;
+                        guardarPac_Btn.Enabled = false;
+                    }
+                    else
+                    {
+                        TelefonoTbx.LineIdleColor = Color.Purple;
+                        TelefonoTbx.LineMouseHoverColor = Color.Blue;
+                        TelefonoTbx.LineFocusedColor = Color.Blue;
+                        errorDigit.Visible = false;
+                        if (validarCampos() && flagME)
+                        {
+                            guardarPac_Btn.Enabled = true;
+                        }
+                        else
+                        {
+                            guardarPac_Btn.Enabled = false;
+                            if (validarCampos())
+                            {
+                                ModifPacienteBtn.Enabled = true;
+                            }
+                            else
+                            {
+                                ModifPacienteBtn.Enabled = false;
+                            }
+                        }
+                    }
+                }
+            }
+            else
+            {
+                TelefonoTbx.LineIdleColor = Color.Crimson;
+                TelefonoTbx.LineMouseHoverColor = Color.Crimson;
+                TelefonoTbx.LineFocusedColor = Color.Crimson;
+                ModifPacienteBtn.Enabled = false;
+                guardarPac_Btn.Enabled = false;
+                errorDigit.Text = "Caracter inválido";
+                errorDigit.Visible = true;
+            }
+        }
+
+        public bool isNumeric(string value)
+        {
+            return value.All(char.IsNumber);
         }
     }
 }

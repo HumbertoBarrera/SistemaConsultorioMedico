@@ -45,6 +45,7 @@ namespace SistemaConsultorioMedico
             this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.AgregarCBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.errorDigit = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -144,6 +145,8 @@ namespace SistemaConsultorioMedico
             this.PacienteCitaTxb.Size = new System.Drawing.Size(379, 33);
             this.PacienteCitaTxb.TabIndex = 1;
             this.PacienteCitaTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.PacienteCitaTxb.OnValueChanged += new System.EventHandler(this.PacienteCitaTxb_OnValueChanged);
+            this.PacienteCitaTxb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PacienteCitaTxb_KeyPress);
             // 
             // bunifuCustomDataGrid2
             // 
@@ -189,7 +192,8 @@ namespace SistemaConsultorioMedico
             this.bunifuCustomDataGrid2.RowHeadersWidth = 51;
             this.bunifuCustomDataGrid2.Size = new System.Drawing.Size(541, 346);
             this.bunifuCustomDataGrid2.TabIndex = 25;
-            this.bunifuCustomDataGrid2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid2_CellClick);
+            this.bunifuCustomDataGrid2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid2_CellClick);
+            this.bunifuCustomDataGrid2.Validating += new System.ComponentModel.CancelEventHandler(this.bunifuCustomDataGrid2_Validating);
             // 
             // linea
             // 
@@ -281,12 +285,27 @@ namespace SistemaConsultorioMedico
             this.AgregarCBtn.Visible = false;
             this.AgregarCBtn.Click += new System.EventHandler(this.AgregarCBtn_Click);
             // 
+            // errorDigit
+            // 
+            this.errorDigit.AutoSize = true;
+            this.errorDigit.BackColor = System.Drawing.Color.Transparent;
+            this.errorDigit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorDigit.ForeColor = System.Drawing.Color.Crimson;
+            this.errorDigit.Location = new System.Drawing.Point(30, 150);
+            this.errorDigit.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.errorDigit.Name = "errorDigit";
+            this.errorDigit.Size = new System.Drawing.Size(225, 15);
+            this.errorDigit.TabIndex = 76;
+            this.errorDigit.Text = "El ID debe contener minimo 8 numeros.";
+            this.errorDigit.Visible = false;
+            // 
             // CitasForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1029, 570);
+            this.Controls.Add(this.errorDigit);
             this.Controls.Add(this.AgregarCBtn);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.bunifuDatepicker1);
@@ -322,5 +341,6 @@ namespace SistemaConsultorioMedico
         private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker1;
         private System.Windows.Forms.ComboBox comboBox1;
         private Bunifu.Framework.UI.BunifuThinButton2 AgregarCBtn;
+        private System.Windows.Forms.Label errorDigit;
     }
 }

@@ -13,16 +13,17 @@ namespace SistemaConsultorioMedico
     public partial class MenuPrincipalSecretaria : Form
     {
         int idPaciente;
-        bool flagME = true;
+        bool flagME = true, flagS;
 
-        public MenuPrincipalSecretaria()
+        public MenuPrincipalSecretaria(bool flag)
         {
+            this.flagS = flag;
             InitializeComponent();
         }
 
         private void Pacientebtn_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new Paciente());
+            AbrirFormHijo(new Paciente(flagS));
         }
 
         private void AbrirFormHijo(object formhijo)
@@ -56,8 +57,6 @@ namespace SistemaConsultorioMedico
                 linea.Width = 252;
                 AnimacionSidebarAtras.Show(Sidebar);
             }
-
-            
         }
 
         private void Restaurar_Click(object sender, EventArgs e)

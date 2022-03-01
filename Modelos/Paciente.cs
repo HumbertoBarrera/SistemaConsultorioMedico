@@ -13,6 +13,8 @@ namespace SistemaConsultorioMedico.Modelos
         private String nombresP, apellidoPatP, apellidoMatP, lugarNac, direccionP, telefonoP, emailP, trabajoP, telefonoTrabajoP, lugarTrabajoP;
         private DateTime fechaNac;
 
+        // Estructura del modelo de paciente
+
         public Paciente(int idPaciente, int edad, String nombresP, String apellidoPatP, String apellidoMatP, String lugarNac, String direccionP,
                         String telefonoP, String emailP, String trabajoP, String telefonoTrabajoP, String lugarTrabajoP, DateTime fechaNac)
         {
@@ -30,6 +32,8 @@ namespace SistemaConsultorioMedico.Modelos
             this.telefonoTrabajoP = telefonoTrabajoP;
             this.lugarTrabajoP = lugarTrabajoP;
         }
+
+        // Métodos setters del modelo de paciente
 
         public void setIdPaciente(int idPaciente)
         {
@@ -95,6 +99,8 @@ namespace SistemaConsultorioMedico.Modelos
         {
             this.lugarTrabajoP = lugarTrabajoP;
         }
+
+        // Métodos getters del modelo de paciente
 
         public int getIdPaciente()
         {

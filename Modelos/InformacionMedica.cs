@@ -14,11 +14,13 @@ namespace SistemaConsultorioMedico.Modelos
                 dato15, dato15Opc, dato15Opc2, dato15Opc3, dato15Opc4, dato16, dato17, dato18;
         DateTime fecha;
 
+        // Estructura de los modelos de Información Médica
+
         public InformacionMedica(int idPaciente, String dato1, String dato2, String dato3, String dato4, String dato4Opc, String dato5, String dato5Opc,
                                 String dato6, String dato6Opc, String dato7, String dato7Opc, String dato8, String dato8Opc, String dato9, String dato9Opc,
                                 String dato10, String dato10Opc, String dato11, String dato11Opc, String dato12, String dato13, String dato13Opc,
-                                String dato13Opc2, String dato14, String dato14Opc, String dato14Opc2, String dato15, String dato15Opc, String dato15Opc2, String dato15Opc3,
-                                String dato15Opc4, String dato16, String dato17, String dato18, DateTime fecha)
+                                String dato13Opc2, String dato14, String dato14Opc, String dato14Opc2, String dato15, String dato15Opc, String dato15Opc2, 
+                                String dato15Opc3, String dato15Opc4, String dato16, String dato17, String dato18, DateTime fecha)
         {
             this.idPaciente = idPaciente;
             this.dato1 = dato1;
@@ -80,8 +82,8 @@ namespace SistemaConsultorioMedico.Modelos
         }
 
         public InformacionMedica(String dato10, String dato10Opc, String dato11, String dato11Opc, String dato12, String dato13, String dato13Opc,
-                                String dato13Opc2, String dato14, String dato14Opc, String dato14Opc2, String dato15, String dato15Opc, String dato15Opc2, String dato15Opc3,
-                                String dato15Opc4, String dato16, String dato17, String dato18, DateTime fecha)
+                                String dato13Opc2, String dato14, String dato14Opc, String dato14Opc2, String dato15, String dato15Opc, String dato15Opc2, 
+                                String dato15Opc3, String dato15Opc4, String dato16, String dato17, String dato18, DateTime fecha)
         {
             this.dato10 = dato10;
             this.dato10Opc = dato10Opc;
@@ -104,6 +106,8 @@ namespace SistemaConsultorioMedico.Modelos
             this.dato18 = dato18;
             this.fecha = fecha;
         }
+
+        // Métodos setters del modelo de Información Médica
 
         public void setIdPaciente(int idPaciente)
         {
@@ -284,6 +288,8 @@ namespace SistemaConsultorioMedico.Modelos
         {
             this.fecha = fecha;
         }
+
+        // Métodos getter del modelo de Información Médica
 
         public int getIdPaciente()
         {

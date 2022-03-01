@@ -33,7 +33,7 @@ namespace SistemaConsultorioMedico
                                                                         dato4OpcTbx.Text, dato5ComboBox.selectedValue, dato5OpcTbx.Text, dato6ComboBox.selectedValue, dato6OpcTbx.Text,
                                                                         dato7ComboBox.selectedValue, dato7OpcTbx.Text, dato8ComboBox.selectedValue, dato8OpcTbx.Text,
                                                                         dato9ComboBox.selectedValue, dato9OpcTbx.Text);
-                Form AbrirPreguntas = new Preguntas(im1, idPaciente, flagME);
+                Form AbrirPreguntas = new Preguntas(im1, idPaciente, flagME, this);
                 AbrirPreguntas.Show();
             
             else

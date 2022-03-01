@@ -22,71 +22,77 @@ namespace SistemaConsultorioMedico
             comboBox1.Items.Insert(0, "----- Seleccione la hora----");
             comboBox1.SelectedIndex = 0;
 
+           
+            Controladores.PropiedadController.BunifuMaterial(PacienteCitaTxb, 8);
+            errorDigit.Visible = false;
+
+
         }
         int indice;
 
         private void GuardarCitaBtn_Click(object sender, EventArgs e)
         {
 
+            errorDigit.Visible = false;
 
             if ((PacienteCitaTxb.Text != "PACIENTE")&&(comboBox1.Text !="----- Seleccione la hora----") && (comboBox1.SelectedIndex != -1))
             {
-                cita = new Modelos.Cita();
-
-                int idPacienteV = int.Parse(PacienteCitaTxb.Text);
-                DateTime fechaV = bunifuDatepicker1.Value;
-                TimeSpan horaV = TimeSpan.Parse(comboBox1.Text);
-
-                cita.setIdPaciente(idPacienteV);
-                cita.setFecha(fechaV);
-                cita.setHora(horaV);
-
-               
-
-                if (Controladores.CitaController.validaExisPaciente(cita) == true)
+                if (PacienteCitaTxb.Text.Length == 8)
                 {
+                    cita = new Modelos.Cita();
+                    int idPacienteV = int.Parse(PacienteCitaTxb.Text);
+                    DateTime fechaV = bunifuDatepicker1.Value;
+                    TimeSpan horaV = TimeSpan.Parse(comboBox1.Text);
 
-                    if (Controladores.CitaController.validaExisCita(cita) == false)
+                    cita.setIdPaciente(idPacienteV);
+                    cita.setFecha(fechaV);
+                    cita.setHora(horaV);
+
+                    if (Controladores.CitaController.validaExisPaciente(cita) == true)
                     {
-                        Controladores.CitaController.folio(cita);
-                        Controladores.CitaController.insertarCita(cita);
 
-                        bunifuCustomDataGrid2.DataSource = null;
-                        Controladores.CitaController da = new Controladores.CitaController();
-                        var dt = da.CargarGridCitas();
+                        if (Controladores.CitaController.validaExisCita(cita) == false)
+                        {
+                            Controladores.CitaController.folio(cita);
+                            Controladores.CitaController.insertarCita(cita);
 
-                        bunifuCustomDataGrid2.DataSource = dt;
-                        bunifuCustomDataGrid2.Columns[0].Visible = false;
-                        bunifuCustomDataGrid2.Columns[4].Visible = false;
+                            bunifuCustomDataGrid2.DataSource = null;
+                            Controladores.CitaController da = new Controladores.CitaController();
+                            var dt = da.CargarGridCitas();
 
+                            bunifuCustomDataGrid2.DataSource = dt;
+                            bunifuCustomDataGrid2.Columns[0].Visible = false;
+                            bunifuCustomDataGrid2.Columns[4].Visible = false;
+                        }
+                        else
+                        {
+                            if (Controladores.CitaController.validaExisCita(cita) == true)
+                            {
+                                MessageBox.Show("Error Fecha y hora Ocupada", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
                     }
                     else
                     {
-                        if (Controladores.CitaController.validaExisCita(cita) == true)
+                        if (Controladores.CitaController.validaExisPaciente(cita) == false)
                         {
-                            MessageBox.Show("Error Fecha y hora Ocupada", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Error Paciente no Registrado", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                         }
                     }
-
+                    PacienteCitaTxb.Text = " ";
+                    bunifuDatepicker1.Value = DateTime.Parse("24/07/2022");
+                    bunifuDatepicker1.Value = DateTime.Now.Date;
+                    comboBox1.Items.Insert(0, "----- Seleccione la hora----");
+                    comboBox1.SelectedIndex = 0;
+                    folioCitaLb.Text = "";
+                    PacienteCitaTxb.Enabled = true;
                 }
                 else
                 {
-                    if (Controladores.CitaController.validaExisPaciente(cita) == false)
-                    {
-                        MessageBox.Show("Error Paciente no Registrado", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("El ID debe contener minimo 8 numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
-                    }
                 }
-
-                PacienteCitaTxb.Text = " ";
-                bunifuDatepicker1.Value = DateTime.Parse("24/07/2022");
-                bunifuDatepicker1.Value = DateTime.Now.Date;
-                comboBox1.Items.Insert(0, "----- Seleccione la hora----");
-                comboBox1.SelectedIndex = 0;
-                folioCitaLb.Text = "";
-                PacienteCitaTxb.Enabled = true;
-
             }
             else
             {
@@ -106,6 +112,7 @@ namespace SistemaConsultorioMedico
 
         }
 
+    
         private void EliminarCitaBtn_Click(object sender, EventArgs e)
         {
             if ((comboBox1.Text != "----- Seleccione la hora----") && (comboBox1.SelectedIndex != -1))
@@ -333,6 +340,32 @@ namespace SistemaConsultorioMedico
             comboBox1.SelectedIndex = 0;
             folioCitaLb.Text = "";
             PacienteCitaTxb.Enabled = true;
+        }
+
+        private void bunifuCustomDataGrid2_Validating(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void PacienteCitaTxb_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && (e.KeyChar != (char)Keys.Back))
+            {
+                MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+            }
+        }
+
+        private void PacienteCitaTxb_OnValueChanged(object sender, EventArgs e)
+        {
+            if (PacienteCitaTxb.Text.Length != 8)
+            {
+                errorDigit.Visible = true;
+            }
+            else
+            {
+                errorDigit.Visible = false;
+            }
         }
     }
 }

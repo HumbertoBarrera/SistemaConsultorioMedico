@@ -26,6 +26,7 @@ namespace SistemaConsultorioMedico
             FechaTxb.Text = fecha.ToString("MM/dd/yyyy");
             guardarbtn.Visible = true;
 
+
         }
         int pacienteExt;
 
@@ -85,6 +86,7 @@ namespace SistemaConsultorioMedico
 
         private void guardarbtn_Click(object sender, EventArgs e)
         {
+            guardarbtn.Visible = false;
 
             if ((FechaTxb.Text != "FECHA") && (Descripciontxb.Text != "DESCRIPCION"))
             {
@@ -104,6 +106,7 @@ namespace SistemaConsultorioMedico
                     bunifuCustomDataGrid1.DataSource = dt;
                     DataGridViewColumn Column = bunifuCustomDataGrid1.Columns[2];
                     Column.Visible = false;
+
                 }
                 else
                 {
@@ -182,6 +185,11 @@ namespace SistemaConsultorioMedico
             Descripciontxb.Enabled = false;
             guardarbtn.Visible = false;
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

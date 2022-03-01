@@ -88,21 +88,13 @@ namespace SistemaConsultorioMedico
                 Modelos.Usuario usu = new Modelos.Usuario();
                 usu.setUsuario(usuariotxt.Text);
                 usu.setPassword(contratxt.Text);
-                Controladores.UsuarioController.Login(usu);
-                this.Hide();
+                Controladores.UsuarioController.Login(usu, this);
+                //this.Hide();
             }
             else
             {
                 MessageBox.Show("Los campos deben ser llenados");
             }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form AbrirMenu2 = new MenuPrincipalSecretaria();
-            AbrirMenu2.Show();
-            this.Hide();
-
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
