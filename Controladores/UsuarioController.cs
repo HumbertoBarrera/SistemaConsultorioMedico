@@ -15,11 +15,14 @@ namespace SistemaConsultorioMedico.Controladores
         public static void Login(Modelos.Usuario U, Login login)
         {
             SqlCommand codigo;
-            codigo = new SqlCommand("SELECT * FROM USUARIO WHERE usuario= '" + U.getUsuario() + "' AND contraseña='" + U.getPassword()+ "'", Controladores.ConexionController.Conectar());
+            codigo = new SqlCommand("SELECT * FROM USUARIO WHERE usuario= '" 
+                + U.getUsuario() + "' AND contraseña='" + U.getPassword()
+                + "'", Controladores.ConexionController.Conectar());
             SqlDataReader leer = codigo.ExecuteReader();
             if (leer.Read())
             {
-                codigo = new SqlCommand("SELECT rol FROM USUARIO WHERE usuario = '" + U.getUsuario() + "'", Controladores.ConexionController.Conectar());
+                codigo = new SqlCommand("SELECT rol FROM USUARIO WHERE usuario = '" 
+                    + U.getUsuario() + "'", Controladores.ConexionController.Conectar());
                 leer = codigo.ExecuteReader();
                 while (leer.Read())
                 {
@@ -38,9 +41,7 @@ namespace SistemaConsultorioMedico.Controladores
                 }
             }
             else
-            {
                 MessageBox.Show("Usuario y/o contraseña son incorrectos");
-            }
 
         }
 
