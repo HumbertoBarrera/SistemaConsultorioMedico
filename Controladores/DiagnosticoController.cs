@@ -28,13 +28,13 @@ namespace SistemaConsultorioMedico.Controladores
                     comando.Parameters.AddWithValue("@descripcion", d.getDescripcion());
                     int resultado = comando.ExecuteNonQuery();
                     if (resultado < 0)
-                    {
+                    
                         MessageBox.Show("Error al insertar en la base de datos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+                    
                     else
-                    {
+                    
                         MessageBox.Show("Diagnóstico agregado correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
+                    
                 }
             }
             catch (SqlException e)
@@ -120,13 +120,13 @@ namespace SistemaConsultorioMedico.Controladores
             {
                 SqlDataReader leer = comando.ExecuteReader();
                 if (leer.Read())
-                {
+                
                     return true;
-                }
+                
                 else
-                {
+                
                     return false;
-                }
+                
             }
 
         }
