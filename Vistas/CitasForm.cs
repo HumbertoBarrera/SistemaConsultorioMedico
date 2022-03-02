@@ -359,13 +359,13 @@ namespace SistemaConsultorioMedico
         private void PacienteCitaTxb_OnValueChanged(object sender, EventArgs e)
         {
             if (PacienteCitaTxb.Text.Length != 8)
-            {
+            
                 errorDigit.Visible = true;
-            }
+            
             else
-            {
+            
                 errorDigit.Visible = false;
-            }
+            
         }
     }
 }

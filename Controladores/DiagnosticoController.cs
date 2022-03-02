@@ -15,6 +15,7 @@ namespace SistemaConsultorioMedico.Controladores
     class DiagnosticoController
     {
 
+        static int ErrorConsulta=0;
         public static void insertarDiagnostico(Modelos.Diagnostico d)
         {
             String query = "INSERT INTO DIAGNOSTICO VALUES (@idPaciente, @folioDiagnostico, @fecha, @descripcion)";
@@ -27,7 +28,7 @@ namespace SistemaConsultorioMedico.Controladores
                     comando.Parameters.AddWithValue("@fecha", d.getFecha());
                     comando.Parameters.AddWithValue("@descripcion", d.getDescripcion());
                     int resultado = comando.ExecuteNonQuery();
-                    if (resultado < 0)
+                    if (resultado < ErrorConsulta)
                     
                         MessageBox.Show("Error al insertar en la base de datos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     
