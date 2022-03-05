@@ -24,7 +24,7 @@ namespace SistemaConsultorioMedico
             InitializeComponent();
             llenarInformacion(idPaciente);
         }
-
+        //Se abre una nueva pestaña y se valida que los campos no esten vacios
         private void MasBtn_Click(object sender, EventArgs e)
         {
             if (validarCampos())
@@ -38,23 +38,24 @@ namespace SistemaConsultorioMedico
             }
             else
             {
+
                 MessageBox.Show("No pueden haber campos vacíos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-
+        //Se valida que no hay campos vacios
         private bool validarCampos()
         {
             if (dato1Txb.Text != "" && dato2Tbx.Text != "" && dato3Tbx.Text != "" && dato4OpcTbx.Text != "" && dato5OpcTbx.Text != "" && dato6OpcTbx.Text != "" &&
                 dato7OpcTbx.Text != "" && dato8OpcTbx.Text != "" && dato9OpcTbx.Text != "")
-            {
+            
                 return true;
-            }
+            
             else
-            {
+            
                 return false;
-            }
+            
         }
-
+        //Metodo para borrar contenido de textbox
         public void reestablecerCampos()
         {
             dato1Txb.Text = "";
@@ -73,7 +74,7 @@ namespace SistemaConsultorioMedico
             dato9ComboBox.selectedIndex = 0;
             dato9OpcTbx.Text = "";
         }
-
+        //Se llena la informacion del paciente accediendo a la base de datos
         public void llenarInformacion(int idPaciente)
         {
             var f = false;
@@ -117,38 +118,38 @@ namespace SistemaConsultorioMedico
                 Controladores.ConexionController.Desconectar();
             }
         }
-
+        //Se establece una condicion para habilitar determinadas casillas
         public int getIndex(String text)
         {
             if(String.Equals(text, "sí", StringComparison.OrdinalIgnoreCase))
-            {
+            
                 return 1;
-            }
+            
             else
-            {
+            
                 return 2;
-            }
+            
         }
-
+        //Se hace la busqueda en la  base de datos
         private void buscarBtn_Click(object sender, EventArgs e)
         {
             if(String.IsNullOrEmpty(buscarTbx.text))
-            {
+            
                 MessageBox.Show("El campo de búsqueda no debe estar vacío", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
+            
             else
-            {
+            
                 flagME = false;
                 idPaciente = Convert.ToInt32(buscarTbx.text);
                 llenarInformacion(idPaciente);
-            }
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
+        //Se establece la propiedad de color en textbox
         private void dato4ItemOpc(object sender, EventArgs e)
         {
             var opc = dato4ComboBox.selectedIndex;
@@ -360,7 +361,7 @@ namespace SistemaConsultorioMedico
                     break;
             }
         }
-
+        //Se cambian las propiedades del color de los textbox
         private void dato9OpcTbx_EnabledChanged(object sender, EventArgs e)
         {
             if (dato9OpcTbx.Enabled == true)
@@ -376,19 +377,19 @@ namespace SistemaConsultorioMedico
                 dato9OpcTbx.Text = "ㅤㅤ";
             }
         }
-
+        //Se bloquea el boton hasta llenar todos los campos
         private void bloqueoBtnMas(object sender, EventArgs e)
         {
             if (validarCampos())
-            {
+            
                 MasBtn.Enabled = true;
-            }
+            
             else
-            {
+            
                 MasBtn.Enabled = false;
-            }
+            
         }
-
+        //Habilitar boton y establecer color determinado
         private void MasBtn_EnabledChanged(object sender, EventArgs e)
         {
             if (MasBtn.Enabled == true)

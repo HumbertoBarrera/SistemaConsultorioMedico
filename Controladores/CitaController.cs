@@ -29,13 +29,13 @@ namespace SistemaConsultorioMedico.Controladores
 
                     int resultado = comando.ExecuteNonQuery();
                     if (resultado < 0)
-                    {
+                    
                         MessageBox.Show("Error al insertar en la base de datos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+                    
                     else
-                    {
+                    
                         MessageBox.Show("Cita agregada correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
+                    
                 }
             }
             catch
@@ -72,13 +72,13 @@ namespace SistemaConsultorioMedico.Controladores
                  
                     int resultado = comando.ExecuteNonQuery();
                     if (resultado < 0)
-                    {
+                    
                         MessageBox.Show("Error al Eliminar Cita", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+                    
                     else
-                    {
+                    
                         MessageBox.Show("Cita Eliminada correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
+                    
                 }
             }
             catch
@@ -100,13 +100,13 @@ namespace SistemaConsultorioMedico.Controladores
 
                     int resultado = comando.ExecuteNonQuery();
                     if (resultado < 0)
-                    {
+                    
                         MessageBox.Show("Error al Modificar Cita", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+                    
                     else
-                    {
+                    
                         MessageBox.Show("Cita Modificada correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
+                    
                 }
             }
             catch
@@ -128,22 +128,22 @@ namespace SistemaConsultorioMedico.Controladores
             char letra;
             int longitudContrasenia = 8;
             string folioCitaAleatoria = string.Empty;
-            for (int i = 0; i < longitudContrasenia; i++)
+            for (int i = 0; i < longitudContrasenia; i++)//Control de la longitud del folio
             {
-                letra = caracteres[rdn.Next(longitud)];
-                folioCitaAleatoria += letra.ToString();
+                letra = caracteres[rdn.Next(longitud)];//Caracter generado aleatoriamente
+                folioCitaAleatoria += letra.ToString();//Asignacion de caracter generado, al folio de la cita
             }
 
             if (validaExisFolio(folioCitaAleatoria) == false)
-            {
+            
                 c.setFolioCita(folioCitaAleatoria);
-            }
+            
             else
             {
                 if (validaExisFolio(folioCitaAleatoria) == true)
-                {
+                
                     folio(c);
-                }
+                
             }
 
         }
@@ -156,13 +156,13 @@ namespace SistemaConsultorioMedico.Controladores
                 {
                 SqlDataReader leer = comando.ExecuteReader();
                     if (leer.Read())
-                    {
+                    
                         return true;
-                    }
+                    
                     else
-                    {
+                    
                         return false;
-                    }
+                    
                 }
 
         }
@@ -174,13 +174,13 @@ namespace SistemaConsultorioMedico.Controladores
             {
                 SqlDataReader leer = comando.ExecuteReader();
                 if (leer.Read())
-                {
+                
                     return true;
-                }
+                
                 else
-                {
+                
                     return false;
-                }
+                
             }
 
         }
@@ -193,13 +193,13 @@ namespace SistemaConsultorioMedico.Controladores
             {
                 SqlDataReader leer = comando.ExecuteReader();
                 if (leer.Read())
-                {
+                
                     return true;
-                }
+                
                 else
-                {
+                
                     return false;
-                }
+                
             }
 
         }
@@ -213,13 +213,13 @@ namespace SistemaConsultorioMedico.Controladores
             {
                 SqlDataReader leer = comando.ExecuteReader();
                 if (leer.Read())
-                {
+                
                     return true;
-                }
+                
                 else
-                {
+                
                     return false;
-                }
+                
             }
 
         }

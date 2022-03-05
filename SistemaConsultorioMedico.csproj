@@ -34,12 +34,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+<<<<<<< HEAD
     <Reference Include="Microsoft.VisualBasic.Compatibility" />
     <Reference Include="Microsoft.VisualBasic.Compatibility.Data" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+=======
+>>>>>>> abcd26970cc42221b50ae0c947bab0b834351120
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />

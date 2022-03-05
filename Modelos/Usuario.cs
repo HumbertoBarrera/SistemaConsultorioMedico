@@ -11,7 +11,7 @@ namespace SistemaConsultorioMedico.Modelos
 
         int idUsuario;
         String usuario, password;
-
+        //Setters y getter dek objeto
         public void setIdUsuario(int idUsuario)
         {
             this.idUsuario = idUsuario;

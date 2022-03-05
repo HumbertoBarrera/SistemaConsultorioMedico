@@ -27,7 +27,7 @@ namespace SistemaConsultorioMedico
             this.flagME = flagME;
             this.info = info;
             InitializeComponent();
-            ObtenerFecha();
+            obtenerFecha();
             LlenarInformacion(idPaciente);
             Controladores.PropiedadController.BunifuMaterial(dato12Tbx, 3);
             Controladores.PropiedadController.BunifuMaterial(dato16Tbx, 2);
@@ -37,8 +37,7 @@ namespace SistemaConsultorioMedico
         {
             this.Close();
         }
-
-        // Acción de guardar la información médica
+        //Se guardan los datos de los campos en la base de datos y se validan campos  vacios
         private void GuardarBtn_Click(object sender, EventArgs e)
         {
             if (ValidarCampos())
@@ -97,14 +96,15 @@ namespace SistemaConsultorioMedico
                 return dato10Tbx.Text;
             }
         }
-
+        //Regresar a la pantalla anterior
         private void RegresarBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
         }
 
-        // Método para obtener la fecha del día
-        private void ObtenerFecha()
+
+        //Se obtiene fecha y se le establece un formato
+        private void obtenerFecha()
         {
             var fecha = DateTime.Today;
             FechaLbl.Text = FechaLbl.Text + fecha.Day.ToString() + " DE " + fecha.ToString("MMMMM").ToUpper() + " DEL " + fecha.Year.ToString();
@@ -176,8 +176,8 @@ namespace SistemaConsultorioMedico
             return value.All(char.IsNumber);
         }
 
-        // Método para llenar el dato número 10
-        private void LlenarDato10(String dato10)
+        //Se llena el da campo dependiendo de la seleccion del usuario 
+        private void llenarDato10(String dato10)
         {
             if (dato10.Contains("DIABETES"))
             {
@@ -276,7 +276,7 @@ namespace SistemaConsultorioMedico
                     {
                         while (leer.Read())
                         {
-                            LlenarDato10(leer["dato10"].ToString().Trim());
+                            llenarDato10(leer["dato10"].ToString().Trim());
                             dato10OpcTbx.Text = leer["dato10Opc"].ToString();
                             dato11ComboBox.selectedIndex = getIndex(leer["dato11"].ToString());
                             dato11OpcTbx.Text = leer["dato11Opc"].ToString();
@@ -357,7 +357,7 @@ namespace SistemaConsultorioMedico
             this.Close();
             info.Close();
         }
-
+     
         private void dato10Rbtn1_CheckedChanged(object sender, EventArgs e)
         {
             if (dato10Rbtn1.Checked == true)
@@ -670,7 +670,7 @@ namespace SistemaConsultorioMedico
                 dato15Opc4Tbx.Text = "ㅤㅤ";
             }
         }
-
+        //Se bloquea el boton hasta que los campos esten llenos
         private void bloqueoBtnGuardar(object sender, EventArgs e)
         {
             if (ValidarCampos() && flagME)
@@ -692,7 +692,7 @@ namespace SistemaConsultorioMedico
                 }
             }
         }
-
+        //Se establecen propiedades de color 
         private void GuardarBtn_EnabledChanged(object sender, EventArgs e)
         {
             if(GuardarBtn.Enabled == true)
@@ -794,7 +794,7 @@ namespace SistemaConsultorioMedico
                 ModificarBtn.Padding = new Padding(30, 10, 0, 0);
             }
         }
-
+        
         private void EliminarBtn_EnabledChanged(object sender, EventArgs e)
         {
             if(EliminarBtn.Enabled == true)
