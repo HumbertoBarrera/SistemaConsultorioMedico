@@ -10,6 +10,11 @@ namespace SistemaConsultorioMedico.Controladores
     class ConexionController
     {
         private static string connection = "SERVER=OSCARLOPEZ; DATABASE=CONSULTORIO; Integrated Security=true";
+        
+        /// <summary>
+        /// Método para conectarse a la base de datos.
+        /// </summary>
+        /// <returns></returns>
         public static SqlConnection Conectar()
         {
             SqlConnection cn = new SqlConnection(connection);
@@ -17,6 +22,10 @@ namespace SistemaConsultorioMedico.Controladores
             return cn;
         }
 
+        /// <summary>
+        /// Método para cerrar la conexión a la base de datos.
+        /// </summary>
+        /// <returns></returns>
         public static SqlConnection Desconectar()
         {
             SqlConnection cn = new SqlConnection(connection);

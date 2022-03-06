@@ -14,6 +14,10 @@ namespace SistemaConsultorioMedico.Controladores
     {
         DateTime fecha;
 
+        /// <summary>
+        /// Registra la cita en la base de datos.
+        /// </summary>
+        /// <param name="c"></param>
         public static void insertarCita(Modelos.Cita c)
         {
             String query = "INSERT INTO CITA VALUES (@idPaciente, @fecha, @hora, @folioCita)";
@@ -47,6 +51,11 @@ namespace SistemaConsultorioMedico.Controladores
                 Controladores.ConexionController.Desconectar();
             }
         }
+
+        /// <summary>
+        /// Muestra las citas registradas en el sistema.
+        /// </summary>
+        /// <returns></returns>
         public DataTable CargarGridCitas()
         {
             
@@ -62,6 +71,10 @@ namespace SistemaConsultorioMedico.Controladores
                 }
         }
 
+        /// <summary>
+        /// Elimina la cita de la base de datos.
+        /// </summary>
+        /// <param name="c"></param>
         public static void EliminarCita(Modelos.Cita c)
         {
             String query = "DELETE FROM CITA WHERE idPaciente='"+c.getIdPaciente()+"' AND fecha='" + c.getFecha().ToString("yyyy/MM/dd") + "' AND hora='" + c.getHora()+ "' AND folioCita='" + c.getFolioCita() + "'";
@@ -90,6 +103,11 @@ namespace SistemaConsultorioMedico.Controladores
                 Controladores.ConexionController.Desconectar();
             }
         }
+
+        /// <summary>
+        /// Modifica la cita de la base de datos.
+        /// </summary>
+        /// <param name="c"></param>
         public static void ModificarCita(Modelos.Cita c) {
 
             String query = "UPDATE CITA SET fecha='" + c.getFecha().ToString("yyyy/MM/dd") + "' , hora='" + c.getHora() + "' WHERE folioCita='" + c.getFolioCita() + "'";
@@ -119,6 +137,11 @@ namespace SistemaConsultorioMedico.Controladores
             }
 
         }
+
+        /// <summary>
+        /// Genera el folio de la cita.
+        /// </summary>
+        /// <param name="c"></param>
         public static void folio(Modelos.Cita c)
         {
 
@@ -147,7 +170,13 @@ namespace SistemaConsultorioMedico.Controladores
             }
 
         }
+
         //----------------------------------Validaciones----------------------------------------------
+        /// <summary>
+        /// Valida si existe la cita en la base de datos.
+        /// </summary>
+        /// <param name="c"></param>
+        /// <returns></returns>
         public static bool validaExisCita(Modelos.Cita c)
         {
             String query = "SELECT * FROM CITA WHERE fecha='" + c.getFecha().ToString("yyyy/MM/dd") + "' AND hora='" + c.getHora() + "'";
@@ -166,6 +195,12 @@ namespace SistemaConsultorioMedico.Controladores
                 }
 
         }
+
+        /// <summary>
+        /// Valida si ya existe el folio.
+        /// </summary>
+        /// <param name="folio"></param>
+        /// <returns></returns>
         public static bool validaExisFolio(String folio)
         {
             String query = "SELECT * FROM CITA WHERE folioCita='" + folio + "'";
@@ -174,17 +209,18 @@ namespace SistemaConsultorioMedico.Controladores
             {
                 SqlDataReader leer = comando.ExecuteReader();
                 if (leer.Read())
-                
                     return true;
-                
                 else
-                
                     return false;
-                
             }
 
         }
 
+        /// <summary>
+        /// Valida si existe la paciente en la base de datos.
+        /// </summary>
+        /// <param name="c"></param>
+        /// <returns></returns>
         public static bool validaExisPaciente(Modelos.Cita c)
         {
             String query = "SELECT * FROM Paciente WHERE idPaciente='" + c.getIdPaciente() + "'";
@@ -193,18 +229,18 @@ namespace SistemaConsultorioMedico.Controladores
             {
                 SqlDataReader leer = comando.ExecuteReader();
                 if (leer.Read())
-                
                     return true;
-                
                 else
-                
                     return false;
-                
             }
 
         }
 
-
+        /// <summary>
+        /// Valida si la fecha y la hora de la cita no están ya ocupadas.
+        /// </summary>
+        /// <param name="c"></param>
+        /// <returns></returns>
         public static bool validaExisFechaHora(Modelos.Cita c)
         {
             String query = "SELECT * FROM CITA WHERE fecha='" + c.getFecha().ToString("yyyy/MM/dd") + "' AND hora='" + c.getHora() + "'";
@@ -213,17 +249,12 @@ namespace SistemaConsultorioMedico.Controladores
             {
                 SqlDataReader leer = comando.ExecuteReader();
                 if (leer.Read())
-                
                     return true;
-                
                 else
-                
                     return false;
-                
             }
 
         }
-
 
     }
 

@@ -17,6 +17,10 @@ namespace SistemaConsultorioMedico.Controladores
         static int intTuplasManipuladas = 0;
 
         // Método para dar de alta al paciente en la base de datos
+        /// <summary>
+        /// Registra a la paciente a la base de datos.
+        /// </summary>
+        /// <param name="p"></param>
         public static void AltaPaciente(Modelos.Paciente p)
         {
             // Creamos el query a utilizar
@@ -63,6 +67,10 @@ namespace SistemaConsultorioMedico.Controladores
         /* Método para cargar los datos de la tabla de pacientes
          * a un data grid
          */
+        /// <summary>
+        /// Carga a los pacientes de la base de datos y los muestra en el sistema.
+        /// </summary>
+        /// <returns></returns>
         public DataTable CargarGridPacientes()
         {
             // Creamos el query a utilizar
@@ -78,6 +86,10 @@ namespace SistemaConsultorioMedico.Controladores
         }
 
         // Método para hacer update a la información del paciente
+        /// <summary>
+        /// Modifica la información de la paciente en la base de datos.
+        /// </summary>
+        /// <param name="p"></param>
         public static void ActualizarPaciente(Modelos.Paciente p)
         {
             // Creamos query ya con los datos integrados
@@ -108,6 +120,10 @@ namespace SistemaConsultorioMedico.Controladores
         }
 
         // Método para eliminar a un paciente de la base de datos
+        /// <summary>
+        /// Elimina a la paciente de la base de datos.
+        /// </summary>
+        /// <param name="p"></param>
         public static void EliminarPaciente(Modelos.Paciente p)
         {
             try
@@ -186,6 +202,11 @@ namespace SistemaConsultorioMedico.Controladores
          * haciendo un barrido a la tabla de pacientes, buscando
          * por el ID del paciente
          */
+        /// <summary>
+        /// Valida si existe la paciente en la base de datos.
+        /// </summary>
+        /// <param name="idPaciente"></param>
+        /// <returns></returns>
         public static bool ValidaSiExistePaciente(int idPaciente)
         {
             // Query para buscar al paciente

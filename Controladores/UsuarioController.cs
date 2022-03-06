@@ -11,7 +11,11 @@ namespace SistemaConsultorioMedico.Controladores
 {
     class UsuarioController
     {
-
+        /// <summary>
+        /// ´Verifica qué tipo de usuario ingresa al sistema.
+        /// </summary>
+        /// <param name="U"></param>
+        /// <param name="login"></param>
         public static void Login(Modelos.Usuario U, Login login)
         {
             SqlCommand codigo;

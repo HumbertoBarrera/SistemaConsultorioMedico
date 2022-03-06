@@ -16,6 +16,11 @@ namespace SistemaConsultorioMedico.Controladores
         static int intTuplasManipuladas = 0;
 
         // Método para dar de alta la información médica del paciente
+        /// <summary>
+        /// Registra la Información Médica en la base de datos.
+        /// </summary>
+        /// <param name="im1"></param>
+        /// <param name="im2"></param>
         public static void AltaInformacionMedica(Modelos.InformacionMedica im1, Modelos.InformacionMedica im2)
         {
             // Query a utilizar
@@ -84,6 +89,11 @@ namespace SistemaConsultorioMedico.Controladores
             }
         }
 
+        /// <summary>
+        /// Modifica la Información Médica en la base de datos.
+        /// </summary>
+        /// <param name="im1"></param>
+        /// <param name="im2"></param>
         public static void ModificarInformacionMedica(Modelos.InformacionMedica im1, Modelos.InformacionMedica im2)
         {
             // Declaramos el query a utilizar
@@ -154,6 +164,11 @@ namespace SistemaConsultorioMedico.Controladores
         }
 
         // Método para eliminar la información médica del paciente
+        /// <summary>
+        /// Elimina la Información Médica de la base de datos.
+        /// </summary>
+        /// <param name="im1"></param>
+        /// <param name="im2"></param>
         public static void EliminarInformacionMedica(Modelos.InformacionMedica im1, Modelos.InformacionMedica im2)
         {
             try
