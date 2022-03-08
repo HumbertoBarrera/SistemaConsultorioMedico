@@ -1,0 +1,642 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_sistema_consultorio_medico_1_1_diagnostico" kind="class" language="C#" prot="public">
+    <compoundname>SistemaConsultorioMedico::Diagnostico</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_diagnostico_1a4141976ee1bda0bf0c4bbbc708b474b9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SistemaConsultorioMedico.Diagnostico.idPaciente</definition>
+        <argsstring></argsstring>
+        <name>idPaciente</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.idPaciente</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.cs" line="15" column="13" bodyfile="Vistas/DiagnosticoForms.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_diagnostico_1a2171f55ba6f7a32bbcaf075daf36fea5" prot="private" static="no" mutable="no">
+        <type>DateTime</type>
+        <definition>DateTime SistemaConsultorioMedico.Diagnostico.fecha</definition>
+        <argsstring></argsstring>
+        <name>fecha</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.fecha</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.cs" line="16" column="18" bodyfile="Vistas/DiagnosticoForms.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_diagnostico_1a9195aa4dec475163b950e191c3a993a7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SistemaConsultorioMedico.Diagnostico.indice</definition>
+        <argsstring></argsstring>
+        <name>indice</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.indice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.cs" line="17" column="13" bodyfile="Vistas/DiagnosticoForms.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_diagnostico_1aab55412acc1e51e86a566147d5257f91" prot="private" static="no" mutable="no">
+        <type><ref refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico" kindref="compound">Modelos.Diagnostico</ref></type>
+        <definition>Modelos.Diagnostico SistemaConsultorioMedico.Diagnostico.diagnostico</definition>
+        <argsstring></argsstring>
+        <name>diagnostico</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.diagnostico</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.cs" line="18" column="36" bodyfile="Vistas/DiagnosticoForms.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_diagnostico_1a0a6d31a2f5418195b4ac0a63449721ad" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SistemaConsultorioMedico.Diagnostico.pacienteExt</definition>
+        <argsstring></argsstring>
+        <name>pacienteExt</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.pacienteExt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.cs" line="31" column="13" bodyfile="Vistas/DiagnosticoForms.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_diagnostico_1a52385febc8fc2ef8ba480163fd7d0a1f" prot="private" static="no" mutable="no">
+        <type>System.ComponentModel.IContainer</type>
+        <definition>System.ComponentModel.IContainer SistemaConsultorioMedico.Diagnostico.components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.components</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Required designer variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.Designer.cs" line="9" column="48" bodyfile="Vistas/DiagnosticoForms.Designer.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_diagnostico_1aad3f352421a6f87de813ce336c92cf7b" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuSeparator</type>
+        <definition>Bunifu.Framework.UI.BunifuSeparator SistemaConsultorioMedico.Diagnostico.linea</definition>
+        <argsstring></argsstring>
+        <name>linea</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.linea</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.Designer.cs" line="303" column="50" bodyfile="Vistas/DiagnosticoForms.Designer.cs" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_diagnostico_1ac6860dc99c351c1fa152872a19ed2588" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuCustomLabel</type>
+        <definition>Bunifu.Framework.UI.BunifuCustomLabel SistemaConsultorioMedico.Diagnostico.bunifuCustomLabel1</definition>
+        <argsstring></argsstring>
+        <name>bunifuCustomLabel1</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.bunifuCustomLabel1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.Designer.cs" line="304" column="52" bodyfile="Vistas/DiagnosticoForms.Designer.cs" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_diagnostico_1a0695b8a6fb506ce55170fa1d70fa7074" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.Diagnostico.FechaTxb</definition>
+        <argsstring></argsstring>
+        <name>FechaTxb</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.FechaTxb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.Designer.cs" line="305" column="56" bodyfile="Vistas/DiagnosticoForms.Designer.cs" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_diagnostico_1aba900847aa67f7ae557ae32476c2a142" prot="private" static="no" mutable="no">
+        <type>WindowsFormsControlLibrary1.BunifuCustomTextbox</type>
+        <definition>WindowsFormsControlLibrary1.BunifuCustomTextbox SistemaConsultorioMedico.Diagnostico.Descripciontxb</definition>
+        <argsstring></argsstring>
+        <name>Descripciontxb</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.Descripciontxb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.Designer.cs" line="306" column="64" bodyfile="Vistas/DiagnosticoForms.Designer.cs" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_diagnostico_1a676ba5e033709f3eaf89da9c51065def" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuThinButton2</type>
+        <definition>Bunifu.Framework.UI.BunifuThinButton2 SistemaConsultorioMedico.Diagnostico.guardarbtn</definition>
+        <argsstring></argsstring>
+        <name>guardarbtn</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.guardarbtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.Designer.cs" line="307" column="52" bodyfile="Vistas/DiagnosticoForms.Designer.cs" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_diagnostico_1ac3bea25eea8b54b835ed5df04c72a7e9" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuThinButton2</type>
+        <definition>Bunifu.Framework.UI.BunifuThinButton2 SistemaConsultorioMedico.Diagnostico.Agregarbtn</definition>
+        <argsstring></argsstring>
+        <name>Agregarbtn</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.Agregarbtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.Designer.cs" line="308" column="52" bodyfile="Vistas/DiagnosticoForms.Designer.cs" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_diagnostico_1a888f1369eb4bbb807567fc9528bfe64a" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuThinButton2</type>
+        <definition>Bunifu.Framework.UI.BunifuThinButton2 SistemaConsultorioMedico.Diagnostico.BuscarCitaBtn</definition>
+        <argsstring></argsstring>
+        <name>BuscarCitaBtn</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.BuscarCitaBtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.Designer.cs" line="309" column="52" bodyfile="Vistas/DiagnosticoForms.Designer.cs" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_diagnostico_1a364f561c0e0c7a19f10c3cb9e1f3995d" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.Diagnostico.PacienteTxb</definition>
+        <argsstring></argsstring>
+        <name>PacienteTxb</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.PacienteTxb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.Designer.cs" line="310" column="56" bodyfile="Vistas/DiagnosticoForms.Designer.cs" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_diagnostico_1a862ee754f20e48658cfba9de1dfa8d36" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuCustomDataGrid</type>
+        <definition>Bunifu.Framework.UI.BunifuCustomDataGrid SistemaConsultorioMedico.Diagnostico.bunifuCustomDataGrid1</definition>
+        <argsstring></argsstring>
+        <name>bunifuCustomDataGrid1</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.bunifuCustomDataGrid1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.Designer.cs" line="311" column="55" bodyfile="Vistas/DiagnosticoForms.Designer.cs" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_diagnostico_1a38b899366e6791b979de4486c4721439" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuTextbox SistemaConsultorioMedico.Diagnostico.BuscarTbx</definition>
+        <argsstring></argsstring>
+        <name>BuscarTbx</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.BuscarTbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.Designer.cs" line="312" column="48" bodyfile="Vistas/DiagnosticoForms.Designer.cs" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_diagnostico_1ae6cb7132e7613cf5095b394b0c3c1d5a" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.PictureBox</type>
+        <definition>System.Windows.Forms.PictureBox SistemaConsultorioMedico.Diagnostico.pictureBox1</definition>
+        <argsstring></argsstring>
+        <name>pictureBox1</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.pictureBox1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.Designer.cs" line="313" column="46" bodyfile="Vistas/DiagnosticoForms.Designer.cs" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_diagnostico_1ae53cc84d0145024b28c2f1a2d03bf2e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SistemaConsultorioMedico.Diagnostico.Diagnostico</definition>
+        <argsstring>(int idPaciente)</argsstring>
+        <name>Diagnostico</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.Diagnostico</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idPaciente</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.cs" line="20" column="16" bodyfile="Vistas/DiagnosticoForms.cs" bodystart="20" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_diagnostico_1ae41ebc413d757f64a1db501effee1b44" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Diagnostico.FechaTxb_MouseEnter</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>FechaTxb_MouseEnter</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.FechaTxb_MouseEnter</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.cs" line="33" column="22" bodyfile="Vistas/DiagnosticoForms.cs" bodystart="33" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_diagnostico_1a02a7ac3ea8c3a0afdc9d27c23c4d5868" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Diagnostico.FechaTxb_MouseLeave</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>FechaTxb_MouseLeave</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.FechaTxb_MouseLeave</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.cs" line="42" column="22" bodyfile="Vistas/DiagnosticoForms.cs" bodystart="42" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_diagnostico_1ad779c235f5d986cc9ccbb8c7bd4bfb62" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Diagnostico.Descripciontxb_MouseEnter</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>Descripciontxb_MouseEnter</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.Descripciontxb_MouseEnter</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.cs" line="51" column="22" bodyfile="Vistas/DiagnosticoForms.cs" bodystart="51" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_diagnostico_1ae1844d22c99cce77f7dfd29cf78cbeed" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Diagnostico.Descripciontxb_MouseLeave</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>Descripciontxb_MouseLeave</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.Descripciontxb_MouseLeave</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.cs" line="60" column="22" bodyfile="Vistas/DiagnosticoForms.cs" bodystart="60" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_diagnostico_1adcde6e66ead21da1623fa21ae95f7dcd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Diagnostico.PacienteTxb_MouseEnter</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>PacienteTxb_MouseEnter</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.PacienteTxb_MouseEnter</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.cs" line="69" column="22" bodyfile="Vistas/DiagnosticoForms.cs" bodystart="69" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_diagnostico_1a09659211a4d00c37a9dc59e80dd629cb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Diagnostico.PacienteTxb_MouseLeave</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>PacienteTxb_MouseLeave</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.PacienteTxb_MouseLeave</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.cs" line="78" column="22" bodyfile="Vistas/DiagnosticoForms.cs" bodystart="78" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_diagnostico_1a66161d8288ec653e0a821081a7b6a44a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Diagnostico.guardarbtn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>guardarbtn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.guardarbtn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.cs" line="87" column="22" bodyfile="Vistas/DiagnosticoForms.cs" bodystart="87" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_diagnostico_1a4b9a3caeb730c1a5a7996490961d5c64" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Diagnostico.Diagnostico_Load</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>Diagnostico_Load</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.Diagnostico_Load</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.cs" line="128" column="22" bodyfile="Vistas/DiagnosticoForms.cs" bodystart="128" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_diagnostico_1a89af0e5448f72b5ac2ee0e775efdb7fd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Diagnostico.BuscarCitaBtn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>BuscarCitaBtn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.BuscarCitaBtn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.cs" line="140" column="22" bodyfile="Vistas/DiagnosticoForms.cs" bodystart="140" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_diagnostico_1a551bdbc9de782d06f1472c6245b02d2f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Diagnostico.Agregarbtn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>Agregarbtn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.Agregarbtn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.cs" line="170" column="22" bodyfile="Vistas/DiagnosticoForms.cs" bodystart="170" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_diagnostico_1ac13dff81c353d4f239ac0926f968f070" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Diagnostico.bunifuCustomDataGrid1_CellClick</definition>
+        <argsstring>(object sender, DataGridViewCellEventArgs e)</argsstring>
+        <name>bunifuCustomDataGrid1_CellClick</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.bunifuCustomDataGrid1_CellClick</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>DataGridViewCellEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.cs" line="180" column="22" bodyfile="Vistas/DiagnosticoForms.cs" bodystart="180" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_diagnostico_1a802e55563a4bfa1c3fdb2eb271e6785b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Diagnostico.pictureBox1_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>pictureBox1_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.pictureBox1_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.cs" line="190" column="22" bodyfile="Vistas/DiagnosticoForms.cs" bodystart="190" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_diagnostico_1a758e5ec2a6dd63903f5d0e08686a0e58" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Diagnostico.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>Required method for Designer support - do not modify the contents of this method with the code editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.Designer.cs" line="30" column="22" bodyfile="Vistas/DiagnosticoForms.Designer.cs" bodystart="30" bodyend="299"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_diagnostico_1ab9556b7934500143c0b7a29c7b76f5dc" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void SistemaConsultorioMedico.Diagnostico.Dispose</definition>
+        <argsstring>(bool disposing)</argsstring>
+        <name>Dispose</name>
+        <qualifiedname>SistemaConsultorioMedico.Diagnostico.Dispose</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>disposing</declname>
+        </param>
+        <briefdescription>
+<para>Clean up any resources being used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disposing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if managed resources should be disposed; otherwise, false.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/DiagnosticoForms.Designer.cs" line="15" column="33" bodyfile="Vistas/DiagnosticoForms.Designer.cs" bodystart="15" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>SistemaConsultorioMedico.Diagnostico</label>
+        <link refid="class_sistema_consultorio_medico_1_1_diagnostico"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>SistemaConsultorioMedico.Diagnostico</label>
+        <link refid="class_sistema_consultorio_medico_1_1_diagnostico"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Vistas/DiagnosticoForms.cs" line="13" column="19" bodyfile="Vistas/DiagnosticoForms.cs" bodystart="14" bodyend="194"/>
+    <listofallmembers>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1ac3bea25eea8b54b835ed5df04c72a7e9" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>Agregarbtn</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a551bdbc9de782d06f1472c6245b02d2f" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>Agregarbtn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a862ee754f20e48658cfba9de1dfa8d36" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>bunifuCustomDataGrid1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1ac13dff81c353d4f239ac0926f968f070" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>bunifuCustomDataGrid1_CellClick</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1ac6860dc99c351c1fa152872a19ed2588" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>bunifuCustomLabel1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a888f1369eb4bbb807567fc9528bfe64a" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>BuscarCitaBtn</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a89af0e5448f72b5ac2ee0e775efdb7fd" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>BuscarCitaBtn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a38b899366e6791b979de4486c4721439" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>BuscarTbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a52385febc8fc2ef8ba480163fd7d0a1f" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>components</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1aba900847aa67f7ae557ae32476c2a142" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>Descripciontxb</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1ad779c235f5d986cc9ccbb8c7bd4bfb62" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>Descripciontxb_MouseEnter</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1ae1844d22c99cce77f7dfd29cf78cbeed" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>Descripciontxb_MouseLeave</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1aab55412acc1e51e86a566147d5257f91" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>diagnostico</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1ae53cc84d0145024b28c2f1a2d03bf2e0" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>Diagnostico</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a4b9a3caeb730c1a5a7996490961d5c64" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>Diagnostico_Load</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1ab9556b7934500143c0b7a29c7b76f5dc" prot="protected" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>Dispose</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a2171f55ba6f7a32bbcaf075daf36fea5" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>fecha</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a0695b8a6fb506ce55170fa1d70fa7074" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>FechaTxb</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1ae41ebc413d757f64a1db501effee1b44" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>FechaTxb_MouseEnter</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a02a7ac3ea8c3a0afdc9d27c23c4d5868" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>FechaTxb_MouseLeave</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a676ba5e033709f3eaf89da9c51065def" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>guardarbtn</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a66161d8288ec653e0a821081a7b6a44a" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>guardarbtn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a4141976ee1bda0bf0c4bbbc708b474b9" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>idPaciente</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a9195aa4dec475163b950e191c3a993a7" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>indice</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a758e5ec2a6dd63903f5d0e08686a0e58" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>InitializeComponent</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1aad3f352421a6f87de813ce336c92cf7b" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>linea</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a0a6d31a2f5418195b4ac0a63449721ad" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>pacienteExt</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a364f561c0e0c7a19f10c3cb9e1f3995d" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>PacienteTxb</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1adcde6e66ead21da1623fa21ae95f7dcd" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>PacienteTxb_MouseEnter</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a09659211a4d00c37a9dc59e80dd629cb" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>PacienteTxb_MouseLeave</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1ae6cb7132e7613cf5095b394b0c3c1d5a" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>pictureBox1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a802e55563a4bfa1c3fdb2eb271e6785b" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Diagnostico</scope><name>pictureBox1_Click</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

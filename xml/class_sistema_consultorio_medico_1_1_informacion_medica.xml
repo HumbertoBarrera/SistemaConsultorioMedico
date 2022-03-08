@@ -1,0 +1,949 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_sistema_consultorio_medico_1_1_informacion_medica" kind="class" language="C#" prot="public">
+    <compoundname>SistemaConsultorioMedico::InformacionMedica</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_informacion_medica_1aaee772ef1963ff369c671b16ce06b98b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SistemaConsultorioMedico.InformacionMedica.idPaciente</definition>
+        <argsstring></argsstring>
+        <name>idPaciente</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.idPaciente</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.cs" line="16" column="13" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_informacion_medica_1aa85775d97ab6a6a4cc0596640d44173c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SistemaConsultorioMedico.InformacionMedica.flagME</definition>
+        <argsstring></argsstring>
+        <name>flagME</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.flagME</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.cs" line="17" column="14" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a17151a7044bede61f8ef05cf426577f5" prot="private" static="no" mutable="no">
+        <type><ref refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica" kindref="compound">Modelos.InformacionMedica</ref></type>
+        <definition>Modelos.InformacionMedica SistemaConsultorioMedico.InformacionMedica.im1</definition>
+        <argsstring></argsstring>
+        <name>im1</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.im1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.cs" line="18" column="42" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a4cc8ffe3b1cfd6fc3943e301fd9a9460" prot="private" static="no" mutable="no">
+        <type>System.ComponentModel.IContainer</type>
+        <definition>System.ComponentModel.IContainer SistemaConsultorioMedico.InformacionMedica.components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.components</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Required designer variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.Designer.cs" line="9" column="48" bodyfile="Vistas/InformacionMedicaForms.Designer.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_informacion_medica_1acf3e10dee838d0814c650aeaa84ad4ec" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.InformacionMedica.dato3Tbx</definition>
+        <argsstring></argsstring>
+        <name>dato3Tbx</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato3Tbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.Designer.cs" line="521" column="56" bodyfile="Vistas/InformacionMedicaForms.Designer.cs" bodystart="521" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_informacion_medica_1afeec32eb63c630786e1a675f2a76260e" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.InformacionMedica.dato2Tbx</definition>
+        <argsstring></argsstring>
+        <name>dato2Tbx</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato2Tbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.Designer.cs" line="522" column="56" bodyfile="Vistas/InformacionMedicaForms.Designer.cs" bodystart="522" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_informacion_medica_1aafc2eae46ac2193839d39d38bb2b2fbc" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.InformacionMedica.dato1Txb</definition>
+        <argsstring></argsstring>
+        <name>dato1Txb</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato1Txb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.Designer.cs" line="523" column="56" bodyfile="Vistas/InformacionMedicaForms.Designer.cs" bodystart="523" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a953a5953bc6ca788782eba5b0b51e9ef" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuSeparator</type>
+        <definition>Bunifu.Framework.UI.BunifuSeparator SistemaConsultorioMedico.InformacionMedica.linea</definition>
+        <argsstring></argsstring>
+        <name>linea</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.linea</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.Designer.cs" line="524" column="50" bodyfile="Vistas/InformacionMedicaForms.Designer.cs" bodystart="524" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a7cfed6a1af2ead1769b8ffb04f352d87" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuCustomLabel</type>
+        <definition>Bunifu.Framework.UI.BunifuCustomLabel SistemaConsultorioMedico.InformacionMedica.bunifuCustomLabel1</definition>
+        <argsstring></argsstring>
+        <name>bunifuCustomLabel1</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.bunifuCustomLabel1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.Designer.cs" line="525" column="52" bodyfile="Vistas/InformacionMedicaForms.Designer.cs" bodystart="525" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a8c68748b2fe2051e26cfd41a378ce659" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.InformacionMedica.dato4OpcTbx</definition>
+        <argsstring></argsstring>
+        <name>dato4OpcTbx</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato4OpcTbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.Designer.cs" line="526" column="56" bodyfile="Vistas/InformacionMedicaForms.Designer.cs" bodystart="526" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_informacion_medica_1add5139691c4068bc61156713f1104c68" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.InformacionMedica.dato5OpcTbx</definition>
+        <argsstring></argsstring>
+        <name>dato5OpcTbx</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato5OpcTbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.Designer.cs" line="527" column="56" bodyfile="Vistas/InformacionMedicaForms.Designer.cs" bodystart="527" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a3e1788ea3883a73761381073420d5aa3" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.InformacionMedica.dato6OpcTbx</definition>
+        <argsstring></argsstring>
+        <name>dato6OpcTbx</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato6OpcTbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.Designer.cs" line="528" column="56" bodyfile="Vistas/InformacionMedicaForms.Designer.cs" bodystart="528" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a0b1c664a92e563565fbda21f6632589a" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.InformacionMedica.dato7OpcTbx</definition>
+        <argsstring></argsstring>
+        <name>dato7OpcTbx</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato7OpcTbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.Designer.cs" line="529" column="56" bodyfile="Vistas/InformacionMedicaForms.Designer.cs" bodystart="529" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_informacion_medica_1ab8d6bc849db09a4d27b49be15ea234d6" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.InformacionMedica.dato8OpcTbx</definition>
+        <argsstring></argsstring>
+        <name>dato8OpcTbx</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato8OpcTbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.Designer.cs" line="530" column="56" bodyfile="Vistas/InformacionMedicaForms.Designer.cs" bodystart="530" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_informacion_medica_1aa4fce2901e0a9b9ebfd2c27fdf04f9fb" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.InformacionMedica.dato9OpcTbx</definition>
+        <argsstring></argsstring>
+        <name>dato9OpcTbx</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato9OpcTbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.Designer.cs" line="531" column="56" bodyfile="Vistas/InformacionMedicaForms.Designer.cs" bodystart="531" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_informacion_medica_1ae58d1f433c82e66dc6a27e3dad37ffea" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuThinButton2</type>
+        <definition>Bunifu.Framework.UI.BunifuThinButton2 SistemaConsultorioMedico.InformacionMedica.MasBtn</definition>
+        <argsstring></argsstring>
+        <name>MasBtn</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.MasBtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.Designer.cs" line="532" column="52" bodyfile="Vistas/InformacionMedicaForms.Designer.cs" bodystart="532" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_informacion_medica_1af524b6964b5333ffef27c35dcbfd4571" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuThinButton2</type>
+        <definition>Bunifu.Framework.UI.BunifuThinButton2 SistemaConsultorioMedico.InformacionMedica.buscarBtn</definition>
+        <argsstring></argsstring>
+        <name>buscarBtn</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.buscarBtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.Designer.cs" line="533" column="52" bodyfile="Vistas/InformacionMedicaForms.Designer.cs" bodystart="533" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a90237c8d14810b42b2eac10db7643c20" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuTextbox SistemaConsultorioMedico.InformacionMedica.buscarTbx</definition>
+        <argsstring></argsstring>
+        <name>buscarTbx</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.buscarTbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.Designer.cs" line="534" column="48" bodyfile="Vistas/InformacionMedicaForms.Designer.cs" bodystart="534" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a7f1cf2b7d5b5214f4fd1f320f63ce0f0" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.PictureBox</type>
+        <definition>System.Windows.Forms.PictureBox SistemaConsultorioMedico.InformacionMedica.pictureBox1</definition>
+        <argsstring></argsstring>
+        <name>pictureBox1</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.pictureBox1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.Designer.cs" line="535" column="46" bodyfile="Vistas/InformacionMedicaForms.Designer.cs" bodystart="535" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_informacion_medica_1afa4bc93d6343df51fd871da6371e66ef" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuDropdown</type>
+        <definition>Bunifu.Framework.UI.BunifuDropdown SistemaConsultorioMedico.InformacionMedica.dato4ComboBox</definition>
+        <argsstring></argsstring>
+        <name>dato4ComboBox</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato4ComboBox</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.Designer.cs" line="536" column="49" bodyfile="Vistas/InformacionMedicaForms.Designer.cs" bodystart="536" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_informacion_medica_1ab0e650910fa459fa030e4ee023c6ce9a" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuDropdown</type>
+        <definition>Bunifu.Framework.UI.BunifuDropdown SistemaConsultorioMedico.InformacionMedica.dato5ComboBox</definition>
+        <argsstring></argsstring>
+        <name>dato5ComboBox</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato5ComboBox</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.Designer.cs" line="537" column="49" bodyfile="Vistas/InformacionMedicaForms.Designer.cs" bodystart="537" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a22daed9472e81d57410c06f013279a5d" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuDropdown</type>
+        <definition>Bunifu.Framework.UI.BunifuDropdown SistemaConsultorioMedico.InformacionMedica.dato6ComboBox</definition>
+        <argsstring></argsstring>
+        <name>dato6ComboBox</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato6ComboBox</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.Designer.cs" line="538" column="49" bodyfile="Vistas/InformacionMedicaForms.Designer.cs" bodystart="538" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a3c095fbcb3b7b71d2303ebf9ef6fdf82" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuDropdown</type>
+        <definition>Bunifu.Framework.UI.BunifuDropdown SistemaConsultorioMedico.InformacionMedica.dato7ComboBox</definition>
+        <argsstring></argsstring>
+        <name>dato7ComboBox</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato7ComboBox</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.Designer.cs" line="539" column="49" bodyfile="Vistas/InformacionMedicaForms.Designer.cs" bodystart="539" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a0d46050193d036c0875d6cba9dd5c716" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuDropdown</type>
+        <definition>Bunifu.Framework.UI.BunifuDropdown SistemaConsultorioMedico.InformacionMedica.dato8ComboBox</definition>
+        <argsstring></argsstring>
+        <name>dato8ComboBox</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato8ComboBox</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.Designer.cs" line="540" column="49" bodyfile="Vistas/InformacionMedicaForms.Designer.cs" bodystart="540" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a1ba209e1ac2d7c67b21577cd2083a12f" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuDropdown</type>
+        <definition>Bunifu.Framework.UI.BunifuDropdown SistemaConsultorioMedico.InformacionMedica.dato9ComboBox</definition>
+        <argsstring></argsstring>
+        <name>dato9ComboBox</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato9ComboBox</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.Designer.cs" line="541" column="49" bodyfile="Vistas/InformacionMedicaForms.Designer.cs" bodystart="541" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a70ddac6536f49a373cae917314d2efd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SistemaConsultorioMedico.InformacionMedica.InformacionMedica</definition>
+        <argsstring>(int idPaciente, bool flagME)</argsstring>
+        <name>InformacionMedica</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.InformacionMedica</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idPaciente</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>flagME</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.cs" line="20" column="16" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="20" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a61a4bd8960eb3d3e0a37fe40b69b41e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.InformacionMedica.reestablecerCampos</definition>
+        <argsstring>()</argsstring>
+        <name>reestablecerCampos</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.reestablecerCampos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.cs" line="59" column="21" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="59" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a27e250d3ff561bdfde4966d963543999" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.InformacionMedica.llenarInformacion</definition>
+        <argsstring>(int idPaciente)</argsstring>
+        <name>llenarInformacion</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.llenarInformacion</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idPaciente</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.cs" line="78" column="21" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="78" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a0a9c7c1fc302e372d7905dfe51d63616" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SistemaConsultorioMedico.InformacionMedica.getIndex</definition>
+        <argsstring>(String text)</argsstring>
+        <name>getIndex</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.getIndex</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.cs" line="122" column="20" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="122" bodyend="132"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_informacion_medica_1ae7d97663976033d79c5058e77c783cc3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.InformacionMedica.MasBtn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>MasBtn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.MasBtn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.cs" line="28" column="22" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="28" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a83e733454860a874c778140d1efab8a8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SistemaConsultorioMedico.InformacionMedica.validarCampos</definition>
+        <argsstring>()</argsstring>
+        <name>validarCampos</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.validarCampos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.cs" line="46" column="22" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="46" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a342e12f5502d8588a7ef648e186b5f28" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.InformacionMedica.buscarBtn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>buscarBtn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.buscarBtn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.cs" line="134" column="22" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="134" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a17d360cbac10161e7e776b55040e360a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.InformacionMedica.pictureBox1_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>pictureBox1_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.pictureBox1_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.cs" line="148" column="22" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="148" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_informacion_medica_1ab48f5d823fff95862024f1cebe94fc1d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.InformacionMedica.dato4ItemOpc</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato4ItemOpc</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato4ItemOpc</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.cs" line="153" column="22" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="153" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a5c4a8497ee2848775a1fb3f9fd9225c5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.InformacionMedica.dato4OpcTbx_EnabledChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato4OpcTbx_EnabledChanged</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato4OpcTbx_EnabledChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.cs" line="174" column="22" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="174" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a18e251d2e29a9b9a2f646ae11fadffb4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.InformacionMedica.dato5ItemOpc</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato5ItemOpc</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato5ItemOpc</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.cs" line="190" column="22" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="190" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a7f2a96ad5364a512473d4a76688aea54" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.InformacionMedica.dato5OpcTbx_EnabledChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato5OpcTbx_EnabledChanged</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato5OpcTbx_EnabledChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.cs" line="211" column="22" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="211" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a04e1643b25d73507513422c537d44a80" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.InformacionMedica.dato6ItemOpc</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato6ItemOpc</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato6ItemOpc</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.cs" line="227" column="22" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="227" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a2b54d5a4f7a6773d16085bda6465d2ce" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.InformacionMedica.dato6OpcTbx_EnabledChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato6OpcTbx_EnabledChanged</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato6OpcTbx_EnabledChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.cs" line="248" column="22" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="248" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_informacion_medica_1adcc2fde5158efae9fba4d3ac4f0bcad5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.InformacionMedica.dato7ItemOpc</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato7ItemOpc</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato7ItemOpc</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.cs" line="264" column="22" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="264" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_informacion_medica_1ae9267dd35a5ef31dcdc850b965ad8e06" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.InformacionMedica.dato7OpcTbx_EnabledChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato7OpcTbx_EnabledChanged</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato7OpcTbx_EnabledChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.cs" line="285" column="22" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="285" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a3b0f72465e9fdbad17f77f7db021fd2b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.InformacionMedica.dato8ItemOpc</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato8ItemOpc</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato8ItemOpc</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.cs" line="301" column="22" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="301" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a851b5fcc04393bfa5d418236f91d5f08" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.InformacionMedica.dato8OpcTbx_EnabledChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato8OpcTbx_EnabledChanged</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato8OpcTbx_EnabledChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.cs" line="328" column="22" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="328" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_informacion_medica_1ae155699ed0b3b1cf3b46394502bca757" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.InformacionMedica.dato9ItemOpc</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato9ItemOpc</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato9ItemOpc</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.cs" line="344" column="22" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="344" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a92dfa5aedcf4b548ca2182f0c87b3032" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.InformacionMedica.dato9OpcTbx_EnabledChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato9OpcTbx_EnabledChanged</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.dato9OpcTbx_EnabledChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.cs" line="365" column="22" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="365" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_informacion_medica_1ab2390bcf1d65ff7ab74600b8bfba9076" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.InformacionMedica.bloqueoBtnMas</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>bloqueoBtnMas</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.bloqueoBtnMas</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.cs" line="381" column="22" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="381" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a96cba091b401004d9f7333c0d2e7fd59" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.InformacionMedica.MasBtn_EnabledChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>MasBtn_EnabledChanged</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.MasBtn_EnabledChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.cs" line="393" column="22" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="393" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a30776db940c9b5f84e35eae479b79ef1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.InformacionMedica.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>Required method for Designer support - do not modify the contents of this method with the code editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.Designer.cs" line="30" column="22" bodyfile="Vistas/InformacionMedicaForms.Designer.cs" bodystart="30" bodyend="518"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_informacion_medica_1a53d8813d5f99e483945cc5cd4c765651" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void SistemaConsultorioMedico.InformacionMedica.Dispose</definition>
+        <argsstring>(bool disposing)</argsstring>
+        <name>Dispose</name>
+        <qualifiedname>SistemaConsultorioMedico.InformacionMedica.Dispose</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>disposing</declname>
+        </param>
+        <briefdescription>
+<para>Clean up any resources being used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disposing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if managed resources should be disposed; otherwise, false.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/InformacionMedicaForms.Designer.cs" line="15" column="33" bodyfile="Vistas/InformacionMedicaForms.Designer.cs" bodystart="15" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>SistemaConsultorioMedico.InformacionMedica</label>
+        <link refid="class_sistema_consultorio_medico_1_1_informacion_medica"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>SistemaConsultorioMedico.InformacionMedica</label>
+        <link refid="class_sistema_consultorio_medico_1_1_informacion_medica"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Vistas/InformacionMedicaForms.cs" line="14" column="19" bodyfile="Vistas/InformacionMedicaForms.cs" bodystart="15" bodyend="406"/>
+    <listofallmembers>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1ab2390bcf1d65ff7ab74600b8bfba9076" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>bloqueoBtnMas</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a7cfed6a1af2ead1769b8ffb04f352d87" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>bunifuCustomLabel1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1af524b6964b5333ffef27c35dcbfd4571" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>buscarBtn</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a342e12f5502d8588a7ef648e186b5f28" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>buscarBtn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a90237c8d14810b42b2eac10db7643c20" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>buscarTbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a4cc8ffe3b1cfd6fc3943e301fd9a9460" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>components</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1aafc2eae46ac2193839d39d38bb2b2fbc" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato1Txb</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1afeec32eb63c630786e1a675f2a76260e" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato2Tbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1acf3e10dee838d0814c650aeaa84ad4ec" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato3Tbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1afa4bc93d6343df51fd871da6371e66ef" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato4ComboBox</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1ab48f5d823fff95862024f1cebe94fc1d" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato4ItemOpc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a8c68748b2fe2051e26cfd41a378ce659" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato4OpcTbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a5c4a8497ee2848775a1fb3f9fd9225c5" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato4OpcTbx_EnabledChanged</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1ab0e650910fa459fa030e4ee023c6ce9a" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato5ComboBox</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a18e251d2e29a9b9a2f646ae11fadffb4" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato5ItemOpc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1add5139691c4068bc61156713f1104c68" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato5OpcTbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a7f2a96ad5364a512473d4a76688aea54" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato5OpcTbx_EnabledChanged</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a22daed9472e81d57410c06f013279a5d" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato6ComboBox</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a04e1643b25d73507513422c537d44a80" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato6ItemOpc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a3e1788ea3883a73761381073420d5aa3" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato6OpcTbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a2b54d5a4f7a6773d16085bda6465d2ce" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato6OpcTbx_EnabledChanged</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a3c095fbcb3b7b71d2303ebf9ef6fdf82" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato7ComboBox</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1adcc2fde5158efae9fba4d3ac4f0bcad5" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato7ItemOpc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a0b1c664a92e563565fbda21f6632589a" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato7OpcTbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1ae9267dd35a5ef31dcdc850b965ad8e06" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato7OpcTbx_EnabledChanged</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a0d46050193d036c0875d6cba9dd5c716" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato8ComboBox</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a3b0f72465e9fdbad17f77f7db021fd2b" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato8ItemOpc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1ab8d6bc849db09a4d27b49be15ea234d6" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato8OpcTbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a851b5fcc04393bfa5d418236f91d5f08" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato8OpcTbx_EnabledChanged</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a1ba209e1ac2d7c67b21577cd2083a12f" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato9ComboBox</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1ae155699ed0b3b1cf3b46394502bca757" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato9ItemOpc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1aa4fce2901e0a9b9ebfd2c27fdf04f9fb" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato9OpcTbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a92dfa5aedcf4b548ca2182f0c87b3032" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>dato9OpcTbx_EnabledChanged</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a53d8813d5f99e483945cc5cd4c765651" prot="protected" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>Dispose</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1aa85775d97ab6a6a4cc0596640d44173c" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>flagME</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a0a9c7c1fc302e372d7905dfe51d63616" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>getIndex</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1aaee772ef1963ff369c671b16ce06b98b" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>idPaciente</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a17151a7044bede61f8ef05cf426577f5" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>im1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a70ddac6536f49a373cae917314d2efd2" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>InformacionMedica</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a30776db940c9b5f84e35eae479b79ef1" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>InitializeComponent</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a953a5953bc6ca788782eba5b0b51e9ef" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>linea</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a27e250d3ff561bdfde4966d963543999" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>llenarInformacion</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1ae58d1f433c82e66dc6a27e3dad37ffea" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>MasBtn</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1ae7d97663976033d79c5058e77c783cc3" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>MasBtn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a96cba091b401004d9f7333c0d2e7fd59" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>MasBtn_EnabledChanged</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a7f1cf2b7d5b5214f4fd1f320f63ce0f0" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>pictureBox1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a17d360cbac10161e7e776b55040e360a" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>pictureBox1_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a61a4bd8960eb3d3e0a37fe40b69b41e2" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>reestablecerCampos</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a83e733454860a874c778140d1efab8a8" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::InformacionMedica</scope><name>validarCampos</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

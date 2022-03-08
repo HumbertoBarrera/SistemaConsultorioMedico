@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dir_1ad9d3be353cb7ee7adf957dbdc92dab" kind="dir">
+    <compoundname>Modelos</compoundname>
+    <innerfile refid="_cita_8cs">Cita.cs</innerfile>
+    <innerfile refid="_diagnostico_8cs">Diagnostico.cs</innerfile>
+    <innerfile refid="_informacion_medica_8cs">InformacionMedica.cs</innerfile>
+    <innerfile refid="_paciente_8cs">Paciente.cs</innerfile>
+    <innerfile refid="_usuario_8cs">Usuario.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Modelos/"/>
+  </compounddef>
+</doxygen>

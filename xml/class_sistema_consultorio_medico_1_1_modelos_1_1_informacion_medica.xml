@@ -1,0 +1,3131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica" kind="class" language="C#" prot="public">
+    <compoundname>SistemaConsultorioMedico::Modelos::InformacionMedica</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ac625fa9e8c94c3282bfff526d571533f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SistemaConsultorioMedico.Modelos.InformacionMedica.idPaciente</definition>
+        <argsstring></argsstring>
+        <name>idPaciente</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.idPaciente</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="11" column="13" bodyfile="Modelos/InformacionMedica.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a227f5c81c0406ca715bd499d355380a0" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato1</definition>
+        <argsstring></argsstring>
+        <name>dato1</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="12" column="16" bodyfile="Modelos/InformacionMedica.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ab4a2fe1e1bd383f3fc0b90b25f33c2f6" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato2</definition>
+        <argsstring></argsstring>
+        <name>dato2</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="12" column="22" bodyfile="Modelos/InformacionMedica.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a0cac1f509c6458360265e323ed95c7a4" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato3</definition>
+        <argsstring></argsstring>
+        <name>dato3</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="12" column="28" bodyfile="Modelos/InformacionMedica.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ac14867cdf8f614721288ffe18e816452" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato4</definition>
+        <argsstring></argsstring>
+        <name>dato4</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="12" column="34" bodyfile="Modelos/InformacionMedica.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a8d94a6d584cdc4f61f67d2b108a5e7ed" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato4Opc</definition>
+        <argsstring></argsstring>
+        <name>dato4Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato4Opc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="12" column="40" bodyfile="Modelos/InformacionMedica.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ad6cac6524ce6bdff9a42d43149adea50" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato5</definition>
+        <argsstring></argsstring>
+        <name>dato5</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato5</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="12" column="49" bodyfile="Modelos/InformacionMedica.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ac54804214327aa0a4d5231e4b934da18" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato5Opc</definition>
+        <argsstring></argsstring>
+        <name>dato5Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato5Opc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="12" column="55" bodyfile="Modelos/InformacionMedica.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a08f1c579d7b776343d863a56c7ec9f6d" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato6</definition>
+        <argsstring></argsstring>
+        <name>dato6</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato6</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="12" column="64" bodyfile="Modelos/InformacionMedica.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a6d0d985cf4a13e0e68d53be11dfc31ce" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato6Opc</definition>
+        <argsstring></argsstring>
+        <name>dato6Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato6Opc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="12" column="70" bodyfile="Modelos/InformacionMedica.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1abd635b7248b35a7d958344f247da08f7" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato7</definition>
+        <argsstring></argsstring>
+        <name>dato7</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato7</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="12" column="79" bodyfile="Modelos/InformacionMedica.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a8bcae74a5020bf182bfa40c0e8f60d6c" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato7Opc</definition>
+        <argsstring></argsstring>
+        <name>dato7Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato7Opc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="12" column="85" bodyfile="Modelos/InformacionMedica.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a57ea0e3945dfd1c9ed703efc542d9479" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato8</definition>
+        <argsstring></argsstring>
+        <name>dato8</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato8</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="12" column="94" bodyfile="Modelos/InformacionMedica.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a36c3b2616c8fa5c7db77aaf2dc561bba" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato8Opc</definition>
+        <argsstring></argsstring>
+        <name>dato8Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato8Opc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="12" column="100" bodyfile="Modelos/InformacionMedica.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a50e7dd92e521f2e890715a62ee23de16" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato9</definition>
+        <argsstring></argsstring>
+        <name>dato9</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato9</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="12" column="109" bodyfile="Modelos/InformacionMedica.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a1175ba78a23cb4f06477fbe8e45fb99a" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato9Opc</definition>
+        <argsstring></argsstring>
+        <name>dato9Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato9Opc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="12" column="115" bodyfile="Modelos/InformacionMedica.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1adff93f200dc7e89f9f2107399f1ca3be" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato10</definition>
+        <argsstring></argsstring>
+        <name>dato10</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato10</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="13" column="17" bodyfile="Modelos/InformacionMedica.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a2d4535119ab70c2aa1ad26089b219484" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato10Opc</definition>
+        <argsstring></argsstring>
+        <name>dato10Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato10Opc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="13" column="24" bodyfile="Modelos/InformacionMedica.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1afc14d67b7d06453fc495ae46fb346d7c" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato11</definition>
+        <argsstring></argsstring>
+        <name>dato11</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato11</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="13" column="34" bodyfile="Modelos/InformacionMedica.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1aed5f72a59303bf50155f26719bb7ec66" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato11Opc</definition>
+        <argsstring></argsstring>
+        <name>dato11Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato11Opc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="13" column="41" bodyfile="Modelos/InformacionMedica.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a7fc63a6cd86cb935cd9c599c61f3da67" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato12</definition>
+        <argsstring></argsstring>
+        <name>dato12</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato12</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="13" column="51" bodyfile="Modelos/InformacionMedica.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a98875e0c63b0267653ddb37d4874a98a" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato13</definition>
+        <argsstring></argsstring>
+        <name>dato13</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato13</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="13" column="58" bodyfile="Modelos/InformacionMedica.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a276e2e567d157d7bf4fa7553b8a27c92" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato13Opc</definition>
+        <argsstring></argsstring>
+        <name>dato13Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato13Opc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="13" column="65" bodyfile="Modelos/InformacionMedica.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1afa13d15d0d17a2a2ae466478272292bf" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato13Opc2</definition>
+        <argsstring></argsstring>
+        <name>dato13Opc2</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato13Opc2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="13" column="75" bodyfile="Modelos/InformacionMedica.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a775ac90256926c55295888cbde210ed7" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato14</definition>
+        <argsstring></argsstring>
+        <name>dato14</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato14</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="13" column="86" bodyfile="Modelos/InformacionMedica.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a1b185ce033b90b386831578abe6a21d9" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato14Opc</definition>
+        <argsstring></argsstring>
+        <name>dato14Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato14Opc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="13" column="93" bodyfile="Modelos/InformacionMedica.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1afdcfc4e247d791924f51aa62a8e9ca72" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato14Opc2</definition>
+        <argsstring></argsstring>
+        <name>dato14Opc2</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato14Opc2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="13" column="103" bodyfile="Modelos/InformacionMedica.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a829f61273b13b94e8ee077d80f0e2fc8" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato15</definition>
+        <argsstring></argsstring>
+        <name>dato15</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato15</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="14" column="17" bodyfile="Modelos/InformacionMedica.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1afa561226435f33ede3e849d9001f7887" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato15Opc</definition>
+        <argsstring></argsstring>
+        <name>dato15Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato15Opc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="14" column="24" bodyfile="Modelos/InformacionMedica.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a513cbb3a3f203cf1b5048190a8f2838e" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato15Opc2</definition>
+        <argsstring></argsstring>
+        <name>dato15Opc2</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato15Opc2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="14" column="34" bodyfile="Modelos/InformacionMedica.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1afaf0c72c960ed39b71f5d0dbd2130184" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato15Opc3</definition>
+        <argsstring></argsstring>
+        <name>dato15Opc3</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato15Opc3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="14" column="45" bodyfile="Modelos/InformacionMedica.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a2bdbd9fa5d7f5725e5f0bf0ec483796f" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato15Opc4</definition>
+        <argsstring></argsstring>
+        <name>dato15Opc4</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato15Opc4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="14" column="56" bodyfile="Modelos/InformacionMedica.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a093cb6ba4f15ebdfc5692e7e9d5f8d7f" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato16</definition>
+        <argsstring></argsstring>
+        <name>dato16</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato16</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="14" column="67" bodyfile="Modelos/InformacionMedica.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a247cbfdeaaa5d5d622a7d50207e2a1fb" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato17</definition>
+        <argsstring></argsstring>
+        <name>dato17</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato17</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="14" column="74" bodyfile="Modelos/InformacionMedica.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a5678ac607017dac8cbce13481fd01345" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.dato18</definition>
+        <argsstring></argsstring>
+        <name>dato18</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.dato18</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="14" column="81" bodyfile="Modelos/InformacionMedica.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ac4e75da0bd8e58bb00351c18d4a8d9f8" prot="private" static="no" mutable="no">
+        <type>DateTime</type>
+        <definition>DateTime SistemaConsultorioMedico.Modelos.InformacionMedica.fecha</definition>
+        <argsstring></argsstring>
+        <name>fecha</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.fecha</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="15" column="18" bodyfile="Modelos/InformacionMedica.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a03dc03f76d6946611451cb38880b3fc6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SistemaConsultorioMedico.Modelos.InformacionMedica.InformacionMedica</definition>
+        <argsstring>(int idPaciente, String dato1, String dato2, String dato3, String dato4, String dato4Opc, String dato5, String dato5Opc, String dato6, String dato6Opc, String dato7, String dato7Opc, String dato8, String dato8Opc, String dato9, String dato9Opc, String dato10, String dato10Opc, String dato11, String dato11Opc, String dato12, String dato13, String dato13Opc, String dato13Opc2, String dato14, String dato14Opc, String dato14Opc2, String dato15, String dato15Opc, String dato15Opc2, String dato15Opc3, String dato15Opc4, String dato16, String dato17, String dato18, DateTime fecha)</argsstring>
+        <name>InformacionMedica</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.InformacionMedica</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idPaciente</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato1</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato2</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato3</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato4</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato4Opc</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato5</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato5Opc</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato6</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato6Opc</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato7</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato7Opc</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato8</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato8Opc</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato9</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato9Opc</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato10</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato10Opc</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato11</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato11Opc</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato12</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato13</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato13Opc</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato13Opc2</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato14</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato14Opc</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato14Opc2</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato15</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato15Opc</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato15Opc2</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato15Opc3</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato15Opc4</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato16</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato17</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato18</declname>
+        </param>
+        <param>
+          <type>DateTime</type>
+          <declname>fecha</declname>
+        </param>
+        <briefdescription>
+<para>Primer método constructor del objeto para el registro de Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idPaciente</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato1</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato2</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato3</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato4</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato4Opc</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato5</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato5Opc</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato6</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato6Opc</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato7</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato7Opc</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato8</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato8Opc</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato9</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato9Opc</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato10</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato10Opc</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato11</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato11Opc</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato12</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato13</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato13Opc</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato13Opc2</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato14</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato14Opc</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato14Opc2</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato15</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato15Opc</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato15Opc2</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato15Opc3</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato15Opc4</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato16</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato17</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato18</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fecha</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="58" column="16" bodyfile="Modelos/InformacionMedica.cs" bodystart="58" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a7b74bf6e5a39947169e2725c4d579b78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SistemaConsultorioMedico.Modelos.InformacionMedica.InformacionMedica</definition>
+        <argsstring>(int idPaciente, String dato1, String dato2, String dato3, String dato4, String dato4Opc, String dato5, String dato5Opc, String dato6, String dato6Opc, String dato7, String dato7Opc, String dato8, String dato8Opc, String dato9, String dato9Opc)</argsstring>
+        <name>InformacionMedica</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.InformacionMedica</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idPaciente</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato1</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato2</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato3</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato4</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato4Opc</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato5</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato5Opc</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato6</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato6Opc</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato7</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato7Opc</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato8</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato8Opc</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato9</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato9Opc</declname>
+        </param>
+        <briefdescription>
+<para>Segundo método constructor para el registro de Información Médica. Se tuvo que partir en dos partes debido a necesidad en el sistema. Esta es la primera parte de información. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idPaciente</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato1</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato2</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato3</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato4</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato4Opc</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato5</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato5Opc</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato6</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato6Opc</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato7</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato7Opc</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato8</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato8Opc</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato9</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato9Opc</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="122" column="16" bodyfile="Modelos/InformacionMedica.cs" bodystart="122" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a4cacdcfbcf2abc065b1899987cc59edd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SistemaConsultorioMedico.Modelos.InformacionMedica.InformacionMedica</definition>
+        <argsstring>(String dato10, String dato10Opc, String dato11, String dato11Opc, String dato12, String dato13, String dato13Opc, String dato13Opc2, String dato14, String dato14Opc, String dato14Opc2, String dato15, String dato15Opc, String dato15Opc2, String dato15Opc3, String dato15Opc4, String dato16, String dato17, String dato18, DateTime fecha)</argsstring>
+        <name>InformacionMedica</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.InformacionMedica</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato10</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato10Opc</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato11</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato11Opc</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato12</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato13</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato13Opc</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato13Opc2</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato14</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato14Opc</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato14Opc2</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato15</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato15Opc</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato15Opc2</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato15Opc3</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato15Opc4</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato16</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato17</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dato18</declname>
+        </param>
+        <param>
+          <type>DateTime</type>
+          <declname>fecha</declname>
+        </param>
+        <briefdescription>
+<para>Tercer método constructor para el registro de Información Médica. Se tuvo que partir en dos partes debido a necesidad en el sistema. Esta es la segunda parte de información. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato10</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato10Opc</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato11</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato11Opc</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato12</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato13</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato13Opc</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato13Opc2</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato14</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato14Opc</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato14Opc2</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato15</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato15Opc</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato15Opc2</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato15Opc3</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato15Opc4</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato16</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato17</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dato18</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fecha</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="167" column="16" bodyfile="Modelos/InformacionMedica.cs" bodystart="167" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a33342d2c48a0334ab65c0cf9af02bd3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setIdPaciente</definition>
+        <argsstring>(int idPaciente)</argsstring>
+        <name>setIdPaciente</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setIdPaciente</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idPaciente</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el identificador del paciente en el registro de Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idPaciente</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="199" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="199" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a35bb0cc3c46f2f837f8f3630d4b6663a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato1</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato1</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato1</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 1 de la Información Médica. El dato 1 es saber quién recomendó a la paciente sobre la doctora. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="209" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="209" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a1d2ad2a16a338de876c1f2f2448954d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato2</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato2</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato2</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 2 de la Información Médica. El dato 2 es conocer qué ginecólogo se consultaba anteriormente. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="219" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="219" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a16aeae3781e6bf9059c6a599dd6551d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato3</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato3</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato3</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 3 de la Información Médica. El dato 3 es conocer el motivo de la primera consulta. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="229" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="229" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1aeeec76551bb51ae064cdd396a142881b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato4</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato4</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato4</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 4 de la Información Médica. El dato 4 es conocer si se padece de alguna enfermedad crónica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="239" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="239" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a77bb9b20f5a6ffa3fe84ae0fbc8bb563" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato4Opc</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato4Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato4Opc</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 4 opcional de la Información Médica. Si la respuesta al dato anterior fue SÍ se especifica qué enfermedad padece. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="249" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="249" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a43bba231771bdd91b27d42e86954e3e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato5</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato5</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato5</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 5 de la Información Médica. El dato 5 es conocer si la paciente cuenta con animales domésticos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="259" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="259" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ae644ff3baac0adb94cdfa00788ae78ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato5Opc</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato5Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato5Opc</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 5 opcional de la Información Médica. Si la respuesta al dato anterior fue SÍ se especifica qué animales domésticos tiene </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="269" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="269" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a4f00f3d89fa87602e26fd82bdaf5462d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato6</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato6</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato6</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 6 de la Información Médica. El dato 6 es para conocer si se toma algún medicamento con regularidad. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="279" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="279" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a2bc3acd2989d4f75e6ed4f45caa3e230" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato6Opc</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato6Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato6Opc</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 6 opcional de la Información Médica. Si la respuesta al dato anterior fue SÍ se especifica qué medicamento se consume. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="289" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="289" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1aeee23668ee1756c20fa9dc244450c518" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato7</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato7</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato7</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 7 de la Información Médica. El dato 7 es para saber si la paciente es alérgica a algún medicamento. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="299" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="299" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1abf8913e16657187053799b871a7ebecd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato7Opc</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato7Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato7Opc</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 7 opcional de la Información Médica. Si la respuesta al dato anterior fue SÍ se especifica a qué medicamento se es alérgica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="309" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="309" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a460c47246ce42939630545c4bd7d6149" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato8</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato8</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato8</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 8 de la Información Médica. El dato 8 es para conocer si la paciente se ha sometido a alguna cirugía con anterioridad. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="319" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="319" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ab72caa2ebf071d1f07fe3f37c04fa917" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato8Opc</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato8Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato8Opc</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 8 opcional de la Información Médica. Si la respuesta al dato anterior fue SÍ se especifica a qué cirugía fue sometida. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="329" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="329" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1acf9a3ef60227db2a9698ae55d9d7e241" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato9</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato9</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato9</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 9 de la Información Médica. El dato 9 es para conocer si hubo alguna complicación en la cirugía. Si la respuesta al dato 8 fue NO se omite esta pregunta. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="340" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="340" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ab578df1e64803fbda1cc0bcea0f5752d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato9Opc</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato9Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato9Opc</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 9 opcional de la Información Médica. Si la respuesta al dato anterior fue SÍ se especifica qué complicación hubo. Si la respuesta al dato 8 fue NO se omite esta pregunta. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="351" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="351" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1aafb01121529608b9d6e7ada14a6dfa96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato10</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato10</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato10</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 10 de la Información Médica. El dato 10 es para conocer si algún familiar padece alguna de las enfermedades mostradas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="361" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="361" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a7d88d24738fc6237d205c7dfb7e18d0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato10Opc</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato10Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato10Opc</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 10 opcional de la Información Médica. El dato 10 opcional es para conocer qué familiar padece dicha enfermadad. Si la respuesta al dato anterior fue OMITIR, se omite esta pregunta. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="372" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="372" bodyend="375"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a920f05cb3074a8698ce0ef72eab1d655" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato11</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato11</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato11</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 11 de la Información Médica. El dato 11 es para conocer si la paciente tiene algún pariente infertil. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="382" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="382" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ac3f951dd4d215fb93e23d41a591a3664" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato11Opc</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato11Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato11Opc</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 11 de la Información Médica. Este dato es para conocer qué familiar es infértil. Si se respondió NO al dato anterior se omite esta pregunta. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="393" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="393" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a6ed8e3fd89298df5fedf3bed73bca029" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato12</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato12</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato12</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 12 de la Información Médica. El dato 12 es para conocer cuántas parejas sexuales ha tenidod la paciente. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="403" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="403" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ae46ac94988e2344ecba1f3e20d4a56da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato13</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato13</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato13</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 13 de la Información Médica. El dato 13 es para conocer si la paciente consume tabaco. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="413" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="413" bodyend="416"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ac519a4edae3a06be974e730bcbc78e2d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato13Opc</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato13Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato13Opc</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el primer dato 13 opcional de la Información Médica. Este dato es para saber desde cuándo consume tabaco la paciente. Si la respuesta al dato 13 fue NO se omite esta pregunta </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="424" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="424" bodyend="427"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1afa22ea471c3fc47f835d5d1c3d55a4a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato13Opc2</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato13Opc2</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato13Opc2</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el segundo dato 13 opcional de la Información Médica. Este dato es para saber qué tanto diario consume tabaco la paciente. Si la respuesta al dato 13 fue NO se omite esta pregunta </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="435" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="435" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1abd2cd829f0f3aa64e46febdda1c2e7c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato14</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato14</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato14</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 14 de la Información Médica. El dato 14 es para saber si la paciente consume alcohol. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="445" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="445" bodyend="448"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a38959dc8ee9d3afee66329d4d70843e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato14Opc</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato14Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato14Opc</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el primer dato 13 opcional de la Información Médica. Este dato es para saber desde cuándo consume alcohol la paciente. Si la respuesta al dato 14 fue NO se omite esta pregunta </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="456" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="456" bodyend="459"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a8c650bd862cd8cdc9afd27ed644b9b31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato14Opc2</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato14Opc2</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato14Opc2</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el segundo dato 13 opcional de la Información Médica. Este dato es para saber qué tanto diario consume alcohol la paciente. Si la respuesta al dato 14 fue NO se omite esta pregunta </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="467" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="467" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a8090e26bb95d46aefb726d6c25b2e6e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato15</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato15</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato15</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 15 de la Información Médica. El dato 15 es para conocer si la paciente consume drogas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="477" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="477" bodyend="480"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a00de89aa83c89b53b2963a4964bc00cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato15Opc</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato15Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato15Opc</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el primer dato 15 opcional de la Información Médica. Este dato es para conocer qué drogas consume la paciente. Si la respuesta al dato 15 fue NO se omite esta pregunta. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="488" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="488" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1aa6dcdd146986c400883d7e8051ac95ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato15Opc2</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato15Opc2</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato15Opc2</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el segundo dato 15 opcional de la Información Médica. Este dato es para conocer desde cuándo consume drogas la paciente. Si la respuesta al dato 15 fue NO se omite esta pregunta. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="499" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="499" bodyend="502"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a34d74305fb1947c75bfeb76623c531ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato15Opc3</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato15Opc3</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato15Opc3</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el tercer dato 15 opcional de la Información Médica. Este dato es para conocer qué tanto diario consume drogas la paciente. Si la respuesta al dato 15 fue NO se omite esta pregunta. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="510" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="510" bodyend="513"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a1bc319107a4506a6a438d13227260533" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato15Opc4</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato15Opc4</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato15Opc4</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el cuarto dato 15 opcional de la Información Médica. Este dato es para conocer qué tanto mensualmente consume drogas la paciente. Si la respuesta al dato 15 fue NO se omite esta pregunta. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="521" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="521" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a445145133f5f56710c27f6a75089194f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato16</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato16</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato16</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 16 de la Información Médica. El dato 16 es para conocer cuántas personas duermen en el cuarto de la paciente. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="531" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="531" bodyend="534"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a1c090aa3884400bb831cdd41328af0b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato17</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato17</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato17</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 17 de la Información Médica. El dato 17 es para conocer si la paciente considera que se alimenta bien. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="541" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="541" bodyend="544"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a2c7f77a0097dd9394e18208e169a4d3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setDato18</definition>
+        <argsstring>(String dato)</argsstring>
+        <name>setDato18</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setDato18</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el dato 18 de la Información Médica. El dato 18 es para conocer algún comentario que tenga la paciente. Se puede omitir este dato. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="552" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="552" bodyend="555"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a614cb2985d87a849066b7a1e7af4333d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.InformacionMedica.setFecha</definition>
+        <argsstring>(DateTime fecha)</argsstring>
+        <name>setFecha</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.setFecha</qualifiedname>
+        <param>
+          <type>DateTime</type>
+          <declname>fecha</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear la fecha de registro de de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fecha</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="561" column="21" bodyfile="Modelos/InformacionMedica.cs" bodystart="561" bodyend="564"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a4e9b745345eb8446a9e42865d2b58b27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SistemaConsultorioMedico.Modelos.InformacionMedica.getIdPaciente</definition>
+        <argsstring>()</argsstring>
+        <name>getIdPaciente</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getIdPaciente</qualifiedname>
+        <briefdescription>
+<para>Obtiene el ID del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="572" column="20" bodyfile="Modelos/InformacionMedica.cs" bodystart="572" bodyend="575"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a4105377382dfc29134dd47d817cbe40d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato1</definition>
+        <argsstring>()</argsstring>
+        <name>getDato1</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato1</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 1 del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="581" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="581" bodyend="584"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a876292aaf0e6fd5f6a697af967e2edba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato2</definition>
+        <argsstring>()</argsstring>
+        <name>getDato2</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato2</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 2 del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="590" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="590" bodyend="593"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a97628847ae11e062ad742c434af08e2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato3</definition>
+        <argsstring>()</argsstring>
+        <name>getDato3</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato3</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 3 del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="599" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="599" bodyend="602"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a41d548bfa52f8052bee7714f97529ade" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato4</definition>
+        <argsstring>()</argsstring>
+        <name>getDato4</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato4</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 4 del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="608" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="608" bodyend="611"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1aec218e38f80eec8858c04d5da89398e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato4Opc</definition>
+        <argsstring>()</argsstring>
+        <name>getDato4Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato4Opc</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 4 opcional del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="617" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="617" bodyend="620"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a532c3d21fc47b98a048e5cdde50fe95a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato5</definition>
+        <argsstring>()</argsstring>
+        <name>getDato5</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato5</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 5 del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="626" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="626" bodyend="629"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1af4e7eb6e206ed4444e9493fe700318cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato5Opc</definition>
+        <argsstring>()</argsstring>
+        <name>getDato5Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato5Opc</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 5 opcional del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="635" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="635" bodyend="638"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ad33f0814a5373d789a9a4dc1c48546e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato6</definition>
+        <argsstring>()</argsstring>
+        <name>getDato6</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato6</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 6 del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="644" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="644" bodyend="647"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1af573d879a77026164628f0084a7da535" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato6Opc</definition>
+        <argsstring>()</argsstring>
+        <name>getDato6Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato6Opc</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 6 opcional del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="653" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="653" bodyend="656"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1adcf01f2103d8f4ebbf03b7b1359bd832" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato7</definition>
+        <argsstring>()</argsstring>
+        <name>getDato7</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato7</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 7 del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="662" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="662" bodyend="665"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1addcb19b86d1940d3351965f17d3fae48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato7Opc</definition>
+        <argsstring>()</argsstring>
+        <name>getDato7Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato7Opc</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 7 opcional del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="671" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="671" bodyend="674"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a6de310cf3e3399a6422037413e0a5fbb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato8</definition>
+        <argsstring>()</argsstring>
+        <name>getDato8</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato8</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 8 del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="680" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="680" bodyend="683"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a3477fc9dd1115972aa257ea003f0e843" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato8Opc</definition>
+        <argsstring>()</argsstring>
+        <name>getDato8Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato8Opc</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 8 opcional del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="689" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="689" bodyend="692"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1af251c43e5c5dacbe892c962639006472" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato9</definition>
+        <argsstring>()</argsstring>
+        <name>getDato9</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato9</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 9 del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="698" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="698" bodyend="701"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a96ed94b6561cf7c153bfb7f9c3a67a87" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato9Opc</definition>
+        <argsstring>()</argsstring>
+        <name>getDato9Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato9Opc</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 9 opcional del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="707" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="707" bodyend="710"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ae8eecb4772453b86f9671be3829d3ac7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato10</definition>
+        <argsstring>()</argsstring>
+        <name>getDato10</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato10</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 10 del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="716" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="716" bodyend="719"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a4e9f6185688a65ffbb3b41ca94c82f38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato10Opc</definition>
+        <argsstring>()</argsstring>
+        <name>getDato10Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato10Opc</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 10 opcional del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="725" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="725" bodyend="728"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a50cae790722d104d9a18ae425c35bc98" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato11</definition>
+        <argsstring>()</argsstring>
+        <name>getDato11</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato11</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 11 del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="734" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="734" bodyend="737"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a4c79acbfa32b153e529dd938ee8e041d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato11Opc</definition>
+        <argsstring>()</argsstring>
+        <name>getDato11Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato11Opc</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 11 opcional del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="743" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="743" bodyend="746"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1aca8a2bd9f5a728d98dad62170beffa4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato12</definition>
+        <argsstring>()</argsstring>
+        <name>getDato12</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato12</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 12 del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="752" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="752" bodyend="755"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a74e9f2b6def493e711d1ed698e1896de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato13</definition>
+        <argsstring>()</argsstring>
+        <name>getDato13</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato13</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 13 del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="761" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="761" bodyend="764"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a5f813053c8474e5d5d0661d71f24cda7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato13Opc</definition>
+        <argsstring>()</argsstring>
+        <name>getDato13Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato13Opc</qualifiedname>
+        <briefdescription>
+<para>Obtiene el primer dato 13 opcional del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="770" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="770" bodyend="773"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a2f86352066c9cf2a65a9781f486890de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato13Opc2</definition>
+        <argsstring>()</argsstring>
+        <name>getDato13Opc2</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato13Opc2</qualifiedname>
+        <briefdescription>
+<para>Obtiene el segundo dato 13 opcional del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="779" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="779" bodyend="782"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a868b679716bb3dd8650ec3ec218cf7d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato14</definition>
+        <argsstring>()</argsstring>
+        <name>getDato14</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato14</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 14 del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="788" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="788" bodyend="791"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ab2900b967b169fe2567961f54b4ab4d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato14Opc</definition>
+        <argsstring>()</argsstring>
+        <name>getDato14Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato14Opc</qualifiedname>
+        <briefdescription>
+<para>Obtiene el primer dato 14 opcional del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="797" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="797" bodyend="800"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ab91e7f7bed55ce47f8aa1d315ede0b27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato14Opc2</definition>
+        <argsstring>()</argsstring>
+        <name>getDato14Opc2</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato14Opc2</qualifiedname>
+        <briefdescription>
+<para>Obtiene el segundo dato 14 opcional del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="806" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="806" bodyend="809"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a00ccc706b3d8937992bf983c1dda8fa2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato15</definition>
+        <argsstring>()</argsstring>
+        <name>getDato15</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato15</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 15 del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="815" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="815" bodyend="818"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a07334d95ed1cb82706f777e0cba4e6ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato15Opc</definition>
+        <argsstring>()</argsstring>
+        <name>getDato15Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato15Opc</qualifiedname>
+        <briefdescription>
+<para>Obtiene el primer dato 15 opcional del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="824" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="824" bodyend="827"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a866f8b98b7017d4d5ef52a778dcb8495" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato15Opc2</definition>
+        <argsstring>()</argsstring>
+        <name>getDato15Opc2</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato15Opc2</qualifiedname>
+        <briefdescription>
+<para>Obtiene el segundo dato 15 opcional del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="833" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="833" bodyend="836"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1adabeabea236ec1af808008c0ee00e5fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato15Opc3</definition>
+        <argsstring>()</argsstring>
+        <name>getDato15Opc3</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato15Opc3</qualifiedname>
+        <briefdescription>
+<para>Obtiene el tercer dato 15 opcional del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="842" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="842" bodyend="845"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a7b497b2a0434308c12ccaad649480442" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato15Opc4</definition>
+        <argsstring>()</argsstring>
+        <name>getDato15Opc4</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato15Opc4</qualifiedname>
+        <briefdescription>
+<para>Obtiene el cuarto dato 15 opcional del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="851" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="851" bodyend="854"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ae89d68df3b7d23c7ec5196d9ebd9418b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato16</definition>
+        <argsstring>()</argsstring>
+        <name>getDato16</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato16</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 16 del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="860" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="860" bodyend="863"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ac70bb7f28a70d064e146041c8dc3b02c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato17</definition>
+        <argsstring>()</argsstring>
+        <name>getDato17</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato17</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 17 del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="869" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="869" bodyend="872"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1abb5e39ad415814e3be42f666a94655fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.InformacionMedica.getDato18</definition>
+        <argsstring>()</argsstring>
+        <name>getDato18</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getDato18</qualifiedname>
+        <briefdescription>
+<para>Obtiene el dato 18 del paciente de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="878" column="23" bodyfile="Modelos/InformacionMedica.cs" bodystart="878" bodyend="881"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ac24c1034658ef8ef82ffcb3195c9997c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>DateTime</type>
+        <definition>DateTime SistemaConsultorioMedico.Modelos.InformacionMedica.getFecha</definition>
+        <argsstring>()</argsstring>
+        <name>getFecha</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.InformacionMedica.getFecha</qualifiedname>
+        <briefdescription>
+<para>Obtiene la fecha de registro de la Información Médica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/InformacionMedica.cs" line="887" column="25" bodyfile="Modelos/InformacionMedica.cs" bodystart="887" bodyend="890"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Modelos/InformacionMedica.cs" line="9" column="11" bodyfile="Modelos/InformacionMedica.cs" bodystart="10" bodyend="892"/>
+    <listofallmembers>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a227f5c81c0406ca715bd499d355380a0" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1adff93f200dc7e89f9f2107399f1ca3be" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato10</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a2d4535119ab70c2aa1ad26089b219484" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato10Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1afc14d67b7d06453fc495ae46fb346d7c" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato11</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1aed5f72a59303bf50155f26719bb7ec66" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato11Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a7fc63a6cd86cb935cd9c599c61f3da67" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato12</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a98875e0c63b0267653ddb37d4874a98a" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato13</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a276e2e567d157d7bf4fa7553b8a27c92" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato13Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1afa13d15d0d17a2a2ae466478272292bf" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato13Opc2</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a775ac90256926c55295888cbde210ed7" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato14</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a1b185ce033b90b386831578abe6a21d9" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato14Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1afdcfc4e247d791924f51aa62a8e9ca72" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato14Opc2</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a829f61273b13b94e8ee077d80f0e2fc8" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato15</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1afa561226435f33ede3e849d9001f7887" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato15Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a513cbb3a3f203cf1b5048190a8f2838e" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato15Opc2</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1afaf0c72c960ed39b71f5d0dbd2130184" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato15Opc3</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a2bdbd9fa5d7f5725e5f0bf0ec483796f" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato15Opc4</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a093cb6ba4f15ebdfc5692e7e9d5f8d7f" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato16</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a247cbfdeaaa5d5d622a7d50207e2a1fb" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato17</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a5678ac607017dac8cbce13481fd01345" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato18</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ab4a2fe1e1bd383f3fc0b90b25f33c2f6" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato2</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a0cac1f509c6458360265e323ed95c7a4" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato3</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ac14867cdf8f614721288ffe18e816452" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato4</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a8d94a6d584cdc4f61f67d2b108a5e7ed" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato4Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ad6cac6524ce6bdff9a42d43149adea50" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato5</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ac54804214327aa0a4d5231e4b934da18" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato5Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a08f1c579d7b776343d863a56c7ec9f6d" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato6</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a6d0d985cf4a13e0e68d53be11dfc31ce" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato6Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1abd635b7248b35a7d958344f247da08f7" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato7</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a8bcae74a5020bf182bfa40c0e8f60d6c" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato7Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a57ea0e3945dfd1c9ed703efc542d9479" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato8</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a36c3b2616c8fa5c7db77aaf2dc561bba" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato8Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a50e7dd92e521f2e890715a62ee23de16" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato9</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a1175ba78a23cb4f06477fbe8e45fb99a" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>dato9Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ac4e75da0bd8e58bb00351c18d4a8d9f8" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>fecha</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a4105377382dfc29134dd47d817cbe40d" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ae8eecb4772453b86f9671be3829d3ac7" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato10</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a4e9f6185688a65ffbb3b41ca94c82f38" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato10Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a50cae790722d104d9a18ae425c35bc98" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato11</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a4c79acbfa32b153e529dd938ee8e041d" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato11Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1aca8a2bd9f5a728d98dad62170beffa4b" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato12</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a74e9f2b6def493e711d1ed698e1896de" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato13</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a5f813053c8474e5d5d0661d71f24cda7" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato13Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a2f86352066c9cf2a65a9781f486890de" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato13Opc2</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a868b679716bb3dd8650ec3ec218cf7d5" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato14</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ab2900b967b169fe2567961f54b4ab4d9" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato14Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ab91e7f7bed55ce47f8aa1d315ede0b27" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato14Opc2</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a00ccc706b3d8937992bf983c1dda8fa2" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato15</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a07334d95ed1cb82706f777e0cba4e6ec" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato15Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a866f8b98b7017d4d5ef52a778dcb8495" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato15Opc2</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1adabeabea236ec1af808008c0ee00e5fd" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato15Opc3</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a7b497b2a0434308c12ccaad649480442" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato15Opc4</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ae89d68df3b7d23c7ec5196d9ebd9418b" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato16</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ac70bb7f28a70d064e146041c8dc3b02c" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato17</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1abb5e39ad415814e3be42f666a94655fc" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato18</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a876292aaf0e6fd5f6a697af967e2edba" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato2</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a97628847ae11e062ad742c434af08e2b" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato3</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a41d548bfa52f8052bee7714f97529ade" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato4</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1aec218e38f80eec8858c04d5da89398e3" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato4Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a532c3d21fc47b98a048e5cdde50fe95a" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato5</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1af4e7eb6e206ed4444e9493fe700318cb" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato5Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ad33f0814a5373d789a9a4dc1c48546e6" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato6</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1af573d879a77026164628f0084a7da535" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato6Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1adcf01f2103d8f4ebbf03b7b1359bd832" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato7</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1addcb19b86d1940d3351965f17d3fae48" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato7Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a6de310cf3e3399a6422037413e0a5fbb" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato8</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a3477fc9dd1115972aa257ea003f0e843" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato8Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1af251c43e5c5dacbe892c962639006472" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato9</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a96ed94b6561cf7c153bfb7f9c3a67a87" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getDato9Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ac24c1034658ef8ef82ffcb3195c9997c" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getFecha</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a4e9b745345eb8446a9e42865d2b58b27" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>getIdPaciente</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ac625fa9e8c94c3282bfff526d571533f" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>idPaciente</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a03dc03f76d6946611451cb38880b3fc6" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>InformacionMedica</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a7b74bf6e5a39947169e2725c4d579b78" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>InformacionMedica</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a4cacdcfbcf2abc065b1899987cc59edd" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>InformacionMedica</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a35bb0cc3c46f2f837f8f3630d4b6663a" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1aafb01121529608b9d6e7ada14a6dfa96" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato10</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a7d88d24738fc6237d205c7dfb7e18d0a" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato10Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a920f05cb3074a8698ce0ef72eab1d655" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato11</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ac3f951dd4d215fb93e23d41a591a3664" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato11Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a6ed8e3fd89298df5fedf3bed73bca029" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato12</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ae46ac94988e2344ecba1f3e20d4a56da" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato13</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ac519a4edae3a06be974e730bcbc78e2d" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato13Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1afa22ea471c3fc47f835d5d1c3d55a4a7" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato13Opc2</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1abd2cd829f0f3aa64e46febdda1c2e7c3" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato14</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a38959dc8ee9d3afee66329d4d70843e9" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato14Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a8c650bd862cd8cdc9afd27ed644b9b31" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato14Opc2</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a8090e26bb95d46aefb726d6c25b2e6e4" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato15</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a00de89aa83c89b53b2963a4964bc00cd" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato15Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1aa6dcdd146986c400883d7e8051ac95ed" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato15Opc2</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a34d74305fb1947c75bfeb76623c531ad" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato15Opc3</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a1bc319107a4506a6a438d13227260533" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato15Opc4</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a445145133f5f56710c27f6a75089194f" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato16</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a1c090aa3884400bb831cdd41328af0b8" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato17</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a2c7f77a0097dd9394e18208e169a4d3e" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato18</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a1d2ad2a16a338de876c1f2f2448954d1" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato2</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a16aeae3781e6bf9059c6a599dd6551d9" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato3</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1aeeec76551bb51ae064cdd396a142881b" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato4</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a77bb9b20f5a6ffa3fe84ae0fbc8bb563" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato4Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a43bba231771bdd91b27d42e86954e3e4" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato5</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ae644ff3baac0adb94cdfa00788ae78ae" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato5Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a4f00f3d89fa87602e26fd82bdaf5462d" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato6</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a2bc3acd2989d4f75e6ed4f45caa3e230" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato6Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1aeee23668ee1756c20fa9dc244450c518" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato7</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1abf8913e16657187053799b871a7ebecd" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato7Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a460c47246ce42939630545c4bd7d6149" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato8</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ab72caa2ebf071d1f07fe3f37c04fa917" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato8Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1acf9a3ef60227db2a9698ae55d9d7e241" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato9</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ab578df1e64803fbda1cc0bcea0f5752d" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setDato9Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a614cb2985d87a849066b7a1e7af4333d" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setFecha</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a33342d2c48a0334ab65c0cf9af02bd3e" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::InformacionMedica</scope><name>setIdPaciente</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

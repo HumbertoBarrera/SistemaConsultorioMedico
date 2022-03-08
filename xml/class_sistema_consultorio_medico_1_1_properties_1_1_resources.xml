@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_sistema_consultorio_medico_1_1_properties_1_1_resources" kind="class" language="C#" prot="package">
+    <compoundname>SistemaConsultorioMedico::Properties::Resources</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_properties_1_1_resources_1a1c2fd5658e83b25727145600bf0f70f9" prot="private" static="yes" mutable="no">
+        <type>global::System.Resources.ResourceManager</type>
+        <definition>global::System.Resources.ResourceManager SistemaConsultorioMedico.Properties.Resources.resourceMan</definition>
+        <argsstring></argsstring>
+        <name>resourceMan</name>
+        <qualifiedname>SistemaConsultorioMedico.Properties.Resources.resourceMan</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Properties/Resources.Designer.cs" line="27" column="63" bodyfile="Properties/Resources.Designer.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_properties_1_1_resources_1a540b6f9de14670165346aa3cecd8d918" prot="private" static="yes" mutable="no">
+        <type>global::System.Globalization.CultureInfo</type>
+        <definition>global::System.Globalization.CultureInfo SistemaConsultorioMedico.Properties.Resources.resourceCulture</definition>
+        <argsstring></argsstring>
+        <name>resourceCulture</name>
+        <qualifiedname>SistemaConsultorioMedico.Properties.Resources.resourceCulture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Properties/Resources.Designer.cs" line="29" column="63" bodyfile="Properties/Resources.Designer.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_sistema_consultorio_medico_1_1_properties_1_1_resources_1a72511b1da0d70837d5e8a02c7d8ad156" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>global::System.Resources.ResourceManager</type>
+        <definition>global::System.Resources.ResourceManager SistemaConsultorioMedico.Properties.Resources.ResourceManager</definition>
+        <argsstring></argsstring>
+        <name>ResourceManager</name>
+        <qualifiedname>SistemaConsultorioMedico.Properties.Resources.ResourceManager</qualifiedname>
+        <briefdescription>
+<para>Devuelve la instancia ResourceManager almacenada en caché utilizada por esta clase. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Properties/Resources.Designer.cs" line="40" column="64" bodyfile="Properties/Resources.Designer.cs" bodystart="41" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="property" id="class_sistema_consultorio_medico_1_1_properties_1_1_resources_1a5641247fa0cb93524409a17188ffd481" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>global::System.Globalization.CultureInfo</type>
+        <definition>global::System.Globalization.CultureInfo SistemaConsultorioMedico.Properties.Resources.Culture</definition>
+        <argsstring></argsstring>
+        <name>Culture</name>
+        <qualifiedname>SistemaConsultorioMedico.Properties.Resources.Culture</qualifiedname>
+        <briefdescription>
+<para>Invalida la propiedad CurrentUICulture del subproceso actual para todas las búsquedas de recursos usando esta clase de recursos fuertemente tipados. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Properties/Resources.Designer.cs" line="58" column="64" bodyfile="Properties/Resources.Designer.cs" bodystart="59" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_properties_1_1_resources_1a6bb6f286cd593aab3049473abac54329" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SistemaConsultorioMedico.Properties.Resources.Resources</definition>
+        <argsstring>()</argsstring>
+        <name>Resources</name>
+        <qualifiedname>SistemaConsultorioMedico.Properties.Resources.Resources</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Properties/Resources.Designer.cs" line="32" column="18" bodyfile="Properties/Resources.Designer.cs" bodystart="32" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clase de recurso fuertemente tipado para buscar cadenas traducidas, etc. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Properties/Resources.Designer.cs" line="24" column="13" bodyfile="Properties/Resources.Designer.cs" bodystart="25" bodyend="69"/>
+    <listofallmembers>
+      <member refid="class_sistema_consultorio_medico_1_1_properties_1_1_resources_1a5641247fa0cb93524409a17188ffd481" prot="package" virt="non-virtual"><scope>SistemaConsultorioMedico::Properties::Resources</scope><name>Culture</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_properties_1_1_resources_1a540b6f9de14670165346aa3cecd8d918" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Properties::Resources</scope><name>resourceCulture</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_properties_1_1_resources_1a1c2fd5658e83b25727145600bf0f70f9" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Properties::Resources</scope><name>resourceMan</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_properties_1_1_resources_1a72511b1da0d70837d5e8a02c7d8ad156" prot="package" virt="non-virtual"><scope>SistemaConsultorioMedico::Properties::Resources</scope><name>ResourceManager</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_properties_1_1_resources_1a6bb6f286cd593aab3049473abac54329" prot="package" virt="non-virtual"><scope>SistemaConsultorioMedico::Properties::Resources</scope><name>Resources</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

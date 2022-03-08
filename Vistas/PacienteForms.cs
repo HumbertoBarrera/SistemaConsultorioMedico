@@ -79,7 +79,7 @@ namespace SistemaConsultorioMedico
 
             {
                 int idPaciente = int.Parse(BuscarTbx.text);
-                if (Controladores.PacienteController.ValidaSiExistePaciente(idPaciente))
+                if (Controladores.PacienteController.ValidarSiExistePaciente(idPaciente))
                 {
                     Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
                     Form VDiag = new Diagnostico(idPaciente);
@@ -146,7 +146,7 @@ namespace SistemaConsultorioMedico
             if (BuscarTbx.text != "")
             {
                 int idPaciente = int.Parse(BuscarTbx.text);
-                if (Controladores.PacienteController.ValidaSiExistePaciente(idPaciente))
+                if (Controladores.PacienteController.ValidarSiExistePaciente(idPaciente))
                 {
                     Form VInfoMedica = new InformacionMedica(idPaciente, flagME);
                     this.Hide();

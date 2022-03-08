@@ -1,0 +1,421 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_sistema_consultorio_medico_1_1_recuperar_contra" kind="class" language="C#" prot="public">
+    <compoundname>SistemaConsultorioMedico::RecuperarContra</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_recuperar_contra_1af50befea7f34202e05f7b0568b91868a" prot="private" static="no" mutable="no">
+        <type>System.ComponentModel.IContainer</type>
+        <definition>System.ComponentModel.IContainer SistemaConsultorioMedico.RecuperarContra.components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <qualifiedname>SistemaConsultorioMedico.RecuperarContra.components</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Required designer variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/RecuperarContraForms.Designer.cs" line="9" column="48" bodyfile="Vistas/RecuperarContraForms.Designer.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_recuperar_contra_1a0b356593f9ab39b2bdaea801e9350194" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.RecuperarContra.UsuarTxb</definition>
+        <argsstring></argsstring>
+        <name>UsuarTxb</name>
+        <qualifiedname>SistemaConsultorioMedico.RecuperarContra.UsuarTxb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/RecuperarContraForms.Designer.cs" line="156" column="56" bodyfile="Vistas/RecuperarContraForms.Designer.cs" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_recuperar_contra_1aee8eeadc30ddaaf9ade921c6d5462697" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.PictureBox</type>
+        <definition>System.Windows.Forms.PictureBox SistemaConsultorioMedico.RecuperarContra.pictureBox2</definition>
+        <argsstring></argsstring>
+        <name>pictureBox2</name>
+        <qualifiedname>SistemaConsultorioMedico.RecuperarContra.pictureBox2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/RecuperarContraForms.Designer.cs" line="157" column="46" bodyfile="Vistas/RecuperarContraForms.Designer.cs" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_recuperar_contra_1aeec11d1eb841f84937f12d34ea9e7621" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.PictureBox</type>
+        <definition>System.Windows.Forms.PictureBox SistemaConsultorioMedico.RecuperarContra.pictureBox1</definition>
+        <argsstring></argsstring>
+        <name>pictureBox1</name>
+        <qualifiedname>SistemaConsultorioMedico.RecuperarContra.pictureBox1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/RecuperarContraForms.Designer.cs" line="158" column="46" bodyfile="Vistas/RecuperarContraForms.Designer.cs" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_recuperar_contra_1aa55208ea4328dae301e7795eca37764f" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuElipse</type>
+        <definition>Bunifu.Framework.UI.BunifuElipse SistemaConsultorioMedico.RecuperarContra.bunifuElipse1</definition>
+        <argsstring></argsstring>
+        <name>bunifuElipse1</name>
+        <qualifiedname>SistemaConsultorioMedico.RecuperarContra.bunifuElipse1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/RecuperarContraForms.Designer.cs" line="159" column="47" bodyfile="Vistas/RecuperarContraForms.Designer.cs" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_recuperar_contra_1acf5b0536bc8fc9f91b41f91500546c4d" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.RecuperarContra.CorreoTxb</definition>
+        <argsstring></argsstring>
+        <name>CorreoTxb</name>
+        <qualifiedname>SistemaConsultorioMedico.RecuperarContra.CorreoTxb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/RecuperarContraForms.Designer.cs" line="160" column="56" bodyfile="Vistas/RecuperarContraForms.Designer.cs" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_recuperar_contra_1a27d067d35a5331f64963e794bc035554" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button SistemaConsultorioMedico.RecuperarContra.button1</definition>
+        <argsstring></argsstring>
+        <name>button1</name>
+        <qualifiedname>SistemaConsultorioMedico.RecuperarContra.button1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/RecuperarContraForms.Designer.cs" line="161" column="42" bodyfile="Vistas/RecuperarContraForms.Designer.cs" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_recuperar_contra_1abf6e51808832fe98189c821688c11435" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SistemaConsultorioMedico.RecuperarContra.RecuperarContra</definition>
+        <argsstring>()</argsstring>
+        <name>RecuperarContra</name>
+        <qualifiedname>SistemaConsultorioMedico.RecuperarContra.RecuperarContra</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/RecuperarContraForms.cs" line="16" column="16" bodyfile="Vistas/RecuperarContraForms.cs" bodystart="16" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_recuperar_contra_1a11b6d378767f6bf9f02e54ba253e9d84" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SistemaConsultorioMedico.RecuperarContra.ReleaseCapture</definition>
+        <argsstring>()</argsstring>
+        <name>ReleaseCapture</name>
+        <qualifiedname>SistemaConsultorioMedico.RecuperarContra.ReleaseCapture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/RecuperarContraForms.cs" line="21" column="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_recuperar_contra_1a7f7d7a8be3a12c83464f229e00e5b056" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SistemaConsultorioMedico.RecuperarContra.SendMessage</definition>
+        <argsstring>(System.IntPtr hwnd, int wmsg, int wparam, int lparam)</argsstring>
+        <name>SendMessage</name>
+        <qualifiedname>SistemaConsultorioMedico.RecuperarContra.SendMessage</qualifiedname>
+        <param>
+          <type>System.IntPtr</type>
+          <declname>hwnd</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>wmsg</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>wparam</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lparam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/RecuperarContraForms.cs" line="23" column="36"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_recuperar_contra_1acb379f53965524b7483362bbcce33734" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.RecuperarContra.pictureBox1_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>pictureBox1_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.RecuperarContra.pictureBox1_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/RecuperarContraForms.cs" line="24" column="22" bodyfile="Vistas/RecuperarContraForms.cs" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_recuperar_contra_1a8574e3396a23e1af85d0ccac64af683f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.RecuperarContra.pictureBox2_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>pictureBox2_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.RecuperarContra.pictureBox2_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/RecuperarContraForms.cs" line="29" column="22" bodyfile="Vistas/RecuperarContraForms.cs" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_recuperar_contra_1a58999665f3336bb0812d4a6c7774fa7e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.RecuperarContra.RecuperarContra_MouseDown</definition>
+        <argsstring>(object sender, MouseEventArgs e)</argsstring>
+        <name>RecuperarContra_MouseDown</name>
+        <qualifiedname>SistemaConsultorioMedico.RecuperarContra.RecuperarContra_MouseDown</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>MouseEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/RecuperarContraForms.cs" line="34" column="22" bodyfile="Vistas/RecuperarContraForms.cs" bodystart="34" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_recuperar_contra_1af589698052dc7f9e80b13ea2ab7462c1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.RecuperarContra.NombreTxb_MouseEnter</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>NombreTxb_MouseEnter</name>
+        <qualifiedname>SistemaConsultorioMedico.RecuperarContra.NombreTxb_MouseEnter</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/RecuperarContraForms.cs" line="40" column="22" bodyfile="Vistas/RecuperarContraForms.cs" bodystart="40" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_recuperar_contra_1a335cf4d1399f96435076785bcd4ef68f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.RecuperarContra.UsuarTxb_MouseLeave</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>UsuarTxb_MouseLeave</name>
+        <qualifiedname>SistemaConsultorioMedico.RecuperarContra.UsuarTxb_MouseLeave</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/RecuperarContraForms.cs" line="49" column="22" bodyfile="Vistas/RecuperarContraForms.cs" bodystart="49" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_recuperar_contra_1a038b348f0f43ddce9062e8bccb5915b8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.RecuperarContra.CorreoTxb_MouseEnter</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>CorreoTxb_MouseEnter</name>
+        <qualifiedname>SistemaConsultorioMedico.RecuperarContra.CorreoTxb_MouseEnter</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/RecuperarContraForms.cs" line="58" column="22" bodyfile="Vistas/RecuperarContraForms.cs" bodystart="58" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_recuperar_contra_1a7521f03125d7a117a2567d86b674b18e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.RecuperarContra.CorreoTxb_MouseLeave</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>CorreoTxb_MouseLeave</name>
+        <qualifiedname>SistemaConsultorioMedico.RecuperarContra.CorreoTxb_MouseLeave</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/RecuperarContraForms.cs" line="68" column="22" bodyfile="Vistas/RecuperarContraForms.cs" bodystart="68" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_recuperar_contra_1ac684823ad662792af892cb1b4797dd09" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.RecuperarContra.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>SistemaConsultorioMedico.RecuperarContra.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>Required method for Designer support - do not modify the contents of this method with the code editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/RecuperarContraForms.Designer.cs" line="30" column="22" bodyfile="Vistas/RecuperarContraForms.Designer.cs" bodystart="30" bodyend="152"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_recuperar_contra_1a1c674def303d660636204c2c852d462c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void SistemaConsultorioMedico.RecuperarContra.Dispose</definition>
+        <argsstring>(bool disposing)</argsstring>
+        <name>Dispose</name>
+        <qualifiedname>SistemaConsultorioMedico.RecuperarContra.Dispose</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>disposing</declname>
+        </param>
+        <briefdescription>
+<para>Clean up any resources being used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disposing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if managed resources should be disposed; otherwise, false.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/RecuperarContraForms.Designer.cs" line="15" column="33" bodyfile="Vistas/RecuperarContraForms.Designer.cs" bodystart="15" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>SistemaConsultorioMedico.RecuperarContra</label>
+        <link refid="class_sistema_consultorio_medico_1_1_recuperar_contra"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>SistemaConsultorioMedico.RecuperarContra</label>
+        <link refid="class_sistema_consultorio_medico_1_1_recuperar_contra"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Vistas/RecuperarContraForms.cs" line="14" column="19" bodyfile="Vistas/RecuperarContraForms.cs" bodystart="15" bodyend="76"/>
+    <listofallmembers>
+      <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1aa55208ea4328dae301e7795eca37764f" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::RecuperarContra</scope><name>bunifuElipse1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1a27d067d35a5331f64963e794bc035554" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::RecuperarContra</scope><name>button1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1af50befea7f34202e05f7b0568b91868a" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::RecuperarContra</scope><name>components</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1acf5b0536bc8fc9f91b41f91500546c4d" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::RecuperarContra</scope><name>CorreoTxb</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1a038b348f0f43ddce9062e8bccb5915b8" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::RecuperarContra</scope><name>CorreoTxb_MouseEnter</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1a7521f03125d7a117a2567d86b674b18e" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::RecuperarContra</scope><name>CorreoTxb_MouseLeave</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1a1c674def303d660636204c2c852d462c" prot="protected" virt="non-virtual"><scope>SistemaConsultorioMedico::RecuperarContra</scope><name>Dispose</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1ac684823ad662792af892cb1b4797dd09" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::RecuperarContra</scope><name>InitializeComponent</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1af589698052dc7f9e80b13ea2ab7462c1" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::RecuperarContra</scope><name>NombreTxb_MouseEnter</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1aeec11d1eb841f84937f12d34ea9e7621" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::RecuperarContra</scope><name>pictureBox1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1acb379f53965524b7483362bbcce33734" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::RecuperarContra</scope><name>pictureBox1_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1aee8eeadc30ddaaf9ade921c6d5462697" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::RecuperarContra</scope><name>pictureBox2</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1a8574e3396a23e1af85d0ccac64af683f" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::RecuperarContra</scope><name>pictureBox2_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1abf6e51808832fe98189c821688c11435" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::RecuperarContra</scope><name>RecuperarContra</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1a58999665f3336bb0812d4a6c7774fa7e" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::RecuperarContra</scope><name>RecuperarContra_MouseDown</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1a11b6d378767f6bf9f02e54ba253e9d84" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::RecuperarContra</scope><name>ReleaseCapture</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1a7f7d7a8be3a12c83464f229e00e5b056" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::RecuperarContra</scope><name>SendMessage</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1a0b356593f9ab39b2bdaea801e9350194" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::RecuperarContra</scope><name>UsuarTxb</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1a335cf4d1399f96435076785bcd4ef68f" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::RecuperarContra</scope><name>UsuarTxb_MouseLeave</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

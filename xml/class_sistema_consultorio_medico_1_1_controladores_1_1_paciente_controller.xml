@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_sistema_consultorio_medico_1_1_controladores_1_1_paciente_controller" kind="class" language="C#" prot="public">
+    <compoundname>SistemaConsultorioMedico::Controladores::PacienteController</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_controladores_1_1_paciente_controller_1a522e2cfe0de37178d2198f9dd95e252b" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int SistemaConsultorioMedico.Controladores.PacienteController.intTuplasManipuladas</definition>
+        <argsstring></argsstring>
+        <name>intTuplasManipuladas</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.PacienteController.intTuplasManipuladas</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/PacienteController.cs" line="17" column="20" bodyfile="Controladores/PacienteController.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_controladores_1_1_paciente_controller_1a735c2854325e4ea28f25ebe69f3e7f54" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SistemaConsultorioMedico.Controladores.PacienteController.AltaPaciente</definition>
+        <argsstring>(Modelos.Paciente p)</argsstring>
+        <name>AltaPaciente</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.PacienteController.AltaPaciente</qualifiedname>
+        <param>
+          <type><ref refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente" kindref="compound">Modelos.Paciente</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Registra a la paciente a la base de datos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/PacienteController.cs" line="24" column="28" bodyfile="Controladores/PacienteController.cs" bodystart="24" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_controladores_1_1_paciente_controller_1aebca52dc3987969d3f59ea474416d43a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SistemaConsultorioMedico.Controladores.PacienteController.ActualizarPaciente</definition>
+        <argsstring>(Modelos.Paciente p)</argsstring>
+        <name>ActualizarPaciente</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.PacienteController.ActualizarPaciente</qualifiedname>
+        <param>
+          <type><ref refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente" kindref="compound">Modelos.Paciente</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Modifica la información de la paciente en la base de datos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/PacienteController.cs" line="93" column="28" bodyfile="Controladores/PacienteController.cs" bodystart="93" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_controladores_1_1_paciente_controller_1ac2b0275c20f10408bea11999e4d74884" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SistemaConsultorioMedico.Controladores.PacienteController.EliminarPaciente</definition>
+        <argsstring>(Modelos.Paciente p)</argsstring>
+        <name>EliminarPaciente</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.PacienteController.EliminarPaciente</qualifiedname>
+        <param>
+          <type><ref refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente" kindref="compound">Modelos.Paciente</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Elimina a la paciente de la base de datos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/PacienteController.cs" line="127" column="28" bodyfile="Controladores/PacienteController.cs" bodystart="127" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_controladores_1_1_paciente_controller_1a80ebf5b295c0674711ff49cbfb31e161" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SistemaConsultorioMedico.Controladores.PacienteController.ValidaSiExistePaciente</definition>
+        <argsstring>(int idPaciente)</argsstring>
+        <name>ValidaSiExistePaciente</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.PacienteController.ValidaSiExistePaciente</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idPaciente</declname>
+        </param>
+        <briefdescription>
+<para>Valida si existe la paciente en la base de datos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idPaciente</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/PacienteController.cs" line="210" column="28" bodyfile="Controladores/PacienteController.cs" bodystart="210" bodyend="227"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_controladores_1_1_paciente_controller_1a9d6efc33bf9d49609f31c9c4d5e07c55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>DataTable</type>
+        <definition>DataTable SistemaConsultorioMedico.Controladores.PacienteController.CargarGridPacientes</definition>
+        <argsstring>()</argsstring>
+        <name>CargarGridPacientes</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.PacienteController.CargarGridPacientes</qualifiedname>
+        <briefdescription>
+<para>Carga a los pacientes de la base de datos y los muestra en el sistema. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/PacienteController.cs" line="74" column="26" bodyfile="Controladores/PacienteController.cs" bodystart="74" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Controladores/PacienteController.cs" line="14" column="5" bodyfile="Controladores/PacienteController.cs" bodystart="15" bodyend="229"/>
+    <listofallmembers>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_paciente_controller_1aebca52dc3987969d3f59ea474416d43a" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::PacienteController</scope><name>ActualizarPaciente</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_paciente_controller_1a735c2854325e4ea28f25ebe69f3e7f54" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::PacienteController</scope><name>AltaPaciente</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_paciente_controller_1a9d6efc33bf9d49609f31c9c4d5e07c55" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::PacienteController</scope><name>CargarGridPacientes</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_paciente_controller_1ac2b0275c20f10408bea11999e4d74884" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::PacienteController</scope><name>EliminarPaciente</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_paciente_controller_1a522e2cfe0de37178d2198f9dd95e252b" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::PacienteController</scope><name>intTuplasManipuladas</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_paciente_controller_1a80ebf5b295c0674711ff49cbfb31e161" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::PacienteController</scope><name>ValidaSiExistePaciente</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

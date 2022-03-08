@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_sistema_consultorio_medico_1_1_properties_1_1_settings" kind="class" language="C#" prot="package">
+    <compoundname>SistemaConsultorioMedico::Properties::Settings</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">global.SystemConfiguration.ApplicationSettingsBase</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_properties_1_1_settings_1aacc40c20704b7900068b725664fee020" prot="private" static="yes" mutable="no">
+        <type>Settings</type>
+        <definition>Settings SistemaConsultorioMedico.Properties.Settings.defaultInstance</definition>
+        <argsstring></argsstring>
+        <name>defaultInstance</name>
+        <qualifiedname>SistemaConsultorioMedico.Properties.Settings.defaultInstance</qualifiedname>
+        <initializer>= ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Properties/Settings.Designer.cs" line="18" column="33" bodyfile="Properties/Settings.Designer.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_sistema_consultorio_medico_1_1_properties_1_1_settings_1aeca6803e91f3b461ad3ea031bdd6b599" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>Settings</type>
+        <definition>Settings SistemaConsultorioMedico.Properties.Settings.Default</definition>
+        <argsstring></argsstring>
+        <name>Default</name>
+        <qualifiedname>SistemaConsultorioMedico.Properties.Settings.Default</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Properties/Settings.Designer.cs" line="20" column="32" bodyfile="Properties/Settings.Designer.cs" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="property" id="class_sistema_consultorio_medico_1_1_properties_1_1_settings_1aaf22b525dfeb9dd9edcd75f3184ca594" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>global::System.Drawing.Color</type>
+        <definition>global::System.Drawing.Color SistemaConsultorioMedico.Properties.Settings.hola</definition>
+        <argsstring></argsstring>
+        <name>hola</name>
+        <qualifiedname>SistemaConsultorioMedico.Properties.Settings.hola</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Properties/Settings.Designer.cs" line="29" column="43" bodyfile="Properties/Settings.Designer.cs" bodystart="29" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="property" id="class_sistema_consultorio_medico_1_1_properties_1_1_settings_1a6a16ec92275c35a11f0b63dfd3a6024a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>global::System.Drawing.Color</type>
+        <definition>global::System.Drawing.Color SistemaConsultorioMedico.Properties.Settings.adios</definition>
+        <argsstring></argsstring>
+        <name>adios</name>
+        <qualifiedname>SistemaConsultorioMedico.Properties.Settings.adios</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Properties/Settings.Designer.cs" line="41" column="43" bodyfile="Properties/Settings.Designer.cs" bodystart="41" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SistemaConsultorioMedico.Properties.Settings</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>global::SystemConfiguration::ApplicationSettingsBase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SistemaConsultorioMedico.Properties.Settings</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>global::SystemConfiguration::ApplicationSettingsBase</label>
+      </node>
+    </collaborationgraph>
+    <location file="Properties/Settings.Designer.cs" line="16" column="28" bodyfile="Properties/Settings.Designer.cs" bodystart="16" bodyend="46"/>
+    <listofallmembers>
+      <member refid="class_sistema_consultorio_medico_1_1_properties_1_1_settings_1a6a16ec92275c35a11f0b63dfd3a6024a" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Properties::Settings</scope><name>adios</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_properties_1_1_settings_1aeca6803e91f3b461ad3ea031bdd6b599" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Properties::Settings</scope><name>Default</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_properties_1_1_settings_1aacc40c20704b7900068b725664fee020" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Properties::Settings</scope><name>defaultInstance</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_properties_1_1_settings_1aaf22b525dfeb9dd9edcd75f3184ca594" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Properties::Settings</scope><name>hola</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

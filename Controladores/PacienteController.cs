@@ -45,13 +45,9 @@ namespace SistemaConsultorioMedico.Controladores
                     comando.Parameters.AddWithValue("@lugarTrabajoP", p.getTelefonoTrabajoP());
                     int resultado = comando.ExecuteNonQuery(); // Variable que representa el número de tuplas manipuladas
                     if (resultado < intTuplasManipuladas) // Validamos que por lo menos haya una tupla manipulada
-                    {
                         MessageBox.Show("Error al insertar en la bd", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); // Operación no exitosa
-                    }
                     else
-                    {
                         MessageBox.Show("Paciente agregado correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information); // Operación exitosa
-                    }
                 }
             }
             catch (SqlException e)
@@ -100,13 +96,9 @@ namespace SistemaConsultorioMedico.Controladores
                 {
                     int resultado = comando.ExecuteNonQuery(); // Variable que representa el número de tuplas manipuladas
                     if (resultado < intTuplasManipuladas) // Validamos que por lo menos haya una tupla manipulada
-                    {
                         MessageBox.Show("Error al actualizar paciente", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); // Operación no exitosa
-                    }
                     else
-                    {
                         MessageBox.Show("Paciente actualizado correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information); // Operación exitosa
-                    }
                 }
             }
             catch (SqlException e)
@@ -134,13 +126,9 @@ namespace SistemaConsultorioMedico.Controladores
                 {
                     int resultado = comando.ExecuteNonQuery(); // Variable que representa el número de tuplas manipuladas
                     if (resultado < intTuplasManipuladas) // Validamos que por lo menos haya una tupla manipulada 
-                    {
                         MessageBox.Show("Error al eliminar citas", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); // Operación no exitosa
-                    }
                     else
-                    {
                         MessageBox.Show("Citas eliminadas", "", MessageBoxButtons.OK, MessageBoxIcon.Information); // Operación exitosa
-                    }
                 }
 
                 // Actualizamos query para eliminar el diagnóstico del paciente
@@ -149,13 +137,9 @@ namespace SistemaConsultorioMedico.Controladores
                 {
                     int resultado = comando.ExecuteNonQuery();
                     if (resultado < intTuplasManipuladas)
-                    {
                         MessageBox.Show("Error al eliminar diagnosticos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); // Operación no exitosa
-                    }
                     else
-                    {
                         MessageBox.Show("Diagnosticos eliminados", "", MessageBoxButtons.OK, MessageBoxIcon.Information); // Operación exitosa
-                    }
                 }
 
                 // Actualizamos query para  eliminar la información médica del paciente
@@ -164,13 +148,9 @@ namespace SistemaConsultorioMedico.Controladores
                 {
                     int resultado = comando.ExecuteNonQuery();
                     if (resultado < intTuplasManipuladas)
-                    {
                         MessageBox.Show("Error al eliminar info medica", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); // Operación no exitosa
-                    }
                     else
-                    {
                         MessageBox.Show("Info medica eliminada", "", MessageBoxButtons.OK, MessageBoxIcon.Information); // Operación exitosa
-                    }
                 }
 
                 // Actualizamos query para eliminar al paciente
@@ -179,13 +159,9 @@ namespace SistemaConsultorioMedico.Controladores
                 {
                     int resultado = comando.ExecuteNonQuery();
                     if (resultado < intTuplasManipuladas)
-                    {
                         MessageBox.Show("Error al eliminar paciente", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); // Operación exitosa
-                    }
                     else
-                    {
                         MessageBox.Show("Paciente eliminada", "", MessageBoxButtons.OK, MessageBoxIcon.Information); // Operación no exitosa
-                    }
                 }
             }
             catch (SqlException e)
@@ -207,7 +183,7 @@ namespace SistemaConsultorioMedico.Controladores
         /// </summary>
         /// <param name="idPaciente"></param>
         /// <returns></returns>
-        public static bool ValidaSiExistePaciente(int idPaciente)
+        public static bool ValidarSiExistePaciente(int idPaciente)
         {
             // Query para buscar al paciente
             String query = "SELECT * FROM Paciente WHERE idPaciente='" + idPaciente.ToString() + "'";
@@ -215,13 +191,9 @@ namespace SistemaConsultorioMedico.Controladores
             {
                 SqlDataReader leer = comando.ExecuteReader();
                 if (leer.Read()) // Valida si la variable de tipo data reader leýo algo en la base de datos, es decir, encontró el dato
-                {
                     return true;
-                }
                 else
-                {
                     return false;
-                }
             }
 
         }

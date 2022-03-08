@@ -1,0 +1,565 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_sistema_consultorio_medico_1_1_login" kind="class" language="C#" prot="public">
+    <compoundname>SistemaConsultorioMedico::Login</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_login_1a6d3e68f8e37fa518ad8bc729d65b9495" prot="private" static="no" mutable="no">
+        <type>System.ComponentModel.IContainer</type>
+        <definition>System.ComponentModel.IContainer SistemaConsultorioMedico.Login.components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.components</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Variable del diseñador necesaria. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.Designer.cs" line="9" column="48" bodyfile="Vistas/LoginForms.Designer.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_login_1ae33ac983c7fcc3f598a63be77a9b6e66" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Panel</type>
+        <definition>System.Windows.Forms.Panel SistemaConsultorioMedico.Login.panel1</definition>
+        <argsstring></argsstring>
+        <name>panel1</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.panel1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.Designer.cs" line="222" column="41" bodyfile="Vistas/LoginForms.Designer.cs" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_login_1aa80acaca2f21b5b52897ff1b92876aaf" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.TextBox</type>
+        <definition>System.Windows.Forms.TextBox SistemaConsultorioMedico.Login.usuariotxt</definition>
+        <argsstring></argsstring>
+        <name>usuariotxt</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.usuariotxt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.Designer.cs" line="223" column="43" bodyfile="Vistas/LoginForms.Designer.cs" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_login_1a7fe9006091f93cbfcbdad349d35bce81" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.TextBox</type>
+        <definition>System.Windows.Forms.TextBox SistemaConsultorioMedico.Login.contratxt</definition>
+        <argsstring></argsstring>
+        <name>contratxt</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.contratxt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.Designer.cs" line="224" column="43" bodyfile="Vistas/LoginForms.Designer.cs" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_login_1a372a1fd2943a879c48725c0587735e84" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label SistemaConsultorioMedico.Login.label1</definition>
+        <argsstring></argsstring>
+        <name>label1</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.label1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.Designer.cs" line="225" column="41" bodyfile="Vistas/LoginForms.Designer.cs" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_login_1afef19aba8a1c7ae15ddfbd55352cb00c" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button SistemaConsultorioMedico.Login.loginbtn</definition>
+        <argsstring></argsstring>
+        <name>loginbtn</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.loginbtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.Designer.cs" line="226" column="42" bodyfile="Vistas/LoginForms.Designer.cs" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_login_1aee9b0ef61649e1a9bdf6e416949428fd" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.PictureBox</type>
+        <definition>System.Windows.Forms.PictureBox SistemaConsultorioMedico.Login.pictureBox3</definition>
+        <argsstring></argsstring>
+        <name>pictureBox3</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.pictureBox3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.Designer.cs" line="227" column="46" bodyfile="Vistas/LoginForms.Designer.cs" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_login_1a10abcbeff6a8a478b805c322d3a9c3dd" prot="private" static="no" mutable="no">
+        <type>Microsoft.VisualBasic.PowerPacks.ShapeContainer</type>
+        <definition>Microsoft.VisualBasic.PowerPacks.ShapeContainer SistemaConsultorioMedico.Login.shapeContainer1</definition>
+        <argsstring></argsstring>
+        <name>shapeContainer1</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.shapeContainer1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.Designer.cs" line="228" column="62" bodyfile="Vistas/LoginForms.Designer.cs" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_login_1a1c84521624e648dac70b72f275d8dcc4" prot="private" static="no" mutable="no">
+        <type>Microsoft.VisualBasic.PowerPacks.LineShape</type>
+        <definition>Microsoft.VisualBasic.PowerPacks.LineShape SistemaConsultorioMedico.Login.lineShape2</definition>
+        <argsstring></argsstring>
+        <name>lineShape2</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.lineShape2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.Designer.cs" line="229" column="57" bodyfile="Vistas/LoginForms.Designer.cs" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_login_1aee8fc1825009ae88636284b66f2fcb48" prot="private" static="no" mutable="no">
+        <type>Microsoft.VisualBasic.PowerPacks.LineShape</type>
+        <definition>Microsoft.VisualBasic.PowerPacks.LineShape SistemaConsultorioMedico.Login.lineShape1</definition>
+        <argsstring></argsstring>
+        <name>lineShape1</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.lineShape1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.Designer.cs" line="230" column="57" bodyfile="Vistas/LoginForms.Designer.cs" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_login_1a5a646c6b378363dff4f886a79eff5e90" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.PictureBox</type>
+        <definition>System.Windows.Forms.PictureBox SistemaConsultorioMedico.Login.pictureBox1</definition>
+        <argsstring></argsstring>
+        <name>pictureBox1</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.pictureBox1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.Designer.cs" line="231" column="46" bodyfile="Vistas/LoginForms.Designer.cs" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_login_1ad4635baab818a46fa9958af0cd78e094" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.PictureBox</type>
+        <definition>System.Windows.Forms.PictureBox SistemaConsultorioMedico.Login.pictureBox2</definition>
+        <argsstring></argsstring>
+        <name>pictureBox2</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.pictureBox2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.Designer.cs" line="232" column="46" bodyfile="Vistas/LoginForms.Designer.cs" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_login_1afdd2ae53b14c0cc0571136ab3a7ade54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SistemaConsultorioMedico.Login.Login</definition>
+        <argsstring>()</argsstring>
+        <name>Login</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.Login</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.cs" line="15" column="16" bodyfile="Vistas/LoginForms.cs" bodystart="15" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_login_1a009f71c54b7df26097256bafc84e6eb8" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SistemaConsultorioMedico.Login.ReleaseCapture</definition>
+        <argsstring>()</argsstring>
+        <name>ReleaseCapture</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.ReleaseCapture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.cs" line="20" column="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_login_1a5cc3f694debf7a6a67a7eadd89d7325e" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SistemaConsultorioMedico.Login.SendMessage</definition>
+        <argsstring>(System.IntPtr hwnd, int wmsg, int wparam, int lparam)</argsstring>
+        <name>SendMessage</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.SendMessage</qualifiedname>
+        <param>
+          <type>System.IntPtr</type>
+          <declname>hwnd</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>wmsg</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>wparam</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lparam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.cs" line="22" column="36"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_login_1ac5140eec9ee8b8af4a134cc8f6ae747a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Login.usuariotxt_Enter</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>usuariotxt_Enter</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.usuariotxt_Enter</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.cs" line="24" column="22" bodyfile="Vistas/LoginForms.cs" bodystart="24" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_login_1a4e61edf6a35062dc83939493b304f8e4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Login.usuariotxt_Leave</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>usuariotxt_Leave</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.usuariotxt_Leave</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.cs" line="33" column="22" bodyfile="Vistas/LoginForms.cs" bodystart="33" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_login_1ae1f8e9849a0df7bdb949bbc0314e254e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Login.contratxt_Enter</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>contratxt_Enter</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.contratxt_Enter</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.cs" line="42" column="22" bodyfile="Vistas/LoginForms.cs" bodystart="42" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_login_1a53628900c6234eba0f7a96251b37f9cc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Login.contratxt_Leave</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>contratxt_Leave</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.contratxt_Leave</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.cs" line="52" column="22" bodyfile="Vistas/LoginForms.cs" bodystart="52" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_login_1a72dc3a18582524b7be14238a33db6b47" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Login.pictureBox1_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>pictureBox1_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.pictureBox1_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.cs" line="62" column="22" bodyfile="Vistas/LoginForms.cs" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_login_1ab971a00b54dcf07aa753179643628cb9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Login.pictureBox2_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>pictureBox2_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.pictureBox2_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.cs" line="67" column="22" bodyfile="Vistas/LoginForms.cs" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_login_1a8acaacf929bc9e06b0c010bf9282ce1f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Login.Login_MouseDown</definition>
+        <argsstring>(object sender, MouseEventArgs e)</argsstring>
+        <name>Login_MouseDown</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.Login_MouseDown</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>MouseEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.cs" line="72" column="22" bodyfile="Vistas/LoginForms.cs" bodystart="72" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_login_1a30ced06abf1053a8cabdf045b4ec0e31" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Login.panel1_MouseDown</definition>
+        <argsstring>(object sender, MouseEventArgs e)</argsstring>
+        <name>panel1_MouseDown</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.panel1_MouseDown</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>MouseEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.cs" line="78" column="22" bodyfile="Vistas/LoginForms.cs" bodystart="78" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_login_1aa5bb05511fe53f7840a1c6b4ebd5a364" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Login.loginbtn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>loginbtn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.loginbtn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.cs" line="84" column="22" bodyfile="Vistas/LoginForms.cs" bodystart="84" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_login_1a6848daa223d3cb5c2048cfc237d36ecf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Login.linkLabel1_LinkClicked</definition>
+        <argsstring>(object sender, LinkLabelLinkClickedEventArgs e)</argsstring>
+        <name>linkLabel1_LinkClicked</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.linkLabel1_LinkClicked</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>LinkLabelLinkClickedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.cs" line="100" column="22" bodyfile="Vistas/LoginForms.cs" bodystart="100" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_login_1a23ddbc1038f8970a8c250e696a21a6a2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Login.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>Método necesario para admitir el Diseñador. No se puede modificar el contenido de este método con el editor de código. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.Designer.cs" line="30" column="22" bodyfile="Vistas/LoginForms.Designer.cs" bodystart="30" bodyend="218"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_login_1ae4fdb56e498070045c55a9f58a756fe0" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void SistemaConsultorioMedico.Login.Dispose</definition>
+        <argsstring>(bool disposing)</argsstring>
+        <name>Dispose</name>
+        <qualifiedname>SistemaConsultorioMedico.Login.Dispose</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>disposing</declname>
+        </param>
+        <briefdescription>
+<para>Limpiar los recursos que se estén usando. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disposing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true si los recursos administrados se deben desechar; false en caso contrario.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LoginForms.Designer.cs" line="15" column="33" bodyfile="Vistas/LoginForms.Designer.cs" bodystart="15" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>SistemaConsultorioMedico.Login</label>
+        <link refid="class_sistema_consultorio_medico_1_1_login"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>SistemaConsultorioMedico.Login</label>
+        <link refid="class_sistema_consultorio_medico_1_1_login"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Vistas/LoginForms.cs" line="13" column="19" bodyfile="Vistas/LoginForms.cs" bodystart="14" bodyend="105"/>
+    <listofallmembers>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1a6d3e68f8e37fa518ad8bc729d65b9495" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>components</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1a7fe9006091f93cbfcbdad349d35bce81" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>contratxt</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1ae1f8e9849a0df7bdb949bbc0314e254e" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>contratxt_Enter</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1a53628900c6234eba0f7a96251b37f9cc" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>contratxt_Leave</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1ae4fdb56e498070045c55a9f58a756fe0" prot="protected" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>Dispose</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1a23ddbc1038f8970a8c250e696a21a6a2" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>InitializeComponent</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1a372a1fd2943a879c48725c0587735e84" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>label1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1aee8fc1825009ae88636284b66f2fcb48" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>lineShape1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1a1c84521624e648dac70b72f275d8dcc4" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>lineShape2</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1a6848daa223d3cb5c2048cfc237d36ecf" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>linkLabel1_LinkClicked</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1afdd2ae53b14c0cc0571136ab3a7ade54" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>Login</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1a8acaacf929bc9e06b0c010bf9282ce1f" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>Login_MouseDown</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1afef19aba8a1c7ae15ddfbd55352cb00c" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>loginbtn</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1aa5bb05511fe53f7840a1c6b4ebd5a364" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>loginbtn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1ae33ac983c7fcc3f598a63be77a9b6e66" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>panel1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1a30ced06abf1053a8cabdf045b4ec0e31" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>panel1_MouseDown</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1a5a646c6b378363dff4f886a79eff5e90" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>pictureBox1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1a72dc3a18582524b7be14238a33db6b47" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>pictureBox1_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1ad4635baab818a46fa9958af0cd78e094" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>pictureBox2</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1ab971a00b54dcf07aa753179643628cb9" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>pictureBox2_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1aee9b0ef61649e1a9bdf6e416949428fd" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>pictureBox3</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1a009f71c54b7df26097256bafc84e6eb8" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>ReleaseCapture</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1a5cc3f694debf7a6a67a7eadd89d7325e" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>SendMessage</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1a10abcbeff6a8a478b805c322d3a9c3dd" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>shapeContainer1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1aa80acaca2f21b5b52897ff1b92876aaf" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>usuariotxt</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1ac5140eec9ee8b8af4a134cc8f6ae747a" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>usuariotxt_Enter</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_login_1a4e61edf6a35062dc83939493b304f8e4" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Login</scope><name>usuariotxt_Leave</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

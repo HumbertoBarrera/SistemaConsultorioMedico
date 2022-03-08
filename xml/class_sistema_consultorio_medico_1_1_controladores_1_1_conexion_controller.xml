@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_sistema_consultorio_medico_1_1_controladores_1_1_conexion_controller" kind="class" language="C#" prot="public">
+    <compoundname>SistemaConsultorioMedico::Controladores::ConexionController</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_controladores_1_1_conexion_controller_1a5b41130fb87ac6d6fe91a1050820d6e1" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string SistemaConsultorioMedico.Controladores.ConexionController.connection</definition>
+        <argsstring></argsstring>
+        <name>connection</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.ConexionController.connection</qualifiedname>
+        <initializer>= &quot;SERVER=OSCARLOPEZ; DATABASE=CONSULTORIO; Integrated Security=true&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/ConexionController.cs" line="12" column="31" bodyfile="Controladores/ConexionController.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_controladores_1_1_conexion_controller_1a20d16616d0e93fef0ab13a303ded8a47" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SqlConnection</type>
+        <definition>static SqlConnection SistemaConsultorioMedico.Controladores.ConexionController.Conectar</definition>
+        <argsstring>()</argsstring>
+        <name>Conectar</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.ConexionController.Conectar</qualifiedname>
+        <briefdescription>
+<para>Método para conectarse a la base de datos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/ConexionController.cs" line="18" column="37" bodyfile="Controladores/ConexionController.cs" bodystart="18" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_controladores_1_1_conexion_controller_1a60088cba3853f83ab0380731b9aac9ae" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SqlConnection</type>
+        <definition>static SqlConnection SistemaConsultorioMedico.Controladores.ConexionController.Desconectar</definition>
+        <argsstring>()</argsstring>
+        <name>Desconectar</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.ConexionController.Desconectar</qualifiedname>
+        <briefdescription>
+<para>Método para cerrar la conexión a la base de datos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/ConexionController.cs" line="29" column="37" bodyfile="Controladores/ConexionController.cs" bodystart="29" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Controladores/ConexionController.cs" line="10" column="5" bodyfile="Controladores/ConexionController.cs" bodystart="11" bodyend="36"/>
+    <listofallmembers>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_conexion_controller_1a20d16616d0e93fef0ab13a303ded8a47" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::ConexionController</scope><name>Conectar</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_conexion_controller_1a5b41130fb87ac6d6fe91a1050820d6e1" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::ConexionController</scope><name>connection</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_conexion_controller_1a60088cba3853f83ab0380731b9aac9ae" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::ConexionController</scope><name>Desconectar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -9,7 +9,7 @@ namespace SistemaConsultorioMedico.Controladores
 {
     class ConexionController
     {
-        private static string connection = "SERVER=OSCARLOPEZ; DATABASE=CONSULTORIO; Integrated Security=true";
+        private static string connection = "SERVER=localhost; DATABASE=CONSULTORIO; Integrated Security=true";
         
         /// <summary>
         /// Método para conectarse a la base de datos.

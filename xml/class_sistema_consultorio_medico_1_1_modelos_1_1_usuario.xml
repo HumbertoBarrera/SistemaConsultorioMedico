@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario" kind="class" language="C#" prot="public">
+    <compoundname>SistemaConsultorioMedico::Modelos::Usuario</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1ab6b3c021fdcb0202c567d35a555877d3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SistemaConsultorioMedico.Modelos.Usuario.idUsuario</definition>
+        <argsstring></argsstring>
+        <name>idUsuario</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.Usuario.idUsuario</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/Usuario.cs" line="12" column="13" bodyfile="Modelos/Usuario.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1a5f8dd43d84ecb71168e45366a40dc992" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.Usuario.usuario</definition>
+        <argsstring></argsstring>
+        <name>usuario</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.Usuario.usuario</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/Usuario.cs" line="13" column="16" bodyfile="Modelos/Usuario.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1a78697ceeb1e82a331ed390be9df14eea" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.Usuario.password</definition>
+        <argsstring></argsstring>
+        <name>password</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.Usuario.password</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/Usuario.cs" line="13" column="24" bodyfile="Modelos/Usuario.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1a4d50e58ade61db7deb744db4003fd749" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.Usuario.setIdUsuario</definition>
+        <argsstring>(int idUsuario)</argsstring>
+        <name>setIdUsuario</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.Usuario.setIdUsuario</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idUsuario</declname>
+        </param>
+        <briefdescription>
+<para>Settea el identificador del usuario. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idUsuario</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/Usuario.cs" line="19" column="21" bodyfile="Modelos/Usuario.cs" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1a40adcf77d7ae793492452ed244a61c6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.Usuario.setUsuario</definition>
+        <argsstring>(String usuario)</argsstring>
+        <name>setUsuario</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.Usuario.setUsuario</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>usuario</declname>
+        </param>
+        <briefdescription>
+<para>Settea el nombre del usuario. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>usuario</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/Usuario.cs" line="28" column="21" bodyfile="Modelos/Usuario.cs" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1a5f538385508232ef86a04832a7634757" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.Usuario.setPassword</definition>
+        <argsstring>(String password)</argsstring>
+        <name>setPassword</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.Usuario.setPassword</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+<para>Settea la contraseña del usuario. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/Usuario.cs" line="37" column="21" bodyfile="Modelos/Usuario.cs" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1a85cb10cf5c487d94d4440bc87947416d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SistemaConsultorioMedico.Modelos.Usuario.getIdUsuario</definition>
+        <argsstring>()</argsstring>
+        <name>getIdUsuario</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.Usuario.getIdUsuario</qualifiedname>
+        <briefdescription>
+<para>Obtiene el identificador del usuario. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/Usuario.cs" line="46" column="20" bodyfile="Modelos/Usuario.cs" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1a5d5bfa54983f6de3b02586da7589906f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.Usuario.getUsuario</definition>
+        <argsstring>()</argsstring>
+        <name>getUsuario</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.Usuario.getUsuario</qualifiedname>
+        <briefdescription>
+<para>Obtiene el nombre del usuario. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/Usuario.cs" line="55" column="23" bodyfile="Modelos/Usuario.cs" bodystart="55" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1aab1e4b7cb5433c58db2fd28597622ec6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.Usuario.getPassword</definition>
+        <argsstring>()</argsstring>
+        <name>getPassword</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.Usuario.getPassword</qualifiedname>
+        <briefdescription>
+<para>Obtiene la contraseña del usuario. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/Usuario.cs" line="64" column="23" bodyfile="Modelos/Usuario.cs" bodystart="64" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Modelos/Usuario.cs" line="9" column="5" bodyfile="Modelos/Usuario.cs" bodystart="10" bodyend="69"/>
+    <listofallmembers>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1a85cb10cf5c487d94d4440bc87947416d" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::Usuario</scope><name>getIdUsuario</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1aab1e4b7cb5433c58db2fd28597622ec6" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::Usuario</scope><name>getPassword</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1a5d5bfa54983f6de3b02586da7589906f" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::Usuario</scope><name>getUsuario</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1ab6b3c021fdcb0202c567d35a555877d3" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::Usuario</scope><name>idUsuario</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1a78697ceeb1e82a331ed390be9df14eea" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::Usuario</scope><name>password</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1a4d50e58ade61db7deb744db4003fd749" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::Usuario</scope><name>setIdUsuario</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1a5f538385508232ef86a04832a7634757" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::Usuario</scope><name>setPassword</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1a40adcf77d7ae793492452ed244a61c6b" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::Usuario</scope><name>setUsuario</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1a5f8dd43d84ecb71168e45366a40dc992" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::Usuario</scope><name>usuario</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

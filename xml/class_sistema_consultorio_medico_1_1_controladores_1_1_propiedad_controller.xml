@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_sistema_consultorio_medico_1_1_controladores_1_1_propiedad_controller" kind="class" language="C#" prot="public">
+    <compoundname>SistemaConsultorioMedico::Controladores::PropiedadController</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_controladores_1_1_propiedad_controller_1ad392837a056a1149a702fa3a0031a640" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SistemaConsultorioMedico.Controladores.PropiedadController.BunifuMaterial</definition>
+        <argsstring>(Bunifu.Framework.UI.BunifuMaterialTextbox materialTextbox, int longitud)</argsstring>
+        <name>BunifuMaterial</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.PropiedadController.BunifuMaterial</qualifiedname>
+        <param>
+          <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+          <declname>materialTextbox</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>longitud</declname>
+        </param>
+        <briefdescription>
+<para>Propiedad que verifica la longitud de un String en el sistema. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>materialTextbox</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>longitud</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/PropiedadController.cs" line="18" column="28" bodyfile="Controladores/PropiedadController.cs" bodystart="18" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Controladores/PropiedadController.cs" line="10" column="5" bodyfile="Controladores/PropiedadController.cs" bodystart="11" bodyend="35"/>
+    <listofallmembers>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_propiedad_controller_1ad392837a056a1149a702fa3a0031a640" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::PropiedadController</scope><name>BunifuMaterial</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

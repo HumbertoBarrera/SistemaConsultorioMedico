@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_sistema_consultorio_medico_1_1_controladores_1_1_usuario_controller" kind="class" language="C#" prot="public">
+    <compoundname>SistemaConsultorioMedico::Controladores::UsuarioController</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_controladores_1_1_usuario_controller_1a04123c73a9e72bbe6b106fb2f862cead" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SistemaConsultorioMedico.Controladores.UsuarioController.Login</definition>
+        <argsstring>(Modelos.Usuario U, Login login)</argsstring>
+        <name>Login</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.UsuarioController.Login</qualifiedname>
+        <param>
+          <type><ref refid="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario" kindref="compound">Modelos.Usuario</ref></type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="class_sistema_consultorio_medico_1_1_login" kindref="compound">Login</ref></type>
+          <declname>login</declname>
+        </param>
+        <briefdescription>
+<para>´Verifica qué tipo de usuario ingresa al sistema. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>U</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>login</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/UsuarioController.cs" line="19" column="28" bodyfile="Controladores/UsuarioController.cs" bodystart="19" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Controladores/UsuarioController.cs" line="12" column="5" bodyfile="Controladores/UsuarioController.cs" bodystart="13" bodyend="52"/>
+    <listofallmembers>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_usuario_controller_1a04123c73a9e72bbe6b106fb2f862cead" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::UsuarioController</scope><name>Login</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

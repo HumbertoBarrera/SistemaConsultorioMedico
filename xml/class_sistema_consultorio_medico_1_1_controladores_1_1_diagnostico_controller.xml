@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_sistema_consultorio_medico_1_1_controladores_1_1_diagnostico_controller" kind="class" language="C#" prot="public">
+    <compoundname>SistemaConsultorioMedico::Controladores::DiagnosticoController</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_controladores_1_1_diagnostico_controller_1a6d55f2981af238d5d28c529778691997" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int SistemaConsultorioMedico.Controladores.DiagnosticoController.ErrorConsulta</definition>
+        <argsstring></argsstring>
+        <name>ErrorConsulta</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.DiagnosticoController.ErrorConsulta</qualifiedname>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/DiagnosticoController.cs" line="18" column="20" bodyfile="Controladores/DiagnosticoController.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_controladores_1_1_diagnostico_controller_1a0eeed5399ff6759b56dd0ef3c15fd165" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SistemaConsultorioMedico.Controladores.DiagnosticoController.insertarDiagnostico</definition>
+        <argsstring>(Modelos.Diagnostico d)</argsstring>
+        <name>insertarDiagnostico</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.DiagnosticoController.insertarDiagnostico</qualifiedname>
+        <param>
+          <type><ref refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico" kindref="compound">Modelos.Diagnostico</ref></type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Método para registrar el diagnóstico en la base de datos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/DiagnosticoController.cs" line="24" column="28" bodyfile="Controladores/DiagnosticoController.cs" bodystart="24" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_controladores_1_1_diagnostico_controller_1a99b628462eaeac04f93e39a8d07b3e60" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SistemaConsultorioMedico.Controladores.DiagnosticoController.folio</definition>
+        <argsstring>(Modelos.Diagnostico d)</argsstring>
+        <name>folio</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.DiagnosticoController.folio</qualifiedname>
+        <param>
+          <type><ref refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico" kindref="compound">Modelos.Diagnostico</ref></type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Crea el folio del diagnóstico. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/DiagnosticoController.cs" line="60" column="28" bodyfile="Controladores/DiagnosticoController.cs" bodystart="60" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_controladores_1_1_diagnostico_controller_1a5d8de8045fa014c2f6afbdd5af1061be" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SistemaConsultorioMedico.Controladores.DiagnosticoController.diagnostico</definition>
+        <argsstring>(Modelos.Diagnostico d)</argsstring>
+        <name>diagnostico</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.DiagnosticoController.diagnostico</qualifiedname>
+        <param>
+          <type><ref refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico" kindref="compound">Modelos.Diagnostico</ref></type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/DiagnosticoController.cs" line="75" column="28" bodyfile="Controladores/DiagnosticoController.cs" bodystart="75" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_controladores_1_1_diagnostico_controller_1abe2f7af70163d949aabf4c0a5e919ecf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SistemaConsultorioMedico.Controladores.DiagnosticoController.validaExisPaciente</definition>
+        <argsstring>(Modelos.Diagnostico d)</argsstring>
+        <name>validaExisPaciente</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.DiagnosticoController.validaExisPaciente</qualifiedname>
+        <param>
+          <type><ref refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico" kindref="compound">Modelos.Diagnostico</ref></type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Valida si existe el paciente. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/DiagnosticoController.cs" line="134" column="28" bodyfile="Controladores/DiagnosticoController.cs" bodystart="134" bodyend="151"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_controladores_1_1_diagnostico_controller_1ac0b6b4bb26674e6944551a4bc3de9241" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>DataTable</type>
+        <definition>DataTable SistemaConsultorioMedico.Controladores.DiagnosticoController.CargarGridDiagnostico</definition>
+        <argsstring>(Modelos.Diagnostico d)</argsstring>
+        <name>CargarGridDiagnostico</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.DiagnosticoController.CargarGridDiagnostico</qualifiedname>
+        <param>
+          <type><ref refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico" kindref="compound">Modelos.Diagnostico</ref></type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Carga el diagnóstico de la base de datos al sistema. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/DiagnosticoController.cs" line="114" column="26" bodyfile="Controladores/DiagnosticoController.cs" bodystart="114" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Controladores/DiagnosticoController.cs" line="15" column="5" bodyfile="Controladores/DiagnosticoController.cs" bodystart="16" bodyend="152"/>
+    <listofallmembers>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_diagnostico_controller_1ac0b6b4bb26674e6944551a4bc3de9241" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::DiagnosticoController</scope><name>CargarGridDiagnostico</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_diagnostico_controller_1a5d8de8045fa014c2f6afbdd5af1061be" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::DiagnosticoController</scope><name>diagnostico</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_diagnostico_controller_1a6d55f2981af238d5d28c529778691997" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::DiagnosticoController</scope><name>ErrorConsulta</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_diagnostico_controller_1a99b628462eaeac04f93e39a8d07b3e60" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::DiagnosticoController</scope><name>folio</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_diagnostico_controller_1a0eeed5399ff6759b56dd0ef3c15fd165" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::DiagnosticoController</scope><name>insertarDiagnostico</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_diagnostico_controller_1abe2f7af70163d949aabf4c0a5e919ecf" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::DiagnosticoController</scope><name>validaExisPaciente</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

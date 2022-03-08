@@ -15,7 +15,7 @@ namespace SistemaConsultorioMedico.Controladores
     class DiagnosticoController
     {
 
-        static int ErrorConsulta=0;
+        static int intTuplasManipuladas = 0;
 
         /// <summary>
         /// Método para registrar el diagnóstico en la base de datos.
@@ -33,19 +33,15 @@ namespace SistemaConsultorioMedico.Controladores
                     comando.Parameters.AddWithValue("@fecha", d.getFecha());
                     comando.Parameters.AddWithValue("@descripcion", d.getDescripcion());
                     int resultado = comando.ExecuteNonQuery();
-                    if (resultado < ErrorConsulta)
-                    
+                    if (resultado < intTuplasManipuladas)
                         MessageBox.Show("Error al insertar en la base de datos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    
                     else
-                    
                         MessageBox.Show("Diagnóstico agregado correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    
                 }
             }
             catch (SqlException e)
             {
-
+                MessageBox.Show(e.Message);
             }
             finally
             {
@@ -67,7 +63,6 @@ namespace SistemaConsultorioMedico.Controladores
             {
                 string res = resultado[0].ToString();
                 d.setFolioDiagnostico(res);
-
             }
         }
 
@@ -96,7 +91,7 @@ namespace SistemaConsultorioMedico.Controladores
             }
             catch (SqlException e)
             {
-
+                MessageBox.Show(e.Message);
             }
             finally
             {
@@ -139,13 +134,9 @@ namespace SistemaConsultorioMedico.Controladores
             {
                 SqlDataReader leer = comando.ExecuteReader();
                 if (leer.Read())
-                
                     return true;
-                
                 else
-                
                     return false;
-                
             }
 
         }

@@ -70,13 +70,9 @@ namespace SistemaConsultorioMedico.Controladores
                     comando.Parameters.AddWithValue("@fecha", im2.getFecha());
                     int resultado = comando.ExecuteNonQuery(); // Variable que representa el número de tuplas manipuladas
                     if (resultado < intTuplasManipuladas) // Validamos que por lo menos haya una tupla manipulada
-                    {
                         MessageBox.Show("Error al insertar en la base de datos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); // Operación no exitosa
-                    }
                     else
-                    {
                         MessageBox.Show("Información Médica agregada correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information); // Operación exitosa
-                    }
                 }
             }
             catch (SqlException e)
@@ -143,14 +139,10 @@ namespace SistemaConsultorioMedico.Controladores
                     comando.Parameters.AddWithValue("@dato17", im2.getDato17());
                     comando.Parameters.AddWithValue("@dato18", im2.getDato18());
                     int resultado = comando.ExecuteNonQuery(); // Variable que representa el número de tuplas manipuladas
-                    if (resultado < 0) // Validamos que por lo menos haya una tupla manipulada
-                    {
-                        MessageBox.Show("Error al modificar en la base de datos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); // Operación no exitosa
-                    }
+                    if (resultado < intTuplasManipuladas) // Validamos que por lo menos haya una tupla manipulada
+                        MessageBox.Show("Error al modificar en la base de datos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); // Operación no exitosa0
                     else
-                    {
                         MessageBox.Show("Información Médica modificada correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information); // Operación exitosa
-                    }
                 }
             }
             catch (SqlException e)
@@ -178,14 +170,10 @@ namespace SistemaConsultorioMedico.Controladores
                 using (SqlCommand comando = new SqlCommand(query, ConexionController.Conectar()))
                 {
                     int resultado = comando.ExecuteNonQuery(); // Variable que representa el número de tuplas manipuladas
-                    if (resultado < 0) // Validamos que por lo menos haya una tupla manipulada
-                    {
+                    if (resultado < intTuplasManipuladas) // Validamos que por lo menos haya una tupla manipulada
                         MessageBox.Show("Error al eliminar informacion medica", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); // Operación no exitosa
-                    }
                     else
-                    {
                         MessageBox.Show("Informacion medica eliminada", "", MessageBoxButtons.OK, MessageBoxIcon.Information); // Operación exitosa
-                    }
                 }
             }
             catch (SqlException e)

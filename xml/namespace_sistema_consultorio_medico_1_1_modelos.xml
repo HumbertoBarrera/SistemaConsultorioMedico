@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="namespace_sistema_consultorio_medico_1_1_modelos" kind="namespace" language="C#">
+    <compoundname>SistemaConsultorioMedico::Modelos</compoundname>
+    <innerclass refid="class_sistema_consultorio_medico_1_1_modelos_1_1_cita" prot="public">SistemaConsultorioMedico::Modelos::Cita</innerclass>
+    <innerclass refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico" prot="public">SistemaConsultorioMedico::Modelos::Diagnostico</innerclass>
+    <innerclass refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica" prot="public">SistemaConsultorioMedico::Modelos::InformacionMedica</innerclass>
+    <innerclass refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente" prot="public">SistemaConsultorioMedico::Modelos::Paciente</innerclass>
+    <innerclass refid="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario" prot="public">SistemaConsultorioMedico::Modelos::Usuario</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Modelos/Cita.cs" line="7" column="1"/>
+  </compounddef>
+</doxygen>

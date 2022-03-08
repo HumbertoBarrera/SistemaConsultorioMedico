@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dir_c27cf4f46f6db67b492ee504e05509d9" kind="dir">
+    <compoundname>Controladores</compoundname>
+    <innerfile refid="_cita_controller_8cs">CitaController.cs</innerfile>
+    <innerfile refid="_conexion_controller_8cs">ConexionController.cs</innerfile>
+    <innerfile refid="_diagnostico_controller_8cs">DiagnosticoController.cs</innerfile>
+    <innerfile refid="_informacion_medica_controller_8cs">InformacionMedicaController.cs</innerfile>
+    <innerfile refid="_paciente_controller_8cs">PacienteController.cs</innerfile>
+    <innerfile refid="_propiedad_controller_8cs">PropiedadController.cs</innerfile>
+    <innerfile refid="_usuario_controller_8cs">UsuarioController.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Controladores/"/>
+  </compounddef>
+</doxygen>
