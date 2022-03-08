@@ -56,7 +56,8 @@ namespace SistemaConsultorioMedico.Controladores
         {
             
             fecha = DateTime.Now;
-            String query = "SELECT c.idPaciente,CONCAT(p.nombresP, ' ',p.apellidoPatP, ' ',p.apellidoMatP) AS nombre,LEFT(c.fecha,10),c.hora,c.folioCita FROM CITA C INNER JOIN PACIENTE p ON C.idPaciente = p.idPaciente WHERE c.fecha >='" +fecha.ToString("yyyy/MM/dd") + "' ORDER BY c.fecha ASC";
+            String query = "SELECT c.idPaciente,CONCAT(p.nombresP, ' ',p.apellidoPatP, ' ',p.apellidoMatP) AS nombre,LEFT(c.fecha,10),c.hora,c.folioCita FROM CITA " +
+                "C INNER JOIN PACIENTE p ON C.idPaciente = p.idPaciente WHERE c.fecha >='" +fecha.ToString("yyyy/MM/dd") + "' ORDER BY c.fecha ASC";
 
                 using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
                 {
@@ -73,7 +74,8 @@ namespace SistemaConsultorioMedico.Controladores
         /// <param name="c"></param>
         public static void EliminarCita(Modelos.Cita c)
         {
-            String query = "DELETE FROM CITA WHERE idPaciente='"+c.getIdPaciente()+"' AND fecha='" + c.getFecha().ToString("yyyy/MM/dd") + "' AND hora='" + c.getHora()+ "' AND folioCita='" + c.getFolioCita() + "'";
+            String query = "DELETE FROM CITA WHERE idPaciente='"+c.getIdPaciente()+"' AND fecha='" + c.getFecha().ToString("yyyy/MM/dd") + "' AND hora='" + 
+                c.getHora()+ "' AND folioCita='" + c.getFolioCita() + "'";
             try
             {
                 using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
@@ -100,8 +102,8 @@ namespace SistemaConsultorioMedico.Controladores
         /// </summary>
         /// <param name="c"></param>
         public static void ModificarCita(Modelos.Cita c) {
-
-            String query = "UPDATE CITA SET fecha='" + c.getFecha().ToString("yyyy/MM/dd") + "' , hora='" + c.getHora() + "' WHERE folioCita='" + c.getFolioCita() + "'";
+            String query = "UPDATE CITA SET fecha='" + c.getFecha().ToString("yyyy/MM/dd") + "' , hora='" + c.getHora() + "' WHERE folioCita='" + 
+                c.getFolioCita() + "'";
             try
             {
                 using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))

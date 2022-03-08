@@ -55,7 +55,7 @@ namespace SistemaConsultorioMedico
                 paciente = new Modelos.Paciente(random, ((curDate.Year) - Convert.ToInt32(fechaNacDatePicker.Value.Year)), NombreTxb.Text, ApellidoPaternoTbx.Text,
                                                                     ApellidoMaternoTbx.Text, LugarNaciTbx.Text, DireccionTbx.Text, TelefonoTbx.Text, CorreoETbx.Text,
                                                                     OcupacionTbx.Text, TelefonoTbx.Text, LugarTrabajoTbx.Text, fechaNacDatePicker.Value);
-                Controladores.PacienteController.AltaPaciente(paciente);
+                Controladores.PacienteController.RegistrarPaciente(paciente);
                 ActualizarTabla();
                 reestablecerCampos();
             }

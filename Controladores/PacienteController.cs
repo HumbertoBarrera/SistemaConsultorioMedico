@@ -21,7 +21,7 @@ namespace SistemaConsultorioMedico.Controladores
         /// Registra a la paciente a la base de datos.
         /// </summary>
         /// <param name="p"></param>
-        public static void AltaPaciente(Modelos.Paciente p)
+        public static void RegistrarPaciente(Modelos.Paciente p)
         {
             // Creamos el query a utilizar
             String query = "INSERT INTO PACIENTE VALUES (@idPaciente, @nombresP, @apellidoPatP, @apellidoMatP, @fechaNac, @edadP, @lugarNac, @direccionP, " +
@@ -89,7 +89,10 @@ namespace SistemaConsultorioMedico.Controladores
         public static void ActualizarPaciente(Modelos.Paciente p)
         {
             // Creamos query ya con los datos integrados
-            String query = "UPDATE PACIENTE SET nombresP='" + p.getNombresP() + "', apellidoPatP='" + p.getApellitosPatP() + "', apellidoMatP='" + p.getApellidosMatP() + "', fechaNac='" + p.getFechaNac().ToString("yyyy/MM/dd") + "', edadP='" + p.getEdad() + "', lugarNac='" + p.getLugarNac() + "', direccionP='" + p.getDireccionP() + "', telefonoP='" + p.getTelefonoP() + "', emailP='" + p.getEmailP() + "',trabajoP='" + p.getTrabajoP() + "', lugarTrabajoP='" + p.getLugarTrabajoP() + "' WHERE idPaciente='" + p.getIdPaciente() + "'";
+            String query = "UPDATE PACIENTE SET nombresP='" + p.getNombresP() + "', apellidoPatP='" + p.getApellitosPatP() + "', apellidoMatP='" + 
+                p.getApellidosMatP() + "', fechaNac='" + p.getFechaNac().ToString("yyyy/MM/dd") + "', edadP='" + p.getEdad() + "', lugarNac='" + p.getLugarNac() +
+                "', direccionP='" + p.getDireccionP() + "', telefonoP='" + p.getTelefonoP() + "', emailP='" + p.getEmailP() + "',trabajoP='" + p.getTrabajoP() + 
+                "', lugarTrabajoP='" + p.getLugarTrabajoP() + "' WHERE idPaciente='" + p.getIdPaciente() + "'";
             try
             {
                 using (SqlCommand comando = new SqlCommand(query, ConexionController.Conectar()))
