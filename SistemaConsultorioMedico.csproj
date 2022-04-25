@@ -126,6 +126,12 @@
     <Compile Include="Vistas\RecuperarContraForms.Designer.cs">
       <DependentUpon>RecuperarContraForms.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\UsuarioForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\UsuarioForms.Designer.cs">
+      <DependentUpon>UsuarioForms.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Vistas\CitasForm.resx">
       <DependentUpon>CitasForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +170,9 @@
     </Compile>
     <EmbeddedResource Include="Vistas\RecuperarContraForms.resx">
       <DependentUpon>RecuperarContraForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\UsuarioForms.resx">
+      <DependentUpon>UsuarioForms.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

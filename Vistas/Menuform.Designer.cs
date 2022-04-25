@@ -30,13 +30,15 @@ namespace SistemaConsultorioMedico
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menuform));
-            BunifuAnimatorNS.Animation animation14 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation13 = new BunifuAnimatorNS.Animation();
             this.contenidoPnl = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.contenedorMenuPnl = new System.Windows.Forms.Panel();
             this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.Usuarios = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.logoutBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.InformacionMedicaBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.diagnosticoBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.citaBtn = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -57,7 +59,6 @@ namespace SistemaConsultorioMedico
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Mover = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.logoutBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.contenidoPnl.SuspendLayout();
             this.contenedorMenuPnl.SuspendLayout();
             this.Sidebar.SuspendLayout();
@@ -80,7 +81,7 @@ namespace SistemaConsultorioMedico
             this.contenidoPnl.Location = new System.Drawing.Point(0, 0);
             this.contenidoPnl.Margin = new System.Windows.Forms.Padding(4);
             this.contenidoPnl.Name = "contenidoPnl";
-            this.contenidoPnl.Size = new System.Drawing.Size(1837, 960);
+            this.contenidoPnl.Size = new System.Drawing.Size(1386, 788);
             this.contenidoPnl.TabIndex = 0;
             // 
             // panel1
@@ -94,7 +95,7 @@ namespace SistemaConsultorioMedico
             this.panel1.Location = new System.Drawing.Point(408, 89);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1416, 863);
+            this.panel1.Size = new System.Drawing.Size(965, 691);
             this.panel1.TabIndex = 0;
             // 
             // contenedorMenuPnl
@@ -107,7 +108,7 @@ namespace SistemaConsultorioMedico
             this.contenedorMenuPnl.Location = new System.Drawing.Point(0, 81);
             this.contenedorMenuPnl.Margin = new System.Windows.Forms.Padding(4);
             this.contenedorMenuPnl.Name = "contenedorMenuPnl";
-            this.contenedorMenuPnl.Size = new System.Drawing.Size(400, 879);
+            this.contenedorMenuPnl.Size = new System.Drawing.Size(400, 707);
             this.contenedorMenuPnl.TabIndex = 1;
             // 
             // Sidebar
@@ -116,6 +117,7 @@ namespace SistemaConsultorioMedico
             | System.Windows.Forms.AnchorStyles.Left)));
             this.Sidebar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Sidebar.BackgroundImage")));
             this.Sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Sidebar.Controls.Add(this.Usuarios);
             this.Sidebar.Controls.Add(this.logoutBtn);
             this.Sidebar.Controls.Add(this.InformacionMedicaBtn);
             this.Sidebar.Controls.Add(this.diagnosticoBtn);
@@ -134,8 +136,84 @@ namespace SistemaConsultorioMedico
             this.Sidebar.Margin = new System.Windows.Forms.Padding(4);
             this.Sidebar.Name = "Sidebar";
             this.Sidebar.Quality = 10;
-            this.Sidebar.Size = new System.Drawing.Size(360, 834);
+            this.Sidebar.Size = new System.Drawing.Size(360, 662);
             this.Sidebar.TabIndex = 0;
+            // 
+            // Usuarios
+            // 
+            this.Usuarios.Activecolor = System.Drawing.Color.Transparent;
+            this.Usuarios.BackColor = System.Drawing.Color.Transparent;
+            this.Usuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Usuarios.BorderRadius = 0;
+            this.Usuarios.ButtonText = "        USUARIOS";
+            this.Usuarios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimacionSidebar.SetDecoration(this.Usuarios, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarAtras.SetDecoration(this.Usuarios, BunifuAnimatorNS.DecorationType.None);
+            this.Usuarios.DisabledColor = System.Drawing.Color.Gray;
+            this.Usuarios.Iconcolor = System.Drawing.Color.Transparent;
+            this.Usuarios.Iconimage = ((System.Drawing.Image)(resources.GetObject("Usuarios.Iconimage")));
+            this.Usuarios.Iconimage_right = null;
+            this.Usuarios.Iconimage_right_Selected = null;
+            this.Usuarios.Iconimage_Selected = null;
+            this.Usuarios.IconMarginLeft = 0;
+            this.Usuarios.IconMarginRight = 0;
+            this.Usuarios.IconRightVisible = true;
+            this.Usuarios.IconRightZoom = 0D;
+            this.Usuarios.IconVisible = true;
+            this.Usuarios.IconZoom = 50D;
+            this.Usuarios.IsTab = false;
+            this.Usuarios.Location = new System.Drawing.Point(1, 360);
+            this.Usuarios.Margin = new System.Windows.Forms.Padding(5);
+            this.Usuarios.Name = "Usuarios";
+            this.Usuarios.Normalcolor = System.Drawing.Color.Transparent;
+            this.Usuarios.OnHovercolor = System.Drawing.Color.Transparent;
+            this.Usuarios.OnHoverTextColor = System.Drawing.Color.White;
+            this.Usuarios.selected = false;
+            this.Usuarios.Size = new System.Drawing.Size(355, 63);
+            this.Usuarios.TabIndex = 20;
+            this.Usuarios.Text = "        USUARIOS";
+            this.Usuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Usuarios.Textcolor = System.Drawing.Color.LightGray;
+            this.Usuarios.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.Usuarios.Click += new System.EventHandler(this.Usuarios_Click);
+            // 
+            // logoutBtn
+            // 
+            this.logoutBtn.Activecolor = System.Drawing.Color.Transparent;
+            this.logoutBtn.BackColor = System.Drawing.Color.Transparent;
+            this.logoutBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.logoutBtn.BorderRadius = 0;
+            this.logoutBtn.ButtonText = "        CERRAR SESIÓN";
+            this.logoutBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimacionSidebar.SetDecoration(this.logoutBtn, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarAtras.SetDecoration(this.logoutBtn, BunifuAnimatorNS.DecorationType.None);
+            this.logoutBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.logoutBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.logoutBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("logoutBtn.Iconimage")));
+            this.logoutBtn.Iconimage_right = null;
+            this.logoutBtn.Iconimage_right_Selected = null;
+            this.logoutBtn.Iconimage_Selected = null;
+            this.logoutBtn.IconMarginLeft = 0;
+            this.logoutBtn.IconMarginRight = 0;
+            this.logoutBtn.IconRightVisible = true;
+            this.logoutBtn.IconRightZoom = 0D;
+            this.logoutBtn.IconVisible = true;
+            this.logoutBtn.IconZoom = 50D;
+            this.logoutBtn.IsTab = false;
+            this.logoutBtn.Location = new System.Drawing.Point(0, 415);
+            this.logoutBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.logoutBtn.Name = "logoutBtn";
+            this.logoutBtn.Normalcolor = System.Drawing.Color.Transparent;
+            this.logoutBtn.OnHovercolor = System.Drawing.Color.Transparent;
+            this.logoutBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.logoutBtn.selected = false;
+            this.logoutBtn.Size = new System.Drawing.Size(354, 63);
+            this.logoutBtn.TabIndex = 19;
+            this.logoutBtn.Text = "        CERRAR SESIÓN";
+            this.logoutBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.logoutBtn.Textcolor = System.Drawing.Color.LightGray;
+            this.logoutBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.logoutBtn.Click += new System.EventHandler(this.logoutBtn_Click);
             // 
             // InformacionMedicaBtn
             // 
@@ -143,7 +221,7 @@ namespace SistemaConsultorioMedico
             this.InformacionMedicaBtn.BackColor = System.Drawing.Color.Transparent;
             this.InformacionMedicaBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.InformacionMedicaBtn.BorderRadius = 0;
-            this.InformacionMedicaBtn.ButtonText = "        INFORMACION MEDICA";
+            this.InformacionMedicaBtn.ButtonText = "         INFORMACION MEDICA";
             this.InformacionMedicaBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AnimacionSidebar.SetDecoration(this.InformacionMedicaBtn, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarAtras.SetDecoration(this.InformacionMedicaBtn, BunifuAnimatorNS.DecorationType.None);
@@ -160,7 +238,7 @@ namespace SistemaConsultorioMedico
             this.InformacionMedicaBtn.IconVisible = true;
             this.InformacionMedicaBtn.IconZoom = 50D;
             this.InformacionMedicaBtn.IsTab = false;
-            this.InformacionMedicaBtn.Location = new System.Drawing.Point(5, 329);
+            this.InformacionMedicaBtn.Location = new System.Drawing.Point(-1, 302);
             this.InformacionMedicaBtn.Margin = new System.Windows.Forms.Padding(5);
             this.InformacionMedicaBtn.Name = "InformacionMedicaBtn";
             this.InformacionMedicaBtn.Normalcolor = System.Drawing.Color.Transparent;
@@ -169,7 +247,7 @@ namespace SistemaConsultorioMedico
             this.InformacionMedicaBtn.selected = false;
             this.InformacionMedicaBtn.Size = new System.Drawing.Size(350, 63);
             this.InformacionMedicaBtn.TabIndex = 16;
-            this.InformacionMedicaBtn.Text = "        INFORMACION MEDICA";
+            this.InformacionMedicaBtn.Text = "         INFORMACION MEDICA";
             this.InformacionMedicaBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.InformacionMedicaBtn.Textcolor = System.Drawing.Color.LightGray;
             this.InformacionMedicaBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -181,7 +259,7 @@ namespace SistemaConsultorioMedico
             this.diagnosticoBtn.BackColor = System.Drawing.Color.Transparent;
             this.diagnosticoBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.diagnosticoBtn.BorderRadius = 0;
-            this.diagnosticoBtn.ButtonText = "          DIAGNOSTICO";
+            this.diagnosticoBtn.ButtonText = "         DIAGNOSTICO";
             this.diagnosticoBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AnimacionSidebar.SetDecoration(this.diagnosticoBtn, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarAtras.SetDecoration(this.diagnosticoBtn, BunifuAnimatorNS.DecorationType.None);
@@ -198,7 +276,7 @@ namespace SistemaConsultorioMedico
             this.diagnosticoBtn.IconVisible = true;
             this.diagnosticoBtn.IconZoom = 50D;
             this.diagnosticoBtn.IsTab = false;
-            this.diagnosticoBtn.Location = new System.Drawing.Point(6, 271);
+            this.diagnosticoBtn.Location = new System.Drawing.Point(0, 243);
             this.diagnosticoBtn.Margin = new System.Windows.Forms.Padding(5);
             this.diagnosticoBtn.Name = "diagnosticoBtn";
             this.diagnosticoBtn.Normalcolor = System.Drawing.Color.Transparent;
@@ -207,7 +285,7 @@ namespace SistemaConsultorioMedico
             this.diagnosticoBtn.selected = false;
             this.diagnosticoBtn.Size = new System.Drawing.Size(349, 63);
             this.diagnosticoBtn.TabIndex = 15;
-            this.diagnosticoBtn.Text = "          DIAGNOSTICO";
+            this.diagnosticoBtn.Text = "         DIAGNOSTICO";
             this.diagnosticoBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.diagnosticoBtn.Textcolor = System.Drawing.Color.LightGray;
             this.diagnosticoBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -236,7 +314,7 @@ namespace SistemaConsultorioMedico
             this.citaBtn.IconVisible = true;
             this.citaBtn.IconZoom = 50D;
             this.citaBtn.IsTab = false;
-            this.citaBtn.Location = new System.Drawing.Point(5, 198);
+            this.citaBtn.Location = new System.Drawing.Point(0, 184);
             this.citaBtn.Margin = new System.Windows.Forms.Padding(5);
             this.citaBtn.Name = "citaBtn";
             this.citaBtn.Normalcolor = System.Drawing.Color.Transparent;
@@ -315,7 +393,7 @@ namespace SistemaConsultorioMedico
             this.label1.Location = new System.Drawing.Point(83, 42);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(254, 26);
+            this.label1.Size = new System.Drawing.Size(196, 20);
             this.label1.TabIndex = 10;
             this.label1.Text = "Consultorio Ginecologico";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -350,7 +428,7 @@ namespace SistemaConsultorioMedico
             this.menuTopPnl.Location = new System.Drawing.Point(0, 0);
             this.menuTopPnl.Margin = new System.Windows.Forms.Padding(4);
             this.menuTopPnl.Name = "menuTopPnl";
-            this.menuTopPnl.Size = new System.Drawing.Size(1837, 81);
+            this.menuTopPnl.Size = new System.Drawing.Size(1386, 81);
             this.menuTopPnl.TabIndex = 1;
             // 
             // Restaurar
@@ -359,7 +437,7 @@ namespace SistemaConsultorioMedico
             this.AnimacionSidebar.SetDecoration(this.Restaurar, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarAtras.SetDecoration(this.Restaurar, BunifuAnimatorNS.DecorationType.None);
             this.Restaurar.Image = ((System.Drawing.Image)(resources.GetObject("Restaurar.Image")));
-            this.Restaurar.Location = new System.Drawing.Point(1733, 26);
+            this.Restaurar.Location = new System.Drawing.Point(1282, 26);
             this.Restaurar.Margin = new System.Windows.Forms.Padding(4);
             this.Restaurar.Name = "Restaurar";
             this.Restaurar.Size = new System.Drawing.Size(40, 37);
@@ -375,7 +453,7 @@ namespace SistemaConsultorioMedico
             this.AnimacionSidebar.SetDecoration(this.Minimizar, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarAtras.SetDecoration(this.Minimizar, BunifuAnimatorNS.DecorationType.None);
             this.Minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Minimizar.Image")));
-            this.Minimizar.Location = new System.Drawing.Point(1685, 26);
+            this.Minimizar.Location = new System.Drawing.Point(1234, 26);
             this.Minimizar.Margin = new System.Windows.Forms.Padding(4);
             this.Minimizar.Name = "Minimizar";
             this.Minimizar.Size = new System.Drawing.Size(40, 37);
@@ -390,7 +468,7 @@ namespace SistemaConsultorioMedico
             this.AnimacionSidebar.SetDecoration(this.Maximizar, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarAtras.SetDecoration(this.Maximizar, BunifuAnimatorNS.DecorationType.None);
             this.Maximizar.Image = ((System.Drawing.Image)(resources.GetObject("Maximizar.Image")));
-            this.Maximizar.Location = new System.Drawing.Point(1733, 26);
+            this.Maximizar.Location = new System.Drawing.Point(1282, 26);
             this.Maximizar.Margin = new System.Windows.Forms.Padding(4);
             this.Maximizar.Name = "Maximizar";
             this.Maximizar.Size = new System.Drawing.Size(40, 37);
@@ -405,7 +483,7 @@ namespace SistemaConsultorioMedico
             this.AnimacionSidebar.SetDecoration(this.Salir, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarAtras.SetDecoration(this.Salir, BunifuAnimatorNS.DecorationType.None);
             this.Salir.Image = ((System.Drawing.Image)(resources.GetObject("Salir.Image")));
-            this.Salir.Location = new System.Drawing.Point(1781, 26);
+            this.Salir.Location = new System.Drawing.Point(1330, 26);
             this.Salir.Margin = new System.Windows.Forms.Padding(4);
             this.Salir.Name = "Salir";
             this.Salir.Size = new System.Drawing.Size(40, 37);
@@ -424,7 +502,7 @@ namespace SistemaConsultorioMedico
             this.label2.Location = new System.Drawing.Point(99, 26);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 26);
+            this.label2.Size = new System.Drawing.Size(96, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "OPCIONES";
             // 
@@ -451,43 +529,43 @@ namespace SistemaConsultorioMedico
             // 
             this.AnimacionSidebar.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.AnimacionSidebar.Cursor = null;
-            animation14.AnimateOnlyDifferences = true;
-            animation14.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation14.BlindCoeff")));
-            animation14.LeafCoeff = 0F;
-            animation14.MaxTime = 1F;
-            animation14.MinTime = 0F;
-            animation14.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation14.MosaicCoeff")));
-            animation14.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation14.MosaicShift")));
-            animation14.MosaicSize = 0;
-            animation14.Padding = new System.Windows.Forms.Padding(0);
-            animation14.RotateCoeff = 0F;
-            animation14.RotateLimit = 0F;
-            animation14.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation14.ScaleCoeff")));
-            animation14.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation14.SlideCoeff")));
-            animation14.TimeCoeff = 0F;
-            animation14.TransparencyCoeff = 0F;
-            this.AnimacionSidebar.DefaultAnimation = animation14;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.AnimacionSidebar.DefaultAnimation = animation2;
             // 
             // AnimacionSidebarAtras
             // 
             this.AnimacionSidebarAtras.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.AnimacionSidebarAtras.Cursor = null;
-            animation13.AnimateOnlyDifferences = true;
-            animation13.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.BlindCoeff")));
-            animation13.LeafCoeff = 0F;
-            animation13.MaxTime = 1F;
-            animation13.MinTime = 0F;
-            animation13.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.MosaicCoeff")));
-            animation13.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation13.MosaicShift")));
-            animation13.MosaicSize = 0;
-            animation13.Padding = new System.Windows.Forms.Padding(0);
-            animation13.RotateCoeff = 0F;
-            animation13.RotateLimit = 0F;
-            animation13.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.ScaleCoeff")));
-            animation13.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.SlideCoeff")));
-            animation13.TimeCoeff = 0F;
-            animation13.TransparencyCoeff = 0F;
-            this.AnimacionSidebarAtras.DefaultAnimation = animation13;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.AnimacionSidebarAtras.DefaultAnimation = animation1;
             // 
             // bunifuElipse1
             // 
@@ -506,48 +584,10 @@ namespace SistemaConsultorioMedico
             this.bunifuElipse2.ElipseRadius = 7;
             this.bunifuElipse2.TargetControl = this;
             // 
-            // logoutBtn
-            // 
-            this.logoutBtn.Activecolor = System.Drawing.Color.Transparent;
-            this.logoutBtn.BackColor = System.Drawing.Color.Transparent;
-            this.logoutBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.logoutBtn.BorderRadius = 0;
-            this.logoutBtn.ButtonText = "       CERRAR SESIÓN";
-            this.logoutBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AnimacionSidebar.SetDecoration(this.logoutBtn, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebarAtras.SetDecoration(this.logoutBtn, BunifuAnimatorNS.DecorationType.None);
-            this.logoutBtn.DisabledColor = System.Drawing.Color.Gray;
-            this.logoutBtn.Iconcolor = System.Drawing.Color.Transparent;
-            this.logoutBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("logoutBtn.Iconimage")));
-            this.logoutBtn.Iconimage_right = null;
-            this.logoutBtn.Iconimage_right_Selected = null;
-            this.logoutBtn.Iconimage_Selected = null;
-            this.logoutBtn.IconMarginLeft = 0;
-            this.logoutBtn.IconMarginRight = 0;
-            this.logoutBtn.IconRightVisible = true;
-            this.logoutBtn.IconRightZoom = 0D;
-            this.logoutBtn.IconVisible = true;
-            this.logoutBtn.IconZoom = 50D;
-            this.logoutBtn.IsTab = false;
-            this.logoutBtn.Location = new System.Drawing.Point(6, 391);
-            this.logoutBtn.Margin = new System.Windows.Forms.Padding(5);
-            this.logoutBtn.Name = "logoutBtn";
-            this.logoutBtn.Normalcolor = System.Drawing.Color.Transparent;
-            this.logoutBtn.OnHovercolor = System.Drawing.Color.Transparent;
-            this.logoutBtn.OnHoverTextColor = System.Drawing.Color.White;
-            this.logoutBtn.selected = false;
-            this.logoutBtn.Size = new System.Drawing.Size(354, 63);
-            this.logoutBtn.TabIndex = 19;
-            this.logoutBtn.Text = "       CERRAR SESIÓN";
-            this.logoutBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.logoutBtn.Textcolor = System.Drawing.Color.LightGray;
-            this.logoutBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.logoutBtn.Click += new System.EventHandler(this.logoutBtn_Click);
-            // 
             // Menuform
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.ClientSize = new System.Drawing.Size(1837, 960);
+            this.ClientSize = new System.Drawing.Size(1386, 788);
             this.Controls.Add(this.contenedorMenuPnl);
             this.Controls.Add(this.menuTopPnl);
             this.Controls.Add(this.contenidoPnl);
@@ -601,5 +641,6 @@ namespace SistemaConsultorioMedico
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
         public System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuFlatButton logoutBtn;
+        private Bunifu.Framework.UI.BunifuFlatButton Usuarios;
     }
 }

@@ -130,5 +130,10 @@ namespace SistemaConsultorioMedico
             forma.Show();
             this.Hide();
         }
+
+        private void Usuarios_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new UsuarioForms());
+        }
     }
 }
