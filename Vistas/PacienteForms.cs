@@ -55,7 +55,7 @@ namespace SistemaConsultorioMedico
                 paciente = new Modelos.Paciente(random, ((curDate.Year) - Convert.ToInt32(fechaNacDatePicker.Value.Year)), NombreTxb.Text, ApellidoPaternoTbx.Text,
                                                                     ApellidoMaternoTbx.Text, LugarNaciTbx.Text, DireccionTbx.Text, TelefonoTbx.Text, CorreoETbx.Text,
                                                                     OcupacionTbx.Text, TelefonoTbx.Text, LugarTrabajoTbx.Text, fechaNacDatePicker.Value);
-                Controladores.PacienteController.AltaPaciente(paciente);
+                Controladores.PacienteController.RegistrarPaciente(paciente);
                 ActualizarTabla();
                 reestablecerCampos();
             }
@@ -79,7 +79,7 @@ namespace SistemaConsultorioMedico
 
             {
                 int idPaciente = int.Parse(BuscarTbx.text);
-                if (Controladores.PacienteController.ValidaSiExistePaciente(idPaciente))
+                if (Controladores.PacienteController.ValidarSiExistePaciente(idPaciente))
                 {
                     Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
                     Form VDiag = new Diagnostico(idPaciente);
@@ -146,7 +146,7 @@ namespace SistemaConsultorioMedico
             if (BuscarTbx.text != "")
             {
                 int idPaciente = int.Parse(BuscarTbx.text);
-                if (Controladores.PacienteController.ValidaSiExistePaciente(idPaciente))
+                if (Controladores.PacienteController.ValidarSiExistePaciente(idPaciente))
                 {
                     Form VInfoMedica = new InformacionMedica(idPaciente, flagME);
                     this.Hide();

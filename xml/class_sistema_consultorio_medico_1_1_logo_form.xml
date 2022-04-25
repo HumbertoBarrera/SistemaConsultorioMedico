@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_sistema_consultorio_medico_1_1_logo_form" kind="class" language="C#" prot="public">
+    <compoundname>SistemaConsultorioMedico::LogoForm</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_logo_form_1a5eb928ed9f267b93481b8936063d5506" prot="private" static="no" mutable="no">
+        <type>System.ComponentModel.IContainer</type>
+        <definition>System.ComponentModel.IContainer SistemaConsultorioMedico.LogoForm.components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <qualifiedname>SistemaConsultorioMedico.LogoForm.components</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Required designer variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LogoForm.Designer.cs" line="9" column="48" bodyfile="Vistas/LogoForm.Designer.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_logo_form_1a8211f2b2eaf7a358197f2a61ce711441" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.PictureBox</type>
+        <definition>System.Windows.Forms.PictureBox SistemaConsultorioMedico.LogoForm.pictureBox1</definition>
+        <argsstring></argsstring>
+        <name>pictureBox1</name>
+        <qualifiedname>SistemaConsultorioMedico.LogoForm.pictureBox1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LogoForm.Designer.cs" line="80" column="46" bodyfile="Vistas/LogoForm.Designer.cs" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_logo_form_1ab4fbfe715c7719183605810ff334b7bf" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label SistemaConsultorioMedico.LogoForm.label1</definition>
+        <argsstring></argsstring>
+        <name>label1</name>
+        <qualifiedname>SistemaConsultorioMedico.LogoForm.label1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LogoForm.Designer.cs" line="81" column="41" bodyfile="Vistas/LogoForm.Designer.cs" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_logo_form_1ab7217b9bc2a831fe21bef077fbcd215b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SistemaConsultorioMedico.LogoForm.LogoForm</definition>
+        <argsstring>()</argsstring>
+        <name>LogoForm</name>
+        <qualifiedname>SistemaConsultorioMedico.LogoForm.LogoForm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LogoForm.cs" line="15" column="16" bodyfile="Vistas/LogoForm.cs" bodystart="15" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_logo_form_1ad3044f3612b92ea78e03344b8d3f8e86" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.LogoForm.pictureBox1_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>pictureBox1_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.LogoForm.pictureBox1_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LogoForm.cs" line="20" column="22" bodyfile="Vistas/LogoForm.cs" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_logo_form_1a966c625c6a01b66b0f82a4e074f7e739" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.LogoForm.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>SistemaConsultorioMedico.LogoForm.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>Required method for Designer support - do not modify the contents of this method with the code editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LogoForm.Designer.cs" line="30" column="22" bodyfile="Vistas/LogoForm.Designer.cs" bodystart="30" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_logo_form_1a8a51228d1808538bd886ea1cc22c1187" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void SistemaConsultorioMedico.LogoForm.Dispose</definition>
+        <argsstring>(bool disposing)</argsstring>
+        <name>Dispose</name>
+        <qualifiedname>SistemaConsultorioMedico.LogoForm.Dispose</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>disposing</declname>
+        </param>
+        <briefdescription>
+<para>Clean up any resources being used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disposing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if managed resources should be disposed; otherwise, false.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/LogoForm.Designer.cs" line="15" column="33" bodyfile="Vistas/LogoForm.Designer.cs" bodystart="15" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>SistemaConsultorioMedico.LogoForm</label>
+        <link refid="class_sistema_consultorio_medico_1_1_logo_form"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>SistemaConsultorioMedico.LogoForm</label>
+        <link refid="class_sistema_consultorio_medico_1_1_logo_form"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Vistas/LogoForm.cs" line="13" column="19" bodyfile="Vistas/LogoForm.cs" bodystart="14" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_sistema_consultorio_medico_1_1_logo_form_1a5eb928ed9f267b93481b8936063d5506" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::LogoForm</scope><name>components</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_logo_form_1a8a51228d1808538bd886ea1cc22c1187" prot="protected" virt="non-virtual"><scope>SistemaConsultorioMedico::LogoForm</scope><name>Dispose</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_logo_form_1a966c625c6a01b66b0f82a4e074f7e739" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::LogoForm</scope><name>InitializeComponent</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_logo_form_1ab4fbfe715c7719183605810ff334b7bf" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::LogoForm</scope><name>label1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_logo_form_1ab7217b9bc2a831fe21bef077fbcd215b" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::LogoForm</scope><name>LogoForm</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_logo_form_1a8211f2b2eaf7a358197f2a61ce711441" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::LogoForm</scope><name>pictureBox1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_logo_form_1ad3044f3612b92ea78e03344b8d3f8e86" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::LogoForm</scope><name>pictureBox1_Click</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

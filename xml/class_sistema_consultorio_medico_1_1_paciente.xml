@@ -1,0 +1,961 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_sistema_consultorio_medico_1_1_paciente" kind="class" language="C#" prot="public">
+    <compoundname>SistemaConsultorioMedico::Paciente</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1a6a4049f3cf3946b1812a094a56194894" prot="private" static="no" mutable="no">
+        <type>DateTime</type>
+        <definition>DateTime SistemaConsultorioMedico.Paciente.curDate</definition>
+        <argsstring></argsstring>
+        <name>curDate</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.curDate</qualifiedname>
+        <initializer>= DateTime.Today</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="16" column="18" bodyfile="Vistas/PacienteForms.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1a321e86aa9e8cb9fa9808ac3f1bebbe2f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SistemaConsultorioMedico.Paciente.flagME</definition>
+        <argsstring></argsstring>
+        <name>flagME</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.flagME</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="17" column="14" bodyfile="Vistas/PacienteForms.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1ad959efc198fe7d330047894f0967bd50" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SistemaConsultorioMedico.Paciente.flagS</definition>
+        <argsstring></argsstring>
+        <name>flagS</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.flagS</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="17" column="22" bodyfile="Vistas/PacienteForms.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1a9200674fb426c30d3e3c66c889d43b4b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SistemaConsultorioMedico.Paciente.indice</definition>
+        <argsstring></argsstring>
+        <name>indice</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.indice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="18" column="13" bodyfile="Vistas/PacienteForms.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1a11faa57134f315301302f87121de927c" prot="private" static="no" mutable="no">
+        <type><ref refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente" kindref="compound">Modelos.Paciente</ref></type>
+        <definition>Modelos.Paciente SistemaConsultorioMedico.Paciente.paciente</definition>
+        <argsstring></argsstring>
+        <name>paciente</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.paciente</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="19" column="33" bodyfile="Vistas/PacienteForms.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1ae59c89dea74e04ea3a1eef780511c534" prot="private" static="no" mutable="no">
+        <type>System.ComponentModel.IContainer</type>
+        <definition>System.ComponentModel.IContainer SistemaConsultorioMedico.Paciente.components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.components</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Required designer variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.Designer.cs" line="9" column="48" bodyfile="Vistas/PacienteForms.Designer.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1a0a452adec1f23153434af20bfb8b6a5c" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuThinButton2</type>
+        <definition>Bunifu.Framework.UI.BunifuThinButton2 SistemaConsultorioMedico.Paciente.EliPacienteBtn</definition>
+        <argsstring></argsstring>
+        <name>EliPacienteBtn</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.EliPacienteBtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.Designer.cs" line="546" column="52" bodyfile="Vistas/PacienteForms.Designer.cs" bodystart="546" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1aecd7011e5da11c600ca6e7278360584a" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuTextbox SistemaConsultorioMedico.Paciente.BuscarTbx</definition>
+        <argsstring></argsstring>
+        <name>BuscarTbx</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.BuscarTbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.Designer.cs" line="547" column="48" bodyfile="Vistas/PacienteForms.Designer.cs" bodystart="547" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1acd0086b7188831db7a5f471e9493c3fd" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuCustomLabel</type>
+        <definition>Bunifu.Framework.UI.BunifuCustomLabel SistemaConsultorioMedico.Paciente.bunifuCustomLabel1</definition>
+        <argsstring></argsstring>
+        <name>bunifuCustomLabel1</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.bunifuCustomLabel1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.Designer.cs" line="548" column="52" bodyfile="Vistas/PacienteForms.Designer.cs" bodystart="548" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1a06bd3cbb74a4eeba06f6800c7ef2ca23" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuThinButton2</type>
+        <definition>Bunifu.Framework.UI.BunifuThinButton2 SistemaConsultorioMedico.Paciente.DiagnosticoBtn</definition>
+        <argsstring></argsstring>
+        <name>DiagnosticoBtn</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.DiagnosticoBtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.Designer.cs" line="549" column="52" bodyfile="Vistas/PacienteForms.Designer.cs" bodystart="549" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1af6bf893817b5b520c38b46f041d4f68b" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuThinButton2</type>
+        <definition>Bunifu.Framework.UI.BunifuThinButton2 SistemaConsultorioMedico.Paciente.InforMedicaBtn</definition>
+        <argsstring></argsstring>
+        <name>InforMedicaBtn</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.InforMedicaBtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.Designer.cs" line="550" column="52" bodyfile="Vistas/PacienteForms.Designer.cs" bodystart="550" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1ab68e39ebaac36a4ef9ac4baef47c1255" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuThinButton2</type>
+        <definition>Bunifu.Framework.UI.BunifuThinButton2 SistemaConsultorioMedico.Paciente.ModifPacienteBtn</definition>
+        <argsstring></argsstring>
+        <name>ModifPacienteBtn</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.ModifPacienteBtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.Designer.cs" line="551" column="52" bodyfile="Vistas/PacienteForms.Designer.cs" bodystart="551" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1aa4f619dfcb94c50357a1049088eef3da" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuThinButton2</type>
+        <definition>Bunifu.Framework.UI.BunifuThinButton2 SistemaConsultorioMedico.Paciente.guardarPac_Btn</definition>
+        <argsstring></argsstring>
+        <name>guardarPac_Btn</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.guardarPac_Btn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.Designer.cs" line="552" column="52" bodyfile="Vistas/PacienteForms.Designer.cs" bodystart="552" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1a28d0232ac9c6dcca8f66560b5fe9fbc0" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.Paciente.NombreTxb</definition>
+        <argsstring></argsstring>
+        <name>NombreTxb</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.NombreTxb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.Designer.cs" line="553" column="56" bodyfile="Vistas/PacienteForms.Designer.cs" bodystart="553" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1a61b7362a09e789f52a92ffb907080afa" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.Paciente.LugarNaciTbx</definition>
+        <argsstring></argsstring>
+        <name>LugarNaciTbx</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.LugarNaciTbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.Designer.cs" line="554" column="56" bodyfile="Vistas/PacienteForms.Designer.cs" bodystart="554" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1ac10058699f869503c56f5851c19e08e5" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.Paciente.DireccionTbx</definition>
+        <argsstring></argsstring>
+        <name>DireccionTbx</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.DireccionTbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.Designer.cs" line="555" column="56" bodyfile="Vistas/PacienteForms.Designer.cs" bodystart="555" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1a40e6ffe84c1cd5b18e1772f94e92f93a" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.Paciente.TelefonoTbx</definition>
+        <argsstring></argsstring>
+        <name>TelefonoTbx</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.TelefonoTbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.Designer.cs" line="556" column="56" bodyfile="Vistas/PacienteForms.Designer.cs" bodystart="556" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1a37cc990c0de10478439157865126ed57" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.Paciente.CorreoETbx</definition>
+        <argsstring></argsstring>
+        <name>CorreoETbx</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.CorreoETbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.Designer.cs" line="557" column="56" bodyfile="Vistas/PacienteForms.Designer.cs" bodystart="557" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1af090ff00626138d4aa1d5ecff0bbc657" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.Paciente.OcupacionTbx</definition>
+        <argsstring></argsstring>
+        <name>OcupacionTbx</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.OcupacionTbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.Designer.cs" line="558" column="56" bodyfile="Vistas/PacienteForms.Designer.cs" bodystart="558" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1a2ce9dd06434065e206369f50fc6847cf" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.Paciente.LugarTrabajoTbx</definition>
+        <argsstring></argsstring>
+        <name>LugarTrabajoTbx</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.LugarTrabajoTbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.Designer.cs" line="559" column="56" bodyfile="Vistas/PacienteForms.Designer.cs" bodystart="559" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1aed12dde2bf9293d1e5bfe48a6ab3d3a9" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuCustomDataGrid</type>
+        <definition>Bunifu.Framework.UI.BunifuCustomDataGrid SistemaConsultorioMedico.Paciente.bunifuCustomDataGrid1</definition>
+        <argsstring></argsstring>
+        <name>bunifuCustomDataGrid1</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.bunifuCustomDataGrid1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.Designer.cs" line="560" column="55" bodyfile="Vistas/PacienteForms.Designer.cs" bodystart="560" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1a7ea72ca347143250bf8f2c5e6b59ad60" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuSeparator</type>
+        <definition>Bunifu.Framework.UI.BunifuSeparator SistemaConsultorioMedico.Paciente.linea</definition>
+        <argsstring></argsstring>
+        <name>linea</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.linea</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.Designer.cs" line="561" column="50" bodyfile="Vistas/PacienteForms.Designer.cs" bodystart="561" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1a705f195e5b0fa742f66bb07919c4d6b2" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.Paciente.ApellidoPaternoTbx</definition>
+        <argsstring></argsstring>
+        <name>ApellidoPaternoTbx</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.ApellidoPaternoTbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.Designer.cs" line="562" column="56" bodyfile="Vistas/PacienteForms.Designer.cs" bodystart="562" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1a1ac88e15015443f031fce1411f280e50" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.Paciente.ApellidoMaternoTbx</definition>
+        <argsstring></argsstring>
+        <name>ApellidoMaternoTbx</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.ApellidoMaternoTbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.Designer.cs" line="563" column="56" bodyfile="Vistas/PacienteForms.Designer.cs" bodystart="563" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1a173c172d374fc1460c9ae2bda3b7d1d8" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuCustomLabel</type>
+        <definition>Bunifu.Framework.UI.BunifuCustomLabel SistemaConsultorioMedico.Paciente.IdPacienteLbl</definition>
+        <argsstring></argsstring>
+        <name>IdPacienteLbl</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.IdPacienteLbl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.Designer.cs" line="564" column="52" bodyfile="Vistas/PacienteForms.Designer.cs" bodystart="564" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1ae07787fe68f042337307072dbb016928" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuDatepicker</type>
+        <definition>Bunifu.Framework.UI.BunifuDatepicker SistemaConsultorioMedico.Paciente.fechaNacDatePicker</definition>
+        <argsstring></argsstring>
+        <name>fechaNacDatePicker</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.fechaNacDatePicker</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.Designer.cs" line="565" column="51" bodyfile="Vistas/PacienteForms.Designer.cs" bodystart="565" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1a70a06060d5e81839a1ae8d933d2d02e9" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label SistemaConsultorioMedico.Paciente.correoErrorLbl</definition>
+        <argsstring></argsstring>
+        <name>correoErrorLbl</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.correoErrorLbl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.Designer.cs" line="566" column="41" bodyfile="Vistas/PacienteForms.Designer.cs" bodystart="566" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_paciente_1a8063e5c9cdba33318a4b116f509c79aa" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label SistemaConsultorioMedico.Paciente.errorDigit</definition>
+        <argsstring></argsstring>
+        <name>errorDigit</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.errorDigit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.Designer.cs" line="567" column="41" bodyfile="Vistas/PacienteForms.Designer.cs" bodystart="567" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_paciente_1ac2502fedf5b96f5818804fa463fedb6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SistemaConsultorioMedico.Paciente.Paciente</definition>
+        <argsstring>(bool flagS)</argsstring>
+        <name>Paciente</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.Paciente</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>flagS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="21" column="16" bodyfile="Vistas/PacienteForms.cs" bodystart="21" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_paciente_1a530e823a1782e5219a0f386c1749cc3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SistemaConsultorioMedico.Paciente.isNumeric</definition>
+        <argsstring>(string value)</argsstring>
+        <name>isNumeric</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.isNumeric</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="412" column="21" bodyfile="Vistas/PacienteForms.cs" bodystart="412" bodyend="415"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_paciente_1af67fb3843d2798739bd3f7dbf11b75dd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Paciente.BuscarTbx_MouseEnter</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>BuscarTbx_MouseEnter</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.BuscarTbx_MouseEnter</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="31" column="22" bodyfile="Vistas/PacienteForms.cs" bodystart="31" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_paciente_1a2699c06bacf1f6f3d4ed018c7470289a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Paciente.BuscarTbx_MouseLeave</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>BuscarTbx_MouseLeave</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.BuscarTbx_MouseLeave</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="40" column="22" bodyfile="Vistas/PacienteForms.cs" bodystart="40" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_paciente_1a1f7870519c62c93fad3fbed955f9abbb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Paciente.guardarPac_Btn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>guardarPac_Btn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.guardarPac_Btn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="49" column="22" bodyfile="Vistas/PacienteForms.cs" bodystart="49" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_paciente_1afa9623e74091982bf30ef293795d9df5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Paciente.PacientesForm_Load</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>PacientesForm_Load</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.PacientesForm_Load</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="68" column="22" bodyfile="Vistas/PacienteForms.cs" bodystart="68" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_paciente_1ac6b618c0c47e0ddbd6408d0a8d2e6ee1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Paciente.DiagnosticoBtn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>DiagnosticoBtn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.DiagnosticoBtn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="76" column="22" bodyfile="Vistas/PacienteForms.cs" bodystart="76" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_paciente_1a81092a959d33c4e03b13893a0fb58899" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SistemaConsultorioMedico.Paciente.validarCampos</definition>
+        <argsstring>()</argsstring>
+        <name>validarCampos</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.validarCampos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="109" column="22" bodyfile="Vistas/PacienteForms.cs" bodystart="109" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_paciente_1a9f09dcd60ac6434e13674d13121105fe" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Paciente.reestablecerCampos</definition>
+        <argsstring>()</argsstring>
+        <name>reestablecerCampos</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.reestablecerCampos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="122" column="22" bodyfile="Vistas/PacienteForms.cs" bodystart="122" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_paciente_1a42ca361e578fc33133d09c169fcee103" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Paciente.InforMedicaBtn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>InforMedicaBtn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.InforMedicaBtn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="144" column="22" bodyfile="Vistas/PacienteForms.cs" bodystart="144" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_paciente_1a420cb0e8a124ff04e26d61d0ce2c5639" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Paciente.ModifPacienteBtn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>ModifPacienteBtn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.ModifPacienteBtn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="173" column="22" bodyfile="Vistas/PacienteForms.cs" bodystart="173" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_paciente_1abfca1b79356ecc4184a6e901e66893e6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Paciente.ActualizarTabla</definition>
+        <argsstring>()</argsstring>
+        <name>ActualizarTabla</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.ActualizarTabla</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="183" column="22" bodyfile="Vistas/PacienteForms.cs" bodystart="183" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_paciente_1a7fbb20be1e25db0366703638754d5080" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Paciente.llenarInfoPacientes_DataGrid</definition>
+        <argsstring>(object sender, DataGridViewCellEventArgs e)</argsstring>
+        <name>llenarInfoPacientes_DataGrid</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.llenarInfoPacientes_DataGrid</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>DataGridViewCellEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="191" column="22" bodyfile="Vistas/PacienteForms.cs" bodystart="191" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_paciente_1a362737a99ab35cef0748d42425b26017" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Paciente.bloqueoBtnGuardar</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>bloqueoBtnGuardar</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.bloqueoBtnGuardar</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="211" column="22" bodyfile="Vistas/PacienteForms.cs" bodystart="211" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_paciente_1a4f1acd6aa0493ef8e52ae41d1214288a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SistemaConsultorioMedico.Paciente.isValidEmail</definition>
+        <argsstring>(string email)</argsstring>
+        <name>isValidEmail</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.isValidEmail</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>email</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="231" column="22" bodyfile="Vistas/PacienteForms.cs" bodystart="231" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_paciente_1a9bdf92873d379f63461f7eb158a8bf7b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Paciente.verificarEmail</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>verificarEmail</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.verificarEmail</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="252" column="22" bodyfile="Vistas/PacienteForms.cs" bodystart="252" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_paciente_1a2f7b5acdb9524e6756e541ef4bfc9569" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Paciente.bloqueoBotonGuardar</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>bloqueoBotonGuardar</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.bloqueoBotonGuardar</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="298" column="22" bodyfile="Vistas/PacienteForms.cs" bodystart="298" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_paciente_1a6eeab53ff8a4257c8914877e475ab1d5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Paciente.bloqueoBotonMod</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>bloqueoBotonMod</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.bloqueoBotonMod</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="312" column="22" bodyfile="Vistas/PacienteForms.cs" bodystart="312" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_paciente_1a822b924c65568ae77df3f674ffea2d6e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Paciente.bloqueoBotonEli</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>bloqueoBotonEli</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.bloqueoBotonEli</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="326" column="22" bodyfile="Vistas/PacienteForms.cs" bodystart="326" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_paciente_1ac8bdaf6d1988eb68333bd0bb03d49e9b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Paciente.EliPacienteBtn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>EliPacienteBtn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.EliPacienteBtn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="340" column="22" bodyfile="Vistas/PacienteForms.cs" bodystart="340" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_paciente_1a23612dd861b55ae0ea0e90478378f0cc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Paciente.validarNumeros</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>validarNumeros</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.validarNumeros</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.cs" line="350" column="22" bodyfile="Vistas/PacienteForms.cs" bodystart="350" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_paciente_1ac65285183bc6f9454f72124006a49d93" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Paciente.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>Required method for Designer support - do not modify the contents of this method with the code editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.Designer.cs" line="30" column="22" bodyfile="Vistas/PacienteForms.Designer.cs" bodystart="30" bodyend="543"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_paciente_1a68af1a1dd046e71db7e1ff99c757d910" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void SistemaConsultorioMedico.Paciente.Dispose</definition>
+        <argsstring>(bool disposing)</argsstring>
+        <name>Dispose</name>
+        <qualifiedname>SistemaConsultorioMedico.Paciente.Dispose</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>disposing</declname>
+        </param>
+        <briefdescription>
+<para>Clean up any resources being used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disposing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if managed resources should be disposed; otherwise, false.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PacienteForms.Designer.cs" line="15" column="33" bodyfile="Vistas/PacienteForms.Designer.cs" bodystart="15" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>SistemaConsultorioMedico.Paciente</label>
+        <link refid="class_sistema_consultorio_medico_1_1_paciente"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>SistemaConsultorioMedico.Paciente</label>
+        <link refid="class_sistema_consultorio_medico_1_1_paciente"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Vistas/PacienteForms.cs" line="13" column="19" bodyfile="Vistas/PacienteForms.cs" bodystart="14" bodyend="416"/>
+    <listofallmembers>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1abfca1b79356ecc4184a6e901e66893e6" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>ActualizarTabla</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a1ac88e15015443f031fce1411f280e50" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>ApellidoMaternoTbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a705f195e5b0fa742f66bb07919c4d6b2" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>ApellidoPaternoTbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a822b924c65568ae77df3f674ffea2d6e" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>bloqueoBotonEli</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a2f7b5acdb9524e6756e541ef4bfc9569" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>bloqueoBotonGuardar</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a6eeab53ff8a4257c8914877e475ab1d5" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>bloqueoBotonMod</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a362737a99ab35cef0748d42425b26017" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>bloqueoBtnGuardar</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1aed12dde2bf9293d1e5bfe48a6ab3d3a9" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>bunifuCustomDataGrid1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1acd0086b7188831db7a5f471e9493c3fd" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>bunifuCustomLabel1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1aecd7011e5da11c600ca6e7278360584a" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>BuscarTbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1af67fb3843d2798739bd3f7dbf11b75dd" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>BuscarTbx_MouseEnter</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a2699c06bacf1f6f3d4ed018c7470289a" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>BuscarTbx_MouseLeave</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1ae59c89dea74e04ea3a1eef780511c534" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>components</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a70a06060d5e81839a1ae8d933d2d02e9" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>correoErrorLbl</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a37cc990c0de10478439157865126ed57" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>CorreoETbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a6a4049f3cf3946b1812a094a56194894" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>curDate</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a06bd3cbb74a4eeba06f6800c7ef2ca23" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>DiagnosticoBtn</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1ac6b618c0c47e0ddbd6408d0a8d2e6ee1" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>DiagnosticoBtn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1ac10058699f869503c56f5851c19e08e5" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>DireccionTbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a68af1a1dd046e71db7e1ff99c757d910" prot="protected" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>Dispose</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a0a452adec1f23153434af20bfb8b6a5c" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>EliPacienteBtn</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1ac8bdaf6d1988eb68333bd0bb03d49e9b" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>EliPacienteBtn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a8063e5c9cdba33318a4b116f509c79aa" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>errorDigit</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1ae07787fe68f042337307072dbb016928" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>fechaNacDatePicker</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a321e86aa9e8cb9fa9808ac3f1bebbe2f" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>flagME</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1ad959efc198fe7d330047894f0967bd50" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>flagS</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1aa4f619dfcb94c50357a1049088eef3da" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>guardarPac_Btn</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a1f7870519c62c93fad3fbed955f9abbb" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>guardarPac_Btn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a173c172d374fc1460c9ae2bda3b7d1d8" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>IdPacienteLbl</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a9200674fb426c30d3e3c66c889d43b4b" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>indice</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1af6bf893817b5b520c38b46f041d4f68b" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>InforMedicaBtn</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a42ca361e578fc33133d09c169fcee103" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>InforMedicaBtn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1ac65285183bc6f9454f72124006a49d93" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>InitializeComponent</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a530e823a1782e5219a0f386c1749cc3e" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>isNumeric</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a4f1acd6aa0493ef8e52ae41d1214288a" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>isValidEmail</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a7ea72ca347143250bf8f2c5e6b59ad60" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>linea</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a7fbb20be1e25db0366703638754d5080" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>llenarInfoPacientes_DataGrid</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a61b7362a09e789f52a92ffb907080afa" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>LugarNaciTbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a2ce9dd06434065e206369f50fc6847cf" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>LugarTrabajoTbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1ab68e39ebaac36a4ef9ac4baef47c1255" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>ModifPacienteBtn</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a420cb0e8a124ff04e26d61d0ce2c5639" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>ModifPacienteBtn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a28d0232ac9c6dcca8f66560b5fe9fbc0" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>NombreTxb</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1af090ff00626138d4aa1d5ecff0bbc657" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>OcupacionTbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a11faa57134f315301302f87121de927c" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>paciente</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1ac2502fedf5b96f5818804fa463fedb6b" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>Paciente</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1afa9623e74091982bf30ef293795d9df5" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>PacientesForm_Load</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a9f09dcd60ac6434e13674d13121105fe" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>reestablecerCampos</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a40e6ffe84c1cd5b18e1772f94e92f93a" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>TelefonoTbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a81092a959d33c4e03b13893a0fb58899" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>validarCampos</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a23612dd861b55ae0ea0e90478378f0cc" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>validarNumeros</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_paciente_1a9bdf92873d379f63461f7eb158a8bf7b" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Paciente</scope><name>verificarEmail</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

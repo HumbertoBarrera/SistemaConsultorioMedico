@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller" kind="class" language="C#" prot="public">
+    <compoundname>SistemaConsultorioMedico::Controladores::CitaController</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1a73da5906fef17ed49f179cb819209b5e" prot="private" static="no" mutable="no">
+        <type>DateTime</type>
+        <definition>DateTime SistemaConsultorioMedico.Controladores.CitaController.fecha</definition>
+        <argsstring></argsstring>
+        <name>fecha</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.CitaController.fecha</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/CitaController.cs" line="15" column="18" bodyfile="Controladores/CitaController.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1a499a6c7b3e1f973e93ddfe5adff73359" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SistemaConsultorioMedico.Controladores.CitaController.insertarCita</definition>
+        <argsstring>(Modelos.Cita c)</argsstring>
+        <name>insertarCita</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.CitaController.insertarCita</qualifiedname>
+        <param>
+          <type><ref refid="class_sistema_consultorio_medico_1_1_modelos_1_1_cita" kindref="compound">Modelos.Cita</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Registra la cita en la base de datos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/CitaController.cs" line="21" column="28" bodyfile="Controladores/CitaController.cs" bodystart="21" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1ab4de66eeb7912d40ea33f55a726cd9f3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SistemaConsultorioMedico.Controladores.CitaController.EliminarCita</definition>
+        <argsstring>(Modelos.Cita c)</argsstring>
+        <name>EliminarCita</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.CitaController.EliminarCita</qualifiedname>
+        <param>
+          <type><ref refid="class_sistema_consultorio_medico_1_1_modelos_1_1_cita" kindref="compound">Modelos.Cita</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Elimina la cita de la base de datos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/CitaController.cs" line="78" column="28" bodyfile="Controladores/CitaController.cs" bodystart="78" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1a5974bcb2b96807a316e5e1fa392e83c1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SistemaConsultorioMedico.Controladores.CitaController.ModificarCita</definition>
+        <argsstring>(Modelos.Cita c)</argsstring>
+        <name>ModificarCita</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.CitaController.ModificarCita</qualifiedname>
+        <param>
+          <type><ref refid="class_sistema_consultorio_medico_1_1_modelos_1_1_cita" kindref="compound">Modelos.Cita</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Modifica la cita de la base de datos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/CitaController.cs" line="111" column="28" bodyfile="Controladores/CitaController.cs" bodystart="111" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1a1497dce07f4217a2c1f26a136848737c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SistemaConsultorioMedico.Controladores.CitaController.folio</definition>
+        <argsstring>(Modelos.Cita c)</argsstring>
+        <name>folio</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.CitaController.folio</qualifiedname>
+        <param>
+          <type><ref refid="class_sistema_consultorio_medico_1_1_modelos_1_1_cita" kindref="compound">Modelos.Cita</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Genera el folio de la cita. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/CitaController.cs" line="145" column="28" bodyfile="Controladores/CitaController.cs" bodystart="145" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1ada180f401a119839a1b4228bc16d0a42" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SistemaConsultorioMedico.Controladores.CitaController.validaExisCita</definition>
+        <argsstring>(Modelos.Cita c)</argsstring>
+        <name>validaExisCita</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.CitaController.validaExisCita</qualifiedname>
+        <param>
+          <type><ref refid="class_sistema_consultorio_medico_1_1_modelos_1_1_cita" kindref="compound">Modelos.Cita</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Valida si existe la cita en la base de datos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/CitaController.cs" line="180" column="28" bodyfile="Controladores/CitaController.cs" bodystart="180" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1a6b9c1deba3d9f167df85299ced7cae1e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SistemaConsultorioMedico.Controladores.CitaController.validaExisFolio</definition>
+        <argsstring>(String folio)</argsstring>
+        <name>validaExisFolio</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.CitaController.validaExisFolio</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>folio</declname>
+        </param>
+        <briefdescription>
+<para>Valida si ya existe el folio. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>folio</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/CitaController.cs" line="204" column="28" bodyfile="Controladores/CitaController.cs" bodystart="204" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1aa974d23995e6a004630d350317165994" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SistemaConsultorioMedico.Controladores.CitaController.validaExisPaciente</definition>
+        <argsstring>(Modelos.Cita c)</argsstring>
+        <name>validaExisPaciente</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.CitaController.validaExisPaciente</qualifiedname>
+        <param>
+          <type><ref refid="class_sistema_consultorio_medico_1_1_modelos_1_1_cita" kindref="compound">Modelos.Cita</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Valida si existe la paciente en la base de datos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/CitaController.cs" line="224" column="28" bodyfile="Controladores/CitaController.cs" bodystart="224" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1aec641ac25357853b973d471fde9a8481" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SistemaConsultorioMedico.Controladores.CitaController.validaExisFechaHora</definition>
+        <argsstring>(Modelos.Cita c)</argsstring>
+        <name>validaExisFechaHora</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.CitaController.validaExisFechaHora</qualifiedname>
+        <param>
+          <type><ref refid="class_sistema_consultorio_medico_1_1_modelos_1_1_cita" kindref="compound">Modelos.Cita</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Valida si la fecha y la hora de la cita no están ya ocupadas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/CitaController.cs" line="244" column="28" bodyfile="Controladores/CitaController.cs" bodystart="244" bodyend="257"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1a8f8367796b359cbc599aef23c175f80e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>DataTable</type>
+        <definition>DataTable SistemaConsultorioMedico.Controladores.CitaController.CargarGridCitas</definition>
+        <argsstring>()</argsstring>
+        <name>CargarGridCitas</name>
+        <qualifiedname>SistemaConsultorioMedico.Controladores.CitaController.CargarGridCitas</qualifiedname>
+        <briefdescription>
+<para>Muestra las citas registradas en el sistema. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controladores/CitaController.cs" line="59" column="26" bodyfile="Controladores/CitaController.cs" bodystart="59" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Controladores/CitaController.cs" line="13" column="5" bodyfile="Controladores/CitaController.cs" bodystart="14" bodyend="259"/>
+    <listofallmembers>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1a8f8367796b359cbc599aef23c175f80e" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::CitaController</scope><name>CargarGridCitas</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1ab4de66eeb7912d40ea33f55a726cd9f3" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::CitaController</scope><name>EliminarCita</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1a73da5906fef17ed49f179cb819209b5e" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::CitaController</scope><name>fecha</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1a1497dce07f4217a2c1f26a136848737c" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::CitaController</scope><name>folio</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1a499a6c7b3e1f973e93ddfe5adff73359" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::CitaController</scope><name>insertarCita</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1a5974bcb2b96807a316e5e1fa392e83c1" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::CitaController</scope><name>ModificarCita</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1ada180f401a119839a1b4228bc16d0a42" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::CitaController</scope><name>validaExisCita</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1aec641ac25357853b973d471fde9a8481" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::CitaController</scope><name>validaExisFechaHora</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1a6b9c1deba3d9f167df85299ced7cae1e" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::CitaController</scope><name>validaExisFolio</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1aa974d23995e6a004630d350317165994" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Controladores::CitaController</scope><name>validaExisPaciente</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

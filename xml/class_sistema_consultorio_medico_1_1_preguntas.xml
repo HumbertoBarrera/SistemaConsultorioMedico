@@ -1,0 +1,1487 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_sistema_consultorio_medico_1_1_preguntas" kind="class" language="C#" prot="public">
+    <compoundname>SistemaConsultorioMedico::Preguntas</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1a9fd24c71a373f0e08ff155c38b834409" prot="private" static="no" mutable="no">
+        <type><ref refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica" kindref="compound">Modelos.InformacionMedica</ref></type>
+        <definition>Modelos.InformacionMedica SistemaConsultorioMedico.Preguntas.im1</definition>
+        <argsstring></argsstring>
+        <name>im1</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.im1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="17" column="42" bodyfile="Vistas/PreguntasForms.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1aeb29392aeb28fca1552a549ddfa25de2" prot="private" static="no" mutable="no">
+        <type><ref refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica" kindref="compound">Modelos.InformacionMedica</ref></type>
+        <definition>Modelos.InformacionMedica SistemaConsultorioMedico.Preguntas.im2</definition>
+        <argsstring></argsstring>
+        <name>im2</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.im2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="18" column="42" bodyfile="Vistas/PreguntasForms.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1a35a0ad6ba1bf4722afd880aed4770efa" prot="private" static="no" mutable="no">
+        <type><ref refid="class_sistema_consultorio_medico_1_1_informacion_medica" kindref="compound">InformacionMedica</ref></type>
+        <definition>InformacionMedica SistemaConsultorioMedico.Preguntas.info</definition>
+        <argsstring></argsstring>
+        <name>info</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="19" column="35" bodyfile="Vistas/PreguntasForms.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1a14baf278bb4867b63bfe6b098419131f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SistemaConsultorioMedico.Preguntas.idPaciente</definition>
+        <argsstring></argsstring>
+        <name>idPaciente</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.idPaciente</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="20" column="13" bodyfile="Vistas/PreguntasForms.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1acc3ed4a0595b1958ca238afa2b7faeae" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SistemaConsultorioMedico.Preguntas.flagME</definition>
+        <argsstring></argsstring>
+        <name>flagME</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.flagME</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="21" column="14" bodyfile="Vistas/PreguntasForms.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1a0be045881a662913fff9c2eb5eb59d8a" prot="private" static="no" mutable="no">
+        <type>System.ComponentModel.IContainer</type>
+        <definition>System.ComponentModel.IContainer SistemaConsultorioMedico.Preguntas.components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.components</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Required designer variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="9" column="48" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1a3e9901f8a5b8ed25c31f56e7d558b185" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuSeparator</type>
+        <definition>Bunifu.Framework.UI.BunifuSeparator SistemaConsultorioMedico.Preguntas.linea</definition>
+        <argsstring></argsstring>
+        <name>linea</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.linea</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="792" column="50" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="792" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1ac44b7c04f91d35a38820e8658449081e" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuCustomLabel</type>
+        <definition>Bunifu.Framework.UI.BunifuCustomLabel SistemaConsultorioMedico.Preguntas.bunifuCustomLabel1</definition>
+        <argsstring></argsstring>
+        <name>bunifuCustomLabel1</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.bunifuCustomLabel1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="793" column="52" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="793" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1aa5c9cce60add18720154c6ce9024335a" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.Preguntas.dato13OpcTbx</definition>
+        <argsstring></argsstring>
+        <name>dato13OpcTbx</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato13OpcTbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="794" column="56" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="794" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1a5211a960fe1f1a1d8f2dc5d834815b65" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.Preguntas.dato12Tbx</definition>
+        <argsstring></argsstring>
+        <name>dato12Tbx</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato12Tbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="795" column="56" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="795" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1aa332c20fe857124de3a846c6ef55f451" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.Preguntas.dato10OpcTbx</definition>
+        <argsstring></argsstring>
+        <name>dato10OpcTbx</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato10OpcTbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="796" column="56" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="796" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1adaa719e4cead2c98ad2234b846addf07" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.Preguntas.dato13Opc2Tbx</definition>
+        <argsstring></argsstring>
+        <name>dato13Opc2Tbx</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato13Opc2Tbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="797" column="56" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="797" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1a6e58895a55c06e53ef5c069ed3f687a2" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.Preguntas.dato10Tbx</definition>
+        <argsstring></argsstring>
+        <name>dato10Tbx</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato10Tbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="798" column="56" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="798" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1ac64147bd010684456ff42d9c5776f513" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.RadioButton</type>
+        <definition>System.Windows.Forms.RadioButton SistemaConsultorioMedico.Preguntas.dato10Rbtn4</definition>
+        <argsstring></argsstring>
+        <name>dato10Rbtn4</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato10Rbtn4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="799" column="47" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="799" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1ad58296d1a648673f65db4e7f8a27af48" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.RadioButton</type>
+        <definition>System.Windows.Forms.RadioButton SistemaConsultorioMedico.Preguntas.dato10Rbtn3</definition>
+        <argsstring></argsstring>
+        <name>dato10Rbtn3</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato10Rbtn3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="800" column="47" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="800" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1a674d35e97033c37f4bf0fc7dfec462f0" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.RadioButton</type>
+        <definition>System.Windows.Forms.RadioButton SistemaConsultorioMedico.Preguntas.dato10Rbtn2</definition>
+        <argsstring></argsstring>
+        <name>dato10Rbtn2</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato10Rbtn2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="801" column="47" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="801" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1ac86b822aa9267ce419218d7eb85c24df" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.RadioButton</type>
+        <definition>System.Windows.Forms.RadioButton SistemaConsultorioMedico.Preguntas.dato10Rbtn1</definition>
+        <argsstring></argsstring>
+        <name>dato10Rbtn1</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato10Rbtn1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="802" column="47" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="802" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1a1e12db75603fab2d0b48e20a57b7d2f2" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuCustomLabel</type>
+        <definition>Bunifu.Framework.UI.BunifuCustomLabel SistemaConsultorioMedico.Preguntas.bunifuCustomLabel2</definition>
+        <argsstring></argsstring>
+        <name>bunifuCustomLabel2</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.bunifuCustomLabel2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="803" column="52" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="803" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1a8437f2298738268d5b582bf1077eba65" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuThinButton2</type>
+        <definition>Bunifu.Framework.UI.BunifuThinButton2 SistemaConsultorioMedico.Preguntas.GuardarBtn</definition>
+        <argsstring></argsstring>
+        <name>GuardarBtn</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.GuardarBtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="804" column="52" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="804" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1af65f506284992f176f6d2dcf80d17e4a" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuThinButton2</type>
+        <definition>Bunifu.Framework.UI.BunifuThinButton2 SistemaConsultorioMedico.Preguntas.RegresarBtn</definition>
+        <argsstring></argsstring>
+        <name>RegresarBtn</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.RegresarBtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="805" column="52" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="805" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1a7d3395fe298983bb5f2fbd68e3d05605" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.PictureBox</type>
+        <definition>System.Windows.Forms.PictureBox SistemaConsultorioMedico.Preguntas.pictureBox1</definition>
+        <argsstring></argsstring>
+        <name>pictureBox1</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.pictureBox1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="806" column="46" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="806" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1aa191ad2a9b97681d3b099e11d34e5497" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.Preguntas.dato14OpcTbx</definition>
+        <argsstring></argsstring>
+        <name>dato14OpcTbx</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato14OpcTbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="807" column="56" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="807" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1ae671cd2b4af0ec10c7591f359dca1a7b" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.Preguntas.dato14Opc2Tbx</definition>
+        <argsstring></argsstring>
+        <name>dato14Opc2Tbx</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato14Opc2Tbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="808" column="56" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="808" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1a78b9b88b111c7b5e049c39422ac636b0" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.Preguntas.dato15OpcTbx</definition>
+        <argsstring></argsstring>
+        <name>dato15OpcTbx</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato15OpcTbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="809" column="56" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="809" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1a5f961ae23334ca3b60f408c289e90db8" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.Preguntas.dato15Opc2Tbx</definition>
+        <argsstring></argsstring>
+        <name>dato15Opc2Tbx</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato15Opc2Tbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="810" column="56" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="810" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1a2770183e32db6cefd990f02711758e16" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.Preguntas.dato15Opc3Tbx</definition>
+        <argsstring></argsstring>
+        <name>dato15Opc3Tbx</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato15Opc3Tbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="811" column="56" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="811" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1a2f585811557ea66eb951e2edda8187d8" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.Preguntas.dato15Opc4Tbx</definition>
+        <argsstring></argsstring>
+        <name>dato15Opc4Tbx</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato15Opc4Tbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="812" column="56" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="812" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1ad378912e9f5ae5c193dbc8d9f2bf1b90" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.Preguntas.dato16Tbx</definition>
+        <argsstring></argsstring>
+        <name>dato16Tbx</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato16Tbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="813" column="56" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="813" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1acd7c49c2453fe7f69e9039570594f9d7" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.Preguntas.dato18Tbx</definition>
+        <argsstring></argsstring>
+        <name>dato18Tbx</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato18Tbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="814" column="56" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="814" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1a2e09607404f793dc639faa7db46ec50c" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuCustomLabel</type>
+        <definition>Bunifu.Framework.UI.BunifuCustomLabel SistemaConsultorioMedico.Preguntas.FechaLbl</definition>
+        <argsstring></argsstring>
+        <name>FechaLbl</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.FechaLbl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="815" column="52" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="815" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1a520f02c028b30cfac793945a8bf50039" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.Preguntas.dato11OpcTbx</definition>
+        <argsstring></argsstring>
+        <name>dato11OpcTbx</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato11OpcTbx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="816" column="56" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="816" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1a7b459d25c9778a2812cad00663234066" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuThinButton2</type>
+        <definition>Bunifu.Framework.UI.BunifuThinButton2 SistemaConsultorioMedico.Preguntas.EliminarBtn</definition>
+        <argsstring></argsstring>
+        <name>EliminarBtn</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.EliminarBtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="817" column="52" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="817" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1ad07d5740be40274781b13d313ae72368" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuThinButton2</type>
+        <definition>Bunifu.Framework.UI.BunifuThinButton2 SistemaConsultorioMedico.Preguntas.ModificarBtn</definition>
+        <argsstring></argsstring>
+        <name>ModificarBtn</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.ModificarBtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="818" column="52" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="818" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1a439534b3392713ad17b27b6c1959d868" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.RadioButton</type>
+        <definition>System.Windows.Forms.RadioButton SistemaConsultorioMedico.Preguntas.dato10Rbtn5</definition>
+        <argsstring></argsstring>
+        <name>dato10Rbtn5</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato10Rbtn5</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="819" column="47" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="819" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1ab6a4eb45b1812a5cef83050c6b07a091" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuDropdown</type>
+        <definition>Bunifu.Framework.UI.BunifuDropdown SistemaConsultorioMedico.Preguntas.dato11ComboBox</definition>
+        <argsstring></argsstring>
+        <name>dato11ComboBox</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato11ComboBox</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="820" column="49" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="820" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1aa31248030bd0d1d5fc396df2a1f56861" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuDropdown</type>
+        <definition>Bunifu.Framework.UI.BunifuDropdown SistemaConsultorioMedico.Preguntas.dato13ComboBox</definition>
+        <argsstring></argsstring>
+        <name>dato13ComboBox</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato13ComboBox</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="821" column="49" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="821" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1a0948e0c037605cfb97c7d53c1ba56ba8" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuDropdown</type>
+        <definition>Bunifu.Framework.UI.BunifuDropdown SistemaConsultorioMedico.Preguntas.dato14ComboBox</definition>
+        <argsstring></argsstring>
+        <name>dato14ComboBox</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato14ComboBox</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="822" column="49" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="822" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1adf7e411784eaafa29e316df876092771" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuDropdown</type>
+        <definition>Bunifu.Framework.UI.BunifuDropdown SistemaConsultorioMedico.Preguntas.dato15ComboBox</definition>
+        <argsstring></argsstring>
+        <name>dato15ComboBox</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato15ComboBox</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="823" column="49" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="823" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1a155663072ed585391a520a84858fb6ef" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuDropdown</type>
+        <definition>Bunifu.Framework.UI.BunifuDropdown SistemaConsultorioMedico.Preguntas.dato17ComboBox</definition>
+        <argsstring></argsstring>
+        <name>dato17ComboBox</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato17ComboBox</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="824" column="49" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="824" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1a673aba876f806c5d9c66e4580d17fe4c" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label SistemaConsultorioMedico.Preguntas.errorDigit</definition>
+        <argsstring></argsstring>
+        <name>errorDigit</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.errorDigit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="825" column="41" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="825" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_preguntas_1a59f99361e69ed0b9b639f9ebd722fb9f" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label SistemaConsultorioMedico.Preguntas.errorDigit2</definition>
+        <argsstring></argsstring>
+        <name>errorDigit2</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.errorDigit2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="826" column="41" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="826" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1a6fc3ff0b73bdcfdd8f3f73d0b3e28ca9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SistemaConsultorioMedico.Preguntas.Preguntas</definition>
+        <argsstring>(Modelos.InformacionMedica im1, int idPaciente, bool flagME, InformacionMedica info)</argsstring>
+        <name>Preguntas</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.Preguntas</qualifiedname>
+        <param>
+          <type><ref refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica" kindref="compound">Modelos.InformacionMedica</ref></type>
+          <declname>im1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idPaciente</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>flagME</declname>
+        </param>
+        <param>
+          <type><ref refid="class_sistema_consultorio_medico_1_1_informacion_medica" kindref="compound">InformacionMedica</ref></type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="23" column="16" bodyfile="Vistas/PreguntasForms.cs" bodystart="23" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1a7738e6b0b41eb841f0f5dfe18c8bcc85" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SistemaConsultorioMedico.Preguntas.isNumeric</definition>
+        <argsstring>(string value)</argsstring>
+        <name>isNumeric</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.isNumeric</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="174" column="21" bodyfile="Vistas/PreguntasForms.cs" bodystart="174" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1a65e5f83b182bf19dbdf3ee8b8cdd4cad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.LlenarInformacion</definition>
+        <argsstring>(int idPaciente)</argsstring>
+        <name>LlenarInformacion</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.LlenarInformacion</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idPaciente</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="267" column="21" bodyfile="Vistas/PreguntasForms.cs" bodystart="267" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1af78910dd783f4938b3a570cb59b40841" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SistemaConsultorioMedico.Preguntas.getIndex</definition>
+        <argsstring>(String text)</argsstring>
+        <name>getIndex</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.getIndex</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="312" column="20" bodyfile="Vistas/PreguntasForms.cs" bodystart="312" bodyend="322"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1a91acc6692f40494771ff63519a3bc1ea" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.pictureBox1_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>pictureBox1_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.pictureBox1_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="36" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1a21249e5602c22cf75a2c225cebb93e92" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.GuardarBtn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>GuardarBtn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.GuardarBtn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="41" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="41" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1ab1c15be987c04bc72507987ba488fff6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Preguntas.ObtenerEnfermedadFamiliar</definition>
+        <argsstring>()</argsstring>
+        <name>ObtenerEnfermedadFamiliar</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.ObtenerEnfermedadFamiliar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="67" column="24" bodyfile="Vistas/PreguntasForms.cs" bodystart="67" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1a2ab8cd0e031967ef366f2a95ff8d135c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.RegresarBtn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>RegresarBtn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.RegresarBtn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="100" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="100" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1a3c17328fd94d8f4c569a8ced258cee89" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.obtenerFecha</definition>
+        <argsstring>()</argsstring>
+        <name>obtenerFecha</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.obtenerFecha</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="107" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="107" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1ae4c38f8a7f26696e0a4bc881d6e3ac03" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SistemaConsultorioMedico.Preguntas.ValidarCampos</definition>
+        <argsstring>()</argsstring>
+        <name>ValidarCampos</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.ValidarCampos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="116" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="116" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1abb6fd0a09626bba0ed501267bd698d65" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SistemaConsultorioMedico.Preguntas.ValidarDato10</definition>
+        <argsstring>()</argsstring>
+        <name>ValidarDato10</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.ValidarDato10</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="135" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="135" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1acb5e4c7aca21c19c82623b4e65b99365" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.llenarDato10</definition>
+        <argsstring>(String dato10)</argsstring>
+        <name>llenarDato10</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.llenarDato10</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>dato10</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="180" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="180" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1a1f209b189a8e0895bf5bcfa0479d5994" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.ReestablecerCampos</definition>
+        <argsstring>()</argsstring>
+        <name>ReestablecerCampos</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.ReestablecerCampos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="238" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="238" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1a6e2bda1076eb1b5fe6914d3680c9c44a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.ModificarBtn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>ModificarBtn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.ModificarBtn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="325" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="325" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1ae0df4ea12375588742335f370ba45ef2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.EliminarBtn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>EliminarBtn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.EliminarBtn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="347" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="347" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1af7dbb93d68da6d4253dca7fa28a5493e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.dato10Rbtn1_CheckedChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato10Rbtn1_CheckedChanged</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato10Rbtn1_CheckedChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="361" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="361" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1a76fe68b0666309bec23ba655d0ba3172" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.dato10Rbtn2_CheckedChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato10Rbtn2_CheckedChanged</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato10Rbtn2_CheckedChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="375" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="375" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1a0d3c5da32a5c8634d2bbe79138ac27f1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.dato10Rbtn3_CheckedChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato10Rbtn3_CheckedChanged</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato10Rbtn3_CheckedChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="389" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="389" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1aeadff673f9012a7823a700d333a9f9ee" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.dato10Rbtn4_CheckedChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato10Rbtn4_CheckedChanged</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato10Rbtn4_CheckedChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="403" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="403" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1a722685b5648ea771d35942725b1ca993" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.dato10Tbx_OnValueChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato10Tbx_OnValueChanged</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato10Tbx_OnValueChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="417" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="417" bodyend="429"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1a516ee2773f8240467b074b0a4aeb1c65" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.dato10Rbtn5_CheckedChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato10Rbtn5_CheckedChanged</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato10Rbtn5_CheckedChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="431" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="431" bodyend="444"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1a82424d5879e650f3992ec63ce2538adf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.dato10OpcTbx_EnabledChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato10OpcTbx_EnabledChanged</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato10OpcTbx_EnabledChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="446" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="446" bodyend="459"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1a2e2d267e65e8dfc285b377a30be86772" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.dato11ItemOpc</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato11ItemOpc</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato11ItemOpc</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="461" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="461" bodyend="480"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1a146f40d239916c6152ff058e47674841" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.dato11OpcTbx_EnabledChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato11OpcTbx_EnabledChanged</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato11OpcTbx_EnabledChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="482" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="482" bodyend="496"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1aa8fb87a39598df1a0959c5a4b7cc8019" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.dato13ItemOpc</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato13ItemOpc</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato13ItemOpc</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="498" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="498" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1a6efcd5dd24fa1d1eae867538b263e413" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.dato13Opc</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato13Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato13Opc</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="526" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="526" bodyend="546"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1a5363c82fdb73f0e06d369ea1836b4463" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.dato14ItemOpc</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato14ItemOpc</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato14ItemOpc</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="548" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="548" bodyend="574"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1af214b4a92f1e75d490d76ae783631bc9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.dato14Opc</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato14Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato14Opc</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="576" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="576" bodyend="596"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1a038edad585c85db9ff4efe7b869826a6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.dato15ItemOpc</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato15ItemOpc</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato15ItemOpc</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="598" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="598" bodyend="638"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1ab5e841af824320808624c7d22183da97" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.dato15Opc</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>dato15Opc</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.dato15Opc</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="640" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="640" bodyend="672"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1ab6eeb4f8ff4d0f78db85d5dd69ea5e0c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.bloqueoBtnGuardar</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>bloqueoBtnGuardar</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.bloqueoBtnGuardar</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="674" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="674" bodyend="694"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1a4849c295a6b12724083451b756c250d7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.GuardarBtn_EnabledChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>GuardarBtn_EnabledChanged</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.GuardarBtn_EnabledChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="696" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="696" bodyend="708"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1ac669706afdf47b0accf6543f42ab2bde" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.verificarNumero1</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>verificarNumero1</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.verificarNumero1</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="710" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="710" bodyend="745"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1a9cdcf0110889bb345fa43933d3a8db0d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.verificarNumero2</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>verificarNumero2</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.verificarNumero2</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="747" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="747" bodyend="782"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1a4c023e19c5c1f4ddaf3c686288ed1f23" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.ModificarBtn_EnabledChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>ModificarBtn_EnabledChanged</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.ModificarBtn_EnabledChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="784" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="784" bodyend="796"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1aee7301d4c1ee5a3257ee6e885d39c250" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.EliminarBtn_EnabledChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>EliminarBtn_EnabledChanged</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.EliminarBtn_EnabledChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.cs" line="798" column="22" bodyfile="Vistas/PreguntasForms.cs" bodystart="798" bodyend="810"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1a79fd906b75c7fe9cf9370ca95ed70870" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Preguntas.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>Required method for Designer support - do not modify the contents of this method with the code editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="30" column="22" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="30" bodyend="788"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_preguntas_1a842dd064a78094296ea58bace7ebec83" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void SistemaConsultorioMedico.Preguntas.Dispose</definition>
+        <argsstring>(bool disposing)</argsstring>
+        <name>Dispose</name>
+        <qualifiedname>SistemaConsultorioMedico.Preguntas.Dispose</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>disposing</declname>
+        </param>
+        <briefdescription>
+<para>Clean up any resources being used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disposing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if managed resources should be disposed; otherwise, false.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/PreguntasForms.Designer.cs" line="15" column="33" bodyfile="Vistas/PreguntasForms.Designer.cs" bodystart="15" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>SistemaConsultorioMedico.Preguntas</label>
+        <link refid="class_sistema_consultorio_medico_1_1_preguntas"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>SistemaConsultorioMedico.Preguntas</label>
+        <link refid="class_sistema_consultorio_medico_1_1_preguntas"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Vistas/PreguntasForms.cs" line="15" column="19" bodyfile="Vistas/PreguntasForms.cs" bodystart="16" bodyend="811"/>
+    <listofallmembers>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ab6eeb4f8ff4d0f78db85d5dd69ea5e0c" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>bloqueoBtnGuardar</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ac44b7c04f91d35a38820e8658449081e" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>bunifuCustomLabel1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a1e12db75603fab2d0b48e20a57b7d2f2" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>bunifuCustomLabel2</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a0be045881a662913fff9c2eb5eb59d8a" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>components</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1aa332c20fe857124de3a846c6ef55f451" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato10OpcTbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a82424d5879e650f3992ec63ce2538adf" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato10OpcTbx_EnabledChanged</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ac86b822aa9267ce419218d7eb85c24df" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato10Rbtn1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1af7dbb93d68da6d4253dca7fa28a5493e" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato10Rbtn1_CheckedChanged</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a674d35e97033c37f4bf0fc7dfec462f0" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato10Rbtn2</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a76fe68b0666309bec23ba655d0ba3172" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato10Rbtn2_CheckedChanged</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ad58296d1a648673f65db4e7f8a27af48" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato10Rbtn3</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a0d3c5da32a5c8634d2bbe79138ac27f1" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato10Rbtn3_CheckedChanged</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ac64147bd010684456ff42d9c5776f513" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato10Rbtn4</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1aeadff673f9012a7823a700d333a9f9ee" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato10Rbtn4_CheckedChanged</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a439534b3392713ad17b27b6c1959d868" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato10Rbtn5</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a516ee2773f8240467b074b0a4aeb1c65" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato10Rbtn5_CheckedChanged</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a6e58895a55c06e53ef5c069ed3f687a2" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato10Tbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a722685b5648ea771d35942725b1ca993" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato10Tbx_OnValueChanged</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ab6a4eb45b1812a5cef83050c6b07a091" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato11ComboBox</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a2e2d267e65e8dfc285b377a30be86772" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato11ItemOpc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a520f02c028b30cfac793945a8bf50039" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato11OpcTbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a146f40d239916c6152ff058e47674841" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato11OpcTbx_EnabledChanged</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a5211a960fe1f1a1d8f2dc5d834815b65" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato12Tbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1aa31248030bd0d1d5fc396df2a1f56861" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato13ComboBox</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1aa8fb87a39598df1a0959c5a4b7cc8019" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato13ItemOpc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a6efcd5dd24fa1d1eae867538b263e413" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato13Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1adaa719e4cead2c98ad2234b846addf07" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato13Opc2Tbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1aa5c9cce60add18720154c6ce9024335a" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato13OpcTbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a0948e0c037605cfb97c7d53c1ba56ba8" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato14ComboBox</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a5363c82fdb73f0e06d369ea1836b4463" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato14ItemOpc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1af214b4a92f1e75d490d76ae783631bc9" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato14Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ae671cd2b4af0ec10c7591f359dca1a7b" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato14Opc2Tbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1aa191ad2a9b97681d3b099e11d34e5497" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato14OpcTbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1adf7e411784eaafa29e316df876092771" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato15ComboBox</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a038edad585c85db9ff4efe7b869826a6" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato15ItemOpc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ab5e841af824320808624c7d22183da97" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato15Opc</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a5f961ae23334ca3b60f408c289e90db8" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato15Opc2Tbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a2770183e32db6cefd990f02711758e16" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato15Opc3Tbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a2f585811557ea66eb951e2edda8187d8" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato15Opc4Tbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a78b9b88b111c7b5e049c39422ac636b0" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato15OpcTbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ad378912e9f5ae5c193dbc8d9f2bf1b90" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato16Tbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a155663072ed585391a520a84858fb6ef" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato17ComboBox</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1acd7c49c2453fe7f69e9039570594f9d7" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>dato18Tbx</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a842dd064a78094296ea58bace7ebec83" prot="protected" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>Dispose</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a7b459d25c9778a2812cad00663234066" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>EliminarBtn</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ae0df4ea12375588742335f370ba45ef2" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>EliminarBtn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1aee7301d4c1ee5a3257ee6e885d39c250" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>EliminarBtn_EnabledChanged</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a673aba876f806c5d9c66e4580d17fe4c" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>errorDigit</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a59f99361e69ed0b9b639f9ebd722fb9f" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>errorDigit2</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a2e09607404f793dc639faa7db46ec50c" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>FechaLbl</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1acc3ed4a0595b1958ca238afa2b7faeae" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>flagME</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1af78910dd783f4938b3a570cb59b40841" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>getIndex</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a8437f2298738268d5b582bf1077eba65" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>GuardarBtn</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a21249e5602c22cf75a2c225cebb93e92" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>GuardarBtn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a4849c295a6b12724083451b756c250d7" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>GuardarBtn_EnabledChanged</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a14baf278bb4867b63bfe6b098419131f" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>idPaciente</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a9fd24c71a373f0e08ff155c38b834409" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>im1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1aeb29392aeb28fca1552a549ddfa25de2" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>im2</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a35a0ad6ba1bf4722afd880aed4770efa" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>info</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a79fd906b75c7fe9cf9370ca95ed70870" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>InitializeComponent</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a7738e6b0b41eb841f0f5dfe18c8bcc85" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>isNumeric</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a3e9901f8a5b8ed25c31f56e7d558b185" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>linea</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1acb5e4c7aca21c19c82623b4e65b99365" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>llenarDato10</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a65e5f83b182bf19dbdf3ee8b8cdd4cad" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>LlenarInformacion</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ad07d5740be40274781b13d313ae72368" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>ModificarBtn</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a6e2bda1076eb1b5fe6914d3680c9c44a" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>ModificarBtn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a4c023e19c5c1f4ddaf3c686288ed1f23" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>ModificarBtn_EnabledChanged</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ab1c15be987c04bc72507987ba488fff6" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>ObtenerEnfermedadFamiliar</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a3c17328fd94d8f4c569a8ced258cee89" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>obtenerFecha</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a7d3395fe298983bb5f2fbd68e3d05605" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>pictureBox1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a91acc6692f40494771ff63519a3bc1ea" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>pictureBox1_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a6fc3ff0b73bdcfdd8f3f73d0b3e28ca9" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>Preguntas</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a1f209b189a8e0895bf5bcfa0479d5994" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>ReestablecerCampos</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1af65f506284992f176f6d2dcf80d17e4a" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>RegresarBtn</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a2ab8cd0e031967ef366f2a95ff8d135c" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>RegresarBtn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ae4c38f8a7f26696e0a4bc881d6e3ac03" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>ValidarCampos</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1abb6fd0a09626bba0ed501267bd698d65" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>ValidarDato10</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ac669706afdf47b0accf6543f42ab2bde" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>verificarNumero1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a9cdcf0110889bb345fa43933d3a8db0d" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Preguntas</scope><name>verificarNumero2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

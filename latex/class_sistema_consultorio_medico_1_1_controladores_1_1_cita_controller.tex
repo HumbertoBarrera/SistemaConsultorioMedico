@@ -1,0 +1,179 @@
+\hypertarget{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller}{}\doxysection{Sistema\+Consultorio\+Medico.\+Controladores.\+Cita\+Controller Class Reference}
+\label{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller}\index{SistemaConsultorioMedico.Controladores.CitaController@{SistemaConsultorioMedico.Controladores.CitaController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Data\+Table \mbox{\hyperlink{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_a8f8367796b359cbc599aef23c175f80e}{Cargar\+Grid\+Citas}} ()
+\begin{DoxyCompactList}\small\item\em Muestra las citas registradas en el sistema. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_a499a6c7b3e1f973e93ddfe5adff73359}{insertar\+Cita}} (\mbox{\hyperlink{class_sistema_consultorio_medico_1_1_modelos_1_1_cita}{Modelos.\+Cita}} c)
+\begin{DoxyCompactList}\small\item\em Registra la cita en la base de datos. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_ab4de66eeb7912d40ea33f55a726cd9f3}{Eliminar\+Cita}} (\mbox{\hyperlink{class_sistema_consultorio_medico_1_1_modelos_1_1_cita}{Modelos.\+Cita}} c)
+\begin{DoxyCompactList}\small\item\em Elimina la cita de la base de datos. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_a5974bcb2b96807a316e5e1fa392e83c1}{Modificar\+Cita}} (\mbox{\hyperlink{class_sistema_consultorio_medico_1_1_modelos_1_1_cita}{Modelos.\+Cita}} c)
+\begin{DoxyCompactList}\small\item\em Modifica la cita de la base de datos. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_a1497dce07f4217a2c1f26a136848737c}{folio}} (\mbox{\hyperlink{class_sistema_consultorio_medico_1_1_modelos_1_1_cita}{Modelos.\+Cita}} c)
+\begin{DoxyCompactList}\small\item\em Genera el folio de la cita. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_ada180f401a119839a1b4228bc16d0a42}{valida\+Exis\+Cita}} (\mbox{\hyperlink{class_sistema_consultorio_medico_1_1_modelos_1_1_cita}{Modelos.\+Cita}} c)
+\begin{DoxyCompactList}\small\item\em Valida si existe la cita en la base de datos. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_a6b9c1deba3d9f167df85299ced7cae1e}{valida\+Exis\+Folio}} (String \mbox{\hyperlink{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_a1497dce07f4217a2c1f26a136848737c}{folio}})
+\begin{DoxyCompactList}\small\item\em Valida si ya existe el folio. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_aa974d23995e6a004630d350317165994}{valida\+Exis\+Paciente}} (\mbox{\hyperlink{class_sistema_consultorio_medico_1_1_modelos_1_1_cita}{Modelos.\+Cita}} c)
+\begin{DoxyCompactList}\small\item\em Valida si existe la paciente en la base de datos. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_aec641ac25357853b973d471fde9a8481}{valida\+Exis\+Fecha\+Hora}} (\mbox{\hyperlink{class_sistema_consultorio_medico_1_1_modelos_1_1_cita}{Modelos.\+Cita}} c)
+\begin{DoxyCompactList}\small\item\em Valida si la fecha y la hora de la cita no están ya ocupadas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_a8f8367796b359cbc599aef23c175f80e}\label{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_a8f8367796b359cbc599aef23c175f80e}} 
+\index{SistemaConsultorioMedico.Controladores.CitaController@{SistemaConsultorioMedico.Controladores.CitaController}!CargarGridCitas@{CargarGridCitas}}
+\index{CargarGridCitas@{CargarGridCitas}!SistemaConsultorioMedico.Controladores.CitaController@{SistemaConsultorioMedico.Controladores.CitaController}}
+\doxysubsubsection{\texorpdfstring{CargarGridCitas()}{CargarGridCitas()}}
+{\footnotesize\ttfamily Data\+Table Sistema\+Consultorio\+Medico.\+Controladores.\+Cita\+Controller.\+Cargar\+Grid\+Citas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Muestra las citas registradas en el sistema. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_ab4de66eeb7912d40ea33f55a726cd9f3}\label{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_ab4de66eeb7912d40ea33f55a726cd9f3}} 
+\index{SistemaConsultorioMedico.Controladores.CitaController@{SistemaConsultorioMedico.Controladores.CitaController}!EliminarCita@{EliminarCita}}
+\index{EliminarCita@{EliminarCita}!SistemaConsultorioMedico.Controladores.CitaController@{SistemaConsultorioMedico.Controladores.CitaController}}
+\doxysubsubsection{\texorpdfstring{EliminarCita()}{EliminarCita()}}
+{\footnotesize\ttfamily static void Sistema\+Consultorio\+Medico.\+Controladores.\+Cita\+Controller.\+Eliminar\+Cita (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sistema_consultorio_medico_1_1_modelos_1_1_cita}{Modelos.\+Cita}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Elimina la cita de la base de datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_a1497dce07f4217a2c1f26a136848737c}\label{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_a1497dce07f4217a2c1f26a136848737c}} 
+\index{SistemaConsultorioMedico.Controladores.CitaController@{SistemaConsultorioMedico.Controladores.CitaController}!folio@{folio}}
+\index{folio@{folio}!SistemaConsultorioMedico.Controladores.CitaController@{SistemaConsultorioMedico.Controladores.CitaController}}
+\doxysubsubsection{\texorpdfstring{folio()}{folio()}}
+{\footnotesize\ttfamily static void Sistema\+Consultorio\+Medico.\+Controladores.\+Cita\+Controller.\+folio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sistema_consultorio_medico_1_1_modelos_1_1_cita}{Modelos.\+Cita}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Genera el folio de la cita. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_a499a6c7b3e1f973e93ddfe5adff73359}\label{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_a499a6c7b3e1f973e93ddfe5adff73359}} 
+\index{SistemaConsultorioMedico.Controladores.CitaController@{SistemaConsultorioMedico.Controladores.CitaController}!insertarCita@{insertarCita}}
+\index{insertarCita@{insertarCita}!SistemaConsultorioMedico.Controladores.CitaController@{SistemaConsultorioMedico.Controladores.CitaController}}
+\doxysubsubsection{\texorpdfstring{insertarCita()}{insertarCita()}}
+{\footnotesize\ttfamily static void Sistema\+Consultorio\+Medico.\+Controladores.\+Cita\+Controller.\+insertar\+Cita (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sistema_consultorio_medico_1_1_modelos_1_1_cita}{Modelos.\+Cita}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Registra la cita en la base de datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_a5974bcb2b96807a316e5e1fa392e83c1}\label{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_a5974bcb2b96807a316e5e1fa392e83c1}} 
+\index{SistemaConsultorioMedico.Controladores.CitaController@{SistemaConsultorioMedico.Controladores.CitaController}!ModificarCita@{ModificarCita}}
+\index{ModificarCita@{ModificarCita}!SistemaConsultorioMedico.Controladores.CitaController@{SistemaConsultorioMedico.Controladores.CitaController}}
+\doxysubsubsection{\texorpdfstring{ModificarCita()}{ModificarCita()}}
+{\footnotesize\ttfamily static void Sistema\+Consultorio\+Medico.\+Controladores.\+Cita\+Controller.\+Modificar\+Cita (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sistema_consultorio_medico_1_1_modelos_1_1_cita}{Modelos.\+Cita}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Modifica la cita de la base de datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_ada180f401a119839a1b4228bc16d0a42}\label{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_ada180f401a119839a1b4228bc16d0a42}} 
+\index{SistemaConsultorioMedico.Controladores.CitaController@{SistemaConsultorioMedico.Controladores.CitaController}!validaExisCita@{validaExisCita}}
+\index{validaExisCita@{validaExisCita}!SistemaConsultorioMedico.Controladores.CitaController@{SistemaConsultorioMedico.Controladores.CitaController}}
+\doxysubsubsection{\texorpdfstring{validaExisCita()}{validaExisCita()}}
+{\footnotesize\ttfamily static bool Sistema\+Consultorio\+Medico.\+Controladores.\+Cita\+Controller.\+valida\+Exis\+Cita (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sistema_consultorio_medico_1_1_modelos_1_1_cita}{Modelos.\+Cita}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Valida si existe la cita en la base de datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_aec641ac25357853b973d471fde9a8481}\label{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_aec641ac25357853b973d471fde9a8481}} 
+\index{SistemaConsultorioMedico.Controladores.CitaController@{SistemaConsultorioMedico.Controladores.CitaController}!validaExisFechaHora@{validaExisFechaHora}}
+\index{validaExisFechaHora@{validaExisFechaHora}!SistemaConsultorioMedico.Controladores.CitaController@{SistemaConsultorioMedico.Controladores.CitaController}}
+\doxysubsubsection{\texorpdfstring{validaExisFechaHora()}{validaExisFechaHora()}}
+{\footnotesize\ttfamily static bool Sistema\+Consultorio\+Medico.\+Controladores.\+Cita\+Controller.\+valida\+Exis\+Fecha\+Hora (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sistema_consultorio_medico_1_1_modelos_1_1_cita}{Modelos.\+Cita}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Valida si la fecha y la hora de la cita no están ya ocupadas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_a6b9c1deba3d9f167df85299ced7cae1e}\label{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_a6b9c1deba3d9f167df85299ced7cae1e}} 
+\index{SistemaConsultorioMedico.Controladores.CitaController@{SistemaConsultorioMedico.Controladores.CitaController}!validaExisFolio@{validaExisFolio}}
+\index{validaExisFolio@{validaExisFolio}!SistemaConsultorioMedico.Controladores.CitaController@{SistemaConsultorioMedico.Controladores.CitaController}}
+\doxysubsubsection{\texorpdfstring{validaExisFolio()}{validaExisFolio()}}
+{\footnotesize\ttfamily static bool Sistema\+Consultorio\+Medico.\+Controladores.\+Cita\+Controller.\+valida\+Exis\+Folio (\begin{DoxyParamCaption}\item[{String}]{folio }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Valida si ya existe el folio. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em folio} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_aa974d23995e6a004630d350317165994}\label{class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_aa974d23995e6a004630d350317165994}} 
+\index{SistemaConsultorioMedico.Controladores.CitaController@{SistemaConsultorioMedico.Controladores.CitaController}!validaExisPaciente@{validaExisPaciente}}
+\index{validaExisPaciente@{validaExisPaciente}!SistemaConsultorioMedico.Controladores.CitaController@{SistemaConsultorioMedico.Controladores.CitaController}}
+\doxysubsubsection{\texorpdfstring{validaExisPaciente()}{validaExisPaciente()}}
+{\footnotesize\ttfamily static bool Sistema\+Consultorio\+Medico.\+Controladores.\+Cita\+Controller.\+valida\+Exis\+Paciente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sistema_consultorio_medico_1_1_modelos_1_1_cita}{Modelos.\+Cita}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Valida si existe la paciente en la base de datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Controladores/\mbox{\hyperlink{_cita_controller_8cs}{Cita\+Controller.\+cs}}\end{DoxyCompactItemize}

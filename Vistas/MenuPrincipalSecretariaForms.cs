@@ -26,9 +26,10 @@ namespace SistemaConsultorioMedico
             AbrirFormHijo(new Paciente(flagS));
         }
 
+        int conteoBase = 0;
         private void AbrirFormHijo(object formhijo)
         {
-            if (this.panel1.Controls.Count > 0)
+            if (this.panel1.Controls.Count > conteoBase)
                 this.panel1.Controls.RemoveAt(0);
             Form fh = formhijo as Form;
             fh.TopLevel = false;

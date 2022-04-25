@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="namespace_sistema_consultorio_medico" kind="namespace" language="C#">
+    <compoundname>SistemaConsultorioMedico</compoundname>
+    <innerclass refid="class_sistema_consultorio_medico_1_1_citas_form" prot="public">SistemaConsultorioMedico::CitasForm</innerclass>
+    <innerclass refid="class_sistema_consultorio_medico_1_1_diagnostico" prot="public">SistemaConsultorioMedico::Diagnostico</innerclass>
+    <innerclass refid="class_sistema_consultorio_medico_1_1_informacion_medica" prot="public">SistemaConsultorioMedico::InformacionMedica</innerclass>
+    <innerclass refid="class_sistema_consultorio_medico_1_1_login" prot="public">SistemaConsultorioMedico::Login</innerclass>
+    <innerclass refid="class_sistema_consultorio_medico_1_1_logo_form" prot="public">SistemaConsultorioMedico::LogoForm</innerclass>
+    <innerclass refid="class_sistema_consultorio_medico_1_1_menuform" prot="public">SistemaConsultorioMedico::Menuform</innerclass>
+    <innerclass refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria" prot="public">SistemaConsultorioMedico::MenuPrincipalSecretaria</innerclass>
+    <innerclass refid="class_sistema_consultorio_medico_1_1_paciente" prot="public">SistemaConsultorioMedico::Paciente</innerclass>
+    <innerclass refid="class_sistema_consultorio_medico_1_1_preguntas" prot="public">SistemaConsultorioMedico::Preguntas</innerclass>
+    <innerclass refid="class_sistema_consultorio_medico_1_1_program" prot="public">SistemaConsultorioMedico::Program</innerclass>
+    <innerclass refid="class_sistema_consultorio_medico_1_1_recuperar_contra" prot="public">SistemaConsultorioMedico::RecuperarContra</innerclass>
+    <innernamespace refid="namespace_sistema_consultorio_medico_1_1_controladores">SistemaConsultorioMedico::Controladores</innernamespace>
+    <innernamespace refid="namespace_sistema_consultorio_medico_1_1_modelos">SistemaConsultorioMedico::Modelos</innernamespace>
+    <innernamespace refid="namespace_sistema_consultorio_medico_1_1_properties">SistemaConsultorioMedico::Properties</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Controladores/CitaController.cs" line="11" column="1"/>
+  </compounddef>
+</doxygen>

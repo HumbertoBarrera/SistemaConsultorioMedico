@@ -1,0 +1,788 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.3" xml:lang="en-US">
+  <compound refid="class_sistema_consultorio_medico_1_1_modelos_1_1_cita" kind="class"><name>SistemaConsultorioMedico::Modelos::Cita</name>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_cita_1a2835055af7a16d650faad3a5cb28c26e" kind="variable"><name>folioCita</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_cita_1af16d38f7e75b97bb6ad3a329a72ce704" kind="variable"><name>idPaciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_cita_1a94e5d4258a3b26049039205c07ebee1a" kind="variable"><name>fecha</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_cita_1ad8624cb9de731f3f0cec60238a7ba592" kind="variable"><name>hora</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_cita_1ac9ab705f6d37fdec492dd749335ffa57" kind="function"><name>setFolioCita</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_cita_1a298e613ec74cf1d471a0a2f133c3d0e3" kind="function"><name>setIdPaciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_cita_1a0ea2cbfa044dadcb228d542d869aff30" kind="function"><name>setFecha</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_cita_1aca40eb931efb15bbb97b87d3036be16c" kind="function"><name>setHora</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_cita_1a38bcbbcbe5c1ac063a3804ee5bbdb44a" kind="function"><name>getFolioCita</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_cita_1a11f3d3ba5e962a63aa033166a73de309" kind="function"><name>getIdPaciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_cita_1a3ccf20a43e9fbb5f70bf7eaed425bcdd" kind="function"><name>getFecha</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_cita_1acd7064ea3abcafc85524be34d9edc1e6" kind="function"><name>getHora</name></member>
+  </compound>
+  <compound refid="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller" kind="class"><name>SistemaConsultorioMedico::Controladores::CitaController</name>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1a73da5906fef17ed49f179cb819209b5e" kind="variable"><name>fecha</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1a499a6c7b3e1f973e93ddfe5adff73359" kind="function"><name>insertarCita</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1ab4de66eeb7912d40ea33f55a726cd9f3" kind="function"><name>EliminarCita</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1a5974bcb2b96807a316e5e1fa392e83c1" kind="function"><name>ModificarCita</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1a1497dce07f4217a2c1f26a136848737c" kind="function"><name>folio</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1ada180f401a119839a1b4228bc16d0a42" kind="function"><name>validaExisCita</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1a6b9c1deba3d9f167df85299ced7cae1e" kind="function"><name>validaExisFolio</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1aa974d23995e6a004630d350317165994" kind="function"><name>validaExisPaciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1aec641ac25357853b973d471fde9a8481" kind="function"><name>validaExisFechaHora</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller_1a8f8367796b359cbc599aef23c175f80e" kind="function"><name>CargarGridCitas</name></member>
+  </compound>
+  <compound refid="class_sistema_consultorio_medico_1_1_citas_form" kind="class"><name>SistemaConsultorioMedico::CitasForm</name>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1afef378d242b0108ba386763d8d9c9c99" kind="variable"><name>cita</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1ac476654c803c8954af1d79d3c8c10c4b" kind="variable"><name>indice</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a871d2d99de6f23614e4eda9e28057676" kind="variable"><name>components</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a1ad95dec27fb6efdacc93ebdfae5211a" kind="variable"><name>GuardarCitaBtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a373752e61873099742440679c350738d" kind="variable"><name>ModificarCitaBtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1af3114ab46ec4cb47abf2202ce3f2f61d" kind="variable"><name>EliminarCitaBtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a610bc2d03bd7723450c76ae1fe9c5063" kind="variable"><name>PacienteCitaTxb</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a5a83626f13130cc9403f56e4fa729bf7" kind="variable"><name>bunifuCustomDataGrid2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a6fe944dd71492f89638c7fa9db297fbc" kind="variable"><name>linea</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a48cf58cb303dd3537860b55d6fec6075" kind="variable"><name>bunifuCustomLabel2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a6f79f3199a044f01bb45d58df3bbde53" kind="variable"><name>folioCitaLb</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a3ace28ef0e62cbb4701e0e652f855779" kind="variable"><name>bunifuDatepicker1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a8cc384c034e95d573ff6d3ab65e959de" kind="variable"><name>comboBox1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a226a855f8b967c9f67a42330519f8b30" kind="variable"><name>AgregarCBtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a560402cd1349226c823e6243e656e73d" kind="variable"><name>errorDigit</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a0e4312b99da1441d06eb694ab1e734a3" kind="function"><name>CitasForm</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a1796230c5808b05207c84f3e8dfe2b15" kind="function"><name>GuardarCitaBtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1ad051e24927f78a64ac487fde746c64b1" kind="function"><name>CitasForm_Load</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1aac40737909f5d03f95162acc11734c23" kind="function"><name>EliminarCitaBtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1aeefac5aac9d34a999e320b2b6261eace" kind="function"><name>ModificarCitaBtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1ad1097aa1259ea4f21079229bf133dd90" kind="function"><name>bunifuCustomDataGrid2_CellClick</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a395f8b486760555c32264ef8330c264b" kind="function"><name>bunifuDatepicker1_onValueChanged_1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a22d16267d19007c6d4655e57ae13289b" kind="function"><name>AgregarCBtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1aad1ddcb0f679948a3426cb28403d4eca" kind="function"><name>bunifuCustomDataGrid2_Validating</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1ae634e9fe224e6fd401cc25867f543b92" kind="function"><name>PacienteCitaTxb_KeyPress</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a48ad04aaae333a534a59c005f912e77c" kind="function"><name>PacienteCitaTxb_OnValueChanged</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a05fad98c920210cb18e6f797fd3f9c56" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_citas_form_1ad69a27828e3dca9725f4831387badebb" kind="function"><name>Dispose</name></member>
+  </compound>
+  <compound refid="class_sistema_consultorio_medico_1_1_controladores_1_1_conexion_controller" kind="class"><name>SistemaConsultorioMedico::Controladores::ConexionController</name>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_conexion_controller_1a5b41130fb87ac6d6fe91a1050820d6e1" kind="variable"><name>connection</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_conexion_controller_1a20d16616d0e93fef0ab13a303ded8a47" kind="function"><name>Conectar</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_conexion_controller_1a60088cba3853f83ab0380731b9aac9ae" kind="function"><name>Desconectar</name></member>
+  </compound>
+  <compound refid="class_sistema_consultorio_medico_1_1_diagnostico" kind="class"><name>SistemaConsultorioMedico::Diagnostico</name>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a4141976ee1bda0bf0c4bbbc708b474b9" kind="variable"><name>idPaciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a2171f55ba6f7a32bbcaf075daf36fea5" kind="variable"><name>fecha</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a9195aa4dec475163b950e191c3a993a7" kind="variable"><name>indice</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1aab55412acc1e51e86a566147d5257f91" kind="variable"><name>diagnostico</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a0a6d31a2f5418195b4ac0a63449721ad" kind="variable"><name>pacienteExt</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a52385febc8fc2ef8ba480163fd7d0a1f" kind="variable"><name>components</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1aad3f352421a6f87de813ce336c92cf7b" kind="variable"><name>linea</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1ac6860dc99c351c1fa152872a19ed2588" kind="variable"><name>bunifuCustomLabel1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a0695b8a6fb506ce55170fa1d70fa7074" kind="variable"><name>FechaTxb</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1aba900847aa67f7ae557ae32476c2a142" kind="variable"><name>Descripciontxb</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a676ba5e033709f3eaf89da9c51065def" kind="variable"><name>guardarbtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1ac3bea25eea8b54b835ed5df04c72a7e9" kind="variable"><name>Agregarbtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a888f1369eb4bbb807567fc9528bfe64a" kind="variable"><name>BuscarCitaBtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a364f561c0e0c7a19f10c3cb9e1f3995d" kind="variable"><name>PacienteTxb</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a862ee754f20e48658cfba9de1dfa8d36" kind="variable"><name>bunifuCustomDataGrid1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a38b899366e6791b979de4486c4721439" kind="variable"><name>BuscarTbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1ae6cb7132e7613cf5095b394b0c3c1d5a" kind="variable"><name>pictureBox1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1ae53cc84d0145024b28c2f1a2d03bf2e0" kind="function"><name>Diagnostico</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1ae41ebc413d757f64a1db501effee1b44" kind="function"><name>FechaTxb_MouseEnter</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a02a7ac3ea8c3a0afdc9d27c23c4d5868" kind="function"><name>FechaTxb_MouseLeave</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1ad779c235f5d986cc9ccbb8c7bd4bfb62" kind="function"><name>Descripciontxb_MouseEnter</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1ae1844d22c99cce77f7dfd29cf78cbeed" kind="function"><name>Descripciontxb_MouseLeave</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1adcde6e66ead21da1623fa21ae95f7dcd" kind="function"><name>PacienteTxb_MouseEnter</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a09659211a4d00c37a9dc59e80dd629cb" kind="function"><name>PacienteTxb_MouseLeave</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a66161d8288ec653e0a821081a7b6a44a" kind="function"><name>guardarbtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a4b9a3caeb730c1a5a7996490961d5c64" kind="function"><name>Diagnostico_Load</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a89af0e5448f72b5ac2ee0e775efdb7fd" kind="function"><name>BuscarCitaBtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a551bdbc9de782d06f1472c6245b02d2f" kind="function"><name>Agregarbtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1ac13dff81c353d4f239ac0926f968f070" kind="function"><name>bunifuCustomDataGrid1_CellClick</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a802e55563a4bfa1c3fdb2eb271e6785b" kind="function"><name>pictureBox1_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1a758e5ec2a6dd63903f5d0e08686a0e58" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_diagnostico_1ab9556b7934500143c0b7a29c7b76f5dc" kind="function"><name>Dispose</name></member>
+  </compound>
+  <compound refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico" kind="class"><name>SistemaConsultorioMedico::Modelos::Diagnostico</name>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1ac64d3de07d82cbfec34da94788fa91a4" kind="variable"><name>idPaciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a14a571093884ae4f54e03981b667b79c" kind="variable"><name>fecha</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a01a253e2c982a6a64421fcf6e7a20d25" kind="variable"><name>descripcion</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1ac8b33e94caa83b3129981126c67ede9c" kind="variable"><name>folioDiagnostico</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a21f592ffbb14fee99500ca66d004f6b0" kind="function"><name>setIdPaciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1ae9d427d0562d3e672ba3cbe94c1d25a1" kind="function"><name>setFolioDiagnostico</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a6476359e6ab38374632b176036aaa924" kind="function"><name>setFecha</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a205b9c816224954d818f50ff897deeac" kind="function"><name>setDescripcion</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a0748a1ee883546928255b2a89f96b9fe" kind="function"><name>getIdPaciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a4856a3b1d9fb7945f3aa1f0bff82e0a6" kind="function"><name>getFolioDiagnostico</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a2d70c5dcda5e3313899186c94f299e81" kind="function"><name>getFecha</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a5dc3b89fabc13e3f694f6ee71b27f968" kind="function"><name>getDescripcion</name></member>
+  </compound>
+  <compound refid="class_sistema_consultorio_medico_1_1_controladores_1_1_diagnostico_controller" kind="class"><name>SistemaConsultorioMedico::Controladores::DiagnosticoController</name>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_diagnostico_controller_1a6d55f2981af238d5d28c529778691997" kind="variable"><name>ErrorConsulta</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_diagnostico_controller_1a0eeed5399ff6759b56dd0ef3c15fd165" kind="function"><name>insertarDiagnostico</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_diagnostico_controller_1a99b628462eaeac04f93e39a8d07b3e60" kind="function"><name>folio</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_diagnostico_controller_1a5d8de8045fa014c2f6afbdd5af1061be" kind="function"><name>diagnostico</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_diagnostico_controller_1abe2f7af70163d949aabf4c0a5e919ecf" kind="function"><name>validaExisPaciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_diagnostico_controller_1ac0b6b4bb26674e6944551a4bc3de9241" kind="function"><name>CargarGridDiagnostico</name></member>
+  </compound>
+  <compound refid="class_sistema_consultorio_medico_1_1_informacion_medica" kind="class"><name>SistemaConsultorioMedico::InformacionMedica</name>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1aaee772ef1963ff369c671b16ce06b98b" kind="variable"><name>idPaciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1aa85775d97ab6a6a4cc0596640d44173c" kind="variable"><name>flagME</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a17151a7044bede61f8ef05cf426577f5" kind="variable"><name>im1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a4cc8ffe3b1cfd6fc3943e301fd9a9460" kind="variable"><name>components</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1acf3e10dee838d0814c650aeaa84ad4ec" kind="variable"><name>dato3Tbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1afeec32eb63c630786e1a675f2a76260e" kind="variable"><name>dato2Tbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1aafc2eae46ac2193839d39d38bb2b2fbc" kind="variable"><name>dato1Txb</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a953a5953bc6ca788782eba5b0b51e9ef" kind="variable"><name>linea</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a7cfed6a1af2ead1769b8ffb04f352d87" kind="variable"><name>bunifuCustomLabel1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a8c68748b2fe2051e26cfd41a378ce659" kind="variable"><name>dato4OpcTbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1add5139691c4068bc61156713f1104c68" kind="variable"><name>dato5OpcTbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a3e1788ea3883a73761381073420d5aa3" kind="variable"><name>dato6OpcTbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a0b1c664a92e563565fbda21f6632589a" kind="variable"><name>dato7OpcTbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1ab8d6bc849db09a4d27b49be15ea234d6" kind="variable"><name>dato8OpcTbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1aa4fce2901e0a9b9ebfd2c27fdf04f9fb" kind="variable"><name>dato9OpcTbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1ae58d1f433c82e66dc6a27e3dad37ffea" kind="variable"><name>MasBtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1af524b6964b5333ffef27c35dcbfd4571" kind="variable"><name>buscarBtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a90237c8d14810b42b2eac10db7643c20" kind="variable"><name>buscarTbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a7f1cf2b7d5b5214f4fd1f320f63ce0f0" kind="variable"><name>pictureBox1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1afa4bc93d6343df51fd871da6371e66ef" kind="variable"><name>dato4ComboBox</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1ab0e650910fa459fa030e4ee023c6ce9a" kind="variable"><name>dato5ComboBox</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a22daed9472e81d57410c06f013279a5d" kind="variable"><name>dato6ComboBox</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a3c095fbcb3b7b71d2303ebf9ef6fdf82" kind="variable"><name>dato7ComboBox</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a0d46050193d036c0875d6cba9dd5c716" kind="variable"><name>dato8ComboBox</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a1ba209e1ac2d7c67b21577cd2083a12f" kind="variable"><name>dato9ComboBox</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a70ddac6536f49a373cae917314d2efd2" kind="function"><name>InformacionMedica</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a61a4bd8960eb3d3e0a37fe40b69b41e2" kind="function"><name>reestablecerCampos</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a27e250d3ff561bdfde4966d963543999" kind="function"><name>llenarInformacion</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a0a9c7c1fc302e372d7905dfe51d63616" kind="function"><name>getIndex</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1ae7d97663976033d79c5058e77c783cc3" kind="function"><name>MasBtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a83e733454860a874c778140d1efab8a8" kind="function"><name>validarCampos</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a342e12f5502d8588a7ef648e186b5f28" kind="function"><name>buscarBtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a17d360cbac10161e7e776b55040e360a" kind="function"><name>pictureBox1_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1ab48f5d823fff95862024f1cebe94fc1d" kind="function"><name>dato4ItemOpc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a5c4a8497ee2848775a1fb3f9fd9225c5" kind="function"><name>dato4OpcTbx_EnabledChanged</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a18e251d2e29a9b9a2f646ae11fadffb4" kind="function"><name>dato5ItemOpc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a7f2a96ad5364a512473d4a76688aea54" kind="function"><name>dato5OpcTbx_EnabledChanged</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a04e1643b25d73507513422c537d44a80" kind="function"><name>dato6ItemOpc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a2b54d5a4f7a6773d16085bda6465d2ce" kind="function"><name>dato6OpcTbx_EnabledChanged</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1adcc2fde5158efae9fba4d3ac4f0bcad5" kind="function"><name>dato7ItemOpc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1ae9267dd35a5ef31dcdc850b965ad8e06" kind="function"><name>dato7OpcTbx_EnabledChanged</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a3b0f72465e9fdbad17f77f7db021fd2b" kind="function"><name>dato8ItemOpc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a851b5fcc04393bfa5d418236f91d5f08" kind="function"><name>dato8OpcTbx_EnabledChanged</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1ae155699ed0b3b1cf3b46394502bca757" kind="function"><name>dato9ItemOpc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a92dfa5aedcf4b548ca2182f0c87b3032" kind="function"><name>dato9OpcTbx_EnabledChanged</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1ab2390bcf1d65ff7ab74600b8bfba9076" kind="function"><name>bloqueoBtnMas</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a96cba091b401004d9f7333c0d2e7fd59" kind="function"><name>MasBtn_EnabledChanged</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a30776db940c9b5f84e35eae479b79ef1" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_informacion_medica_1a53d8813d5f99e483945cc5cd4c765651" kind="function"><name>Dispose</name></member>
+  </compound>
+  <compound refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica" kind="class"><name>SistemaConsultorioMedico::Modelos::InformacionMedica</name>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ac625fa9e8c94c3282bfff526d571533f" kind="variable"><name>idPaciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a227f5c81c0406ca715bd499d355380a0" kind="variable"><name>dato1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ab4a2fe1e1bd383f3fc0b90b25f33c2f6" kind="variable"><name>dato2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a0cac1f509c6458360265e323ed95c7a4" kind="variable"><name>dato3</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ac14867cdf8f614721288ffe18e816452" kind="variable"><name>dato4</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a8d94a6d584cdc4f61f67d2b108a5e7ed" kind="variable"><name>dato4Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ad6cac6524ce6bdff9a42d43149adea50" kind="variable"><name>dato5</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ac54804214327aa0a4d5231e4b934da18" kind="variable"><name>dato5Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a08f1c579d7b776343d863a56c7ec9f6d" kind="variable"><name>dato6</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a6d0d985cf4a13e0e68d53be11dfc31ce" kind="variable"><name>dato6Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1abd635b7248b35a7d958344f247da08f7" kind="variable"><name>dato7</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a8bcae74a5020bf182bfa40c0e8f60d6c" kind="variable"><name>dato7Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a57ea0e3945dfd1c9ed703efc542d9479" kind="variable"><name>dato8</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a36c3b2616c8fa5c7db77aaf2dc561bba" kind="variable"><name>dato8Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a50e7dd92e521f2e890715a62ee23de16" kind="variable"><name>dato9</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a1175ba78a23cb4f06477fbe8e45fb99a" kind="variable"><name>dato9Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1adff93f200dc7e89f9f2107399f1ca3be" kind="variable"><name>dato10</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a2d4535119ab70c2aa1ad26089b219484" kind="variable"><name>dato10Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1afc14d67b7d06453fc495ae46fb346d7c" kind="variable"><name>dato11</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1aed5f72a59303bf50155f26719bb7ec66" kind="variable"><name>dato11Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a7fc63a6cd86cb935cd9c599c61f3da67" kind="variable"><name>dato12</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a98875e0c63b0267653ddb37d4874a98a" kind="variable"><name>dato13</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a276e2e567d157d7bf4fa7553b8a27c92" kind="variable"><name>dato13Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1afa13d15d0d17a2a2ae466478272292bf" kind="variable"><name>dato13Opc2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a775ac90256926c55295888cbde210ed7" kind="variable"><name>dato14</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a1b185ce033b90b386831578abe6a21d9" kind="variable"><name>dato14Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1afdcfc4e247d791924f51aa62a8e9ca72" kind="variable"><name>dato14Opc2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a829f61273b13b94e8ee077d80f0e2fc8" kind="variable"><name>dato15</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1afa561226435f33ede3e849d9001f7887" kind="variable"><name>dato15Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a513cbb3a3f203cf1b5048190a8f2838e" kind="variable"><name>dato15Opc2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1afaf0c72c960ed39b71f5d0dbd2130184" kind="variable"><name>dato15Opc3</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a2bdbd9fa5d7f5725e5f0bf0ec483796f" kind="variable"><name>dato15Opc4</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a093cb6ba4f15ebdfc5692e7e9d5f8d7f" kind="variable"><name>dato16</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a247cbfdeaaa5d5d622a7d50207e2a1fb" kind="variable"><name>dato17</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a5678ac607017dac8cbce13481fd01345" kind="variable"><name>dato18</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ac4e75da0bd8e58bb00351c18d4a8d9f8" kind="variable"><name>fecha</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a03dc03f76d6946611451cb38880b3fc6" kind="function"><name>InformacionMedica</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a7b74bf6e5a39947169e2725c4d579b78" kind="function"><name>InformacionMedica</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a4cacdcfbcf2abc065b1899987cc59edd" kind="function"><name>InformacionMedica</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a33342d2c48a0334ab65c0cf9af02bd3e" kind="function"><name>setIdPaciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a35bb0cc3c46f2f837f8f3630d4b6663a" kind="function"><name>setDato1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a1d2ad2a16a338de876c1f2f2448954d1" kind="function"><name>setDato2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a16aeae3781e6bf9059c6a599dd6551d9" kind="function"><name>setDato3</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1aeeec76551bb51ae064cdd396a142881b" kind="function"><name>setDato4</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a77bb9b20f5a6ffa3fe84ae0fbc8bb563" kind="function"><name>setDato4Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a43bba231771bdd91b27d42e86954e3e4" kind="function"><name>setDato5</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ae644ff3baac0adb94cdfa00788ae78ae" kind="function"><name>setDato5Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a4f00f3d89fa87602e26fd82bdaf5462d" kind="function"><name>setDato6</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a2bc3acd2989d4f75e6ed4f45caa3e230" kind="function"><name>setDato6Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1aeee23668ee1756c20fa9dc244450c518" kind="function"><name>setDato7</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1abf8913e16657187053799b871a7ebecd" kind="function"><name>setDato7Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a460c47246ce42939630545c4bd7d6149" kind="function"><name>setDato8</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ab72caa2ebf071d1f07fe3f37c04fa917" kind="function"><name>setDato8Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1acf9a3ef60227db2a9698ae55d9d7e241" kind="function"><name>setDato9</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ab578df1e64803fbda1cc0bcea0f5752d" kind="function"><name>setDato9Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1aafb01121529608b9d6e7ada14a6dfa96" kind="function"><name>setDato10</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a7d88d24738fc6237d205c7dfb7e18d0a" kind="function"><name>setDato10Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a920f05cb3074a8698ce0ef72eab1d655" kind="function"><name>setDato11</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ac3f951dd4d215fb93e23d41a591a3664" kind="function"><name>setDato11Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a6ed8e3fd89298df5fedf3bed73bca029" kind="function"><name>setDato12</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ae46ac94988e2344ecba1f3e20d4a56da" kind="function"><name>setDato13</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ac519a4edae3a06be974e730bcbc78e2d" kind="function"><name>setDato13Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1afa22ea471c3fc47f835d5d1c3d55a4a7" kind="function"><name>setDato13Opc2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1abd2cd829f0f3aa64e46febdda1c2e7c3" kind="function"><name>setDato14</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a38959dc8ee9d3afee66329d4d70843e9" kind="function"><name>setDato14Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a8c650bd862cd8cdc9afd27ed644b9b31" kind="function"><name>setDato14Opc2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a8090e26bb95d46aefb726d6c25b2e6e4" kind="function"><name>setDato15</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a00de89aa83c89b53b2963a4964bc00cd" kind="function"><name>setDato15Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1aa6dcdd146986c400883d7e8051ac95ed" kind="function"><name>setDato15Opc2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a34d74305fb1947c75bfeb76623c531ad" kind="function"><name>setDato15Opc3</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a1bc319107a4506a6a438d13227260533" kind="function"><name>setDato15Opc4</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a445145133f5f56710c27f6a75089194f" kind="function"><name>setDato16</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a1c090aa3884400bb831cdd41328af0b8" kind="function"><name>setDato17</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a2c7f77a0097dd9394e18208e169a4d3e" kind="function"><name>setDato18</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a614cb2985d87a849066b7a1e7af4333d" kind="function"><name>setFecha</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a4e9b745345eb8446a9e42865d2b58b27" kind="function"><name>getIdPaciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a4105377382dfc29134dd47d817cbe40d" kind="function"><name>getDato1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a876292aaf0e6fd5f6a697af967e2edba" kind="function"><name>getDato2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a97628847ae11e062ad742c434af08e2b" kind="function"><name>getDato3</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a41d548bfa52f8052bee7714f97529ade" kind="function"><name>getDato4</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1aec218e38f80eec8858c04d5da89398e3" kind="function"><name>getDato4Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a532c3d21fc47b98a048e5cdde50fe95a" kind="function"><name>getDato5</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1af4e7eb6e206ed4444e9493fe700318cb" kind="function"><name>getDato5Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ad33f0814a5373d789a9a4dc1c48546e6" kind="function"><name>getDato6</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1af573d879a77026164628f0084a7da535" kind="function"><name>getDato6Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1adcf01f2103d8f4ebbf03b7b1359bd832" kind="function"><name>getDato7</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1addcb19b86d1940d3351965f17d3fae48" kind="function"><name>getDato7Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a6de310cf3e3399a6422037413e0a5fbb" kind="function"><name>getDato8</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a3477fc9dd1115972aa257ea003f0e843" kind="function"><name>getDato8Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1af251c43e5c5dacbe892c962639006472" kind="function"><name>getDato9</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a96ed94b6561cf7c153bfb7f9c3a67a87" kind="function"><name>getDato9Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ae8eecb4772453b86f9671be3829d3ac7" kind="function"><name>getDato10</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a4e9f6185688a65ffbb3b41ca94c82f38" kind="function"><name>getDato10Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a50cae790722d104d9a18ae425c35bc98" kind="function"><name>getDato11</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a4c79acbfa32b153e529dd938ee8e041d" kind="function"><name>getDato11Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1aca8a2bd9f5a728d98dad62170beffa4b" kind="function"><name>getDato12</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a74e9f2b6def493e711d1ed698e1896de" kind="function"><name>getDato13</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a5f813053c8474e5d5d0661d71f24cda7" kind="function"><name>getDato13Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a2f86352066c9cf2a65a9781f486890de" kind="function"><name>getDato13Opc2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a868b679716bb3dd8650ec3ec218cf7d5" kind="function"><name>getDato14</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ab2900b967b169fe2567961f54b4ab4d9" kind="function"><name>getDato14Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ab91e7f7bed55ce47f8aa1d315ede0b27" kind="function"><name>getDato14Opc2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a00ccc706b3d8937992bf983c1dda8fa2" kind="function"><name>getDato15</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a07334d95ed1cb82706f777e0cba4e6ec" kind="function"><name>getDato15Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a866f8b98b7017d4d5ef52a778dcb8495" kind="function"><name>getDato15Opc2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1adabeabea236ec1af808008c0ee00e5fd" kind="function"><name>getDato15Opc3</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1a7b497b2a0434308c12ccaad649480442" kind="function"><name>getDato15Opc4</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ae89d68df3b7d23c7ec5196d9ebd9418b" kind="function"><name>getDato16</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ac70bb7f28a70d064e146041c8dc3b02c" kind="function"><name>getDato17</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1abb5e39ad415814e3be42f666a94655fc" kind="function"><name>getDato18</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_informacion_medica_1ac24c1034658ef8ef82ffcb3195c9997c" kind="function"><name>getFecha</name></member>
+  </compound>
+  <compound refid="class_sistema_consultorio_medico_1_1_controladores_1_1_informacion_medica_controller" kind="class"><name>SistemaConsultorioMedico::Controladores::InformacionMedicaController</name>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_informacion_medica_controller_1a2a308b53b40be1651bb1257086d19429" kind="variable"><name>intTuplasManipuladas</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_informacion_medica_controller_1a4b62f7ac4a27d9c49ec6b0af8da54061" kind="function"><name>AltaInformacionMedica</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_informacion_medica_controller_1a8a1da2eeb377838363cb2e49d17ff265" kind="function"><name>ModificarInformacionMedica</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_informacion_medica_controller_1aa4436f41fc5c841fb176879efca6aaae" kind="function"><name>EliminarInformacionMedica</name></member>
+  </compound>
+  <compound refid="class_sistema_consultorio_medico_1_1_login" kind="class"><name>SistemaConsultorioMedico::Login</name>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1a6d3e68f8e37fa518ad8bc729d65b9495" kind="variable"><name>components</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1ae33ac983c7fcc3f598a63be77a9b6e66" kind="variable"><name>panel1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1aa80acaca2f21b5b52897ff1b92876aaf" kind="variable"><name>usuariotxt</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1a7fe9006091f93cbfcbdad349d35bce81" kind="variable"><name>contratxt</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1a372a1fd2943a879c48725c0587735e84" kind="variable"><name>label1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1afef19aba8a1c7ae15ddfbd55352cb00c" kind="variable"><name>loginbtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1aee9b0ef61649e1a9bdf6e416949428fd" kind="variable"><name>pictureBox3</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1a10abcbeff6a8a478b805c322d3a9c3dd" kind="variable"><name>shapeContainer1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1a1c84521624e648dac70b72f275d8dcc4" kind="variable"><name>lineShape2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1aee8fc1825009ae88636284b66f2fcb48" kind="variable"><name>lineShape1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1a5a646c6b378363dff4f886a79eff5e90" kind="variable"><name>pictureBox1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1ad4635baab818a46fa9958af0cd78e094" kind="variable"><name>pictureBox2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1afdd2ae53b14c0cc0571136ab3a7ade54" kind="function"><name>Login</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1a009f71c54b7df26097256bafc84e6eb8" kind="function"><name>ReleaseCapture</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1a5cc3f694debf7a6a67a7eadd89d7325e" kind="function"><name>SendMessage</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1ac5140eec9ee8b8af4a134cc8f6ae747a" kind="function"><name>usuariotxt_Enter</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1a4e61edf6a35062dc83939493b304f8e4" kind="function"><name>usuariotxt_Leave</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1ae1f8e9849a0df7bdb949bbc0314e254e" kind="function"><name>contratxt_Enter</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1a53628900c6234eba0f7a96251b37f9cc" kind="function"><name>contratxt_Leave</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1a72dc3a18582524b7be14238a33db6b47" kind="function"><name>pictureBox1_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1ab971a00b54dcf07aa753179643628cb9" kind="function"><name>pictureBox2_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1a8acaacf929bc9e06b0c010bf9282ce1f" kind="function"><name>Login_MouseDown</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1a30ced06abf1053a8cabdf045b4ec0e31" kind="function"><name>panel1_MouseDown</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1aa5bb05511fe53f7840a1c6b4ebd5a364" kind="function"><name>loginbtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1a6848daa223d3cb5c2048cfc237d36ecf" kind="function"><name>linkLabel1_LinkClicked</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1a23ddbc1038f8970a8c250e696a21a6a2" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_login_1ae4fdb56e498070045c55a9f58a756fe0" kind="function"><name>Dispose</name></member>
+  </compound>
+  <compound refid="class_sistema_consultorio_medico_1_1_logo_form" kind="class"><name>SistemaConsultorioMedico::LogoForm</name>
+    <member refid="class_sistema_consultorio_medico_1_1_logo_form_1a5eb928ed9f267b93481b8936063d5506" kind="variable"><name>components</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_logo_form_1a8211f2b2eaf7a358197f2a61ce711441" kind="variable"><name>pictureBox1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_logo_form_1ab4fbfe715c7719183605810ff334b7bf" kind="variable"><name>label1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_logo_form_1ab7217b9bc2a831fe21bef077fbcd215b" kind="function"><name>LogoForm</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_logo_form_1ad3044f3612b92ea78e03344b8d3f8e86" kind="function"><name>pictureBox1_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_logo_form_1a966c625c6a01b66b0f82a4e074f7e739" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_logo_form_1a8a51228d1808538bd886ea1cc22c1187" kind="function"><name>Dispose</name></member>
+  </compound>
+  <compound refid="class_sistema_consultorio_medico_1_1_menuform" kind="class"><name>SistemaConsultorioMedico::Menuform</name>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a456021006f0441f948ba49bf17593521" kind="variable"><name>idPaciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1aa8cc8a6bdf2758338b7a2cc923fa275c" kind="variable"><name>flagME</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a2bfd2b6a925a1bbc3288c6642cf3dc47" kind="variable"><name>conteoBase</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1afc41de0378e18a39f875b334f68e4219" kind="variable"><name>components</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a6079f92cbb4e2fdb1f11b2255ecdd1f0" kind="variable"><name>contenidoPnl</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a6f73b9ed56dc328e91a21a8ecc984201" kind="variable"><name>contenedorMenuPnl</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1afe0ca88a7c30eec57134e37a81005a45" kind="variable"><name>menuTopPnl</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1accd4757d7f6c71c81cdf8f18b8ae191b" kind="variable"><name>Restaurar</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a8ee7181d3233cdd1d285b0a5c238553c" kind="variable"><name>Minimizar</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a9a1a35966d82f81401bc3f0fac1ec6ba" kind="variable"><name>Maximizar</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a68257a1e0d05ed6e08a4d088df6fc25f" kind="variable"><name>Salir</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a2e6de6acfe4ec7697b1ebececa6fd7e6" kind="variable"><name>label2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a3329f10c505d5db8591f3a6adc82b6bd" kind="variable"><name>MenuDesplegableBtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a6bf47dfc0475d614d9cae3b23c7c9bc1" kind="variable"><name>Sidebar</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a04435cdb905950b56fe5f8903b9f93ad" kind="variable"><name>diagnosticoBtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1aba3076e7a86caa7219bd8ef8f21b50f3" kind="variable"><name>citaBtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a082c10e97130e0063f9e4642f23554bd" kind="variable"><name>Pacientebtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a2851dd947b181ef64b4304c1824769fd" kind="variable"><name>linea</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a0a6fb1834b00326908c5b1952afd5d85" kind="variable"><name>label1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a485d943f866ea23fb0dbc967d417053d" kind="variable"><name>pictureBox3</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a37a204b97f507777ce39cd60f2584c19" kind="variable"><name>curvaTablero</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1ab8fc5c0301b85d9bd0bc53efabfb36a5" kind="variable"><name>AnimacionSidebar</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1acb300fc4356fe6a9bfa2f30a52297211" kind="variable"><name>AnimacionSidebarAtras</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a3a693f7a3a28473553a51bc7c104100e" kind="variable"><name>bunifuElipse1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1ac3275cd2a04c82929fc28f37c49df8e3" kind="variable"><name>Mover</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a80508a4e606cbf4ef641c66e80294e89" kind="variable"><name>InformacionMedicaBtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1afceb3e06c5d826ce26a28d4941192491" kind="variable"><name>bunifuElipse2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a3f0062dcc756426b174f0e0ef8c6b7d1" kind="variable"><name>logoutBtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a015ecf73d5fe3c811262adfcb5d4e1b1" kind="variable"><name>panel1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a25209565e4ec712225416aa27e5897ec" kind="function"><name>Menuform</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a719d96df15ce05f630de320f76537fda" kind="function"><name>Salir_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a484debc5c778283082528c74e9dcecea" kind="function"><name>Restaurar_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1afbf5d99b04de945522e11c59f00d0c56" kind="function"><name>Minimizar_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a1589563a388fa91419d236195a68f08b" kind="function"><name>Maximizar_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a5bf918bab87b7c2331f6ed2c67aa6796" kind="function"><name>MenuDesplegableBtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a1fce7a4f3d507f939835f743fb46a2c3" kind="function"><name>Pacientebtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a6d6036cb587b8f954bfd10f5e8db9bf9" kind="function"><name>AbrirFormHijo</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a4cc484ad9586d80f8b5241d5407aadf2" kind="function"><name>AbrirFormHijo2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a0617a2226514e0799fa0aa40b2f93201" kind="function"><name>citaBtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1aa3b194b94b3d513b23c21a6160406907" kind="function"><name>pictureBox3_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1ac3602302cbce41ab0f46133dd723c7fa" kind="function"><name>label1_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a1236c556bd5ff077d15442918c2e8e13" kind="function"><name>diagnosticoBtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1ab3a804f4d9fc192f9fc8bc8aaaf167f9" kind="function"><name>InformacionMedicasBtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a795846201d6aec461eb8d88761d3b823" kind="function"><name>InformacionMedicaBtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a0d2bde92016f231e723e02236c764bc8" kind="function"><name>logoutBtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a492e2a82c6bc045d0a846c1a3f6988b6" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menuform_1a1a211f8d3492f898545d7b937bbbb0fb" kind="function"><name>Dispose</name></member>
+  </compound>
+  <compound refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria" kind="class"><name>SistemaConsultorioMedico::MenuPrincipalSecretaria</name>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a0130b99daff29b9d4f515ecd100c99a0" kind="variable"><name>idPaciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1abff97ee232052a61392d0e82bf8fb289" kind="variable"><name>flagME</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a34fc9dd9c7f853396fb54d7313a60d7b" kind="variable"><name>flagS</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1aa910847a3fe552fc87debca051ff7077" kind="variable"><name>conteoBase</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1ad43c5d953a8662203b7be6f3a0a347ff" kind="variable"><name>components</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a6e978009ffb5554859e7c6672ab33901" kind="variable"><name>MenuDesplegableBtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a4c906bcba34bb641f22dd0a14a9a8c24" kind="variable"><name>citaBtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1af255f1d95517654ef49531a8c9d6e867" kind="variable"><name>Pacientebtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a3a6f467510e664ba3c2522146ad8a8e4" kind="variable"><name>linea</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1af96d99088de97578d20e997dbc034c3a" kind="variable"><name>label1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a323f84a74a0957993e621ab2be7c4285" kind="variable"><name>pictureBox3</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a7f26f2097284bd1467c79db0087a6166" kind="variable"><name>contenedorMenuPnl</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a619ec1dc8ed3060cc8e613db4c7eaa0a" kind="variable"><name>Sidebar</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1aa07eb3ff78cd3b690be740e1580b97bc" kind="variable"><name>contenidoPnl</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a9324aeca2111db41a6c7efcd7c36b58b" kind="variable"><name>label2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a6cf3d31af8d1bb69ee53e9264da4d3d5" kind="variable"><name>menuTopPnl</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a90fa92c310f52a93c9f3227e103a7740" kind="variable"><name>Restaurar</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1aac421a8fb6feec411095c7dd0c849f62" kind="variable"><name>Minimizar</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a7ebbd633d9ae0dd4cbcdfde24290e1a1" kind="variable"><name>Maximizar</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1af239f7b97b9b905ebad6af367ce81c87" kind="variable"><name>Salir</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a2959354623399b28bbee62043dacd072" kind="variable"><name>AnimacionSidebarAtras</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a8f72aacc40e29f616ab7f054c1ddb8a1" kind="variable"><name>Mover</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1adf6d6f115a35a5e0f58a5050fb3c079b" kind="variable"><name>bunifuTransition1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a9ef4db295140608c8aa93919a3dfc6f1" kind="variable"><name>curvaTablero</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a7b491af0f2a650453673cab93c93995f" kind="variable"><name>InformacionMedicaBtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1abcefb4359ef9202e3a5fe46826a2c9fb" kind="variable"><name>logoutBtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a1dc83c1f4c51090454be9ebe57698477" kind="variable"><name>panel1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a78d9b1282f31faa33ea59752fa548b90" kind="function"><name>MenuPrincipalSecretaria</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1abd29ca26c70fc4f0d8ac3aa64570b41d" kind="function"><name>Pacientebtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a90f57065b316775232493afdf14a28db" kind="function"><name>AbrirFormHijo</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a3617aa1d2d8b4fcfcc161d2061280837" kind="function"><name>MenuDesplegableBtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a7cbf34bca0bff5af78a0aa35e07d4b5f" kind="function"><name>Restaurar_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1adf4c55eea086b4acafe3bd22f023417a" kind="function"><name>Maximizar_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a897ba78326753468201ea9f53df385dd" kind="function"><name>Salir_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1aa68441e025f38225c7ad5e8eb4fdca30" kind="function"><name>Minimizar_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a92a2c36aef24f1cae4f2e98a66eef2d7" kind="function"><name>citaBtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a11b5ba862d4c6583b879aa8e62f6f57d" kind="function"><name>label1_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a04300b92861b964c032abedbb5a158c4" kind="function"><name>InformacionMedicaBtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a9e7e4e3785a8615fa5051769a5d8f82d" kind="function"><name>logoutBtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1ac2e489395ffb91f6fabf25a4fe439514" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_menu_principal_secretaria_1a70def1df1d2e69b940aefd9be0650953" kind="function"><name>Dispose</name></member>
+  </compound>
+  <compound refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente" kind="class"><name>SistemaConsultorioMedico::Modelos::Paciente</name>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1aa6fdcbb796d4a8c1d3e87215d49239e9" kind="variable"><name>idPaciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1a43ddc442bfe9ec728087eff762a8c046" kind="variable"><name>edad</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1ac0e6cb070138cebf863e44b890908123" kind="variable"><name>nombresP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1ab630c727174ca4597ca1ca5996eac3e6" kind="variable"><name>apellidoPatP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1ac08d0e1608bf409bacffe9ec357ea0f7" kind="variable"><name>apellidoMatP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1a0f41c9d8c3aa31b9d7bf1abc7fe63b2a" kind="variable"><name>lugarNac</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1ac38adf434ab669a8433c9d81d554136f" kind="variable"><name>direccionP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1ad9c4e2bdd7a2b8a9992411908e7097ef" kind="variable"><name>telefonoP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1afb2bf3fc86ae778dcb6b592080abfab9" kind="variable"><name>emailP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1a6d6a24c4392fd993c16b858959c5666f" kind="variable"><name>trabajoP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1ac11fb44bfa86af81136d5bb90dddde4c" kind="variable"><name>telefonoTrabajoP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1a14d8ffe47ec5b17c85eda4f5a84e5e59" kind="variable"><name>lugarTrabajoP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1a1b940707b8003ebf4f00315082b849c8" kind="variable"><name>fechaNac</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1a5ede202a6149327340399d98d7ed68c2" kind="function"><name>Paciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1a22cb7518002350cc599ec05dde7ae3d0" kind="function"><name>setIdPaciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1aef4eebad5e2656f0e134c1aebfc37a2d" kind="function"><name>setNombresP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1a6356234b8213fae4aa8e15d4fd728fd5" kind="function"><name>setApellidoPatP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1a3161c2e820f910e8724335474337d816" kind="function"><name>setApellidoMatP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1aec3d7639a1cc42562581654273dedac0" kind="function"><name>setFechaNac</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1accad9559a4c8e1d53557decfcdc60016" kind="function"><name>setEdad</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1a77d2dea699e2762210c350ee38b202fa" kind="function"><name>setLugarNac</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1a0712a9c2406b5289db671dc4af1deb56" kind="function"><name>setDireccionP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1a49a4f48e7e8a99becbe1c38c973a8afd" kind="function"><name>setTelefonoP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1ae81f4e02a8ed35ea6577ba0c1bbff87d" kind="function"><name>setEmailP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1a10509507a2cbc7c4a1e211c6861ed6ec" kind="function"><name>setTrabajoP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1a5164207014c2821a78cd1c0afcd8ed75" kind="function"><name>setTelefonoTrabajoP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1a3d623d4d7c1f84978f03deac0da5702c" kind="function"><name>setLugarTrabajoP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1abf1251f64a2b4aa733bf0869ee5dcf9a" kind="function"><name>getIdPaciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1a107cd2a98b9c76925cac4e0cc12f2a65" kind="function"><name>getNombresP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1a84bc7945d607051be5dbe34a52f3e42b" kind="function"><name>getApellitosPatP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1a76d07c8aae78b6fafb89418d10cfe5b9" kind="function"><name>getApellidosMatP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1a31be2cc2670af7acec153b2164637b88" kind="function"><name>getFechaNac</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1a2782c134d488095ab981477e5a2b08a4" kind="function"><name>getEdad</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1aa69e23da5dbd19876739102ff1649213" kind="function"><name>getLugarNac</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1adda092b9327636c31a2c37d434c61924" kind="function"><name>getDireccionP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1ade0af30add2aba6cb3378a4d65ed3acb" kind="function"><name>getTelefonoP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1a682e96a8be83ba27e62aa00b32d1251a" kind="function"><name>getEmailP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1adadb7611f398522ce50050ee5ec06f9c" kind="function"><name>getTrabajoP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1ac64d29bde65c27a4c59752d88b4c833b" kind="function"><name>getTelefonoTrabajoP</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_paciente_1ac37b9bb707fc12b1acccf6c317e7ca4e" kind="function"><name>getLugarTrabajoP</name></member>
+  </compound>
+  <compound refid="class_sistema_consultorio_medico_1_1_paciente" kind="class"><name>SistemaConsultorioMedico::Paciente</name>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a6a4049f3cf3946b1812a094a56194894" kind="variable"><name>curDate</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a321e86aa9e8cb9fa9808ac3f1bebbe2f" kind="variable"><name>flagME</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1ad959efc198fe7d330047894f0967bd50" kind="variable"><name>flagS</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a9200674fb426c30d3e3c66c889d43b4b" kind="variable"><name>indice</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a11faa57134f315301302f87121de927c" kind="variable"><name>paciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1ae59c89dea74e04ea3a1eef780511c534" kind="variable"><name>components</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a0a452adec1f23153434af20bfb8b6a5c" kind="variable"><name>EliPacienteBtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1aecd7011e5da11c600ca6e7278360584a" kind="variable"><name>BuscarTbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1acd0086b7188831db7a5f471e9493c3fd" kind="variable"><name>bunifuCustomLabel1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a06bd3cbb74a4eeba06f6800c7ef2ca23" kind="variable"><name>DiagnosticoBtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1af6bf893817b5b520c38b46f041d4f68b" kind="variable"><name>InforMedicaBtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1ab68e39ebaac36a4ef9ac4baef47c1255" kind="variable"><name>ModifPacienteBtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1aa4f619dfcb94c50357a1049088eef3da" kind="variable"><name>guardarPac_Btn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a28d0232ac9c6dcca8f66560b5fe9fbc0" kind="variable"><name>NombreTxb</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a61b7362a09e789f52a92ffb907080afa" kind="variable"><name>LugarNaciTbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1ac10058699f869503c56f5851c19e08e5" kind="variable"><name>DireccionTbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a40e6ffe84c1cd5b18e1772f94e92f93a" kind="variable"><name>TelefonoTbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a37cc990c0de10478439157865126ed57" kind="variable"><name>CorreoETbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1af090ff00626138d4aa1d5ecff0bbc657" kind="variable"><name>OcupacionTbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a2ce9dd06434065e206369f50fc6847cf" kind="variable"><name>LugarTrabajoTbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1aed12dde2bf9293d1e5bfe48a6ab3d3a9" kind="variable"><name>bunifuCustomDataGrid1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a7ea72ca347143250bf8f2c5e6b59ad60" kind="variable"><name>linea</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a705f195e5b0fa742f66bb07919c4d6b2" kind="variable"><name>ApellidoPaternoTbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a1ac88e15015443f031fce1411f280e50" kind="variable"><name>ApellidoMaternoTbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a173c172d374fc1460c9ae2bda3b7d1d8" kind="variable"><name>IdPacienteLbl</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1ae07787fe68f042337307072dbb016928" kind="variable"><name>fechaNacDatePicker</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a70a06060d5e81839a1ae8d933d2d02e9" kind="variable"><name>correoErrorLbl</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a8063e5c9cdba33318a4b116f509c79aa" kind="variable"><name>errorDigit</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1ac2502fedf5b96f5818804fa463fedb6b" kind="function"><name>Paciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a530e823a1782e5219a0f386c1749cc3e" kind="function"><name>isNumeric</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1af67fb3843d2798739bd3f7dbf11b75dd" kind="function"><name>BuscarTbx_MouseEnter</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a2699c06bacf1f6f3d4ed018c7470289a" kind="function"><name>BuscarTbx_MouseLeave</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a1f7870519c62c93fad3fbed955f9abbb" kind="function"><name>guardarPac_Btn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1afa9623e74091982bf30ef293795d9df5" kind="function"><name>PacientesForm_Load</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1ac6b618c0c47e0ddbd6408d0a8d2e6ee1" kind="function"><name>DiagnosticoBtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a81092a959d33c4e03b13893a0fb58899" kind="function"><name>validarCampos</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a9f09dcd60ac6434e13674d13121105fe" kind="function"><name>reestablecerCampos</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a42ca361e578fc33133d09c169fcee103" kind="function"><name>InforMedicaBtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a420cb0e8a124ff04e26d61d0ce2c5639" kind="function"><name>ModifPacienteBtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1abfca1b79356ecc4184a6e901e66893e6" kind="function"><name>ActualizarTabla</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a7fbb20be1e25db0366703638754d5080" kind="function"><name>llenarInfoPacientes_DataGrid</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a362737a99ab35cef0748d42425b26017" kind="function"><name>bloqueoBtnGuardar</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a4f1acd6aa0493ef8e52ae41d1214288a" kind="function"><name>isValidEmail</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a9bdf92873d379f63461f7eb158a8bf7b" kind="function"><name>verificarEmail</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a2f7b5acdb9524e6756e541ef4bfc9569" kind="function"><name>bloqueoBotonGuardar</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a6eeab53ff8a4257c8914877e475ab1d5" kind="function"><name>bloqueoBotonMod</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a822b924c65568ae77df3f674ffea2d6e" kind="function"><name>bloqueoBotonEli</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1ac8bdaf6d1988eb68333bd0bb03d49e9b" kind="function"><name>EliPacienteBtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a23612dd861b55ae0ea0e90478378f0cc" kind="function"><name>validarNumeros</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1ac65285183bc6f9454f72124006a49d93" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_paciente_1a68af1a1dd046e71db7e1ff99c757d910" kind="function"><name>Dispose</name></member>
+  </compound>
+  <compound refid="class_sistema_consultorio_medico_1_1_controladores_1_1_paciente_controller" kind="class"><name>SistemaConsultorioMedico::Controladores::PacienteController</name>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_paciente_controller_1a522e2cfe0de37178d2198f9dd95e252b" kind="variable"><name>intTuplasManipuladas</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_paciente_controller_1a735c2854325e4ea28f25ebe69f3e7f54" kind="function"><name>AltaPaciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_paciente_controller_1aebca52dc3987969d3f59ea474416d43a" kind="function"><name>ActualizarPaciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_paciente_controller_1ac2b0275c20f10408bea11999e4d74884" kind="function"><name>EliminarPaciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_paciente_controller_1a80ebf5b295c0674711ff49cbfb31e161" kind="function"><name>ValidaSiExistePaciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_paciente_controller_1a9d6efc33bf9d49609f31c9c4d5e07c55" kind="function"><name>CargarGridPacientes</name></member>
+  </compound>
+  <compound refid="class_sistema_consultorio_medico_1_1_preguntas" kind="class"><name>SistemaConsultorioMedico::Preguntas</name>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a9fd24c71a373f0e08ff155c38b834409" kind="variable"><name>im1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1aeb29392aeb28fca1552a549ddfa25de2" kind="variable"><name>im2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a35a0ad6ba1bf4722afd880aed4770efa" kind="variable"><name>info</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a14baf278bb4867b63bfe6b098419131f" kind="variable"><name>idPaciente</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1acc3ed4a0595b1958ca238afa2b7faeae" kind="variable"><name>flagME</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a0be045881a662913fff9c2eb5eb59d8a" kind="variable"><name>components</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a3e9901f8a5b8ed25c31f56e7d558b185" kind="variable"><name>linea</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ac44b7c04f91d35a38820e8658449081e" kind="variable"><name>bunifuCustomLabel1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1aa5c9cce60add18720154c6ce9024335a" kind="variable"><name>dato13OpcTbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a5211a960fe1f1a1d8f2dc5d834815b65" kind="variable"><name>dato12Tbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1aa332c20fe857124de3a846c6ef55f451" kind="variable"><name>dato10OpcTbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1adaa719e4cead2c98ad2234b846addf07" kind="variable"><name>dato13Opc2Tbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a6e58895a55c06e53ef5c069ed3f687a2" kind="variable"><name>dato10Tbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ac64147bd010684456ff42d9c5776f513" kind="variable"><name>dato10Rbtn4</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ad58296d1a648673f65db4e7f8a27af48" kind="variable"><name>dato10Rbtn3</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a674d35e97033c37f4bf0fc7dfec462f0" kind="variable"><name>dato10Rbtn2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ac86b822aa9267ce419218d7eb85c24df" kind="variable"><name>dato10Rbtn1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a1e12db75603fab2d0b48e20a57b7d2f2" kind="variable"><name>bunifuCustomLabel2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a8437f2298738268d5b582bf1077eba65" kind="variable"><name>GuardarBtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1af65f506284992f176f6d2dcf80d17e4a" kind="variable"><name>RegresarBtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a7d3395fe298983bb5f2fbd68e3d05605" kind="variable"><name>pictureBox1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1aa191ad2a9b97681d3b099e11d34e5497" kind="variable"><name>dato14OpcTbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ae671cd2b4af0ec10c7591f359dca1a7b" kind="variable"><name>dato14Opc2Tbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a78b9b88b111c7b5e049c39422ac636b0" kind="variable"><name>dato15OpcTbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a5f961ae23334ca3b60f408c289e90db8" kind="variable"><name>dato15Opc2Tbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a2770183e32db6cefd990f02711758e16" kind="variable"><name>dato15Opc3Tbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a2f585811557ea66eb951e2edda8187d8" kind="variable"><name>dato15Opc4Tbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ad378912e9f5ae5c193dbc8d9f2bf1b90" kind="variable"><name>dato16Tbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1acd7c49c2453fe7f69e9039570594f9d7" kind="variable"><name>dato18Tbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a2e09607404f793dc639faa7db46ec50c" kind="variable"><name>FechaLbl</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a520f02c028b30cfac793945a8bf50039" kind="variable"><name>dato11OpcTbx</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a7b459d25c9778a2812cad00663234066" kind="variable"><name>EliminarBtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ad07d5740be40274781b13d313ae72368" kind="variable"><name>ModificarBtn</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a439534b3392713ad17b27b6c1959d868" kind="variable"><name>dato10Rbtn5</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ab6a4eb45b1812a5cef83050c6b07a091" kind="variable"><name>dato11ComboBox</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1aa31248030bd0d1d5fc396df2a1f56861" kind="variable"><name>dato13ComboBox</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a0948e0c037605cfb97c7d53c1ba56ba8" kind="variable"><name>dato14ComboBox</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1adf7e411784eaafa29e316df876092771" kind="variable"><name>dato15ComboBox</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a155663072ed585391a520a84858fb6ef" kind="variable"><name>dato17ComboBox</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a673aba876f806c5d9c66e4580d17fe4c" kind="variable"><name>errorDigit</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a59f99361e69ed0b9b639f9ebd722fb9f" kind="variable"><name>errorDigit2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a6fc3ff0b73bdcfdd8f3f73d0b3e28ca9" kind="function"><name>Preguntas</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a7738e6b0b41eb841f0f5dfe18c8bcc85" kind="function"><name>isNumeric</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a65e5f83b182bf19dbdf3ee8b8cdd4cad" kind="function"><name>LlenarInformacion</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1af78910dd783f4938b3a570cb59b40841" kind="function"><name>getIndex</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a91acc6692f40494771ff63519a3bc1ea" kind="function"><name>pictureBox1_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a21249e5602c22cf75a2c225cebb93e92" kind="function"><name>GuardarBtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ab1c15be987c04bc72507987ba488fff6" kind="function"><name>ObtenerEnfermedadFamiliar</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a2ab8cd0e031967ef366f2a95ff8d135c" kind="function"><name>RegresarBtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a3c17328fd94d8f4c569a8ced258cee89" kind="function"><name>obtenerFecha</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ae4c38f8a7f26696e0a4bc881d6e3ac03" kind="function"><name>ValidarCampos</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1abb6fd0a09626bba0ed501267bd698d65" kind="function"><name>ValidarDato10</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1acb5e4c7aca21c19c82623b4e65b99365" kind="function"><name>llenarDato10</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a1f209b189a8e0895bf5bcfa0479d5994" kind="function"><name>ReestablecerCampos</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a6e2bda1076eb1b5fe6914d3680c9c44a" kind="function"><name>ModificarBtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ae0df4ea12375588742335f370ba45ef2" kind="function"><name>EliminarBtn_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1af7dbb93d68da6d4253dca7fa28a5493e" kind="function"><name>dato10Rbtn1_CheckedChanged</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a76fe68b0666309bec23ba655d0ba3172" kind="function"><name>dato10Rbtn2_CheckedChanged</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a0d3c5da32a5c8634d2bbe79138ac27f1" kind="function"><name>dato10Rbtn3_CheckedChanged</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1aeadff673f9012a7823a700d333a9f9ee" kind="function"><name>dato10Rbtn4_CheckedChanged</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a722685b5648ea771d35942725b1ca993" kind="function"><name>dato10Tbx_OnValueChanged</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a516ee2773f8240467b074b0a4aeb1c65" kind="function"><name>dato10Rbtn5_CheckedChanged</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a82424d5879e650f3992ec63ce2538adf" kind="function"><name>dato10OpcTbx_EnabledChanged</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a2e2d267e65e8dfc285b377a30be86772" kind="function"><name>dato11ItemOpc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a146f40d239916c6152ff058e47674841" kind="function"><name>dato11OpcTbx_EnabledChanged</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1aa8fb87a39598df1a0959c5a4b7cc8019" kind="function"><name>dato13ItemOpc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a6efcd5dd24fa1d1eae867538b263e413" kind="function"><name>dato13Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a5363c82fdb73f0e06d369ea1836b4463" kind="function"><name>dato14ItemOpc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1af214b4a92f1e75d490d76ae783631bc9" kind="function"><name>dato14Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a038edad585c85db9ff4efe7b869826a6" kind="function"><name>dato15ItemOpc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ab5e841af824320808624c7d22183da97" kind="function"><name>dato15Opc</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ab6eeb4f8ff4d0f78db85d5dd69ea5e0c" kind="function"><name>bloqueoBtnGuardar</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a4849c295a6b12724083451b756c250d7" kind="function"><name>GuardarBtn_EnabledChanged</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1ac669706afdf47b0accf6543f42ab2bde" kind="function"><name>verificarNumero1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a9cdcf0110889bb345fa43933d3a8db0d" kind="function"><name>verificarNumero2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a4c023e19c5c1f4ddaf3c686288ed1f23" kind="function"><name>ModificarBtn_EnabledChanged</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1aee7301d4c1ee5a3257ee6e885d39c250" kind="function"><name>EliminarBtn_EnabledChanged</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a79fd906b75c7fe9cf9370ca95ed70870" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_preguntas_1a842dd064a78094296ea58bace7ebec83" kind="function"><name>Dispose</name></member>
+  </compound>
+  <compound refid="class_sistema_consultorio_medico_1_1_program" kind="class"><name>SistemaConsultorioMedico::Program</name>
+    <member refid="class_sistema_consultorio_medico_1_1_program_1ac56fada0f7e0c45df63b5a9effead3dc" kind="function"><name>Main</name></member>
+  </compound>
+  <compound refid="class_sistema_consultorio_medico_1_1_controladores_1_1_propiedad_controller" kind="class"><name>SistemaConsultorioMedico::Controladores::PropiedadController</name>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_propiedad_controller_1ad392837a056a1149a702fa3a0031a640" kind="function"><name>BunifuMaterial</name></member>
+  </compound>
+  <compound refid="class_sistema_consultorio_medico_1_1_recuperar_contra" kind="class"><name>SistemaConsultorioMedico::RecuperarContra</name>
+    <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1af50befea7f34202e05f7b0568b91868a" kind="variable"><name>components</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1a0b356593f9ab39b2bdaea801e9350194" kind="variable"><name>UsuarTxb</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1aee8eeadc30ddaaf9ade921c6d5462697" kind="variable"><name>pictureBox2</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1aeec11d1eb841f84937f12d34ea9e7621" kind="variable"><name>pictureBox1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1aa55208ea4328dae301e7795eca37764f" kind="variable"><name>bunifuElipse1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1acf5b0536bc8fc9f91b41f91500546c4d" kind="variable"><name>CorreoTxb</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1a27d067d35a5331f64963e794bc035554" kind="variable"><name>button1</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1abf6e51808832fe98189c821688c11435" kind="function"><name>RecuperarContra</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1a11b6d378767f6bf9f02e54ba253e9d84" kind="function"><name>ReleaseCapture</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1a7f7d7a8be3a12c83464f229e00e5b056" kind="function"><name>SendMessage</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1acb379f53965524b7483362bbcce33734" kind="function"><name>pictureBox1_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1a8574e3396a23e1af85d0ccac64af683f" kind="function"><name>pictureBox2_Click</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1a58999665f3336bb0812d4a6c7774fa7e" kind="function"><name>RecuperarContra_MouseDown</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1af589698052dc7f9e80b13ea2ab7462c1" kind="function"><name>NombreTxb_MouseEnter</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1a335cf4d1399f96435076785bcd4ef68f" kind="function"><name>UsuarTxb_MouseLeave</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1a038b348f0f43ddce9062e8bccb5915b8" kind="function"><name>CorreoTxb_MouseEnter</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1a7521f03125d7a117a2567d86b674b18e" kind="function"><name>CorreoTxb_MouseLeave</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1ac684823ad662792af892cb1b4797dd09" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_recuperar_contra_1a1c674def303d660636204c2c852d462c" kind="function"><name>Dispose</name></member>
+  </compound>
+  <compound refid="class_sistema_consultorio_medico_1_1_properties_1_1_resources" kind="class"><name>SistemaConsultorioMedico::Properties::Resources</name>
+    <member refid="class_sistema_consultorio_medico_1_1_properties_1_1_resources_1a1c2fd5658e83b25727145600bf0f70f9" kind="variable"><name>resourceMan</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_properties_1_1_resources_1a540b6f9de14670165346aa3cecd8d918" kind="variable"><name>resourceCulture</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_properties_1_1_resources_1a72511b1da0d70837d5e8a02c7d8ad156" kind="property"><name>ResourceManager</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_properties_1_1_resources_1a5641247fa0cb93524409a17188ffd481" kind="property"><name>Culture</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_properties_1_1_resources_1a6bb6f286cd593aab3049473abac54329" kind="function"><name>Resources</name></member>
+  </compound>
+  <compound refid="class_sistema_consultorio_medico_1_1_properties_1_1_settings" kind="class"><name>SistemaConsultorioMedico::Properties::Settings</name>
+    <member refid="class_sistema_consultorio_medico_1_1_properties_1_1_settings_1aacc40c20704b7900068b725664fee020" kind="variable"><name>defaultInstance</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_properties_1_1_settings_1aeca6803e91f3b461ad3ea031bdd6b599" kind="property"><name>Default</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_properties_1_1_settings_1aaf22b525dfeb9dd9edcd75f3184ca594" kind="property"><name>hola</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_properties_1_1_settings_1a6a16ec92275c35a11f0b63dfd3a6024a" kind="property"><name>adios</name></member>
+  </compound>
+  <compound refid="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario" kind="class"><name>SistemaConsultorioMedico::Modelos::Usuario</name>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1ab6b3c021fdcb0202c567d35a555877d3" kind="variable"><name>idUsuario</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1a5f8dd43d84ecb71168e45366a40dc992" kind="variable"><name>usuario</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1a78697ceeb1e82a331ed390be9df14eea" kind="variable"><name>password</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1a4d50e58ade61db7deb744db4003fd749" kind="function"><name>setIdUsuario</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1a40adcf77d7ae793492452ed244a61c6b" kind="function"><name>setUsuario</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1a5f538385508232ef86a04832a7634757" kind="function"><name>setPassword</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1a85cb10cf5c487d94d4440bc87947416d" kind="function"><name>getIdUsuario</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1a5d5bfa54983f6de3b02586da7589906f" kind="function"><name>getUsuario</name></member>
+    <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_usuario_1aab1e4b7cb5433c58db2fd28597622ec6" kind="function"><name>getPassword</name></member>
+  </compound>
+  <compound refid="class_sistema_consultorio_medico_1_1_controladores_1_1_usuario_controller" kind="class"><name>SistemaConsultorioMedico::Controladores::UsuarioController</name>
+    <member refid="class_sistema_consultorio_medico_1_1_controladores_1_1_usuario_controller_1a04123c73a9e72bbe6b106fb2f862cead" kind="function"><name>Login</name></member>
+  </compound>
+  <compound refid="namespaceglobal" kind="namespace"><name>global</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_configuration" kind="namespace"><name>global::SystemConfiguration</name>
+  </compound>
+  <compound refid="namespace_sistema_consultorio_medico" kind="namespace"><name>SistemaConsultorioMedico</name>
+  </compound>
+  <compound refid="namespace_sistema_consultorio_medico_1_1_controladores" kind="namespace"><name>SistemaConsultorioMedico::Controladores</name>
+  </compound>
+  <compound refid="namespace_sistema_consultorio_medico_1_1_modelos" kind="namespace"><name>SistemaConsultorioMedico::Modelos</name>
+  </compound>
+  <compound refid="namespace_sistema_consultorio_medico_1_1_properties" kind="namespace"><name>SistemaConsultorioMedico::Properties</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_component_model" kind="namespace"><name>System::ComponentModel</name>
+  </compound>
+  <compound refid="namespace_system_1_1_data" kind="namespace"><name>System::Data</name>
+  </compound>
+  <compound refid="namespace_system_1_1_data_1_1_sql_client" kind="namespace"><name>System::Data::SqlClient</name>
+  </compound>
+  <compound refid="namespace_system_1_1_drawing" kind="namespace"><name>System::Drawing</name>
+  </compound>
+  <compound refid="namespace_system_1_1_globalization" kind="namespace"><name>System::Globalization</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_compiler_services" kind="namespace"><name>System::Runtime::CompilerServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_interop_services" kind="namespace"><name>System::Runtime::InteropServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_forms" kind="namespace"><name>System::Windows::Forms</name>
+  </compound>
+  <compound refid="_cita_controller_8cs" kind="file"><name>CitaController.cs</name>
+  </compound>
+  <compound refid="_conexion_controller_8cs" kind="file"><name>ConexionController.cs</name>
+  </compound>
+  <compound refid="_diagnostico_controller_8cs" kind="file"><name>DiagnosticoController.cs</name>
+  </compound>
+  <compound refid="_informacion_medica_controller_8cs" kind="file"><name>InformacionMedicaController.cs</name>
+  </compound>
+  <compound refid="_paciente_controller_8cs" kind="file"><name>PacienteController.cs</name>
+  </compound>
+  <compound refid="_propiedad_controller_8cs" kind="file"><name>PropiedadController.cs</name>
+  </compound>
+  <compound refid="_usuario_controller_8cs" kind="file"><name>UsuarioController.cs</name>
+  </compound>
+  <compound refid="_cita_8cs" kind="file"><name>Cita.cs</name>
+  </compound>
+  <compound refid="_diagnostico_8cs" kind="file"><name>Diagnostico.cs</name>
+  </compound>
+  <compound refid="_informacion_medica_8cs" kind="file"><name>InformacionMedica.cs</name>
+  </compound>
+  <compound refid="_paciente_8cs" kind="file"><name>Paciente.cs</name>
+  </compound>
+  <compound refid="_usuario_8cs" kind="file"><name>Usuario.cs</name>
+  </compound>
+  <compound refid="_debug_2_8_n_e_t_framework_00_version_0av4_87_82_8_assembly_attributes_8cs" kind="file"><name>.NETFramework,Version=v4.7.2.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_release_2_8_n_e_t_framework_00_version_0av4_87_82_8_assembly_attributes_8cs" kind="file"><name>.NETFramework,Version=v4.7.2.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+  </compound>
+  <compound refid="_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_resources_8_designer_8cs" kind="file"><name>Resources.Designer.cs</name>
+  </compound>
+  <compound refid="_settings_8_designer_8cs" kind="file"><name>Settings.Designer.cs</name>
+  </compound>
+  <compound refid="_citas_form_8cs" kind="file"><name>CitasForm.cs</name>
+  </compound>
+  <compound refid="_citas_form_8_designer_8cs" kind="file"><name>CitasForm.Designer.cs</name>
+  </compound>
+  <compound refid="_diagnostico_forms_8cs" kind="file"><name>DiagnosticoForms.cs</name>
+  </compound>
+  <compound refid="_diagnostico_forms_8_designer_8cs" kind="file"><name>DiagnosticoForms.Designer.cs</name>
+  </compound>
+  <compound refid="_informacion_medica_forms_8cs" kind="file"><name>InformacionMedicaForms.cs</name>
+  </compound>
+  <compound refid="_informacion_medica_forms_8_designer_8cs" kind="file"><name>InformacionMedicaForms.Designer.cs</name>
+  </compound>
+  <compound refid="_login_forms_8cs" kind="file"><name>LoginForms.cs</name>
+  </compound>
+  <compound refid="_login_forms_8_designer_8cs" kind="file"><name>LoginForms.Designer.cs</name>
+  </compound>
+  <compound refid="_logo_form_8cs" kind="file"><name>LogoForm.cs</name>
+  </compound>
+  <compound refid="_logo_form_8_designer_8cs" kind="file"><name>LogoForm.Designer.cs</name>
+  </compound>
+  <compound refid="_menuform_8cs" kind="file"><name>Menuform.cs</name>
+  </compound>
+  <compound refid="_menuform_8_designer_8cs" kind="file"><name>Menuform.Designer.cs</name>
+  </compound>
+  <compound refid="_menu_principal_secretaria_forms_8cs" kind="file"><name>MenuPrincipalSecretariaForms.cs</name>
+  </compound>
+  <compound refid="_menu_principal_secretaria_forms_8_designer_8cs" kind="file"><name>MenuPrincipalSecretariaForms.Designer.cs</name>
+  </compound>
+  <compound refid="_paciente_forms_8cs" kind="file"><name>PacienteForms.cs</name>
+  </compound>
+  <compound refid="_paciente_forms_8_designer_8cs" kind="file"><name>PacienteForms.Designer.cs</name>
+  </compound>
+  <compound refid="_preguntas_forms_8cs" kind="file"><name>PreguntasForms.cs</name>
+  </compound>
+  <compound refid="_preguntas_forms_8_designer_8cs" kind="file"><name>PreguntasForms.Designer.cs</name>
+  </compound>
+  <compound refid="_recuperar_contra_forms_8cs" kind="file"><name>RecuperarContraForms.cs</name>
+  </compound>
+  <compound refid="_recuperar_contra_forms_8_designer_8cs" kind="file"><name>RecuperarContraForms.Designer.cs</name>
+  </compound>
+  <compound refid="dir_c27cf4f46f6db67b492ee504e05509d9" kind="dir"><name>Controladores</name>
+  </compound>
+  <compound refid="dir_a71c3b2ad23b9ff58220dd012d201987" kind="dir"><name>obj/Debug</name>
+  </compound>
+  <compound refid="dir_1ad9d3be353cb7ee7adf957dbdc92dab" kind="dir"><name>Modelos</name>
+  </compound>
+  <compound refid="dir_43724e81dd40e09f32417973865cdd64" kind="dir"><name>obj</name>
+  </compound>
+  <compound refid="dir_d051c76eebdc544d9c3d734575641c72" kind="dir"><name>Properties</name>
+  </compound>
+  <compound refid="dir_9fe5cc214b8578ee5b8e153089aca810" kind="dir"><name>obj/Release</name>
+  </compound>
+  <compound refid="dir_f3a50bf6cf88161ec5ab95602efcd6d7" kind="dir"><name>Vistas</name>
+  </compound>
+</doxygenindex>

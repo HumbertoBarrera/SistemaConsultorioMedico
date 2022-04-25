@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico" kind="class" language="C#" prot="public">
+    <compoundname>SistemaConsultorioMedico::Modelos::Diagnostico</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1ac64d3de07d82cbfec34da94788fa91a4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SistemaConsultorioMedico.Modelos.Diagnostico.idPaciente</definition>
+        <argsstring></argsstring>
+        <name>idPaciente</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.Diagnostico.idPaciente</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/Diagnostico.cs" line="11" column="21" bodyfile="Modelos/Diagnostico.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a14a571093884ae4f54e03981b667b79c" prot="private" static="no" mutable="no">
+        <type>DateTime</type>
+        <definition>DateTime SistemaConsultorioMedico.Modelos.Diagnostico.fecha</definition>
+        <argsstring></argsstring>
+        <name>fecha</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.Diagnostico.fecha</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/Diagnostico.cs" line="12" column="26" bodyfile="Modelos/Diagnostico.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a01a253e2c982a6a64421fcf6e7a20d25" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.Diagnostico.descripcion</definition>
+        <argsstring></argsstring>
+        <name>descripcion</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.Diagnostico.descripcion</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/Diagnostico.cs" line="13" column="24" bodyfile="Modelos/Diagnostico.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1ac8b33e94caa83b3129981126c67ede9c" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.Diagnostico.folioDiagnostico</definition>
+        <argsstring></argsstring>
+        <name>folioDiagnostico</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.Diagnostico.folioDiagnostico</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/Diagnostico.cs" line="13" column="36" bodyfile="Modelos/Diagnostico.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a21f592ffbb14fee99500ca66d004f6b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.Diagnostico.setIdPaciente</definition>
+        <argsstring>(int idPaciente)</argsstring>
+        <name>setIdPaciente</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.Diagnostico.setIdPaciente</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idPaciente</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el identificador del paciente. El ID se manda como parámetro del método. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idPaciente</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/Diagnostico.cs" line="19" column="21" bodyfile="Modelos/Diagnostico.cs" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1ae9d427d0562d3e672ba3cbe94c1d25a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.Diagnostico.setFolioDiagnostico</definition>
+        <argsstring>(String folioDiagnostico)</argsstring>
+        <name>setFolioDiagnostico</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.Diagnostico.setFolioDiagnostico</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>folioDiagnostico</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear el folio del diagnóstico registrado. EL folio es mandado como parámetro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>folioDiagnostico</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/Diagnostico.cs" line="28" column="21" bodyfile="Modelos/Diagnostico.cs" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a6476359e6ab38374632b176036aaa924" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.Diagnostico.setFecha</definition>
+        <argsstring>(DateTime fecha)</argsstring>
+        <name>setFecha</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.Diagnostico.setFecha</qualifiedname>
+        <param>
+          <type>DateTime</type>
+          <declname>fecha</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear la fecha de registro del diagnóstico. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fecha</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/Diagnostico.cs" line="37" column="21" bodyfile="Modelos/Diagnostico.cs" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a205b9c816224954d818f50ff897deeac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Modelos.Diagnostico.setDescripcion</definition>
+        <argsstring>(String descripcion)</argsstring>
+        <name>setDescripcion</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.Diagnostico.setDescripcion</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>descripcion</declname>
+        </param>
+        <briefdescription>
+<para>Método para settear la descripción ´del diagnóstico generado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>descripcion</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/Diagnostico.cs" line="46" column="21" bodyfile="Modelos/Diagnostico.cs" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a0748a1ee883546928255b2a89f96b9fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SistemaConsultorioMedico.Modelos.Diagnostico.getIdPaciente</definition>
+        <argsstring>()</argsstring>
+        <name>getIdPaciente</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.Diagnostico.getIdPaciente</qualifiedname>
+        <briefdescription>
+<para>Método para obtener el ID del paciente registrado en el diagnóstico. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/Diagnostico.cs" line="54" column="20" bodyfile="Modelos/Diagnostico.cs" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a4856a3b1d9fb7945f3aa1f0bff82e0a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.Diagnostico.getFolioDiagnostico</definition>
+        <argsstring>()</argsstring>
+        <name>getFolioDiagnostico</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.Diagnostico.getFolioDiagnostico</qualifiedname>
+        <briefdescription>
+<para>Método para obtener el folio del diagnóstico generado. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/Diagnostico.cs" line="62" column="23" bodyfile="Modelos/Diagnostico.cs" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a2d70c5dcda5e3313899186c94f299e81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>DateTime</type>
+        <definition>DateTime SistemaConsultorioMedico.Modelos.Diagnostico.getFecha</definition>
+        <argsstring>()</argsstring>
+        <name>getFecha</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.Diagnostico.getFecha</qualifiedname>
+        <briefdescription>
+<para>Método para obtener la fecha </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/Diagnostico.cs" line="70" column="25" bodyfile="Modelos/Diagnostico.cs" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a5dc3b89fabc13e3f694f6ee71b27f968" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SistemaConsultorioMedico.Modelos.Diagnostico.getDescripcion</definition>
+        <argsstring>()</argsstring>
+        <name>getDescripcion</name>
+        <qualifiedname>SistemaConsultorioMedico.Modelos.Diagnostico.getDescripcion</qualifiedname>
+        <briefdescription>
+<para>Método para obtener la descripción del diagnóstico. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Modelos/Diagnostico.cs" line="78" column="23" bodyfile="Modelos/Diagnostico.cs" bodystart="78" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Modelos/Diagnostico.cs" line="9" column="5" bodyfile="Modelos/Diagnostico.cs" bodystart="10" bodyend="83"/>
+    <listofallmembers>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a01a253e2c982a6a64421fcf6e7a20d25" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::Diagnostico</scope><name>descripcion</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a14a571093884ae4f54e03981b667b79c" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::Diagnostico</scope><name>fecha</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1ac8b33e94caa83b3129981126c67ede9c" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::Diagnostico</scope><name>folioDiagnostico</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a5dc3b89fabc13e3f694f6ee71b27f968" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::Diagnostico</scope><name>getDescripcion</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a2d70c5dcda5e3313899186c94f299e81" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::Diagnostico</scope><name>getFecha</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a4856a3b1d9fb7945f3aa1f0bff82e0a6" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::Diagnostico</scope><name>getFolioDiagnostico</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a0748a1ee883546928255b2a89f96b9fe" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::Diagnostico</scope><name>getIdPaciente</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1ac64d3de07d82cbfec34da94788fa91a4" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::Diagnostico</scope><name>idPaciente</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a205b9c816224954d818f50ff897deeac" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::Diagnostico</scope><name>setDescripcion</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a6476359e6ab38374632b176036aaa924" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::Diagnostico</scope><name>setFecha</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1ae9d427d0562d3e672ba3cbe94c1d25a1" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::Diagnostico</scope><name>setFolioDiagnostico</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_modelos_1_1_diagnostico_1a21f592ffbb14fee99500ca66d004f6b0" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Modelos::Diagnostico</scope><name>setIdPaciente</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

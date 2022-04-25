@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dir_f3a50bf6cf88161ec5ab95602efcd6d7" kind="dir">
+    <compoundname>Vistas</compoundname>
+    <innerfile refid="_citas_form_8cs">CitasForm.cs</innerfile>
+    <innerfile refid="_citas_form_8_designer_8cs">CitasForm.Designer.cs</innerfile>
+    <innerfile refid="_diagnostico_forms_8cs">DiagnosticoForms.cs</innerfile>
+    <innerfile refid="_diagnostico_forms_8_designer_8cs">DiagnosticoForms.Designer.cs</innerfile>
+    <innerfile refid="_informacion_medica_forms_8cs">InformacionMedicaForms.cs</innerfile>
+    <innerfile refid="_informacion_medica_forms_8_designer_8cs">InformacionMedicaForms.Designer.cs</innerfile>
+    <innerfile refid="_login_forms_8cs">LoginForms.cs</innerfile>
+    <innerfile refid="_login_forms_8_designer_8cs">LoginForms.Designer.cs</innerfile>
+    <innerfile refid="_logo_form_8cs">LogoForm.cs</innerfile>
+    <innerfile refid="_logo_form_8_designer_8cs">LogoForm.Designer.cs</innerfile>
+    <innerfile refid="_menuform_8cs">Menuform.cs</innerfile>
+    <innerfile refid="_menuform_8_designer_8cs">Menuform.Designer.cs</innerfile>
+    <innerfile refid="_menu_principal_secretaria_forms_8cs">MenuPrincipalSecretariaForms.cs</innerfile>
+    <innerfile refid="_menu_principal_secretaria_forms_8_designer_8cs">MenuPrincipalSecretariaForms.Designer.cs</innerfile>
+    <innerfile refid="_paciente_forms_8cs">PacienteForms.cs</innerfile>
+    <innerfile refid="_paciente_forms_8_designer_8cs">PacienteForms.Designer.cs</innerfile>
+    <innerfile refid="_preguntas_forms_8cs">PreguntasForms.cs</innerfile>
+    <innerfile refid="_preguntas_forms_8_designer_8cs">PreguntasForms.Designer.cs</innerfile>
+    <innerfile refid="_recuperar_contra_forms_8cs">RecuperarContraForms.cs</innerfile>
+    <innerfile refid="_recuperar_contra_forms_8_designer_8cs">RecuperarContraForms.Designer.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Vistas/"/>
+  </compounddef>
+</doxygen>

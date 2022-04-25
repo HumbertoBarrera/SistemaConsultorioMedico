@@ -15,6 +15,12 @@ namespace SistemaConsultorioMedico.Controladores
     class DiagnosticoController
     {
 
+        static int intTuplasManipuladas = 0;
+
+        /// <summary>
+        /// Método para registrar el diagnóstico en la base de datos.
+        /// </summary>
+        /// <param name="d"></param>
         public static void insertarDiagnostico(Modelos.Diagnostico d)
         {
             String query = "INSERT INTO DIAGNOSTICO VALUES (@idPaciente, @folioDiagnostico, @fecha, @descripcion)";
@@ -27,19 +33,15 @@ namespace SistemaConsultorioMedico.Controladores
                     comando.Parameters.AddWithValue("@fecha", d.getFecha());
                     comando.Parameters.AddWithValue("@descripcion", d.getDescripcion());
                     int resultado = comando.ExecuteNonQuery();
-                    if (resultado < 0)
-                    {
+                    if (resultado < intTuplasManipuladas)
                         MessageBox.Show("Error al insertar en la base de datos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
                     else
-                    {
                         MessageBox.Show("Diagnóstico agregado correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
                 }
             }
             catch (SqlException e)
             {
-
+                MessageBox.Show(e.Message);
             }
             finally
             {
@@ -47,6 +49,10 @@ namespace SistemaConsultorioMedico.Controladores
             }
         }
 
+        /// <summary>
+        /// Crea el folio del diagnóstico.
+        /// </summary>
+        /// <param name="d"></param>
         public static void folio(Modelos.Diagnostico d)
         {
             SqlCommand codigo;
@@ -57,11 +63,9 @@ namespace SistemaConsultorioMedico.Controladores
             {
                 string res = resultado[0].ToString();
                 d.setFolioDiagnostico(res);
-
             }
-
-
         }
+
 
         public static void diagnostico(Modelos.Diagnostico d)
         {
@@ -87,7 +91,7 @@ namespace SistemaConsultorioMedico.Controladores
             }
             catch (SqlException e)
             {
-
+                MessageBox.Show(e.Message);
             }
             finally
             {
@@ -97,6 +101,11 @@ namespace SistemaConsultorioMedico.Controladores
 
         }
 
+        /// <summary>
+        /// Carga el diagnóstico de la base de datos al sistema.
+        /// </summary>
+        /// <param name="d"></param>
+        /// <returns></returns>
         public DataTable CargarGridDiagnostico(Modelos.Diagnostico d)
         {
             String query = "SELECT folioDiagostico,LEFT(fecha,10),descripcion FROM DIAGNOSTICO WHERE idPaciente=@idPaciente";
@@ -112,6 +121,11 @@ namespace SistemaConsultorioMedico.Controladores
         }
 
         //---------------------------------------Validaciones----------------------------------
+        /// <summary>
+        /// Valida si existe el paciente.
+        /// </summary>
+        /// <param name="d"></param>
+        /// <returns></returns>
         public static bool validaExisPaciente(Modelos.Diagnostico d)
         {
             String query = "SELECT * FROM Paciente WHERE idPaciente='" + d.getIdPaciente() + "'";
@@ -120,13 +134,9 @@ namespace SistemaConsultorioMedico.Controladores
             {
                 SqlDataReader leer = comando.ExecuteReader();
                 if (leer.Read())
-                {
                     return true;
-                }
                 else
-                {
                     return false;
-                }
             }
 
         }

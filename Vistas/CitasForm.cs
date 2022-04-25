@@ -48,13 +48,13 @@ namespace SistemaConsultorioMedico
                     cita.setFecha(fechaV);
                     cita.setHora(horaV);
 
-                    if (Controladores.CitaController.validaExisPaciente(cita) == true)
+                    if (Controladores.CitaController.ValidarSiExistePaciente(cita) == true)
                     {
 
-                        if (Controladores.CitaController.validaExisCita(cita) == false)
+                        if (Controladores.CitaController.ValidarSiExisteCita(cita) == false)
                         {
-                            Controladores.CitaController.folio(cita);
-                            Controladores.CitaController.insertarCita(cita);
+                            Controladores.CitaController.CrearFolio(cita);
+                            Controladores.CitaController.InsertarCita(cita);
 
                             bunifuCustomDataGrid2.DataSource = null;
                             Controladores.CitaController da = new Controladores.CitaController();
@@ -66,7 +66,7 @@ namespace SistemaConsultorioMedico
                         }
                         else
                         {
-                            if (Controladores.CitaController.validaExisCita(cita) == true)
+                            if (Controladores.CitaController.ValidarSiExisteCita(cita) == true)
                             {
                                 MessageBox.Show("Error Fecha y hora Ocupada", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
@@ -74,7 +74,7 @@ namespace SistemaConsultorioMedico
                     }
                     else
                     {
-                        if (Controladores.CitaController.validaExisPaciente(cita) == false)
+                        if (Controladores.CitaController.ValidarSiExistePaciente(cita) == false)
                         {
                             MessageBox.Show("Error Paciente no Registrado", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
@@ -225,14 +225,14 @@ namespace SistemaConsultorioMedico
             cita.setFecha(fechaV);
             cita.setHora(hora1);
 
-            if (Controladores.CitaController.validaExisFechaHora(cita)== false)
+            if (Controladores.CitaController.ValidarSiExisteFechaHora(cita)== false)
             {
                 comboBox1.Items.Add("02:00");
             }
             TimeSpan hora2 = TimeSpan.Parse("02:20");
             cita.setHora(hora2);
 
-            if (Controladores.CitaController.validaExisFechaHora(cita) == false)
+            if (Controladores.CitaController.ValidarSiExisteFechaHora(cita) == false)
             {
                  comboBox1.Items.Add("02:20");
 
@@ -240,7 +240,7 @@ namespace SistemaConsultorioMedico
             TimeSpan hora3 = TimeSpan.Parse("02:40");
             cita.setHora(hora3);
 
-            if (Controladores.CitaController.validaExisFechaHora(cita) == false)
+            if (Controladores.CitaController.ValidarSiExisteFechaHora(cita) == false)
             {
                 comboBox1.Items.Add("02:40");
 
@@ -248,7 +248,7 @@ namespace SistemaConsultorioMedico
             TimeSpan hora4 = TimeSpan.Parse("03:00");
             cita.setHora(hora4);
 
-            if (Controladores.CitaController.validaExisFechaHora(cita) == false)
+            if (Controladores.CitaController.ValidarSiExisteFechaHora(cita) == false)
             {
                 comboBox1.Items.Add("03:00");
 
@@ -256,7 +256,7 @@ namespace SistemaConsultorioMedico
             TimeSpan hora5 = TimeSpan.Parse("03:20");
             cita.setHora(hora5);
 
-            if (Controladores.CitaController.validaExisFechaHora(cita) == false)
+            if (Controladores.CitaController.ValidarSiExisteFechaHora(cita) == false)
             {
                 comboBox1.Items.Add("03:20");
 
@@ -264,28 +264,28 @@ namespace SistemaConsultorioMedico
             TimeSpan hora6 = TimeSpan.Parse("03:40");
             cita.setHora(hora6);
 
-            if (Controladores.CitaController.validaExisFechaHora(cita) == false)
+            if (Controladores.CitaController.ValidarSiExisteFechaHora(cita) == false)
             {
                 comboBox1.Items.Add("03:40");
             }
             TimeSpan hora7 = TimeSpan.Parse("04:00");
             cita.setHora(hora7);
 
-            if (Controladores.CitaController.validaExisFechaHora(cita) == false)
+            if (Controladores.CitaController.ValidarSiExisteFechaHora(cita) == false)
             {
                 comboBox1.Items.Add("04:00");
             }
             TimeSpan hora8 = TimeSpan.Parse("04:20");
             cita.setHora(hora8);
 
-            if (Controladores.CitaController.validaExisFechaHora(cita) == false)
+            if (Controladores.CitaController.ValidarSiExisteFechaHora(cita) == false)
             {
                 comboBox1.Items.Add("04:20");
             }
             TimeSpan hora9 = TimeSpan.Parse("04:40");
             cita.setHora(hora9);
 
-            if (Controladores.CitaController.validaExisFechaHora(cita) == false)
+            if (Controladores.CitaController.ValidarSiExisteFechaHora(cita) == false)
             {
                 comboBox1.Items.Add("04:40");
 
@@ -293,14 +293,14 @@ namespace SistemaConsultorioMedico
             TimeSpan hora10 = TimeSpan.Parse("05:00");
             cita.setHora(hora10);
 
-            if (Controladores.CitaController.validaExisFechaHora(cita) == false)
+            if (Controladores.CitaController.ValidarSiExisteFechaHora(cita) == false)
             {
                 comboBox1.Items.Add("05:00");
             }
             TimeSpan hora11 = TimeSpan.Parse("05:20");
             cita.setHora(hora11);
 
-            if (Controladores.CitaController.validaExisFechaHora(cita) == false)
+            if (Controladores.CitaController.ValidarSiExisteFechaHora(cita) == false)
             {
                 comboBox1.Items.Add("05:20");
 
@@ -308,21 +308,21 @@ namespace SistemaConsultorioMedico
             TimeSpan hora12 = TimeSpan.Parse("05:40");
             cita.setHora(hora12);
 
-            if (Controladores.CitaController.validaExisFechaHora(cita) == false)
+            if (Controladores.CitaController.ValidarSiExisteFechaHora(cita) == false)
             {
                 comboBox1.Items.Add("05:40");
             }
             TimeSpan hora13 = TimeSpan.Parse("06:00");
             cita.setHora(hora13);
 
-            if (Controladores.CitaController.validaExisFechaHora(cita) == false)
+            if (Controladores.CitaController.ValidarSiExisteFechaHora(cita) == false)
             {
                 comboBox1.Items.Add("06:00");
             }
             TimeSpan hora14 = TimeSpan.Parse("06:20");
             cita.setHora(hora14);
 
-            if (Controladores.CitaController.validaExisFechaHora(cita) == false)
+            if (Controladores.CitaController.ValidarSiExisteFechaHora(cita) == false)
             {
                 comboBox1.Items.Add("06:20");
             }
@@ -359,13 +359,13 @@ namespace SistemaConsultorioMedico
         private void PacienteCitaTxb_OnValueChanged(object sender, EventArgs e)
         {
             if (PacienteCitaTxb.Text.Length != 8)
-            {
+            
                 errorDigit.Visible = true;
-            }
+            
             else
-            {
+            
                 errorDigit.Visible = false;
-            }
+            
         }
     }
 }

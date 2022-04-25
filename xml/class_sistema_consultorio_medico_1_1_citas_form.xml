@@ -1,0 +1,562 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_sistema_consultorio_medico_1_1_citas_form" kind="class" language="C#" prot="public">
+    <compoundname>SistemaConsultorioMedico::CitasForm</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_citas_form_1afef378d242b0108ba386763d8d9c9c99" prot="private" static="no" mutable="no">
+        <type><ref refid="class_sistema_consultorio_medico_1_1_modelos_1_1_cita" kindref="compound">Modelos.Cita</ref></type>
+        <definition>Modelos.Cita SistemaConsultorioMedico.CitasForm.cita</definition>
+        <argsstring></argsstring>
+        <name>cita</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.cita</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.cs" line="16" column="29" bodyfile="Vistas/CitasForm.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_citas_form_1ac476654c803c8954af1d79d3c8c10c4b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SistemaConsultorioMedico.CitasForm.indice</definition>
+        <argsstring></argsstring>
+        <name>indice</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.indice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.cs" line="31" column="13" bodyfile="Vistas/CitasForm.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_citas_form_1a871d2d99de6f23614e4eda9e28057676" prot="private" static="no" mutable="no">
+        <type>System.ComponentModel.IContainer</type>
+        <definition>System.ComponentModel.IContainer SistemaConsultorioMedico.CitasForm.components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.components</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Required designer variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.Designer.cs" line="9" column="48" bodyfile="Vistas/CitasForm.Designer.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_citas_form_1a1ad95dec27fb6efdacc93ebdfae5211a" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuThinButton2</type>
+        <definition>Bunifu.Framework.UI.BunifuThinButton2 SistemaConsultorioMedico.CitasForm.GuardarCitaBtn</definition>
+        <argsstring></argsstring>
+        <name>GuardarCitaBtn</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.GuardarCitaBtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.Designer.cs" line="333" column="52" bodyfile="Vistas/CitasForm.Designer.cs" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_citas_form_1a373752e61873099742440679c350738d" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuThinButton2</type>
+        <definition>Bunifu.Framework.UI.BunifuThinButton2 SistemaConsultorioMedico.CitasForm.ModificarCitaBtn</definition>
+        <argsstring></argsstring>
+        <name>ModificarCitaBtn</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.ModificarCitaBtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.Designer.cs" line="334" column="52" bodyfile="Vistas/CitasForm.Designer.cs" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_citas_form_1af3114ab46ec4cb47abf2202ce3f2f61d" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuThinButton2</type>
+        <definition>Bunifu.Framework.UI.BunifuThinButton2 SistemaConsultorioMedico.CitasForm.EliminarCitaBtn</definition>
+        <argsstring></argsstring>
+        <name>EliminarCitaBtn</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.EliminarCitaBtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.Designer.cs" line="335" column="52" bodyfile="Vistas/CitasForm.Designer.cs" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_citas_form_1a610bc2d03bd7723450c76ae1fe9c5063" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuMaterialTextbox</type>
+        <definition>Bunifu.Framework.UI.BunifuMaterialTextbox SistemaConsultorioMedico.CitasForm.PacienteCitaTxb</definition>
+        <argsstring></argsstring>
+        <name>PacienteCitaTxb</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.PacienteCitaTxb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.Designer.cs" line="336" column="56" bodyfile="Vistas/CitasForm.Designer.cs" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_citas_form_1a5a83626f13130cc9403f56e4fa729bf7" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuCustomDataGrid</type>
+        <definition>Bunifu.Framework.UI.BunifuCustomDataGrid SistemaConsultorioMedico.CitasForm.bunifuCustomDataGrid2</definition>
+        <argsstring></argsstring>
+        <name>bunifuCustomDataGrid2</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.bunifuCustomDataGrid2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.Designer.cs" line="337" column="55" bodyfile="Vistas/CitasForm.Designer.cs" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_citas_form_1a6fe944dd71492f89638c7fa9db297fbc" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuSeparator</type>
+        <definition>Bunifu.Framework.UI.BunifuSeparator SistemaConsultorioMedico.CitasForm.linea</definition>
+        <argsstring></argsstring>
+        <name>linea</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.linea</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.Designer.cs" line="338" column="50" bodyfile="Vistas/CitasForm.Designer.cs" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_citas_form_1a48cf58cb303dd3537860b55d6fec6075" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuCustomLabel</type>
+        <definition>Bunifu.Framework.UI.BunifuCustomLabel SistemaConsultorioMedico.CitasForm.bunifuCustomLabel2</definition>
+        <argsstring></argsstring>
+        <name>bunifuCustomLabel2</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.bunifuCustomLabel2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.Designer.cs" line="339" column="52" bodyfile="Vistas/CitasForm.Designer.cs" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_citas_form_1a6f79f3199a044f01bb45d58df3bbde53" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuCustomLabel</type>
+        <definition>Bunifu.Framework.UI.BunifuCustomLabel SistemaConsultorioMedico.CitasForm.folioCitaLb</definition>
+        <argsstring></argsstring>
+        <name>folioCitaLb</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.folioCitaLb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.Designer.cs" line="340" column="52" bodyfile="Vistas/CitasForm.Designer.cs" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_citas_form_1a3ace28ef0e62cbb4701e0e652f855779" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuDatepicker</type>
+        <definition>Bunifu.Framework.UI.BunifuDatepicker SistemaConsultorioMedico.CitasForm.bunifuDatepicker1</definition>
+        <argsstring></argsstring>
+        <name>bunifuDatepicker1</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.bunifuDatepicker1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.Designer.cs" line="341" column="51" bodyfile="Vistas/CitasForm.Designer.cs" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_citas_form_1a8cc384c034e95d573ff6d3ab65e959de" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.ComboBox</type>
+        <definition>System.Windows.Forms.ComboBox SistemaConsultorioMedico.CitasForm.comboBox1</definition>
+        <argsstring></argsstring>
+        <name>comboBox1</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.comboBox1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.Designer.cs" line="342" column="44" bodyfile="Vistas/CitasForm.Designer.cs" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_citas_form_1a226a855f8b967c9f67a42330519f8b30" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuThinButton2</type>
+        <definition>Bunifu.Framework.UI.BunifuThinButton2 SistemaConsultorioMedico.CitasForm.AgregarCBtn</definition>
+        <argsstring></argsstring>
+        <name>AgregarCBtn</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.AgregarCBtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.Designer.cs" line="343" column="52" bodyfile="Vistas/CitasForm.Designer.cs" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_citas_form_1a560402cd1349226c823e6243e656e73d" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label SistemaConsultorioMedico.CitasForm.errorDigit</definition>
+        <argsstring></argsstring>
+        <name>errorDigit</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.errorDigit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.Designer.cs" line="344" column="41" bodyfile="Vistas/CitasForm.Designer.cs" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_citas_form_1a0e4312b99da1441d06eb694ab1e734a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SistemaConsultorioMedico.CitasForm.CitasForm</definition>
+        <argsstring>()</argsstring>
+        <name>CitasForm</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.CitasForm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.cs" line="18" column="16" bodyfile="Vistas/CitasForm.cs" bodystart="18" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_citas_form_1a1796230c5808b05207c84f3e8dfe2b15" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.CitasForm.GuardarCitaBtn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>GuardarCitaBtn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.GuardarCitaBtn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.cs" line="33" column="22" bodyfile="Vistas/CitasForm.cs" bodystart="33" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_citas_form_1ad051e24927f78a64ac487fde746c64b1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.CitasForm.CitasForm_Load</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>CitasForm_Load</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.CitasForm_Load</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.cs" line="105" column="22" bodyfile="Vistas/CitasForm.cs" bodystart="105" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_citas_form_1aac40737909f5d03f95162acc11734c23" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.CitasForm.EliminarCitaBtn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>EliminarCitaBtn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.EliminarCitaBtn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.cs" line="116" column="22" bodyfile="Vistas/CitasForm.cs" bodystart="116" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_citas_form_1aeefac5aac9d34a999e320b2b6261eace" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.CitasForm.ModificarCitaBtn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>ModificarCitaBtn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.ModificarCitaBtn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.cs" line="156" column="22" bodyfile="Vistas/CitasForm.cs" bodystart="156" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_citas_form_1ad1097aa1259ea4f21079229bf133dd90" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.CitasForm.bunifuCustomDataGrid2_CellClick</definition>
+        <argsstring>(object sender, DataGridViewCellEventArgs e)</argsstring>
+        <name>bunifuCustomDataGrid2_CellClick</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.bunifuCustomDataGrid2_CellClick</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>DataGridViewCellEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.cs" line="196" column="22" bodyfile="Vistas/CitasForm.cs" bodystart="196" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_citas_form_1a395f8b486760555c32264ef8330c264b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.CitasForm.bunifuDatepicker1_onValueChanged_1</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>bunifuDatepicker1_onValueChanged_1</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.bunifuDatepicker1_onValueChanged_1</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.cs" line="212" column="22" bodyfile="Vistas/CitasForm.cs" bodystart="212" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_citas_form_1a22d16267d19007c6d4655e57ae13289b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.CitasForm.AgregarCBtn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>AgregarCBtn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.AgregarCBtn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.cs" line="332" column="22" bodyfile="Vistas/CitasForm.cs" bodystart="332" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_citas_form_1aad1ddcb0f679948a3426cb28403d4eca" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.CitasForm.bunifuCustomDataGrid2_Validating</definition>
+        <argsstring>(object sender, CancelEventArgs e)</argsstring>
+        <name>bunifuCustomDataGrid2_Validating</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.bunifuCustomDataGrid2_Validating</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>CancelEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.cs" line="345" column="22" bodyfile="Vistas/CitasForm.cs" bodystart="345" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_citas_form_1ae634e9fe224e6fd401cc25867f543b92" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.CitasForm.PacienteCitaTxb_KeyPress</definition>
+        <argsstring>(object sender, KeyPressEventArgs e)</argsstring>
+        <name>PacienteCitaTxb_KeyPress</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.PacienteCitaTxb_KeyPress</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>KeyPressEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.cs" line="350" column="22" bodyfile="Vistas/CitasForm.cs" bodystart="350" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_citas_form_1a48ad04aaae333a534a59c005f912e77c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.CitasForm.PacienteCitaTxb_OnValueChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>PacienteCitaTxb_OnValueChanged</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.PacienteCitaTxb_OnValueChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.cs" line="359" column="22" bodyfile="Vistas/CitasForm.cs" bodystart="359" bodyend="369"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_citas_form_1a05fad98c920210cb18e6f797fd3f9c56" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.CitasForm.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>Required method for Designer support - do not modify the contents of this method with the code editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.Designer.cs" line="30" column="22" bodyfile="Vistas/CitasForm.Designer.cs" bodystart="30" bodyend="329"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_citas_form_1ad69a27828e3dca9725f4831387badebb" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void SistemaConsultorioMedico.CitasForm.Dispose</definition>
+        <argsstring>(bool disposing)</argsstring>
+        <name>Dispose</name>
+        <qualifiedname>SistemaConsultorioMedico.CitasForm.Dispose</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>disposing</declname>
+        </param>
+        <briefdescription>
+<para>Clean up any resources being used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disposing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if managed resources should be disposed; otherwise, false.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/CitasForm.Designer.cs" line="15" column="33" bodyfile="Vistas/CitasForm.Designer.cs" bodystart="15" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>SistemaConsultorioMedico.CitasForm</label>
+        <link refid="class_sistema_consultorio_medico_1_1_citas_form"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>SistemaConsultorioMedico.CitasForm</label>
+        <link refid="class_sistema_consultorio_medico_1_1_citas_form"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Vistas/CitasForm.cs" line="14" column="19" bodyfile="Vistas/CitasForm.cs" bodystart="15" bodyend="370"/>
+    <listofallmembers>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a226a855f8b967c9f67a42330519f8b30" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>AgregarCBtn</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a22d16267d19007c6d4655e57ae13289b" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>AgregarCBtn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a5a83626f13130cc9403f56e4fa729bf7" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>bunifuCustomDataGrid2</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1ad1097aa1259ea4f21079229bf133dd90" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>bunifuCustomDataGrid2_CellClick</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1aad1ddcb0f679948a3426cb28403d4eca" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>bunifuCustomDataGrid2_Validating</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a48cf58cb303dd3537860b55d6fec6075" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>bunifuCustomLabel2</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a3ace28ef0e62cbb4701e0e652f855779" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>bunifuDatepicker1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a395f8b486760555c32264ef8330c264b" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>bunifuDatepicker1_onValueChanged_1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1afef378d242b0108ba386763d8d9c9c99" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>cita</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a0e4312b99da1441d06eb694ab1e734a3" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>CitasForm</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1ad051e24927f78a64ac487fde746c64b1" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>CitasForm_Load</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a8cc384c034e95d573ff6d3ab65e959de" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>comboBox1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a871d2d99de6f23614e4eda9e28057676" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>components</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1ad69a27828e3dca9725f4831387badebb" prot="protected" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>Dispose</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1af3114ab46ec4cb47abf2202ce3f2f61d" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>EliminarCitaBtn</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1aac40737909f5d03f95162acc11734c23" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>EliminarCitaBtn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a560402cd1349226c823e6243e656e73d" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>errorDigit</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a6f79f3199a044f01bb45d58df3bbde53" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>folioCitaLb</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a1ad95dec27fb6efdacc93ebdfae5211a" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>GuardarCitaBtn</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a1796230c5808b05207c84f3e8dfe2b15" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>GuardarCitaBtn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1ac476654c803c8954af1d79d3c8c10c4b" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>indice</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a05fad98c920210cb18e6f797fd3f9c56" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>InitializeComponent</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a6fe944dd71492f89638c7fa9db297fbc" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>linea</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a373752e61873099742440679c350738d" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>ModificarCitaBtn</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1aeefac5aac9d34a999e320b2b6261eace" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>ModificarCitaBtn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a610bc2d03bd7723450c76ae1fe9c5063" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>PacienteCitaTxb</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1ae634e9fe224e6fd401cc25867f543b92" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>PacienteCitaTxb_KeyPress</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_citas_form_1a48ad04aaae333a534a59c005f912e77c" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::CitasForm</scope><name>PacienteCitaTxb_OnValueChanged</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="namespace_sistema_consultorio_medico_1_1_controladores" kind="namespace" language="C#">
+    <compoundname>SistemaConsultorioMedico::Controladores</compoundname>
+    <innerclass refid="class_sistema_consultorio_medico_1_1_controladores_1_1_cita_controller" prot="public">SistemaConsultorioMedico::Controladores::CitaController</innerclass>
+    <innerclass refid="class_sistema_consultorio_medico_1_1_controladores_1_1_conexion_controller" prot="public">SistemaConsultorioMedico::Controladores::ConexionController</innerclass>
+    <innerclass refid="class_sistema_consultorio_medico_1_1_controladores_1_1_diagnostico_controller" prot="public">SistemaConsultorioMedico::Controladores::DiagnosticoController</innerclass>
+    <innerclass refid="class_sistema_consultorio_medico_1_1_controladores_1_1_informacion_medica_controller" prot="public">SistemaConsultorioMedico::Controladores::InformacionMedicaController</innerclass>
+    <innerclass refid="class_sistema_consultorio_medico_1_1_controladores_1_1_paciente_controller" prot="public">SistemaConsultorioMedico::Controladores::PacienteController</innerclass>
+    <innerclass refid="class_sistema_consultorio_medico_1_1_controladores_1_1_propiedad_controller" prot="public">SistemaConsultorioMedico::Controladores::PropiedadController</innerclass>
+    <innerclass refid="class_sistema_consultorio_medico_1_1_controladores_1_1_usuario_controller" prot="public">SistemaConsultorioMedico::Controladores::UsuarioController</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Controladores/CitaController.cs" line="11" column="1"/>
+  </compounddef>
+</doxygen>

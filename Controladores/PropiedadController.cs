@@ -10,6 +10,11 @@ namespace SistemaConsultorioMedico.Controladores
     class PropiedadController
     {
         //Limitar longitud de caracteres en string
+        /// <summary>
+        /// Propiedad que verifica la longitud de un String en el sistema.
+        /// </summary>
+        /// <param name="materialTextbox"></param>
+        /// <param name="longitud"></param>
         public static void BunifuMaterial(Bunifu.Framework.UI.BunifuMaterialTextbox materialTextbox, int longitud)
 
         {

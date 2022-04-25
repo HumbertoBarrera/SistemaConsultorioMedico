@@ -9,17 +9,26 @@ namespace SistemaConsultorioMedico.Controladores
 {
     class ConexionController
     {
-
+        private static string connection = "SERVER=localhost; DATABASE=CONSULTORIO; Integrated Security=true";
+        
+        /// <summary>
+        /// Método para conectarse a la base de datos.
+        /// </summary>
+        /// <returns></returns>
         public static SqlConnection Conectar()
         {
-            SqlConnection cn = new SqlConnection(@"SERVER=LAPTOP-JQ6S98VF\SQLEXPRESS; DATABASE=CONSULTORIO; Integrated Security=true");
+            SqlConnection cn = new SqlConnection(connection);
             cn.Open();
             return cn;
         }
 
+        /// <summary>
+        /// Método para cerrar la conexión a la base de datos.
+        /// </summary>
+        /// <returns></returns>
         public static SqlConnection Desconectar()
         {
-            SqlConnection cn = new SqlConnection(@"SERVER=LAPTOP-JQ6S98VF\SQLEXPRESS; DATABASE=CONSULTORIO; Integrated Security=true");
+            SqlConnection cn = new SqlConnection(connection);
             cn.Close();
             return cn;
         }

@@ -1,0 +1,889 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="class_sistema_consultorio_medico_1_1_menuform" kind="class" language="C#" prot="public">
+    <compoundname>SistemaConsultorioMedico::Menuform</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1a456021006f0441f948ba49bf17593521" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SistemaConsultorioMedico.Menuform.idPaciente</definition>
+        <argsstring></argsstring>
+        <name>idPaciente</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.idPaciente</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.cs" line="15" column="13" bodyfile="Vistas/Menuform.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1aa8cc8a6bdf2758338b7a2cc923fa275c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SistemaConsultorioMedico.Menuform.flagME</definition>
+        <argsstring></argsstring>
+        <name>flagME</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.flagME</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.cs" line="16" column="14" bodyfile="Vistas/Menuform.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1a2bfd2b6a925a1bbc3288c6642cf3dc47" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SistemaConsultorioMedico.Menuform.conteoBase</definition>
+        <argsstring></argsstring>
+        <name>conteoBase</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.conteoBase</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.cs" line="72" column="13" bodyfile="Vistas/Menuform.cs" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1afc41de0378e18a39f875b334f68e4219" prot="private" static="no" mutable="no">
+        <type>System.ComponentModel.IContainer</type>
+        <definition>System.ComponentModel.IContainer SistemaConsultorioMedico.Menuform.components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.components</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Required designer variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="9" column="48" bodyfile="Vistas/Menuform.Designer.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1a6079f92cbb4e2fdb1f11b2255ecdd1f0" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Panel</type>
+        <definition>System.Windows.Forms.Panel SistemaConsultorioMedico.Menuform.contenidoPnl</definition>
+        <argsstring></argsstring>
+        <name>contenidoPnl</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.contenidoPnl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="579" column="41" bodyfile="Vistas/Menuform.Designer.cs" bodystart="579" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1a6f73b9ed56dc328e91a21a8ecc984201" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Panel</type>
+        <definition>System.Windows.Forms.Panel SistemaConsultorioMedico.Menuform.contenedorMenuPnl</definition>
+        <argsstring></argsstring>
+        <name>contenedorMenuPnl</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.contenedorMenuPnl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="580" column="41" bodyfile="Vistas/Menuform.Designer.cs" bodystart="580" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1afe0ca88a7c30eec57134e37a81005a45" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Panel</type>
+        <definition>System.Windows.Forms.Panel SistemaConsultorioMedico.Menuform.menuTopPnl</definition>
+        <argsstring></argsstring>
+        <name>menuTopPnl</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.menuTopPnl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="581" column="41" bodyfile="Vistas/Menuform.Designer.cs" bodystart="581" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1accd4757d7f6c71c81cdf8f18b8ae191b" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.PictureBox</type>
+        <definition>System.Windows.Forms.PictureBox SistemaConsultorioMedico.Menuform.Restaurar</definition>
+        <argsstring></argsstring>
+        <name>Restaurar</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.Restaurar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="582" column="46" bodyfile="Vistas/Menuform.Designer.cs" bodystart="582" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1a8ee7181d3233cdd1d285b0a5c238553c" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.PictureBox</type>
+        <definition>System.Windows.Forms.PictureBox SistemaConsultorioMedico.Menuform.Minimizar</definition>
+        <argsstring></argsstring>
+        <name>Minimizar</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.Minimizar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="583" column="46" bodyfile="Vistas/Menuform.Designer.cs" bodystart="583" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1a9a1a35966d82f81401bc3f0fac1ec6ba" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.PictureBox</type>
+        <definition>System.Windows.Forms.PictureBox SistemaConsultorioMedico.Menuform.Maximizar</definition>
+        <argsstring></argsstring>
+        <name>Maximizar</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.Maximizar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="584" column="46" bodyfile="Vistas/Menuform.Designer.cs" bodystart="584" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1a68257a1e0d05ed6e08a4d088df6fc25f" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.PictureBox</type>
+        <definition>System.Windows.Forms.PictureBox SistemaConsultorioMedico.Menuform.Salir</definition>
+        <argsstring></argsstring>
+        <name>Salir</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.Salir</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="585" column="46" bodyfile="Vistas/Menuform.Designer.cs" bodystart="585" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1a2e6de6acfe4ec7697b1ebececa6fd7e6" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label SistemaConsultorioMedico.Menuform.label2</definition>
+        <argsstring></argsstring>
+        <name>label2</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.label2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="586" column="41" bodyfile="Vistas/Menuform.Designer.cs" bodystart="586" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1a3329f10c505d5db8591f3a6adc82b6bd" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.PictureBox</type>
+        <definition>System.Windows.Forms.PictureBox SistemaConsultorioMedico.Menuform.MenuDesplegableBtn</definition>
+        <argsstring></argsstring>
+        <name>MenuDesplegableBtn</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.MenuDesplegableBtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="587" column="46" bodyfile="Vistas/Menuform.Designer.cs" bodystart="587" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1a6bf47dfc0475d614d9cae3b23c7c9bc1" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuGradientPanel</type>
+        <definition>Bunifu.Framework.UI.BunifuGradientPanel SistemaConsultorioMedico.Menuform.Sidebar</definition>
+        <argsstring></argsstring>
+        <name>Sidebar</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.Sidebar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="588" column="54" bodyfile="Vistas/Menuform.Designer.cs" bodystart="588" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1a04435cdb905950b56fe5f8903b9f93ad" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuFlatButton</type>
+        <definition>Bunifu.Framework.UI.BunifuFlatButton SistemaConsultorioMedico.Menuform.diagnosticoBtn</definition>
+        <argsstring></argsstring>
+        <name>diagnosticoBtn</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.diagnosticoBtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="589" column="51" bodyfile="Vistas/Menuform.Designer.cs" bodystart="589" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1aba3076e7a86caa7219bd8ef8f21b50f3" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuFlatButton</type>
+        <definition>Bunifu.Framework.UI.BunifuFlatButton SistemaConsultorioMedico.Menuform.citaBtn</definition>
+        <argsstring></argsstring>
+        <name>citaBtn</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.citaBtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="590" column="51" bodyfile="Vistas/Menuform.Designer.cs" bodystart="590" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1a082c10e97130e0063f9e4642f23554bd" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuFlatButton</type>
+        <definition>Bunifu.Framework.UI.BunifuFlatButton SistemaConsultorioMedico.Menuform.Pacientebtn</definition>
+        <argsstring></argsstring>
+        <name>Pacientebtn</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.Pacientebtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="591" column="51" bodyfile="Vistas/Menuform.Designer.cs" bodystart="591" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1a2851dd947b181ef64b4304c1824769fd" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuSeparator</type>
+        <definition>Bunifu.Framework.UI.BunifuSeparator SistemaConsultorioMedico.Menuform.linea</definition>
+        <argsstring></argsstring>
+        <name>linea</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.linea</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="592" column="50" bodyfile="Vistas/Menuform.Designer.cs" bodystart="592" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1a0a6fb1834b00326908c5b1952afd5d85" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label SistemaConsultorioMedico.Menuform.label1</definition>
+        <argsstring></argsstring>
+        <name>label1</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.label1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="593" column="41" bodyfile="Vistas/Menuform.Designer.cs" bodystart="593" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1a485d943f866ea23fb0dbc967d417053d" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.PictureBox</type>
+        <definition>System.Windows.Forms.PictureBox SistemaConsultorioMedico.Menuform.pictureBox3</definition>
+        <argsstring></argsstring>
+        <name>pictureBox3</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.pictureBox3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="594" column="46" bodyfile="Vistas/Menuform.Designer.cs" bodystart="594" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1a37a204b97f507777ce39cd60f2584c19" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuElipse</type>
+        <definition>Bunifu.Framework.UI.BunifuElipse SistemaConsultorioMedico.Menuform.curvaTablero</definition>
+        <argsstring></argsstring>
+        <name>curvaTablero</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.curvaTablero</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="595" column="47" bodyfile="Vistas/Menuform.Designer.cs" bodystart="595" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1ab8fc5c0301b85d9bd0bc53efabfb36a5" prot="private" static="no" mutable="no">
+        <type>BunifuAnimatorNS.BunifuTransition</type>
+        <definition>BunifuAnimatorNS.BunifuTransition SistemaConsultorioMedico.Menuform.AnimacionSidebar</definition>
+        <argsstring></argsstring>
+        <name>AnimacionSidebar</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.AnimacionSidebar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="596" column="50" bodyfile="Vistas/Menuform.Designer.cs" bodystart="596" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1acb300fc4356fe6a9bfa2f30a52297211" prot="private" static="no" mutable="no">
+        <type>BunifuAnimatorNS.BunifuTransition</type>
+        <definition>BunifuAnimatorNS.BunifuTransition SistemaConsultorioMedico.Menuform.AnimacionSidebarAtras</definition>
+        <argsstring></argsstring>
+        <name>AnimacionSidebarAtras</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.AnimacionSidebarAtras</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="597" column="50" bodyfile="Vistas/Menuform.Designer.cs" bodystart="597" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1a3a693f7a3a28473553a51bc7c104100e" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuElipse</type>
+        <definition>Bunifu.Framework.UI.BunifuElipse SistemaConsultorioMedico.Menuform.bunifuElipse1</definition>
+        <argsstring></argsstring>
+        <name>bunifuElipse1</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.bunifuElipse1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="598" column="47" bodyfile="Vistas/Menuform.Designer.cs" bodystart="598" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1ac3275cd2a04c82929fc28f37c49df8e3" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuDragControl</type>
+        <definition>Bunifu.Framework.UI.BunifuDragControl SistemaConsultorioMedico.Menuform.Mover</definition>
+        <argsstring></argsstring>
+        <name>Mover</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.Mover</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="599" column="52" bodyfile="Vistas/Menuform.Designer.cs" bodystart="599" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1a80508a4e606cbf4ef641c66e80294e89" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuFlatButton</type>
+        <definition>Bunifu.Framework.UI.BunifuFlatButton SistemaConsultorioMedico.Menuform.InformacionMedicaBtn</definition>
+        <argsstring></argsstring>
+        <name>InformacionMedicaBtn</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.InformacionMedicaBtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="600" column="51" bodyfile="Vistas/Menuform.Designer.cs" bodystart="600" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1afceb3e06c5d826ce26a28d4941192491" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuElipse</type>
+        <definition>Bunifu.Framework.UI.BunifuElipse SistemaConsultorioMedico.Menuform.bunifuElipse2</definition>
+        <argsstring></argsstring>
+        <name>bunifuElipse2</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.bunifuElipse2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="601" column="47" bodyfile="Vistas/Menuform.Designer.cs" bodystart="601" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1a3f0062dcc756426b174f0e0ef8c6b7d1" prot="private" static="no" mutable="no">
+        <type>Bunifu.Framework.UI.BunifuFlatButton</type>
+        <definition>Bunifu.Framework.UI.BunifuFlatButton SistemaConsultorioMedico.Menuform.logoutBtn</definition>
+        <argsstring></argsstring>
+        <name>logoutBtn</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.logoutBtn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="603" column="51" bodyfile="Vistas/Menuform.Designer.cs" bodystart="603" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_sistema_consultorio_medico_1_1_menuform_1a015ecf73d5fe3c811262adfcb5d4e1b1" prot="public" static="no" mutable="no">
+        <type>System.Windows.Forms.Panel</type>
+        <definition>System.Windows.Forms.Panel SistemaConsultorioMedico.Menuform.panel1</definition>
+        <argsstring></argsstring>
+        <name>panel1</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.panel1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="602" column="40" bodyfile="Vistas/Menuform.Designer.cs" bodystart="602" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_menuform_1a25209565e4ec712225416aa27e5897ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SistemaConsultorioMedico.Menuform.Menuform</definition>
+        <argsstring>()</argsstring>
+        <name>Menuform</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.Menuform</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.cs" line="18" column="16" bodyfile="Vistas/Menuform.cs" bodystart="18" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_menuform_1a719d96df15ce05f630de320f76537fda" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Menuform.Salir_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>Salir_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.Salir_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.cs" line="23" column="22" bodyfile="Vistas/Menuform.cs" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_menuform_1a484debc5c778283082528c74e9dcecea" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Menuform.Restaurar_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>Restaurar_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.Restaurar_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.cs" line="28" column="22" bodyfile="Vistas/Menuform.cs" bodystart="28" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_menuform_1afbf5d99b04de945522e11c59f00d0c56" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Menuform.Minimizar_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>Minimizar_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.Minimizar_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.cs" line="35" column="22" bodyfile="Vistas/Menuform.cs" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_menuform_1a1589563a388fa91419d236195a68f08b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Menuform.Maximizar_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>Maximizar_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.Maximizar_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.cs" line="40" column="22" bodyfile="Vistas/Menuform.cs" bodystart="40" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_menuform_1a5bf918bab87b7c2331f6ed2c67aa6796" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Menuform.MenuDesplegableBtn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>MenuDesplegableBtn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.MenuDesplegableBtn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.cs" line="47" column="22" bodyfile="Vistas/Menuform.cs" bodystart="47" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_menuform_1a1fce7a4f3d507f939835f743fb46a2c3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Menuform.Pacientebtn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>Pacientebtn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.Pacientebtn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.cs" line="67" column="22" bodyfile="Vistas/Menuform.cs" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_menuform_1a6d6036cb587b8f954bfd10f5e8db9bf9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Menuform.AbrirFormHijo</definition>
+        <argsstring>(object formhijo)</argsstring>
+        <name>AbrirFormHijo</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.AbrirFormHijo</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>formhijo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.cs" line="74" column="22" bodyfile="Vistas/Menuform.cs" bodystart="74" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_menuform_1a4cc484ad9586d80f8b5241d5407aadf2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Menuform.AbrirFormHijo2</definition>
+        <argsstring>(object formhijo)</argsstring>
+        <name>AbrirFormHijo2</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.AbrirFormHijo2</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>formhijo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.cs" line="87" column="22" bodyfile="Vistas/Menuform.cs" bodystart="87" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_menuform_1a0617a2226514e0799fa0aa40b2f93201" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Menuform.citaBtn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>citaBtn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.citaBtn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.cs" line="99" column="22" bodyfile="Vistas/Menuform.cs" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_menuform_1aa3b194b94b3d513b23c21a6160406907" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Menuform.pictureBox3_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>pictureBox3_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.pictureBox3_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.cs" line="104" column="22" bodyfile="Vistas/Menuform.cs" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_menuform_1ac3602302cbce41ab0f46133dd723c7fa" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Menuform.label1_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>label1_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.label1_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.cs" line="109" column="22" bodyfile="Vistas/Menuform.cs" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_menuform_1a1236c556bd5ff077d15442918c2e8e13" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Menuform.diagnosticoBtn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>diagnosticoBtn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.diagnosticoBtn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.cs" line="114" column="22" bodyfile="Vistas/Menuform.cs" bodystart="114" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_menuform_1ab3a804f4d9fc192f9fc8bc8aaaf167f9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Menuform.InformacionMedicasBtn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>InformacionMedicasBtn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.InformacionMedicasBtn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.cs" line="119" column="22" bodyfile="Vistas/Menuform.cs" bodystart="119" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_menuform_1a795846201d6aec461eb8d88761d3b823" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Menuform.InformacionMedicaBtn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>InformacionMedicaBtn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.InformacionMedicaBtn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.cs" line="124" column="22" bodyfile="Vistas/Menuform.cs" bodystart="124" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_menuform_1a0d2bde92016f231e723e02236c764bc8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Menuform.logoutBtn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>logoutBtn_Click</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.logoutBtn_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.cs" line="129" column="22" bodyfile="Vistas/Menuform.cs" bodystart="129" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_menuform_1a492e2a82c6bc045d0a846c1a3f6988b6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SistemaConsultorioMedico.Menuform.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>Required method for Designer support - do not modify the contents of this method with the code editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="30" column="22" bodyfile="Vistas/Menuform.Designer.cs" bodystart="30" bodyend="575"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_sistema_consultorio_medico_1_1_menuform_1a1a211f8d3492f898545d7b937bbbb0fb" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void SistemaConsultorioMedico.Menuform.Dispose</definition>
+        <argsstring>(bool disposing)</argsstring>
+        <name>Dispose</name>
+        <qualifiedname>SistemaConsultorioMedico.Menuform.Dispose</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>disposing</declname>
+        </param>
+        <briefdescription>
+<para>Clean up any resources being used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disposing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if managed resources should be disposed; otherwise, false.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Vistas/Menuform.Designer.cs" line="15" column="33" bodyfile="Vistas/Menuform.Designer.cs" bodystart="15" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>SistemaConsultorioMedico.Menuform</label>
+        <link refid="class_sistema_consultorio_medico_1_1_menuform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>SistemaConsultorioMedico.Menuform</label>
+        <link refid="class_sistema_consultorio_medico_1_1_menuform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>panel1</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>System</label>
+      </node>
+    </collaborationgraph>
+    <location file="Vistas/Menuform.cs" line="13" column="19" bodyfile="Vistas/Menuform.cs" bodystart="14" bodyend="135"/>
+    <listofallmembers>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a6d6036cb587b8f954bfd10f5e8db9bf9" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>AbrirFormHijo</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a4cc484ad9586d80f8b5241d5407aadf2" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>AbrirFormHijo2</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1ab8fc5c0301b85d9bd0bc53efabfb36a5" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>AnimacionSidebar</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1acb300fc4356fe6a9bfa2f30a52297211" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>AnimacionSidebarAtras</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a3a693f7a3a28473553a51bc7c104100e" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>bunifuElipse1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1afceb3e06c5d826ce26a28d4941192491" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>bunifuElipse2</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1aba3076e7a86caa7219bd8ef8f21b50f3" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>citaBtn</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a0617a2226514e0799fa0aa40b2f93201" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>citaBtn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1afc41de0378e18a39f875b334f68e4219" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>components</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a6f73b9ed56dc328e91a21a8ecc984201" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>contenedorMenuPnl</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a6079f92cbb4e2fdb1f11b2255ecdd1f0" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>contenidoPnl</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a2bfd2b6a925a1bbc3288c6642cf3dc47" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>conteoBase</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a37a204b97f507777ce39cd60f2584c19" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>curvaTablero</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a04435cdb905950b56fe5f8903b9f93ad" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>diagnosticoBtn</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a1236c556bd5ff077d15442918c2e8e13" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>diagnosticoBtn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a1a211f8d3492f898545d7b937bbbb0fb" prot="protected" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>Dispose</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1aa8cc8a6bdf2758338b7a2cc923fa275c" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>flagME</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a456021006f0441f948ba49bf17593521" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>idPaciente</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a80508a4e606cbf4ef641c66e80294e89" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>InformacionMedicaBtn</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a795846201d6aec461eb8d88761d3b823" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>InformacionMedicaBtn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1ab3a804f4d9fc192f9fc8bc8aaaf167f9" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>InformacionMedicasBtn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a492e2a82c6bc045d0a846c1a3f6988b6" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>InitializeComponent</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a0a6fb1834b00326908c5b1952afd5d85" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>label1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1ac3602302cbce41ab0f46133dd723c7fa" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>label1_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a2e6de6acfe4ec7697b1ebececa6fd7e6" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>label2</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a2851dd947b181ef64b4304c1824769fd" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>linea</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a3f0062dcc756426b174f0e0ef8c6b7d1" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>logoutBtn</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a0d2bde92016f231e723e02236c764bc8" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>logoutBtn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a9a1a35966d82f81401bc3f0fac1ec6ba" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>Maximizar</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a1589563a388fa91419d236195a68f08b" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>Maximizar_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a3329f10c505d5db8591f3a6adc82b6bd" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>MenuDesplegableBtn</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a5bf918bab87b7c2331f6ed2c67aa6796" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>MenuDesplegableBtn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a25209565e4ec712225416aa27e5897ec" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>Menuform</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1afe0ca88a7c30eec57134e37a81005a45" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>menuTopPnl</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a8ee7181d3233cdd1d285b0a5c238553c" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>Minimizar</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1afbf5d99b04de945522e11c59f00d0c56" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>Minimizar_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1ac3275cd2a04c82929fc28f37c49df8e3" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>Mover</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a082c10e97130e0063f9e4642f23554bd" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>Pacientebtn</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a1fce7a4f3d507f939835f743fb46a2c3" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>Pacientebtn_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a015ecf73d5fe3c811262adfcb5d4e1b1" prot="public" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>panel1</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a485d943f866ea23fb0dbc967d417053d" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>pictureBox3</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1aa3b194b94b3d513b23c21a6160406907" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>pictureBox3_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1accd4757d7f6c71c81cdf8f18b8ae191b" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>Restaurar</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a484debc5c778283082528c74e9dcecea" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>Restaurar_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a68257a1e0d05ed6e08a4d088df6fc25f" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>Salir</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a719d96df15ce05f630de320f76537fda" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>Salir_Click</name></member>
+      <member refid="class_sistema_consultorio_medico_1_1_menuform_1a6bf47dfc0475d614d9cae3b23c7c9bc1" prot="private" virt="non-virtual"><scope>SistemaConsultorioMedico::Menuform</scope><name>Sidebar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
