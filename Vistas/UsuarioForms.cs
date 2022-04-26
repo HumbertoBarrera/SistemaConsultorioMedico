@@ -16,5 +16,19 @@ namespace SistemaConsultorioMedico.Vistas
         {
             InitializeComponent();
         }
+
+        private void UsuarioForms_Load(object sender, EventArgs e)
+        {
+            Controladores.UsuarioController da = new Controladores.UsuarioController();
+            var dt = da.CargarGridUsuarios();
+            usuarios_DataGrid.DataSource = dt;
+        }
+
+        private void LlenarInfoUsuarios_DataGrid(object sender, DataGridViewCellEventArgs e)
+        {
+            int indice = usuarios_DataGrid.CurrentRow.Index;
+            usuarioTbx.Text = usuarios_DataGrid[0, indice].Value.ToString();
+            passwordTbx.Text = usuarios_DataGrid[1, indice].Value.ToString();
+        }
     }
 }

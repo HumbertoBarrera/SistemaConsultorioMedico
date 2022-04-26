@@ -372,6 +372,7 @@ namespace SistemaConsultorioMedico
             this.bunifuCustomDataGrid1.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.bunifuCustomDataGrid1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -484,7 +485,7 @@ namespace SistemaConsultorioMedico
             this.correoErrorLbl.ForeColor = System.Drawing.Color.Crimson;
             this.correoErrorLbl.Location = new System.Drawing.Point(17, 551);
             this.correoErrorLbl.Name = "correoErrorLbl";
-            this.correoErrorLbl.Size = new System.Drawing.Size(261, 17);
+            this.correoErrorLbl.Size = new System.Drawing.Size(247, 16);
             this.correoErrorLbl.TabIndex = 32;
             this.correoErrorLbl.Text = "Dirección de correo electrónico inválida.";
             this.correoErrorLbl.Visible = false;

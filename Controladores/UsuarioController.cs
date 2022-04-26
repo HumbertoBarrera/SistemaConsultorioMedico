@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using SistemaConsultorioMedico.Modelos;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace SistemaConsultorioMedico.Controladores
 {
@@ -47,6 +48,26 @@ namespace SistemaConsultorioMedico.Controladores
             else
                 MessageBox.Show("Usuario y/o contraseña son incorrectos");
 
+        }
+
+        /* Método para cargar los datos de la tabla de usuarios
+         * a un data grid
+         */
+        /// <summary>
+        /// Carga a los usuarios de la base de datos y los muestra en el sistema.
+        /// </summary>
+        /// <returns></returns>
+        public DataTable CargarGridUsuarios()
+        {
+            // Creamos el query a utilizar
+            String query = "SELECT usuario, contraseña, rol FROM USUARIO";
+            using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
+            {
+                SqlDataAdapter data = new SqlDataAdapter(comando); // Se recuperan los datos de la tabla
+                DataTable tabla = new DataTable(); // Creamos una variable de tipo tabla de datos
+                data.Fill(tabla); // Llenamos la tabla de datos con la información recuperada
+                return tabla; // Regresamos dicha tabla
+            }
         }
 
     }
