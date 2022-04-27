@@ -13,6 +13,7 @@ namespace SistemaConsultorioMedico.Vistas
     public partial class UsuarioForms : Form
     {
 
+        Boolean flagME = false;
         private Modelos.Usuario user;
 
         public UsuarioForms()
@@ -32,6 +33,12 @@ namespace SistemaConsultorioMedico.Vistas
             int indice = usuarios_DataGrid.CurrentRow.Index;
             usuarioTbx.Text = usuarios_DataGrid[0, indice].Value.ToString();
             passwordTbx.Text = usuarios_DataGrid[1, indice].Value.ToString();
+            if (usuarios_DataGrid[2, indice].Value.ToString() == "S")
+                rol_comboBox.selectedIndex = 1;
+            else
+                rol_comboBox.selectedIndex = 2;
+            modificarBtn.Enabled = true;
+            eliminarBtn.Enabled = true;
         }
 
         private void BloqueoBtnGuardar(object sender, EventArgs e)
@@ -88,5 +95,42 @@ namespace SistemaConsultorioMedico.Vistas
             rol_comboBox.selectedIndex = 0;
         }
 
+        private void modificarBtn_Click(object sender, EventArgs e)
+        {
+            modificarBtn.Enabled = false;
+        }
+
+        private void eliminarBtn_Click(object sender, EventArgs e)
+        {
+            eliminarBtn.Enabled = false;
+        }
+
+        private void ModificarBotonBloquear(object sender, EventArgs e)
+        {
+            if (modificarBtn.Enabled == true)
+            {
+                modificarBtn.IdleFillColor = Color.White;
+                modificarBtn.Padding = new Padding(0);
+            }
+            else
+            {
+                modificarBtn.IdleFillColor = Color.Gray;
+                modificarBtn.Padding = new Padding(21, 10, 0, 0);
+            }
+        }
+
+        private void EliminarBotonBloquear(object sender, EventArgs e)
+        {
+            if (eliminarBtn.Enabled == true)
+            {
+                eliminarBtn.IdleFillColor = Color.White;
+                eliminarBtn.Padding = new Padding(0);
+            }
+            else
+            {
+                eliminarBtn.IdleFillColor = Color.Gray;
+                eliminarBtn.Padding = new Padding(28, 10, 0, 0);
+            }
+        }
     }
 }

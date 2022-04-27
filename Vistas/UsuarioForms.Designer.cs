@@ -29,8 +29,8 @@ namespace SistemaConsultorioMedico.Vistas
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsuarioForms));
             this.usuarios_DataGrid = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.linea = new Bunifu.Framework.UI.BunifuSeparator();
@@ -39,6 +39,8 @@ namespace SistemaConsultorioMedico.Vistas
             this.passwordTbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.guardarUsuario_Btn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.rol_comboBox = new Bunifu.Framework.UI.BunifuDropdown();
+            this.modificarBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.eliminarBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.usuarios_DataGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,20 +50,20 @@ namespace SistemaConsultorioMedico.Vistas
             this.usuarios_DataGrid.AllowUserToDeleteRows = false;
             this.usuarios_DataGrid.AllowUserToResizeColumns = false;
             this.usuarios_DataGrid.AllowUserToResizeRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.usuarios_DataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.usuarios_DataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.usuarios_DataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.usuarios_DataGrid.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.usuarios_DataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.usuarios_DataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.usuarios_DataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.usuarios_DataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.usuarios_DataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.usuarios_DataGrid.DoubleBuffered = true;
             this.usuarios_DataGrid.EnableHeadersVisualStyles = false;
@@ -160,7 +162,7 @@ namespace SistemaConsultorioMedico.Vistas
             this.guardarUsuario_Btn.IdleFillColor = System.Drawing.Color.Gray;
             this.guardarUsuario_Btn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.guardarUsuario_Btn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.guardarUsuario_Btn.Location = new System.Drawing.Point(19, 471);
+            this.guardarUsuario_Btn.Location = new System.Drawing.Point(16, 406);
             this.guardarUsuario_Btn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.guardarUsuario_Btn.Name = "guardarUsuario_Btn";
             this.guardarUsuario_Btn.Padding = new System.Windows.Forms.Padding(44, 12, 0, 12);
@@ -190,12 +192,72 @@ namespace SistemaConsultorioMedico.Vistas
             this.rol_comboBox.TabIndex = 35;
             this.rol_comboBox.onItemSelected += new System.EventHandler(this.BloqueoBtnGuardar);
             // 
+            // modificarBtn
+            // 
+            this.modificarBtn.ActiveBorderThickness = 1;
+            this.modificarBtn.ActiveCornerRadius = 20;
+            this.modificarBtn.ActiveFillColor = System.Drawing.Color.Plum;
+            this.modificarBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.modificarBtn.ActiveLineColor = System.Drawing.Color.Plum;
+            this.modificarBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.modificarBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("modificarBtn.BackgroundImage")));
+            this.modificarBtn.ButtonText = "MODIFICAR";
+            this.modificarBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.modificarBtn.Enabled = false;
+            this.modificarBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.modificarBtn.ForeColor = System.Drawing.Color.ForestGreen;
+            this.modificarBtn.IdleBorderThickness = 1;
+            this.modificarBtn.IdleCornerRadius = 20;
+            this.modificarBtn.IdleFillColor = System.Drawing.Color.Gray;
+            this.modificarBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.modificarBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.modificarBtn.Location = new System.Drawing.Point(260, 406);
+            this.modificarBtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.modificarBtn.Name = "modificarBtn";
+            this.modificarBtn.Padding = new System.Windows.Forms.Padding(44, 12, 0, 12);
+            this.modificarBtn.Size = new System.Drawing.Size(188, 50);
+            this.modificarBtn.TabIndex = 36;
+            this.modificarBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.modificarBtn.Click += new System.EventHandler(this.modificarBtn_Click);
+            this.modificarBtn.EnabledChanged += new System.EventHandler(this.ModificarBotonBloquear);
+            // 
+            // eliminarBtn
+            // 
+            this.eliminarBtn.ActiveBorderThickness = 1;
+            this.eliminarBtn.ActiveCornerRadius = 20;
+            this.eliminarBtn.ActiveFillColor = System.Drawing.Color.Plum;
+            this.eliminarBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.eliminarBtn.ActiveLineColor = System.Drawing.Color.Plum;
+            this.eliminarBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.eliminarBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("eliminarBtn.BackgroundImage")));
+            this.eliminarBtn.ButtonText = "ELIMINAR";
+            this.eliminarBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.eliminarBtn.Enabled = false;
+            this.eliminarBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eliminarBtn.ForeColor = System.Drawing.Color.ForestGreen;
+            this.eliminarBtn.IdleBorderThickness = 1;
+            this.eliminarBtn.IdleCornerRadius = 20;
+            this.eliminarBtn.IdleFillColor = System.Drawing.Color.Gray;
+            this.eliminarBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.eliminarBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.eliminarBtn.Location = new System.Drawing.Point(260, 472);
+            this.eliminarBtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.eliminarBtn.Name = "eliminarBtn";
+            this.eliminarBtn.Padding = new System.Windows.Forms.Padding(44, 12, 0, 12);
+            this.eliminarBtn.Size = new System.Drawing.Size(188, 50);
+            this.eliminarBtn.TabIndex = 37;
+            this.eliminarBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.eliminarBtn.Click += new System.EventHandler(this.eliminarBtn_Click);
+            this.eliminarBtn.EnabledChanged += new System.EventHandler(this.EliminarBotonBloquear);
+            // 
             // UsuarioForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1213, 554);
+            this.Controls.Add(this.eliminarBtn);
+            this.Controls.Add(this.modificarBtn);
             this.Controls.Add(this.rol_comboBox);
             this.Controls.Add(this.guardarUsuario_Btn);
             this.Controls.Add(this.passwordTbx);
@@ -222,5 +284,7 @@ namespace SistemaConsultorioMedico.Vistas
         private Bunifu.Framework.UI.BunifuMaterialTextbox passwordTbx;
         private Bunifu.Framework.UI.BunifuThinButton2 guardarUsuario_Btn;
         private Bunifu.Framework.UI.BunifuDropdown rol_comboBox;
+        private Bunifu.Framework.UI.BunifuThinButton2 modificarBtn;
+        private Bunifu.Framework.UI.BunifuThinButton2 eliminarBtn;
     }
 }
