@@ -30,6 +30,7 @@ namespace SistemaConsultorioMedico.Vistas
 
         private void LlenarInfoUsuarios_DataGrid(object sender, DataGridViewCellEventArgs e)
         {
+            flagME = true;
             int indice = usuarios_DataGrid.CurrentRow.Index;
             IdUsuarioLbl.Text = usuarios_DataGrid[0, indice].Value.ToString();
             usuarioTbx.Text = usuarios_DataGrid[1, indice].Value.ToString();
@@ -47,7 +48,7 @@ namespace SistemaConsultorioMedico.Vistas
 
         private void BloqueoBtnGuardar(object sender, EventArgs e)
         {
-            if (ValidarCampos())
+            if (ValidarCampos() && !flagME)
                 guardarUsuario_Btn.Enabled = true;
             else
                 guardarUsuario_Btn.Enabled = false;
@@ -96,6 +97,7 @@ namespace SistemaConsultorioMedico.Vistas
         {
             IdUsuarioLbl.Visible = false;
             IdUsuarioTituloLbl.Visible = false;
+            flagME = false;
             IdUsuarioLbl.Text = "";
             usuarioTbx.Text = "";
             passwordTbx.Text = "";
@@ -110,6 +112,7 @@ namespace SistemaConsultorioMedico.Vistas
             ReestablecerCampos();
             ActualizarTabla();
             modificarBtn.Enabled = false;
+            eliminarBtn.Enabled = false;
         }
 
         private void eliminarBtn_Click(object sender, EventArgs e)
@@ -120,6 +123,7 @@ namespace SistemaConsultorioMedico.Vistas
             ReestablecerCampos();
             ActualizarTabla();
             eliminarBtn.Enabled = false;
+            modificarBtn.Enabled = false;
         }
 
         private void ModificarBotonBloquear(object sender, EventArgs e)
