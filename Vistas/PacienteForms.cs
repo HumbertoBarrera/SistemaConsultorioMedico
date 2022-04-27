@@ -110,13 +110,9 @@ namespace SistemaConsultorioMedico
         {
             if (NombreTxb.Text != "" && ApellidoPaternoTbx.Text != "" && ApellidoMaternoTbx.Text != "" && LugarNaciTbx.Text != "" && DireccionTbx.Text != "" && TelefonoTbx.Text != "" && CorreoETbx.Text != "" && OcupacionTbx.Text != "" &&
                 LugarTrabajoTbx.Text != "")
-            {
                 return true;
-            }
             else
-            {
                 return false;
-            }
         }
 
         private void reestablecerCampos()

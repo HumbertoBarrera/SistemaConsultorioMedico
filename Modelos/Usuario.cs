@@ -10,7 +10,25 @@ namespace SistemaConsultorioMedico.Modelos
     {
 
         int idUsuario;
-        String usuario, password;
+        String usuario, password, rol;
+
+        public Usuario() { }
+
+        /// <summary>
+        /// Método constructor del objeto Usuario
+        /// </summary>
+        /// <param name="idUsuario"></param>
+        /// <param name="usuario"></param>
+        /// <param name="password"></param>
+        /// <param name="rol"></param>
+        public Usuario(int idUsuario, String usuario, String password, String rol)
+        {
+            this.idUsuario = idUsuario;
+            this.usuario = usuario;
+            this.password = password;
+            this.rol = rol;
+        }
+
         //Setters y getter dek objeto
         /// <summary>
         /// Settea el identificador del usuario.
@@ -40,6 +58,15 @@ namespace SistemaConsultorioMedico.Modelos
         }
 
         /// <summary>
+        /// Settea el rol del usuario.
+        /// </summary>
+        /// <param name="rol"></param>
+        public void setRol(String rol)
+        {
+            this.rol = rol;
+        }
+
+        /// <summary>
         /// Obtiene el identificador del usuario.
         /// </summary>
         /// <returns></returns>
@@ -64,6 +91,15 @@ namespace SistemaConsultorioMedico.Modelos
         public String getPassword()
         {
             return password;
+        }
+
+        /// <summary>
+        /// Obtiene el rol del usuario
+        /// </summary>
+        /// <returns></returns>
+        public String getRol()
+        {
+            return rol;
         }
 
     }
