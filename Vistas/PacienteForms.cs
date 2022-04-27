@@ -287,6 +287,7 @@ namespace SistemaConsultorioMedico
                     correoErrorLbl.Visible = true;
                     guardarPac_Btn.IdleFillColor = Color.Gray;
                     guardarPac_Btn.Enabled = false;
+                    ModifPacienteBtn.Enabled = false;
                 } 
             }
         }
@@ -345,6 +346,57 @@ namespace SistemaConsultorioMedico
 
         private void validarNumeros(object sender, EventArgs e)
         {
+           /* if (isNumeric(TelefonoTbx.Text))
+            {
+                if (TelefonoTbx.Text.Length == 0)
+                {
+                    errorDigit.Visible = false;
+                    TelefonoTbx.LineIdleColor = Color.Purple;
+                    TelefonoTbx.LineMouseHoverColor = Color.Blue;
+                    TelefonoTbx.LineFocusedColor = Color.Blue;
+                    guardarPac_Btn.Enabled = false;
+                    ModifPacienteBtn.Enabled = false;
+                }
+                else
+                {
+                    if (TelefonoTbx.Text.Length != 10)
+                    {
+                        TelefonoTbx.LineIdleColor = Color.Crimson;
+                        TelefonoTbx.LineMouseHoverColor = Color.Crimson;
+                        TelefonoTbx.LineFocusedColor = Color.Crimson;
+                        errorDigit.Text = "El teléfono debe contener mínimo 10 dígitos.";
+                        errorDigit.Visible = true;
+                        ModifPacienteBtn.Enabled = false;
+                        guardarPac_Btn.Enabled = false;
+                    }
+                    else
+                    {
+                        TelefonoTbx.LineIdleColor = Color.Purple;
+                        TelefonoTbx.LineMouseHoverColor = Color.Blue;
+                        TelefonoTbx.LineFocusedColor = Color.Blue;
+                        errorDigit.Visible = false;
+                        if (validarCampos() && flagME)
+                        {
+                            guardarPac_Btn.Enabled = true;
+                        }
+                        else
+                        {
+                            guardarPac_Btn.Enabled = false;
+                            if (validarCampos())
+                            {
+                                ModifPacienteBtn.Enabled = true;
+                            }
+                            else
+                            {
+                                ModifPacienteBtn.Enabled = false;
+                            }
+                        }
+                    }
+                }*/
+            }
+
+        private void lostFocus(object sender, EventArgs e)
+        {
             if (isNumeric(TelefonoTbx.Text))
             {
                 if (TelefonoTbx.Text.Length == 0)
@@ -392,16 +444,6 @@ namespace SistemaConsultorioMedico
                         }
                     }
                 }
-            }
-            else
-            {
-                TelefonoTbx.LineIdleColor = Color.Crimson;
-                TelefonoTbx.LineMouseHoverColor = Color.Crimson;
-                TelefonoTbx.LineFocusedColor = Color.Crimson;
-                ModifPacienteBtn.Enabled = false;
-                guardarPac_Btn.Enabled = false;
-                errorDigit.Text = "Caracter inválido";
-                errorDigit.Visible = true;
             }
         }
 
