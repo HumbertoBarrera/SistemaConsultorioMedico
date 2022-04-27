@@ -15,6 +15,10 @@ namespace SistemaConsultorioMedico.Controladores
 
         static int intTuplasManipuladas = 0;
 
+        /// <summary>
+        /// Método para registrar usuarios nuevos al sistema.
+        /// </summary>
+        /// <param name="u"></param>
         public static void RegistrarUsuario(Modelos.Usuario u)
         {
             String query = "INSERT INTO USUARIO VALUES (@idUsuario, @usuario, @contraseña, @rol)";
@@ -35,6 +39,36 @@ namespace SistemaConsultorioMedico.Controladores
             }catch (SqlException ex)
             {
                 MessageBox.Show(ex.Message); // Recuperamos el error que haya lanzado SQL y lo mostramos en pantalla
+            }
+            finally
+            {
+                ConexionController.Desconectar();
+            }
+        }
+
+        /// <summary>
+        /// Método para actualizar la información del usuario.
+        /// </summary>
+        /// <param name="u"></param>
+        public static void ModificarUsuario(Modelos.Usuario u)
+        {
+            String query = "UPDATE USUARIO SET usuario = '" + u.getUsuario() + "', contraseña = '" + u.getPassword() + "', rol = '" + u.getRol() + "'" +
+                            "WHERE idUsuario = " + u.getIdUsuario();
+            try
+            {
+                using (SqlCommand cmd = new SqlCommand(query, ConexionController.Conectar()))
+                {
+                    int resultado = cmd.ExecuteNonQuery();
+                    if (resultado < intTuplasManipuladas)
+                        MessageBox.Show("Ocurrió un error al ingresar el usuario a la base de datos." +
+                                        " Vuelva a intentarlo", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    else
+                        MessageBox.Show("Usuario modificado con éxito", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch(SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
             }
             finally
             {
@@ -90,7 +124,7 @@ namespace SistemaConsultorioMedico.Controladores
         public DataTable CargarGridUsuarios()
         {
             // Creamos el query a utilizar
-            String query = "SELECT usuario, contraseña, rol FROM USUARIO";
+            String query = "SELECT * FROM USUARIO";
             using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
             {
                 SqlDataAdapter data = new SqlDataAdapter(comando); // Se recuperan los datos de la tabla

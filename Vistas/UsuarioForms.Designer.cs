@@ -29,8 +29,8 @@ namespace SistemaConsultorioMedico.Vistas
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsuarioForms));
             this.usuarios_DataGrid = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.linea = new Bunifu.Framework.UI.BunifuSeparator();
@@ -41,6 +41,8 @@ namespace SistemaConsultorioMedico.Vistas
             this.rol_comboBox = new Bunifu.Framework.UI.BunifuDropdown();
             this.modificarBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.eliminarBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.IdUsuarioTituloLbl = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.IdUsuarioLbl = new Bunifu.Framework.UI.BunifuCustomLabel();
             ((System.ComponentModel.ISupportInitialize)(this.usuarios_DataGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,20 +52,20 @@ namespace SistemaConsultorioMedico.Vistas
             this.usuarios_DataGrid.AllowUserToDeleteRows = false;
             this.usuarios_DataGrid.AllowUserToResizeColumns = false;
             this.usuarios_DataGrid.AllowUserToResizeRows = false;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.usuarios_DataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.usuarios_DataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.usuarios_DataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.usuarios_DataGrid.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.usuarios_DataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.usuarios_DataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.usuarios_DataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.usuarios_DataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.usuarios_DataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.usuarios_DataGrid.DoubleBuffered = true;
             this.usuarios_DataGrid.EnableHeadersVisualStyles = false;
@@ -250,12 +252,37 @@ namespace SistemaConsultorioMedico.Vistas
             this.eliminarBtn.Click += new System.EventHandler(this.eliminarBtn_Click);
             this.eliminarBtn.EnabledChanged += new System.EventHandler(this.EliminarBotonBloquear);
             // 
+            // IdUsuarioTituloLbl
+            // 
+            this.IdUsuarioTituloLbl.AutoSize = true;
+            this.IdUsuarioTituloLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IdUsuarioTituloLbl.Location = new System.Drawing.Point(7, 89);
+            this.IdUsuarioTituloLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.IdUsuarioTituloLbl.Name = "IdUsuarioTituloLbl";
+            this.IdUsuarioTituloLbl.Size = new System.Drawing.Size(131, 24);
+            this.IdUsuarioTituloLbl.TabIndex = 38;
+            this.IdUsuarioTituloLbl.Text = "ID USUARIO:";
+            this.IdUsuarioTituloLbl.Visible = false;
+            // 
+            // IdUsuarioLbl
+            // 
+            this.IdUsuarioLbl.AutoSize = true;
+            this.IdUsuarioLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IdUsuarioLbl.Location = new System.Drawing.Point(152, 89);
+            this.IdUsuarioLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.IdUsuarioLbl.Name = "IdUsuarioLbl";
+            this.IdUsuarioLbl.Size = new System.Drawing.Size(0, 24);
+            this.IdUsuarioLbl.TabIndex = 39;
+            this.IdUsuarioLbl.Visible = false;
+            // 
             // UsuarioForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1213, 554);
+            this.Controls.Add(this.IdUsuarioLbl);
+            this.Controls.Add(this.IdUsuarioTituloLbl);
             this.Controls.Add(this.eliminarBtn);
             this.Controls.Add(this.modificarBtn);
             this.Controls.Add(this.rol_comboBox);
@@ -286,5 +313,7 @@ namespace SistemaConsultorioMedico.Vistas
         private Bunifu.Framework.UI.BunifuDropdown rol_comboBox;
         private Bunifu.Framework.UI.BunifuThinButton2 modificarBtn;
         private Bunifu.Framework.UI.BunifuThinButton2 eliminarBtn;
+        private Bunifu.Framework.UI.BunifuCustomLabel IdUsuarioTituloLbl;
+        private Bunifu.Framework.UI.BunifuCustomLabel IdUsuarioLbl;
     }
 }

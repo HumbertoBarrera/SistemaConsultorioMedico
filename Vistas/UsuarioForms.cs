@@ -31,14 +31,18 @@ namespace SistemaConsultorioMedico.Vistas
         private void LlenarInfoUsuarios_DataGrid(object sender, DataGridViewCellEventArgs e)
         {
             int indice = usuarios_DataGrid.CurrentRow.Index;
-            usuarioTbx.Text = usuarios_DataGrid[0, indice].Value.ToString();
-            passwordTbx.Text = usuarios_DataGrid[1, indice].Value.ToString();
-            if (usuarios_DataGrid[2, indice].Value.ToString() == "S")
+            IdUsuarioLbl.Text = usuarios_DataGrid[0, indice].Value.ToString();
+            usuarioTbx.Text = usuarios_DataGrid[1, indice].Value.ToString();
+            passwordTbx.Text = usuarios_DataGrid[2, indice].Value.ToString();
+            if (usuarios_DataGrid[3, indice].Value.ToString() == "S")
                 rol_comboBox.selectedIndex = 1;
             else
                 rol_comboBox.selectedIndex = 2;
+            IdUsuarioLbl.Visible = true;
+            IdUsuarioTituloLbl.Visible = true;
             modificarBtn.Enabled = true;
             eliminarBtn.Enabled = true;
+            guardarUsuario_Btn.Enabled = false;
         }
 
         private void BloqueoBtnGuardar(object sender, EventArgs e)
@@ -90,6 +94,9 @@ namespace SistemaConsultorioMedico.Vistas
 
         private void ReestablecerCampos()
         {
+            IdUsuarioLbl.Visible = false;
+            IdUsuarioTituloLbl.Visible = false;
+            IdUsuarioLbl.Text = "";
             usuarioTbx.Text = "";
             passwordTbx.Text = "";
             rol_comboBox.selectedIndex = 0;
@@ -97,11 +104,17 @@ namespace SistemaConsultorioMedico.Vistas
 
         private void modificarBtn_Click(object sender, EventArgs e)
         {
+            Modelos.Usuario user = new Modelos.Usuario(Convert.ToInt32(IdUsuarioLbl.Text), usuarioTbx.Text, passwordTbx.Text,
+                                                        rol_comboBox.selectedValue.ToString().Substring(0, 1));
+            Controladores.UsuarioController.ModificarUsuario(user);
+            ReestablecerCampos();
+            ActualizarTabla();
             modificarBtn.Enabled = false;
         }
 
         private void eliminarBtn_Click(object sender, EventArgs e)
         {
+
             eliminarBtn.Enabled = false;
         }
 
