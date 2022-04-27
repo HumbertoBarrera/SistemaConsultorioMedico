@@ -114,7 +114,11 @@ namespace SistemaConsultorioMedico.Vistas
 
         private void eliminarBtn_Click(object sender, EventArgs e)
         {
-
+            Modelos.Usuario user = new Modelos.Usuario(Convert.ToInt32(IdUsuarioLbl.Text), usuarioTbx.Text, passwordTbx.Text,
+                                                        rol_comboBox.selectedValue.ToString().Substring(0, 1));
+            Controladores.UsuarioController.EliminarUsuario(user);
+            ReestablecerCampos();
+            ActualizarTabla();
             eliminarBtn.Enabled = false;
         }
 

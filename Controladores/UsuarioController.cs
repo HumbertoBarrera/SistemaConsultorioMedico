@@ -77,6 +77,34 @@ namespace SistemaConsultorioMedico.Controladores
         }
 
         /// <summary>
+        /// Método para eliminar usuarios de la base de datos.
+        /// </summary>
+        /// <param name="idUsuario"></param>
+        public static void EliminarUsuario(Modelos.Usuario u)
+        {
+            String query = "DELETE FROM USUARIO WHERE idUsuario = '" + u.getIdUsuario() + "'";
+            try
+            {
+                using(SqlCommand cmd = new SqlCommand(query, ConexionController.Conectar()))
+                {
+                    int resultado = cmd.ExecuteNonQuery();
+                    if (resultado < intTuplasManipuladas)
+                        MessageBox.Show("Ocurrió un error al eliminar al usuario. Vuelve a intentarlo", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    else
+                        MessageBox.Show("Usuario eliminado con éxito", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch(SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                ConexionController.Desconectar();
+            }
+        }
+
+        /// <summary>
         /// ´Verifica qué tipo de usuario ingresa al sistema.
         /// </summary>
         /// <param name="U"></param>
