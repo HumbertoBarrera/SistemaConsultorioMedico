@@ -676,19 +676,21 @@ namespace SistemaConsultorioMedico
             if (ValidarCampos() && flagME)
             {
                 GuardarBtn.Enabled = true;
-                EliminarBtn.Enabled = false;
+               // EliminarBtn.Enabled = false;
             }
             else
             {
                 GuardarBtn.Enabled = false;
-                EliminarBtn.Enabled = true;
+                //EliminarBtn.Enabled = true;
                 if (ValidarCampos())
                 {
                     ModificarBtn.Enabled = true;
+                    EliminarBtn.Enabled = true;
                 }
                 else
                 {
                     ModificarBtn.Enabled = false;
+                    EliminarBtn.Enabled = false;
                 }
             }
         }
@@ -751,7 +753,7 @@ namespace SistemaConsultorioMedico
                 dato16Tbx.LineIdleColor = Color.Purple;
                 dato16Tbx.LineMouseHoverColor = Color.Blue;
                 dato16Tbx.LineFocusedColor = Color.Blue;
-                errorDigit.Visible = false;
+                errorDigit2.Visible = false;
                 if (ValidarCampos() && flagME)
                 {
                     GuardarBtn.Enabled = true;
