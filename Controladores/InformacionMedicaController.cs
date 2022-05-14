@@ -95,7 +95,7 @@ namespace SistemaConsultorioMedico.Controladores
             // Declaramos el query a utilizar
             String query = "UPDATE INFORMACIONMEDICA SET dato1 = @dato1, dato2 = @dato2, dato3 = @dato3, dato4 = @dato4, dato4Opc = @dato4Opc," +
                 "dato5 = @dato5, dato5Opc = @dato5Opc, dato6 = @dato6, dato6Opc = @dato6Opc, dato7 = @dato7, dato7Opc = @dato7Opc, dato8 = @dato8, " +
-                "dato8Opc = dato8Opc dato9 = @dato9, dato9Opc = @dato9Opc, dato10 = @dato10, dato10Opc = @dato10Opc, dato11 = @dato11," +
+                "dato8Opc = dato8Opc, dato9 = @dato9, dato9Opc = @dato9Opc, dato10 = @dato10, dato10Opc = @dato10Opc, dato11 = @dato11," +
                 "dato11Opc = @dato11Opc, dato12 = @dato12, dato13 = @dato13, dato13Opc = @dato13Opc, dato13Opc2 = @dato13Opc2, dato14 = @dato14," +
                 "dato14Opc = @dato14Opc, dato14Opc2 = @dato14Opc2, dato15 = @dato15, dato15Opc = @dato15Opc, dato15Opc2 = @dato15Opc2, " +
                 "dato15Opc3 = @dato15Opc3, dato15Opc4 = @dato15Opc4, dato16 = @dato16, dato17 = @dato17, dato18 = @dato18";

@@ -54,6 +54,7 @@ namespace SistemaConsultorioMedico
             this.fechaNacDatePicker = new Bunifu.Framework.UI.BunifuDatepicker();
             this.correoErrorLbl = new System.Windows.Forms.Label();
             this.errorDigit = new System.Windows.Forms.Label();
+            this.fechaNacimiento_lbl = new Bunifu.Framework.UI.BunifuCustomLabel();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -236,7 +237,7 @@ namespace SistemaConsultorioMedico
             this.NombreTxb.LineIdleColor = System.Drawing.Color.Purple;
             this.NombreTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.NombreTxb.LineThickness = 3;
-            this.NombreTxb.Location = new System.Drawing.Point(21, 138);
+            this.NombreTxb.Location = new System.Drawing.Point(21, 109);
             this.NombreTxb.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.NombreTxb.Name = "NombreTxb";
             this.NombreTxb.Size = new System.Drawing.Size(511, 41);
@@ -302,7 +303,7 @@ namespace SistemaConsultorioMedico
             this.TelefonoTbx.Size = new System.Drawing.Size(505, 41);
             this.TelefonoTbx.TabIndex = 7;
             this.TelefonoTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TelefonoTbx.OnValueChanged += new System.EventHandler(this.validarNumeros);
+            this.TelefonoTbx.Leave += new System.EventHandler(this.lostFocus);
             // 
             // CorreoETbx
             // 
@@ -322,7 +323,7 @@ namespace SistemaConsultorioMedico
             this.CorreoETbx.Size = new System.Drawing.Size(505, 41);
             this.CorreoETbx.TabIndex = 8;
             this.CorreoETbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.CorreoETbx.OnValueChanged += new System.EventHandler(this.verificarEmail);
+            this.CorreoETbx.Leave += new System.EventHandler(this.verificarEmail);
             // 
             // OcupacionTbx
             // 
@@ -372,6 +373,7 @@ namespace SistemaConsultorioMedico
             this.bunifuCustomDataGrid1.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.bunifuCustomDataGrid1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -423,7 +425,7 @@ namespace SistemaConsultorioMedico
             this.ApellidoMaternoTbx.LineIdleColor = System.Drawing.Color.Purple;
             this.ApellidoMaternoTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.ApellidoMaternoTbx.LineThickness = 3;
-            this.ApellidoMaternoTbx.Location = new System.Drawing.Point(21, 244);
+            this.ApellidoMaternoTbx.Location = new System.Drawing.Point(21, 215);
             this.ApellidoMaternoTbx.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.ApellidoMaternoTbx.Name = "ApellidoMaternoTbx";
             this.ApellidoMaternoTbx.Size = new System.Drawing.Size(511, 41);
@@ -443,7 +445,7 @@ namespace SistemaConsultorioMedico
             this.ApellidoPaternoTbx.LineIdleColor = System.Drawing.Color.Purple;
             this.ApellidoPaternoTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.ApellidoPaternoTbx.LineThickness = 3;
-            this.ApellidoPaternoTbx.Location = new System.Drawing.Point(20, 191);
+            this.ApellidoPaternoTbx.Location = new System.Drawing.Point(20, 162);
             this.ApellidoPaternoTbx.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.ApellidoPaternoTbx.Name = "ApellidoPaternoTbx";
             this.ApellidoPaternoTbx.Size = new System.Drawing.Size(509, 41);
@@ -455,7 +457,7 @@ namespace SistemaConsultorioMedico
             // 
             this.IdPacienteLbl.AutoSize = true;
             this.IdPacienteLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IdPacienteLbl.Location = new System.Drawing.Point(20, 87);
+            this.IdPacienteLbl.Location = new System.Drawing.Point(20, 58);
             this.IdPacienteLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.IdPacienteLbl.Name = "IdPacienteLbl";
             this.IdPacienteLbl.Size = new System.Drawing.Size(137, 24);
@@ -484,7 +486,7 @@ namespace SistemaConsultorioMedico
             this.correoErrorLbl.ForeColor = System.Drawing.Color.Crimson;
             this.correoErrorLbl.Location = new System.Drawing.Point(17, 551);
             this.correoErrorLbl.Name = "correoErrorLbl";
-            this.correoErrorLbl.Size = new System.Drawing.Size(261, 17);
+            this.correoErrorLbl.Size = new System.Drawing.Size(247, 16);
             this.correoErrorLbl.TabIndex = 32;
             this.correoErrorLbl.Text = "Dirección de correo electrónico inválida.";
             this.correoErrorLbl.Visible = false;
@@ -502,12 +504,25 @@ namespace SistemaConsultorioMedico
             this.errorDigit.Text = "El teléfono debe contener mínimo 10 dígitos.";
             this.errorDigit.Visible = false;
             // 
+            // fechaNacimiento_lbl
+            // 
+            this.fechaNacimiento_lbl.AutoSize = true;
+            this.fechaNacimiento_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fechaNacimiento_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.fechaNacimiento_lbl.Location = new System.Drawing.Point(16, 262);
+            this.fechaNacimiento_lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.fechaNacimiento_lbl.Name = "fechaNacimiento_lbl";
+            this.fechaNacimiento_lbl.Size = new System.Drawing.Size(248, 24);
+            this.fechaNacimiento_lbl.TabIndex = 78;
+            this.fechaNacimiento_lbl.Text = "FECHA DE NACIMIENTO";
+            // 
             // Paciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1361, 780);
+            this.Controls.Add(this.fechaNacimiento_lbl);
             this.Controls.Add(this.errorDigit);
             this.Controls.Add(this.correoErrorLbl);
             this.Controls.Add(this.fechaNacDatePicker);
@@ -565,5 +580,6 @@ namespace SistemaConsultorioMedico
         private Bunifu.Framework.UI.BunifuDatepicker fechaNacDatePicker;
         private System.Windows.Forms.Label correoErrorLbl;
         private System.Windows.Forms.Label errorDigit;
+        private Bunifu.Framework.UI.BunifuCustomLabel fechaNacimiento_lbl;
     }
 }
