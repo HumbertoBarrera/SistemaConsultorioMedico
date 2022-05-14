@@ -403,5 +403,10 @@ namespace SistemaConsultorioMedico
                 MasBtn.IdleFillColor = Color.Gray;
             }
         }
+
+        private void InformacionMedica_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
