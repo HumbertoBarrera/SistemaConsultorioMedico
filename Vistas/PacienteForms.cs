@@ -447,6 +447,11 @@ namespace SistemaConsultorioMedico
             }
         }
 
+        private void buscarBtn_Click(object sender, EventArgs e)
+        {
+            (bunifuCustomDataGrid1.DataSource as DataTable).DefaultView.RowFilter = string.Format("nombresP LIKE '%{0}%'", BuscarTbx.text);
+        }
+
         public bool isNumeric(string value)
         {
             return value.All(char.IsNumber);

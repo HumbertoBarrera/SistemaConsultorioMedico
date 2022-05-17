@@ -55,6 +55,7 @@ namespace SistemaConsultorioMedico
             this.correoErrorLbl = new System.Windows.Forms.Label();
             this.errorDigit = new System.Windows.Forms.Label();
             this.fechaNacimiento_lbl = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.buscarBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -390,7 +391,7 @@ namespace SistemaConsultorioMedico
             this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
             this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.Purple;
             this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.Purple;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(563, 169);
+            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(575, 169);
             this.bunifuCustomDataGrid1.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
             this.bunifuCustomDataGrid1.ReadOnly = true;
@@ -516,12 +517,39 @@ namespace SistemaConsultorioMedico
             this.fechaNacimiento_lbl.TabIndex = 78;
             this.fechaNacimiento_lbl.Text = "FECHA DE NACIMIENTO";
             // 
+            // buscarBtn
+            // 
+            this.buscarBtn.ActiveBorderThickness = 1;
+            this.buscarBtn.ActiveCornerRadius = 20;
+            this.buscarBtn.ActiveFillColor = System.Drawing.Color.Plum;
+            this.buscarBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.buscarBtn.ActiveLineColor = System.Drawing.Color.Plum;
+            this.buscarBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buscarBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buscarBtn.BackgroundImage")));
+            this.buscarBtn.ButtonText = "BUSCAR";
+            this.buscarBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buscarBtn.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buscarBtn.ForeColor = System.Drawing.Color.ForestGreen;
+            this.buscarBtn.IdleBorderThickness = 1;
+            this.buscarBtn.IdleCornerRadius = 20;
+            this.buscarBtn.IdleFillColor = System.Drawing.Color.White;
+            this.buscarBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.buscarBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.buscarBtn.Location = new System.Drawing.Point(712, 114);
+            this.buscarBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.buscarBtn.Name = "buscarBtn";
+            this.buscarBtn.Size = new System.Drawing.Size(123, 33);
+            this.buscarBtn.TabIndex = 79;
+            this.buscarBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buscarBtn.Click += new System.EventHandler(this.buscarBtn_Click);
+            // 
             // Paciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1361, 780);
+            this.Controls.Add(this.buscarBtn);
             this.Controls.Add(this.fechaNacimiento_lbl);
             this.Controls.Add(this.errorDigit);
             this.Controls.Add(this.correoErrorLbl);
@@ -581,5 +609,6 @@ namespace SistemaConsultorioMedico
         private System.Windows.Forms.Label correoErrorLbl;
         private System.Windows.Forms.Label errorDigit;
         private Bunifu.Framework.UI.BunifuCustomLabel fechaNacimiento_lbl;
+        private Bunifu.Framework.UI.BunifuThinButton2 buscarBtn;
     }
 }
