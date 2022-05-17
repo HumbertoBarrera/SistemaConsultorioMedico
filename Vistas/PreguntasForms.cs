@@ -416,6 +416,16 @@ namespace SistemaConsultorioMedico
 
         private void dato10Tbx_OnValueChanged(object sender, EventArgs e)
         {
+            Bunifu.Framework.UI.BunifuMaterialTextbox srcTbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            srcTbx = ((Bunifu.Framework.UI.BunifuMaterialTextbox)sender);
+            Label label = new System.Windows.Forms.Label();
+            string name = srcTbx.Name.Remove(srcTbx.Name.Length - 3) + "Lbl";
+            foreach (Label control in Controls.OfType<Label>().Where(c => c.Name.Contains(name)))
+                label = control;
+            if (srcTbx.isOnFocused)
+                label.Visible = true;
+            else
+                label.Visible = false;
             if (dato10Tbx.Text != "")
             {
                 dato10Rbtn1.Checked = false;
@@ -673,6 +683,16 @@ namespace SistemaConsultorioMedico
         //Se bloquea el boton hasta que los campos esten llenos
         private void bloqueoBtnGuardar(object sender, EventArgs e)
         {
+            Bunifu.Framework.UI.BunifuMaterialTextbox srcTbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            srcTbx = ((Bunifu.Framework.UI.BunifuMaterialTextbox)sender);
+            Label label = new System.Windows.Forms.Label();
+            string name = srcTbx.Name.Remove(srcTbx.Name.Length - 3) + "Lbl";
+            foreach (Label control in Controls.OfType<Label>().Where(c => c.Name.Contains(name)))
+                label = control;
+            if (srcTbx.isOnFocused)
+                label.Visible = true;
+            else
+                label.Visible = false;
             if (ValidarCampos() && flagME)
             {
                 GuardarBtn.Enabled = true;
@@ -711,6 +731,16 @@ namespace SistemaConsultorioMedico
 
         private void verificarNumero1(object sender, EventArgs e)
         {
+            Bunifu.Framework.UI.BunifuMaterialTextbox srcTbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            srcTbx = ((Bunifu.Framework.UI.BunifuMaterialTextbox)sender);
+            Label label = new System.Windows.Forms.Label();
+            string name = srcTbx.Name.Remove(srcTbx.Name.Length - 3) + "Lbl";
+            foreach (Label control in Controls.OfType<Label>().Where(c => c.Name.Contains(name)))
+                label = control;
+            if (srcTbx.isOnFocused)
+                label.Visible = true;
+            else
+                label.Visible = false;
             if (isNumeric(dato12Tbx.Text))
             {
                 dato12Tbx.LineIdleColor = Color.Purple;
@@ -748,6 +778,16 @@ namespace SistemaConsultorioMedico
 
         private void verificarNumero2(object sender, EventArgs e)
         {
+            Bunifu.Framework.UI.BunifuMaterialTextbox srcTbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            srcTbx = ((Bunifu.Framework.UI.BunifuMaterialTextbox)sender);
+            Label label = new System.Windows.Forms.Label();
+            string name = srcTbx.Name.Remove(srcTbx.Name.Length - 3) + "Lbl";
+            foreach (Label control in Controls.OfType<Label>().Where(c => c.Name.Contains(name)))
+                label = control;
+            if (srcTbx.isOnFocused)
+                label.Visible = true;
+            else
+                label.Visible = false;
             if (isNumeric(dato16Tbx.Text))
             {
                 dato16Tbx.LineIdleColor = Color.Purple;

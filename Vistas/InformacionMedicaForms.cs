@@ -380,12 +380,19 @@ namespace SistemaConsultorioMedico
         //Se bloquea el boton hasta llenar todos los campos
         private void bloqueoBtnMas(object sender, EventArgs e)
         {
-            if (validarCampos())
-            
-                MasBtn.Enabled = true;
-            
+            Bunifu.Framework.UI.BunifuMaterialTextbox srcTbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            srcTbx = ((Bunifu.Framework.UI.BunifuMaterialTextbox)sender);
+            Label label = new System.Windows.Forms.Label();
+            string name = srcTbx.Name.Remove(srcTbx.Name.Length - 3) + "Lbl";
+            foreach (Label control in Controls.OfType<Label>().Where(c => c.Name.Contains(name)))
+                label = control;
+            if (srcTbx.isOnFocused)
+                label.Visible = true;
             else
-            
+                label.Visible = false;
+            if (validarCampos())
+                MasBtn.Enabled = true;
+            else
                 MasBtn.Enabled = false;
             
         }
