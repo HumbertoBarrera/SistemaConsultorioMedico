@@ -232,6 +232,18 @@ namespace SistemaConsultorioMedico.Controladores
 
         }
 
+        public DataTable LlenarComboBoxCitas()
+        {
+            String query = "SELECT idPaciente, nombresP + ' ' + apellidoPatP + ' ' + apellidoMatP as Nombre FROM PACIENTE";
+            using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
+            {
+                SqlDataAdapter data = new SqlDataAdapter(comando);
+                DataTable tabla = new DataTable();
+                data.Fill(tabla);
+                return tabla;
+            }
+        }
+
     }
 
 }
