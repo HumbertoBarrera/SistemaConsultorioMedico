@@ -232,7 +232,7 @@ namespace SistemaConsultorioMedico.Controladores
 
         }
 
-        public DataTable LlenarComboBoxCitas()
+        public DataTable LlenarComboBoxDePacientes()
         {
             String query = "SELECT idPaciente, nombresP + ' ' + apellidoPatP + ' ' + apellidoMatP as Nombre FROM PACIENTE";
             using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))

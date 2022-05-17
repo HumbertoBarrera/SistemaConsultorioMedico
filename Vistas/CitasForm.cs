@@ -102,7 +102,7 @@ namespace SistemaConsultorioMedico
             bunifuCustomDataGrid2.Columns[4].Visible = false;
 
             //---------------------------------------------------
-            var dtPacientes = da.LlenarComboBoxCitas();
+            var dtPacientes = da.LlenarComboBoxDePacientes();
             pacientesCbo.DataSource = dtPacientes;
             pacientesCbo.DisplayMember = "Nombre";
             pacientesCbo.ValueMember = "idPaciente";
@@ -338,11 +338,6 @@ namespace SistemaConsultorioMedico
             comboBox1.SelectedIndex = 0;
             folioCitaLb.Text = "";
             //PacienteCitaTxb.Enabled = true;
-        }
-
-        private void bunifuCustomDataGrid2_Validating(object sender, CancelEventArgs e)
-        {
-
         }
 
         private void PacienteCitaTxb_KeyPress(object sender, KeyPressEventArgs e)

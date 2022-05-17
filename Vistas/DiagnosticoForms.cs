@@ -135,6 +135,13 @@ namespace SistemaConsultorioMedico
             bunifuCustomDataGrid1.DataSource = dt;
             DataGridViewColumn Column = bunifuCustomDataGrid1.Columns[2];
             Column.Visible = false;
+
+            //------------------------------------------------------
+            Controladores.CitaController daC = new Controladores.CitaController();
+            var dtPacientes = daC.LlenarComboBoxDePacientes();
+            pacientesCbo.DataSource = dtPacientes;
+            pacientesCbo.DisplayMember = "Nombre";
+            pacientesCbo.ValueMember = "idPaciente";
         }
 
         private void BuscarCitaBtn_Click(object sender, EventArgs e)
