@@ -137,11 +137,11 @@ namespace SistemaConsultorioMedico
             Column.Visible = false;
 
             //------------------------------------------------------
-            Controladores.CitaController daC = new Controladores.CitaController();
-            var dtPacientes = daC.LlenarComboBoxDePacientes();
-            pacientesCbo.DataSource = dtPacientes;
-            pacientesCbo.DisplayMember = "Nombre";
-            pacientesCbo.ValueMember = "idPaciente";
+            //Controladores.CitaController daC = new Controladores.CitaController();
+            //var dtPacientes = daC.LlenarComboBoxDePacientes();
+            //pacientesCbo.DataSource = dtPacientes;
+            //pacientesCbo.DisplayMember = "Nombre";
+            //pacientesCbo.ValueMember = "idPaciente";
         }
 
         private void BuscarCitaBtn_Click(object sender, EventArgs e)
