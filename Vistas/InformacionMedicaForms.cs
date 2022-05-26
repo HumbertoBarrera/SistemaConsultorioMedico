@@ -22,7 +22,7 @@ namespace SistemaConsultorioMedico
             this.idPaciente = idPaciente;
             this.flagME = flagME;
             InitializeComponent();
-            llenarInformacion(idPaciente);
+            if(idPaciente != 0) llenarInformacion(idPaciente);
         }
         //Se abre una nueva pestaña y se valida que los campos no esten vacios
         private void MasBtn_Click(object sender, EventArgs e)
@@ -105,7 +105,11 @@ namespace SistemaConsultorioMedico
                             dato9OpcTbx.Text = leer["dato9Opc"].ToString();
                             f = true;
                         }
-                        if (!f) flagME = true;
+                        if (!f)
+                        {
+                            flagME = true;
+                            MessageBox.Show("El paciente no tiene registros de información médica", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                 }
             }
@@ -133,16 +137,14 @@ namespace SistemaConsultorioMedico
         //Se hace la busqueda en la  base de datos
         private void buscarBtn_Click(object sender, EventArgs e)
         {
-            if(String.IsNullOrEmpty(buscarTbx.text))
-            
+            if (String.IsNullOrEmpty(buscarTbx.text))
                 MessageBox.Show("El campo de búsqueda no debe estar vacío", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            
             else
-            
+            {
                 flagME = false;
                 idPaciente = Convert.ToInt32(buscarTbx.text);
                 llenarInformacion(idPaciente);
-            
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
