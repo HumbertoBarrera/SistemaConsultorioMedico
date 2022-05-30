@@ -17,11 +17,11 @@ namespace SistemaConsultorioMedico
         bool flagME = true, flagS;
         int indice;
         private Modelos.Paciente paciente;
+        private Controladores.PacienteController controlador = new Controladores.PacienteController();
 
         public Paciente(bool flagS)
         {
             InitializeComponent();
-
             Controladores.PropiedadController.BunifuMaterial(TelefonoTbx, 10);
             errorDigit.Visible = false;
             this.flagS = flagS;
@@ -50,12 +50,11 @@ namespace SistemaConsultorioMedico
         {
             if (validarCampos())
             {
-               
                 var random = new Random().Next(10000000, 99999999);
                 paciente = new Modelos.Paciente(random, ((curDate.Year) - Convert.ToInt32(fechaNacDatePicker.Value.Year)), NombreTxb.Text, ApellidoPaternoTbx.Text,
                                                                     ApellidoMaternoTbx.Text, LugarNaciTbx.Text, DireccionTbx.Text, TelefonoTbx.Text, CorreoETbx.Text,
                                                                     OcupacionTbx.Text, TelefonoTbx.Text, LugarTrabajoTbx.Text, fechaNacDatePicker.Value);
-                Controladores.PacienteController.RegistrarPaciente(paciente);
+                controlador.RegistrarPaciente(paciente);
                 ActualizarTabla();
                 reestablecerCampos();
             }
@@ -79,7 +78,7 @@ namespace SistemaConsultorioMedico
 
             {
                 int idPaciente = int.Parse(BuscarTbx.text);
-                if (Controladores.PacienteController.ValidarSiExistePaciente(idPaciente))
+                if (controlador.ValidarSiExistePaciente(idPaciente))
                 {
                     Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
                     Form VDiag = new Diagnostico(idPaciente);
@@ -142,7 +141,7 @@ namespace SistemaConsultorioMedico
             if (BuscarTbx.text != "")
             {
                 int idPaciente = int.Parse(BuscarTbx.text);
-                if (Controladores.PacienteController.ValidarSiExistePaciente(idPaciente))
+                if (controlador.ValidarSiExistePaciente(idPaciente))
                 {
                     Form VInfoMedica = new InformacionMedica(idPaciente, flagME);
                     this.Hide();
@@ -171,7 +170,7 @@ namespace SistemaConsultorioMedico
             Modelos.Paciente paciente = new Modelos.Paciente(Convert.ToInt32(IdPacienteLbl.Text.Substring(13)), ((curDate.Year) - Convert.ToInt32(fechaNacDatePicker.Value.Year)), NombreTxb.Text, ApellidoPaternoTbx.Text,
                                                                 ApellidoMaternoTbx.Text, LugarNaciTbx.Text, DireccionTbx.Text, TelefonoTbx.Text, CorreoETbx.Text,
                                                                 OcupacionTbx.Text, TelefonoTbx.Text, LugarTrabajoTbx.Text, fechaNacDatePicker.Value);
-            Controladores.PacienteController.ActualizarPaciente(paciente);
+            controlador.ActualizarPaciente(paciente);
             ActualizarTabla();
             reestablecerCampos();
         }
@@ -339,7 +338,7 @@ namespace SistemaConsultorioMedico
             Modelos.Paciente paciente = new Modelos.Paciente(Convert.ToInt32(IdPacienteLbl.Text.Substring(13)), ((curDate.Year) - Convert.ToInt32(fechaNacDatePicker.Value.Year)), NombreTxb.Text, ApellidoPaternoTbx.Text,
                                                                 ApellidoMaternoTbx.Text, LugarNaciTbx.Text, DireccionTbx.Text, TelefonoTbx.Text, CorreoETbx.Text,
                                                                 OcupacionTbx.Text, TelefonoTbx.Text, LugarTrabajoTbx.Text, fechaNacDatePicker.Value);
-            Controladores.PacienteController.EliminarPaciente(paciente);
+            controlador.EliminarPaciente(paciente);
             ActualizarTabla();
             reestablecerCampos();
         }

@@ -7,10 +7,11 @@ using SistemaConsultorioMedico;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data;
+using SistemaConsultorioMedico.Interfaces;
 
 namespace SistemaConsultorioMedico.Controladores
 {
-    class CitaController
+    class CitaController : ICitaController
     {
 
         DateTime fecha;
@@ -20,8 +21,9 @@ namespace SistemaConsultorioMedico.Controladores
         /// Registra la cita en la base de datos.
         /// </summary>
         /// <param name="c"></param>
-        public static void InsertarCita(Modelos.Cita c)
+        public bool InsertarCita(Modelos.Cita c)
         {
+            bool result = false;
             String query = "INSERT INTO CITA VALUES (@idPaciente, @fecha, @hora, @folioCita)";
             try
             {
@@ -35,7 +37,10 @@ namespace SistemaConsultorioMedico.Controladores
                     if (resultado < intTuplaManipulada)
                         MessageBox.Show("Error al insertar en la base de datos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     else
+                    {
                         MessageBox.Show("Cita agregada correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        result = true;
+                    }
                 }
             }
             catch(SqlException e)
@@ -46,6 +51,7 @@ namespace SistemaConsultorioMedico.Controladores
             {
                 Controladores.ConexionController.Desconectar();
             }
+            return result;
         }
 
         /// <summary>
@@ -54,7 +60,6 @@ namespace SistemaConsultorioMedico.Controladores
         /// <returns></returns>
         public DataTable CargarGridCitas()
         {
-            
             fecha = DateTime.Now;
             String query = "SELECT c.idPaciente,CONCAT(p.nombresP, ' ',p.apellidoPatP, ' ',p.apellidoMatP) AS nombre,LEFT(c.fecha,10),c.hora,c.folioCita FROM CITA " +
                 "C INNER JOIN PACIENTE p ON C.idPaciente = p.idPaciente WHERE c.fecha >='" +fecha.ToString("yyyy/MM/dd") + "' ORDER BY c.fecha ASC";
@@ -72,8 +77,9 @@ namespace SistemaConsultorioMedico.Controladores
         /// Elimina la cita de la base de datos.
         /// </summary>
         /// <param name="c"></param>
-        public static void EliminarCita(Modelos.Cita c)
+        public bool EliminarCita(Modelos.Cita c)
         {
+            bool result = false;
             String query = "DELETE FROM CITA WHERE idPaciente='"+c.getIdPaciente()+"' AND fecha='" + c.getFecha().ToString("yyyy/MM/dd") + "' AND hora='" + 
                 c.getHora()+ "' AND folioCita='" + c.getFolioCita() + "'";
             try
@@ -84,7 +90,10 @@ namespace SistemaConsultorioMedico.Controladores
                     if (resultado < intTuplaManipulada)
                         MessageBox.Show("Error al Eliminar Cita", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     else
+                    {
                         MessageBox.Show("Cita Eliminada correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        result = true;
+                    }
                 }
             }
             catch(SqlException e)
@@ -95,13 +104,15 @@ namespace SistemaConsultorioMedico.Controladores
             {
                 Controladores.ConexionController.Desconectar();
             }
+            return result;
         }
 
         /// <summary>
         /// Modifica la cita de la base de datos.
         /// </summary>
         /// <param name="c"></param>
-        public static void ModificarCita(Modelos.Cita c) {
+        public bool ModificarCita(Modelos.Cita c) {
+            bool result = false;
             String query = "UPDATE CITA SET fecha='" + c.getFecha().ToString("yyyy/MM/dd") + "' , hora='" + c.getHora() + "' WHERE folioCita='" + 
                 c.getFolioCita() + "'";
             try
@@ -112,7 +123,10 @@ namespace SistemaConsultorioMedico.Controladores
                     if (resultado < intTuplaManipulada)
                         MessageBox.Show("Error al Modificar Cita", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     else
+                    {
                         MessageBox.Show("Cita Modificada correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        result = true;
+                    }
                 }
             }
             catch(SqlException e)
@@ -123,16 +137,15 @@ namespace SistemaConsultorioMedico.Controladores
             {
                 Controladores.ConexionController.Desconectar();
             }
-
+            return result;
         }
 
         /// <summary>
         /// Genera el folio de la cita.
         /// </summary>
         /// <param name="c"></param>
-        public static void CrearFolio(Modelos.Cita c)
+        public String CrearFolio(Modelos.Cita c)
         {
-
             Random rdn = new Random();
             string caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
             int longitud = caracteres.Length;
@@ -148,7 +161,7 @@ namespace SistemaConsultorioMedico.Controladores
                 c.setFolioCita(folioCitaAleatoria);
             else
                 if (ValidarSiExisteFolio(folioCitaAleatoria) == true)   CrearFolio(c);
-
+            return folioCitaAleatoria;
         }
 
         //----------------------------------Validaciones----------------------------------------------
@@ -157,7 +170,7 @@ namespace SistemaConsultorioMedico.Controladores
         /// </summary>
         /// <param name="c"></param>
         /// <returns></returns>
-        public static bool ValidarSiExisteCita(Modelos.Cita c)
+        public bool ValidarSiExisteCita(Modelos.Cita c)
         {
             String query = "SELECT * FROM CITA WHERE fecha='" + c.getFecha().ToString("yyyy/MM/dd") + "' AND hora='" + c.getHora() + "'";
       
@@ -177,7 +190,7 @@ namespace SistemaConsultorioMedico.Controladores
         /// </summary>
         /// <param name="folio"></param>
         /// <returns></returns>
-        public static bool ValidarSiExisteFolio(String folio)
+        public bool ValidarSiExisteFolio(String folio)
         {
             String query = "SELECT * FROM CITA WHERE folioCita='" + folio + "'";
 
@@ -197,7 +210,7 @@ namespace SistemaConsultorioMedico.Controladores
         /// </summary>
         /// <param name="c"></param>
         /// <returns></returns>
-        public static bool ValidarSiExistePaciente(Modelos.Cita c)
+        public bool ValidarSiExistePaciente(Modelos.Cita c)
         {
             String query = "SELECT * FROM Paciente WHERE idPaciente='" + c.getIdPaciente() + "'";
 
@@ -217,7 +230,7 @@ namespace SistemaConsultorioMedico.Controladores
         /// </summary>
         /// <param name="c"></param>
         /// <returns></returns>
-        public static bool ValidarSiExisteFechaHora(Modelos.Cita c)
+        public bool ValidarSiExisteFechaHora(Modelos.Cita c)
         {
             String query = "SELECT * FROM CITA WHERE fecha='" + c.getFecha().ToString("yyyy/MM/dd") + "' AND hora='" + c.getHora() + "'";
 

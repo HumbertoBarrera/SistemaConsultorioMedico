@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SistemaConsultorioMedico.Interfaces;
 
 namespace SistemaConsultorioMedico.Modelos
 {
@@ -14,6 +15,8 @@ namespace SistemaConsultorioMedico.Modelos
         private DateTime fechaNac;
 
         // Estructura del modelo de paciente
+
+        public Paciente() { }
 
         /// <summary>
         /// Método constructor del objeto Paciente.

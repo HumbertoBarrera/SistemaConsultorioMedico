@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace SistemaConsultorioMedico.Modelos
 {
-    class Cita
+    public class Cita
     {
-        string folioCita;
-        int idPaciente;
-        DateTime fecha;
-        TimeSpan hora;
+        public string folioCita;
+        public int idPaciente;
+        public DateTime fecha;
+        public TimeSpan hora;
 
         /// <summary>
         /// Método para settear el folio identificador de la cita.

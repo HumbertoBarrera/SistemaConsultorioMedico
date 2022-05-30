@@ -111,6 +111,9 @@
     <Compile Include="Controladores\PacienteController.cs" />
     <Compile Include="Controladores\PropiedadController.cs" />
     <Compile Include="Controladores\UsuarioController.cs" />
+    <Compile Include="Interfaces\ICitaController.cs" />
+    <Compile Include="Interfaces\IPaciente.cs" />
+    <Compile Include="Interfaces\IPacienteController.cs" />
     <Compile Include="Modelos\Cita.cs" />
     <Compile Include="Modelos\Diagnostico.cs" />
     <Compile Include="Modelos\InformacionMedica.cs" />

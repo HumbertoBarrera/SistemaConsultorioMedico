@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SistemaConsultorioMedico.Modelos;
+using SistemaConsultorioMedico.Interfaces;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Data;
@@ -11,7 +12,7 @@ using System.Data;
 
 namespace SistemaConsultorioMedico.Controladores
 {
-    class PacienteController
+    public class PacienteController : IPacienteController
     {
 
         static int intTuplasManipuladas = 0;
@@ -21,8 +22,9 @@ namespace SistemaConsultorioMedico.Controladores
         /// Registra a la paciente a la base de datos.
         /// </summary>
         /// <param name="p"></param>
-        public static void RegistrarPaciente(Modelos.Paciente p)
+        public bool RegistrarPaciente(Modelos.Paciente p)
         {
+            bool result = false;
             // Creamos el query a utilizar
             String query = "INSERT INTO PACIENTE VALUES (@idPaciente, @nombresP, @apellidoPatP, @apellidoMatP, @fechaNac, @edadP, @lugarNac, @direccionP, " +
                 "@telefonoP, @emailP, @trabajoP, @lugarTrabajoP)";
@@ -47,7 +49,10 @@ namespace SistemaConsultorioMedico.Controladores
                     if (resultado < intTuplasManipuladas) // Validamos que por lo menos haya una tupla manipulada
                         MessageBox.Show("Error al insertar en la base de datos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); // Operación no exitosa
                     else
+                    {
                         MessageBox.Show("Paciente agregado correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information); // Operación exitosa
+                        result = true;
+                    }
                 }
             }
             catch (SqlException e)
@@ -58,6 +63,7 @@ namespace SistemaConsultorioMedico.Controladores
             {
                 ConexionController.Desconectar(); // Cerramos conexión
             }
+            return result;
         }
 
         /* Método para cargar los datos de la tabla de pacientes
@@ -86,8 +92,9 @@ namespace SistemaConsultorioMedico.Controladores
         /// Modifica la información de la paciente en la base de datos.
         /// </summary>
         /// <param name="p"></param>
-        public static void ActualizarPaciente(Modelos.Paciente p)
+        public bool ActualizarPaciente(Modelos.Paciente p)
         {
+            bool result = false;
             // Creamos query ya con los datos integrados
             String query = "UPDATE PACIENTE SET nombresP='" + p.getNombresP() + "', apellidoPatP='" + p.getApellitosPatP() + "', apellidoMatP='" + 
                 p.getApellidosMatP() + "', fechaNac='" + p.getFechaNac().ToString("yyyy/MM/dd") + "', edadP='" + p.getEdad() + "', lugarNac='" + p.getLugarNac() +
@@ -101,7 +108,10 @@ namespace SistemaConsultorioMedico.Controladores
                     if (resultado < intTuplasManipuladas) // Validamos que por lo menos haya una tupla manipulada
                         MessageBox.Show("Error al actualizar paciente", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); // Operación no exitosa
                     else
+                    {
                         MessageBox.Show("Paciente actualizado correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information); // Operación exitosa
+                        result = true;
+                    }
                 }
             }
             catch (SqlException e)
@@ -112,6 +122,7 @@ namespace SistemaConsultorioMedico.Controladores
             {
                 ConexionController.Desconectar(); // Cerramos conexión
             }
+            return result;
         }
 
         // Método para eliminar a un paciente de la base de datos
@@ -119,7 +130,7 @@ namespace SistemaConsultorioMedico.Controladores
         /// Elimina a la paciente de la base de datos.
         /// </summary>
         /// <param name="p"></param>
-        public static void EliminarPaciente(Modelos.Paciente p)
+        public void EliminarPaciente(Modelos.Paciente p)
         {
             try
             {
@@ -186,7 +197,7 @@ namespace SistemaConsultorioMedico.Controladores
         /// </summary>
         /// <param name="idPaciente"></param>
         /// <returns></returns>
-        public static bool ValidarSiExistePaciente(int idPaciente)
+        public bool ValidarSiExistePaciente(int idPaciente)
         {
             // Query para buscar al paciente
             String query = "SELECT * FROM Paciente WHERE idPaciente='" + idPaciente.ToString() + "'";
