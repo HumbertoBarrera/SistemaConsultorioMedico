@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using SistemaConsultorioMedico.Modelos;
-using System.Data.SqlClient;
 using System.Data;
 
 

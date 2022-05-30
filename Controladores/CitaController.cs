@@ -29,10 +29,10 @@ namespace SistemaConsultorioMedico.Controladores
             {
                 using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
                 {
-                    comando.Parameters.Add("@idPaciente", c.getIdPaciente());
-                    comando.Parameters.Add("@fecha", c.getFecha());
-                    comando.Parameters.Add("@hora", c.getHora());
-                    comando.Parameters.Add("@folioCita", c.getFolioCita());
+                    comando.Parameters.AddWithValue("@idPaciente", c.getIdPaciente());
+                    comando.Parameters.AddWithValue("@fecha", c.getFecha());
+                    comando.Parameters.AddWithValue("@hora", c.getHora());
+                    comando.Parameters.AddWithValue("@folioCita", c.getFolioCita());
                     int resultado = comando.ExecuteNonQuery();
                     if (resultado < intTuplaManipulada)
                         MessageBox.Show("Error al insertar en la base de datos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
