@@ -56,7 +56,7 @@ namespace SistemaConsultorioMedico.Vistas
 
         private void BloqueoBotonGuardar(object sender, EventArgs e)
         {
-            if (guardarUsuario_Btn.Enabled == true)
+            if (guardarUsuario_Btn.Enabled)
             {
                 guardarUsuario_Btn.IdleFillColor = Color.White;
                 guardarUsuario_Btn.Padding = new Padding(0);
@@ -128,7 +128,7 @@ namespace SistemaConsultorioMedico.Vistas
 
         private void ModificarBotonBloquear(object sender, EventArgs e)
         {
-            if (modificarBtn.Enabled == true)
+            if (modificarBtn.Enabled)
             {
                 modificarBtn.IdleFillColor = Color.White;
                 modificarBtn.Padding = new Padding(0);
@@ -142,7 +142,7 @@ namespace SistemaConsultorioMedico.Vistas
 
         private void EliminarBotonBloquear(object sender, EventArgs e)
         {
-            if (eliminarBtn.Enabled == true)
+            if (eliminarBtn.Enabled)
             {
                 eliminarBtn.IdleFillColor = Color.White;
                 eliminarBtn.Padding = new Padding(0);

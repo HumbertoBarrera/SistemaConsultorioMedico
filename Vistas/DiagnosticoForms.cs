@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemaConsultorioMedico.Controladores;
 
 namespace SistemaConsultorioMedico
 {
@@ -16,6 +17,7 @@ namespace SistemaConsultorioMedico
         DateTime fecha;
         int indice;
         private Modelos.Diagnostico diagnostico;
+        private DiagnosticoController diagnosticoController = new DiagnosticoController();
 
         public Diagnostico(int idPaciente)
         {
@@ -96,10 +98,10 @@ namespace SistemaConsultorioMedico
                 diagnostico.setFecha(fecha);
                 diagnostico.setDescripcion(Descripciontxb.Text);
 
-                if (Controladores.DiagnosticoController.validaExisPaciente(diagnostico) == true)
+                if (diagnosticoController.validaExisPaciente(diagnostico))
                 {
-                    Controladores.DiagnosticoController.folio(diagnostico);
-                    Controladores.DiagnosticoController.insertarDiagnostico(diagnostico);
+                    diagnosticoController.folio(diagnostico);
+                    diagnosticoController.insertarDiagnostico(diagnostico);
                     Controladores.DiagnosticoController da = new Controladores.DiagnosticoController();
                     var dt = da.CargarGridDiagnostico(diagnostico);
 
@@ -110,10 +112,9 @@ namespace SistemaConsultorioMedico
                 }
                 else
                 {
-                    if (Controladores.DiagnosticoController.validaExisPaciente(diagnostico) == false)
+                    if (diagnosticoController.validaExisPaciente(diagnostico) == false)
                     {
                         MessageBox.Show("Error paciente no Registrado", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
                     }
                 }
               
@@ -154,7 +155,7 @@ namespace SistemaConsultorioMedico
             diagnostico = new Modelos.Diagnostico();
             diagnostico.setIdPaciente(idPacienteV);
 
-            if (Controladores.DiagnosticoController.validaExisPaciente(diagnostico) == true)
+            if (diagnosticoController.validaExisPaciente(diagnostico) == true)
             {
                 Controladores.DiagnosticoController da = new Controladores.DiagnosticoController();
                 var dt = da.CargarGridDiagnostico(diagnostico);
@@ -165,7 +166,7 @@ namespace SistemaConsultorioMedico
             }
             else
             {
-                if (Controladores.DiagnosticoController.validaExisPaciente(diagnostico) == false)
+                if (diagnosticoController.validaExisPaciente(diagnostico) == false)
                 {
                     MessageBox.Show("Error paciente no Registrado", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     PacienteTxb.Text = " ";

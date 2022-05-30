@@ -20,7 +20,7 @@ namespace SistemaConsultorioMedico.Controladores
         /// Método para registrar el diagnóstico en la base de datos.
         /// </summary>
         /// <param name="d"></param>
-        public static void insertarDiagnostico(Modelos.Diagnostico d)
+        public void insertarDiagnostico(Modelos.Diagnostico d)
         {
             String query = "INSERT INTO DIAGNOSTICO VALUES (@idPaciente, @folioDiagnostico, @fecha, @descripcion)";
             try
@@ -52,7 +52,7 @@ namespace SistemaConsultorioMedico.Controladores
         /// Crea el folio del diagnóstico.
         /// </summary>
         /// <param name="d"></param>
-        public static void folio(Modelos.Diagnostico d)
+        public void folio(Modelos.Diagnostico d)
         {
             SqlCommand codigo;
             codigo = new SqlCommand("SELECT CONCAT(RIGHT(idPaciente,2),CONVERT(VARCHAR(2), GETDATE(), 103),SUBSTRING(CONVERT(VARCHAR(10),GETDATE(), 103), 4, 2),SUBSTRING(CONVERT(VARCHAR(10), GETDATE(), 103), 7, 4), CONVERT(nvarchar(2), GETDATE(), 108),SUBSTRING(CONVERT(nvarchar(5), GETDATE(), 108), 4, 2)) As folio FROM PACIENTE WHERE idPaciente ='" + d.getIdPaciente() + "'", Controladores.ConexionController.Conectar());
@@ -90,7 +90,7 @@ namespace SistemaConsultorioMedico.Controladores
         /// </summary>
         /// <param name="d"></param>
         /// <returns></returns>
-        public static bool validaExisPaciente(Modelos.Diagnostico d)
+        public bool validaExisPaciente(Modelos.Diagnostico d)
         {
             String query = "SELECT * FROM Paciente WHERE idPaciente='" + d.getIdPaciente() + "'";
 

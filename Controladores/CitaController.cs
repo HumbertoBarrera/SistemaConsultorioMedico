@@ -14,7 +14,6 @@ namespace SistemaConsultorioMedico.Controladores
     class CitaController : ICitaController
     {
 
-        DateTime fecha;
         static int intTuplaManipulada = 0;
 
         /// <summary>
@@ -60,7 +59,7 @@ namespace SistemaConsultorioMedico.Controladores
         /// <returns></returns>
         public DataTable CargarGridCitas()
         {
-            fecha = DateTime.Now;
+            DateTime fecha = DateTime.Now;
             String query = "SELECT c.idPaciente,CONCAT(p.nombresP, ' ',p.apellidoPatP, ' ',p.apellidoMatP) AS nombre,LEFT(c.fecha,10),c.hora,c.folioCita FROM CITA " +
                 "C INNER JOIN PACIENTE p ON C.idPaciente = p.idPaciente WHERE c.fecha >='" +fecha.ToString("yyyy/MM/dd") + "' ORDER BY c.fecha ASC";
 

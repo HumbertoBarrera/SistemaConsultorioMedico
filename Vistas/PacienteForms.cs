@@ -80,7 +80,6 @@ namespace SistemaConsultorioMedico
                 int idPaciente = int.Parse(BuscarTbx.text);
                 if (controlador.ValidarSiExistePaciente(idPaciente))
                 {
-                    Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
                     Form VDiag = new Diagnostico(idPaciente);
                     this.Hide();
                     VDiag.Show();
@@ -90,10 +89,9 @@ namespace SistemaConsultorioMedico
                     MessageBox.Show("Este paciente no existe", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-            else if(IdPacienteLbl.Visible == true)
+            else if(IdPacienteLbl.Visible)
             {
                 int idPaciente = int.Parse(IdPacienteLbl.Text.Substring(13));
-                Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
                 Form VDiag = new Diagnostico(idPaciente);
                 this.Hide();
                 VDiag.Show();
@@ -152,7 +150,7 @@ namespace SistemaConsultorioMedico
                     MessageBox.Show("Este paciente no existe", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-            else if(IdPacienteLbl.Visible == true)
+            else if(IdPacienteLbl.Visible)
             {
                 int idPaciente = int.Parse(IdPacienteLbl.Text.Substring(13));
                 Form VInfoMedica = new InformacionMedica(idPaciente, flagME);
@@ -293,7 +291,7 @@ namespace SistemaConsultorioMedico
 
         private void bloqueoBotonGuardar(object sender, EventArgs e)
         {
-            if (guardarPac_Btn.Enabled == true)
+            if (guardarPac_Btn.Enabled)
             {
                 guardarPac_Btn.IdleFillColor = Color.White;
                 guardarPac_Btn.Padding = new Padding(0);
@@ -307,7 +305,7 @@ namespace SistemaConsultorioMedico
 
         private void bloqueoBotonMod(object sender, EventArgs e)
         {
-            if(ModifPacienteBtn.Enabled == true)
+            if(ModifPacienteBtn.Enabled)
             {
                 ModifPacienteBtn.IdleFillColor = Color.White;
                 ModifPacienteBtn.Padding = new Padding(0);
@@ -321,7 +319,7 @@ namespace SistemaConsultorioMedico
 
         private void bloqueoBotonEli(object sender, EventArgs e)
         {
-            if(EliPacienteBtn.Enabled == true)
+            if(EliPacienteBtn.Enabled)
             {
                 EliPacienteBtn.IdleFillColor = Color.White;
                 EliPacienteBtn.Padding = new Padding(0);

@@ -158,7 +158,7 @@ namespace SistemaConsultorioMedico
             switch (opc)
             {
                 case 0:
-                    if (dato4OpcTbx.Enabled == true) dato4OpcTbx.Enabled = false;
+                    if (dato4OpcTbx.Enabled) dato4OpcTbx.Enabled = false;
                     dato4OpcTbx.LineIdleColor = Color.Purple;
                     dato4OpcTbx.LineMouseHoverColor = Color.Purple;
                     dato4OpcTbx.Text = "";
@@ -175,7 +175,7 @@ namespace SistemaConsultorioMedico
 
         private void dato4OpcTbx_EnabledChanged(object sender, EventArgs e)
         {
-            if(dato4OpcTbx.Enabled == true)
+            if(dato4OpcTbx.Enabled)
             {
                 dato4OpcTbx.LineIdleColor = Color.Purple;
                 dato4OpcTbx.LineMouseHoverColor = Color.Blue;
@@ -195,7 +195,7 @@ namespace SistemaConsultorioMedico
             switch (opc)
             {
                 case 0:
-                    if (dato5OpcTbx.Enabled == true) dato4OpcTbx.Enabled = false;
+                    if (dato5OpcTbx.Enabled) dato4OpcTbx.Enabled = false;
                     dato5OpcTbx.LineIdleColor = Color.Purple;
                     dato5OpcTbx.LineMouseHoverColor = Color.Purple;
                     dato5OpcTbx.Text = "";
@@ -212,7 +212,7 @@ namespace SistemaConsultorioMedico
 
         private void dato5OpcTbx_EnabledChanged(object sender, EventArgs e)
         {
-            if (dato5OpcTbx.Enabled == true)
+            if (dato5OpcTbx.Enabled)
             {
                 dato5OpcTbx.LineIdleColor = Color.Purple;
                 dato5OpcTbx.LineMouseHoverColor = Color.Blue;
@@ -232,7 +232,7 @@ namespace SistemaConsultorioMedico
             switch (opc)
             {
                 case 0:
-                    if (dato6OpcTbx.Enabled == true) dato4OpcTbx.Enabled = false;
+                    if (dato6OpcTbx.Enabled) dato4OpcTbx.Enabled = false;
                     dato6OpcTbx.LineIdleColor = Color.Purple;
                     dato6OpcTbx.LineMouseHoverColor = Color.Purple;
                     dato6OpcTbx.Text = "";
@@ -249,7 +249,7 @@ namespace SistemaConsultorioMedico
 
         private void dato6OpcTbx_EnabledChanged(object sender, EventArgs e)
         {
-            if (dato6OpcTbx.Enabled == true)
+            if (dato6OpcTbx.Enabled)
             {
                 dato6OpcTbx.LineIdleColor = Color.Purple;
                 dato6OpcTbx.LineMouseHoverColor = Color.Blue;
@@ -269,7 +269,7 @@ namespace SistemaConsultorioMedico
             switch (opc)
             {
                 case 0:
-                    if (dato7OpcTbx.Enabled == true) dato4OpcTbx.Enabled = false;
+                    if (dato7OpcTbx.Enabled) dato4OpcTbx.Enabled = false;
                     dato7OpcTbx.LineIdleColor = Color.Purple;
                     dato7OpcTbx.LineMouseHoverColor = Color.Purple;
                     dato7OpcTbx.Text = "";
@@ -286,7 +286,7 @@ namespace SistemaConsultorioMedico
 
         private void dato7OpcTbx_EnabledChanged(object sender, EventArgs e)
         {
-            if (dato7OpcTbx.Enabled == true)
+            if (dato7OpcTbx.Enabled)
             {
                 dato7OpcTbx.LineIdleColor = Color.Purple;
                 dato7OpcTbx.LineMouseHoverColor = Color.Blue;
@@ -306,7 +306,7 @@ namespace SistemaConsultorioMedico
             switch (opc)
             {
                 case 0:
-                    if (dato8OpcTbx.Enabled == true) dato4OpcTbx.Enabled = false;
+                    if (dato8OpcTbx.Enabled) dato4OpcTbx.Enabled = false;
                     dato8OpcTbx.LineIdleColor = Color.Purple;
                     dato8OpcTbx.LineMouseHoverColor = Color.Purple;
                     dato8OpcTbx.Text = "";
@@ -329,7 +329,7 @@ namespace SistemaConsultorioMedico
 
         private void dato8OpcTbx_EnabledChanged(object sender, EventArgs e)
         {
-            if (dato8OpcTbx.Enabled == true)
+            if (dato8OpcTbx.Enabled)
             {
                 dato8OpcTbx.LineIdleColor = Color.Purple;
                 dato8OpcTbx.LineMouseHoverColor = Color.Blue;
@@ -349,7 +349,7 @@ namespace SistemaConsultorioMedico
             switch (opc)
             {
                 case 0:
-                    if (dato9OpcTbx.Enabled == true) dato4OpcTbx.Enabled = false;
+                    if (dato9OpcTbx.Enabled) dato4OpcTbx.Enabled = false;
                     dato9OpcTbx.LineIdleColor = Color.Purple;
                     dato9OpcTbx.LineMouseHoverColor = Color.Purple;
                     dato9OpcTbx.Text = "";
@@ -366,7 +366,7 @@ namespace SistemaConsultorioMedico
         //Se cambian las propiedades del color de los textbox
         private void dato9OpcTbx_EnabledChanged(object sender, EventArgs e)
         {
-            if (dato9OpcTbx.Enabled == true)
+            if (dato9OpcTbx.Enabled)
             {
                 dato9OpcTbx.LineIdleColor = Color.Purple;
                 dato9OpcTbx.LineMouseHoverColor = Color.Blue;
@@ -401,7 +401,7 @@ namespace SistemaConsultorioMedico
         //Habilitar boton y establecer color determinado
         private void MasBtn_EnabledChanged(object sender, EventArgs e)
         {
-            if (MasBtn.Enabled == true)
+            if (MasBtn.Enabled)
             {
                 MasBtn.Padding = new Padding(0);
                 MasBtn.IdleFillColor = Color.White;
