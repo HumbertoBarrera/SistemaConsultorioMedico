@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace SistemaConsultorioMedico.Controladores
 {
-    class PropiedadController
+    public class PropiedadController
     {
         //Limitar longitud de caracteres en string
         /// <summary>

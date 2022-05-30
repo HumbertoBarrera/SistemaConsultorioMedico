@@ -65,41 +65,6 @@ namespace SistemaConsultorioMedico.Controladores
             }
         }
 
-
-        public static void diagnostico(Modelos.Diagnostico d)
-        {
-
-            String query = "SELECT * FROM DIAGNOSTICO WHERE idPaciente=@idPaciente";
-
-            try
-            {
-                using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
-                {
-                    comando.Parameters.AddWithValue("@idPaciente", d.getIdPaciente());
-
-                    SqlDataReader resultado = comando.ExecuteReader();
-
-                    if (resultado.Read())
-                    {
-                    }
-                    else
-                    {
-                       
-                    }
-                }
-            }
-            catch (SqlException e)
-            {
-                MessageBox.Show(e.Message);
-            }
-            finally
-            {
-                Controladores.ConexionController.Desconectar();
-            }
-
-
-        }
-
         /// <summary>
         /// Carga el diagnóstico de la base de datos al sistema.
         /// </summary>

@@ -7,7 +7,7 @@ using System.Data.SqlClient;
 
 namespace SistemaConsultorioMedico.Controladores
 {
-    class ConexionController
+    public class ConexionController
     {
         private static string connection = "SERVER=localhost; DATABASE=CONSULTORIO; Integrated Security=true";
         

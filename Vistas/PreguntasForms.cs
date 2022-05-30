@@ -327,7 +327,7 @@ namespace SistemaConsultorioMedico
             if (ValidarCampos())
             {
                 DateTime hoy = DateTime.Today;
-                Modelos.InformacionMedica im2 = new Modelos.InformacionMedica(ObtenerEnfermedadFamiliar(), dato10OpcTbx.Text, dato11ComboBox.selectedValue, dato11OpcTbx.Text,
+                im2 = new Modelos.InformacionMedica(ObtenerEnfermedadFamiliar(), dato10OpcTbx.Text, dato11ComboBox.selectedValue, dato11OpcTbx.Text,
                                                                             dato12Tbx.Text, dato13ComboBox.selectedValue, dato13OpcTbx.Text, dato13Opc2Tbx.Text, dato14ComboBox.selectedValue,
                                                                             dato14OpcTbx.Text, dato14Opc2Tbx.Text, dato15ComboBox.selectedValue, dato15OpcTbx.Text,
                                                                             dato15Opc2Tbx.Text, dato15Opc3Tbx.Text, dato15Opc4Tbx.Text, dato16Tbx.Text,
@@ -347,7 +347,7 @@ namespace SistemaConsultorioMedico
         private void EliminarBtn_Click(object sender, EventArgs e)
         {
             DateTime hoy = DateTime.Today;
-            Modelos.InformacionMedica im2 = new Modelos.InformacionMedica(ObtenerEnfermedadFamiliar(), dato10OpcTbx.Text, dato11ComboBox.selectedValue, dato11OpcTbx.Text,
+            im2 = new Modelos.InformacionMedica(ObtenerEnfermedadFamiliar(), dato10OpcTbx.Text, dato11ComboBox.selectedValue, dato11OpcTbx.Text,
                                                                             dato12Tbx.Text, dato13ComboBox.selectedValue, dato13OpcTbx.Text, dato13Opc2Tbx.Text, dato14ComboBox.selectedValue,
                                                                             dato14OpcTbx.Text, dato14Opc2Tbx.Text, dato15ComboBox.selectedValue, dato15OpcTbx.Text,
                                                                             dato15Opc2Tbx.Text, dato15Opc3Tbx.Text, dato15Opc4Tbx.Text, dato16Tbx.Text,
@@ -696,12 +696,10 @@ namespace SistemaConsultorioMedico
             if (ValidarCampos() && flagME)
             {
                 GuardarBtn.Enabled = true;
-               // EliminarBtn.Enabled = false;
             }
             else
             {
                 GuardarBtn.Enabled = false;
-                //EliminarBtn.Enabled = true;
                 if (ValidarCampos())
                 {
                     ModificarBtn.Enabled = true;

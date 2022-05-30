@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace SistemaConsultorioMedico.Controladores
 {
-    class InformacionMedicaController
+    public class InformacionMedicaController
     {
 
         static int intTuplasManipuladas = 0;

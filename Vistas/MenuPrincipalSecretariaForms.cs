@@ -12,7 +12,7 @@ namespace SistemaConsultorioMedico
 {
     public partial class MenuPrincipalSecretaria : Form
     {
-        int idPaciente;
+        int idPaciente = 0;
         bool flagME = true, flagS;
 
         public MenuPrincipalSecretaria(bool flag)

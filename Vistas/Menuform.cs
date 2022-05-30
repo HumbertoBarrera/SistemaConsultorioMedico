@@ -13,7 +13,7 @@ namespace SistemaConsultorioMedico
 {
     public partial class Menuform : Form
     {
-        int idPaciente;
+        int idPaciente = 0;
         bool flagME = true;
 
         public Menuform()

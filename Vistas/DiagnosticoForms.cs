@@ -127,7 +127,7 @@ namespace SistemaConsultorioMedico
 
         private void Diagnostico_Load(object sender, EventArgs e)
         {
-            Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
+            diagnostico = new Modelos.Diagnostico();
             diagnostico.setIdPaciente(idPaciente);
             Controladores.DiagnosticoController da = new Controladores.DiagnosticoController();
             var dt = da.CargarGridDiagnostico(diagnostico);
@@ -151,7 +151,7 @@ namespace SistemaConsultorioMedico
             bunifuCustomDataGrid1.DataSource = null;
             Descripciontxb.Text = "";
 
-            Modelos.Diagnostico diagnostico = new Modelos.Diagnostico();
+            diagnostico = new Modelos.Diagnostico();
             diagnostico.setIdPaciente(idPacienteV);
 
             if (Controladores.DiagnosticoController.validaExisPaciente(diagnostico) == true)

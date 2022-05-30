@@ -115,7 +115,7 @@ namespace SistemaConsultorioMedico
         {
             if ((comboBox1.Text != "----- Seleccione la hora----") && (comboBox1.SelectedIndex != -1))
             {
-                Modelos.Cita cita = new Modelos.Cita();
+                cita = new Modelos.Cita();
 
                 String folioCita = folioCitaLb.Text;
                 int idPacienteV = int.Parse(pacientesCbo.SelectedValue.ToString());
@@ -156,7 +156,7 @@ namespace SistemaConsultorioMedico
             if ((comboBox1.Text != "----- Seleccione la hora----") && (comboBox1.SelectedIndex != -1))
             {
 
-                Modelos.Cita cita = new Modelos.Cita();
+                cita = new Modelos.Cita();
 
                 String folioCita = folioCitaLb.Text;
                 int idPacienteV = int.Parse(pacientesCbo.SelectedValue.ToString());
@@ -215,7 +215,7 @@ namespace SistemaConsultorioMedico
                 MessageBox.Show("fecha no valida");
                 bunifuDatepicker1.Value = DateTime.Now.Date;
             }
-            Modelos.Cita cita = new Modelos.Cita();
+            cita = new Modelos.Cita();
 
             DateTime fechaV = bunifuDatepicker1.Value;
             TimeSpan hora1 = TimeSpan.Parse("02:00");
