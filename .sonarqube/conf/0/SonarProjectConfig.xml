@@ -4,5 +4,5 @@
   <ProjectPath>C:\Users\humbe\source\repos\SistemaConsultorioMedico\SistemaConsultorioMedico.csproj</ProjectPath>
   <FilesToAnalyzePath>C:\Users\humbe\source\repos\SistemaConsultorioMedico\.sonarqube\conf\0\FilesToAnalyze.txt</FilesToAnalyzePath>
   <OutPath>C:\Users\humbe\source\repos\SistemaConsultorioMedico\.sonarqube\out\0</OutPath>
-  <ProjectType>Product</ProjectType>
+  <ProjectType>Test</ProjectType>
 </SonarProjectConfig>

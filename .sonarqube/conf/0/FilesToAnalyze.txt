@@ -5,6 +5,9 @@ C:\Users\humbe\source\repos\SistemaConsultorioMedico\Controladores\InformacionMe
 C:\Users\humbe\source\repos\SistemaConsultorioMedico\Controladores\PacienteController.cs
 C:\Users\humbe\source\repos\SistemaConsultorioMedico\Controladores\PropiedadController.cs
 C:\Users\humbe\source\repos\SistemaConsultorioMedico\Controladores\UsuarioController.cs
+C:\Users\humbe\source\repos\SistemaConsultorioMedico\Interfaces\ICitaController.cs
+C:\Users\humbe\source\repos\SistemaConsultorioMedico\Interfaces\IPaciente.cs
+C:\Users\humbe\source\repos\SistemaConsultorioMedico\Interfaces\IPacienteController.cs
 C:\Users\humbe\source\repos\SistemaConsultorioMedico\Modelos\Cita.cs
 C:\Users\humbe\source\repos\SistemaConsultorioMedico\Modelos\Diagnostico.cs
 C:\Users\humbe\source\repos\SistemaConsultorioMedico\Modelos\InformacionMedica.cs
@@ -46,5 +49,7 @@ C:\Users\humbe\source\repos\SistemaConsultorioMedico\Vistas\PreguntasForms.resx
 C:\Users\humbe\source\repos\SistemaConsultorioMedico\Properties\Resources.resx
 C:\Users\humbe\source\repos\SistemaConsultorioMedico\Vistas\RecuperarContraForms.resx
 C:\Users\humbe\source\repos\SistemaConsultorioMedico\Vistas\UsuarioForms.resx
+C:\Users\humbe\source\repos\SistemaConsultorioMedico\packages.config
 C:\Users\humbe\source\repos\SistemaConsultorioMedico\Properties\Settings.settings
+C:\Users\humbe\source\repos\SistemaConsultorioMedico\SistemaConsultorioMedico_TemporaryKey.pfx
 C:\Users\humbe\source\repos\SistemaConsultorioMedico\App.config
