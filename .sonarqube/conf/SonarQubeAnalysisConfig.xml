@@ -7,7 +7,7 @@
   <HasBeginStepCommandLineCredentials>true</HasBeginStepCommandLineCredentials>
   <SonarQubeHostUrl>http://localhost:9000</SonarQubeHostUrl>
   <SonarQubeVersion>9.4.0.54424</SonarQubeVersion>
-  <SonarProjectKey>SCMNuevo</SonarProjectKey>
+  <SonarProjectKey>SistemaConsultorioMedico</SonarProjectKey>
   <AdditionalConfig>
     <ConfigSetting Id="BuildUri" />
     <ConfigSetting Id="TfsUri" />
@@ -45,7 +45,7 @@
     <Property Name="sonar.jsp.file.suffixes">.jsp,.jspf,.jspx</Property>
     <Property Name="sonar.javascript.maxFileSize">1000</Property>
     <Property Name="sonar.javascript.environments">amd, applescript, atomtest, browser, commonjs, couch, embertest, flow, greasemonkey, jasmine, jest, jquery, meteor, mocha, mongo, nashorn, node, phantomjs, prototypejs, protractor, qunit, rhino, serviceworker, shared-node-browser, shelljs, webextensions, worker, wsh, yui</Property>
-    <Property Name="sonar.scm.disabled">false</Property>
+    <Property Name="sonar.scm.disabled">true</Property>
     <Property Name="sonar.ruby.exclusions">**/vendor/**</Property>
     <Property Name="sonar.auth.saml.enabled">false</Property>
     <Property Name="sonar.vbnet.file.suffixes">.vb</Property>
