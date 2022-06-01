@@ -139,7 +139,12 @@ namespace SistemaConsultorioMedico
             AbrirFormHijo(new UsuarioForms());
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void nombrerol_lb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomLabel2_Click(object sender, EventArgs e)
         {
 
         }

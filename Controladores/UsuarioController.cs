@@ -125,14 +125,17 @@ namespace SistemaConsultorioMedico.Controladores
                 {
                     if(leer["rol"].ToString() == "D")
                     {
-                        Form MenuForm = new Menuform();
+                        Menuform MenuForm = new Menuform();
+                        MenuForm.rol_lb.Text = "Doctora";
+                        MenuForm.nombrerol_lb.Text = U.getUsuario() +"!";
                         MenuForm.Show();
                         login.Hide();
                     }
                     else
                     {
-                        Form Menu = new MenuPrincipalSecretaria(false);
-                        Menu.Show();
+                        MenuPrincipalSecretaria menu = new MenuPrincipalSecretaria(false);
+                        menu.nombrerol_lb.Text =U.getUsuario() + "!";
+                        menu.Show();
                         login.Hide();
                     }
                 }

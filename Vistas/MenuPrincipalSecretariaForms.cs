@@ -19,8 +19,9 @@ namespace SistemaConsultorioMedico
         {
             this.flagS = flag;
             InitializeComponent();
-        }
 
+        }
+      
         private void Pacientebtn_Click(object sender, EventArgs e)
         {
             AbrirFormHijo(new Paciente(flagS));
@@ -97,6 +98,21 @@ namespace SistemaConsultorioMedico
         private void InformacionMedicaBtn_Click(object sender, EventArgs e)
         {
             AbrirFormHijo(new InformacionMedica(idPaciente, flagME));
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void menuTopPnl_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void nombrerol_lb_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void logoutBtn_Click(object sender, EventArgs e)
