@@ -81,7 +81,7 @@ namespace SistemaConsultorioMedico
             this.contenidoPnl.Location = new System.Drawing.Point(0, 0);
             this.contenidoPnl.Margin = new System.Windows.Forms.Padding(4);
             this.contenidoPnl.Name = "contenidoPnl";
-            this.contenidoPnl.Size = new System.Drawing.Size(1386, 788);
+            this.contenidoPnl.Size = new System.Drawing.Size(1284, 788);
             this.contenidoPnl.TabIndex = 0;
             // 
             // panel1
@@ -95,8 +95,9 @@ namespace SistemaConsultorioMedico
             this.panel1.Location = new System.Drawing.Point(408, 89);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(965, 691);
+            this.panel1.Size = new System.Drawing.Size(863, 691);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // contenedorMenuPnl
             // 
@@ -428,7 +429,7 @@ namespace SistemaConsultorioMedico
             this.menuTopPnl.Location = new System.Drawing.Point(0, 0);
             this.menuTopPnl.Margin = new System.Windows.Forms.Padding(4);
             this.menuTopPnl.Name = "menuTopPnl";
-            this.menuTopPnl.Size = new System.Drawing.Size(1386, 81);
+            this.menuTopPnl.Size = new System.Drawing.Size(1284, 81);
             this.menuTopPnl.TabIndex = 1;
             // 
             // Restaurar
@@ -437,7 +438,7 @@ namespace SistemaConsultorioMedico
             this.AnimacionSidebar.SetDecoration(this.Restaurar, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarAtras.SetDecoration(this.Restaurar, BunifuAnimatorNS.DecorationType.None);
             this.Restaurar.Image = ((System.Drawing.Image)(resources.GetObject("Restaurar.Image")));
-            this.Restaurar.Location = new System.Drawing.Point(1282, 26);
+            this.Restaurar.Location = new System.Drawing.Point(1180, 26);
             this.Restaurar.Margin = new System.Windows.Forms.Padding(4);
             this.Restaurar.Name = "Restaurar";
             this.Restaurar.Size = new System.Drawing.Size(40, 37);
@@ -453,7 +454,7 @@ namespace SistemaConsultorioMedico
             this.AnimacionSidebar.SetDecoration(this.Minimizar, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarAtras.SetDecoration(this.Minimizar, BunifuAnimatorNS.DecorationType.None);
             this.Minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Minimizar.Image")));
-            this.Minimizar.Location = new System.Drawing.Point(1234, 26);
+            this.Minimizar.Location = new System.Drawing.Point(1132, 26);
             this.Minimizar.Margin = new System.Windows.Forms.Padding(4);
             this.Minimizar.Name = "Minimizar";
             this.Minimizar.Size = new System.Drawing.Size(40, 37);
@@ -468,7 +469,7 @@ namespace SistemaConsultorioMedico
             this.AnimacionSidebar.SetDecoration(this.Maximizar, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarAtras.SetDecoration(this.Maximizar, BunifuAnimatorNS.DecorationType.None);
             this.Maximizar.Image = ((System.Drawing.Image)(resources.GetObject("Maximizar.Image")));
-            this.Maximizar.Location = new System.Drawing.Point(1282, 26);
+            this.Maximizar.Location = new System.Drawing.Point(1180, 26);
             this.Maximizar.Margin = new System.Windows.Forms.Padding(4);
             this.Maximizar.Name = "Maximizar";
             this.Maximizar.Size = new System.Drawing.Size(40, 37);
@@ -483,7 +484,7 @@ namespace SistemaConsultorioMedico
             this.AnimacionSidebar.SetDecoration(this.Salir, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarAtras.SetDecoration(this.Salir, BunifuAnimatorNS.DecorationType.None);
             this.Salir.Image = ((System.Drawing.Image)(resources.GetObject("Salir.Image")));
-            this.Salir.Location = new System.Drawing.Point(1330, 26);
+            this.Salir.Location = new System.Drawing.Point(1228, 26);
             this.Salir.Margin = new System.Windows.Forms.Padding(4);
             this.Salir.Name = "Salir";
             this.Salir.Size = new System.Drawing.Size(40, 37);
@@ -587,7 +588,7 @@ namespace SistemaConsultorioMedico
             // Menuform
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.ClientSize = new System.Drawing.Size(1386, 788);
+            this.ClientSize = new System.Drawing.Size(1284, 788);
             this.Controls.Add(this.contenedorMenuPnl);
             this.Controls.Add(this.menuTopPnl);
             this.Controls.Add(this.contenidoPnl);
