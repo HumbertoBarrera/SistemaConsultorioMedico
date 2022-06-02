@@ -23,6 +23,7 @@ namespace SistemaConsultorioMedico
         {
             InitializeComponent();
             Controladores.PropiedadController.BunifuMaterial(TelefonoTbx, 10);
+            Controladores.PropiedadController.BunifuMaterial(NombreTbx, 30);
             errorDigit.Visible = false;
             this.flagS = flagS;
             if (!flagS) DiagnosticoBtn.Visible = false;
@@ -462,6 +463,60 @@ namespace SistemaConsultorioMedico
         private void BusquedaDePacientes(object sender, EventArgs e)
         {
             (bunifuCustomDataGrid1.DataSource as DataTable).DefaultView.RowFilter = string.Format("nombresP LIKE '%{0}%'", BuscarTbx.text);
+        }
+
+
+        private void FocusTextbox_Leave(object sender, EventArgs e)
+        {
+
+            //TextBox Nombre de Paciente
+            if (NombreTbx.Text.Length < 2)
+            {
+                MessageBox.Show("Nombre no Valido", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                NombreTbx.Focus();
+            }
+            else {
+
+                if (ApellidoPaternoTbx.Text.Length < 2)
+                {
+                    MessageBox.Show("Apellido Paterno no Valido", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                    ApellidoPaternoTbx.Focus();
+                }
+                else
+                {
+                    if (ApellidoMaternoTbx.Text.Length < 2)
+                    {
+                        MessageBox.Show("Apellido Materno no Valido", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                        ApellidoMaternoTbx.Focus();
+                    }
+                }
+               
+            }
+            
+
+        }
+        private void ValidarLetras_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                MessageBox.Show("Solo se permiten letras", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+
+        }
+
+        private void TelefonoTbx_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                MessageBox.Show("Solo se permiten Numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
         }
 
         public bool isNumeric(string value)
