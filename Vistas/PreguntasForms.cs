@@ -848,5 +848,20 @@ namespace SistemaConsultorioMedico
                 EliminarBtn.Padding = new Padding(37, 10, 0, 10);
             }
         }
+
+        private void Preguntas_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void ValidarLetras_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                MessageBox.Show("Solo se permiten letras", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+
+        }
     }
 }
