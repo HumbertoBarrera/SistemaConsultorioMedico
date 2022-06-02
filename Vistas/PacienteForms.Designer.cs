@@ -30,8 +30,8 @@ namespace SistemaConsultorioMedico
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Paciente));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.EliPacienteBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.BuscarTbx = new Bunifu.Framework.UI.BunifuTextbox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -55,7 +55,6 @@ namespace SistemaConsultorioMedico
             this.correoErrorLbl = new System.Windows.Forms.Label();
             this.errorDigit = new System.Windows.Forms.Label();
             this.fechaNacimiento_lbl = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.buscarBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.NombreLbl = new System.Windows.Forms.Label();
             this.ApellidoPaternoLbl = new System.Windows.Forms.Label();
             this.ApellidoMaternoLbl = new System.Windows.Forms.Label();
@@ -111,6 +110,7 @@ namespace SistemaConsultorioMedico
             this.BuscarTbx.Size = new System.Drawing.Size(489, 33);
             this.BuscarTbx.TabIndex = 14;
             this.BuscarTbx.text = "";
+            this.BuscarTbx.OnTextChange += new System.EventHandler(this.BusquedaDePacientes);
             this.BuscarTbx.MouseEnter += new System.EventHandler(this.BuscarTbx_MouseEnter);
             this.BuscarTbx.MouseLeave += new System.EventHandler(this.BuscarTbx_MouseLeave);
             // 
@@ -383,21 +383,21 @@ namespace SistemaConsultorioMedico
             this.bunifuCustomDataGrid1.AllowUserToDeleteRows = false;
             this.bunifuCustomDataGrid1.AllowUserToResizeColumns = false;
             this.bunifuCustomDataGrid1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.bunifuCustomDataGrid1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
             this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bunifuCustomDataGrid1.DoubleBuffered = true;
             this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
@@ -529,37 +529,11 @@ namespace SistemaConsultorioMedico
             this.fechaNacimiento_lbl.TabIndex = 78;
             this.fechaNacimiento_lbl.Text = "FECHA DE NACIMIENTO";
             // 
-            // buscarBtn
-            // 
-            this.buscarBtn.ActiveBorderThickness = 1;
-            this.buscarBtn.ActiveCornerRadius = 20;
-            this.buscarBtn.ActiveFillColor = System.Drawing.Color.Plum;
-            this.buscarBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.buscarBtn.ActiveLineColor = System.Drawing.Color.Plum;
-            this.buscarBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buscarBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buscarBtn.BackgroundImage")));
-            this.buscarBtn.ButtonText = "BUSCAR";
-            this.buscarBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buscarBtn.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buscarBtn.ForeColor = System.Drawing.Color.ForestGreen;
-            this.buscarBtn.IdleBorderThickness = 1;
-            this.buscarBtn.IdleCornerRadius = 20;
-            this.buscarBtn.IdleFillColor = System.Drawing.Color.White;
-            this.buscarBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.buscarBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.buscarBtn.Location = new System.Drawing.Point(712, 114);
-            this.buscarBtn.Margin = new System.Windows.Forms.Padding(5);
-            this.buscarBtn.Name = "buscarBtn";
-            this.buscarBtn.Size = new System.Drawing.Size(123, 33);
-            this.buscarBtn.TabIndex = 79;
-            this.buscarBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.buscarBtn.Click += new System.EventHandler(this.buscarBtn_Click);
-            // 
             // NombreLbl
             // 
             this.NombreLbl.AutoSize = true;
             this.NombreLbl.BackColor = System.Drawing.Color.Transparent;
-            this.NombreLbl.Location = new System.Drawing.Point(21, 149);
+            this.NombreLbl.Location = new System.Drawing.Point(21, 151);
             this.NombreLbl.Name = "NombreLbl";
             this.NombreLbl.Size = new System.Drawing.Size(63, 16);
             this.NombreLbl.TabIndex = 80;
@@ -659,7 +633,6 @@ namespace SistemaConsultorioMedico
             this.Controls.Add(this.NombreLbl);
             this.Controls.Add(this.CorreoELbl);
             this.Controls.Add(this.TelefonoLbl);
-            this.Controls.Add(this.buscarBtn);
             this.Controls.Add(this.fechaNacimiento_lbl);
             this.Controls.Add(this.errorDigit);
             this.Controls.Add(this.correoErrorLbl);
@@ -722,7 +695,6 @@ namespace SistemaConsultorioMedico
         private System.Windows.Forms.Label correoErrorLbl;
         private System.Windows.Forms.Label errorDigit;
         private Bunifu.Framework.UI.BunifuCustomLabel fechaNacimiento_lbl;
-        private Bunifu.Framework.UI.BunifuThinButton2 buscarBtn;
         private System.Windows.Forms.Label NombreLbl;
         private System.Windows.Forms.Label ApellidoPaternoLbl;
         private System.Windows.Forms.Label ApellidoMaternoLbl;
