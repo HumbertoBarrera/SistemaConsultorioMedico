@@ -51,7 +51,7 @@ namespace SistemaConsultorioMedico
             if (validarCampos())
             {
                 var random = new Random().Next(10000000, 99999999);
-                paciente = new Modelos.Paciente(random, ((curDate.Year) - Convert.ToInt32(fechaNacDatePicker.Value.Year)), NombreTxb.Text, ApellidoPaternoTbx.Text,
+                paciente = new Modelos.Paciente(random, ((curDate.Year) - Convert.ToInt32(fechaNacDatePicker.Value.Year)), NombreTbx.Text, ApellidoPaternoTbx.Text,
                                                                     ApellidoMaternoTbx.Text, LugarNaciTbx.Text, DireccionTbx.Text, TelefonoTbx.Text, CorreoETbx.Text,
                                                                     OcupacionTbx.Text, TelefonoTbx.Text, LugarTrabajoTbx.Text, fechaNacDatePicker.Value);
                 controlador.RegistrarPaciente(paciente);
@@ -105,7 +105,7 @@ namespace SistemaConsultorioMedico
 
         private bool validarCampos()
         {
-            if (NombreTxb.Text != "" && ApellidoPaternoTbx.Text != "" && ApellidoMaternoTbx.Text != "" && LugarNaciTbx.Text != "" && DireccionTbx.Text != "" && TelefonoTbx.Text != "" && CorreoETbx.Text != "" && OcupacionTbx.Text != "" &&
+            if (NombreTbx.Text != "" && ApellidoPaternoTbx.Text != "" && ApellidoMaternoTbx.Text != "" && LugarNaciTbx.Text != "" && DireccionTbx.Text != "" && TelefonoTbx.Text != "" && CorreoETbx.Text != "" && OcupacionTbx.Text != "" &&
                 LugarTrabajoTbx.Text != "")
                 return true;
             else
@@ -114,7 +114,7 @@ namespace SistemaConsultorioMedico
 
         private void reestablecerCampos()
         {
-            NombreTxb.Text = "";
+            NombreTbx.Text = "";
             ApellidoPaternoTbx.Text = "";
             ApellidoMaternoTbx.Text = "";
             fechaNacDatePicker.Value = DateTime.Today;
@@ -165,7 +165,7 @@ namespace SistemaConsultorioMedico
 
         private void ModifPacienteBtn_Click(object sender, EventArgs e)
         {
-            paciente = new Modelos.Paciente(Convert.ToInt32(IdPacienteLbl.Text.Substring(13)), ((curDate.Year) - Convert.ToInt32(fechaNacDatePicker.Value.Year)), NombreTxb.Text, ApellidoPaternoTbx.Text,
+            paciente = new Modelos.Paciente(Convert.ToInt32(IdPacienteLbl.Text.Substring(13)), ((curDate.Year) - Convert.ToInt32(fechaNacDatePicker.Value.Year)), NombreTbx.Text, ApellidoPaternoTbx.Text,
                                                                 ApellidoMaternoTbx.Text, LugarNaciTbx.Text, DireccionTbx.Text, TelefonoTbx.Text, CorreoETbx.Text,
                                                                 OcupacionTbx.Text, TelefonoTbx.Text, LugarTrabajoTbx.Text, fechaNacDatePicker.Value);
             controlador.ActualizarPaciente(paciente);
@@ -186,7 +186,7 @@ namespace SistemaConsultorioMedico
             flagME = false;
             indice = bunifuCustomDataGrid1.CurrentRow.Index;
             IdPacienteLbl.Text = "ID PACIENTE: "+bunifuCustomDataGrid1[0, indice].Value.ToString();
-            NombreTxb.Text = bunifuCustomDataGrid1[1, indice].Value.ToString();
+            NombreTbx.Text = bunifuCustomDataGrid1[1, indice].Value.ToString();
             ApellidoPaternoTbx.Text = bunifuCustomDataGrid1[2, indice].Value.ToString();
             ApellidoMaternoTbx.Text = bunifuCustomDataGrid1[3, indice].Value.ToString();
             fechaNacDatePicker.Value = Convert.ToDateTime(bunifuCustomDataGrid1[4, indice].Value);
@@ -203,6 +203,7 @@ namespace SistemaConsultorioMedico
 
         private void bloqueoBtnGuardar(object sender, EventArgs e)
         {
+            ActivarLblCampos(sender);   
             if (validarCampos() && flagME)
             {
                 guardarPac_Btn.Enabled = true;
@@ -219,6 +220,20 @@ namespace SistemaConsultorioMedico
                     ModifPacienteBtn.Enabled = false;
                 }
             }
+        }
+
+        private void ActivarLblCampos(object sender)
+        {
+            Bunifu.Framework.UI.BunifuMaterialTextbox srcTbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            srcTbx = ((Bunifu.Framework.UI.BunifuMaterialTextbox)sender);
+            Label label = new System.Windows.Forms.Label();
+            string name = srcTbx.Name.Remove(srcTbx.Name.Length - 3) + "Lbl";
+            foreach (Label control in Controls.OfType<Label>().Where(c => c.Name.Contains(name)))
+                label = control;
+            if (srcTbx.isOnFocused)
+                label.Visible = true;
+            else
+                label.Visible = false;
         }
 
         private bool isValidEmail(string email)
@@ -333,7 +348,7 @@ namespace SistemaConsultorioMedico
 
         private void EliPacienteBtn_Click(object sender, EventArgs e)
         {
-            paciente = new Modelos.Paciente(Convert.ToInt32(IdPacienteLbl.Text.Substring(13)), ((curDate.Year) - Convert.ToInt32(fechaNacDatePicker.Value.Year)), NombreTxb.Text, ApellidoPaternoTbx.Text,
+            paciente = new Modelos.Paciente(Convert.ToInt32(IdPacienteLbl.Text.Substring(13)), ((curDate.Year) - Convert.ToInt32(fechaNacDatePicker.Value.Year)), NombreTbx.Text, ApellidoPaternoTbx.Text,
                                                                 ApellidoMaternoTbx.Text, LugarNaciTbx.Text, DireccionTbx.Text, TelefonoTbx.Text, CorreoETbx.Text,
                                                                 OcupacionTbx.Text, TelefonoTbx.Text, LugarTrabajoTbx.Text, fechaNacDatePicker.Value);
             controlador.EliminarPaciente(paciente);

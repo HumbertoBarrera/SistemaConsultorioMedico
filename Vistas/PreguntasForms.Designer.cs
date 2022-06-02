@@ -88,7 +88,7 @@ namespace SistemaConsultorioMedico
             this.linea.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(128)))));
             this.linea.LineThickness = 1;
             this.linea.Location = new System.Drawing.Point(433, 80);
-            this.linea.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.linea.Margin = new System.Windows.Forms.Padding(5);
             this.linea.Name = "linea";
             this.linea.Size = new System.Drawing.Size(327, 12);
             this.linea.TabIndex = 37;
@@ -104,7 +104,7 @@ namespace SistemaConsultorioMedico
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(290, 30);
             this.bunifuCustomLabel1.TabIndex = 36;
-            this.bunifuCustomLabel1.Text = "INFORMACION MEDICA";
+            this.bunifuCustomLabel1.Text = "INFORMACIÓN MÉDICA";
             // 
             // dato13OpcTbx
             // 
@@ -113,14 +113,14 @@ namespace SistemaConsultorioMedico
             this.dato13OpcTbx.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.dato13OpcTbx.ForeColor = System.Drawing.Color.Black;
             this.dato13OpcTbx.HintForeColor = System.Drawing.Color.DimGray;
-            this.dato13OpcTbx.HintText = "¿DESDE CUANDO?";
+            this.dato13OpcTbx.HintText = "¿DESDE CUÁNDO?";
             this.dato13OpcTbx.isPassword = false;
             this.dato13OpcTbx.LineFocusedColor = System.Drawing.Color.Blue;
             this.dato13OpcTbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato13OpcTbx.LineMouseHoverColor = System.Drawing.Color.Purple;
             this.dato13OpcTbx.LineThickness = 3;
             this.dato13OpcTbx.Location = new System.Drawing.Point(757, 313);
-            this.dato13OpcTbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato13OpcTbx.Margin = new System.Windows.Forms.Padding(5);
             this.dato13OpcTbx.Name = "dato13OpcTbx";
             this.dato13OpcTbx.Size = new System.Drawing.Size(376, 41);
             this.dato13OpcTbx.TabIndex = 12;
@@ -134,14 +134,14 @@ namespace SistemaConsultorioMedico
             this.dato12Tbx.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.dato12Tbx.ForeColor = System.Drawing.Color.Black;
             this.dato12Tbx.HintForeColor = System.Drawing.Color.DimGray;
-            this.dato12Tbx.HintText = "¿CUANTAS PAREJAS SEXUALES HA TENIDO?";
+            this.dato12Tbx.HintText = "¿CUÁNTAS PAREJAS SEXUALES HA TENIDO?";
             this.dato12Tbx.isPassword = false;
             this.dato12Tbx.LineFocusedColor = System.Drawing.Color.Blue;
             this.dato12Tbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato12Tbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato12Tbx.LineThickness = 3;
             this.dato12Tbx.Location = new System.Drawing.Point(52, 313);
-            this.dato12Tbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato12Tbx.Margin = new System.Windows.Forms.Padding(5);
             this.dato12Tbx.Name = "dato12Tbx";
             this.dato12Tbx.Size = new System.Drawing.Size(505, 41);
             this.dato12Tbx.TabIndex = 10;
@@ -155,14 +155,14 @@ namespace SistemaConsultorioMedico
             this.dato10OpcTbx.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.dato10OpcTbx.ForeColor = System.Drawing.Color.Black;
             this.dato10OpcTbx.HintForeColor = System.Drawing.Color.DimGray;
-            this.dato10OpcTbx.HintText = "¿QUIEN?";
+            this.dato10OpcTbx.HintText = "¿QUIÉN?";
             this.dato10OpcTbx.isPassword = false;
             this.dato10OpcTbx.LineFocusedColor = System.Drawing.Color.Blue;
             this.dato10OpcTbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato10OpcTbx.LineMouseHoverColor = System.Drawing.Color.Purple;
             this.dato10OpcTbx.LineThickness = 3;
             this.dato10OpcTbx.Location = new System.Drawing.Point(52, 256);
-            this.dato10OpcTbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato10OpcTbx.Margin = new System.Windows.Forms.Padding(5);
             this.dato10OpcTbx.Name = "dato10OpcTbx";
             this.dato10OpcTbx.Size = new System.Drawing.Size(505, 41);
             this.dato10OpcTbx.TabIndex = 7;
@@ -177,14 +177,14 @@ namespace SistemaConsultorioMedico
             this.dato13Opc2Tbx.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.dato13Opc2Tbx.ForeColor = System.Drawing.Color.Black;
             this.dato13Opc2Tbx.HintForeColor = System.Drawing.Color.DimGray;
-            this.dato13Opc2Tbx.HintText = "¿QUE TANTO DIARIO?";
+            this.dato13Opc2Tbx.HintText = "¿QUÉ TANTO DIARIO?";
             this.dato13Opc2Tbx.isPassword = false;
             this.dato13Opc2Tbx.LineFocusedColor = System.Drawing.Color.Blue;
             this.dato13Opc2Tbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato13Opc2Tbx.LineMouseHoverColor = System.Drawing.Color.Purple;
             this.dato13Opc2Tbx.LineThickness = 3;
             this.dato13Opc2Tbx.Location = new System.Drawing.Point(52, 374);
-            this.dato13Opc2Tbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato13Opc2Tbx.Margin = new System.Windows.Forms.Padding(5);
             this.dato13Opc2Tbx.Name = "dato13Opc2Tbx";
             this.dato13Opc2Tbx.Size = new System.Drawing.Size(487, 41);
             this.dato13Opc2Tbx.TabIndex = 13;
@@ -205,7 +205,7 @@ namespace SistemaConsultorioMedico
             this.dato10Tbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato10Tbx.LineThickness = 3;
             this.dato10Tbx.Location = new System.Drawing.Point(780, 187);
-            this.dato10Tbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato10Tbx.Margin = new System.Windows.Forms.Padding(5);
             this.dato10Tbx.Name = "dato10Tbx";
             this.dato10Tbx.Size = new System.Drawing.Size(293, 41);
             this.dato10Tbx.TabIndex = 5;
@@ -216,7 +216,7 @@ namespace SistemaConsultorioMedico
             // 
             this.dato10Rbtn4.AutoSize = true;
             this.dato10Rbtn4.Location = new System.Drawing.Point(655, 198);
-            this.dato10Rbtn4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dato10Rbtn4.Margin = new System.Windows.Forms.Padding(4);
             this.dato10Rbtn4.Name = "dato10Rbtn4";
             this.dato10Rbtn4.Size = new System.Drawing.Size(95, 20);
             this.dato10Rbtn4.TabIndex = 74;
@@ -229,12 +229,12 @@ namespace SistemaConsultorioMedico
             // 
             this.dato10Rbtn3.AutoSize = true;
             this.dato10Rbtn3.Location = new System.Drawing.Point(401, 198);
-            this.dato10Rbtn3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dato10Rbtn3.Margin = new System.Windows.Forms.Padding(4);
             this.dato10Rbtn3.Name = "dato10Rbtn3";
             this.dato10Rbtn3.Size = new System.Drawing.Size(207, 20);
             this.dato10Rbtn3.TabIndex = 73;
             this.dato10Rbtn3.TabStop = true;
-            this.dato10Rbtn3.Text = "CANCER SERVICOUTERINO";
+            this.dato10Rbtn3.Text = "CÁNCER SERVICOUTERINO";
             this.dato10Rbtn3.UseVisualStyleBackColor = true;
             this.dato10Rbtn3.CheckedChanged += new System.EventHandler(this.dato10Rbtn3_CheckedChanged);
             // 
@@ -242,12 +242,12 @@ namespace SistemaConsultorioMedico
             // 
             this.dato10Rbtn2.AutoSize = true;
             this.dato10Rbtn2.Location = new System.Drawing.Point(191, 198);
-            this.dato10Rbtn2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dato10Rbtn2.Margin = new System.Windows.Forms.Padding(4);
             this.dato10Rbtn2.Name = "dato10Rbtn2";
             this.dato10Rbtn2.Size = new System.Drawing.Size(156, 20);
             this.dato10Rbtn2.TabIndex = 71;
             this.dato10Rbtn2.TabStop = true;
-            this.dato10Rbtn2.Text = "CANCER DE SENOS";
+            this.dato10Rbtn2.Text = "CÁNCER DE SENOS";
             this.dato10Rbtn2.UseVisualStyleBackColor = true;
             this.dato10Rbtn2.CheckedChanged += new System.EventHandler(this.dato10Rbtn2_CheckedChanged);
             // 
@@ -255,7 +255,7 @@ namespace SistemaConsultorioMedico
             // 
             this.dato10Rbtn1.AutoSize = true;
             this.dato10Rbtn1.Location = new System.Drawing.Point(60, 198);
-            this.dato10Rbtn1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dato10Rbtn1.Margin = new System.Windows.Forms.Padding(4);
             this.dato10Rbtn1.Name = "dato10Rbtn1";
             this.dato10Rbtn1.Size = new System.Drawing.Size(95, 20);
             this.dato10Rbtn1.TabIndex = 70;
@@ -335,7 +335,7 @@ namespace SistemaConsultorioMedico
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(1293, 14);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(27, 27);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -350,14 +350,14 @@ namespace SistemaConsultorioMedico
             this.dato14OpcTbx.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.dato14OpcTbx.ForeColor = System.Drawing.Color.Black;
             this.dato14OpcTbx.HintForeColor = System.Drawing.Color.DimGray;
-            this.dato14OpcTbx.HintText = "¿DESDE CUANDO?";
+            this.dato14OpcTbx.HintText = "¿DESDE CUÁNDO?";
             this.dato14OpcTbx.isPassword = false;
             this.dato14OpcTbx.LineFocusedColor = System.Drawing.Color.Blue;
             this.dato14OpcTbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato14OpcTbx.LineMouseHoverColor = System.Drawing.Color.Purple;
             this.dato14OpcTbx.LineThickness = 3;
             this.dato14OpcTbx.Location = new System.Drawing.Point(731, 374);
-            this.dato14OpcTbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato14OpcTbx.Margin = new System.Windows.Forms.Padding(5);
             this.dato14OpcTbx.Name = "dato14OpcTbx";
             this.dato14OpcTbx.Size = new System.Drawing.Size(376, 41);
             this.dato14OpcTbx.TabIndex = 15;
@@ -372,14 +372,14 @@ namespace SistemaConsultorioMedico
             this.dato14Opc2Tbx.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.dato14Opc2Tbx.ForeColor = System.Drawing.Color.Black;
             this.dato14Opc2Tbx.HintForeColor = System.Drawing.Color.DimGray;
-            this.dato14Opc2Tbx.HintText = "¿QUE TANTO DIARIO?";
+            this.dato14Opc2Tbx.HintText = "¿QUÉ TANTO DIARIO?";
             this.dato14Opc2Tbx.isPassword = false;
             this.dato14Opc2Tbx.LineFocusedColor = System.Drawing.Color.Blue;
             this.dato14Opc2Tbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato14Opc2Tbx.LineMouseHoverColor = System.Drawing.Color.Purple;
             this.dato14Opc2Tbx.LineThickness = 3;
             this.dato14Opc2Tbx.Location = new System.Drawing.Point(52, 425);
-            this.dato14Opc2Tbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato14Opc2Tbx.Margin = new System.Windows.Forms.Padding(5);
             this.dato14Opc2Tbx.Name = "dato14Opc2Tbx";
             this.dato14Opc2Tbx.Size = new System.Drawing.Size(485, 41);
             this.dato14Opc2Tbx.TabIndex = 16;
@@ -394,14 +394,14 @@ namespace SistemaConsultorioMedico
             this.dato15OpcTbx.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.dato15OpcTbx.ForeColor = System.Drawing.Color.Black;
             this.dato15OpcTbx.HintForeColor = System.Drawing.Color.DimGray;
-            this.dato15OpcTbx.HintText = "¿CUALES?";
+            this.dato15OpcTbx.HintText = "¿CUÁLES?";
             this.dato15OpcTbx.isPassword = false;
             this.dato15OpcTbx.LineFocusedColor = System.Drawing.Color.Blue;
             this.dato15OpcTbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato15OpcTbx.LineMouseHoverColor = System.Drawing.Color.Purple;
             this.dato15OpcTbx.LineThickness = 3;
             this.dato15OpcTbx.Location = new System.Drawing.Point(851, 425);
-            this.dato15OpcTbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato15OpcTbx.Margin = new System.Windows.Forms.Padding(5);
             this.dato15OpcTbx.Name = "dato15OpcTbx";
             this.dato15OpcTbx.Size = new System.Drawing.Size(425, 41);
             this.dato15OpcTbx.TabIndex = 18;
@@ -416,14 +416,14 @@ namespace SistemaConsultorioMedico
             this.dato15Opc2Tbx.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.dato15Opc2Tbx.ForeColor = System.Drawing.Color.Black;
             this.dato15Opc2Tbx.HintForeColor = System.Drawing.Color.DimGray;
-            this.dato15Opc2Tbx.HintText = "¿DESDE CUANDO?";
+            this.dato15Opc2Tbx.HintText = "¿DESDE CUÁNDO?";
             this.dato15Opc2Tbx.isPassword = false;
             this.dato15Opc2Tbx.LineFocusedColor = System.Drawing.Color.Blue;
             this.dato15Opc2Tbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato15Opc2Tbx.LineMouseHoverColor = System.Drawing.Color.Purple;
             this.dato15Opc2Tbx.LineThickness = 3;
             this.dato15Opc2Tbx.Location = new System.Drawing.Point(52, 487);
-            this.dato15Opc2Tbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato15Opc2Tbx.Margin = new System.Windows.Forms.Padding(5);
             this.dato15Opc2Tbx.Name = "dato15Opc2Tbx";
             this.dato15Opc2Tbx.Size = new System.Drawing.Size(487, 41);
             this.dato15Opc2Tbx.TabIndex = 19;
@@ -438,14 +438,14 @@ namespace SistemaConsultorioMedico
             this.dato15Opc3Tbx.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.dato15Opc3Tbx.ForeColor = System.Drawing.Color.Black;
             this.dato15Opc3Tbx.HintForeColor = System.Drawing.Color.DimGray;
-            this.dato15Opc3Tbx.HintText = "¿QUE TANTO DIARIAMENTE?";
+            this.dato15Opc3Tbx.HintText = "¿QUÉ TANTO DIARIAMENTE?";
             this.dato15Opc3Tbx.isPassword = false;
             this.dato15Opc3Tbx.LineFocusedColor = System.Drawing.Color.Blue;
             this.dato15Opc3Tbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato15Opc3Tbx.LineMouseHoverColor = System.Drawing.Color.Purple;
             this.dato15Opc3Tbx.LineThickness = 3;
             this.dato15Opc3Tbx.Location = new System.Drawing.Point(548, 487);
-            this.dato15Opc3Tbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato15Opc3Tbx.Margin = new System.Windows.Forms.Padding(5);
             this.dato15Opc3Tbx.Name = "dato15Opc3Tbx";
             this.dato15Opc3Tbx.Size = new System.Drawing.Size(324, 41);
             this.dato15Opc3Tbx.TabIndex = 20;
@@ -467,7 +467,7 @@ namespace SistemaConsultorioMedico
             this.dato15Opc4Tbx.LineMouseHoverColor = System.Drawing.Color.Purple;
             this.dato15Opc4Tbx.LineThickness = 3;
             this.dato15Opc4Tbx.Location = new System.Drawing.Point(883, 487);
-            this.dato15Opc4Tbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato15Opc4Tbx.Margin = new System.Windows.Forms.Padding(5);
             this.dato15Opc4Tbx.Name = "dato15Opc4Tbx";
             this.dato15Opc4Tbx.Size = new System.Drawing.Size(251, 41);
             this.dato15Opc4Tbx.TabIndex = 21;
@@ -481,14 +481,14 @@ namespace SistemaConsultorioMedico
             this.dato16Tbx.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.dato16Tbx.ForeColor = System.Drawing.Color.Black;
             this.dato16Tbx.HintForeColor = System.Drawing.Color.DimGray;
-            this.dato16Tbx.HintText = "¿CUANTAS PERSONAS DUERMEN EN SU CUARTO?";
+            this.dato16Tbx.HintText = "¿CUÁNTAS PERSONAS DUERMEN EN SU CUARTO?";
             this.dato16Tbx.isPassword = false;
             this.dato16Tbx.LineFocusedColor = System.Drawing.Color.Blue;
             this.dato16Tbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato16Tbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato16Tbx.LineThickness = 3;
             this.dato16Tbx.Location = new System.Drawing.Point(52, 550);
-            this.dato16Tbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato16Tbx.Margin = new System.Windows.Forms.Padding(5);
             this.dato16Tbx.Name = "dato16Tbx";
             this.dato16Tbx.Size = new System.Drawing.Size(441, 41);
             this.dato16Tbx.TabIndex = 22;
@@ -501,14 +501,14 @@ namespace SistemaConsultorioMedico
             this.dato18Tbx.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.dato18Tbx.ForeColor = System.Drawing.Color.Black;
             this.dato18Tbx.HintForeColor = System.Drawing.Color.DimGray;
-            this.dato18Tbx.HintText = "¿ALGUN COMENTARIO AL RESPECTO?";
+            this.dato18Tbx.HintText = "¿ALGÚN COMENTARIO AL RESPECTO?";
             this.dato18Tbx.isPassword = false;
             this.dato18Tbx.LineFocusedColor = System.Drawing.Color.Blue;
             this.dato18Tbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato18Tbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato18Tbx.LineThickness = 3;
             this.dato18Tbx.Location = new System.Drawing.Point(52, 617);
-            this.dato18Tbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato18Tbx.Margin = new System.Windows.Forms.Padding(5);
             this.dato18Tbx.Name = "dato18Tbx";
             this.dato18Tbx.Size = new System.Drawing.Size(372, 41);
             this.dato18Tbx.TabIndex = 24;
@@ -533,14 +533,14 @@ namespace SistemaConsultorioMedico
             this.dato11OpcTbx.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.dato11OpcTbx.ForeColor = System.Drawing.Color.Black;
             this.dato11OpcTbx.HintForeColor = System.Drawing.Color.DimGray;
-            this.dato11OpcTbx.HintText = "¿QUIEN?";
+            this.dato11OpcTbx.HintText = "¿QUIÉN?";
             this.dato11OpcTbx.isPassword = false;
             this.dato11OpcTbx.LineFocusedColor = System.Drawing.Color.Blue;
             this.dato11OpcTbx.LineIdleColor = System.Drawing.Color.Purple;
             this.dato11OpcTbx.LineMouseHoverColor = System.Drawing.Color.Purple;
             this.dato11OpcTbx.LineThickness = 3;
             this.dato11OpcTbx.Location = new System.Drawing.Point(1133, 256);
-            this.dato11OpcTbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato11OpcTbx.Margin = new System.Windows.Forms.Padding(5);
             this.dato11OpcTbx.Name = "dato11OpcTbx";
             this.dato11OpcTbx.Size = new System.Drawing.Size(176, 41);
             this.dato11OpcTbx.TabIndex = 9;
@@ -610,7 +610,7 @@ namespace SistemaConsultorioMedico
             // 
             this.dato10Rbtn5.AutoSize = true;
             this.dato10Rbtn5.Location = new System.Drawing.Point(1101, 198);
-            this.dato10Rbtn5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dato10Rbtn5.Margin = new System.Windows.Forms.Padding(4);
             this.dato10Rbtn5.Name = "dato10Rbtn5";
             this.dato10Rbtn5.Size = new System.Drawing.Size(74, 20);
             this.dato10Rbtn5.TabIndex = 6;
@@ -631,7 +631,7 @@ namespace SistemaConsultorioMedico
         "Sí",
         "No"};
             this.dato11ComboBox.Location = new System.Drawing.Point(603, 254);
-            this.dato11ComboBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato11ComboBox.Margin = new System.Windows.Forms.Padding(5);
             this.dato11ComboBox.Name = "dato11ComboBox";
             this.dato11ComboBox.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dato11ComboBox.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -652,7 +652,7 @@ namespace SistemaConsultorioMedico
         "Sí",
         "No"};
             this.dato13ComboBox.Location = new System.Drawing.Point(592, 313);
-            this.dato13ComboBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato13ComboBox.Margin = new System.Windows.Forms.Padding(5);
             this.dato13ComboBox.Name = "dato13ComboBox";
             this.dato13ComboBox.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dato13ComboBox.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -673,7 +673,7 @@ namespace SistemaConsultorioMedico
         "Sí",
         "No"};
             this.dato14ComboBox.Location = new System.Drawing.Point(557, 374);
-            this.dato14ComboBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato14ComboBox.Margin = new System.Windows.Forms.Padding(5);
             this.dato14ComboBox.Name = "dato14ComboBox";
             this.dato14ComboBox.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dato14ComboBox.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -694,7 +694,7 @@ namespace SistemaConsultorioMedico
         "Sí",
         "No"};
             this.dato15ComboBox.Location = new System.Drawing.Point(557, 425);
-            this.dato15ComboBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato15ComboBox.Margin = new System.Windows.Forms.Padding(5);
             this.dato15ComboBox.Name = "dato15ComboBox";
             this.dato15ComboBox.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dato15ComboBox.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -715,7 +715,7 @@ namespace SistemaConsultorioMedico
         "Sí",
         "No"};
             this.dato17ComboBox.Location = new System.Drawing.Point(517, 548);
-            this.dato17ComboBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato17ComboBox.Margin = new System.Windows.Forms.Padding(5);
             this.dato17ComboBox.Name = "dato17ComboBox";
             this.dato17ComboBox.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dato17ComboBox.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -731,9 +731,9 @@ namespace SistemaConsultorioMedico
             this.errorDigit.ForeColor = System.Drawing.Color.Crimson;
             this.errorDigit.Location = new System.Drawing.Point(311, 356);
             this.errorDigit.Name = "errorDigit";
-            this.errorDigit.Size = new System.Drawing.Size(132, 18);
+            this.errorDigit.Size = new System.Drawing.Size(128, 18);
             this.errorDigit.TabIndex = 75;
-            this.errorDigit.Text = "Introduce un dígito.";
+            this.errorDigit.Text = "Introduce un dígito";
             this.errorDigit.Visible = false;
             // 
             // errorDigit2
@@ -744,9 +744,9 @@ namespace SistemaConsultorioMedico
             this.errorDigit2.ForeColor = System.Drawing.Color.Crimson;
             this.errorDigit2.Location = new System.Drawing.Point(343, 593);
             this.errorDigit2.Name = "errorDigit2";
-            this.errorDigit2.Size = new System.Drawing.Size(132, 18);
+            this.errorDigit2.Size = new System.Drawing.Size(128, 18);
             this.errorDigit2.TabIndex = 76;
-            this.errorDigit2.Text = "Introduce un dígito.";
+            this.errorDigit2.Text = "Introduce un dígito";
             this.errorDigit2.Visible = false;
             // 
             // label1
@@ -757,7 +757,7 @@ namespace SistemaConsultorioMedico
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 16);
             this.label1.TabIndex = 77;
-            this.label1.Text = "¿Quien?";
+            this.label1.Text = "¿Quién?";
             this.label1.Visible = false;
             // 
             // label2
@@ -768,7 +768,7 @@ namespace SistemaConsultorioMedico
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(234, 16);
             this.label2.TabIndex = 78;
-            this.label2.Text = "¿Cuantas parejas sexuales ha tenido?";
+            this.label2.Text = "¿Cuántas parejas sexuales ha tenido?";
             this.label2.Visible = false;
             // 
             // label3
@@ -779,7 +779,7 @@ namespace SistemaConsultorioMedico
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(110, 16);
             this.label3.TabIndex = 79;
-            this.label3.Text = "¿Desde cuando?";
+            this.label3.Text = "¿Desde cuándo?";
             this.label3.Visible = false;
             // 
             // label4
@@ -790,7 +790,7 @@ namespace SistemaConsultorioMedico
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(56, 16);
             this.label4.TabIndex = 80;
-            this.label4.Text = "¿Quien?";
+            this.label4.Text = "¿Quién?";
             this.label4.Visible = false;
             // 
             // label5
@@ -812,7 +812,7 @@ namespace SistemaConsultorioMedico
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(110, 16);
             this.label6.TabIndex = 82;
-            this.label6.Text = "¿Desde cuando?";
+            this.label6.Text = "¿Desde cuándo?";
             this.label6.Visible = false;
             // 
             // label7
@@ -823,7 +823,7 @@ namespace SistemaConsultorioMedico
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(63, 16);
             this.label7.TabIndex = 83;
-            this.label7.Text = "¿Cuales?";
+            this.label7.Text = "¿Cuáles?";
             this.label7.Visible = false;
             // 
             // label8
@@ -834,7 +834,7 @@ namespace SistemaConsultorioMedico
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(110, 16);
             this.label8.TabIndex = 84;
-            this.label8.Text = "¿Desde cuando?";
+            this.label8.Text = "¿Desde cuándo?";
             this.label8.Visible = false;
             // 
             // label9
@@ -845,7 +845,7 @@ namespace SistemaConsultorioMedico
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(115, 16);
             this.label9.TabIndex = 85;
-            this.label9.Text = "¿Que tanto diario?";
+            this.label9.Text = "¿Qué tanto diario?";
             this.label9.Visible = false;
             // 
             // label10
@@ -856,7 +856,7 @@ namespace SistemaConsultorioMedico
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(152, 16);
             this.label10.TabIndex = 86;
-            this.label10.Text = "¿Que tanto diariamente?";
+            this.label10.Text = "¿Qué tanto diariamente?";
             this.label10.Visible = false;
             // 
             // label11
@@ -865,9 +865,9 @@ namespace SistemaConsultorioMedico
             this.label11.Location = new System.Drawing.Point(881, 528);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(95, 16);
+            this.label11.Size = new System.Drawing.Size(109, 16);
             this.label11.TabIndex = 87;
-            this.label11.Text = "Mensualmente";
+            this.label11.Text = "¿Mensualmente?";
             this.label11.Visible = false;
             // 
             // label12
@@ -878,7 +878,7 @@ namespace SistemaConsultorioMedico
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(261, 16);
             this.label12.TabIndex = 88;
-            this.label12.Text = "¿Cuantas personas duermen en su cuarto?";
+            this.label12.Text = "¿Cuántas personas duermen en su cuarto?";
             this.label12.Visible = false;
             // 
             // label13
@@ -889,7 +889,7 @@ namespace SistemaConsultorioMedico
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(195, 16);
             this.label13.TabIndex = 89;
-            this.label13.Text = "¿Algun comentario al respecto?";
+            this.label13.Text = "¿Algún comentario al respecto?";
             this.label13.Visible = false;
             // 
             // label14
@@ -959,7 +959,7 @@ namespace SistemaConsultorioMedico
             this.Controls.Add(this.linea);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Preguntas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Preguntas";

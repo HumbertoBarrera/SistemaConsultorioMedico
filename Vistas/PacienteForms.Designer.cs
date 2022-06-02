@@ -30,8 +30,8 @@ namespace SistemaConsultorioMedico
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Paciente));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.EliPacienteBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.BuscarTbx = new Bunifu.Framework.UI.BunifuTextbox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -39,7 +39,7 @@ namespace SistemaConsultorioMedico
             this.InforMedicaBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.ModifPacienteBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.guardarPac_Btn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.NombreTxb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.NombreTbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.LugarNaciTbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.DireccionTbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.TelefonoTbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -56,6 +56,15 @@ namespace SistemaConsultorioMedico
             this.errorDigit = new System.Windows.Forms.Label();
             this.fechaNacimiento_lbl = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.buscarBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.NombreLbl = new System.Windows.Forms.Label();
+            this.ApellidoPaternoLbl = new System.Windows.Forms.Label();
+            this.ApellidoMaternoLbl = new System.Windows.Forms.Label();
+            this.LugarNaciLbl = new System.Windows.Forms.Label();
+            this.DireccionLbl = new System.Windows.Forms.Label();
+            this.OcupacionLbl = new System.Windows.Forms.Label();
+            this.LugarTrabajoLbl = new System.Windows.Forms.Label();
+            this.TelefonoLbl = new System.Windows.Forms.Label();
+            this.CorreoELbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -226,25 +235,25 @@ namespace SistemaConsultorioMedico
             this.guardarPac_Btn.Click += new System.EventHandler(this.guardarPac_Btn_Click);
             this.guardarPac_Btn.EnabledChanged += new System.EventHandler(this.bloqueoBotonGuardar);
             // 
-            // NombreTxb
+            // NombreTbx
             // 
-            this.NombreTxb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.NombreTxb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.NombreTxb.ForeColor = System.Drawing.Color.Black;
-            this.NombreTxb.HintForeColor = System.Drawing.Color.DimGray;
-            this.NombreTxb.HintText = "NOMBRES";
-            this.NombreTxb.isPassword = false;
-            this.NombreTxb.LineFocusedColor = System.Drawing.Color.Blue;
-            this.NombreTxb.LineIdleColor = System.Drawing.Color.Purple;
-            this.NombreTxb.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.NombreTxb.LineThickness = 3;
-            this.NombreTxb.Location = new System.Drawing.Point(21, 109);
-            this.NombreTxb.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.NombreTxb.Name = "NombreTxb";
-            this.NombreTxb.Size = new System.Drawing.Size(511, 41);
-            this.NombreTxb.TabIndex = 1;
-            this.NombreTxb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.NombreTxb.OnValueChanged += new System.EventHandler(this.bloqueoBtnGuardar);
+            this.NombreTbx.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.NombreTbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.NombreTbx.ForeColor = System.Drawing.Color.Black;
+            this.NombreTbx.HintForeColor = System.Drawing.Color.DimGray;
+            this.NombreTbx.HintText = "NOMBRES";
+            this.NombreTbx.isPassword = false;
+            this.NombreTbx.LineFocusedColor = System.Drawing.Color.Blue;
+            this.NombreTbx.LineIdleColor = System.Drawing.Color.Purple;
+            this.NombreTbx.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.NombreTbx.LineThickness = 3;
+            this.NombreTbx.Location = new System.Drawing.Point(21, 109);
+            this.NombreTbx.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.NombreTbx.Name = "NombreTbx";
+            this.NombreTbx.Size = new System.Drawing.Size(511, 41);
+            this.NombreTbx.TabIndex = 1;
+            this.NombreTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.NombreTbx.OnValueChanged += new System.EventHandler(this.bloqueoBtnGuardar);
             // 
             // LugarNaciTbx
             // 
@@ -272,7 +281,7 @@ namespace SistemaConsultorioMedico
             this.DireccionTbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.DireccionTbx.ForeColor = System.Drawing.Color.Black;
             this.DireccionTbx.HintForeColor = System.Drawing.Color.DimGray;
-            this.DireccionTbx.HintText = "DIRECCION";
+            this.DireccionTbx.HintText = "DIRECCIÓN";
             this.DireccionTbx.isPassword = false;
             this.DireccionTbx.LineFocusedColor = System.Drawing.Color.Blue;
             this.DireccionTbx.LineIdleColor = System.Drawing.Color.Purple;
@@ -292,7 +301,7 @@ namespace SistemaConsultorioMedico
             this.TelefonoTbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.TelefonoTbx.ForeColor = System.Drawing.Color.Black;
             this.TelefonoTbx.HintForeColor = System.Drawing.Color.DimGray;
-            this.TelefonoTbx.HintText = "TELEFONO";
+            this.TelefonoTbx.HintText = "TELÉFONO";
             this.TelefonoTbx.isPassword = false;
             this.TelefonoTbx.LineFocusedColor = System.Drawing.Color.Blue;
             this.TelefonoTbx.LineIdleColor = System.Drawing.Color.Purple;
@@ -304,6 +313,7 @@ namespace SistemaConsultorioMedico
             this.TelefonoTbx.Size = new System.Drawing.Size(505, 41);
             this.TelefonoTbx.TabIndex = 7;
             this.TelefonoTbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TelefonoTbx.OnValueChanged += new System.EventHandler(this.bloqueoBtnGuardar);
             this.TelefonoTbx.Leave += new System.EventHandler(this.lostFocus);
             // 
             // CorreoETbx
@@ -324,6 +334,7 @@ namespace SistemaConsultorioMedico
             this.CorreoETbx.Size = new System.Drawing.Size(505, 41);
             this.CorreoETbx.TabIndex = 8;
             this.CorreoETbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.CorreoETbx.OnValueChanged += new System.EventHandler(this.bloqueoBtnGuardar);
             this.CorreoETbx.Leave += new System.EventHandler(this.verificarEmail);
             // 
             // OcupacionTbx
@@ -332,7 +343,7 @@ namespace SistemaConsultorioMedico
             this.OcupacionTbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.OcupacionTbx.ForeColor = System.Drawing.Color.Black;
             this.OcupacionTbx.HintForeColor = System.Drawing.Color.DimGray;
-            this.OcupacionTbx.HintText = "OCUPACION";
+            this.OcupacionTbx.HintText = "OCUPACIÓN";
             this.OcupacionTbx.isPassword = false;
             this.OcupacionTbx.LineFocusedColor = System.Drawing.Color.Blue;
             this.OcupacionTbx.LineIdleColor = System.Drawing.Color.Purple;
@@ -372,21 +383,21 @@ namespace SistemaConsultorioMedico
             this.bunifuCustomDataGrid1.AllowUserToDeleteRows = false;
             this.bunifuCustomDataGrid1.AllowUserToResizeColumns = false;
             this.bunifuCustomDataGrid1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.bunifuCustomDataGrid1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
             this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bunifuCustomDataGrid1.DoubleBuffered = true;
             this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
@@ -474,7 +485,7 @@ namespace SistemaConsultorioMedico
             this.fechaNacDatePicker.ForeColor = System.Drawing.Color.White;
             this.fechaNacDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.fechaNacDatePicker.FormatCustom = null;
-            this.fechaNacDatePicker.Location = new System.Drawing.Point(17, 295);
+            this.fechaNacDatePicker.Location = new System.Drawing.Point(17, 301);
             this.fechaNacDatePicker.Margin = new System.Windows.Forms.Padding(5);
             this.fechaNacDatePicker.Name = "fechaNacDatePicker";
             this.fechaNacDatePicker.Size = new System.Drawing.Size(512, 44);
@@ -486,7 +497,7 @@ namespace SistemaConsultorioMedico
             this.correoErrorLbl.AutoSize = true;
             this.correoErrorLbl.BackColor = System.Drawing.Color.Transparent;
             this.correoErrorLbl.ForeColor = System.Drawing.Color.Crimson;
-            this.correoErrorLbl.Location = new System.Drawing.Point(17, 551);
+            this.correoErrorLbl.Location = new System.Drawing.Point(129, 551);
             this.correoErrorLbl.Name = "correoErrorLbl";
             this.correoErrorLbl.Size = new System.Drawing.Size(247, 16);
             this.correoErrorLbl.TabIndex = 32;
@@ -499,7 +510,7 @@ namespace SistemaConsultorioMedico
             this.errorDigit.BackColor = System.Drawing.Color.Transparent;
             this.errorDigit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.errorDigit.ForeColor = System.Drawing.Color.Crimson;
-            this.errorDigit.Location = new System.Drawing.Point(17, 498);
+            this.errorDigit.Location = new System.Drawing.Point(106, 498);
             this.errorDigit.Name = "errorDigit";
             this.errorDigit.Size = new System.Drawing.Size(288, 17);
             this.errorDigit.TabIndex = 77;
@@ -511,7 +522,7 @@ namespace SistemaConsultorioMedico
             this.fechaNacimiento_lbl.AutoSize = true;
             this.fechaNacimiento_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fechaNacimiento_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.fechaNacimiento_lbl.Location = new System.Drawing.Point(16, 262);
+            this.fechaNacimiento_lbl.Location = new System.Drawing.Point(16, 276);
             this.fechaNacimiento_lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.fechaNacimiento_lbl.Name = "fechaNacimiento_lbl";
             this.fechaNacimiento_lbl.Size = new System.Drawing.Size(248, 24);
@@ -544,12 +555,110 @@ namespace SistemaConsultorioMedico
             this.buscarBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buscarBtn.Click += new System.EventHandler(this.buscarBtn_Click);
             // 
+            // NombreLbl
+            // 
+            this.NombreLbl.AutoSize = true;
+            this.NombreLbl.BackColor = System.Drawing.Color.Transparent;
+            this.NombreLbl.Location = new System.Drawing.Point(21, 149);
+            this.NombreLbl.Name = "NombreLbl";
+            this.NombreLbl.Size = new System.Drawing.Size(63, 16);
+            this.NombreLbl.TabIndex = 80;
+            this.NombreLbl.Text = "Nombres";
+            this.NombreLbl.Visible = false;
+            // 
+            // ApellidoPaternoLbl
+            // 
+            this.ApellidoPaternoLbl.AutoSize = true;
+            this.ApellidoPaternoLbl.BackColor = System.Drawing.Color.Transparent;
+            this.ApellidoPaternoLbl.Location = new System.Drawing.Point(21, 203);
+            this.ApellidoPaternoLbl.Name = "ApellidoPaternoLbl";
+            this.ApellidoPaternoLbl.Size = new System.Drawing.Size(106, 16);
+            this.ApellidoPaternoLbl.TabIndex = 81;
+            this.ApellidoPaternoLbl.Text = "Apellido paterno";
+            this.ApellidoPaternoLbl.Visible = false;
+            // 
+            // ApellidoMaternoLbl
+            // 
+            this.ApellidoMaternoLbl.AutoSize = true;
+            this.ApellidoMaternoLbl.Location = new System.Drawing.Point(21, 256);
+            this.ApellidoMaternoLbl.Name = "ApellidoMaternoLbl";
+            this.ApellidoMaternoLbl.Size = new System.Drawing.Size(109, 16);
+            this.ApellidoMaternoLbl.TabIndex = 82;
+            this.ApellidoMaternoLbl.Text = "Apellido materno";
+            this.ApellidoMaternoLbl.Visible = false;
+            // 
+            // LugarNaciLbl
+            // 
+            this.LugarNaciLbl.AutoSize = true;
+            this.LugarNaciLbl.Location = new System.Drawing.Point(21, 392);
+            this.LugarNaciLbl.Name = "LugarNaciLbl";
+            this.LugarNaciLbl.Size = new System.Drawing.Size(128, 16);
+            this.LugarNaciLbl.TabIndex = 83;
+            this.LugarNaciLbl.Text = "Lugar de nacimiento";
+            this.LugarNaciLbl.Visible = false;
+            // 
+            // DireccionLbl
+            // 
+            this.DireccionLbl.AutoSize = true;
+            this.DireccionLbl.Location = new System.Drawing.Point(21, 443);
+            this.DireccionLbl.Name = "DireccionLbl";
+            this.DireccionLbl.Size = new System.Drawing.Size(64, 16);
+            this.DireccionLbl.TabIndex = 84;
+            this.DireccionLbl.Text = "Dirección";
+            this.DireccionLbl.Visible = false;
+            // 
+            // OcupacionLbl
+            // 
+            this.OcupacionLbl.AutoSize = true;
+            this.OcupacionLbl.Location = new System.Drawing.Point(18, 602);
+            this.OcupacionLbl.Name = "OcupacionLbl";
+            this.OcupacionLbl.Size = new System.Drawing.Size(72, 16);
+            this.OcupacionLbl.TabIndex = 85;
+            this.OcupacionLbl.Text = "Ocupación";
+            this.OcupacionLbl.Visible = false;
+            // 
+            // LugarTrabajoLbl
+            // 
+            this.LugarTrabajoLbl.AutoSize = true;
+            this.LugarTrabajoLbl.Location = new System.Drawing.Point(18, 654);
+            this.LugarTrabajoLbl.Name = "LugarTrabajoLbl";
+            this.LugarTrabajoLbl.Size = new System.Drawing.Size(105, 16);
+            this.LugarTrabajoLbl.TabIndex = 86;
+            this.LugarTrabajoLbl.Text = "Lugar de trabajo";
+            this.LugarTrabajoLbl.Visible = false;
+            // 
+            // TelefonoLbl
+            // 
+            this.TelefonoLbl.AutoSize = true;
+            this.TelefonoLbl.Location = new System.Drawing.Point(21, 497);
+            this.TelefonoLbl.Name = "TelefonoLbl";
+            this.TelefonoLbl.Size = new System.Drawing.Size(61, 16);
+            this.TelefonoLbl.TabIndex = 87;
+            this.TelefonoLbl.Text = "Teléfono";
+            this.TelefonoLbl.Visible = false;
+            // 
+            // CorreoELbl
+            // 
+            this.CorreoELbl.AutoSize = true;
+            this.CorreoELbl.Location = new System.Drawing.Point(20, 551);
+            this.CorreoELbl.Name = "CorreoELbl";
+            this.CorreoELbl.Size = new System.Drawing.Size(110, 16);
+            this.CorreoELbl.TabIndex = 88;
+            this.CorreoELbl.Text = "Correo eletrónico";
+            this.CorreoELbl.Visible = false;
+            // 
             // Paciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1361, 780);
+            this.Controls.Add(this.DireccionLbl);
+            this.Controls.Add(this.LugarNaciLbl);
+            this.Controls.Add(this.ApellidoPaternoLbl);
+            this.Controls.Add(this.NombreLbl);
+            this.Controls.Add(this.CorreoELbl);
+            this.Controls.Add(this.TelefonoLbl);
             this.Controls.Add(this.buscarBtn);
             this.Controls.Add(this.fechaNacimiento_lbl);
             this.Controls.Add(this.errorDigit);
@@ -566,7 +675,7 @@ namespace SistemaConsultorioMedico
             this.Controls.Add(this.TelefonoTbx);
             this.Controls.Add(this.DireccionTbx);
             this.Controls.Add(this.LugarNaciTbx);
-            this.Controls.Add(this.NombreTxb);
+            this.Controls.Add(this.NombreTbx);
             this.Controls.Add(this.guardarPac_Btn);
             this.Controls.Add(this.ModifPacienteBtn);
             this.Controls.Add(this.InforMedicaBtn);
@@ -574,6 +683,9 @@ namespace SistemaConsultorioMedico
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.BuscarTbx);
             this.Controls.Add(this.EliPacienteBtn);
+            this.Controls.Add(this.OcupacionLbl);
+            this.Controls.Add(this.LugarTrabajoLbl);
+            this.Controls.Add(this.ApellidoMaternoLbl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Paciente";
@@ -594,7 +706,7 @@ namespace SistemaConsultorioMedico
         private Bunifu.Framework.UI.BunifuThinButton2 InforMedicaBtn;
         private Bunifu.Framework.UI.BunifuThinButton2 ModifPacienteBtn;
         private Bunifu.Framework.UI.BunifuThinButton2 guardarPac_Btn;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox NombreTxb;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox NombreTbx;
         private Bunifu.Framework.UI.BunifuMaterialTextbox LugarNaciTbx;
         private Bunifu.Framework.UI.BunifuMaterialTextbox DireccionTbx;
         private Bunifu.Framework.UI.BunifuMaterialTextbox TelefonoTbx;
@@ -611,5 +723,14 @@ namespace SistemaConsultorioMedico
         private System.Windows.Forms.Label errorDigit;
         private Bunifu.Framework.UI.BunifuCustomLabel fechaNacimiento_lbl;
         private Bunifu.Framework.UI.BunifuThinButton2 buscarBtn;
+        private System.Windows.Forms.Label NombreLbl;
+        private System.Windows.Forms.Label ApellidoPaternoLbl;
+        private System.Windows.Forms.Label ApellidoMaternoLbl;
+        private System.Windows.Forms.Label LugarNaciLbl;
+        private System.Windows.Forms.Label DireccionLbl;
+        private System.Windows.Forms.Label OcupacionLbl;
+        private System.Windows.Forms.Label LugarTrabajoLbl;
+        private System.Windows.Forms.Label TelefonoLbl;
+        private System.Windows.Forms.Label CorreoELbl;
     }
 }
