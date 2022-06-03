@@ -22,12 +22,6 @@ namespace SistemaConsultorioMedico
             bunifuDatepicker1.Value = DateTime.Now.Date;
             comboBox1.Items.Insert(0, "----- Seleccione la hora----");
             comboBox1.SelectedIndex = 0;
-
-           
-            //Controladores.PropiedadController.BunifuMaterial(PacienteCitaTxb, 8);
-            //errorDigit.Visible = false;
-
-
         }
         int indice;
 
@@ -36,7 +30,7 @@ namespace SistemaConsultorioMedico
 
             //errorDigit.Visible = false;
 
-            if (/*(PacienteCitaTxb.Text != "PACIENTE")&&*/(comboBox1.Text !="----- Seleccione la hora----") && (comboBox1.SelectedIndex != -1))
+            if ((comboBox1.Text !="----- Seleccione la hora----") && (comboBox1.SelectedIndex != -1))
             {
                 cita = new Modelos.Cita();
                 int idPacienteV = int.Parse(pacientesCbo.SelectedValue.ToString());

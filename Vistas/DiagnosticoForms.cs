@@ -23,13 +23,15 @@ namespace SistemaConsultorioMedico
         {
             InitializeComponent();
             this.idPaciente = idPaciente;
-            PacienteTxb.Text = idPaciente.ToString();
+            if (idPaciente == 0) 
+                PacienteTxb.Text = "";
+            else
+                PacienteTxb.Text = idPaciente.ToString();
             fecha = DateTime.Now;
             FechaTxb.Text = fecha.ToString("MM/dd/yyyy");
             guardarbtn.Visible = true;
-
-
         }
+
         int pacienteExt;
 
         private void FechaTxb_MouseEnter(object sender, EventArgs e)
@@ -137,6 +139,12 @@ namespace SistemaConsultorioMedico
             DataGridViewColumn Column = bunifuCustomDataGrid1.Columns[2];
             Column.Visible = false;
 
+            Controladores.CitaController citaCont = new Controladores.CitaController();
+            var dtPacientes = citaCont.LlenarComboBoxDePacientes();
+            pacientesCbo.DataSource = dtPacientes;
+            pacientesCbo.DisplayMember = "Nombre";
+            pacientesCbo.ValueMember = "idPaciente";
+
             //------------------------------------------------------
             //Controladores.CitaController daC = new Controladores.CitaController();
             //var dtPacientes = daC.LlenarComboBoxDePacientes();
@@ -147,8 +155,8 @@ namespace SistemaConsultorioMedico
 
         private void BuscarCitaBtn_Click(object sender, EventArgs e)
         {
-            int idPacienteV = int.Parse(BuscarTbx.text);
-            PacienteTxb.Text = BuscarTbx.text;
+            int idPacienteV = int.Parse(pacientesCbo.SelectedValue.ToString());
+            PacienteTxb.Text = pacientesCbo.SelectedValue.ToString();
             bunifuCustomDataGrid1.DataSource = null;
             Descripciontxb.Text = "";
 
