@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Bunifu.Framework.UI;
 using System.Windows.Forms;
 
 namespace SistemaConsultorioMedico
@@ -468,9 +469,9 @@ namespace SistemaConsultorioMedico
 
         private void FocusTextbox_Leave(object sender, EventArgs e)
         {
-
             //TextBox Nombre de Paciente
-            if (NombreTbx.Text.Length < 2)
+            BunifuMaterialTextbox textbox = ((BunifuMaterialTextbox)sender);
+            /*if (NombreTbx.Text.Length < 2)
             {
                 MessageBox.Show("Nombre no Valido", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
@@ -494,10 +495,13 @@ namespace SistemaConsultorioMedico
                     }
                 }
                
+            }*/
+            if(textbox.Text.Length < 2)
+            {
+                MessageBox.Show("Dato ingresado no valido", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-            
-
         }
+
         private void ValidarLetras_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
