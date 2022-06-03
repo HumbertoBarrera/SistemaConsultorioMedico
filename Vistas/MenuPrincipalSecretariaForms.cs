@@ -100,21 +100,6 @@ namespace SistemaConsultorioMedico
             AbrirFormHijo(new InformacionMedica(idPaciente, flagME));
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void menuTopPnl_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void nombrerol_lb_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void logoutBtn_Click(object sender, EventArgs e)
         {
             Form forma = new Login();
