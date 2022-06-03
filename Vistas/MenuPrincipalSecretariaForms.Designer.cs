@@ -40,6 +40,7 @@ namespace SistemaConsultorioMedico
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BienvenidaSecretariaLbl = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.contenedorMenuPnl = new System.Windows.Forms.Panel();
             this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.logoutBtn = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -55,7 +56,6 @@ namespace SistemaConsultorioMedico
             this.Mover = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.curvaTablero = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.BienvenidaSecretariaLbl = new Bunifu.Framework.UI.BunifuCustomLabel();
             ((System.ComponentModel.ISupportInitialize)(this.MenuDesplegableBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
@@ -213,11 +213,25 @@ namespace SistemaConsultorioMedico
             this.panel1.Controls.Add(this.BienvenidaSecretariaLbl);
             this.bunifuTransition1.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarAtras.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.panel1.Location = new System.Drawing.Point(408, 8);
+            this.panel1.Location = new System.Drawing.Point(398, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(962, 684);
+            this.panel1.Size = new System.Drawing.Size(988, 707);
             this.panel1.TabIndex = 0;
+            // 
+            // BienvenidaSecretariaLbl
+            // 
+            this.BienvenidaSecretariaLbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.BienvenidaSecretariaLbl.BackColor = System.Drawing.Color.Transparent;
+            this.AnimacionSidebarAtras.SetDecoration(this.BienvenidaSecretariaLbl, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.BienvenidaSecretariaLbl, BunifuAnimatorNS.DecorationType.None);
+            this.BienvenidaSecretariaLbl.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BienvenidaSecretariaLbl.Location = new System.Drawing.Point(3, 338);
+            this.BienvenidaSecretariaLbl.Name = "BienvenidaSecretariaLbl";
+            this.BienvenidaSecretariaLbl.Size = new System.Drawing.Size(982, 30);
+            this.BienvenidaSecretariaLbl.TabIndex = 71;
+            this.BienvenidaSecretariaLbl.Text = "¡Bienvenida Secretaria";
+            this.BienvenidaSecretariaLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // contenedorMenuPnl
             // 
@@ -493,20 +507,6 @@ namespace SistemaConsultorioMedico
             // 
             this.curvaTablero.ElipseRadius = 7;
             this.curvaTablero.TargetControl = this.Sidebar;
-            // 
-            // BienvenidaSecretariaLbl
-            // 
-            this.BienvenidaSecretariaLbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.BienvenidaSecretariaLbl.BackColor = System.Drawing.Color.Transparent;
-            this.AnimacionSidebarAtras.SetDecoration(this.BienvenidaSecretariaLbl, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.BienvenidaSecretariaLbl, BunifuAnimatorNS.DecorationType.None);
-            this.BienvenidaSecretariaLbl.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BienvenidaSecretariaLbl.Location = new System.Drawing.Point(3, 327);
-            this.BienvenidaSecretariaLbl.Name = "BienvenidaSecretariaLbl";
-            this.BienvenidaSecretariaLbl.Size = new System.Drawing.Size(956, 30);
-            this.BienvenidaSecretariaLbl.TabIndex = 71;
-            this.BienvenidaSecretariaLbl.Text = "¡Bienvenida Secretaria";
-            this.BienvenidaSecretariaLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MenuPrincipalSecretaria
             // 
