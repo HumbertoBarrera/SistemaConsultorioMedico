@@ -708,7 +708,7 @@ namespace SistemaConsultorioMedico
                 else
                 {
                     ModificarBtn.Enabled = false;
-                    EliminarBtn.Enabled = false;
+                    //EliminarBtn.Enabled = false;
                 }
             }
         }
