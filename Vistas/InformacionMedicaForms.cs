@@ -31,7 +31,6 @@ namespace SistemaConsultorioMedico
                 MessageBox.Show("Selecciona a una paciente.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else
             {
-                //flagME = false;
                 idPaciente = Convert.ToInt32(pacientesCbo.SelectedValue);
                 if (validarCampos())
                 {
