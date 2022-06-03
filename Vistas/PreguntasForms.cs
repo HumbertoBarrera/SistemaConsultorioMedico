@@ -102,7 +102,6 @@ namespace SistemaConsultorioMedico
             this.Hide();
         }
 
-
         //Se obtiene fecha y se le establece un formato
         private void obtenerFecha()
         {
@@ -188,7 +187,7 @@ namespace SistemaConsultorioMedico
                 dato10Rbtn5.Checked = false;
                 dato10Tbx.Text = "";
             }
-            else if (dato10.Contains("CANCER DE SENOS"))
+            else if (dato10.Contains("CÁNCER DE SENOS"))
             {
                 dato10Rbtn1.Checked = false;
                 dato10Rbtn2.Checked = true;
@@ -197,7 +196,7 @@ namespace SistemaConsultorioMedico
                 dato10Rbtn5.Checked = false;
                 dato10Tbx.Text = "";
             }
-            else if (dato10.Contains("CANCER SERVICOUTERINO"))
+            else if (dato10.Contains("CÁNCER SERVICOUTERINO"))
             {
                 dato10Rbtn1.Checked = false;
                 dato10Rbtn2.Checked = false;
@@ -367,6 +366,7 @@ namespace SistemaConsultorioMedico
                 dato10Rbtn4.Checked = false;
                 dato10Rbtn5.Checked = false;
                 dato10OpcTbx.Enabled = true;
+                dato10Tbx.Enabled = true;
                 if (dato10Tbx.Text != "") dato10Tbx.Text = "";
                 dato10OpcTbx.Text = "";
             }
@@ -381,6 +381,7 @@ namespace SistemaConsultorioMedico
                 dato10Rbtn4.Checked = false;
                 dato10Rbtn5.Checked = false;
                 dato10OpcTbx.Enabled = true;
+                dato10Tbx.Enabled = true;
                 if (dato10Tbx.Text != "") dato10Tbx.Text = "";
                 dato10OpcTbx.Text = "";
             }
@@ -395,6 +396,7 @@ namespace SistemaConsultorioMedico
                 dato10Rbtn4.Checked = false;
                 dato10Rbtn5.Checked = false;
                 dato10OpcTbx.Enabled = true;
+                dato10Tbx.Enabled = true;
                 if (dato10Tbx.Text != "") dato10Tbx.Text = "";
                 dato10OpcTbx.Text = "";
             }
@@ -409,6 +411,7 @@ namespace SistemaConsultorioMedico
                 dato10Rbtn3.Checked = false;
                 dato10Rbtn5.Checked = false;
                 dato10OpcTbx.Enabled = true;
+                dato10Tbx.Enabled = true;
                 if (dato10Tbx.Text != "") dato10Tbx.Text = "";
                 dato10OpcTbx.Text = "";
             }
@@ -449,7 +452,8 @@ namespace SistemaConsultorioMedico
                 if (dato10Tbx.Text != "") dato10Tbx.Text = "";
                 dato10OpcTbx.Enabled = true;
                 dato10OpcTbx.Enabled = false;
-                dato10OpcTbx.Text = "ㅤㅤ"; 
+                dato10Tbx.Enabled = false;
+                dato10OpcTbx.Text = "ㅤㅤ";
             }
         }
 
@@ -846,6 +850,22 @@ namespace SistemaConsultorioMedico
             {
                 EliminarBtn.IdleFillColor = Color.Gray;
                 EliminarBtn.Padding = new Padding(37, 10, 0, 10);
+            }
+        }
+
+        private void dato10Tbx_EnabledChanged(object sender, EventArgs e)
+        {
+            if (dato11OpcTbx.Enabled)
+            {
+                dato10Tbx.LineIdleColor = Color.Purple;
+                dato10Tbx.LineMouseHoverColor = Color.Blue;
+                dato10Tbx.Text = "";
+            }
+            else
+            {
+                dato10Tbx.LineIdleColor = Color.Gray;
+                dato10Tbx.LineMouseHoverColor = Color.Gray;
+                dato10Tbx.Text = "ㅤㅤ";
             }
         }
     }

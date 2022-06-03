@@ -43,7 +43,6 @@ namespace SistemaConsultorioMedico
             this.dato9OpcTbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.MasBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.buscarBtn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.buscarTbx = new Bunifu.Framework.UI.BunifuTextbox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dato4ComboBox = new Bunifu.Framework.UI.BunifuDropdown();
             this.dato5ComboBox = new Bunifu.Framework.UI.BunifuDropdown();
@@ -60,6 +59,7 @@ namespace SistemaConsultorioMedico
             this.dato7OpcLbl = new System.Windows.Forms.Label();
             this.dato8OpcLbl = new System.Windows.Forms.Label();
             this.dato9OpcLbl = new System.Windows.Forms.Label();
+            this.pacientesCbo = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,7 +76,7 @@ namespace SistemaConsultorioMedico
             this.dato3Tbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato3Tbx.LineThickness = 3;
             this.dato3Tbx.Location = new System.Drawing.Point(31, 208);
-            this.dato3Tbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato3Tbx.Margin = new System.Windows.Forms.Padding(5);
             this.dato3Tbx.Name = "dato3Tbx";
             this.dato3Tbx.Size = new System.Drawing.Size(505, 41);
             this.dato3Tbx.TabIndex = 3;
@@ -97,7 +97,7 @@ namespace SistemaConsultorioMedico
             this.dato2Tbx.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato2Tbx.LineThickness = 3;
             this.dato2Tbx.Location = new System.Drawing.Point(31, 142);
-            this.dato2Tbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato2Tbx.Margin = new System.Windows.Forms.Padding(5);
             this.dato2Tbx.Name = "dato2Tbx";
             this.dato2Tbx.Size = new System.Drawing.Size(505, 41);
             this.dato2Tbx.TabIndex = 2;
@@ -118,7 +118,7 @@ namespace SistemaConsultorioMedico
             this.dato1Txb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dato1Txb.LineThickness = 3;
             this.dato1Txb.Location = new System.Drawing.Point(31, 75);
-            this.dato1Txb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato1Txb.Margin = new System.Windows.Forms.Padding(5);
             this.dato1Txb.Name = "dato1Txb";
             this.dato1Txb.Size = new System.Drawing.Size(505, 41);
             this.dato1Txb.TabIndex = 1;
@@ -132,7 +132,7 @@ namespace SistemaConsultorioMedico
             this.linea.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(128)))));
             this.linea.LineThickness = 1;
             this.linea.Location = new System.Drawing.Point(388, 68);
-            this.linea.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.linea.Margin = new System.Windows.Forms.Padding(5);
             this.linea.Name = "linea";
             this.linea.Size = new System.Drawing.Size(327, 12);
             this.linea.TabIndex = 35;
@@ -164,7 +164,7 @@ namespace SistemaConsultorioMedico
             this.dato4OpcTbx.LineMouseHoverColor = System.Drawing.Color.Purple;
             this.dato4OpcTbx.LineThickness = 3;
             this.dato4OpcTbx.Location = new System.Drawing.Point(705, 282);
-            this.dato4OpcTbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato4OpcTbx.Margin = new System.Windows.Forms.Padding(5);
             this.dato4OpcTbx.Name = "dato4OpcTbx";
             this.dato4OpcTbx.Size = new System.Drawing.Size(505, 41);
             this.dato4OpcTbx.TabIndex = 5;
@@ -187,7 +187,7 @@ namespace SistemaConsultorioMedico
             this.dato5OpcTbx.LineMouseHoverColor = System.Drawing.Color.Purple;
             this.dato5OpcTbx.LineThickness = 3;
             this.dato5OpcTbx.Location = new System.Drawing.Point(705, 350);
-            this.dato5OpcTbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato5OpcTbx.Margin = new System.Windows.Forms.Padding(5);
             this.dato5OpcTbx.Name = "dato5OpcTbx";
             this.dato5OpcTbx.Size = new System.Drawing.Size(505, 41);
             this.dato5OpcTbx.TabIndex = 7;
@@ -210,7 +210,7 @@ namespace SistemaConsultorioMedico
             this.dato6OpcTbx.LineMouseHoverColor = System.Drawing.Color.Purple;
             this.dato6OpcTbx.LineThickness = 3;
             this.dato6OpcTbx.Location = new System.Drawing.Point(705, 422);
-            this.dato6OpcTbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato6OpcTbx.Margin = new System.Windows.Forms.Padding(5);
             this.dato6OpcTbx.Name = "dato6OpcTbx";
             this.dato6OpcTbx.Size = new System.Drawing.Size(505, 41);
             this.dato6OpcTbx.TabIndex = 9;
@@ -233,7 +233,7 @@ namespace SistemaConsultorioMedico
             this.dato7OpcTbx.LineMouseHoverColor = System.Drawing.Color.Purple;
             this.dato7OpcTbx.LineThickness = 3;
             this.dato7OpcTbx.Location = new System.Drawing.Point(705, 490);
-            this.dato7OpcTbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato7OpcTbx.Margin = new System.Windows.Forms.Padding(5);
             this.dato7OpcTbx.Name = "dato7OpcTbx";
             this.dato7OpcTbx.Size = new System.Drawing.Size(505, 41);
             this.dato7OpcTbx.TabIndex = 11;
@@ -256,7 +256,7 @@ namespace SistemaConsultorioMedico
             this.dato8OpcTbx.LineMouseHoverColor = System.Drawing.Color.Purple;
             this.dato8OpcTbx.LineThickness = 3;
             this.dato8OpcTbx.Location = new System.Drawing.Point(705, 554);
-            this.dato8OpcTbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato8OpcTbx.Margin = new System.Windows.Forms.Padding(5);
             this.dato8OpcTbx.Name = "dato8OpcTbx";
             this.dato8OpcTbx.Size = new System.Drawing.Size(505, 41);
             this.dato8OpcTbx.TabIndex = 13;
@@ -279,7 +279,7 @@ namespace SistemaConsultorioMedico
             this.dato9OpcTbx.LineMouseHoverColor = System.Drawing.Color.Purple;
             this.dato9OpcTbx.LineThickness = 3;
             this.dato9OpcTbx.Location = new System.Drawing.Point(705, 622);
-            this.dato9OpcTbx.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato9OpcTbx.Margin = new System.Windows.Forms.Padding(5);
             this.dato9OpcTbx.Name = "dato9OpcTbx";
             this.dato9OpcTbx.Size = new System.Drawing.Size(505, 41);
             this.dato9OpcTbx.TabIndex = 15;
@@ -335,35 +335,20 @@ namespace SistemaConsultorioMedico
             this.buscarBtn.IdleFillColor = System.Drawing.Color.White;
             this.buscarBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.buscarBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.buscarBtn.Location = new System.Drawing.Point(821, 98);
-            this.buscarBtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.buscarBtn.Location = new System.Drawing.Point(673, 90);
+            this.buscarBtn.Margin = new System.Windows.Forms.Padding(5);
             this.buscarBtn.Name = "buscarBtn";
             this.buscarBtn.Size = new System.Drawing.Size(123, 33);
             this.buscarBtn.TabIndex = 37;
             this.buscarBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buscarBtn.Click += new System.EventHandler(this.buscarBtn_Click);
             // 
-            // buscarTbx
-            // 
-            this.buscarTbx.BackColor = System.Drawing.Color.White;
-            this.buscarTbx.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buscarTbx.BackgroundImage")));
-            this.buscarTbx.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buscarTbx.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buscarTbx.ForeColor = System.Drawing.Color.Purple;
-            this.buscarTbx.Icon = ((System.Drawing.Image)(resources.GetObject("buscarTbx.Icon")));
-            this.buscarTbx.Location = new System.Drawing.Point(955, 98);
-            this.buscarTbx.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.buscarTbx.Name = "buscarTbx";
-            this.buscarTbx.Size = new System.Drawing.Size(255, 33);
-            this.buscarTbx.TabIndex = 38;
-            this.buscarTbx.text = "";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(1248, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(27, 27);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -383,7 +368,7 @@ namespace SistemaConsultorioMedico
         "Sí",
         "No"};
             this.dato4ComboBox.Location = new System.Drawing.Point(31, 281);
-            this.dato4ComboBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato4ComboBox.Margin = new System.Windows.Forms.Padding(5);
             this.dato4ComboBox.Name = "dato4ComboBox";
             this.dato4ComboBox.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dato4ComboBox.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -404,7 +389,7 @@ namespace SistemaConsultorioMedico
         "Sí",
         "No"};
             this.dato5ComboBox.Location = new System.Drawing.Point(31, 347);
-            this.dato5ComboBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato5ComboBox.Margin = new System.Windows.Forms.Padding(5);
             this.dato5ComboBox.Name = "dato5ComboBox";
             this.dato5ComboBox.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dato5ComboBox.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -425,7 +410,7 @@ namespace SistemaConsultorioMedico
         "Sí",
         "No"};
             this.dato6ComboBox.Location = new System.Drawing.Point(31, 421);
-            this.dato6ComboBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato6ComboBox.Margin = new System.Windows.Forms.Padding(5);
             this.dato6ComboBox.Name = "dato6ComboBox";
             this.dato6ComboBox.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dato6ComboBox.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -446,7 +431,7 @@ namespace SistemaConsultorioMedico
         "Sí",
         "No"};
             this.dato7ComboBox.Location = new System.Drawing.Point(31, 490);
-            this.dato7ComboBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato7ComboBox.Margin = new System.Windows.Forms.Padding(5);
             this.dato7ComboBox.Name = "dato7ComboBox";
             this.dato7ComboBox.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dato7ComboBox.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -467,7 +452,7 @@ namespace SistemaConsultorioMedico
         "Sí",
         "No"};
             this.dato8ComboBox.Location = new System.Drawing.Point(31, 554);
-            this.dato8ComboBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato8ComboBox.Margin = new System.Windows.Forms.Padding(5);
             this.dato8ComboBox.Name = "dato8ComboBox";
             this.dato8ComboBox.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dato8ComboBox.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -488,7 +473,7 @@ namespace SistemaConsultorioMedico
         "Sí",
         "No"};
             this.dato9ComboBox.Location = new System.Drawing.Point(31, 620);
-            this.dato9ComboBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dato9ComboBox.Margin = new System.Windows.Forms.Padding(5);
             this.dato9ComboBox.Name = "dato9ComboBox";
             this.dato9ComboBox.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dato9ComboBox.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -596,12 +581,26 @@ namespace SistemaConsultorioMedico
             this.dato9OpcLbl.Text = "¿Cuál?";
             this.dato9OpcLbl.Visible = false;
             // 
+            // pacientesCbo
+            // 
+            this.pacientesCbo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.pacientesCbo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.pacientesCbo.BackColor = System.Drawing.Color.Purple;
+            this.pacientesCbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pacientesCbo.ForeColor = System.Drawing.Color.White;
+            this.pacientesCbo.FormattingEnabled = true;
+            this.pacientesCbo.Location = new System.Drawing.Point(819, 93);
+            this.pacientesCbo.Name = "pacientesCbo";
+            this.pacientesCbo.Size = new System.Drawing.Size(391, 28);
+            this.pacientesCbo.TabIndex = 87;
+            // 
             // InformacionMedica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1284, 715);
+            this.Controls.Add(this.pacientesCbo);
             this.Controls.Add(this.dato9OpcLbl);
             this.Controls.Add(this.dato8OpcLbl);
             this.Controls.Add(this.dato7OpcLbl);
@@ -618,7 +617,6 @@ namespace SistemaConsultorioMedico
             this.Controls.Add(this.dato5ComboBox);
             this.Controls.Add(this.dato4ComboBox);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.buscarTbx);
             this.Controls.Add(this.buscarBtn);
             this.Controls.Add(this.MasBtn);
             this.Controls.Add(this.dato9OpcTbx);
@@ -633,7 +631,7 @@ namespace SistemaConsultorioMedico
             this.Controls.Add(this.dato2Tbx);
             this.Controls.Add(this.dato1Txb);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "InformacionMedica";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InformacionMedica";
@@ -658,7 +656,6 @@ namespace SistemaConsultorioMedico
         private Bunifu.Framework.UI.BunifuMaterialTextbox dato9OpcTbx;
         private Bunifu.Framework.UI.BunifuThinButton2 MasBtn;
         private Bunifu.Framework.UI.BunifuThinButton2 buscarBtn;
-        private Bunifu.Framework.UI.BunifuTextbox buscarTbx;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuDropdown dato4ComboBox;
         private Bunifu.Framework.UI.BunifuDropdown dato5ComboBox;
@@ -675,5 +672,6 @@ namespace SistemaConsultorioMedico
         private System.Windows.Forms.Label dato7OpcLbl;
         private System.Windows.Forms.Label dato8OpcLbl;
         private System.Windows.Forms.Label dato9OpcLbl;
+        private System.Windows.Forms.ComboBox pacientesCbo;
     }
 }

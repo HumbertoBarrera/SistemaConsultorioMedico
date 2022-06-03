@@ -211,6 +211,7 @@ namespace SistemaConsultorioMedico
             this.dato10Tbx.TabIndex = 5;
             this.dato10Tbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.dato10Tbx.OnValueChanged += new System.EventHandler(this.dato10Tbx_OnValueChanged);
+            this.dato10Tbx.EnabledChanged += new System.EventHandler(this.dato10Tbx_EnabledChanged);
             // 
             // dato10Rbtn4
             // 

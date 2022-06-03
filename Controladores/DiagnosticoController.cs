@@ -72,7 +72,7 @@ namespace SistemaConsultorioMedico.Controladores
         /// <returns></returns>
         public DataTable CargarGridDiagnostico(Modelos.Diagnostico d)
         {
-            String query = "SELECT folioDiagostico,LEFT(fecha,10),descripcion FROM DIAGNOSTICO WHERE idPaciente=@idPaciente";
+            String query = "SELECT folioDiagnostico,LEFT(fecha,10),descripcion FROM DIAGNOSTICO WHERE idPaciente=@idPaciente";
 
             using (SqlCommand comando = new SqlCommand(query, Controladores.ConexionController.Conectar()))
             {

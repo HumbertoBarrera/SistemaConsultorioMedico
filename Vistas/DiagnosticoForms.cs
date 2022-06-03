@@ -144,6 +144,7 @@ namespace SistemaConsultorioMedico
             pacientesCbo.DataSource = dtPacientes;
             pacientesCbo.DisplayMember = "Nombre";
             pacientesCbo.ValueMember = "idPaciente";
+            pacientesCbo.SelectedIndex = -1;
 
             //------------------------------------------------------
             //Controladores.CitaController daC = new Controladores.CitaController();

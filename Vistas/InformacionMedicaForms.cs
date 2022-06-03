@@ -27,20 +27,26 @@ namespace SistemaConsultorioMedico
         //Se abre una nueva pestaña y se valida que los campos no esten vacios
         private void MasBtn_Click(object sender, EventArgs e)
         {
-            if (validarCampos())
-            {
-                im1 = new Modelos.InformacionMedica(idPaciente, dato1Txb.Text, dato2Tbx.Text, dato3Tbx.Text, dato4ComboBox.selectedValue,
-                                                                        dato4OpcTbx.Text, dato5ComboBox.selectedValue, dato5OpcTbx.Text, dato6ComboBox.selectedValue, dato6OpcTbx.Text,
-                                                                        dato7ComboBox.selectedValue, dato7OpcTbx.Text, dato8ComboBox.selectedValue, dato8OpcTbx.Text,
-                                                                        dato9ComboBox.selectedValue, dato9OpcTbx.Text);
-                Form AbrirPreguntas = new Preguntas(im1, idPaciente, flagME, this);
-                AbrirPreguntas.Show();
-            }
+            if (pacientesCbo.SelectedIndex < 0)
+                MessageBox.Show("Selecciona a una paciente.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else
             {
-
-                MessageBox.Show("No pueden haber campos vacíos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                flagME = true;
+                if (validarCampos())
+                {
+                    im1 = new Modelos.InformacionMedica(idPaciente, dato1Txb.Text, dato2Tbx.Text, dato3Tbx.Text, dato4ComboBox.selectedValue,
+                                                                            dato4OpcTbx.Text, dato5ComboBox.selectedValue, dato5OpcTbx.Text, dato6ComboBox.selectedValue, dato6OpcTbx.Text,
+                                                                            dato7ComboBox.selectedValue, dato7OpcTbx.Text, dato8ComboBox.selectedValue, dato8OpcTbx.Text,
+                                                                            dato9ComboBox.selectedValue, dato9OpcTbx.Text);
+                    Form AbrirPreguntas = new Preguntas(im1, idPaciente, flagME, this);
+                    AbrirPreguntas.Show();
+                }
+                else
+                {
+                    MessageBox.Show("No pueden haber campos vacíos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
+            
         }
         //Se valida que no hay campos vacios
         private bool validarCampos()
@@ -126,25 +132,14 @@ namespace SistemaConsultorioMedico
         public int getIndex(String text)
         {
             if(String.Equals(text, "sí", StringComparison.OrdinalIgnoreCase))
-            
                 return 1;
-            
             else
-            
                 return 2;
-            
         }
         //Se hace la busqueda en la  base de datos
         private void buscarBtn_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(buscarTbx.text))
-                MessageBox.Show("El campo de búsqueda no debe estar vacío", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            else
-            {
-                flagME = false;
-                idPaciente = Convert.ToInt32(buscarTbx.text);
-                llenarInformacion(idPaciente);
-            }
+            llenarInformacion(Convert.ToInt32(pacientesCbo.SelectedValue));
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -415,7 +410,13 @@ namespace SistemaConsultorioMedico
 
         private void InformacionMedica_Load(object sender, EventArgs e)
         {
-
+            Controladores.CitaController citaCont = new Controladores.CitaController();
+            var dtPacientes = citaCont.LlenarComboBoxDePacientes();
+            pacientesCbo.DataSource = dtPacientes;
+            pacientesCbo.DisplayMember = "Nombre";
+            pacientesCbo.ValueMember = "idPaciente";
+            pacientesCbo.SelectedIndex = -1;
+            pacientesCbo.SelectedValue = idPaciente;
         }
 
         private void ValidarLetras_KeyPress(object sender, KeyPressEventArgs e)
