@@ -40,7 +40,6 @@ namespace SistemaConsultorioMedico
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.BienvenidaSecretariaLbl = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.contenedorMenuPnl = new System.Windows.Forms.Panel();
             this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.logoutBtn = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -56,6 +55,7 @@ namespace SistemaConsultorioMedico
             this.Mover = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.curvaTablero = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.BienvenidaSecretariaLbl = new Bunifu.Framework.UI.BunifuCustomLabel();
             ((System.ComponentModel.ISupportInitialize)(this.MenuDesplegableBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
@@ -213,26 +213,11 @@ namespace SistemaConsultorioMedico
             this.panel1.Controls.Add(this.BienvenidaSecretariaLbl);
             this.bunifuTransition1.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarAtras.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.panel1.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(396, 0);
+            this.panel1.Location = new System.Drawing.Point(408, 8);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(888, 707);
+            this.panel1.Size = new System.Drawing.Size(962, 684);
             this.panel1.TabIndex = 0;
-            // 
-            // BienvenidaSecretariaLbl
-            // 
-            this.BienvenidaSecretariaLbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.BienvenidaSecretariaLbl.BackColor = System.Drawing.Color.Transparent;
-            this.AnimacionSidebarAtras.SetDecoration(this.BienvenidaSecretariaLbl, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.BienvenidaSecretariaLbl, BunifuAnimatorNS.DecorationType.None);
-            this.BienvenidaSecretariaLbl.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BienvenidaSecretariaLbl.Location = new System.Drawing.Point(0, 373);
-            this.BienvenidaSecretariaLbl.Name = "BienvenidaSecretariaLbl";
-            this.BienvenidaSecretariaLbl.Size = new System.Drawing.Size(888, 37);
-            this.BienvenidaSecretariaLbl.TabIndex = 1;
-            this.BienvenidaSecretariaLbl.Text = "¡Bienvenida secretaria";
-            this.BienvenidaSecretariaLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // contenedorMenuPnl
             // 
@@ -359,7 +344,7 @@ namespace SistemaConsultorioMedico
             this.contenidoPnl.Location = new System.Drawing.Point(0, 81);
             this.contenidoPnl.Margin = new System.Windows.Forms.Padding(4);
             this.contenidoPnl.Name = "contenidoPnl";
-            this.contenidoPnl.Size = new System.Drawing.Size(1284, 707);
+            this.contenidoPnl.Size = new System.Drawing.Size(1386, 707);
             this.contenidoPnl.TabIndex = 2;
             // 
             // label2
@@ -391,7 +376,7 @@ namespace SistemaConsultorioMedico
             this.menuTopPnl.Location = new System.Drawing.Point(0, 0);
             this.menuTopPnl.Margin = new System.Windows.Forms.Padding(4);
             this.menuTopPnl.Name = "menuTopPnl";
-            this.menuTopPnl.Size = new System.Drawing.Size(1284, 81);
+            this.menuTopPnl.Size = new System.Drawing.Size(1386, 81);
             this.menuTopPnl.TabIndex = 4;
             // 
             // Restaurar
@@ -400,7 +385,7 @@ namespace SistemaConsultorioMedico
             this.AnimacionSidebarAtras.SetDecoration(this.Restaurar, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.Restaurar, BunifuAnimatorNS.DecorationType.None);
             this.Restaurar.Image = ((System.Drawing.Image)(resources.GetObject("Restaurar.Image")));
-            this.Restaurar.Location = new System.Drawing.Point(1180, 26);
+            this.Restaurar.Location = new System.Drawing.Point(1282, 26);
             this.Restaurar.Margin = new System.Windows.Forms.Padding(4);
             this.Restaurar.Name = "Restaurar";
             this.Restaurar.Size = new System.Drawing.Size(40, 37);
@@ -416,7 +401,7 @@ namespace SistemaConsultorioMedico
             this.AnimacionSidebarAtras.SetDecoration(this.Minimizar, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.Minimizar, BunifuAnimatorNS.DecorationType.None);
             this.Minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Minimizar.Image")));
-            this.Minimizar.Location = new System.Drawing.Point(1132, 26);
+            this.Minimizar.Location = new System.Drawing.Point(1234, 26);
             this.Minimizar.Margin = new System.Windows.Forms.Padding(4);
             this.Minimizar.Name = "Minimizar";
             this.Minimizar.Size = new System.Drawing.Size(40, 37);
@@ -431,7 +416,7 @@ namespace SistemaConsultorioMedico
             this.AnimacionSidebarAtras.SetDecoration(this.Maximizar, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.Maximizar, BunifuAnimatorNS.DecorationType.None);
             this.Maximizar.Image = ((System.Drawing.Image)(resources.GetObject("Maximizar.Image")));
-            this.Maximizar.Location = new System.Drawing.Point(1180, 26);
+            this.Maximizar.Location = new System.Drawing.Point(1282, 26);
             this.Maximizar.Margin = new System.Windows.Forms.Padding(4);
             this.Maximizar.Name = "Maximizar";
             this.Maximizar.Size = new System.Drawing.Size(40, 37);
@@ -446,7 +431,7 @@ namespace SistemaConsultorioMedico
             this.AnimacionSidebarAtras.SetDecoration(this.Salir, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.Salir, BunifuAnimatorNS.DecorationType.None);
             this.Salir.Image = ((System.Drawing.Image)(resources.GetObject("Salir.Image")));
-            this.Salir.Location = new System.Drawing.Point(1228, 26);
+            this.Salir.Location = new System.Drawing.Point(1330, 26);
             this.Salir.Margin = new System.Windows.Forms.Padding(4);
             this.Salir.Name = "Salir";
             this.Salir.Size = new System.Drawing.Size(40, 37);
@@ -509,10 +494,24 @@ namespace SistemaConsultorioMedico
             this.curvaTablero.ElipseRadius = 7;
             this.curvaTablero.TargetControl = this.Sidebar;
             // 
+            // BienvenidaSecretariaLbl
+            // 
+            this.BienvenidaSecretariaLbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.BienvenidaSecretariaLbl.BackColor = System.Drawing.Color.Transparent;
+            this.AnimacionSidebarAtras.SetDecoration(this.BienvenidaSecretariaLbl, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.BienvenidaSecretariaLbl, BunifuAnimatorNS.DecorationType.None);
+            this.BienvenidaSecretariaLbl.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BienvenidaSecretariaLbl.Location = new System.Drawing.Point(3, 327);
+            this.BienvenidaSecretariaLbl.Name = "BienvenidaSecretariaLbl";
+            this.BienvenidaSecretariaLbl.Size = new System.Drawing.Size(956, 30);
+            this.BienvenidaSecretariaLbl.TabIndex = 71;
+            this.BienvenidaSecretariaLbl.Text = "¡Bienvenida Secretaria";
+            this.BienvenidaSecretariaLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // MenuPrincipalSecretaria
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1284, 788);
+            this.ClientSize = new System.Drawing.Size(1386, 788);
             this.Controls.Add(this.contenedorMenuPnl);
             this.Controls.Add(this.contenidoPnl);
             this.Controls.Add(this.menuTopPnl);
