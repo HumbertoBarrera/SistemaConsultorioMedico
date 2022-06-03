@@ -31,7 +31,7 @@ namespace SistemaConsultorioMedico
                 MessageBox.Show("Selecciona a una paciente.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else
             {
-                flagME = false;
+                //flagME = false;
                 idPaciente = Convert.ToInt32(pacientesCbo.SelectedValue);
                 if (validarCampos())
                 {
@@ -111,11 +111,13 @@ namespace SistemaConsultorioMedico
                             dato9ComboBox.selectedIndex = getIndex(leer["dato9"].ToString());
                             dato9OpcTbx.Text = leer["dato9Opc"].ToString();
                             f = true;
+                            flagME = false;
                         }
                         if (!f)
                         {
                             flagME = true;
                             MessageBox.Show("El paciente no tiene registros de información médica", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            LimpiarCampos();
                         }
                     }
                 }
@@ -425,13 +427,32 @@ namespace SistemaConsultorioMedico
 
         private void ValidarLetras_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && !char.IsWhiteSpace(e.KeyChar))
             {
-                MessageBox.Show("Solo se permiten letras", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Sólo se permiten letras", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
                 return;
             }
-
         }
+
+        private void LimpiarCampos()
+        {
+            dato1Txb.Text = String.Empty;
+            dato2Tbx.Text = String.Empty;
+            dato3Tbx.Text = String.Empty;
+            dato4ComboBox.selectedIndex = 0;
+            dato4OpcTbx.Text = String.Empty;
+            dato5ComboBox.selectedIndex = 0;
+            dato5OpcTbx.Text = String.Empty;
+            dato6ComboBox.selectedIndex = 0;
+            dato6OpcTbx.Text = String.Empty;
+            dato7ComboBox.selectedIndex = 0;
+            dato7OpcTbx.Text = String.Empty;
+            dato8ComboBox.selectedIndex = 0;
+            dato8OpcTbx.Text = String.Empty;
+            dato9ComboBox.selectedIndex = 0;
+            dato9OpcTbx.Text = String.Empty;
+        }
+
     }
 }
