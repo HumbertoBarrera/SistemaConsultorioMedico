@@ -307,7 +307,7 @@ namespace SistemaConsultorioMedico
             this.MasBtn.IdleFillColor = System.Drawing.Color.Gray;
             this.MasBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.MasBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.MasBtn.Location = new System.Drawing.Point(836, 666);
+            this.MasBtn.Location = new System.Drawing.Point(1001, 685);
             this.MasBtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.MasBtn.Name = "MasBtn";
             this.MasBtn.Padding = new System.Windows.Forms.Padding(75, 12, 0, 12);
@@ -599,7 +599,7 @@ namespace SistemaConsultorioMedico
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1284, 715);
+            this.ClientSize = new System.Drawing.Size(1286, 768);
             this.Controls.Add(this.pacientesCbo);
             this.Controls.Add(this.dato9OpcLbl);
             this.Controls.Add(this.dato8OpcLbl);

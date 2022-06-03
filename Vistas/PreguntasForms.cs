@@ -220,8 +220,10 @@ namespace SistemaConsultorioMedico
                 dato10Rbtn2.Checked = false;
                 dato10Rbtn3.Checked = false;
                 dato10Rbtn4.Checked = false;
-                dato10OpcTbx.Text = "";
                 dato10Rbtn5.Checked = true;
+                dato10OpcTbx.Enabled = false;
+                dato10OpcTbx.Text = "";
+                dato10OpcTbx.Enabled = false;
             }
             else
             {
@@ -449,11 +451,24 @@ namespace SistemaConsultorioMedico
                 dato10Rbtn2.Checked = false;
                 dato10Rbtn3.Checked = false;
                 dato10Rbtn4.Checked = false;
-                if (dato10Tbx.Text != "") dato10Tbx.Text = "";
-                dato10OpcTbx.Enabled = true;
-                dato10OpcTbx.Enabled = false;
                 dato10Tbx.Enabled = false;
-                dato10OpcTbx.Text = "ㅤㅤ";
+                dato10OpcTbx.Enabled = false;
+                dato10OpcTbx.Text = "   ";
+            }
+        }
+
+        private void dato10Tbx_EnabledChanged(object sender, EventArgs e)
+        {
+            if (dato10Tbx.Enabled)
+            {
+                dato10Tbx.LineIdleColor = Color.Purple;
+                dato10Tbx.LineMouseHoverColor = Color.Blue;
+                dato10Tbx.Text = "";
+            }
+            else
+            {
+                dato10Tbx.LineIdleColor = Color.Gray;
+                dato10Tbx.LineMouseHoverColor = Color.Gray;
             }
         }
 
@@ -853,10 +868,6 @@ namespace SistemaConsultorioMedico
             }
         }
 
-        private void Preguntas_Load(object sender, EventArgs e)
-        {
-
-        }
         private void ValidarLetras_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
@@ -867,5 +878,6 @@ namespace SistemaConsultorioMedico
             }
 
         }
+
     }
 }

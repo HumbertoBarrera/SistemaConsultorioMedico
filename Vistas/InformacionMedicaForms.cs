@@ -31,7 +31,8 @@ namespace SistemaConsultorioMedico
                 MessageBox.Show("Selecciona a una paciente.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else
             {
-                flagME = true;
+                flagME = false;
+                idPaciente = Convert.ToInt32(pacientesCbo.SelectedValue);
                 if (validarCampos())
                 {
                     im1 = new Modelos.InformacionMedica(idPaciente, dato1Txb.Text, dato2Tbx.Text, dato3Tbx.Text, dato4ComboBox.selectedValue,
@@ -139,7 +140,10 @@ namespace SistemaConsultorioMedico
         //Se hace la busqueda en la  base de datos
         private void buscarBtn_Click(object sender, EventArgs e)
         {
-            llenarInformacion(Convert.ToInt32(pacientesCbo.SelectedValue));
+            if(pacientesCbo.SelectedIndex < 0)
+                MessageBox.Show("Selecciona a una paciente.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else
+                llenarInformacion(Convert.ToInt32(pacientesCbo.SelectedValue));
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
