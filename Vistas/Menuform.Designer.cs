@@ -35,6 +35,7 @@ namespace SistemaConsultorioMedico
             BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             this.contenidoPnl = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BienvenidaLbl = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.contenedorMenuPnl = new System.Windows.Forms.Panel();
             this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.Usuarios = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -59,7 +60,6 @@ namespace SistemaConsultorioMedico
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Mover = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.BienvenidaLbl = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.contenidoPnl.SuspendLayout();
             this.panel1.SuspendLayout();
             this.contenedorMenuPnl.SuspendLayout();
@@ -100,6 +100,21 @@ namespace SistemaConsultorioMedico
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(887, 707);
             this.panel1.TabIndex = 0;
+            // 
+            // BienvenidaLbl
+            // 
+            this.BienvenidaLbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.BienvenidaLbl.BackColor = System.Drawing.Color.Transparent;
+            this.AnimacionSidebar.SetDecoration(this.BienvenidaLbl, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarAtras.SetDecoration(this.BienvenidaLbl, BunifuAnimatorNS.DecorationType.None);
+            this.BienvenidaLbl.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BienvenidaLbl.Location = new System.Drawing.Point(3, 343);
+            this.BienvenidaLbl.Name = "BienvenidaLbl";
+            this.BienvenidaLbl.Size = new System.Drawing.Size(884, 30);
+            this.BienvenidaLbl.TabIndex = 70;
+            this.BienvenidaLbl.Text = "¡Bienvenida Doctora";
+            this.BienvenidaLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BienvenidaLbl.Click += new System.EventHandler(this.bunifuCustomLabel2_Click);
             // 
             // contenedorMenuPnl
             // 
@@ -586,20 +601,6 @@ namespace SistemaConsultorioMedico
             // 
             this.bunifuElipse2.ElipseRadius = 7;
             this.bunifuElipse2.TargetControl = this;
-            // 
-            // BienvenidaLbl
-            // 
-            this.BienvenidaLbl.BackColor = System.Drawing.Color.Transparent;
-            this.AnimacionSidebar.SetDecoration(this.BienvenidaLbl, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebarAtras.SetDecoration(this.BienvenidaLbl, BunifuAnimatorNS.DecorationType.None);
-            this.BienvenidaLbl.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BienvenidaLbl.Location = new System.Drawing.Point(3, 343);
-            this.BienvenidaLbl.Name = "BienvenidaLbl";
-            this.BienvenidaLbl.Size = new System.Drawing.Size(884, 30);
-            this.BienvenidaLbl.TabIndex = 70;
-            this.BienvenidaLbl.Text = "¡Bienvenida Doctora";
-            this.BienvenidaLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.BienvenidaLbl.Click += new System.EventHandler(this.bunifuCustomLabel2_Click);
             // 
             // Menuform
             // 
