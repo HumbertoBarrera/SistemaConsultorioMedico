@@ -30,9 +30,9 @@ namespace SistemaConsultorioMedico
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation6 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation5 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menuform));
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             this.contenidoPnl = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.contenedorMenuPnl = new System.Windows.Forms.Panel();
@@ -59,9 +59,7 @@ namespace SistemaConsultorioMedico
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Mover = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.nombrerol_lb = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.rol_lb = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.BienvenidaLbl = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.contenidoPnl.SuspendLayout();
             this.panel1.SuspendLayout();
             this.contenedorMenuPnl.SuspendLayout();
@@ -94,9 +92,7 @@ namespace SistemaConsultorioMedico
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel1.Controls.Add(this.nombrerol_lb);
-            this.panel1.Controls.Add(this.rol_lb);
-            this.panel1.Controls.Add(this.bunifuCustomLabel2);
+            this.panel1.Controls.Add(this.BienvenidaLbl);
             this.AnimacionSidebarAtras.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
             this.panel1.Location = new System.Drawing.Point(397, 81);
@@ -400,7 +396,7 @@ namespace SistemaConsultorioMedico
             this.label1.Location = new System.Drawing.Point(83, 42);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(196, 20);
+            this.label1.Size = new System.Drawing.Size(254, 26);
             this.label1.TabIndex = 10;
             this.label1.Text = "Consultorio Ginecologico";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -509,7 +505,7 @@ namespace SistemaConsultorioMedico
             this.label2.Location = new System.Drawing.Point(99, 26);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 20);
+            this.label2.Size = new System.Drawing.Size(129, 26);
             this.label2.TabIndex = 2;
             this.label2.Text = "OPCIONES";
             // 
@@ -536,43 +532,43 @@ namespace SistemaConsultorioMedico
             // 
             this.AnimacionSidebar.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.AnimacionSidebar.Cursor = null;
-            animation6.AnimateOnlyDifferences = true;
-            animation6.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.BlindCoeff")));
-            animation6.LeafCoeff = 0F;
-            animation6.MaxTime = 1F;
-            animation6.MinTime = 0F;
-            animation6.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicCoeff")));
-            animation6.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicShift")));
-            animation6.MosaicSize = 0;
-            animation6.Padding = new System.Windows.Forms.Padding(0);
-            animation6.RotateCoeff = 0F;
-            animation6.RotateLimit = 0F;
-            animation6.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.ScaleCoeff")));
-            animation6.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.SlideCoeff")));
-            animation6.TimeCoeff = 0F;
-            animation6.TransparencyCoeff = 0F;
-            this.AnimacionSidebar.DefaultAnimation = animation6;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.AnimacionSidebar.DefaultAnimation = animation1;
             // 
             // AnimacionSidebarAtras
             // 
             this.AnimacionSidebarAtras.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.AnimacionSidebarAtras.Cursor = null;
-            animation5.AnimateOnlyDifferences = true;
-            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
-            animation5.LeafCoeff = 0F;
-            animation5.MaxTime = 1F;
-            animation5.MinTime = 0F;
-            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
-            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
-            animation5.MosaicSize = 0;
-            animation5.Padding = new System.Windows.Forms.Padding(0);
-            animation5.RotateCoeff = 0F;
-            animation5.RotateLimit = 0F;
-            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
-            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
-            animation5.TimeCoeff = 0F;
-            animation5.TransparencyCoeff = 0F;
-            this.AnimacionSidebarAtras.DefaultAnimation = animation5;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.AnimacionSidebarAtras.DefaultAnimation = animation2;
             // 
             // bunifuElipse1
             // 
@@ -591,44 +587,19 @@ namespace SistemaConsultorioMedico
             this.bunifuElipse2.ElipseRadius = 7;
             this.bunifuElipse2.TargetControl = this;
             // 
-            // nombrerol_lb
+            // BienvenidaLbl
             // 
-            this.nombrerol_lb.AutoSize = true;
-            this.AnimacionSidebar.SetDecoration(this.nombrerol_lb, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebarAtras.SetDecoration(this.nombrerol_lb, BunifuAnimatorNS.DecorationType.None);
-            this.nombrerol_lb.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombrerol_lb.Location = new System.Drawing.Point(405, 334);
-            this.nombrerol_lb.Name = "nombrerol_lb";
-            this.nombrerol_lb.Size = new System.Drawing.Size(202, 23);
-            this.nombrerol_lb.TabIndex = 6;
-            this.nombrerol_lb.Text = "bunifuCustomLabel3";
-            this.nombrerol_lb.Click += new System.EventHandler(this.nombrerol_lb_Click);
-            // 
-            // rol_lb
-            // 
-            this.rol_lb.AutoSize = true;
-            this.AnimacionSidebar.SetDecoration(this.rol_lb, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebarAtras.SetDecoration(this.rol_lb, BunifuAnimatorNS.DecorationType.None);
-            this.rol_lb.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rol_lb.Location = new System.Drawing.Point(316, 334);
-            this.rol_lb.Name = "rol_lb";
-            this.rol_lb.Size = new System.Drawing.Size(83, 23);
-            this.rol_lb.TabIndex = 5;
-            this.rol_lb.Text = "Doctora";
-            // 
-            // bunifuCustomLabel2
-            // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.AnimacionSidebar.SetDecoration(this.bunifuCustomLabel2, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebarAtras.SetDecoration(this.bunifuCustomLabel2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(192, 334);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(118, 23);
-            this.bunifuCustomLabel2.TabIndex = 4;
-            this.bunifuCustomLabel2.Text = "¡Bienvenida";
-            this.bunifuCustomLabel2.Click += new System.EventHandler(this.bunifuCustomLabel2_Click);
+            this.BienvenidaLbl.BackColor = System.Drawing.Color.Transparent;
+            this.AnimacionSidebar.SetDecoration(this.BienvenidaLbl, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarAtras.SetDecoration(this.BienvenidaLbl, BunifuAnimatorNS.DecorationType.None);
+            this.BienvenidaLbl.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BienvenidaLbl.Location = new System.Drawing.Point(3, 343);
+            this.BienvenidaLbl.Name = "BienvenidaLbl";
+            this.BienvenidaLbl.Size = new System.Drawing.Size(884, 30);
+            this.BienvenidaLbl.TabIndex = 70;
+            this.BienvenidaLbl.Text = "¡Bienvenida Doctora";
+            this.BienvenidaLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BienvenidaLbl.Click += new System.EventHandler(this.bunifuCustomLabel2_Click);
             // 
             // Menuform
             // 
@@ -646,7 +617,6 @@ namespace SistemaConsultorioMedico
             this.Text = "Menuform";
             this.contenidoPnl.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.contenedorMenuPnl.ResumeLayout(false);
             this.Sidebar.ResumeLayout(false);
             this.Sidebar.PerformLayout();
@@ -690,8 +660,6 @@ namespace SistemaConsultorioMedico
         public System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuFlatButton logoutBtn;
         private Bunifu.Framework.UI.BunifuFlatButton Usuarios;
-        public Bunifu.Framework.UI.BunifuCustomLabel nombrerol_lb;
-        public Bunifu.Framework.UI.BunifuCustomLabel rol_lb;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
+        public Bunifu.Framework.UI.BunifuCustomLabel BienvenidaLbl;
     }
 }

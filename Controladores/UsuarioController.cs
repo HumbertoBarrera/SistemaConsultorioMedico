@@ -126,8 +126,8 @@ namespace SistemaConsultorioMedico.Controladores
                     if(leer["rol"].ToString() == "D")
                     {
                         Menuform MenuForm = new Menuform();
-                        MenuForm.rol_lb.Text = "Doctora";
-                        MenuForm.nombrerol_lb.Text = U.getUsuario() +"!";
+                        String usuario = U.getUsuario();
+                        MenuForm.BienvenidaLbl.Text += "  " + usuario + "!";
                         MenuForm.Show();
                         login.Hide();
                     }
