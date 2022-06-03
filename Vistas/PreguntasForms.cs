@@ -853,20 +853,19 @@ namespace SistemaConsultorioMedico
             }
         }
 
-        private void dato10Tbx_EnabledChanged(object sender, EventArgs e)
+        private void Preguntas_Load(object sender, EventArgs e)
         {
-            if (dato11OpcTbx.Enabled)
+
+        }
+        private void ValidarLetras_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
             {
-                dato10Tbx.LineIdleColor = Color.Purple;
-                dato10Tbx.LineMouseHoverColor = Color.Blue;
-                dato10Tbx.Text = "";
+                MessageBox.Show("Solo se permiten letras", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
             }
-            else
-            {
-                dato10Tbx.LineIdleColor = Color.Gray;
-                dato10Tbx.LineMouseHoverColor = Color.Gray;
-                dato10Tbx.Text = "ㅤㅤ";
-            }
+
         }
     }
 }
