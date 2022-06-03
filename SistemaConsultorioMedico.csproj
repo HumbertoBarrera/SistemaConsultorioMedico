@@ -251,6 +251,10 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Recursos\LogoSCM.ico" />
+    <Content Include="Recursos\LogoSCM.jpg" />
+    <Content Include="Recursos\LogoSCM.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
