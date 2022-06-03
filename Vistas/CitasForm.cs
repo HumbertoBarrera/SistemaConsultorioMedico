@@ -30,7 +30,7 @@ namespace SistemaConsultorioMedico
 
             //errorDigit.Visible = false;
 
-            if ((comboBox1.Text !="----- Seleccione la hora----") && (comboBox1.SelectedIndex != -1))
+            if ((pacientesCbo.SelectedIndex > 0) && (comboBox1.Text !="----- Seleccione la hora----") && (comboBox1.SelectedIndex != -1))
             {
                 cita = new Modelos.Cita();
                 int idPacienteV = int.Parse(pacientesCbo.SelectedValue.ToString());
@@ -79,6 +79,7 @@ namespace SistemaConsultorioMedico
                 comboBox1.Items.Insert(0, "----- Seleccione la hora----");
                 comboBox1.SelectedIndex = 0;
                 folioCitaLb.Text = "";
+                pacientesCbo.SelectedIndex = -1;
                 //PacienteCitaTxb.Enabled = true;
             }
             else
@@ -107,7 +108,7 @@ namespace SistemaConsultorioMedico
     
         private void EliminarCitaBtn_Click(object sender, EventArgs e)
         {
-            if ((comboBox1.Text != "----- Seleccione la hora----") && (comboBox1.SelectedIndex != -1))
+            if ((pacientesCbo.SelectedIndex > 0)  && (comboBox1.Text != "----- Seleccione la hora----") && (comboBox1.SelectedIndex != -1))
             {
                 cita = new Modelos.Cita();
 
@@ -136,6 +137,7 @@ namespace SistemaConsultorioMedico
                 //PacienteCitaTxb.Enabled = true;
                 AgregarCBtn.Visible = false;
                 GuardarCitaBtn.Visible = true;
+                pacientesCbo.SelectedIndex = -1;
             }
             else
             {
@@ -147,7 +149,7 @@ namespace SistemaConsultorioMedico
 
         private void ModificarCitaBtn_Click(object sender, EventArgs e)
         {
-            if ((comboBox1.Text != "----- Seleccione la hora----") && (comboBox1.SelectedIndex != -1))
+            if ((pacientesCbo.SelectedIndex > 0) && (comboBox1.Text != "----- Seleccione la hora----") && (comboBox1.SelectedIndex != -1))
             {
 
                 cita = new Modelos.Cita();
@@ -177,6 +179,7 @@ namespace SistemaConsultorioMedico
                 //PacienteCitaTxb.Enabled = true;
                 AgregarCBtn.Visible = false;
                 GuardarCitaBtn.Visible = true;
+                pacientesCbo.SelectedIndex = -1;
             }
             else
             {
