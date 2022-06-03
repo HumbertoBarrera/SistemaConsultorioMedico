@@ -118,12 +118,12 @@ namespace SistemaConsultorioMedico.Controladores
             SqlDataReader leer = codigo.ExecuteReader();
             if (leer.Read())
             {
-                codigo = new SqlCommand("SELECT rol FROM USUARIO WHERE usuario = '" 
+                codigo = new SqlCommand("SELECT rol FROM USUARIO WHERE usuario = '"
                     + U.getUsuario() + "'", Controladores.ConexionController.Conectar());
                 leer = codigo.ExecuteReader();
                 while (leer.Read())
                 {
-                    if(leer["rol"].ToString() == "D")
+                    if (leer["rol"].ToString() == "D")
                     {
                         Menuform MenuForm = new Menuform();
                         String usuario = U.getUsuario();
@@ -134,7 +134,8 @@ namespace SistemaConsultorioMedico.Controladores
                     else
                     {
                         MenuPrincipalSecretaria menu = new MenuPrincipalSecretaria(false);
-                        menu.nombrerol_lb.Text =U.getUsuario() + "!";
+                        String usuario = U.getUsuario();
+                        menu.BienvenidaSecretariaLbl.Text += " " + usuario + "!";
                         menu.Show();
                         login.Hide();
                     }
