@@ -44,7 +44,7 @@ namespace SistemaConsultorioMedico.Controladores
                     comando.Parameters.AddWithValue("@telefonoP", p.getTelefonoP());
                     comando.Parameters.AddWithValue("@emailP", p.getEmailP());
                     comando.Parameters.AddWithValue("@trabajoP", p.getTrabajoP());
-                    comando.Parameters.AddWithValue("@lugarTrabajoP", p.getTelefonoTrabajoP());
+                    comando.Parameters.AddWithValue("@lugarTrabajoP", p.getLugarTrabajoP());
                     int resultado = comando.ExecuteNonQuery(); // Variable que representa el número de tuplas manipuladas
                     if (resultado < intTuplasManipuladas) // Validamos que por lo menos haya una tupla manipulada
                         MessageBox.Show("Error al insertar en la base de datos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); // Operación no exitosa
