@@ -275,6 +275,7 @@ namespace SistemaConsultorioMedico
                 if (isValidEmail(CorreoETbx.Text))
                 {
                     CorreoETbx.LineFocusedColor = Color.Blue;
+                    CorreoETbx.LineIdleColor = Color.Purple;
                     correoErrorLbl.Visible = false;
                     if (validarCampos() && flagME)
                     {
