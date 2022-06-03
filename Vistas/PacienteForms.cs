@@ -253,7 +253,7 @@ namespace SistemaConsultorioMedico
             }
             catch
             {
-                CorreoETbx.LineFocusedColor = Color.Crimson;
+                CorreoETbx.LineIdleColor = Color.Crimson;
                 correoErrorLbl.Visible = true;
                 return false;
             }
@@ -499,6 +499,11 @@ namespace SistemaConsultorioMedico
             if(textbox.Text.Length < 2)
             {
                 MessageBox.Show("Dato ingresado no valido", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                textbox.LineIdleColor = Color.Crimson;
+            }
+            else
+            {
+                textbox.LineIdleColor = Color.Purple;
             }
         }
 
